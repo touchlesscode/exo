@@ -1,6 +1,6 @@
 {
     "name": "gatsby-theme-exo",
-    "version": "0.1.s",
+    "version": "0.1.0",
     "private": false,
     "author": "Kevin Gervais",
     "description": "The GatsbyJS shell for building agile, accessible, data-first applications.",
