@@ -1,0 +1,44 @@
+```json
+{
+    "id":"7ce1d51b-1ae6-4453-9f88-ec1c052918ad",
+    "current":{
+       "name":{
+          "first":"Antonio",
+          "middle":"Pedro",
+          "last":"Rogriquez"
+       },
+       "locales":[
+          "en_US",
+          "es_US"
+       ]
+    },
+    "preferred":{
+       "name":"Tony P",
+       "locale":"es_US",
+       "email":{
+          "work":"tony@azpartners.us",
+          "personal":"tonyp7382@gmail.com"
+       }
+    },
+    "birth":{
+       "name":{
+          "given":"Antonio",
+          "family":"Antonio Pedro García Rodriguez",
+          "pronounciation":"ahn-toh-nyoh",
+          "first":"Antonio",
+          "middle":"Pedro",
+          "last":"García"
+       },
+       "sex":"MALE",
+       "type":"TWIN",
+       "date":"1983-02-17T07:05:20",
+       "place_id:":"7ce1d51b-1ae6-4453-9f88-ec1c052918ad",
+       "institution_id:":"7ce1d51b-1ae6-4453-9f88-ec1c052918ad",
+       "mother_id":"7ce1d51b-1ae6-4453-9f88-ec1c052918ad",
+       "certificate_id":"7ce1d51b-1ae6-4453-9f88-ec1c052918ad"
+    },
+    "family":{
+       
+    }
+ }
+ ```
