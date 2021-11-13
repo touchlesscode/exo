@@ -1,0 +1,26 @@
+{
+  "name": "@touchless/exo",
+  "version": "1.1.0",
+  "private": false,
+  "author": "Kevin Gervais",
+  "description": "The shell for building agile, accessible, data-first applications.",
+  "keywords": [
+    "headless",
+    "jamstack",
+    "framework",
+    "components"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touchlesscode/exo.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/touchlesscode/exo/issues"
+  },
+  "homepage": "https://github.com/touchlesscode/exo#readme",
+  "main": "index.js"
+}
