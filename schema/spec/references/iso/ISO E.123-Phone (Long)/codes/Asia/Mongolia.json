@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Choibalsan",
+        "area_code": "",
+        "dialing_code": "+976"
+    },
+    {
+        "city": "Hovdo",
+        "area_code": "",
+        "dialing_code": "+976"
+    },
+    {
+        "city": "Ulaanbaatar",
+        "area_code": "11",
+        "dialing_code": "+976 11"
+    }
+]

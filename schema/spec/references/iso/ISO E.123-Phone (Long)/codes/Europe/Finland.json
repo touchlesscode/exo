@@ -1,0 +1,637 @@
+[
+    {
+        "city": "Aanekoski",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Alajarvi",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Alajyrvi",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Alajärvi",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Alajýrvi",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Alavus",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Bjorneborg",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Bjyrneborg",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Björneborg",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Bjýrneborg",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Borga",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Borgy",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Borgå",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Borgý",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Ekenas",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Ekenys",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Ekenäs",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Ekenýs",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Espoo",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Espoo-Esbo",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Forssa",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Haapajarvi",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Haapajyrvi",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Haapajärvi",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Haapajýrvi",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Hameenlinna",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Hango",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Hangy",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Hangö",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Hangý",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Haukipudas",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Heinola",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Helsingfors",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Helsinki",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Hymeenlinna",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Hämeenlinna",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Hýmeenlinna",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Imatra",
+        "area_code": "5",
+        "dialing_code": "+358 5"
+    },
+    {
+        "city": "Jakobstad",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Jamsa",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Joensuu",
+        "area_code": "13",
+        "dialing_code": "+358 13"
+    },
+    {
+        "city": "Joutsa",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jymsy",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jyvaskyla",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jyvyskyly",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jyväskylä",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jyvýskylý",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jämsä",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Jýmsý",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Kajaani",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Kankaanpaa",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kankaanpyy",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kankaanpää",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kankaanpýý",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Karleby",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Kauhajoki",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Kemi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Kemijarvi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Kemijyrvi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Kemijärvi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Kemijýrvi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Kemio",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kemiy",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kemiö",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kemiý",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kempele",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Keuruu",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Kimito",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kokkola",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Koski Hl",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Koski Tl",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Kotka",
+        "area_code": "5",
+        "dialing_code": "+358 5"
+    },
+    {
+        "city": "Kouvola",
+        "area_code": "5",
+        "dialing_code": "+358 5"
+    },
+    {
+        "city": "Kuopio",
+        "area_code": "17",
+        "dialing_code": "+358 17"
+    },
+    {
+        "city": "Kuusamo",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Lahti",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Lappeenranta",
+        "area_code": "5",
+        "dialing_code": "+358 5"
+    },
+    {
+        "city": "Lieksa",
+        "area_code": "13",
+        "dialing_code": "+358 13"
+    },
+    {
+        "city": "Lohja",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Loimaa",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Mariehamn",
+        "area_code": "18",
+        "dialing_code": "+358 18"
+    },
+    {
+        "city": "Mikkeli",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Muonio",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Orivesi",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Oulu",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Padasjoki",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Parkano",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Pieksamaki",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Pieksymyki",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Pieksämäki",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Pieksýmýki",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Pori",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Porvoo",
+        "area_code": "19",
+        "dialing_code": "+358 19"
+    },
+    {
+        "city": "Raahe",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Rauma",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Rouvesi",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Rovaniemi",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Saarijarvi",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Saarijyrvi",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Saarijärvi",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Saarijýrvi",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Savonlinna",
+        "area_code": "15",
+        "dialing_code": "+358 15"
+    },
+    {
+        "city": "Seinajoki",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Seinyjoki",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Seinäjoki",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Seinýjoki",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Suonenjoki",
+        "area_code": "17",
+        "dialing_code": "+358 17"
+    },
+    {
+        "city": "Tammerfors",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Tampere",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Tavastehus",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Tornio",
+        "area_code": "16",
+        "dialing_code": "+358 16"
+    },
+    {
+        "city": "Turku",
+        "area_code": "2",
+        "dialing_code": "+358 2"
+    },
+    {
+        "city": "Uleaborg",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Uleybyrg",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Uleåbörg",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Uleýbýrg",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "Vaasa",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Valkeakoski",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Vammala",
+        "area_code": "3",
+        "dialing_code": "+358 3"
+    },
+    {
+        "city": "Vanda",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Vantaa",
+        "area_code": "9",
+        "dialing_code": "+358 9"
+    },
+    {
+        "city": "Varkaus",
+        "area_code": "17",
+        "dialing_code": "+358 17"
+    },
+    {
+        "city": "Vasa",
+        "area_code": "6",
+        "dialing_code": "+358 6"
+    },
+    {
+        "city": "Ylivieska",
+        "area_code": "8",
+        "dialing_code": "+358 8"
+    },
+    {
+        "city": "yynekoski",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "Äänekoski",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    },
+    {
+        "city": "ýýnekoski",
+        "area_code": "14",
+        "dialing_code": "+358 14"
+    }
+]

@@ -1,0 +1,68 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "error_spec",
+	"description": "Metadata for an error. Can be associated with one or more methods that belong to one or more APIs of the same name space. Error spec corresponds to common `error.json`.",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "Human-readable, unique name of the error. It is recommended that this value be streamed out in error response as error.json#name."
+		},
+		"message": {
+			"type": "string",
+			"description": "Message describing the error. Should be localized based on locale. It is recommended that this value be streamed out in error response as error.json#message."
+		},
+		"log_level": {
+  			"type": "string",
+  			"description": "Log level associated with this error. For example, CAL log level. This MUST NOT be streamed out in error responses as well as exposed in any external documentation.",
+ 			 "enum": ["ERROR", "FATAL", "INFO", "WARN"]
+		},
+		"legacy_code": {
+			"type": "string",
+			"description": "Legacy error code. Use iff existing error metadata has the code. It is recommended that this value be streamed out in error response as additionalProperty of error.json"
+		},
+		"http_status_codes": {
+			"type": "array",
+			"description": "Applicable HTTP status codes for this error.",
+			"items": {
+				"type": "integer",
+				"minItems": 1,
+				"minimum": 400,
+				"maximum": 599
+			}
+		},
+		"suggested_application_actions": {
+			"type": "array",
+			"description": "Suggest practical actions that the developer of application consuming the API could take in order to resolve the error condition. These must be in English.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"suggested_user_actions": {
+			"type": "array",
+			"description": "Suggest practical actions that a user of the application consuming the API could take in order to resolve the error condition. These must be in the language used in error_catalog.json#langauge.",
+			"items": {
+				"type": "string"
+			}
+		},
+		"issues": {
+			"type": "array",
+			"description": "Issues associated with this error. Issue corresponds to error_detail.json",
+			"items": {
+				"$ref": "error_spec_issue.json"
+			}
+		},
+		"links": {
+			"type": "array",
+			"description": "Error context specific HATEOAS links. Corresponds to error.json#links",
+			"items": {
+				"$ref": "http://json-schema.org/draft-04/hyper-schema#definitions/linkDescription"
+			}
+		}
+	},
+	"required": [
+		"name",
+		"message",
+		"http_status_codes"
+	]
+}

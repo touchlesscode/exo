@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Billings",
+        "area_code": "406",
+        "dialing_code": "+1 406"
+    },
+    {
+        "city": "Bozeman",
+        "area_code": "406",
+        "dialing_code": "+1 406"
+    },
+    {
+        "city": "Great Falls",
+        "area_code": "406",
+        "dialing_code": "+1 406"
+    },
+    {
+        "city": "Helena",
+        "area_code": "406",
+        "dialing_code": "+1 406"
+    },
+    {
+        "city": "Missoula",
+        "area_code": "406",
+        "dialing_code": "+1 406"
+    }
+]

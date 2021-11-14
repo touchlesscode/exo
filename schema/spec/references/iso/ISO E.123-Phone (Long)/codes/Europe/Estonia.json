@@ -1,0 +1,122 @@
+[
+    {
+        "city": "Hiiumaa",
+        "area_code": "46",
+        "dialing_code": "+372 46"
+    },
+    {
+        "city": "Ida-Virumaa",
+        "area_code": "5",
+        "dialing_code": "+372 5"
+    },
+    {
+        "city": "Ida-Virumaa County",
+        "area_code": "39",
+        "dialing_code": "+372 39"
+    },
+    {
+        "city": "Jygevamaa",
+        "area_code": "77",
+        "dialing_code": "+372 77"
+    },
+    {
+        "city": "Jyrvamaa",
+        "area_code": "38",
+        "dialing_code": "+372 38"
+    },
+    {
+        "city": "Jýgevamaa",
+        "area_code": "77",
+        "dialing_code": "+372 77"
+    },
+    {
+        "city": "Jýrvamaa",
+        "area_code": "38",
+        "dialing_code": "+372 38"
+    },
+    {
+        "city": "Lyyne-Virumaa",
+        "area_code": "32",
+        "dialing_code": "+372 32"
+    },
+    {
+        "city": "Lyynemaa",
+        "area_code": "47",
+        "dialing_code": "+372 47"
+    },
+    {
+        "city": "Lýýne-Virumaa",
+        "area_code": "32",
+        "dialing_code": "+372 32"
+    },
+    {
+        "city": "Lýýnemaa",
+        "area_code": "47",
+        "dialing_code": "+372 47"
+    },
+    {
+        "city": "Pylvamaa",
+        "area_code": "79",
+        "dialing_code": "+372 79"
+    },
+    {
+        "city": "Pyrnumaa",
+        "area_code": "44",
+        "dialing_code": "+372 44"
+    },
+    {
+        "city": "Pýlvamaa",
+        "area_code": "79",
+        "dialing_code": "+372 79"
+    },
+    {
+        "city": "Pýrnumaa",
+        "area_code": "44",
+        "dialing_code": "+372 44"
+    },
+    {
+        "city": "Raplamaa",
+        "area_code": "48",
+        "dialing_code": "+372 48"
+    },
+    {
+        "city": "Saaremaa",
+        "area_code": "45",
+        "dialing_code": "+372 45"
+    },
+    {
+        "city": "Tallinn",
+        "area_code": "71",
+        "dialing_code": "+372 71"
+    },
+    {
+        "city": "Tartumaa",
+        "area_code": "75",
+        "dialing_code": "+372 75"
+    },
+    {
+        "city": "Valga",
+        "area_code": "76",
+        "dialing_code": "+372 76"
+    },
+    {
+        "city": "Valgamaa",
+        "area_code": "76",
+        "dialing_code": "+372 76"
+    },
+    {
+        "city": "Viljandimaa",
+        "area_code": "43",
+        "dialing_code": "+372 43"
+    },
+    {
+        "city": "Vyrumaa",
+        "area_code": "78",
+        "dialing_code": "+372 78"
+    },
+    {
+        "city": "Výrumaa",
+        "area_code": "78",
+        "dialing_code": "+372 78"
+    }
+]

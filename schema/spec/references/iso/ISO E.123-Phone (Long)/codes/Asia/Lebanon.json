@@ -1,0 +1,52 @@
+[
+    {
+        "city": "Antelias",
+        "area_code": "4",
+        "dialing_code": "+961 4"
+    },
+    {
+        "city": "Baabda",
+        "area_code": "5",
+        "dialing_code": "+961 5"
+    },
+    {
+        "city": "Beirut",
+        "area_code": "1",
+        "dialing_code": "+961 1"
+    },
+    {
+        "city": "Jezine",
+        "area_code": "7",
+        "dialing_code": "+961 7"
+    },
+    {
+        "city": "Jounieh",
+        "area_code": "9",
+        "dialing_code": "+961 9"
+    },
+    {
+        "city": "Mobile Phones - Cellis",
+        "area_code": "3, 70",
+        "dialing_code": "+961 3, 70"
+    },
+    {
+        "city": "Mobile Phones - LibanCell",
+        "area_code": "3, 70",
+        "dialing_code": "+961 3, 70"
+    },
+    {
+        "city": "Saida",
+        "area_code": "7",
+        "dialing_code": "+961 7"
+    },
+    {
+        "city": "Tripoli",
+        "area_code": "6",
+        "dialing_code": "+961 6"
+    },
+    {
+        "city": "Zahle",
+        "area_code": "8",
+        "dialing_code": "+961 8"
+    }
+]

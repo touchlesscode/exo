@@ -1,0 +1,314 @@
+[
+    {
+        "state_capital": "Montgomery",
+        "area_code": "334",
+        "dialing_code": "+1 334",
+        "state": "Alabama"
+    },
+    {
+        "state_capital": "Juneau",
+        "area_code": "907",
+        "dialing_code": "+1 907",
+        "state": "Alaska"
+    },
+    {
+        "state_capital": "Phoenix",
+        "area_code": "602",
+        "dialing_code": "+1 602",
+        "state": "Arizona"
+    },
+    {
+        "state_capital": "Little Rock",
+        "area_code": "501",
+        "dialing_code": "+1 501",
+        "state": "Arkansas"
+    },
+    {
+        "state_capital": "Sacramento",
+        "area_code": "916",
+        "dialing_code": "+1 916",
+        "state": "California"
+    },
+    {
+        "state_capital": "Denver",
+        "area_code": "303",
+        "dialing_code": "+1 303",
+        "state": "Colorado"
+    },
+    {
+        "state_capital": "Hartford",
+        "area_code": "860",
+        "dialing_code": "+1 860",
+        "state": "Connecticut"
+    },
+    {
+        "state_capital": "Dover",
+        "area_code": "302",
+        "dialing_code": "+1 302",
+        "state": "Delaware"
+    },
+    {
+        "state_capital": "Washington",
+        "area_code": "202",
+        "dialing_code": "+1 202",
+        "state": "District of Columbia"
+    },
+    {
+        "state_capital": "Tallahassee",
+        "area_code": "850",
+        "dialing_code": "+1 850",
+        "state": "Florida"
+    },
+    {
+        "state_capital": "Atlanta",
+        "area_code": "404",
+        "dialing_code": "+1 404",
+        "state": "Georgia"
+    },
+    {
+        "state_capital": "Honolulu",
+        "area_code": "808",
+        "dialing_code": "+1 808",
+        "state": "Hawaii"
+    },
+    {
+        "state_capital": "Boise",
+        "area_code": "208",
+        "dialing_code": "+1 208",
+        "state": "Idaho"
+    },
+    {
+        "state_capital": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417",
+        "state": "Illinois"
+    },
+    {
+        "state_capital": "Indianapolis",
+        "area_code": "317",
+        "dialing_code": "+1 317",
+        "state": "Indiana"
+    },
+    {
+        "state_capital": "Des Moines",
+        "area_code": "515",
+        "dialing_code": "+1 515",
+        "state": "Iowa"
+    },
+    {
+        "state_capital": "Topeka",
+        "area_code": "785",
+        "dialing_code": "+1 785",
+        "state": "Kansas"
+    },
+    {
+        "state_capital": "Frankfort",
+        "area_code": "502",
+        "dialing_code": "+1 502",
+        "state": "Kentucky"
+    },
+    {
+        "state_capital": "Baton Rouge",
+        "area_code": "225",
+        "dialing_code": "+1 225",
+        "state": "Louisiana"
+    },
+    {
+        "state_capital": "Augusta",
+        "area_code": "207",
+        "dialing_code": "+1 207",
+        "state": "Maine"
+    },
+    {
+        "state_capital": "Annapolis",
+        "area_code": "410",
+        "dialing_code": "+1 410",
+        "state": "Maryland"
+    },
+    {
+        "state_capital": "Boston",
+        "area_code": "617",
+        "dialing_code": "+1 617",
+        "state": "Massachusetts"
+    },
+    {
+        "state_capital": "Lansing",
+        "area_code": "517",
+        "dialing_code": "+1 517",
+        "state": "Michigan"
+    },
+    {
+        "state_capital": "Saint Paul",
+        "area_code": "651",
+        "dialing_code": "+1 651",
+        "state": "Minnesota"
+    },
+    {
+        "state_capital": "Jackson",
+        "area_code": "601",
+        "dialing_code": "+1 601",
+        "state": "Mississippi"
+    },
+    {
+        "state_capital": "Jefferson City",
+        "area_code": "573",
+        "dialing_code": "+1 573",
+        "state": "Missouri"
+    },
+    {
+        "state_capital": "Helena",
+        "area_code": "406",
+        "dialing_code": "+1 406",
+        "state": "Montana"
+    },
+    {
+        "state_capital": "Lincoln",
+        "area_code": "402",
+        "dialing_code": "+1 402",
+        "state": "Nebraska"
+    },
+    {
+        "state_capital": "Carson City",
+        "area_code": "775",
+        "dialing_code": "+1 775",
+        "state": "Nevada"
+    },
+    {
+        "state_capital": "Concord",
+        "area_code": "603",
+        "dialing_code": "+1 603",
+        "state": "New Hampshire"
+    },
+    {
+        "state_capital": "Trenton",
+        "area_code": "609",
+        "dialing_code": "+1 609",
+        "state": "New Jersey"
+    },
+    {
+        "state_capital": "Santa Fe",
+        "area_code": "505",
+        "dialing_code": "+1 505",
+        "state": "New Mexico"
+    },
+    {
+        "state_capital": "Albany",
+        "area_code": "518",
+        "dialing_code": "+1 518",
+        "state": "New York"
+    },
+    {
+        "state_capital": "Raleigh",
+        "area_code": "919",
+        "dialing_code": "+1 919",
+        "state": "North Carolina"
+    },
+    {
+        "state_capital": "Bismarck",
+        "area_code": "701",
+        "dialing_code": "+1 701",
+        "state": "North Dakota"
+    },
+    {
+        "state_capital": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614",
+        "state": "Ohio"
+    },
+    {
+        "state_capital": "Oklahoma City",
+        "area_code": "405",
+        "dialing_code": "+1 405",
+        "state": "Oklahoma"
+    },
+    {
+        "state_capital": "Salem",
+        "area_code": "503",
+        "dialing_code": "+1 503",
+        "state": "Oregon"
+    },
+    {
+        "state_capital": "Harrisburg",
+        "area_code": "717",
+        "dialing_code": "+1 717",
+        "state": "Pennsylvania"
+    },
+    {
+        "state_capital": "San Juan",
+        "area_code": "787",
+        "dialing_code": "+1 787",
+        "state": "Puerto Rico"
+    },
+    {
+        "state_capital": "Providence",
+        "area_code": "401",
+        "dialing_code": "+1 401",
+        "state": "Rhode Island"
+    },
+    {
+        "state_capital": "Columbia",
+        "area_code": "803",
+        "dialing_code": "+1 803",
+        "state": "South Carolina"
+    },
+    {
+        "state_capital": "Pierre",
+        "area_code": "605",
+        "dialing_code": "+1 605",
+        "state": "South Dakota"
+    },
+    {
+        "state_capital": "Nashville",
+        "area_code": "615",
+        "dialing_code": "+1 615",
+        "state": "Tennessee"
+    },
+    {
+        "state_capital": "Austin",
+        "area_code": "512",
+        "dialing_code": "+1 512",
+        "state": "Texas"
+    },
+    {
+        "state_capital": "Salt Lake City",
+        "area_code": "385",
+        "dialing_code": "+1 385",
+        "state": "Utah"
+    },
+    {
+        "state_capital": "Montpelier",
+        "area_code": "802",
+        "dialing_code": "+1 802",
+        "state": "Vermont"
+    },
+    {
+        "state_capital": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604",
+        "state": "Virginia"
+    },
+    {
+        "state_capital": "Olympia",
+        "area_code": "360",
+        "dialing_code": "+1 360",
+        "state": "Washington"
+    },
+    {
+        "state_capital": "Charleston",
+        "area_code": "843",
+        "dialing_code": "+1 843",
+        "state": "West Virginia"
+    },
+    {
+        "state_capital": "Madison",
+        "area_code": "608",
+        "dialing_code": "+1 608",
+        "state": "Wisconsin"
+    },
+    {
+        "state_capital": "Cheyenne",
+        "area_code": "307",
+        "dialing_code": "+1 307",
+        "state": "Wyoming"
+    }
+]

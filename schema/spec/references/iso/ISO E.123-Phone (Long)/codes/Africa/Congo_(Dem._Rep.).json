@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Bas-Congo, Bandundu",
+        "area_code": "3",
+        "dialing_code": "+243 3"
+    },
+    {
+        "city": "Kasai-Oriental",
+        "area_code": "4",
+        "dialing_code": "+243 4"
+    },
+    {
+        "city": "Katanga",
+        "area_code": "2",
+        "dialing_code": "+243 2"
+    },
+    {
+        "city": "Kinshasa",
+        "area_code": "1",
+        "dialing_code": "+243 1"
+    },
+    {
+        "city": "Nord-Kivu, Sud-Kivu, Maniema",
+        "area_code": "6",
+        "dialing_code": "+243 6"
+    },
+    {
+        "city": "Province Orientale (Kisanga; M",
+        "area_code": "5",
+        "dialing_code": "+243 5"
+    }
+]

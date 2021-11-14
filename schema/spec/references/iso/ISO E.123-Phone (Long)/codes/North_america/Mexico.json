@@ -1,0 +1,322 @@
+[
+    {
+        "city": "Acapulco",
+        "area_code": "744",
+        "dialing_code": "+52 744"
+    },
+    {
+        "city": "Aguascalientes",
+        "area_code": "449",
+        "dialing_code": "+52 449"
+    },
+    {
+        "city": "Apizaco",
+        "area_code": "241",
+        "dialing_code": "+52 241"
+    },
+    {
+        "city": "Cabo San Lucas",
+        "area_code": "624",
+        "dialing_code": "+52 624"
+    },
+    {
+        "city": "Campeche",
+        "area_code": "981",
+        "dialing_code": "+52 981"
+    },
+    {
+        "city": "Cancun",
+        "area_code": "998",
+        "dialing_code": "+52 998"
+    },
+    {
+        "city": "Cancún",
+        "area_code": "998",
+        "dialing_code": "+52 998"
+    },
+    {
+        "city": "Celaya",
+        "area_code": "461",
+        "dialing_code": "+52 461"
+    },
+    {
+        "city": "Chihuahua",
+        "area_code": "614",
+        "dialing_code": "+52 614"
+    },
+    {
+        "city": "Chuuk",
+        "area_code": "330",
+        "dialing_code": "+52 330"
+    },
+    {
+        "city": "Ciudad Juarez",
+        "area_code": "656",
+        "dialing_code": "+52 656"
+    },
+    {
+        "city": "Ciudad Juárez",
+        "area_code": "656",
+        "dialing_code": "+52 656"
+    },
+    {
+        "city": "Ciudad del Carmen",
+        "area_code": "938",
+        "dialing_code": "+52 938"
+    },
+    {
+        "city": "Cozumel",
+        "area_code": "987",
+        "dialing_code": "+52 987"
+    },
+    {
+        "city": "Cuernavaca",
+        "area_code": "777",
+        "dialing_code": "+52 777"
+    },
+    {
+        "city": "Culiacan",
+        "area_code": "667",
+        "dialing_code": "+52 667"
+    },
+    {
+        "city": "Culiacán",
+        "area_code": "667",
+        "dialing_code": "+52 667"
+    },
+    {
+        "city": "Durango",
+        "area_code": "618",
+        "dialing_code": "+52 618"
+    },
+    {
+        "city": "Ensenada",
+        "area_code": "646",
+        "dialing_code": "+52 646"
+    },
+    {
+        "city": "Guadalajara",
+        "area_code": "33",
+        "dialing_code": "+52 33"
+    },
+    {
+        "city": "Hermosillo",
+        "area_code": "662",
+        "dialing_code": "+52 662"
+    },
+    {
+        "city": "Irapuato",
+        "area_code": "462",
+        "dialing_code": "+52 462"
+    },
+    {
+        "city": "Ixtapa",
+        "area_code": "961",
+        "dialing_code": "+52 961"
+    },
+    {
+        "city": "Jalapa",
+        "area_code": "932",
+        "dialing_code": "+52 932"
+    },
+    {
+        "city": "Jalapa Enriquez",
+        "area_code": "932",
+        "dialing_code": "+52 932"
+    },
+    {
+        "city": "Jalapa Enríquez",
+        "area_code": "932",
+        "dialing_code": "+52 932"
+    },
+    {
+        "city": "Juchita",
+        "area_code": "971",
+        "dialing_code": "+52 971"
+    },
+    {
+        "city": "Juchitan",
+        "area_code": "971",
+        "dialing_code": "+52 971"
+    },
+    {
+        "city": "Juchitán",
+        "area_code": "971",
+        "dialing_code": "+52 971"
+    },
+    {
+        "city": "Kosrae",
+        "area_code": "370",
+        "dialing_code": "+52 370"
+    },
+    {
+        "city": "Leon",
+        "area_code": "477",
+        "dialing_code": "+52 477"
+    },
+    {
+        "city": "León",
+        "area_code": "477",
+        "dialing_code": "+52 477"
+    },
+    {
+        "city": "Los Mochis",
+        "area_code": "668",
+        "dialing_code": "+52 668"
+    },
+    {
+        "city": "Matamoros",
+        "area_code": "871",
+        "dialing_code": "+52 871"
+    },
+    {
+        "city": "Mazatlan",
+        "area_code": "669",
+        "dialing_code": "+52 669"
+    },
+    {
+        "city": "Mazatlán",
+        "area_code": "669",
+        "dialing_code": "+52 669"
+    },
+    {
+        "city": "Merida",
+        "area_code": "999",
+        "dialing_code": "+52 999"
+    },
+    {
+        "city": "Mexicali",
+        "area_code": "686",
+        "dialing_code": "+52 686"
+    },
+    {
+        "city": "Mexico City",
+        "area_code": "55",
+        "dialing_code": "+52 55"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "1",
+        "dialing_code": "+52 1"
+    },
+    {
+        "city": "Monterrey",
+        "area_code": "81",
+        "dialing_code": "+52 81"
+    },
+    {
+        "city": "Morelia",
+        "area_code": "443",
+        "dialing_code": "+52 443"
+    },
+    {
+        "city": "Mérida",
+        "area_code": "999",
+        "dialing_code": "+52 999"
+    },
+    {
+        "city": "Nogales",
+        "area_code": "631",
+        "dialing_code": "+52 631"
+    },
+    {
+        "city": "Nuevo Laredo",
+        "area_code": "867",
+        "dialing_code": "+52 867"
+    },
+    {
+        "city": "Oaxaca de Juarez",
+        "area_code": "951",
+        "dialing_code": "+52 951"
+    },
+    {
+        "city": "Oaxaca de Juárez",
+        "area_code": "951",
+        "dialing_code": "+52 951"
+    },
+    {
+        "city": "Playa del Carmen",
+        "area_code": "984",
+        "dialing_code": "+52 984"
+    },
+    {
+        "city": "Pohnpei",
+        "area_code": "320",
+        "dialing_code": "+52 320"
+    },
+    {
+        "city": "Progreso",
+        "area_code": "861",
+        "dialing_code": "+52 861"
+    },
+    {
+        "city": "Puebla",
+        "area_code": "222",
+        "dialing_code": "+52 222"
+    },
+    {
+        "city": "Puerto Vallarta",
+        "area_code": "322",
+        "dialing_code": "+52 322"
+    },
+    {
+        "city": "Reynosa",
+        "area_code": "899",
+        "dialing_code": "+52 899"
+    },
+    {
+        "city": "Saltillo",
+        "area_code": "844",
+        "dialing_code": "+52 844"
+    },
+    {
+        "city": "San Luis Potosi",
+        "area_code": "444",
+        "dialing_code": "+52 444"
+    },
+    {
+        "city": "San Luis Potosí",
+        "area_code": "444",
+        "dialing_code": "+52 444"
+    },
+    {
+        "city": "Tampico",
+        "area_code": "833",
+        "dialing_code": "+52 833"
+    },
+    {
+        "city": "Tijuana",
+        "area_code": "664",
+        "dialing_code": "+52 664"
+    },
+    {
+        "city": "Toluca",
+        "area_code": "815",
+        "dialing_code": "+52 815"
+    },
+    {
+        "city": "Torreon",
+        "area_code": "871",
+        "dialing_code": "+52 871"
+    },
+    {
+        "city": "Torreón",
+        "area_code": "871",
+        "dialing_code": "+52 871"
+    },
+    {
+        "city": "Veracruz",
+        "area_code": "229",
+        "dialing_code": "+52 229"
+    },
+    {
+        "city": "Villahermosa",
+        "area_code": "993",
+        "dialing_code": "+52 993"
+    },
+    {
+        "city": "Yap",
+        "area_code": "350",
+        "dialing_code": "+52 350"
+    }
+]

@@ -1,0 +1,62 @@
+[
+    {
+        "city": "Andijan",
+        "area_code": "74",
+        "dialing_code": "+998 74"
+    },
+    {
+        "city": "Bukara",
+        "area_code": "65",
+        "dialing_code": "+998 65"
+    },
+    {
+        "city": "Bukhara",
+        "area_code": "65",
+        "dialing_code": "+998 65"
+    },
+    {
+        "city": "Djizak",
+        "area_code": "72",
+        "dialing_code": "+998 72"
+    },
+    {
+        "city": "Ferghana",
+        "area_code": "73",
+        "dialing_code": "+998 73"
+    },
+    {
+        "city": "Karakalpakia",
+        "area_code": "61",
+        "dialing_code": "+998 61"
+    },
+    {
+        "city": "Kashkadaria",
+        "area_code": "75",
+        "dialing_code": "+998 75"
+    },
+    {
+        "city": "Khorezm",
+        "area_code": "62",
+        "dialing_code": "+998 62"
+    },
+    {
+        "city": "Samarkand",
+        "area_code": "66",
+        "dialing_code": "+998 66"
+    },
+    {
+        "city": "Surkhandaria",
+        "area_code": "76",
+        "dialing_code": "+998 76"
+    },
+    {
+        "city": "Syrdariya",
+        "area_code": "67",
+        "dialing_code": "+998 67"
+    },
+    {
+        "city": "Tashkent",
+        "area_code": "71",
+        "dialing_code": "+998 71"
+    }
+]

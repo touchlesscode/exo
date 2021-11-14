@@ -1,0 +1,87 @@
+[
+    {
+        "city": "Alexandria",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Baton Rouge",
+        "area_code": "225",
+        "dialing_code": "+1 225"
+    },
+    {
+        "city": "Bossier City",
+        "area_code": "318",
+        "dialing_code": "+1 318"
+    },
+    {
+        "city": "Chalmette",
+        "area_code": "504",
+        "dialing_code": "+1 504"
+    },
+    {
+        "city": "Hammond",
+        "area_code": "985",
+        "dialing_code": "+1 985"
+    },
+    {
+        "city": "Houma",
+        "area_code": "985",
+        "dialing_code": "+1 985"
+    },
+    {
+        "city": "Kenner",
+        "area_code": "504",
+        "dialing_code": "+1 504"
+    },
+    {
+        "city": "LaPlace",
+        "area_code": "985",
+        "dialing_code": "+1 985"
+    },
+    {
+        "city": "Lafayette",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    },
+    {
+        "city": "Lake Charles",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    },
+    {
+        "city": "Metairie",
+        "area_code": "504",
+        "dialing_code": "+1 504"
+    },
+    {
+        "city": "Monroe",
+        "area_code": "318",
+        "dialing_code": "+1 318"
+    },
+    {
+        "city": "New Orleans",
+        "area_code": "504",
+        "dialing_code": "+1 504"
+    },
+    {
+        "city": "Opelousas",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    },
+    {
+        "city": "Shreveport",
+        "area_code": "318",
+        "dialing_code": "+1 318"
+    },
+    {
+        "city": "Slidell",
+        "area_code": "985",
+        "dialing_code": "+1 985"
+    },
+    {
+        "city": "Sulphur",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    }
+]

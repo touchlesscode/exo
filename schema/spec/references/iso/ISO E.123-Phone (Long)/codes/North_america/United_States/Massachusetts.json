@@ -1,0 +1,287 @@
+[
+    {
+        "city": "Arlington",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Attleboro",
+        "area_code": "774",
+        "dialing_code": "+1 774"
+    },
+    {
+        "city": "Belmont",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Beverly",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Boston",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Braintree",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Brockton",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Brookline",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Burlington",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Cambridge",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Chelsea",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Chicopee",
+        "area_code": "413",
+        "dialing_code": "+1 413"
+    },
+    {
+        "city": "Danvers",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Dedham",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Everett",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Fall River",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Fitchburg",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Framingham",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Franklin",
+        "area_code": "774",
+        "dialing_code": "+1 774"
+    },
+    {
+        "city": "Gloucester",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Haverhill",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Holyoke",
+        "area_code": "413",
+        "dialing_code": "+1 413"
+    },
+    {
+        "city": "Lawrence",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Leominster",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Lexington",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Lowell",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Lynn",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Malden",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Medford",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Melrose",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Milford",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Milton",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Needham",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "New Bedford",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Newton",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Northampton",
+        "area_code": "413",
+        "dialing_code": "+1 413"
+    },
+    {
+        "city": "Norwood",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Peabody",
+        "area_code": "978",
+        "dialing_code": "+1 978"
+    },
+    {
+        "city": "Pittsfield",
+        "area_code": "413",
+        "dialing_code": "+1 413"
+    },
+    {
+        "city": "Quincy",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Randolph",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Reading",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Revere",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Salem",
+        "area_code": "503",
+        "dialing_code": "+1 503"
+    },
+    {
+        "city": "Saugus",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Somerville",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Taunton",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    },
+    {
+        "city": "Wakefield",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Waltham",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Watertown",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Wellesley",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Westfield",
+        "area_code": "413",
+        "dialing_code": "+1 413"
+    },
+    {
+        "city": "Weymouth",
+        "area_code": "617",
+        "dialing_code": "+1 617"
+    },
+    {
+        "city": "Winthrop",
+        "area_code": "857",
+        "dialing_code": "+1 857"
+    },
+    {
+        "city": "Woburn",
+        "area_code": "781",
+        "dialing_code": "+1 781"
+    },
+    {
+        "city": "Worcester",
+        "area_code": "508",
+        "dialing_code": "+1 508"
+    }
+]

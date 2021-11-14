@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Chingola",
+        "area_code": "2",
+        "dialing_code": "+260 2"
+    },
+    {
+        "city": "Kitwe",
+        "area_code": "2",
+        "dialing_code": "+260 2"
+    },
+    {
+        "city": "Luanshya",
+        "area_code": "2",
+        "dialing_code": "+260 2"
+    },
+    {
+        "city": "Lusaka",
+        "area_code": "1",
+        "dialing_code": "+260 1"
+    },
+    {
+        "city": "Ndola",
+        "area_code": "2",
+        "dialing_code": "+260 2"
+    }
+]

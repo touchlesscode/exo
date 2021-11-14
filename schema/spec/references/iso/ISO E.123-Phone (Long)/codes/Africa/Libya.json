@@ -1,0 +1,497 @@
+[
+    {
+        "city": "Abengawad",
+        "area_code": "553",
+        "dialing_code": "+218 553"
+    },
+    {
+        "city": "Abu Issa",
+        "area_code": "274",
+        "dialing_code": "+218 274"
+    },
+    {
+        "city": "Abuhadi",
+        "area_code": "551",
+        "dialing_code": "+218 551"
+    },
+    {
+        "city": "Agelat",
+        "area_code": "282",
+        "dialing_code": "+218 282"
+    },
+    {
+        "city": "Ajailat",
+        "area_code": "282",
+        "dialing_code": "+218 282"
+    },
+    {
+        "city": "Al Josh",
+        "area_code": "454",
+        "dialing_code": "+218 454"
+    },
+    {
+        "city": "Azizia",
+        "area_code": "272",
+        "dialing_code": "+218 272"
+    },
+    {
+        "city": "Bani Walid",
+        "area_code": "322",
+        "dialing_code": "+218 322"
+    },
+    {
+        "city": "Ben Gashir",
+        "area_code": "22",
+        "dialing_code": "+218 22"
+    },
+    {
+        "city": "Benghazi",
+        "area_code": "61",
+        "dialing_code": "+218 61"
+    },
+    {
+        "city": "Benina",
+        "area_code": "63",
+        "dialing_code": "+218 63"
+    },
+    {
+        "city": "Bergen",
+        "area_code": "732",
+        "dialing_code": "+218 732"
+    },
+    {
+        "city": "Bisher",
+        "area_code": "655",
+        "dialing_code": "+218 655"
+    },
+    {
+        "city": "Brak",
+        "area_code": "721",
+        "dialing_code": "+218 721"
+    },
+    {
+        "city": "Bugrain",
+        "area_code": "529",
+        "dialing_code": "+218 529"
+    },
+    {
+        "city": "Buzayan",
+        "area_code": "425",
+        "dialing_code": "+218 425"
+    },
+    {
+        "city": "Dafnia",
+        "area_code": "523",
+        "dialing_code": "+218 523"
+    },
+    {
+        "city": "Deriana",
+        "area_code": "625",
+        "dialing_code": "+218 625"
+    },
+    {
+        "city": "Derna",
+        "area_code": "81",
+        "dialing_code": "+218 81"
+    },
+    {
+        "city": "Edry",
+        "area_code": "723",
+        "dialing_code": "+218 723"
+    },
+    {
+        "city": "El Beida",
+        "area_code": "84",
+        "dialing_code": "+218 84"
+    },
+    {
+        "city": "Elbayada",
+        "area_code": "684",
+        "dialing_code": "+218 684"
+    },
+    {
+        "city": "Elkuwaifia",
+        "area_code": "624",
+        "dialing_code": "+218 624"
+    },
+    {
+        "city": "Elmagrun",
+        "area_code": "629",
+        "dialing_code": "+218 629"
+    },
+    {
+        "city": "Elmareg",
+        "area_code": "67",
+        "dialing_code": "+218 67"
+    },
+    {
+        "city": "Elmaya",
+        "area_code": "279",
+        "dialing_code": "+218 279"
+    },
+    {
+        "city": "Ezzaonia",
+        "area_code": "23",
+        "dialing_code": "+218 23"
+    },
+    {
+        "city": "Garda",
+        "area_code": "733",
+        "dialing_code": "+218 733"
+    },
+    {
+        "city": "Garian",
+        "area_code": "41",
+        "dialing_code": "+218 41"
+    },
+    {
+        "city": "Ghadames",
+        "area_code": "484",
+        "dialing_code": "+218 484"
+    },
+    {
+        "city": "Ghat",
+        "area_code": "724",
+        "dialing_code": "+218 724"
+    },
+    {
+        "city": "Ghrefa",
+        "area_code": "729",
+        "dialing_code": "+218 729"
+    },
+    {
+        "city": "Gmines",
+        "area_code": "623",
+        "dialing_code": "+218 623"
+    },
+    {
+        "city": "Guassem",
+        "area_code": "423",
+        "dialing_code": "+218 423"
+    },
+    {
+        "city": "Gubba",
+        "area_code": "821",
+        "dialing_code": "+218 821"
+    },
+    {
+        "city": "Haraua",
+        "area_code": "82",
+        "dialing_code": "+218 82"
+    },
+    {
+        "city": "Hashan",
+        "area_code": "271",
+        "dialing_code": "+218 271"
+    },
+    {
+        "city": "Hugialin",
+        "area_code": "284",
+        "dialing_code": "+218 284"
+    },
+    {
+        "city": "Hun",
+        "area_code": "57",
+        "dialing_code": "+218 57"
+    },
+    {
+        "city": "Jaghbub",
+        "area_code": "884",
+        "dialing_code": "+218 884"
+    },
+    {
+        "city": "Jalo",
+        "area_code": "657",
+        "dialing_code": "+218 657"
+    },
+    {
+        "city": "Jardas",
+        "area_code": "682",
+        "dialing_code": "+218 682"
+    },
+    {
+        "city": "Jerdina",
+        "area_code": "627",
+        "dialing_code": "+218 627"
+    },
+    {
+        "city": "Jmail",
+        "area_code": "281",
+        "dialing_code": "+218 281"
+    },
+    {
+        "city": "Kaalifa",
+        "area_code": "626",
+        "dialing_code": "+218 626"
+    },
+    {
+        "city": "Kabaw",
+        "area_code": "481",
+        "dialing_code": "+218 481"
+    },
+    {
+        "city": "Kasarahmad",
+        "area_code": "524",
+        "dialing_code": "+218 524"
+    },
+    {
+        "city": "Khums",
+        "area_code": "31",
+        "dialing_code": "+218 31"
+    },
+    {
+        "city": "Kikla",
+        "area_code": "427",
+        "dialing_code": "+218 427"
+    },
+    {
+        "city": "Kofra",
+        "area_code": "652",
+        "dialing_code": "+218 652"
+    },
+    {
+        "city": "Kussabat",
+        "area_code": "326",
+        "dialing_code": "+218 326"
+    },
+    {
+        "city": "Mamura",
+        "area_code": "277",
+        "dialing_code": "+218 277"
+    },
+    {
+        "city": "Massa",
+        "area_code": "852",
+        "dialing_code": "+218 852"
+    },
+    {
+        "city": "Matred",
+        "area_code": "275",
+        "dialing_code": "+218 275"
+    },
+    {
+        "city": "Misratah",
+        "area_code": "51",
+        "dialing_code": "+218 51"
+    },
+    {
+        "city": "Misuratha",
+        "area_code": "51",
+        "dialing_code": "+218 51"
+    },
+    {
+        "city": "Mizda",
+        "area_code": "422",
+        "dialing_code": "+218 422"
+    },
+    {
+        "city": "Murzuk",
+        "area_code": "725",
+        "dialing_code": "+218 725"
+    },
+    {
+        "city": "Nalut",
+        "area_code": "47",
+        "dialing_code": "+218 47"
+    },
+    {
+        "city": "Noflia",
+        "area_code": "555",
+        "dialing_code": "+218 555"
+    },
+    {
+        "city": "Ojla",
+        "area_code": "653",
+        "dialing_code": "+218 653"
+    },
+    {
+        "city": "Reyana",
+        "area_code": "453",
+        "dialing_code": "+218 453"
+    },
+    {
+        "city": "Rujban",
+        "area_code": "452",
+        "dialing_code": "+218 452"
+    },
+    {
+        "city": "Sabratha",
+        "area_code": "24",
+        "dialing_code": "+218 24"
+    },
+    {
+        "city": "Sebha",
+        "area_code": "71",
+        "dialing_code": "+218 71"
+    },
+    {
+        "city": "Seluk",
+        "area_code": "628",
+        "dialing_code": "+218 628"
+    },
+    {
+        "city": "Shahat",
+        "area_code": "851",
+        "dialing_code": "+218 851"
+    },
+    {
+        "city": "Sidi Sultan Sultan",
+        "area_code": "654",
+        "dialing_code": "+218 654"
+    },
+    {
+        "city": "Sidiessaiah",
+        "area_code": "205",
+        "dialing_code": "+218 205"
+    },
+    {
+        "city": "Sirt",
+        "area_code": "54",
+        "dialing_code": "+218 54"
+    },
+    {
+        "city": "Slenta",
+        "area_code": "854",
+        "dialing_code": "+218 854"
+    },
+    {
+        "city": "Sokna",
+        "area_code": "582",
+        "dialing_code": "+218 582"
+    },
+    {
+        "city": "Soussa",
+        "area_code": "583",
+        "dialing_code": "+218 583"
+    },
+    {
+        "city": "Suk Elkhamis",
+        "area_code": "206",
+        "dialing_code": "+218 206"
+    },
+    {
+        "city": "Swajni",
+        "area_code": "224",
+        "dialing_code": "+218 224"
+    },
+    {
+        "city": "Taigura",
+        "area_code": "26",
+        "dialing_code": "+218 26"
+    },
+    {
+        "city": "Taknes",
+        "area_code": "683",
+        "dialing_code": "+218 683"
+    },
+    {
+        "city": "Tarhuna",
+        "area_code": "325",
+        "dialing_code": "+218 325"
+    },
+    {
+        "city": "Tawergha",
+        "area_code": "522",
+        "dialing_code": "+218 522"
+    },
+    {
+        "city": "Tigi",
+        "area_code": "482",
+        "dialing_code": "+218 482"
+    },
+    {
+        "city": "Tolmitha",
+        "area_code": "681",
+        "dialing_code": "+218 681"
+    },
+    {
+        "city": "Tomina",
+        "area_code": "685",
+        "dialing_code": "+218 685"
+    },
+    {
+        "city": "Traghen",
+        "area_code": "734",
+        "dialing_code": "+218 734"
+    },
+    {
+        "city": "Tripoli",
+        "area_code": "21",
+        "dialing_code": "+218 21"
+    },
+    {
+        "city": "Tripoli International Airport",
+        "area_code": "22",
+        "dialing_code": "+218 22"
+    },
+    {
+        "city": "Ubary",
+        "area_code": "73",
+        "dialing_code": "+218 73"
+    },
+    {
+        "city": "Um Laranib",
+        "area_code": "726",
+        "dialing_code": "+218 726"
+    },
+    {
+        "city": "Wadi Atba",
+        "area_code": "731",
+        "dialing_code": "+218 731"
+    },
+    {
+        "city": "Wadi Jeref",
+        "area_code": "554",
+        "dialing_code": "+218 554"
+    },
+    {
+        "city": "Wadi Keam",
+        "area_code": "323",
+        "dialing_code": "+218 323"
+    },
+    {
+        "city": "Wodan",
+        "area_code": "581",
+        "dialing_code": "+218 581"
+    },
+    {
+        "city": "Yefren",
+        "area_code": "421",
+        "dialing_code": "+218 421"
+    },
+    {
+        "city": "Zahra",
+        "area_code": "252",
+        "dialing_code": "+218 252"
+    },
+    {
+        "city": "Zawai",
+        "area_code": "23",
+        "dialing_code": "+218 23"
+    },
+    {
+        "city": "Zawaya",
+        "area_code": "727",
+        "dialing_code": "+218 727"
+    },
+    {
+        "city": "Zawyat Elmahjub",
+        "area_code": "526",
+        "dialing_code": "+218 526"
+    },
+    {
+        "city": "Zella",
+        "area_code": "584",
+        "dialing_code": "+218 584"
+    },
+    {
+        "city": "Zliten",
+        "area_code": "521",
+        "dialing_code": "+218 521"
+    },
+    {
+        "city": "Zuara",
+        "area_code": "25",
+        "dialing_code": "+218 25"
+    }
+]

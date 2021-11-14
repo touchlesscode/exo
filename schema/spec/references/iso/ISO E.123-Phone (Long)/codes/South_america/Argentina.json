@@ -1,0 +1,287 @@
+[
+    {
+        "city": "Bahia Blanca",
+        "area_code": "291",
+        "dialing_code": "+54 291"
+    },
+    {
+        "city": "Bahía Blanca",
+        "area_code": "291",
+        "dialing_code": "+54 291"
+    },
+    {
+        "city": "Buenos Aires",
+        "area_code": "11",
+        "dialing_code": "+54 11"
+    },
+    {
+        "city": "Catamarca",
+        "area_code": "3833",
+        "dialing_code": "+54 3833"
+    },
+    {
+        "city": "Comodoro Rivadavia",
+        "area_code": "297",
+        "dialing_code": "+54 297"
+    },
+    {
+        "city": "Concordia",
+        "area_code": "345",
+        "dialing_code": "+54 345"
+    },
+    {
+        "city": "Cordoba",
+        "area_code": "351",
+        "dialing_code": "+54 351"
+    },
+    {
+        "city": "Corrientes",
+        "area_code": "3783",
+        "dialing_code": "+54 3783"
+    },
+    {
+        "city": "Córdoba",
+        "area_code": "351",
+        "dialing_code": "+54 351"
+    },
+    {
+        "city": "Formosa",
+        "area_code": "3717",
+        "dialing_code": "+54 3717"
+    },
+    {
+        "city": "Jesus Maria",
+        "area_code": "3525",
+        "dialing_code": "+54 3525"
+    },
+    {
+        "city": "Jesús María",
+        "area_code": "3525",
+        "dialing_code": "+54 3525"
+    },
+    {
+        "city": "Junin",
+        "area_code": "2362",
+        "dialing_code": "+54 2362"
+    },
+    {
+        "city": "Junín",
+        "area_code": "2362",
+        "dialing_code": "+54 2362"
+    },
+    {
+        "city": "La Plata",
+        "area_code": "221",
+        "dialing_code": "+54 221"
+    },
+    {
+        "city": "La Rioja",
+        "area_code": "3822",
+        "dialing_code": "+54 3822"
+    },
+    {
+        "city": "Mar del Plata",
+        "area_code": "223",
+        "dialing_code": "+54 223"
+    },
+    {
+        "city": "Mendoza",
+        "area_code": "261",
+        "dialing_code": "+54 261"
+    },
+    {
+        "city": "Mercedes",
+        "area_code": "2324",
+        "dialing_code": "+54 2324"
+    },
+    {
+        "city": "Mercedes/Prov. B.A.",
+        "area_code": "2324",
+        "dialing_code": "+54 2324"
+    },
+    {
+        "city": "Neuquen",
+        "area_code": "299",
+        "dialing_code": "+54 299"
+    },
+    {
+        "city": "Neuquén",
+        "area_code": "299",
+        "dialing_code": "+54 299"
+    },
+    {
+        "city": "Parana",
+        "area_code": "343",
+        "dialing_code": "+54 343"
+    },
+    {
+        "city": "Paraná",
+        "area_code": "343",
+        "dialing_code": "+54 343"
+    },
+    {
+        "city": "Posadas",
+        "area_code": "3752",
+        "dialing_code": "+54 3752"
+    },
+    {
+        "city": "Resistencia",
+        "area_code": "3722",
+        "dialing_code": "+54 3722"
+    },
+    {
+        "city": "Rio Cuarto",
+        "area_code": "358",
+        "dialing_code": "+54 358"
+    },
+    {
+        "city": "Rio Gallegos",
+        "area_code": "2966",
+        "dialing_code": "+54 2966"
+    },
+    {
+        "city": "Rosario",
+        "area_code": "341",
+        "dialing_code": "+54 341"
+    },
+    {
+        "city": "Río Cuarto",
+        "area_code": "358",
+        "dialing_code": "+54 358"
+    },
+    {
+        "city": "Río Gallegos",
+        "area_code": "2966",
+        "dialing_code": "+54 2966"
+    },
+    {
+        "city": "Salta",
+        "area_code": "387",
+        "dialing_code": "+54 387"
+    },
+    {
+        "city": "San Francisco",
+        "area_code": "628",
+        "dialing_code": "+54 628"
+    },
+    {
+        "city": "San Juan",
+        "area_code": "264",
+        "dialing_code": "+54 264"
+    },
+    {
+        "city": "San Luis",
+        "area_code": "2652",
+        "dialing_code": "+54 2652"
+    },
+    {
+        "city": "San Martin",
+        "area_code": "408",
+        "dialing_code": "+54 408"
+    },
+    {
+        "city": "San Martín",
+        "area_code": "408",
+        "dialing_code": "+54 408"
+    },
+    {
+        "city": "San Nicolas",
+        "area_code": "3461",
+        "dialing_code": "+54 3461"
+    },
+    {
+        "city": "San Nicolas de los Arroyos",
+        "area_code": "3461",
+        "dialing_code": "+54 3461"
+    },
+    {
+        "city": "San Nicolás de los Arroyos",
+        "area_code": "3461",
+        "dialing_code": "+54 3461"
+    },
+    {
+        "city": "San Pedro",
+        "area_code": "424",
+        "dialing_code": "+54 424"
+    },
+    {
+        "city": "San Rafael",
+        "area_code": "2627",
+        "dialing_code": "+54 2627"
+    },
+    {
+        "city": "Santa Fe",
+        "area_code": "342",
+        "dialing_code": "+54 342"
+    },
+    {
+        "city": "Santa Rosa",
+        "area_code": "2954",
+        "dialing_code": "+54 2954"
+    },
+    {
+        "city": "Santiago del Estero",
+        "area_code": "385",
+        "dialing_code": "+54 385"
+    },
+    {
+        "city": "Santo Tome",
+        "area_code": "3756",
+        "dialing_code": "+54 3756"
+    },
+    {
+        "city": "Santo Tomé",
+        "area_code": "3756",
+        "dialing_code": "+54 3756"
+    },
+    {
+        "city": "Tandil",
+        "area_code": "2293",
+        "dialing_code": "+54 2293"
+    },
+    {
+        "city": "Trelew",
+        "area_code": "2965",
+        "dialing_code": "+54 2965"
+    },
+    {
+        "city": "Trelew/Rawson",
+        "area_code": "2965",
+        "dialing_code": "+54 2965"
+    },
+    {
+        "city": "Tucumyn",
+        "area_code": "381",
+        "dialing_code": "+54 381"
+    },
+    {
+        "city": "Tucumýn",
+        "area_code": "381",
+        "dialing_code": "+54 381"
+    },
+    {
+        "city": "Ushuaia",
+        "area_code": "2901",
+        "dialing_code": "+54 2901"
+    },
+    {
+        "city": "Viedma",
+        "area_code": "2920",
+        "dialing_code": "+54 2920"
+    },
+    {
+        "city": "Villa Maria",
+        "area_code": "531",
+        "dialing_code": "+54 531"
+    },
+    {
+        "city": "Zarate",
+        "area_code": "3487",
+        "dialing_code": "+54 3487"
+    },
+    {
+        "city": "Zárate",
+        "area_code": "3487",
+        "dialing_code": "+54 3487"
+    }
+]

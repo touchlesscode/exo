@@ -1,0 +1,162 @@
+[
+    {
+        "city": "Berovo",
+        "area_code": "33",
+        "dialing_code": "+389 33"
+    },
+    {
+        "city": "Bitola",
+        "area_code": "47",
+        "dialing_code": "+389 47"
+    },
+    {
+        "city": "Debar",
+        "area_code": "46",
+        "dialing_code": "+389 46"
+    },
+    {
+        "city": "Delchevo",
+        "area_code": "33",
+        "dialing_code": "+389 33"
+    },
+    {
+        "city": "Demir Hisar",
+        "area_code": "47",
+        "dialing_code": "+389 47"
+    },
+    {
+        "city": "Dojran",
+        "area_code": "34",
+        "dialing_code": "+389 34"
+    },
+    {
+        "city": "Gevgelija",
+        "area_code": "34",
+        "dialing_code": "+389 34"
+    },
+    {
+        "city": "Gostivar",
+        "area_code": "42",
+        "dialing_code": "+389 42"
+    },
+    {
+        "city": "Kavadarci",
+        "area_code": "43",
+        "dialing_code": "+389 43"
+    },
+    {
+        "city": "Kichevo",
+        "area_code": "45",
+        "dialing_code": "+389 45"
+    },
+    {
+        "city": "Kocani",
+        "area_code": "33",
+        "dialing_code": "+389 33"
+    },
+    {
+        "city": "Kratovo",
+        "area_code": "31",
+        "dialing_code": "+389 31"
+    },
+    {
+        "city": "Kriva Palanka",
+        "area_code": "31",
+        "dialing_code": "+389 31"
+    },
+    {
+        "city": "Krushevo",
+        "area_code": "48",
+        "dialing_code": "+389 48"
+    },
+    {
+        "city": "Kumanovo",
+        "area_code": "31",
+        "dialing_code": "+389 31"
+    },
+    {
+        "city": "Makedonski Brod",
+        "area_code": "48",
+        "dialing_code": "+389 48"
+    },
+    {
+        "city": "Negotino",
+        "area_code": "43",
+        "dialing_code": "+389 43"
+    },
+    {
+        "city": "Ohrid",
+        "area_code": "46",
+        "dialing_code": "+389 46"
+    },
+    {
+        "city": "Pehchevo",
+        "area_code": "33",
+        "dialing_code": "+389 33"
+    },
+    {
+        "city": "Prilep",
+        "area_code": "48",
+        "dialing_code": "+389 48"
+    },
+    {
+        "city": "Probistip",
+        "area_code": "32",
+        "dialing_code": "+389 32"
+    },
+    {
+        "city": "Radovish",
+        "area_code": "32",
+        "dialing_code": "+389 32"
+    },
+    {
+        "city": "Resen",
+        "area_code": "47",
+        "dialing_code": "+389 47"
+    },
+    {
+        "city": "Shtip",
+        "area_code": "32",
+        "dialing_code": "+389 32"
+    },
+    {
+        "city": "Skopje",
+        "area_code": "2",
+        "dialing_code": "+389 2"
+    },
+    {
+        "city": "Struga",
+        "area_code": "46",
+        "dialing_code": "+389 46"
+    },
+    {
+        "city": "Strumica",
+        "area_code": "34",
+        "dialing_code": "+389 34"
+    },
+    {
+        "city": "Sveti Nikole",
+        "area_code": "32",
+        "dialing_code": "+389 32"
+    },
+    {
+        "city": "Tetovo",
+        "area_code": "44",
+        "dialing_code": "+389 44"
+    },
+    {
+        "city": "Valandovo",
+        "area_code": "34",
+        "dialing_code": "+389 34"
+    },
+    {
+        "city": "Veles",
+        "area_code": "43",
+        "dialing_code": "+389 43"
+    },
+    {
+        "city": "Vinica",
+        "area_code": "33",
+        "dialing_code": "+389 33"
+    }
+]

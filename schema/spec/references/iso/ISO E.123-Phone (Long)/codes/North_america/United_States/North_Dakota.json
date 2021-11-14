@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Bismarck",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "Dickinson",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "Fargo",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "Grand Forks",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "Mandan",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "Minot",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    },
+    {
+        "city": "West Fargo",
+        "area_code": "701",
+        "dialing_code": "+1 701"
+    }
+]

@@ -1,0 +1,227 @@
+[
+    {
+        "city": "?ilina",
+        "area_code": "41",
+        "dialing_code": "+421 41"
+    },
+    {
+        "city": "Banska Bystrica",
+        "area_code": "48",
+        "dialing_code": "+421 48"
+    },
+    {
+        "city": "Bansky Bystrica",
+        "area_code": "48",
+        "dialing_code": "+421 48"
+    },
+    {
+        "city": "Banská Bystrica",
+        "area_code": "48",
+        "dialing_code": "+421 48"
+    },
+    {
+        "city": "Banský Bystrica",
+        "area_code": "48",
+        "dialing_code": "+421 48"
+    },
+    {
+        "city": "Bardejov",
+        "area_code": "54",
+        "dialing_code": "+421 54"
+    },
+    {
+        "city": "Bratislava",
+        "area_code": "2",
+        "dialing_code": "+421 2"
+    },
+    {
+        "city": "Dujanska Streda",
+        "area_code": "31",
+        "dialing_code": "+421 31"
+    },
+    {
+        "city": "Dujanská Streda",
+        "area_code": "31",
+        "dialing_code": "+421 31"
+    },
+    {
+        "city": "Dunajsky Streda",
+        "area_code": "31",
+        "dialing_code": "+421 31"
+    },
+    {
+        "city": "Dunajský Streda",
+        "area_code": "31",
+        "dialing_code": "+421 31"
+    },
+    {
+        "city": "Humenne",
+        "area_code": "57",
+        "dialing_code": "+421 57"
+    },
+    {
+        "city": "Humenny",
+        "area_code": "57",
+        "dialing_code": "+421 57"
+    },
+    {
+        "city": "Humenné",
+        "area_code": "57",
+        "dialing_code": "+421 57"
+    },
+    {
+        "city": "Humenný",
+        "area_code": "57",
+        "dialing_code": "+421 57"
+    },
+    {
+        "city": "Ko?ice",
+        "area_code": "55",
+        "dialing_code": "+421 55"
+    },
+    {
+        "city": "Kosice",
+        "area_code": "55",
+        "dialing_code": "+421 55"
+    },
+    {
+        "city": "Levice 36",
+        "area_code": "36",
+        "dialing_code": "+421 36"
+    },
+    {
+        "city": "Liptovsky Mikuly?",
+        "area_code": "44",
+        "dialing_code": "+421 44"
+    },
+    {
+        "city": "Liptovský Mikulý?",
+        "area_code": "44",
+        "dialing_code": "+421 44"
+    },
+    {
+        "city": "Lucenec",
+        "area_code": "47",
+        "dialing_code": "+421 47"
+    },
+    {
+        "city": "Martin",
+        "area_code": "43",
+        "dialing_code": "+421 43"
+    },
+    {
+        "city": "Michalovce",
+        "area_code": "56",
+        "dialing_code": "+421 56"
+    },
+    {
+        "city": "Nitra",
+        "area_code": "37",
+        "dialing_code": "+421 37"
+    },
+    {
+        "city": "Nove Zamky",
+        "area_code": "35",
+        "dialing_code": "+421 35"
+    },
+    {
+        "city": "Novy Zymky",
+        "area_code": "35",
+        "dialing_code": "+421 35"
+    },
+    {
+        "city": "Nové Zámky",
+        "area_code": "35",
+        "dialing_code": "+421 35"
+    },
+    {
+        "city": "Nový Zýmky",
+        "area_code": "35",
+        "dialing_code": "+421 35"
+    },
+    {
+        "city": "Poprad",
+        "area_code": "52",
+        "dialing_code": "+421 52"
+    },
+    {
+        "city": "Pova?sky Bystrica",
+        "area_code": "42",
+        "dialing_code": "+421 42"
+    },
+    {
+        "city": "Pova?ský Bystrica",
+        "area_code": "42",
+        "dialing_code": "+421 42"
+    },
+    {
+        "city": "Pre?ov",
+        "area_code": "51",
+        "dialing_code": "+421 51"
+    },
+    {
+        "city": "Prievidza",
+        "area_code": "46",
+        "dialing_code": "+421 46"
+    },
+    {
+        "city": "Ro?nava",
+        "area_code": "58",
+        "dialing_code": "+421 58"
+    },
+    {
+        "city": "Senec",
+        "area_code": "34",
+        "dialing_code": "+421 34"
+    },
+    {
+        "city": "Senica",
+        "area_code": "34",
+        "dialing_code": "+421 34"
+    },
+    {
+        "city": "Spi?sky Novy Ves",
+        "area_code": "53",
+        "dialing_code": "+421 53"
+    },
+    {
+        "city": "Spi?ský Nový Ves",
+        "area_code": "53",
+        "dialing_code": "+421 53"
+    },
+    {
+        "city": "Topol'cany",
+        "area_code": "38",
+        "dialing_code": "+421 38"
+    },
+    {
+        "city": "Trencin",
+        "area_code": "32",
+        "dialing_code": "+421 32"
+    },
+    {
+        "city": "Trencyn",
+        "area_code": "32",
+        "dialing_code": "+421 32"
+    },
+    {
+        "city": "Trencín",
+        "area_code": "32",
+        "dialing_code": "+421 32"
+    },
+    {
+        "city": "Trencýn",
+        "area_code": "32",
+        "dialing_code": "+421 32"
+    },
+    {
+        "city": "Trnava",
+        "area_code": "33",
+        "dialing_code": "+421 33"
+    },
+    {
+        "city": "Zvolen",
+        "area_code": "45",
+        "dialing_code": "+421 45"
+    }
+]

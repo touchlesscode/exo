@@ -1,0 +1,6 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "String related to issue in error. To accommodate variables, format the string using the syntax described in `java.util.Formatter`.",
+    "type": "string",
+    "format": "paypal_common_error_issue_v1"
+}

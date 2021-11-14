@@ -1,0 +1,727 @@
+[
+    {
+        "city": "Adra",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Al-Bab",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Al-Boukamal",
+        "area_code": "51",
+        "dialing_code": "+963 51"
+    },
+    {
+        "city": "Al-Daliyah",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Al-Dimas",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Fijeh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Hafa",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Al-Hameh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Hrak",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Al-Jalaa",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Kameshli",
+        "area_code": "53",
+        "dialing_code": "+963 53"
+    },
+    {
+        "city": "Al-Karyatein",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Kasaka",
+        "area_code": "52",
+        "dialing_code": "+963 52"
+    },
+    {
+        "city": "Al-Kessweh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Kurdahah",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Al-Kusseir",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Maara",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Al-Mauhatta",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Mayadin",
+        "area_code": "51",
+        "dialing_code": "+963 51"
+    },
+    {
+        "city": "Al-Midan",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Mokharam",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Naserah",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Nassr",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Rakkah",
+        "area_code": "22",
+        "dialing_code": "+963 22"
+    },
+    {
+        "city": "Al-Rastan",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Tel",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Thawra",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Al-Waar",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Al-Yarmook",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Aleppo",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Alhasakah",
+        "area_code": "52",
+        "dialing_code": "+963 52"
+    },
+    {
+        "city": "Amouda",
+        "area_code": "53",
+        "dialing_code": "+963 53"
+    },
+    {
+        "city": "Ansari",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Ariha",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Bab Charqui",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Baghdad",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Banias",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Barzeh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Basit",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Bebila",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Beit Yashoot",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Bloudan",
+        "area_code": "13",
+        "dialing_code": "+963 13"
+    },
+    {
+        "city": "Boussra",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Chik Badr",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Chik Meskin",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Citadel",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Cote d'Azur and Ras Al",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Cyte d'Azur and Ras Al-Basit",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Côte d'Azur and Ras Al",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Cýte d'Azur and Ras Al-Basit",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Daal",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Damascus",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Dana",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Dara",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Darayah",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Darayya",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Deir Athieh",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Deir Ezzor",
+        "area_code": "51",
+        "dialing_code": "+963 51"
+    },
+    {
+        "city": "Deir Ezzour",
+        "area_code": "51",
+        "dialing_code": "+963 51"
+    },
+    {
+        "city": "Derbasiah",
+        "area_code": "53",
+        "dialing_code": "+963 53"
+    },
+    {
+        "city": "Douma",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Doumeir",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Doummar",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Dreikish",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Edleb",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Efrin",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Ein Arab",
+        "area_code": "25",
+        "dialing_code": "+963 25"
+    },
+    {
+        "city": "Ein Hour",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Ghazalah",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Hama",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Hamadaniyah",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Hanano",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Harastah",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Harem",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Homs",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Izazz",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Izraa",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "J. Artouz",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Jamiliyah",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Jarabless",
+        "area_code": "25",
+        "dialing_code": "+963 25"
+    },
+    {
+        "city": "Jaramanah",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Jasem",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Jebleh",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Jerood",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Jesr Cheghour",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Kafar Sousseh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Kafar Takharin",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Kara",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Kasab",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Katana",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Khan Wazir",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Kuraya",
+        "area_code": "16",
+        "dialing_code": "+963 16"
+    },
+    {
+        "city": "Kuteifeh",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Kuwatly",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Lattakia",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Lattakiah",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Maaloula",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Maar Tamsareen",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Mahatta",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Malekiha",
+        "area_code": "53",
+        "dialing_code": "+963 53"
+    },
+    {
+        "city": "Mashta",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Matmyah",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Menbej",
+        "area_code": "25",
+        "dialing_code": "+963 25"
+    },
+    {
+        "city": "Messiaf",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Mezzeh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Mharda",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Mouhajerin",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Nashabieh",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Nebek",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Palmyra",
+        "area_code": "34",
+        "dialing_code": "+963 34"
+    },
+    {
+        "city": "Quneitra",
+        "area_code": "14",
+        "dialing_code": "+963 14"
+    },
+    {
+        "city": "Raas Al",
+        "area_code": "52",
+        "dialing_code": "+963 52"
+    },
+    {
+        "city": "Raas Al-Ein",
+        "area_code": "52",
+        "dialing_code": "+963 52"
+    },
+    {
+        "city": "Ruheibeh",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Rukn Edin",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Sabil",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Safirah",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Safita",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Salkhad",
+        "area_code": "16",
+        "dialing_code": "+963 16"
+    },
+    {
+        "city": "Salkin",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Sanamein",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Sarakeb",
+        "area_code": "23",
+        "dialing_code": "+963 23"
+    },
+    {
+        "city": "Sednaya",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Sehnayah",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    },
+    {
+        "city": "Shahbah",
+        "area_code": "16",
+        "dialing_code": "+963 16"
+    },
+    {
+        "city": "Sheen",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Skelbya and Madikk",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Sleimaniyah",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Sleinfah",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Souran and Kamhana",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Sweidaa",
+        "area_code": "16",
+        "dialing_code": "+963 16"
+    },
+    {
+        "city": "Tafass",
+        "area_code": "15",
+        "dialing_code": "+963 15"
+    },
+    {
+        "city": "Taldo",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Tartous",
+        "area_code": "43",
+        "dialing_code": "+963 43"
+    },
+    {
+        "city": "Tel",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Tel Abiad",
+        "area_code": "22",
+        "dialing_code": "+963 22"
+    },
+    {
+        "city": "Tel Refat",
+        "area_code": "21",
+        "dialing_code": "+963 21"
+    },
+    {
+        "city": "Tel Salhab",
+        "area_code": "33",
+        "dialing_code": "+963 33"
+    },
+    {
+        "city": "Tel-Kalakh",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Telbisseh",
+        "area_code": "31",
+        "dialing_code": "+963 31"
+    },
+    {
+        "city": "Tesshrin",
+        "area_code": "41",
+        "dialing_code": "+963 41"
+    },
+    {
+        "city": "Yabrood",
+        "area_code": "12",
+        "dialing_code": "+963 12"
+    },
+    {
+        "city": "Zabadani",
+        "area_code": "13",
+        "dialing_code": "+963 13"
+    },
+    {
+        "city": "Zamalkah",
+        "area_code": "11",
+        "dialing_code": "+963 11"
+    }
+]

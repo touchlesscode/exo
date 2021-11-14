@@ -1,0 +1,152 @@
+[
+    {
+        "city": "Bloomington",
+        "area_code": "812",
+        "dialing_code": "+1 812"
+    },
+    {
+        "city": "Carmel",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Clarksville",
+        "area_code": "931",
+        "dialing_code": "+1 931"
+    },
+    {
+        "city": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Crown Point",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "East Chicago",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Elkhart",
+        "area_code": "574",
+        "dialing_code": "+1 574"
+    },
+    {
+        "city": "Evansville",
+        "area_code": "812",
+        "dialing_code": "+1 812"
+    },
+    {
+        "city": "Fishers",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Fort Wayne",
+        "area_code": "260",
+        "dialing_code": "+1 260"
+    },
+    {
+        "city": "Franklin",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Gary",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Goshen",
+        "area_code": "574",
+        "dialing_code": "+1 574"
+    },
+    {
+        "city": "Greenwood",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Hammond",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Hobart",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Indianapolis",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Jeffersonville",
+        "area_code": "478",
+        "dialing_code": "+1 478"
+    },
+    {
+        "city": "Kokomo",
+        "area_code": "765",
+        "dialing_code": "+1 765"
+    },
+    {
+        "city": "Lafayette",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    },
+    {
+        "city": "Marion",
+        "area_code": "765",
+        "dialing_code": "+1 765"
+    },
+    {
+        "city": "Merrillville",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Michigan City",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Noblesville",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Plainfield",
+        "area_code": "317",
+        "dialing_code": "+1 317"
+    },
+    {
+        "city": "Portage",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "South Bend",
+        "area_code": "574",
+        "dialing_code": "+1 574"
+    },
+    {
+        "city": "Terre Haute",
+        "area_code": "812",
+        "dialing_code": "+1 812"
+    },
+    {
+        "city": "Valparaiso",
+        "area_code": "219",
+        "dialing_code": "+1 219"
+    }
+]

@@ -1,0 +1,677 @@
+[
+    {
+        "city": "Brest",
+        "area_code": "16",
+        "dialing_code": "+375 16"
+    },
+    {
+        "city": "Brest Oblast",
+        "area_code": "16",
+        "dialing_code": "+375 16"
+    },
+    {
+        "city": "Brest Oblast - Baranovichi",
+        "area_code": "163",
+        "dialing_code": "+375 163"
+    },
+    {
+        "city": "Brest Oblast - Bereza",
+        "area_code": "1643",
+        "dialing_code": "+375 1643"
+    },
+    {
+        "city": "Brest Oblast - Brest",
+        "area_code": "162",
+        "dialing_code": "+375 162"
+    },
+    {
+        "city": "Brest Oblast - Drogichin",
+        "area_code": "1644",
+        "dialing_code": "+375 1644"
+    },
+    {
+        "city": "Brest Oblast - Gancevichi",
+        "area_code": "1646",
+        "dialing_code": "+375 1646"
+    },
+    {
+        "city": "Brest Oblast - Ivanovo",
+        "area_code": "1652",
+        "dialing_code": "+375 1652"
+    },
+    {
+        "city": "Brest Oblast - Ivatsevichi",
+        "area_code": "1645",
+        "dialing_code": "+375 1645"
+    },
+    {
+        "city": "Brest Oblast - Kamenets",
+        "area_code": "1631",
+        "dialing_code": "+375 1631"
+    },
+    {
+        "city": "Brest Oblast - Kobrin",
+        "area_code": "1642",
+        "dialing_code": "+375 1642"
+    },
+    {
+        "city": "Brest Oblast - Luninets",
+        "area_code": "1647",
+        "dialing_code": "+375 1647"
+    },
+    {
+        "city": "Brest Oblast - Lyahovichi",
+        "area_code": "1633",
+        "dialing_code": "+375 1633"
+    },
+    {
+        "city": "Brest Oblast - Malorita",
+        "area_code": "1651",
+        "dialing_code": "+375 1651"
+    },
+    {
+        "city": "Brest Oblast - Pinsk",
+        "area_code": "165",
+        "dialing_code": "+375 165"
+    },
+    {
+        "city": "Brest Oblast - Pruzhanu",
+        "area_code": "1632",
+        "dialing_code": "+375 1632"
+    },
+    {
+        "city": "Brest Oblast - Stolin",
+        "area_code": "1655",
+        "dialing_code": "+375 1655"
+    },
+    {
+        "city": "Brest Oblast - Zhabinka",
+        "area_code": "1641",
+        "dialing_code": "+375 1641"
+    },
+    {
+        "city": "Gomel",
+        "area_code": "2322",
+        "dialing_code": "+375 2322"
+    },
+    {
+        "city": "Gomel Oblast - Bragin",
+        "area_code": "2344",
+        "dialing_code": "+375 2344"
+    },
+    {
+        "city": "Gomel Oblast - Buda-Koshelevo",
+        "area_code": "2336",
+        "dialing_code": "+375 2336"
+    },
+    {
+        "city": "Gomel Oblast - Chechersk",
+        "area_code": "2332",
+        "dialing_code": "+375 2332"
+    },
+    {
+        "city": "Gomel Oblast - Dobrush",
+        "area_code": "2333",
+        "dialing_code": "+375 2333"
+    },
+    {
+        "city": "Gomel Oblast - Elsk",
+        "area_code": "2354",
+        "dialing_code": "+375 2354"
+    },
+    {
+        "city": "Gomel Oblast - Gomel",
+        "area_code": "2322",
+        "dialing_code": "+375 2322"
+    },
+    {
+        "city": "Gomel Oblast - Hoyniki",
+        "area_code": "2346",
+        "dialing_code": "+375 2346"
+    },
+    {
+        "city": "Gomel Oblast - Kalinkovichi",
+        "area_code": "2345",
+        "dialing_code": "+375 2345"
+    },
+    {
+        "city": "Gomel Oblast - Korma",
+        "area_code": "2337",
+        "dialing_code": "+375 2337"
+    },
+    {
+        "city": "Gomel Oblast - Lelchitsu",
+        "area_code": "2356",
+        "dialing_code": "+375 2356"
+    },
+    {
+        "city": "Gomel Oblast - Loev",
+        "area_code": "2347",
+        "dialing_code": "+375 2347"
+    },
+    {
+        "city": "Gomel Oblast - Mozur",
+        "area_code": "2351",
+        "dialing_code": "+375 2351"
+    },
+    {
+        "city": "Gomel Oblast - Narovlya",
+        "area_code": "2355",
+        "dialing_code": "+375 2355"
+    },
+    {
+        "city": "Gomel Oblast - Oktyabrski",
+        "area_code": "2357",
+        "dialing_code": "+375 2357"
+    },
+    {
+        "city": "Gomel Oblast - Petrikov",
+        "area_code": "2350",
+        "dialing_code": "+375 2350"
+    },
+    {
+        "city": "Gomel Oblast - Rechitsa",
+        "area_code": "2340",
+        "dialing_code": "+375 2340"
+    },
+    {
+        "city": "Gomel Oblast - Rogachev",
+        "area_code": "2339",
+        "dialing_code": "+375 2339"
+    },
+    {
+        "city": "Gomel Oblast - Svetlogorsk",
+        "area_code": "2342",
+        "dialing_code": "+375 2342"
+    },
+    {
+        "city": "Gomel Oblast - Vetka",
+        "area_code": "2330",
+        "dialing_code": "+375 2330"
+    },
+    {
+        "city": "Gomel Oblast - Zhitkovichi",
+        "area_code": "2353",
+        "dialing_code": "+375 2353"
+    },
+    {
+        "city": "Gomel Oblast - Zhlobin",
+        "area_code": "2334",
+        "dialing_code": "+375 2334"
+    },
+    {
+        "city": "Grodno",
+        "area_code": "1511",
+        "dialing_code": "+375 1511"
+    },
+    {
+        "city": "Grodno Oblast - Berestovitsa",
+        "area_code": "1511",
+        "dialing_code": "+375 1511"
+    },
+    {
+        "city": "Grodno Oblast - Dyatlovo",
+        "area_code": "1563",
+        "dialing_code": "+375 1563"
+    },
+    {
+        "city": "Grodno Oblast - Grodno",
+        "area_code": "1522",
+        "dialing_code": "+375 1522"
+    },
+    {
+        "city": "Grodno Oblast - Ivye",
+        "area_code": "1595",
+        "dialing_code": "+375 1595"
+    },
+    {
+        "city": "Grodno Oblast - Korelichi",
+        "area_code": "1596",
+        "dialing_code": "+375 1596"
+    },
+    {
+        "city": "Grodno Oblast - Lida",
+        "area_code": "1561",
+        "dialing_code": "+375 1561"
+    },
+    {
+        "city": "Grodno Oblast - Mostu",
+        "area_code": "1515",
+        "dialing_code": "+375 1515"
+    },
+    {
+        "city": "Grodno Oblast - Nobogrudok",
+        "area_code": "1597",
+        "dialing_code": "+375 1597"
+    },
+    {
+        "city": "Grodno Oblast - Oshmyanu",
+        "area_code": "1593",
+        "dialing_code": "+375 1593"
+    },
+    {
+        "city": "Grodno Oblast - Ostrovets",
+        "area_code": "1591",
+        "dialing_code": "+375 1591"
+    },
+    {
+        "city": "Grodno Oblast - Shchuchin",
+        "area_code": "1514",
+        "dialing_code": "+375 1514"
+    },
+    {
+        "city": "Grodno Oblast - Slonim",
+        "area_code": "1562",
+        "dialing_code": "+375 1562"
+    },
+    {
+        "city": "Grodno Oblast - Smorgon",
+        "area_code": "1592",
+        "dialing_code": "+375 1592"
+    },
+    {
+        "city": "Grodno Oblast - Svisloch",
+        "area_code": "1513",
+        "dialing_code": "+375 1513"
+    },
+    {
+        "city": "Grodno Oblast - Volkovusk",
+        "area_code": "1512",
+        "dialing_code": "+375 1512"
+    },
+    {
+        "city": "Grodno Oblast - Voronovo",
+        "area_code": "1594",
+        "dialing_code": "+375 1594"
+    },
+    {
+        "city": "Grodno Oblast - Zelva",
+        "area_code": "1564",
+        "dialing_code": "+375 1564"
+    },
+    {
+        "city": "Minsk",
+        "area_code": "17",
+        "dialing_code": "+375 17"
+    },
+    {
+        "city": "Minsk Oblast - Berezino",
+        "area_code": "1715",
+        "dialing_code": "+375 1715"
+    },
+    {
+        "city": "Minsk Oblast - Borisov",
+        "area_code": "1777",
+        "dialing_code": "+375 1777"
+    },
+    {
+        "city": "Minsk Oblast - Cherven",
+        "area_code": "1714",
+        "dialing_code": "+375 1714"
+    },
+    {
+        "city": "Minsk Oblast - Dzerzhinsk",
+        "area_code": "1716",
+        "dialing_code": "+375 1716"
+    },
+    {
+        "city": "Minsk Oblast - Kletsk",
+        "area_code": "1793",
+        "dialing_code": "+375 1793"
+    },
+    {
+        "city": "Minsk Oblast - Kopul",
+        "area_code": "1719",
+        "dialing_code": "+375 1719"
+    },
+    {
+        "city": "Minsk Oblast - Krupki",
+        "area_code": "1796",
+        "dialing_code": "+375 1796"
+    },
+    {
+        "city": "Minsk Oblast - Logoysk",
+        "area_code": "1774",
+        "dialing_code": "+375 1774"
+    },
+    {
+        "city": "Minsk Oblast - Lyuban",
+        "area_code": "1794",
+        "dialing_code": "+375 1794"
+    },
+    {
+        "city": "Minsk Oblast - Maryina Gorka",
+        "area_code": "1713",
+        "dialing_code": "+375 1713"
+    },
+    {
+        "city": "Minsk Oblast - Minsk",
+        "area_code": "17",
+        "dialing_code": "+375 17"
+    },
+    {
+        "city": "Minsk Oblast - Molodechno",
+        "area_code": "1773",
+        "dialing_code": "+375 1773"
+    },
+    {
+        "city": "Minsk Oblast - Myadel",
+        "area_code": "1797",
+        "dialing_code": "+375 1797"
+    },
+    {
+        "city": "Minsk Oblast - Naroch",
+        "area_code": "1797",
+        "dialing_code": "+375 1797"
+    },
+    {
+        "city": "Minsk Oblast - Nesvizh",
+        "area_code": "1770",
+        "dialing_code": "+375 1770"
+    },
+    {
+        "city": "Minsk Oblast - Pleshchenitsu",
+        "area_code": "1779",
+        "dialing_code": "+375 1779"
+    },
+    {
+        "city": "Minsk Oblast - Puhovichi",
+        "area_code": "1713",
+        "dialing_code": "+375 1713"
+    },
+    {
+        "city": "Minsk Oblast - Slutsk",
+        "area_code": "1795",
+        "dialing_code": "+375 1795"
+    },
+    {
+        "city": "Minsk Oblast - Smolevichi",
+        "area_code": "1776",
+        "dialing_code": "+375 1776"
+    },
+    {
+        "city": "Minsk Oblast - Soligorsk",
+        "area_code": "1710",
+        "dialing_code": "+375 1710"
+    },
+    {
+        "city": "Minsk Oblast - Starye Dorogi",
+        "area_code": "1792",
+        "dialing_code": "+375 1792"
+    },
+    {
+        "city": "Minsk Oblast - Stolbtsu",
+        "area_code": "1717",
+        "dialing_code": "+375 1717"
+    },
+    {
+        "city": "Minsk Oblast - Uzda",
+        "area_code": "1718",
+        "dialing_code": "+375 1718"
+    },
+    {
+        "city": "Minsk Oblast - Vileyka",
+        "area_code": "1771",
+        "dialing_code": "+375 1771"
+    },
+    {
+        "city": "Minsk Oblast - Volozhin",
+        "area_code": "1772",
+        "dialing_code": "+375 1772"
+    },
+    {
+        "city": "Minsk Oblast - Zhodino",
+        "area_code": "1775",
+        "dialing_code": "+375 1775"
+    },
+    {
+        "city": "Mogilev",
+        "area_code": "222",
+        "dialing_code": "+375 222"
+    },
+    {
+        "city": "Mogilev Oblast - Belunichi",
+        "area_code": "2232",
+        "dialing_code": "+375 2232"
+    },
+    {
+        "city": "Mogilev Oblast - Bobruysk",
+        "area_code": "2251",
+        "dialing_code": "+375 2251"
+    },
+    {
+        "city": "Mogilev Oblast - Buhov",
+        "area_code": "2231",
+        "dialing_code": "+375 2231"
+    },
+    {
+        "city": "Mogilev Oblast - Chausu",
+        "area_code": "2242",
+        "dialing_code": "+375 2242"
+    },
+    {
+        "city": "Mogilev Oblast - Cherikov",
+        "area_code": "2243",
+        "dialing_code": "+375 2243"
+    },
+    {
+        "city": "Mogilev Oblast - Dribin",
+        "area_code": "2248",
+        "dialing_code": "+375 2248"
+    },
+    {
+        "city": "Mogilev Oblast - Glusk",
+        "area_code": "2230",
+        "dialing_code": "+375 2230"
+    },
+    {
+        "city": "Mogilev Oblast - Gorki",
+        "area_code": "2233",
+        "dialing_code": "+375 2233"
+    },
+    {
+        "city": "Mogilev Oblast - Hotimsk",
+        "area_code": "2247",
+        "dialing_code": "+375 2247"
+    },
+    {
+        "city": "Mogilev Oblast - Kirovsk",
+        "area_code": "2237",
+        "dialing_code": "+375 2237"
+    },
+    {
+        "city": "Mogilev Oblast - Klichev",
+        "area_code": "2236",
+        "dialing_code": "+375 2236"
+    },
+    {
+        "city": "Mogilev Oblast - Klimovichi",
+        "area_code": "2244",
+        "dialing_code": "+375 2244"
+    },
+    {
+        "city": "Mogilev Oblast - Kostyukovichi",
+        "area_code": "2245",
+        "dialing_code": "+375 2245"
+    },
+    {
+        "city": "Mogilev Oblast - Krasnopolye",
+        "area_code": "2238",
+        "dialing_code": "+375 2238"
+    },
+    {
+        "city": "Mogilev Oblast - Krichev",
+        "area_code": "2241",
+        "dialing_code": "+375 2241"
+    },
+    {
+        "city": "Mogilev Oblast - Krugloye",
+        "area_code": "2234",
+        "dialing_code": "+375 2234"
+    },
+    {
+        "city": "Mogilev Oblast - Mogilev",
+        "area_code": "222",
+        "dialing_code": "+375 222"
+    },
+    {
+        "city": "Mogilev Oblast - Mstislavl",
+        "area_code": "2240",
+        "dialing_code": "+375 2240"
+    },
+    {
+        "city": "Mogilev Oblast - Osipovichi",
+        "area_code": "2235",
+        "dialing_code": "+375 2235"
+    },
+    {
+        "city": "Mogilev Oblast - Shklov",
+        "area_code": "2239",
+        "dialing_code": "+375 2239"
+    },
+    {
+        "city": "Mogilev Oblast - Slavgorod",
+        "area_code": "2246",
+        "dialing_code": "+375 2246"
+    },
+    {
+        "city": "Region Codes - Gomel Oblast",
+        "area_code": "23",
+        "dialing_code": "+375 23"
+    },
+    {
+        "city": "Region Codes - Grodno Oblast",
+        "area_code": "15",
+        "dialing_code": "+375 15"
+    },
+    {
+        "city": "Region Codes - Minsk Oblast",
+        "area_code": "17",
+        "dialing_code": "+375 17"
+    },
+    {
+        "city": "Region Codes - Mogilev Oblast",
+        "area_code": "22",
+        "dialing_code": "+375 22"
+    },
+    {
+        "city": "Region Codes - Vitebsk Oblast",
+        "area_code": "21",
+        "dialing_code": "+375 21"
+    },
+    {
+        "city": "Vitebsk",
+        "area_code": "212",
+        "dialing_code": "+375 212"
+    },
+    {
+        "city": "Vitebsk Oblast - Beshenkovichi",
+        "area_code": "2131",
+        "dialing_code": "+375 2131"
+    },
+    {
+        "city": "Vitebsk Oblast - Braslav",
+        "area_code": "2153",
+        "dialing_code": "+375 2153"
+    },
+    {
+        "city": "Vitebsk Oblast - Chashniki",
+        "area_code": "2133",
+        "dialing_code": "+375 2133"
+    },
+    {
+        "city": "Vitebsk Oblast - Dokshitsu",
+        "area_code": "2157",
+        "dialing_code": "+375 2157"
+    },
+    {
+        "city": "Vitebsk Oblast - Dubrova",
+        "area_code": "2137",
+        "dialing_code": "+375 2137"
+    },
+    {
+        "city": "Vitebsk Oblast - Glubokoye",
+        "area_code": "2156",
+        "dialing_code": "+375 2156"
+    },
+    {
+        "city": "Vitebsk Oblast - Gorodok",
+        "area_code": "2139",
+        "dialing_code": "+375 2139"
+    },
+    {
+        "city": "Vitebsk Oblast - Lepel",
+        "area_code": "2132",
+        "dialing_code": "+375 2132"
+    },
+    {
+        "city": "Vitebsk Oblast - Liozno",
+        "area_code": "2138",
+        "dialing_code": "+375 2138"
+    },
+    {
+        "city": "Vitebsk Oblast - Mioru",
+        "area_code": "2152",
+        "dialing_code": "+375 2152"
+    },
+    {
+        "city": "Vitebsk Oblast - Novopolotsk",
+        "area_code": "214",
+        "dialing_code": "+375 214"
+    },
+    {
+        "city": "Vitebsk Oblast - Orsha",
+        "area_code": "2161",
+        "dialing_code": "+375 2161"
+    },
+    {
+        "city": "Vitebsk Oblast - Polotsk",
+        "area_code": "214",
+        "dialing_code": "+375 214"
+    },
+    {
+        "city": "Vitebsk Oblast - Postavu",
+        "area_code": "2155",
+        "dialing_code": "+375 2155"
+    },
+    {
+        "city": "Vitebsk Oblast - Rossonu",
+        "area_code": "2159",
+        "dialing_code": "+375 2159"
+    },
+    {
+        "city": "Vitebsk Oblast - Senno",
+        "area_code": "2135",
+        "dialing_code": "+375 2135"
+    },
+    {
+        "city": "Vitebsk Oblast - Sharkovshchin",
+        "area_code": "2154",
+        "dialing_code": "+375 2154"
+    },
+    {
+        "city": "Vitebsk Oblast - Shumilino",
+        "area_code": "2130",
+        "dialing_code": "+375 2130"
+    },
+    {
+        "city": "Vitebsk Oblast - Tolochin",
+        "area_code": "2136",
+        "dialing_code": "+375 2136"
+    },
+    {
+        "city": "Vitebsk Oblast - Ushachi",
+        "area_code": "2158",
+        "dialing_code": "+375 2158"
+    },
+    {
+        "city": "Vitebsk Oblast - Verhnedvinsk",
+        "area_code": "2151",
+        "dialing_code": "+375 2151"
+    },
+    {
+        "city": "Vitebsk Oblast - Vitebsk",
+        "area_code": "212",
+        "dialing_code": "+375 212"
+    }
+]

@@ -1,0 +1,1662 @@
+[
+    {
+        "city": "Aberdeen",
+        "area_code": "1224",
+        "dialing_code": "+44 1224"
+    },
+    {
+        "city": "Abingdon",
+        "area_code": "1235",
+        "dialing_code": "+44 1235"
+    },
+    {
+        "city": "Aboyne",
+        "area_code": "1339",
+        "dialing_code": "+44 1339"
+    },
+    {
+        "city": "Aldershot",
+        "area_code": "1252",
+        "dialing_code": "+44 1252"
+    },
+    {
+        "city": "Alford (Lincs)",
+        "area_code": "1507",
+        "dialing_code": "+44 1507"
+    },
+    {
+        "city": "Alloa",
+        "area_code": "1259",
+        "dialing_code": "+44 1259"
+    },
+    {
+        "city": "Alton",
+        "area_code": "1420",
+        "dialing_code": "+44 1420"
+    },
+    {
+        "city": "Ammanford",
+        "area_code": "1269",
+        "dialing_code": "+44 1269"
+    },
+    {
+        "city": "Andover",
+        "area_code": "1264",
+        "dialing_code": "+44 1264"
+    },
+    {
+        "city": "Annan",
+        "area_code": "1461",
+        "dialing_code": "+44 1461"
+    },
+    {
+        "city": "Arbroath",
+        "area_code": "1241",
+        "dialing_code": "+44 1241"
+    },
+    {
+        "city": "Ardrossan",
+        "area_code": "1294",
+        "dialing_code": "+44 1294"
+    },
+    {
+        "city": "Arrochar",
+        "area_code": "1301",
+        "dialing_code": "+44 1301"
+    },
+    {
+        "city": "Ascot",
+        "area_code": "1276",
+        "dialing_code": "+44 1276"
+    },
+    {
+        "city": "Ashbourne",
+        "area_code": "1335",
+        "dialing_code": "+44 1335"
+    },
+    {
+        "city": "Ashburton",
+        "area_code": "1364",
+        "dialing_code": "+44 1364"
+    },
+    {
+        "city": "Ashford",
+        "area_code": "1233",
+        "dialing_code": "+44 1233"
+    },
+    {
+        "city": "Axminster",
+        "area_code": "1297",
+        "dialing_code": "+44 1297"
+    },
+    {
+        "city": "Aylesbury",
+        "area_code": "1296",
+        "dialing_code": "+44 1296"
+    },
+    {
+        "city": "Ayr",
+        "area_code": "1292",
+        "dialing_code": "+44 1292"
+    },
+    {
+        "city": "Banbury",
+        "area_code": "1295",
+        "dialing_code": "+44 1295"
+    },
+    {
+        "city": "Banchory",
+        "area_code": "1330",
+        "dialing_code": "+44 1330"
+    },
+    {
+        "city": "Banff",
+        "area_code": "1261",
+        "dialing_code": "+44 1261"
+    },
+    {
+        "city": "Bangor (N. Wales)",
+        "area_code": "1248",
+        "dialing_code": "+44 1248"
+    },
+    {
+        "city": "Barmouth",
+        "area_code": "1341",
+        "dialing_code": "+44 1341"
+    },
+    {
+        "city": "Barnsley",
+        "area_code": "1226",
+        "dialing_code": "+44 1226"
+    },
+    {
+        "city": "Barnstable",
+        "area_code": "1271",
+        "dialing_code": "+44 1271"
+    },
+    {
+        "city": "Barrow-in-Furness",
+        "area_code": "1229",
+        "dialing_code": "+44 1229"
+    },
+    {
+        "city": "Barry",
+        "area_code": "1446",
+        "dialing_code": "+44 1446"
+    },
+    {
+        "city": "Basingstoke",
+        "area_code": "1246",
+        "dialing_code": "+44 1246"
+    },
+    {
+        "city": "Bath",
+        "area_code": "1225",
+        "dialing_code": "+44 1225"
+    },
+    {
+        "city": "Bathgate",
+        "area_code": "1506",
+        "dialing_code": "+44 1506"
+    },
+    {
+        "city": "Bedford",
+        "area_code": "1234",
+        "dialing_code": "+44 1234"
+    },
+    {
+        "city": "Belfast City",
+        "area_code": "28",
+        "dialing_code": "+44 28"
+    },
+    {
+        "city": "Bellingham",
+        "area_code": "1434",
+        "dialing_code": "+44 1434"
+    },
+    {
+        "city": "Berwick-on-Tweed",
+        "area_code": "1289",
+        "dialing_code": "+44 1289"
+    },
+    {
+        "city": "Bewdley",
+        "area_code": "1299",
+        "dialing_code": "+44 1299"
+    },
+    {
+        "city": "Bideford",
+        "area_code": "1237",
+        "dialing_code": "+44 1237"
+    },
+    {
+        "city": "Birmingham",
+        "area_code": "121",
+        "dialing_code": "+44 121"
+    },
+    {
+        "city": "Bishop Auckland",
+        "area_code": "1388",
+        "dialing_code": "+44 1388"
+    },
+    {
+        "city": "Bishops Stortford",
+        "area_code": "1279",
+        "dialing_code": "+44 1279"
+    },
+    {
+        "city": "Blackburn",
+        "area_code": "1254",
+        "dialing_code": "+44 1254"
+    },
+    {
+        "city": "Blackpool",
+        "area_code": "1253",
+        "dialing_code": "+44 1253"
+    },
+    {
+        "city": "Blairgowrie",
+        "area_code": "1250",
+        "dialing_code": "+44 1250"
+    },
+    {
+        "city": "Blandford",
+        "area_code": "1258",
+        "dialing_code": "+44 1258"
+    },
+    {
+        "city": "Bodmin",
+        "area_code": "1208",
+        "dialing_code": "+44 1208"
+    },
+    {
+        "city": "Bolton",
+        "area_code": "1204",
+        "dialing_code": "+44 1204"
+    },
+    {
+        "city": "Boroughbridge",
+        "area_code": "1423",
+        "dialing_code": "+44 1423"
+    },
+    {
+        "city": "Boston",
+        "area_code": "1205",
+        "dialing_code": "+44 1205"
+    },
+    {
+        "city": "Bournemouth",
+        "area_code": "1202",
+        "dialing_code": "+44 1202"
+    },
+    {
+        "city": "Bourton-on-the-Water",
+        "area_code": "1451",
+        "dialing_code": "+44 1451"
+    },
+    {
+        "city": "Bracknell",
+        "area_code": "1344",
+        "dialing_code": "+44 1344"
+    },
+    {
+        "city": "Bradford",
+        "area_code": "1274",
+        "dialing_code": "+44 1274"
+    },
+    {
+        "city": "Braintree",
+        "area_code": "1376",
+        "dialing_code": "+44 1376"
+    },
+    {
+        "city": "Brechin",
+        "area_code": "1356",
+        "dialing_code": "+44 1356"
+    },
+    {
+        "city": "Brentwood",
+        "area_code": "1277",
+        "dialing_code": "+44 1277"
+    },
+    {
+        "city": "Bridgwater",
+        "area_code": "1278",
+        "dialing_code": "+44 1278"
+    },
+    {
+        "city": "Bridlington",
+        "area_code": "1262",
+        "dialing_code": "+44 1262"
+    },
+    {
+        "city": "Bridport",
+        "area_code": "1308",
+        "dialing_code": "+44 1308"
+    },
+    {
+        "city": "Brighton",
+        "area_code": "1273",
+        "dialing_code": "+44 1273"
+    },
+    {
+        "city": "Bristol",
+        "area_code": "1275",
+        "dialing_code": "+44 1275"
+    },
+    {
+        "city": "Broadford",
+        "area_code": "1471",
+        "dialing_code": "+44 1471"
+    },
+    {
+        "city": "Brooke",
+        "area_code": "1508",
+        "dialing_code": "+44 1508"
+    },
+    {
+        "city": "Buckingham",
+        "area_code": "1280",
+        "dialing_code": "+44 1280"
+    },
+    {
+        "city": "Bude",
+        "area_code": "1288",
+        "dialing_code": "+44 1288"
+    },
+    {
+        "city": "BudleighSalterton",
+        "area_code": "1395",
+        "dialing_code": "+44 1395"
+    },
+    {
+        "city": "Burley",
+        "area_code": "1425",
+        "dialing_code": "+44 1425"
+    },
+    {
+        "city": "Burnley",
+        "area_code": "1282",
+        "dialing_code": "+44 1282"
+    },
+    {
+        "city": "Burntwood",
+        "area_code": "1543",
+        "dialing_code": "+44 1543"
+    },
+    {
+        "city": "Burton-on-Trent",
+        "area_code": "1283",
+        "dialing_code": "+44 1283"
+    },
+    {
+        "city": "Bury-St-Edmunds",
+        "area_code": "1284",
+        "dialing_code": "+44 1284"
+    },
+    {
+        "city": "Buxton",
+        "area_code": "1298",
+        "dialing_code": "+44 1298"
+    },
+    {
+        "city": "Caernarvon",
+        "area_code": "1286",
+        "dialing_code": "+44 1286"
+    },
+    {
+        "city": "Cambridge",
+        "area_code": "1223",
+        "dialing_code": "+44 1223"
+    },
+    {
+        "city": "Canterbury",
+        "area_code": "1227",
+        "dialing_code": "+44 1227"
+    },
+    {
+        "city": "Cardiff",
+        "area_code": "29",
+        "dialing_code": "+44 29"
+    },
+    {
+        "city": "Cardigan",
+        "area_code": "1239",
+        "dialing_code": "+44 1239"
+    },
+    {
+        "city": "Carlisle",
+        "area_code": "1228",
+        "dialing_code": "+44 1228"
+    },
+    {
+        "city": "Carmarthen",
+        "area_code": "1267",
+        "dialing_code": "+44 1267"
+    },
+    {
+        "city": "Castle Douglas",
+        "area_code": "1556",
+        "dialing_code": "+44 1556"
+    },
+    {
+        "city": "Cerne Abbas",
+        "area_code": "1300",
+        "dialing_code": "+44 1300"
+    },
+    {
+        "city": "Chard",
+        "area_code": "1460",
+        "dialing_code": "+44 1460"
+    },
+    {
+        "city": "Chelmsford",
+        "area_code": "1245",
+        "dialing_code": "+44 1245"
+    },
+    {
+        "city": "Chelsea",
+        "area_code": "205",
+        "dialing_code": "+44 205"
+    },
+    {
+        "city": "Cheltenham",
+        "area_code": "1242",
+        "dialing_code": "+44 1242"
+    },
+    {
+        "city": "Chester",
+        "area_code": "1244",
+        "dialing_code": "+44 1244"
+    },
+    {
+        "city": "Chesterfield",
+        "area_code": "1246",
+        "dialing_code": "+44 1246"
+    },
+    {
+        "city": "Chichester",
+        "area_code": "1243",
+        "dialing_code": "+44 1243"
+    },
+    {
+        "city": "Chippenham",
+        "area_code": "1249",
+        "dialing_code": "+44 1249"
+    },
+    {
+        "city": "Cirencester",
+        "area_code": "1285",
+        "dialing_code": "+44 1285"
+    },
+    {
+        "city": "Clacton-on-Sea",
+        "area_code": "1255",
+        "dialing_code": "+44 1255"
+    },
+    {
+        "city": "Clitheroe",
+        "area_code": "1200",
+        "dialing_code": "+44 1200"
+    },
+    {
+        "city": "Clynderwen",
+        "area_code": "1437",
+        "dialing_code": "+44 1437"
+    },
+    {
+        "city": "Coalville",
+        "area_code": "1530",
+        "dialing_code": "+44 1530"
+    },
+    {
+        "city": "Coatbridge",
+        "area_code": "1236",
+        "dialing_code": "+44 1236"
+    },
+    {
+        "city": "Colchester",
+        "area_code": "1206",
+        "dialing_code": "+44 1206"
+    },
+    {
+        "city": "Colwyn Bay",
+        "area_code": "1492",
+        "dialing_code": "+44 1492"
+    },
+    {
+        "city": "Congleton",
+        "area_code": "1477",
+        "dialing_code": "+44 1477"
+    },
+    {
+        "city": "Consett",
+        "area_code": "1207",
+        "dialing_code": "+44 1207"
+    },
+    {
+        "city": "Coppull",
+        "area_code": "1257",
+        "dialing_code": "+44 1257"
+    },
+    {
+        "city": "Corwen",
+        "area_code": "1490",
+        "dialing_code": "+44 1490"
+    },
+    {
+        "city": "Coventry",
+        "area_code": "24",
+        "dialing_code": "+44 24"
+    },
+    {
+        "city": "Craigellachie",
+        "area_code": "1340",
+        "dialing_code": "+44 1340"
+    },
+    {
+        "city": "Crawley",
+        "area_code": "1293",
+        "dialing_code": "+44 1293"
+    },
+    {
+        "city": "Crediton",
+        "area_code": "1363",
+        "dialing_code": "+44 1363"
+    },
+    {
+        "city": "Crewe",
+        "area_code": "1270",
+        "dialing_code": "+44 1270"
+    },
+    {
+        "city": "Cromer",
+        "area_code": "1263",
+        "dialing_code": "+44 1263"
+    },
+    {
+        "city": "Cumnock",
+        "area_code": "1290",
+        "dialing_code": "+44 1290"
+    },
+    {
+        "city": "Darlington",
+        "area_code": "1325",
+        "dialing_code": "+44 1325"
+    },
+    {
+        "city": "Derby",
+        "area_code": "1332",
+        "dialing_code": "+44 1332"
+    },
+    {
+        "city": "Dereham",
+        "area_code": "1362",
+        "dialing_code": "+44 1362"
+    },
+    {
+        "city": "Devizes",
+        "area_code": "1380",
+        "dialing_code": "+44 1380"
+    },
+    {
+        "city": "Dingwall",
+        "area_code": "1349",
+        "dialing_code": "+44 1349"
+    },
+    {
+        "city": "Diss",
+        "area_code": "1379",
+        "dialing_code": "+44 1379"
+    },
+    {
+        "city": "Docking",
+        "area_code": "1485",
+        "dialing_code": "+44 1485"
+    },
+    {
+        "city": "Doddington",
+        "area_code": "1354",
+        "dialing_code": "+44 1354"
+    },
+    {
+        "city": "Doncaster",
+        "area_code": "1302",
+        "dialing_code": "+44 1302"
+    },
+    {
+        "city": "Dorchester",
+        "area_code": "1305",
+        "dialing_code": "+44 1305"
+    },
+    {
+        "city": "Dover",
+        "area_code": "1304",
+        "dialing_code": "+44 1304"
+    },
+    {
+        "city": "Downham Market",
+        "area_code": "1366",
+        "dialing_code": "+44 1366"
+    },
+    {
+        "city": "Driffield",
+        "area_code": "1377",
+        "dialing_code": "+44 1377"
+    },
+    {
+        "city": "Dudley",
+        "area_code": "1384",
+        "dialing_code": "+44 1384"
+    },
+    {
+        "city": "Dulverton",
+        "area_code": "1398",
+        "dialing_code": "+44 1398"
+    },
+    {
+        "city": "Dumbarton",
+        "area_code": "1389",
+        "dialing_code": "+44 1389"
+    },
+    {
+        "city": "Dumfries",
+        "area_code": "1387",
+        "dialing_code": "+44 1387"
+    },
+    {
+        "city": "Dunbar",
+        "area_code": "1368",
+        "dialing_code": "+44 1368"
+    },
+    {
+        "city": "Dundee",
+        "area_code": "1382",
+        "dialing_code": "+44 1382"
+    },
+    {
+        "city": "Dunfermline",
+        "area_code": "1383",
+        "dialing_code": "+44 1383"
+    },
+    {
+        "city": "Dunkeld",
+        "area_code": "1350",
+        "dialing_code": "+44 1350"
+    },
+    {
+        "city": "Dunoon",
+        "area_code": "1369",
+        "dialing_code": "+44 1369"
+    },
+    {
+        "city": "Duns",
+        "area_code": "1361",
+        "dialing_code": "+44 1361"
+    },
+    {
+        "city": "Durham",
+        "area_code": "191",
+        "dialing_code": "+44 191"
+    },
+    {
+        "city": "Dursley",
+        "area_code": "1453",
+        "dialing_code": "+44 1453"
+    },
+    {
+        "city": "Easingwold",
+        "area_code": "1347",
+        "dialing_code": "+44 1347"
+    },
+    {
+        "city": "East Grinstead",
+        "area_code": "1342",
+        "dialing_code": "+44 1342"
+    },
+    {
+        "city": "East Kilbride",
+        "area_code": "1357",
+        "dialing_code": "+44 1357"
+    },
+    {
+        "city": "Eastbourne",
+        "area_code": "1323",
+        "dialing_code": "+44 1323"
+    },
+    {
+        "city": "Edinbane",
+        "area_code": "1470",
+        "dialing_code": "+44 1470"
+    },
+    {
+        "city": "Edinburgh",
+        "area_code": "131",
+        "dialing_code": "+44 131"
+    },
+    {
+        "city": "Elgin",
+        "area_code": "1343",
+        "dialing_code": "+44 1343"
+    },
+    {
+        "city": "Ellon",
+        "area_code": "1358",
+        "dialing_code": "+44 1358"
+    },
+    {
+        "city": "Ely",
+        "area_code": "1353",
+        "dialing_code": "+44 1353"
+    },
+    {
+        "city": "Esher",
+        "area_code": "1372",
+        "dialing_code": "+44 1372"
+    },
+    {
+        "city": "Exeter",
+        "area_code": "1392",
+        "dialing_code": "+44 1392"
+    },
+    {
+        "city": "Fakenham",
+        "area_code": "1328",
+        "dialing_code": "+44 1328"
+    },
+    {
+        "city": "Falkirk",
+        "area_code": "1324",
+        "dialing_code": "+44 1324"
+    },
+    {
+        "city": "Falmouth",
+        "area_code": "1326",
+        "dialing_code": "+44 1326"
+    },
+    {
+        "city": "Fareham",
+        "area_code": "1489",
+        "dialing_code": "+44 1489"
+    },
+    {
+        "city": "Faringdon",
+        "area_code": "1367",
+        "dialing_code": "+44 1367"
+    },
+    {
+        "city": "Fishguard",
+        "area_code": "1348",
+        "dialing_code": "+44 1348"
+    },
+    {
+        "city": "Folkestone",
+        "area_code": "1303",
+        "dialing_code": "+44 1303"
+    },
+    {
+        "city": "Fordoun",
+        "area_code": "1561",
+        "dialing_code": "+44 1561"
+    },
+    {
+        "city": "Forfar",
+        "area_code": "1307",
+        "dialing_code": "+44 1307"
+    },
+    {
+        "city": "Forres",
+        "area_code": "1309",
+        "dialing_code": "+44 1309"
+    },
+    {
+        "city": "Fort Augustus",
+        "area_code": "1320",
+        "dialing_code": "+44 1320"
+    },
+    {
+        "city": "Fort William",
+        "area_code": "1397",
+        "dialing_code": "+44 1397"
+    },
+    {
+        "city": "Fortrose",
+        "area_code": "1381",
+        "dialing_code": "+44 1381"
+    },
+    {
+        "city": "Fraserburgh",
+        "area_code": "1346",
+        "dialing_code": "+44 1346"
+    },
+    {
+        "city": "Frome",
+        "area_code": "1373",
+        "dialing_code": "+44 1373"
+    },
+    {
+        "city": "Gainsborough",
+        "area_code": "1427",
+        "dialing_code": "+44 1427"
+    },
+    {
+        "city": "Gairloch",
+        "area_code": "1445",
+        "dialing_code": "+44 1445"
+    },
+    {
+        "city": "Girvan",
+        "area_code": "1465",
+        "dialing_code": "+44 1465"
+    },
+    {
+        "city": "Glasgow",
+        "area_code": "141",
+        "dialing_code": "+44 141"
+    },
+    {
+        "city": "Glastonbury",
+        "area_code": "1458",
+        "dialing_code": "+44 1458"
+    },
+    {
+        "city": "Glenurquhart",
+        "area_code": "1456",
+        "dialing_code": "+44 1456"
+    },
+    {
+        "city": "Glossop",
+        "area_code": "1457",
+        "dialing_code": "+44 1457"
+    },
+    {
+        "city": "Gloucester",
+        "area_code": "1452",
+        "dialing_code": "+44 1452"
+    },
+    {
+        "city": "Golspie",
+        "area_code": "1408",
+        "dialing_code": "+44 1408"
+    },
+    {
+        "city": "Goole",
+        "area_code": "1405",
+        "dialing_code": "+44 1405"
+    },
+    {
+        "city": "Gosport",
+        "area_code": "251",
+        "dialing_code": "+44 251"
+    },
+    {
+        "city": "Grantham",
+        "area_code": "1476",
+        "dialing_code": "+44 1476"
+    },
+    {
+        "city": "Grantown-on-Spey",
+        "area_code": "1479",
+        "dialing_code": "+44 1479"
+    },
+    {
+        "city": "Gravesend",
+        "area_code": "1474",
+        "dialing_code": "+44 1474"
+    },
+    {
+        "city": "Great Dunmow",
+        "area_code": "1371",
+        "dialing_code": "+44 1371"
+    },
+    {
+        "city": "Great Shefford",
+        "area_code": "1488",
+        "dialing_code": "+44 1488"
+    },
+    {
+        "city": "Great Yarmouth",
+        "area_code": "1493",
+        "dialing_code": "+44 1493"
+    },
+    {
+        "city": "Greenock",
+        "area_code": "1475",
+        "dialing_code": "+44 1475"
+    },
+    {
+        "city": "Greenwich",
+        "area_code": "20",
+        "dialing_code": "+44 20"
+    },
+    {
+        "city": "Grimsby",
+        "area_code": "1472",
+        "dialing_code": "+44 1472"
+    },
+    {
+        "city": "Guildford",
+        "area_code": "1483",
+        "dialing_code": "+44 1483"
+    },
+    {
+        "city": "Guisborough",
+        "area_code": "1287",
+        "dialing_code": "+44 1287"
+    },
+    {
+        "city": "Halifax",
+        "area_code": "1422",
+        "dialing_code": "+44 1422"
+    },
+    {
+        "city": "Harthill",
+        "area_code": "1501",
+        "dialing_code": "+44 1501"
+    },
+    {
+        "city": "Hartlepool",
+        "area_code": "1429",
+        "dialing_code": "+44 1429"
+    },
+    {
+        "city": "Haslemere",
+        "area_code": "1428",
+        "dialing_code": "+44 1428"
+    },
+    {
+        "city": "Hastings",
+        "area_code": "1424",
+        "dialing_code": "+44 1424"
+    },
+    {
+        "city": "Hathersage",
+        "area_code": "1433",
+        "dialing_code": "+44 1433"
+    },
+    {
+        "city": "Haverhill",
+        "area_code": "1440",
+        "dialing_code": "+44 1440"
+    },
+    {
+        "city": "Hawick",
+        "area_code": "1450",
+        "dialing_code": "+44 1450"
+    },
+    {
+        "city": "Hay-on-Wye",
+        "area_code": "1497",
+        "dialing_code": "+44 1497"
+    },
+    {
+        "city": "Haywards Heath",
+        "area_code": "1444",
+        "dialing_code": "+44 1444"
+    },
+    {
+        "city": "Heathfield",
+        "area_code": "1435",
+        "dialing_code": "+44 1435"
+    },
+    {
+        "city": "Helensburgh",
+        "area_code": "1436",
+        "dialing_code": "+44 1436"
+    },
+    {
+        "city": "Helmsdale",
+        "area_code": "1431",
+        "dialing_code": "+44 1431"
+    },
+    {
+        "city": "Helmsley",
+        "area_code": "1439",
+        "dialing_code": "+44 1439"
+    },
+    {
+        "city": "Hereford",
+        "area_code": "1432",
+        "dialing_code": "+44 1432"
+    },
+    {
+        "city": "High Wycombe",
+        "area_code": "1494",
+        "dialing_code": "+44 1494"
+    },
+    {
+        "city": "Hinckley",
+        "area_code": "1455",
+        "dialing_code": "+44 1455"
+    },
+    {
+        "city": "Hitchin",
+        "area_code": "1462",
+        "dialing_code": "+44 1462"
+    },
+    {
+        "city": "Holbeach",
+        "area_code": "1406",
+        "dialing_code": "+44 1406"
+    },
+    {
+        "city": "Holsworthy",
+        "area_code": "1409",
+        "dialing_code": "+44 1409"
+    },
+    {
+        "city": "Holyhead",
+        "area_code": "1407",
+        "dialing_code": "+44 1407"
+    },
+    {
+        "city": "Honington",
+        "area_code": "1400",
+        "dialing_code": "+44 1400"
+    },
+    {
+        "city": "Honiton",
+        "area_code": "1404",
+        "dialing_code": "+44 1404"
+    },
+    {
+        "city": "Horsham",
+        "area_code": "1403",
+        "dialing_code": "+44 1403"
+    },
+    {
+        "city": "Huddersfield",
+        "area_code": "1484",
+        "dialing_code": "+44 1484"
+    },
+    {
+        "city": "Hull",
+        "area_code": "1482",
+        "dialing_code": "+44 1482"
+    },
+    {
+        "city": "Huntingdon",
+        "area_code": "1480",
+        "dialing_code": "+44 1480"
+    },
+    {
+        "city": "Huntly",
+        "area_code": "1466",
+        "dialing_code": "+44 1466"
+    },
+    {
+        "city": "Insch",
+        "area_code": "1464",
+        "dialing_code": "+44 1464"
+    },
+    {
+        "city": "Inveraray",
+        "area_code": "1499",
+        "dialing_code": "+44 1499"
+    },
+    {
+        "city": "Inverness",
+        "area_code": "1463",
+        "dialing_code": "+44 1463"
+    },
+    {
+        "city": "Inverurie",
+        "area_code": "1467",
+        "dialing_code": "+44 1467"
+    },
+    {
+        "city": "Ipswich",
+        "area_code": "1473",
+        "dialing_code": "+44 1473"
+    },
+    {
+        "city": "Johnstone",
+        "area_code": "1505",
+        "dialing_code": "+44 1505"
+    },
+    {
+        "city": "Keighley",
+        "area_code": "1535",
+        "dialing_code": "+44 1535"
+    },
+    {
+        "city": "Keith",
+        "area_code": "1542",
+        "dialing_code": "+44 1542"
+    },
+    {
+        "city": "Kelso",
+        "area_code": "1573",
+        "dialing_code": "+44 1573"
+    },
+    {
+        "city": "Kendal",
+        "area_code": "1539",
+        "dialing_code": "+44 1539"
+    },
+    {
+        "city": "Kettering",
+        "area_code": "1538",
+        "dialing_code": "+44 1538"
+    },
+    {
+        "city": "Killearn",
+        "area_code": "1360",
+        "dialing_code": "+44 1360"
+    },
+    {
+        "city": "Killin",
+        "area_code": "1567",
+        "dialing_code": "+44 1567"
+    },
+    {
+        "city": "Killingholme",
+        "area_code": "1469",
+        "dialing_code": "+44 1469"
+    },
+    {
+        "city": "Kilmarnock",
+        "area_code": "1563",
+        "dialing_code": "+44 1563"
+    },
+    {
+        "city": "Kings Lynn",
+        "area_code": "1553",
+        "dialing_code": "+44 1553"
+    },
+    {
+        "city": "Kingsbridge",
+        "area_code": "1548",
+        "dialing_code": "+44 1548"
+    },
+    {
+        "city": "Kingston upon Hull",
+        "area_code": "1482",
+        "dialing_code": "+44 1482"
+    },
+    {
+        "city": "Kington",
+        "area_code": "1544",
+        "dialing_code": "+44 1544"
+    },
+    {
+        "city": "Kingussie",
+        "area_code": "1540",
+        "dialing_code": "+44 1540"
+    },
+    {
+        "city": "Kinross",
+        "area_code": "1577",
+        "dialing_code": "+44 1577"
+    },
+    {
+        "city": "Kirkcudbright",
+        "area_code": "1557",
+        "dialing_code": "+44 1557"
+    },
+    {
+        "city": "Kirriemuir",
+        "area_code": "1575",
+        "dialing_code": "+44 1575"
+    },
+    {
+        "city": "Knebworth",
+        "area_code": "1438",
+        "dialing_code": "+44 1438"
+    },
+    {
+        "city": "Knighton",
+        "area_code": "1547",
+        "dialing_code": "+44 1547"
+    },
+    {
+        "city": "Knutsford",
+        "area_code": "1565",
+        "dialing_code": "+44 1565"
+    },
+    {
+        "city": "Ladybank",
+        "area_code": "1337",
+        "dialing_code": "+44 1337"
+    },
+    {
+        "city": "Laggan",
+        "area_code": "1528",
+        "dialing_code": "+44 1528"
+    },
+    {
+        "city": "Lairg",
+        "area_code": "1549",
+        "dialing_code": "+44 1549"
+    },
+    {
+        "city": "Lampeter",
+        "area_code": "1570",
+        "dialing_code": "+44 1570"
+    },
+    {
+        "city": "Lanark",
+        "area_code": "1555",
+        "dialing_code": "+44 1555"
+    },
+    {
+        "city": "Lancaster",
+        "area_code": "1524",
+        "dialing_code": "+44 1524"
+    },
+    {
+        "city": "Lapworth",
+        "area_code": "1564",
+        "dialing_code": "+44 1564"
+    },
+    {
+        "city": "Lauder",
+        "area_code": "1578",
+        "dialing_code": "+44 1578"
+    },
+    {
+        "city": "Launceston",
+        "area_code": "1566",
+        "dialing_code": "+44 1566"
+    },
+    {
+        "city": "Leeds",
+        "area_code": "113",
+        "dialing_code": "+44 113"
+    },
+    {
+        "city": "Leicester",
+        "area_code": "116",
+        "dialing_code": "+44 116"
+    },
+    {
+        "city": "Leighton Buzzard",
+        "area_code": "1525",
+        "dialing_code": "+44 1525"
+    },
+    {
+        "city": "Leominster",
+        "area_code": "1568",
+        "dialing_code": "+44 1568"
+    },
+    {
+        "city": "Lincoln",
+        "area_code": "1522",
+        "dialing_code": "+44 1522"
+    },
+    {
+        "city": "Liverpool",
+        "area_code": "151",
+        "dialing_code": "+44 151"
+    },
+    {
+        "city": "Llanarth",
+        "area_code": "1545",
+        "dialing_code": "+44 1545"
+    },
+    {
+        "city": "Llandeilo",
+        "area_code": "1558",
+        "dialing_code": "+44 1558"
+    },
+    {
+        "city": "Llandovery",
+        "area_code": "1550",
+        "dialing_code": "+44 1550"
+    },
+    {
+        "city": "Llandyssul",
+        "area_code": "1559",
+        "dialing_code": "+44 1559"
+    },
+    {
+        "city": "Llanelli",
+        "area_code": "1554",
+        "dialing_code": "+44 1554"
+    },
+    {
+        "city": "Lochcarron",
+        "area_code": "1520",
+        "dialing_code": "+44 1520"
+    },
+    {
+        "city": "Lochgilphead",
+        "area_code": "1546",
+        "dialing_code": "+44 1546"
+    },
+    {
+        "city": "Lochinver",
+        "area_code": "1571",
+        "dialing_code": "+44 1571"
+    },
+    {
+        "city": "Lockerbie",
+        "area_code": "1576",
+        "dialing_code": "+44 1576"
+    },
+    {
+        "city": "London",
+        "area_code": "20",
+        "dialing_code": "+44 20"
+    },
+    {
+        "city": "Looe",
+        "area_code": "1503",
+        "dialing_code": "+44 1503"
+    },
+    {
+        "city": "Loughborough",
+        "area_code": "1509",
+        "dialing_code": "+44 1509"
+    },
+    {
+        "city": "Lowestoft",
+        "area_code": "1502",
+        "dialing_code": "+44 1502"
+    },
+    {
+        "city": "Luton",
+        "area_code": "1582",
+        "dialing_code": "+44 1582"
+    },
+    {
+        "city": "Manchester",
+        "area_code": "161",
+        "dialing_code": "+44 161"
+    },
+    {
+        "city": "Market Weighton",
+        "area_code": "1430",
+        "dialing_code": "+44 1430"
+    },
+    {
+        "city": "Markyate",
+        "area_code": "1442",
+        "dialing_code": "+44 1442"
+    },
+    {
+        "city": "Martin",
+        "area_code": "1526",
+        "dialing_code": "+44 1526"
+    },
+    {
+        "city": "Middlesbrough",
+        "area_code": "1642",
+        "dialing_code": "+44 1642"
+    },
+    {
+        "city": "Milton Keynes",
+        "area_code": "1908",
+        "dialing_code": "+44 1908"
+    },
+    {
+        "city": "Mold",
+        "area_code": "1352",
+        "dialing_code": "+44 1352"
+    },
+    {
+        "city": "Moscow",
+        "area_code": "1560",
+        "dialing_code": "+44 1560"
+    },
+    {
+        "city": "Nettlebed",
+        "area_code": "1491",
+        "dialing_code": "+44 1491"
+    },
+    {
+        "city": "Newcastle upon Tyne",
+        "area_code": "191",
+        "dialing_code": "+44 191"
+    },
+    {
+        "city": "Newdigate",
+        "area_code": "1306",
+        "dialing_code": "+44 1306"
+    },
+    {
+        "city": "Northampton",
+        "area_code": "1604",
+        "dialing_code": "+44 1604"
+    },
+    {
+        "city": "Northern Ireland",
+        "area_code": "28",
+        "dialing_code": "+44 28"
+    },
+    {
+        "city": "Norwich",
+        "area_code": "1603",
+        "dialing_code": "+44 1603"
+    },
+    {
+        "city": "Nottingham",
+        "area_code": "115",
+        "dialing_code": "+44 115"
+    },
+    {
+        "city": "Oakham",
+        "area_code": "1572",
+        "dialing_code": "+44 1572"
+    },
+    {
+        "city": "Oldham",
+        "area_code": "161",
+        "dialing_code": "+44 161"
+    },
+    {
+        "city": "Oxford",
+        "area_code": "1865",
+        "dialing_code": "+44 1865"
+    },
+    {
+        "city": "Pakenham",
+        "area_code": "1359",
+        "dialing_code": "+44 1359"
+    },
+    {
+        "city": "Peat Inn",
+        "area_code": "1334",
+        "dialing_code": "+44 1334"
+    },
+    {
+        "city": "Peterborough",
+        "area_code": "1733",
+        "dialing_code": "+44 1733"
+    },
+    {
+        "city": "Plymouth",
+        "area_code": "1752",
+        "dialing_code": "+44 1752"
+    },
+    {
+        "city": "Pontypool",
+        "area_code": "1495",
+        "dialing_code": "+44 1495"
+    },
+    {
+        "city": "Pontypridd",
+        "area_code": "1443",
+        "dialing_code": "+44 1443"
+    },
+    {
+        "city": "Poole",
+        "area_code": "1202",
+        "dialing_code": "+44 1202"
+    },
+    {
+        "city": "Port Ellen",
+        "area_code": "1496",
+        "dialing_code": "+44 1496"
+    },
+    {
+        "city": "Portland",
+        "area_code": "207",
+        "dialing_code": "+44 207"
+    },
+    {
+        "city": "Portree",
+        "area_code": "1478",
+        "dialing_code": "+44 1478"
+    },
+    {
+        "city": "Portsmouth",
+        "area_code": "23",
+        "dialing_code": "+44 23"
+    },
+    {
+        "city": "Preston",
+        "area_code": "1772",
+        "dialing_code": "+44 1772"
+    },
+    {
+        "city": "Rangeworthy",
+        "area_code": "1454",
+        "dialing_code": "+44 1454"
+    },
+    {
+        "city": "Reading",
+        "area_code": "118",
+        "dialing_code": "+44 118"
+    },
+    {
+        "city": "Redditch",
+        "area_code": "1527",
+        "dialing_code": "+44 1527"
+    },
+    {
+        "city": "Redruth",
+        "area_code": "1209",
+        "dialing_code": "+44 1209"
+    },
+    {
+        "city": "Rotherham",
+        "area_code": "1709",
+        "dialing_code": "+44 1709"
+    },
+    {
+        "city": "Sheffield",
+        "area_code": "114",
+        "dialing_code": "+44 114"
+    },
+    {
+        "city": "Shirenewton",
+        "area_code": "1291",
+        "dialing_code": "+44 1291"
+    },
+    {
+        "city": "Shottisham",
+        "area_code": "1394",
+        "dialing_code": "+44 1394"
+    },
+    {
+        "city": "Sleaford",
+        "area_code": "1529",
+        "dialing_code": "+44 1529"
+    },
+    {
+        "city": "Slough",
+        "area_code": "1753",
+        "dialing_code": "+44 1753"
+    },
+    {
+        "city": "Southampton",
+        "area_code": "23",
+        "dialing_code": "+44 23"
+    },
+    {
+        "city": "St. Helens",
+        "area_code": "1744",
+        "dialing_code": "+44 1744"
+    },
+    {
+        "city": "Stafford",
+        "area_code": "620",
+        "dialing_code": "+44 620"
+    },
+    {
+        "city": "Stanford-le-Hope",
+        "area_code": "1375",
+        "dialing_code": "+44 1375"
+    },
+    {
+        "city": "Stockport",
+        "area_code": "161",
+        "dialing_code": "+44 161"
+    },
+    {
+        "city": "Stonehaven",
+        "area_code": "1569",
+        "dialing_code": "+44 1569"
+    },
+    {
+        "city": "Stourbridge",
+        "area_code": "1562",
+        "dialing_code": "+44 1562"
+    },
+    {
+        "city": "Stowmarket",
+        "area_code": "1449",
+        "dialing_code": "+44 1449"
+    },
+    {
+        "city": "Sunderland",
+        "area_code": "191",
+        "dialing_code": "+44 191"
+    },
+    {
+        "city": "Sutton Coldfield",
+        "area_code": "121",
+        "dialing_code": "+44 121"
+    },
+    {
+        "city": "Swanley",
+        "area_code": "1322",
+        "dialing_code": "+44 1322"
+    },
+    {
+        "city": "Swansea",
+        "area_code": "1792",
+        "dialing_code": "+44 1792"
+    },
+    {
+        "city": "Swindon",
+        "area_code": "1793",
+        "dialing_code": "+44 1793"
+    },
+    {
+        "city": "Telford",
+        "area_code": "1952",
+        "dialing_code": "+44 1952"
+    },
+    {
+        "city": "Walsall",
+        "area_code": "1922",
+        "dialing_code": "+44 1922"
+    },
+    {
+        "city": "Warboys",
+        "area_code": "1487",
+        "dialing_code": "+44 1487"
+    },
+    {
+        "city": "Warwick",
+        "area_code": "229",
+        "dialing_code": "+44 229"
+    },
+    {
+        "city": "Watford",
+        "area_code": "1923",
+        "dialing_code": "+44 1923"
+    },
+    {
+        "city": "Weedon",
+        "area_code": "1327",
+        "dialing_code": "+44 1327"
+    },
+    {
+        "city": "West Bromwich",
+        "area_code": "121",
+        "dialing_code": "+44 121"
+    },
+    {
+        "city": "Westminster",
+        "area_code": "720",
+        "dialing_code": "+44 720"
+    },
+    {
+        "city": "Weymouth",
+        "area_code": "781",
+        "dialing_code": "+44 781"
+    },
+    {
+        "city": "Winchester",
+        "area_code": "913",
+        "dialing_code": "+44 913"
+    },
+    {
+        "city": "Windsor",
+        "area_code": "757",
+        "dialing_code": "+44 757"
+    },
+    {
+        "city": "Wolverhampton",
+        "area_code": "1902",
+        "dialing_code": "+44 1902"
+    },
+    {
+        "city": "Worcester",
+        "area_code": "774",
+        "dialing_code": "+44 774"
+    },
+    {
+        "city": "Worthing",
+        "area_code": "605",
+        "dialing_code": "+44 605"
+    },
+    {
+        "city": "York",
+        "area_code": "1904",
+        "dialing_code": "+44 1904"
+    }
+]

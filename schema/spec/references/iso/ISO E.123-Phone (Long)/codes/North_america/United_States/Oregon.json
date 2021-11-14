@@ -1,0 +1,107 @@
+[
+    {
+        "city": "Albany",
+        "area_code": "518",
+        "dialing_code": "+1 518"
+    },
+    {
+        "city": "Ashland",
+        "area_code": "606",
+        "dialing_code": "+1 606"
+    },
+    {
+        "city": "Beaverton",
+        "area_code": "503",
+        "dialing_code": "+1 503"
+    },
+    {
+        "city": "Bend",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Central Point",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Coos Bay",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Dallas",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Eugene",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Grants Pass",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Gresham",
+        "area_code": "971",
+        "dialing_code": "+1 971"
+    },
+    {
+        "city": "Hillsboro",
+        "area_code": "606",
+        "dialing_code": "+1 606"
+    },
+    {
+        "city": "Lebanon",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "McMinnville",
+        "area_code": "971",
+        "dialing_code": "+1 971"
+    },
+    {
+        "city": "Newberg",
+        "area_code": "971",
+        "dialing_code": "+1 971"
+    },
+    {
+        "city": "Pendleton",
+        "area_code": "541",
+        "dialing_code": "+1 541"
+    },
+    {
+        "city": "Portland",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Redmond",
+        "area_code": "425",
+        "dialing_code": "+1 425"
+    },
+    {
+        "city": "Salem",
+        "area_code": "503",
+        "dialing_code": "+1 503"
+    },
+    {
+        "city": "Sherwood",
+        "area_code": "971",
+        "dialing_code": "+1 971"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Woodburn",
+        "area_code": "971",
+        "dialing_code": "+1 971"
+    }
+]

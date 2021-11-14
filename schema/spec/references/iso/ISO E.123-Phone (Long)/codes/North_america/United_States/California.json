@@ -1,0 +1,807 @@
+[
+    {
+        "city": "Alameda",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Alhambra",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Anaheim",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Antioch",
+        "area_code": "925",
+        "dialing_code": "+1 925"
+    },
+    {
+        "city": "Apple Valley",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Arcadia",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Bakersfield",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Baldwin Park",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Bellflower",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Berkeley",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Buena Park",
+        "area_code": "657",
+        "dialing_code": "+1 657"
+    },
+    {
+        "city": "Burbank",
+        "area_code": "818",
+        "dialing_code": "+1 818"
+    },
+    {
+        "city": "Camarillo",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Carlsbad",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Carson",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Castro Valley",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Cathedral City",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Cerritos",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Chico",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Chino",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Chino Hills",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Chula Vista",
+        "area_code": "619",
+        "dialing_code": "+1 619"
+    },
+    {
+        "city": "Citrus Heights",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Clovis",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Colton",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Compton",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Concord",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Corona",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Costa Mesa",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Cupertino",
+        "area_code": "408",
+        "dialing_code": "+1 408"
+    },
+    {
+        "city": "Daly City",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Davis",
+        "area_code": "530",
+        "dialing_code": "+1 530"
+    },
+    {
+        "city": "Delano",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Diamond Bar",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Downey",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "El Cajon",
+        "area_code": "619",
+        "dialing_code": "+1 619"
+    },
+    {
+        "city": "El Monte",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Elk Grove",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Encinitas",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Escondido",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Fairfield",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "Folsom",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Fontana",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Fountain Valley",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Fremont",
+        "area_code": "0",
+        "dialing_code": "+1 0"
+    },
+    {
+        "city": "Fresno",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Fullerton",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Garden Grove",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Gardena",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Glendale",
+        "area_code": "818",
+        "dialing_code": "+1 818"
+    },
+    {
+        "city": "Hacienda Heights",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Hanford",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Hawthorne",
+        "area_code": "424",
+        "dialing_code": "+1 424"
+    },
+    {
+        "city": "Hayward",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Hemet",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Hesperia",
+        "area_code": "442",
+        "dialing_code": "+1 442"
+    },
+    {
+        "city": "Highland",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Huntington Beach",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Huntington Park",
+        "area_code": "323",
+        "dialing_code": "+1 323"
+    },
+    {
+        "city": "Indio",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Inglewood",
+        "area_code": "323",
+        "dialing_code": "+1 323"
+    },
+    {
+        "city": "Irvine",
+        "area_code": "949",
+        "dialing_code": "+1 949"
+    },
+    {
+        "city": "La Habra",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "La Mesa",
+        "area_code": "619",
+        "dialing_code": "+1 619"
+    },
+    {
+        "city": "Laguna Niguel",
+        "area_code": "949",
+        "dialing_code": "+1 949"
+    },
+    {
+        "city": "Lakewood",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Lancaster",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Livermore",
+        "area_code": "925",
+        "dialing_code": "+1 925"
+    },
+    {
+        "city": "Lodi",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Long Beach",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Los Angeles",
+        "area_code": "213",
+        "dialing_code": "+1 213"
+    },
+    {
+        "city": "Lynwood",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Madera",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Manteca",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Merced",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Mission Viejo",
+        "area_code": "949",
+        "dialing_code": "+1 949"
+    },
+    {
+        "city": "Modesto",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Montebello",
+        "area_code": "323",
+        "dialing_code": "+1 323"
+    },
+    {
+        "city": "Monterey Park",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Moreno Valley",
+        "area_code": "951",
+        "dialing_code": "+1 951"
+    },
+    {
+        "city": "Mountain View",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Murrieta",
+        "area_code": "951",
+        "dialing_code": "+1 951"
+    },
+    {
+        "city": "Napa",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "National City",
+        "area_code": "619",
+        "dialing_code": "+1 619"
+    },
+    {
+        "city": "Newport Beach",
+        "area_code": "949",
+        "dialing_code": "+1 949"
+    },
+    {
+        "city": "Norwalk",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Novato",
+        "area_code": "415",
+        "dialing_code": "+1 415"
+    },
+    {
+        "city": "Oakland",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Oceanside",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Ontario",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Orange",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Oxnard",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Palm Desert",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Palmdale",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Palo Alto",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Pasadena",
+        "area_code": "281",
+        "dialing_code": "+1 281"
+    },
+    {
+        "city": "Perris",
+        "area_code": "951",
+        "dialing_code": "+1 951"
+    },
+    {
+        "city": "Petaluma",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "Pico Rivera",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Pittsburg",
+        "area_code": "925",
+        "dialing_code": "+1 925"
+    },
+    {
+        "city": "Pleasanton",
+        "area_code": "925",
+        "dialing_code": "+1 925"
+    },
+    {
+        "city": "Pomona",
+        "area_code": "752",
+        "dialing_code": "+1 752"
+    },
+    {
+        "city": "Porterville",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Rancho Cordova",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Rancho Cucamonga",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Redding",
+        "area_code": "530",
+        "dialing_code": "+1 530"
+    },
+    {
+        "city": "Redlands",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Redondo Beach",
+        "area_code": "424",
+        "dialing_code": "+1 424"
+    },
+    {
+        "city": "Redwood City",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Rialto",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Riverside",
+        "area_code": "951",
+        "dialing_code": "+1 951"
+    },
+    {
+        "city": "Rocklin",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Rosemead",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Roseville",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Rowland Heights",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Sacramento",
+        "area_code": "916",
+        "dialing_code": "+1 916"
+    },
+    {
+        "city": "Salinas",
+        "area_code": "831",
+        "dialing_code": "+1 831"
+    },
+    {
+        "city": "San Bernardino",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "San Clemente",
+        "area_code": "949",
+        "dialing_code": "+1 949"
+    },
+    {
+        "city": "San Diego",
+        "area_code": "619",
+        "dialing_code": "+1 619"
+    },
+    {
+        "city": "San Francisco",
+        "area_code": "415",
+        "dialing_code": "+1 415"
+    },
+    {
+        "city": "San Jose",
+        "area_code": "408",
+        "dialing_code": "+1 408"
+    },
+    {
+        "city": "San Leandro",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "San Marcos",
+        "area_code": "442",
+        "dialing_code": "+1 442"
+    },
+    {
+        "city": "San Mateo",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "San Rafael",
+        "area_code": "415",
+        "dialing_code": "+1 415"
+    },
+    {
+        "city": "Santa Ana",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Santa Barbara",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Santa Clara",
+        "area_code": "408",
+        "dialing_code": "+1 408"
+    },
+    {
+        "city": "Santa Clarita",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Santa Cruz",
+        "area_code": "831",
+        "dialing_code": "+1 831"
+    },
+    {
+        "city": "Santa Maria",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Santa Monica",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Santa Rosa",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "Simi Valley",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "South Gate",
+        "area_code": "323",
+        "dialing_code": "+1 323"
+    },
+    {
+        "city": "South San Francisco",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Stockton",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Sunnyvale",
+        "area_code": "408",
+        "dialing_code": "+1 408"
+    },
+    {
+        "city": "Temecula",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Thousand Oaks",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Torrance",
+        "area_code": "310",
+        "dialing_code": "+1 310"
+    },
+    {
+        "city": "Tracy",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Tulare",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Turlock",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Tustin",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Union City",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Upland",
+        "area_code": "909",
+        "dialing_code": "+1 909"
+    },
+    {
+        "city": "Vacaville",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "Vallejo",
+        "area_code": "707",
+        "dialing_code": "+1 707"
+    },
+    {
+        "city": "Victorville",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Visalia",
+        "area_code": "559",
+        "dialing_code": "+1 559"
+    },
+    {
+        "city": "Vista",
+        "area_code": "442",
+        "dialing_code": "+1 442"
+    },
+    {
+        "city": "Walnut Creek",
+        "area_code": "925",
+        "dialing_code": "+1 925"
+    },
+    {
+        "city": "Watsonville",
+        "area_code": "831",
+        "dialing_code": "+1 831"
+    },
+    {
+        "city": "West Covina",
+        "area_code": "626",
+        "dialing_code": "+1 626"
+    },
+    {
+        "city": "Westminster",
+        "area_code": "657",
+        "dialing_code": "+1 657"
+    },
+    {
+        "city": "Whittier",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Woodland",
+        "area_code": "269",
+        "dialing_code": "+1 269"
+    },
+    {
+        "city": "Yorba Linda",
+        "area_code": "657",
+        "dialing_code": "+1 657"
+    }
+]

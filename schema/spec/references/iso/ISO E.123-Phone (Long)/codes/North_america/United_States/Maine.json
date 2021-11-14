@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Auburn",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Augusta",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Bangor",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Biddeford",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Brunswick",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Lewiston",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Portland",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Sanford",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "Waterville",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    }
+]

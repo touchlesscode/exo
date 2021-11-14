@@ -1,0 +1,30 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "namespace_error_catalog",
+	"description": "Error catalog for namespace. It is important to keep this catalog relevant by synchronizing the API implementation and specification in production and during development.",
+	"properties": {
+		"namespace": {
+			"type": "string",
+			"description": "API namespace for the error catalog. The catalog is scoped to this namespace."
+		},
+		"language": {
+			"description": "Language used to localize error-related strings, such as message, issue, and suggested actions.",
+			"$ref": "language.json"
+
+		},
+		"errors": {
+			"type": "array",
+			"description": "Catalog of errors.",
+			"additionalItems": false,
+			"items": {
+				"$ref": "error_catalog_item.json"
+			}
+		}
+	},
+	"required": [
+		"namespace",
+		"language",
+		"errors"
+	]
+}

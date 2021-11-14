@@ -1,0 +1,142 @@
+[
+    {
+        "city": "?amac",
+        "area_code": "54",
+        "dialing_code": "+387 54"
+    },
+    {
+        "city": "Banja Luka",
+        "area_code": "51",
+        "dialing_code": "+387 51"
+    },
+    {
+        "city": "Bijeljina",
+        "area_code": "55",
+        "dialing_code": "+387 55"
+    },
+    {
+        "city": "Bosansko",
+        "area_code": "38",
+        "dialing_code": "+387 38"
+    },
+    {
+        "city": "Bosansko - Podrinjska ?upanija",
+        "area_code": "38",
+        "dialing_code": "+387 38"
+    },
+    {
+        "city": "Distrikt Brcko",
+        "area_code": "49",
+        "dialing_code": "+387 49"
+    },
+    {
+        "city": "Doboj",
+        "area_code": "53",
+        "dialing_code": "+387 53"
+    },
+    {
+        "city": "Foca/Srbinje",
+        "area_code": "58",
+        "dialing_code": "+387 58"
+    },
+    {
+        "city": "Herceg",
+        "area_code": "34",
+        "dialing_code": "+387 34"
+    },
+    {
+        "city": "Hercegovac",
+        "area_code": "36",
+        "dialing_code": "+387 36"
+    },
+    {
+        "city": "Kanton Sarajevo",
+        "area_code": "33",
+        "dialing_code": "+387 33"
+    },
+    {
+        "city": "Mobile Phones - BH Telecom",
+        "area_code": "62",
+        "dialing_code": "+387 62"
+    },
+    {
+        "city": "Mobile Phones - Eronet",
+        "area_code": "63",
+        "dialing_code": "+387 63"
+    },
+    {
+        "city": "Mobile Phones - Moblna Skpske",
+        "area_code": "65",
+        "dialing_code": "+387 65"
+    },
+    {
+        "city": "Mrkonjic' Grad",
+        "area_code": "50",
+        "dialing_code": "+387 50"
+    },
+    {
+        "city": "Posavska ?upanija",
+        "area_code": "31",
+        "dialing_code": "+387 31"
+    },
+    {
+        "city": "Prijedor",
+        "area_code": "52",
+        "dialing_code": "+387 52"
+    },
+    {
+        "city": "Sarajevo",
+        "area_code": "33",
+        "dialing_code": "+387 33"
+    },
+    {
+        "city": "Sarajevska ?upanija",
+        "area_code": "33",
+        "dialing_code": "+387 33"
+    },
+    {
+        "city": "Srbinje",
+        "area_code": "58",
+        "dialing_code": "+387 58"
+    },
+    {
+        "city": "Srednjo",
+        "area_code": "30",
+        "dialing_code": "+387 30"
+    },
+    {
+        "city": "Srpsko Sarajevo",
+        "area_code": "57",
+        "dialing_code": "+387 57"
+    },
+    {
+        "city": "Trebinje",
+        "area_code": "59",
+        "dialing_code": "+387 59"
+    },
+    {
+        "city": "Tuzlanska ?upanija",
+        "area_code": "35",
+        "dialing_code": "+387 35"
+    },
+    {
+        "city": "Unsko",
+        "area_code": "37",
+        "dialing_code": "+387 37"
+    },
+    {
+        "city": "Zapadno",
+        "area_code": "39",
+        "dialing_code": "+387 39"
+    },
+    {
+        "city": "Zenic",
+        "area_code": "32",
+        "dialing_code": "+387 32"
+    },
+    {
+        "city": "Zvornik",
+        "area_code": "56",
+        "dialing_code": "+387 56"
+    }
+]

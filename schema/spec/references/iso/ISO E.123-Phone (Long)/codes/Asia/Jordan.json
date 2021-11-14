@@ -1,0 +1,97 @@
+[
+    {
+        "city": "Amman",
+        "area_code": "6",
+        "dialing_code": "+962 6"
+    },
+    {
+        "city": "Aqaba",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Azraq",
+        "area_code": "5",
+        "dialing_code": "+962 5"
+    },
+    {
+        "city": "Balqa",
+        "area_code": "5",
+        "dialing_code": "+962 5"
+    },
+    {
+        "city": "Greater Amman",
+        "area_code": "6",
+        "dialing_code": "+962 6"
+    },
+    {
+        "city": "Irbid",
+        "area_code": "2",
+        "dialing_code": "+962 2"
+    },
+    {
+        "city": "Jerash",
+        "area_code": "2",
+        "dialing_code": "+962 2"
+    },
+    {
+        "city": "Karak",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Ma daba",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Ma'an",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Madaba",
+        "area_code": "5",
+        "dialing_code": "+962 5"
+    },
+    {
+        "city": "Mafraq",
+        "area_code": "2",
+        "dialing_code": "+962 2"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "79",
+        "dialing_code": "+962 79"
+    },
+    {
+        "city": "Petra",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Ramtha",
+        "area_code": "2",
+        "dialing_code": "+962 2"
+    },
+    {
+        "city": "Salt",
+        "area_code": "5",
+        "dialing_code": "+962 5"
+    },
+    {
+        "city": "Tafila",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Wadi Rum",
+        "area_code": "3",
+        "dialing_code": "+962 3"
+    },
+    {
+        "city": "Zarqa",
+        "area_code": "5",
+        "dialing_code": "+962 5"
+    }
+]

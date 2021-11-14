@@ -1,0 +1,107 @@
+[
+    {
+        "city": "Brno",
+        "area_code": "54",
+        "dialing_code": "+420 54"
+    },
+    {
+        "city": "Cheb",
+        "area_code": "166",
+        "dialing_code": "+420 166"
+    },
+    {
+        "city": "Liberec",
+        "area_code": "48",
+        "dialing_code": "+420 48"
+    },
+    {
+        "city": "Ostrava",
+        "area_code": "69",
+        "dialing_code": "+420 69"
+    },
+    {
+        "city": "Plzen",
+        "area_code": "377",
+        "dialing_code": "+420 377"
+    },
+    {
+        "city": "Prague",
+        "area_code": "",
+        "dialing_code": "+420"
+    },
+    {
+        "city": "Praha (Prague)",
+        "area_code": "3",
+        "dialing_code": "+420 3"
+    },
+    {
+        "city": "Region Jihocesky",
+        "area_code": "39",
+        "dialing_code": "+420 39"
+    },
+    {
+        "city": "Region Jihomoravsky",
+        "area_code": "54",
+        "dialing_code": "+420 54"
+    },
+    {
+        "city": "Region Karlovarsky",
+        "area_code": "35",
+        "dialing_code": "+420 35"
+    },
+    {
+        "city": "Region Kralovehradecky",
+        "area_code": "49",
+        "dialing_code": "+420 49"
+    },
+    {
+        "city": "Region Liberecky",
+        "area_code": "48",
+        "dialing_code": "+420 48"
+    },
+    {
+        "city": "Region Moravskoslezsky",
+        "area_code": "59",
+        "dialing_code": "+420 59"
+    },
+    {
+        "city": "Region Olomoucky",
+        "area_code": "58",
+        "dialing_code": "+420 58"
+    },
+    {
+        "city": "Region Pardubicky",
+        "area_code": "46",
+        "dialing_code": "+420 46"
+    },
+    {
+        "city": "Region Plzensky",
+        "area_code": "37",
+        "dialing_code": "+420 37"
+    },
+    {
+        "city": "Region Stredocesky",
+        "area_code": "32",
+        "dialing_code": "+420 32"
+    },
+    {
+        "city": "Region Ustecky",
+        "area_code": "47",
+        "dialing_code": "+420 47"
+    },
+    {
+        "city": "Region Vysocina",
+        "area_code": "56",
+        "dialing_code": "+420 56"
+    },
+    {
+        "city": "Region Zlinsky",
+        "area_code": "57",
+        "dialing_code": "+420 57"
+    },
+    {
+        "city": "Tabor",
+        "area_code": "712",
+        "dialing_code": "+420 712"
+    }
+]

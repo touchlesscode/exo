@@ -1,0 +1,297 @@
+[
+    {
+        "city": "Anenii Noi",
+        "area_code": "265",
+        "dialing_code": "+373 265"
+    },
+    {
+        "city": "Balti",
+        "area_code": "231",
+        "dialing_code": "+373 231"
+    },
+    {
+        "city": "Basarabeasca",
+        "area_code": "297",
+        "dialing_code": "+373 297"
+    },
+    {
+        "city": "Bender",
+        "area_code": "552",
+        "dialing_code": "+373 552"
+    },
+    {
+        "city": "Briceni",
+        "area_code": "247",
+        "dialing_code": "+373 247"
+    },
+    {
+        "city": "Cahul",
+        "area_code": "299",
+        "dialing_code": "+373 299"
+    },
+    {
+        "city": "Cainari",
+        "area_code": "277",
+        "dialing_code": "+373 277"
+    },
+    {
+        "city": "Calarasi",
+        "area_code": "244",
+        "dialing_code": "+373 244"
+    },
+    {
+        "city": "Camenca",
+        "area_code": "216",
+        "dialing_code": "+373 216"
+    },
+    {
+        "city": "Cantemir",
+        "area_code": "273",
+        "dialing_code": "+373 273"
+    },
+    {
+        "city": "Causeni",
+        "area_code": "243",
+        "dialing_code": "+373 243"
+    },
+    {
+        "city": "Ceadyr ? Lunga",
+        "area_code": "291",
+        "dialing_code": "+373 291"
+    },
+    {
+        "city": "Ceadýr ? Lunga",
+        "area_code": "291",
+        "dialing_code": "+373 291"
+    },
+    {
+        "city": "Chisinau",
+        "area_code": "22",
+        "dialing_code": "+373 22"
+    },
+    {
+        "city": "Cimislia",
+        "area_code": "241",
+        "dialing_code": "+373 241"
+    },
+    {
+        "city": "Comrat",
+        "area_code": "298",
+        "dialing_code": "+373 298"
+    },
+    {
+        "city": "Criuleni",
+        "area_code": "248",
+        "dialing_code": "+373 248"
+    },
+    {
+        "city": "Dnestrovsk",
+        "area_code": "219",
+        "dialing_code": "+373 219"
+    },
+    {
+        "city": "Donduseni",
+        "area_code": "251",
+        "dialing_code": "+373 251"
+    },
+    {
+        "city": "Drochia",
+        "area_code": "252",
+        "dialing_code": "+373 252"
+    },
+    {
+        "city": "Dubasari",
+        "area_code": "215",
+        "dialing_code": "+373 215"
+    },
+    {
+        "city": "Edinet",
+        "area_code": "246",
+        "dialing_code": "+373 246"
+    },
+    {
+        "city": "Falesti",
+        "area_code": "259",
+        "dialing_code": "+373 259"
+    },
+    {
+        "city": "Floresti",
+        "area_code": "250",
+        "dialing_code": "+373 250"
+    },
+    {
+        "city": "Glodeni",
+        "area_code": "249",
+        "dialing_code": "+373 249"
+    },
+    {
+        "city": "Grigoriopol",
+        "area_code": "210",
+        "dialing_code": "+373 210"
+    },
+    {
+        "city": "Hancesti",
+        "area_code": "269",
+        "dialing_code": "+373 269"
+    },
+    {
+        "city": "Hincesti",
+        "area_code": "269",
+        "dialing_code": "+373 269"
+    },
+    {
+        "city": "Hyncesti",
+        "area_code": "269",
+        "dialing_code": "+373 269"
+    },
+    {
+        "city": "Hîncesti",
+        "area_code": "269",
+        "dialing_code": "+373 269"
+    },
+    {
+        "city": "Hýncesti",
+        "area_code": "269",
+        "dialing_code": "+373 269"
+    },
+    {
+        "city": "Ialoveni",
+        "area_code": "268",
+        "dialing_code": "+373 268"
+    },
+    {
+        "city": "Leova",
+        "area_code": "263",
+        "dialing_code": "+373 263"
+    },
+    {
+        "city": "Nisporeni",
+        "area_code": "264",
+        "dialing_code": "+373 264"
+    },
+    {
+        "city": "Ocnita",
+        "area_code": "271",
+        "dialing_code": "+373 271"
+    },
+    {
+        "city": "Orhei",
+        "area_code": "235",
+        "dialing_code": "+373 235"
+    },
+    {
+        "city": "Rezina",
+        "area_code": "254",
+        "dialing_code": "+373 254"
+    },
+    {
+        "city": "Ribnita",
+        "area_code": "555",
+        "dialing_code": "+373 555"
+    },
+    {
+        "city": "Riscani",
+        "area_code": "256",
+        "dialing_code": "+373 256"
+    },
+    {
+        "city": "Rybnita",
+        "area_code": "555",
+        "dialing_code": "+373 555"
+    },
+    {
+        "city": "Ryscani",
+        "area_code": "256",
+        "dialing_code": "+373 256"
+    },
+    {
+        "city": "Rîbnita",
+        "area_code": "555",
+        "dialing_code": "+373 555"
+    },
+    {
+        "city": "Rîscani",
+        "area_code": "256",
+        "dialing_code": "+373 256"
+    },
+    {
+        "city": "Rýbnita",
+        "area_code": "555",
+        "dialing_code": "+373 555"
+    },
+    {
+        "city": "Rýscani",
+        "area_code": "256",
+        "dialing_code": "+373 256"
+    },
+    {
+        "city": "Singerei",
+        "area_code": "262",
+        "dialing_code": "+373 262"
+    },
+    {
+        "city": "Slobozia",
+        "area_code": "557",
+        "dialing_code": "+373 557"
+    },
+    {
+        "city": "Soldanesti",
+        "area_code": "272",
+        "dialing_code": "+373 272"
+    },
+    {
+        "city": "Soroca",
+        "area_code": "230",
+        "dialing_code": "+373 230"
+    },
+    {
+        "city": "Stefan Voda",
+        "area_code": "242",
+        "dialing_code": "+373 242"
+    },
+    {
+        "city": "Straseni",
+        "area_code": "237",
+        "dialing_code": "+373 237"
+    },
+    {
+        "city": "Syngerei",
+        "area_code": "262",
+        "dialing_code": "+373 262"
+    },
+    {
+        "city": "Sîngerei",
+        "area_code": "262",
+        "dialing_code": "+373 262"
+    },
+    {
+        "city": "Sýngerei",
+        "area_code": "262",
+        "dialing_code": "+373 262"
+    },
+    {
+        "city": "Taraclia",
+        "area_code": "294",
+        "dialing_code": "+373 294"
+    },
+    {
+        "city": "Telenesti",
+        "area_code": "258",
+        "dialing_code": "+373 258"
+    },
+    {
+        "city": "Tiraspol",
+        "area_code": "533",
+        "dialing_code": "+373 533"
+    },
+    {
+        "city": "Ungheni",
+        "area_code": "236",
+        "dialing_code": "+373 236"
+    },
+    {
+        "city": "Vulcanesti",
+        "area_code": "293",
+        "dialing_code": "+373 293"
+    }
+]

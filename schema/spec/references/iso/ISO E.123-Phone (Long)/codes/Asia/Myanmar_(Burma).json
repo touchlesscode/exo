@@ -1,0 +1,67 @@
+[
+    {
+        "city": "Bassein",
+        "area_code": "42",
+        "dialing_code": "+95 42"
+    },
+    {
+        "city": "Dawei",
+        "area_code": "59",
+        "dialing_code": "+95 59"
+    },
+    {
+        "city": "Hpa-An",
+        "area_code": "58",
+        "dialing_code": "+95 58"
+    },
+    {
+        "city": "Mandalay",
+        "area_code": "2",
+        "dialing_code": "+95 2"
+    },
+    {
+        "city": "Mawlamyine",
+        "area_code": "57",
+        "dialing_code": "+95 57"
+    },
+    {
+        "city": "Mobile Phones - Mandalay",
+        "area_code": "90",
+        "dialing_code": "+95 90"
+    },
+    {
+        "city": "Mobile Phones - Yangon",
+        "area_code": "99",
+        "dialing_code": "+95 99"
+    },
+    {
+        "city": "Monywa",
+        "area_code": "71",
+        "dialing_code": "+95 71"
+    },
+    {
+        "city": "Myeik",
+        "area_code": "59",
+        "dialing_code": "+95 59"
+    },
+    {
+        "city": "Prome",
+        "area_code": "53",
+        "dialing_code": "+95 53"
+    },
+    {
+        "city": "Rangoon",
+        "area_code": "1",
+        "dialing_code": "+95 1"
+    },
+    {
+        "city": "Thaton",
+        "area_code": "57",
+        "dialing_code": "+95 57"
+    },
+    {
+        "city": "Yangon (Rangoon)",
+        "area_code": "1",
+        "dialing_code": "+95 1"
+    }
+]

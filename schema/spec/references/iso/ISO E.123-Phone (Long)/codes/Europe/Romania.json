@@ -1,0 +1,2237 @@
+[
+    {
+        "city": "Abrud",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Adjud",
+        "area_code": "237",
+        "dialing_code": "+40 237"
+    },
+    {
+        "city": "Agigea",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Agnita",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Aiud",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Alba Iulia",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Alesd",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Alexandria",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Amara",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Apahida",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Arad",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Asau",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Avrig",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Axente Sever",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Azuga",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Baba Ana",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Babadag",
+        "area_code": "240",
+        "dialing_code": "+40 240"
+    },
+    {
+        "city": "Babeni",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Bacau",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Bacia",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Baia Mare",
+        "area_code": "262",
+        "dialing_code": "+40 262"
+    },
+    {
+        "city": "Baia Sprie",
+        "area_code": "262",
+        "dialing_code": "+40 262"
+    },
+    {
+        "city": "Baicoi",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Baiculesti",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Baile Felix",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Baile Govora",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Baile Herculane",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Baile Olanesti",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Bailesti",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Bals",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Baneasa",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Banesti",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Barcanesti (judetz: Ialomitza)",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Barcanesti (judetz: Prahova)",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Barcani",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Basarabi",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Bascov",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Beclean",
+        "area_code": "263",
+        "dialing_code": "+40 263"
+    },
+    {
+        "city": "Beius",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Bicaz",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Bilciuresti",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Birca",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Birlad",
+        "area_code": "235",
+        "dialing_code": "+40 235"
+    },
+    {
+        "city": "Bistrita",
+        "area_code": "263",
+        "dialing_code": "+40 263"
+    },
+    {
+        "city": "Blaj",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Bocsa Romyna",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Bocsa Romýna",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Boldesti - Scaieni",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Bolintin Vale",
+        "area_code": "246",
+        "dialing_code": "+40 246"
+    },
+    {
+        "city": "Botosani",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Brad",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Braesti",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Braila",
+        "area_code": "239",
+        "dialing_code": "+40 239"
+    },
+    {
+        "city": "Bran",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Branesti",
+        "area_code": "2179",
+        "dialing_code": "+40 2179"
+    },
+    {
+        "city": "Branisca",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Brasov",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Breaza",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Brebu",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Bretea Romyna",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Bretea Romýna",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Brezoi",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Bucecea",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Bucharest",
+        "area_code": "21",
+        "dialing_code": "+40 21"
+    },
+    {
+        "city": "Bucov",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Bucuresci",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Bucuresti (Bucharest)",
+        "area_code": "21",
+        "dialing_code": "+40 21"
+    },
+    {
+        "city": "Buftea",
+        "area_code": "2179",
+        "dialing_code": "+40 2179"
+    },
+    {
+        "city": "Buhoci",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Buhusi",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Busteni",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Buzau",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Buzias",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Caciulata",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Calafat",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Calan",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Calarasi",
+        "area_code": "242",
+        "dialing_code": "+40 242"
+    },
+    {
+        "city": "Calimanesti",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Calugareni",
+        "area_code": "246",
+        "dialing_code": "+40 246"
+    },
+    {
+        "city": "Cap Aurora",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Caracal",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Caransebes",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Carei",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Carpinis",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Casin",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Castelu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Catau Ludus",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Ceahlau",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Cehu Silvaniei",
+        "area_code": "260",
+        "dialing_code": "+40 260"
+    },
+    {
+        "city": "Cerat",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Cerna Voda",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Certeju De Sus",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Chisineu Cris",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Cimpeni",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Cimpia Turzii",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Cimpina",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Cimpulung Moldovenesc",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Cimpulung Muscel",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Cisnadie",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Cluj - Napoca",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Cluj Napoca",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Cochirleni",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Codlea",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Colibasi",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Comanesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Comarnic",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Constanta",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Copsa Mica",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Corabia",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Corbeni",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Corbu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Cornu",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Cosereni",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Costesti",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Costinesti",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Cotnari",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Covasna",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Craiova",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Criscior",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Cristian",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Cristur",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Cugir",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Curtea De Arges",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Curtici",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Cuza Voda",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Dabuleni",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Darabani",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Darmanesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Dej",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Deta",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Deva",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Dirlos",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Dobra",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Doi Mai",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Dorohoi",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Draganesti (judetz: Olt)",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Draganesti - Vlasca (judetz: T",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Draganu",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Dragasani",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Drobeta - Turnu Severin",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Drobeta Turnu Severin",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Dumbrava Rosie",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Dumbraveni",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Eforie Nord",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Eforie Sud",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Fagaras",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Faget",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Falticeni",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Faurei (judetz: Braila)",
+        "area_code": "239",
+        "dialing_code": "+40 239"
+    },
+    {
+        "city": "Faurei (judetz: Constanta)",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Fetesti",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Fieni",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Filiasi",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Fintinele",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Flaminzi",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Floresti (judetz: Cluj)",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Floresti (judetz: Prahova)",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Focsani",
+        "area_code": "237",
+        "dialing_code": "+40 237"
+    },
+    {
+        "city": "Frasin",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Gaiesti",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Galati",
+        "area_code": "236",
+        "dialing_code": "+40 236"
+    },
+    {
+        "city": "Gelu",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Geoagiu Bai",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Ghelari",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Gheorgheni",
+        "area_code": "266",
+        "dialing_code": "+40 266"
+    },
+    {
+        "city": "Gheorghi- Eni",
+        "area_code": "266",
+        "dialing_code": "+40 266"
+    },
+    {
+        "city": "Gheraseni",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Gherla",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Ghimpati",
+        "area_code": "246",
+        "dialing_code": "+40 246"
+    },
+    {
+        "city": "Giarmata",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Girbovi",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Giurgiu",
+        "area_code": "246",
+        "dialing_code": "+40 246"
+    },
+    {
+        "city": "Glodeanu Silistea",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Gura Humorului",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Gura Ocnitei",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Gura Sutii",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Harman",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Hateg",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Hirlau",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Hirsova",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Hlipiceni",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Horezu",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Huedin",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Hunedoara",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Husi",
+        "area_code": "235",
+        "dialing_code": "+40 235"
+    },
+    {
+        "city": "Ianca",
+        "area_code": "239",
+        "dialing_code": "+40 239"
+    },
+    {
+        "city": "Iasi",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Iernut",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Ineu",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Insuratei",
+        "area_code": "239",
+        "dialing_code": "+40 239"
+    },
+    {
+        "city": "Intorsura Buzaului",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Ion Luca Caragiale",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Isaccea",
+        "area_code": "240",
+        "dialing_code": "+40 240"
+    },
+    {
+        "city": "Jibou",
+        "area_code": "260",
+        "dialing_code": "+40 260"
+    },
+    {
+        "city": "Jimbolia",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Jupiter",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Lazu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Lehliu Gara",
+        "area_code": "242",
+        "dialing_code": "+40 242"
+    },
+    {
+        "city": "Leresti",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Letea Veche",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Leu",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Liesti",
+        "area_code": "236",
+        "dialing_code": "+40 236"
+    },
+    {
+        "city": "Limanu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Lipanesti",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Lipova",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Livezi",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Livezile",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Ludus",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Lugoj",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Lumina",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Luminita",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Lupeni",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "M. Kogalniceanu",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Macin",
+        "area_code": "240",
+        "dialing_code": "+40 240"
+    },
+    {
+        "city": "Magura",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Malu Cu Flori",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Mamaia",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Manastirea Neamt",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Mangalia",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Maracineni",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Marasesti",
+        "area_code": "237",
+        "dialing_code": "+40 237"
+    },
+    {
+        "city": "Marghita",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Margineni",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Medgidia",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Medias",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Merei",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Merisani",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Miercurea Ciuc",
+        "area_code": "266",
+        "dialing_code": "+40 266"
+    },
+    {
+        "city": "Miercurea Miraj",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Mizil",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Moeciu De Jos",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Mogosoaia",
+        "area_code": "21",
+        "dialing_code": "+40 21"
+    },
+    {
+        "city": "Moinesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Moldova Veche",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Moneasa",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Moreni",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Moroeni",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Motru",
+        "area_code": "253",
+        "dialing_code": "+40 253"
+    },
+    {
+        "city": "Nadlac",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Nasaud",
+        "area_code": "263",
+        "dialing_code": "+40 263"
+    },
+    {
+        "city": "Navodari",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Negresti",
+        "area_code": "235",
+        "dialing_code": "+40 235"
+    },
+    {
+        "city": "Negresti - Oas",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Negureni",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Nehoiu",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Neptun",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Nicolae Balcescu",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Nisipari",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Novaci",
+        "area_code": "253",
+        "dialing_code": "+40 253"
+    },
+    {
+        "city": "Ocna Mures",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Ocna Sibiului",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Ocnita",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Odobesti",
+        "area_code": "237",
+        "dialing_code": "+40 237"
+    },
+    {
+        "city": "Odorheiu Secuiesc",
+        "area_code": "266",
+        "dialing_code": "+40 266"
+    },
+    {
+        "city": "Olimp",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Oltenita",
+        "area_code": "242",
+        "dialing_code": "+40 242"
+    },
+    {
+        "city": "Onesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Oradea",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Orastie",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Oravita",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Orsova",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Otelu Rosu",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Otopeni",
+        "area_code": "21",
+        "dialing_code": "+40 21"
+    },
+    {
+        "city": "Ovidiu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Palazu Mare",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Panciu",
+        "area_code": "237",
+        "dialing_code": "+40 237"
+    },
+    {
+        "city": "Parava",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Pascani",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Patirla Gele",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Paulis",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Petresti (judetz: Alba)",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Petresti (judetz: Dambovita)",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Petrila",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Petrosani",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Piatra",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Piatra Neamt",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Pielesti",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Pietrosita",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Pincesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Piriul Rece",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Pitesti",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Plenita",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Ploiesti",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Plopeni",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Podari",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Podu Iloaiei",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Podu Turcului",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Podu Vadului",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Poduri",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Pogoanele",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Poiana",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Poiana Brasov",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Poiana Cimpina",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Poiana Marului",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Poiana Tapului",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Predeal",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Prundu Birgaului",
+        "area_code": "263",
+        "dialing_code": "+40 263"
+    },
+    {
+        "city": "Pucioasa",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Racaciuni",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Racari",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Radauti",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Rasinari",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Razoare",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Razvad",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Reghin",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Remus Opreanu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Resita",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Rimnicu Sarat",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Rimnicu Vilcea",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Ripiceni",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Risnov",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Roman",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Romos",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Ropotu Mare",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Rosiori De Vede",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Rosiori de Vede",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Roznov",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Rucar",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Rupea",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Sacele",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Saligny",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Saliste",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Salonta",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Sarmisege- Tuza",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Sasciori",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Sascut",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Satu Mare",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Satu Nou",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Saturn",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Saucesti",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Saveni",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Savinesti",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Savirsin",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Schitu",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Scinteia",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Scornicesti",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Scurtesti",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Sebes",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Sebis",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Secuieni",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Segarcea",
+        "area_code": "251",
+        "dialing_code": "+40 251"
+    },
+    {
+        "city": "Seimenii Mici",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Seini",
+        "area_code": "262",
+        "dialing_code": "+40 262"
+    },
+    {
+        "city": "Seitin",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Selimbar",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Sfintu Gheorghe",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Sibioara",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Sibiu",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Sighetu Marmatiei",
+        "area_code": "262",
+        "dialing_code": "+40 262"
+    },
+    {
+        "city": "Sighisoara",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Simeria",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Siminoc",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Simleul Silvaniei",
+        "area_code": "260",
+        "dialing_code": "+40 260"
+    },
+    {
+        "city": "Sinaia",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Singeorz-Bai",
+        "area_code": "263",
+        "dialing_code": "+40 263"
+    },
+    {
+        "city": "Sinnicolau-Mare",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Sinpetru",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Sintandrei",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Sintimbru",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    },
+    {
+        "city": "Siret",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Siria",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Sita Buzaului",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Slanic",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Slanic Moldova",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Slatina",
+        "area_code": "249",
+        "dialing_code": "+40 249"
+    },
+    {
+        "city": "Slobozia",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Snagov",
+        "area_code": "2179",
+        "dialing_code": "+40 2179"
+    },
+    {
+        "city": "Sofronea",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Soimus",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Solca",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Sovata Bai",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Stefanesti",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Stei",
+        "area_code": "259",
+        "dialing_code": "+40 259"
+    },
+    {
+        "city": "Stolnici",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Strehaia",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Suceava",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Sulina",
+        "area_code": "240",
+        "dialing_code": "+40 240"
+    },
+    {
+        "city": "Talmaciu",
+        "area_code": "269",
+        "dialing_code": "+40 269"
+    },
+    {
+        "city": "Tandarei",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Tasnad",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Techirghiol",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Tecuci",
+        "area_code": "236",
+        "dialing_code": "+40 236"
+    },
+    {
+        "city": "Telega",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Teliucu Inferior",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Teremia Mare",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Timisoara",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Timisu De Jos",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Timisu De Sus",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Tintea",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Tirgoviste",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Tirgu Bujor",
+        "area_code": "236",
+        "dialing_code": "+40 236"
+    },
+    {
+        "city": "Tirgu Frumos",
+        "area_code": "232",
+        "dialing_code": "+40 232"
+    },
+    {
+        "city": "Tirgu Jiu",
+        "area_code": "253",
+        "dialing_code": "+40 253"
+    },
+    {
+        "city": "Tirgu Lapus",
+        "area_code": "262",
+        "dialing_code": "+40 262"
+    },
+    {
+        "city": "Tirgu Mures",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Tirgu Neamt",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Tirgu Ocna",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Tirgu Secuiesc",
+        "area_code": "267",
+        "dialing_code": "+40 267"
+    },
+    {
+        "city": "Tirnaveni",
+        "area_code": "265",
+        "dialing_code": "+40 265"
+    },
+    {
+        "city": "Tismana",
+        "area_code": "253",
+        "dialing_code": "+40 253"
+    },
+    {
+        "city": "Titu",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Tohan",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Toplita",
+        "area_code": "266",
+        "dialing_code": "+40 266"
+    },
+    {
+        "city": "Topoloveni",
+        "area_code": "248",
+        "dialing_code": "+40 248"
+    },
+    {
+        "city": "Tortoman",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Traian",
+        "area_code": "234",
+        "dialing_code": "+40 234"
+    },
+    {
+        "city": "Tulcea",
+        "area_code": "240",
+        "dialing_code": "+40 240"
+    },
+    {
+        "city": "Turceni",
+        "area_code": "253",
+        "dialing_code": "+40 253"
+    },
+    {
+        "city": "Turda",
+        "area_code": "264",
+        "dialing_code": "+40 264"
+    },
+    {
+        "city": "Turnu Magurele",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Tuzla",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Urlati",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Urziceni",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Vacaresti",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Vaculesti",
+        "area_code": "231",
+        "dialing_code": "+40 231"
+    },
+    {
+        "city": "Vadu Oii",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Vadu Pasii",
+        "area_code": "238",
+        "dialing_code": "+40 238"
+    },
+    {
+        "city": "Valea Bolvasnita",
+        "area_code": "255",
+        "dialing_code": "+40 255"
+    },
+    {
+        "city": "Valea Calugareasca",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Valea Ciorii",
+        "area_code": "243",
+        "dialing_code": "+40 243"
+    },
+    {
+        "city": "Valea Dacilor",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Valea Doftanei",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Valenii De Munte",
+        "area_code": "244",
+        "dialing_code": "+40 244"
+    },
+    {
+        "city": "Vama Veche",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Varias",
+        "area_code": "256",
+        "dialing_code": "+40 256"
+    },
+    {
+        "city": "Vaslui",
+        "area_code": "235",
+        "dialing_code": "+40 235"
+    },
+    {
+        "city": "Vatra Dornei",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Vatra Moldovitei",
+        "area_code": "230",
+        "dialing_code": "+40 230"
+    },
+    {
+        "city": "Venus",
+        "area_code": "241",
+        "dialing_code": "+40 241"
+    },
+    {
+        "city": "Vetel",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Victoria",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Videle",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Viile Satu Mare",
+        "area_code": "261",
+        "dialing_code": "+40 261"
+    },
+    {
+        "city": "Viisoara",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Vinatorii-Neamt",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Vinga",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Vinju Mare",
+        "area_code": "252",
+        "dialing_code": "+40 252"
+    },
+    {
+        "city": "Vladimirescu",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Voicesti",
+        "area_code": "250",
+        "dialing_code": "+40 250"
+    },
+    {
+        "city": "Voinesti",
+        "area_code": "245",
+        "dialing_code": "+40 245"
+    },
+    {
+        "city": "Vulcan",
+        "area_code": "254",
+        "dialing_code": "+40 254"
+    },
+    {
+        "city": "Zadareni",
+        "area_code": "257",
+        "dialing_code": "+40 257"
+    },
+    {
+        "city": "Zalau",
+        "area_code": "260",
+        "dialing_code": "+40 260"
+    },
+    {
+        "city": "Zanesti",
+        "area_code": "233",
+        "dialing_code": "+40 233"
+    },
+    {
+        "city": "Zarnesti",
+        "area_code": "268",
+        "dialing_code": "+40 268"
+    },
+    {
+        "city": "Zimnicea",
+        "area_code": "247",
+        "dialing_code": "+40 247"
+    },
+    {
+        "city": "Zlatna",
+        "area_code": "258",
+        "dialing_code": "+40 258"
+    }
+]

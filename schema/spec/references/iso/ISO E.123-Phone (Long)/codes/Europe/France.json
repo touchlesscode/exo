@@ -1,0 +1,232 @@
+[
+    {
+        "city": "Aix en Provence",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Ajaccio",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Angers",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Bastia",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Besancon",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Besançon",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Bordeaux",
+        "area_code": "5",
+        "dialing_code": "+33 5"
+    },
+    {
+        "city": "Brest",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Caen",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Clermont Ferrand",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Dijon",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Grenoble",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Istres",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Le Havre",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Le Mans",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Lens",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Lille",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Limoges",
+        "area_code": "5",
+        "dialing_code": "+33 5"
+    },
+    {
+        "city": "Lyon",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Macon",
+        "area_code": "478",
+        "dialing_code": "+33 478"
+    },
+    {
+        "city": "Marseille",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Montpellier",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Mulhouse",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Nancy",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Nantes",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Nice",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Nimes",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Northeast France",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Northwest France",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Orleans",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Paris",
+        "area_code": "1",
+        "dialing_code": "+33 1"
+    },
+    {
+        "city": "Paris and Paris Region",
+        "area_code": "1",
+        "dialing_code": "+33 1"
+    },
+    {
+        "city": "Perpignan",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Reims",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Rennes",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Rouen",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Saint Denis",
+        "area_code": "1",
+        "dialing_code": "+33 1"
+    },
+    {
+        "city": "Saint Etienne du Rouvray",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Southeast France and Corsica",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Southwest France",
+        "area_code": "5",
+        "dialing_code": "+33 5"
+    },
+    {
+        "city": "Strasbourg",
+        "area_code": "3",
+        "dialing_code": "+33 3"
+    },
+    {
+        "city": "Toulon",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    },
+    {
+        "city": "Toulouse",
+        "area_code": "5",
+        "dialing_code": "+33 5"
+    },
+    {
+        "city": "Tours",
+        "area_code": "2",
+        "dialing_code": "+33 2"
+    },
+    {
+        "city": "Versailles",
+        "area_code": "859",
+        "dialing_code": "+33 859"
+    },
+    {
+        "city": "Villeurbanne",
+        "area_code": "4",
+        "dialing_code": "+33 4"
+    }
+]

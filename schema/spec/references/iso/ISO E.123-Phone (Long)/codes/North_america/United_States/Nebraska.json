@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Fremont",
+        "area_code": "0",
+        "dialing_code": "+1 0"
+    },
+    {
+        "city": "Kearney",
+        "area_code": "308",
+        "dialing_code": "+1 308"
+    },
+    {
+        "city": "Lincoln",
+        "area_code": "402",
+        "dialing_code": "+1 402"
+    },
+    {
+        "city": "Norfolk",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Omaha",
+        "area_code": "402",
+        "dialing_code": "+1 402"
+    }
+]

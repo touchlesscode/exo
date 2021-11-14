@@ -1,0 +1,217 @@
+[
+    {
+        "city": "Abha",
+        "area_code": "17",
+        "dialing_code": "+966 17"
+    },
+    {
+        "city": "Abqaiq",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Al Khobar",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Al Khubar",
+        "area_code": "3",
+        "dialing_code": "+966 3"
+    },
+    {
+        "city": "Al Markazi",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Al Ulaya",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Anak",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Bukayriyah",
+        "area_code": "16",
+        "dialing_code": "+966 16"
+    },
+    {
+        "city": "Dammam",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Damman",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Dhahran (Aramco)",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Ha il",
+        "area_code": "6",
+        "dialing_code": "+966 6"
+    },
+    {
+        "city": "Hail",
+        "area_code": "16",
+        "dialing_code": "+966 16"
+    },
+    {
+        "city": "Hawiyah",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Hawtah",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Hofuf",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Jeddah",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Jubail",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Khafji",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Khamis Mushait",
+        "area_code": "17",
+        "dialing_code": "+966 17"
+    },
+    {
+        "city": "Khamis Mushayt",
+        "area_code": "7",
+        "dialing_code": "+966 7"
+    },
+    {
+        "city": "Layla",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Madinah",
+        "area_code": "14",
+        "dialing_code": "+966 14"
+    },
+    {
+        "city": "Makkah",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Makkah (Mecca)",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Medin",
+        "area_code": "14",
+        "dialing_code": "+966 14"
+    },
+    {
+        "city": "Medina Region",
+        "area_code": "14",
+        "dialing_code": "+966 14"
+    },
+    {
+        "city": "Mubarraz",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Najran",
+        "area_code": "17",
+        "dialing_code": "+966 17"
+    },
+    {
+        "city": "Qassim Region",
+        "area_code": "16",
+        "dialing_code": "+966 16"
+    },
+    {
+        "city": "Qatif",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Qedieyeh",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Rabigh",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Ras Tanurah",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Riyadh",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Safwa",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Shaqra",
+        "area_code": "11",
+        "dialing_code": "+966 11"
+    },
+    {
+        "city": "Sihat",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Southern Region",
+        "area_code": "17",
+        "dialing_code": "+966 17"
+    },
+    {
+        "city": "Tabouk",
+        "area_code": "14",
+        "dialing_code": "+966 14"
+    },
+    {
+        "city": "Taif",
+        "area_code": "12",
+        "dialing_code": "+966 12"
+    },
+    {
+        "city": "Tarut Island - Mina and Darin",
+        "area_code": "13",
+        "dialing_code": "+966 13"
+    },
+    {
+        "city": "Yanbou",
+        "area_code": "14",
+        "dialing_code": "+966 14"
+    }
+]

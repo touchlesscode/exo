@@ -1,0 +1,104 @@
+[
+    {
+        "state_capital": "Edmonton",
+        "area_code": "780",
+        "dialing_code": "+1 780",
+        "state": "Alberta"
+    },
+    {
+        "state_capital": "Victoria",
+        "area_code": "250",
+        "dialing_code": "+1 250",
+        "state": "British Columbia"
+    },
+    {
+        "state_capital": "Dawson Creek",
+        "area_code": "250",
+        "dialing_code": "+1 250",
+        "state": "British Columbia - North"
+    },
+    {
+        "state_capital": "Goose Bay",
+        "area_code": "709",
+        "dialing_code": "+1 709",
+        "state": "Labrador"
+    },
+    {
+        "state_capital": "Winnipeg",
+        "area_code": "204",
+        "dialing_code": "+1 204",
+        "state": "Manitoba"
+    },
+    {
+        "state_capital": "Fredericton",
+        "area_code": "506",
+        "dialing_code": "+1 506",
+        "state": "New Brunswick"
+    },
+    {
+        "state_capital": "St. John s",
+        "area_code": "709",
+        "dialing_code": "+1 709",
+        "state": "Newfoundland"
+    },
+    {
+        "state_capital": "Yellowknife",
+        "area_code": "867",
+        "dialing_code": "+1 867",
+        "state": "Northwest Territories"
+    },
+    {
+        "state_capital": "Halifax",
+        "area_code": "902",
+        "dialing_code": "+1 902",
+        "state": "Nova Scotia"
+    },
+    {
+        "state_capital": "Iqaluit",
+        "area_code": "867",
+        "dialing_code": "+1 867",
+        "state": "Nunavut"
+    },
+    {
+        "state_capital": "Toronto",
+        "area_code": "416",
+        "dialing_code": "+1 416",
+        "state": "Ontario"
+    },
+    {
+        "state_capital": "Thunder Bay",
+        "area_code": "807",
+        "dialing_code": "+1 807",
+        "state": "Ontario - Thunder Bay"
+    },
+    {
+        "state_capital": "Charlottetown",
+        "area_code": "902",
+        "dialing_code": "+1 902",
+        "state": "Prince Edward Island"
+    },
+    {
+        "state_capital": "Quebec City",
+        "area_code": "418",
+        "dialing_code": "+1 418",
+        "state": "Quebec"
+    },
+    {
+        "state_capital": "Blanc Sablon",
+        "area_code": "418",
+        "dialing_code": "+1 418",
+        "state": "Quebec - North"
+    },
+    {
+        "state_capital": "Regina",
+        "area_code": "306",
+        "dialing_code": "+1 306",
+        "state": "Saskatchewan"
+    },
+    {
+        "state_capital": "Whitehorse",
+        "area_code": "867",
+        "dialing_code": "+1 867",
+        "state": "Yukon Territory"
+    }
+]

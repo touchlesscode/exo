@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Hargeysa",
+        "area_code": "1",
+        "dialing_code": "+252 1"
+    },
+    {
+        "city": "Mogadiscio",
+        "area_code": "61",
+        "dialing_code": "+252 61"
+    },
+    {
+        "city": "Mogadishu",
+        "area_code": "61",
+        "dialing_code": "+252 61"
+    }
+]

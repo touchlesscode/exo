@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A duration expresses a length of time in terms of years, months, weeks, days, hours, minutes, and seconds. The ISO 8601 standard duration representation format is described as PyYmMdDThHmMsS. For more information, see [Durations](http://en.wikipedia.org/wiki/ISO_8601#Durations). Make provisions to incorporate the effects of daylight savings time. When an amount is zero, you can omit it. Because week cannot co-exist with other time components in ISO 8601 Duration, use P7D.",
+    "title": "ISO time duration",
+    "type": "string",
+    "format": "paypal_common_time_duration_v1",
+    "pattern": "^P([0-9]+Y)?([0-9]+M)?([0-9]+D)?(T([0-9]+H)?([0-9]+M)?([0-9]+S)?)?$"
+}

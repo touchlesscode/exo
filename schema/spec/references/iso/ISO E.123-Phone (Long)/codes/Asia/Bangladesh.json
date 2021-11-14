@@ -1,0 +1,592 @@
+[
+    {
+        "city": "Alamdanga",
+        "area_code": "7622",
+        "dialing_code": "+880 7622"
+    },
+    {
+        "city": "Ashugonj",
+        "area_code": "8528",
+        "dialing_code": "+880 8528"
+    },
+    {
+        "city": "Avaynagar (Noapara)",
+        "area_code": "4222",
+        "dialing_code": "+880 4222"
+    },
+    {
+        "city": "Badargonj",
+        "area_code": "5222",
+        "dialing_code": "+880 5222"
+    },
+    {
+        "city": "Bagerhat",
+        "area_code": "468",
+        "dialing_code": "+880 468"
+    },
+    {
+        "city": "Banaripara",
+        "area_code": "4332",
+        "dialing_code": "+880 4332"
+    },
+    {
+        "city": "Bandarban",
+        "area_code": "361",
+        "dialing_code": "+880 361"
+    },
+    {
+        "city": "Banshkhali",
+        "area_code": "3037",
+        "dialing_code": "+880 3037"
+    },
+    {
+        "city": "Barguna",
+        "area_code": "448",
+        "dialing_code": "+880 448"
+    },
+    {
+        "city": "Barisal",
+        "area_code": "431",
+        "dialing_code": "+880 431"
+    },
+    {
+        "city": "Bauphal",
+        "area_code": "4422",
+        "dialing_code": "+880 4422"
+    },
+    {
+        "city": "Bazitpur",
+        "area_code": "9423",
+        "dialing_code": "+880 9423"
+    },
+    {
+        "city": "Bhairab",
+        "area_code": "9424",
+        "dialing_code": "+880 9424"
+    },
+    {
+        "city": "Bhandaria",
+        "area_code": "4623",
+        "dialing_code": "+880 4623"
+    },
+    {
+        "city": "Bheramara",
+        "area_code": "7022",
+        "dialing_code": "+880 7022"
+    },
+    {
+        "city": "Bhola",
+        "area_code": "491",
+        "dialing_code": "+880 491"
+    },
+    {
+        "city": "Bogra",
+        "area_code": "51",
+        "dialing_code": "+880 51"
+    },
+    {
+        "city": "Brahmanbaria",
+        "area_code": "851",
+        "dialing_code": "+880 851"
+    },
+    {
+        "city": "Chandpur",
+        "area_code": "841",
+        "dialing_code": "+880 841"
+    },
+    {
+        "city": "Chandraghona (Kaptai)",
+        "area_code": "3529",
+        "dialing_code": "+880 3529"
+    },
+    {
+        "city": "Chaudagram",
+        "area_code": "8034",
+        "dialing_code": "+880 8034"
+    },
+    {
+        "city": "Chhatak",
+        "area_code": "8723",
+        "dialing_code": "+880 8723"
+    },
+    {
+        "city": "Chittagong",
+        "area_code": "31",
+        "dialing_code": "+880 31"
+    },
+    {
+        "city": "Chuadanga",
+        "area_code": "761",
+        "dialing_code": "+880 761"
+    },
+    {
+        "city": "Comilla",
+        "area_code": "81",
+        "dialing_code": "+880 81"
+    },
+    {
+        "city": "Companigon (Bashurhat)",
+        "area_code": "3223",
+        "dialing_code": "+880 3223"
+    },
+    {
+        "city": "Cox's Bazar",
+        "area_code": "341",
+        "dialing_code": "+880 341"
+    },
+    {
+        "city": "Daudkandi",
+        "area_code": "8023",
+        "dialing_code": "+880 8023"
+    },
+    {
+        "city": "Daulatpur",
+        "area_code": "7023",
+        "dialing_code": "+880 7023"
+    },
+    {
+        "city": "Dhaka",
+        "area_code": "2",
+        "dialing_code": "+880 2"
+    },
+    {
+        "city": "Dinajpur",
+        "area_code": "531",
+        "dialing_code": "+880 531"
+    },
+    {
+        "city": "Faridpur",
+        "area_code": "631",
+        "dialing_code": "+880 631"
+    },
+    {
+        "city": "Feni",
+        "area_code": "331",
+        "dialing_code": "+880 331"
+    },
+    {
+        "city": "Fulbari",
+        "area_code": "5327",
+        "dialing_code": "+880 5327"
+    },
+    {
+        "city": "Gaibandha",
+        "area_code": "541",
+        "dialing_code": "+880 541"
+    },
+    {
+        "city": "Galachipa",
+        "area_code": "4424",
+        "dialing_code": "+880 4424"
+    },
+    {
+        "city": "Gazipur",
+        "area_code": "681",
+        "dialing_code": "+880 681"
+    },
+    {
+        "city": "Ghatail",
+        "area_code": "9225",
+        "dialing_code": "+880 9225"
+    },
+    {
+        "city": "Goalanda",
+        "area_code": "6423",
+        "dialing_code": "+880 6423"
+    },
+    {
+        "city": "Gopalgonj",
+        "area_code": "423",
+        "dialing_code": "+880 423"
+    },
+    {
+        "city": "Hajigonj",
+        "area_code": "8424",
+        "dialing_code": "+880 8424"
+    },
+    {
+        "city": "Hatiya (Oshkhali)",
+        "area_code": "3224",
+        "dialing_code": "+880 3224"
+    },
+    {
+        "city": "Hobigonj",
+        "area_code": "831",
+        "dialing_code": "+880 831"
+    },
+    {
+        "city": "Ishwardi",
+        "area_code": "732",
+        "dialing_code": "+880 732"
+    },
+    {
+        "city": "Jamalpur",
+        "area_code": "981",
+        "dialing_code": "+880 981"
+    },
+    {
+        "city": "Jessore",
+        "area_code": "421",
+        "dialing_code": "+880 421"
+    },
+    {
+        "city": "Jhalokathhi",
+        "area_code": "498",
+        "dialing_code": "+880 498"
+    },
+    {
+        "city": "Jhenaidah",
+        "area_code": "451",
+        "dialing_code": "+880 451"
+    },
+    {
+        "city": "Jhikargacha",
+        "area_code": "4225",
+        "dialing_code": "+880 4225"
+    },
+    {
+        "city": "Joypurhat",
+        "area_code": "571",
+        "dialing_code": "+880 571"
+    },
+    {
+        "city": "Kalaroa",
+        "area_code": "4724",
+        "dialing_code": "+880 4724"
+    },
+    {
+        "city": "Kanaighat",
+        "area_code": "8233",
+        "dialing_code": "+880 8233"
+    },
+    {
+        "city": "Khagrachhari",
+        "area_code": "371",
+        "dialing_code": "+880 371"
+    },
+    {
+        "city": "Khepupara",
+        "area_code": "4425",
+        "dialing_code": "+880 4425"
+    },
+    {
+        "city": "Khulna",
+        "area_code": "41",
+        "dialing_code": "+880 41"
+    },
+    {
+        "city": "Kishoregonj",
+        "area_code": "941",
+        "dialing_code": "+880 941"
+    },
+    {
+        "city": "Kurigram",
+        "area_code": "581",
+        "dialing_code": "+880 581"
+    },
+    {
+        "city": "Kustia",
+        "area_code": "71",
+        "dialing_code": "+880 71"
+    },
+    {
+        "city": "Laksham (Daulatgonj)",
+        "area_code": "8032",
+        "dialing_code": "+880 8032"
+    },
+    {
+        "city": "Lakshmipur",
+        "area_code": "381",
+        "dialing_code": "+880 381"
+    },
+    {
+        "city": "Lalmonirhat",
+        "area_code": "591",
+        "dialing_code": "+880 591"
+    },
+    {
+        "city": "Madaripur",
+        "area_code": "661",
+        "dialing_code": "+880 661"
+    },
+    {
+        "city": "Magura",
+        "area_code": "488",
+        "dialing_code": "+880 488"
+    },
+    {
+        "city": "Manikgonj",
+        "area_code": "651",
+        "dialing_code": "+880 651"
+    },
+    {
+        "city": "Mathabdi",
+        "area_code": "6257",
+        "dialing_code": "+880 6257"
+    },
+    {
+        "city": "Meherpur",
+        "area_code": "791",
+        "dialing_code": "+880 791"
+    },
+    {
+        "city": "Mithamain",
+        "area_code": "9435",
+        "dialing_code": "+880 9435"
+    },
+    {
+        "city": "Mohanganj",
+        "area_code": "9524",
+        "dialing_code": "+880 9524"
+    },
+    {
+        "city": "Moheshkhali",
+        "area_code": "3424",
+        "dialing_code": "+880 3424"
+    },
+    {
+        "city": "Mongla",
+        "area_code": "402",
+        "dialing_code": "+880 402"
+    },
+    {
+        "city": "Mongla New Port",
+        "area_code": "4662",
+        "dialing_code": "+880 4662"
+    },
+    {
+        "city": "Moulavibazar",
+        "area_code": "861",
+        "dialing_code": "+880 861"
+    },
+    {
+        "city": "Muktagacha",
+        "area_code": "9028",
+        "dialing_code": "+880 9028"
+    },
+    {
+        "city": "Muladi",
+        "area_code": "4326",
+        "dialing_code": "+880 4326"
+    },
+    {
+        "city": "Munshigonj",
+        "area_code": "691",
+        "dialing_code": "+880 691"
+    },
+    {
+        "city": "Mymensingh",
+        "area_code": "91",
+        "dialing_code": "+880 91"
+    },
+    {
+        "city": "Nabinagar",
+        "area_code": "8525",
+        "dialing_code": "+880 8525"
+    },
+    {
+        "city": "Nagarpur",
+        "area_code": "9233",
+        "dialing_code": "+880 9233"
+    },
+    {
+        "city": "Naogaon",
+        "area_code": "741",
+        "dialing_code": "+880 741"
+    },
+    {
+        "city": "Narail",
+        "area_code": "481",
+        "dialing_code": "+880 481"
+    },
+    {
+        "city": "Narsingdi",
+        "area_code": "628",
+        "dialing_code": "+880 628"
+    },
+    {
+        "city": "Natore",
+        "area_code": "771",
+        "dialing_code": "+880 771"
+    },
+    {
+        "city": "Nawabgonj (Chapai)",
+        "area_code": "781",
+        "dialing_code": "+880 781"
+    },
+    {
+        "city": "Netrokona",
+        "area_code": "951",
+        "dialing_code": "+880 951"
+    },
+    {
+        "city": "Nilphamari",
+        "area_code": "551",
+        "dialing_code": "+880 551"
+    },
+    {
+        "city": "Noakhali",
+        "area_code": "321",
+        "dialing_code": "+880 321"
+    },
+    {
+        "city": "Pabna",
+        "area_code": "731",
+        "dialing_code": "+880 731"
+    },
+    {
+        "city": "Paikgacha",
+        "area_code": "4027",
+        "dialing_code": "+880 4027"
+    },
+    {
+        "city": "Palash (Ghorashal)",
+        "area_code": "6254",
+        "dialing_code": "+880 6254"
+    },
+    {
+        "city": "Panchagar",
+        "area_code": "568",
+        "dialing_code": "+880 568"
+    },
+    {
+        "city": "Parbatipur",
+        "area_code": "5334",
+        "dialing_code": "+880 5334"
+    },
+    {
+        "city": "Patuakhali",
+        "area_code": "441",
+        "dialing_code": "+880 441"
+    },
+    {
+        "city": "Perojpur",
+        "area_code": "461",
+        "dialing_code": "+880 461"
+    },
+    {
+        "city": "Plulpur",
+        "area_code": "9033",
+        "dialing_code": "+880 9033"
+    },
+    {
+        "city": "Potiya",
+        "area_code": "3035",
+        "dialing_code": "+880 3035"
+    },
+    {
+        "city": "Rajbari",
+        "area_code": "641",
+        "dialing_code": "+880 641"
+    },
+    {
+        "city": "Rajshahi",
+        "area_code": "721",
+        "dialing_code": "+880 721"
+    },
+    {
+        "city": "Ramgoti (Char Alexander)",
+        "area_code": "3823",
+        "dialing_code": "+880 3823"
+    },
+    {
+        "city": "Rangamati",
+        "area_code": "351",
+        "dialing_code": "+880 351"
+    },
+    {
+        "city": "Rangpur",
+        "area_code": "521",
+        "dialing_code": "+880 521"
+    },
+    {
+        "city": "Saidpur",
+        "area_code": "5526",
+        "dialing_code": "+880 5526"
+    },
+    {
+        "city": "Sarsha (Benapol)",
+        "area_code": "4228",
+        "dialing_code": "+880 4228"
+    },
+    {
+        "city": "Satkania",
+        "area_code": "3036",
+        "dialing_code": "+880 3036"
+    },
+    {
+        "city": "Satkhira",
+        "area_code": "471",
+        "dialing_code": "+880 471"
+    },
+    {
+        "city": "Savar",
+        "area_code": "2",
+        "dialing_code": "+880 2"
+    },
+    {
+        "city": "Shariatpur",
+        "area_code": "601",
+        "dialing_code": "+880 601"
+    },
+    {
+        "city": "Sherpur",
+        "area_code": "931",
+        "dialing_code": "+880 931"
+    },
+    {
+        "city": "Shibganj",
+        "area_code": "5033",
+        "dialing_code": "+880 5033"
+    },
+    {
+        "city": "Sirajgonj",
+        "area_code": "751",
+        "dialing_code": "+880 751"
+    },
+    {
+        "city": "Sitakundu (Barabkundu)",
+        "area_code": "3028",
+        "dialing_code": "+880 3028"
+    },
+    {
+        "city": "Srimangol",
+        "area_code": "8626",
+        "dialing_code": "+880 8626"
+    },
+    {
+        "city": "Sunamgonj",
+        "area_code": "871",
+        "dialing_code": "+880 871"
+    },
+    {
+        "city": "Syedpur",
+        "area_code": "552",
+        "dialing_code": "+880 552"
+    },
+    {
+        "city": "Sylhet",
+        "area_code": "821",
+        "dialing_code": "+880 821"
+    },
+    {
+        "city": "Taherpur",
+        "area_code": "8732",
+        "dialing_code": "+880 8732"
+    },
+    {
+        "city": "Tangail",
+        "area_code": "921",
+        "dialing_code": "+880 921"
+    },
+    {
+        "city": "Thakurgaon",
+        "area_code": "561",
+        "dialing_code": "+880 561"
+    },
+    {
+        "city": "Ukhia",
+        "area_code": "3427",
+        "dialing_code": "+880 3427"
+    }
+]

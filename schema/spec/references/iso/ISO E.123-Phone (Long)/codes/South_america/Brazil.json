@@ -1,0 +1,527 @@
+[
+    {
+        "city": "Alagoinhas",
+        "area_code": "75",
+        "dialing_code": "+55 75"
+    },
+    {
+        "city": "Alexandria",
+        "area_code": "859",
+        "dialing_code": "+55 859"
+    },
+    {
+        "city": "Anapolis",
+        "area_code": "62",
+        "dialing_code": "+55 62"
+    },
+    {
+        "city": "Anápolis",
+        "area_code": "62",
+        "dialing_code": "+55 62"
+    },
+    {
+        "city": "Aracaju",
+        "area_code": "79",
+        "dialing_code": "+55 79"
+    },
+    {
+        "city": "Araguaina",
+        "area_code": "63",
+        "dialing_code": "+55 63"
+    },
+    {
+        "city": "Barreiras",
+        "area_code": "77",
+        "dialing_code": "+55 77"
+    },
+    {
+        "city": "Bauru",
+        "area_code": "14",
+        "dialing_code": "+55 14"
+    },
+    {
+        "city": "Belem",
+        "area_code": "91",
+        "dialing_code": "+55 91"
+    },
+    {
+        "city": "Belo Horizonte",
+        "area_code": "31",
+        "dialing_code": "+55 31"
+    },
+    {
+        "city": "Belym",
+        "area_code": "91",
+        "dialing_code": "+55 91"
+    },
+    {
+        "city": "Belém",
+        "area_code": "91",
+        "dialing_code": "+55 91"
+    },
+    {
+        "city": "Belým",
+        "area_code": "91",
+        "dialing_code": "+55 91"
+    },
+    {
+        "city": "Blumenau",
+        "area_code": "47",
+        "dialing_code": "+55 47"
+    },
+    {
+        "city": "Boa Vista",
+        "area_code": "95",
+        "dialing_code": "+55 95"
+    },
+    {
+        "city": "Brasilia",
+        "area_code": "61",
+        "dialing_code": "+55 61"
+    },
+    {
+        "city": "Brasylia",
+        "area_code": "61",
+        "dialing_code": "+55 61"
+    },
+    {
+        "city": "Brasýlia",
+        "area_code": "61",
+        "dialing_code": "+55 61"
+    },
+    {
+        "city": "Campina Grande",
+        "area_code": "83",
+        "dialing_code": "+55 83"
+    },
+    {
+        "city": "Campinas",
+        "area_code": "19",
+        "dialing_code": "+55 19"
+    },
+    {
+        "city": "Campo Grande",
+        "area_code": "67",
+        "dialing_code": "+55 67"
+    },
+    {
+        "city": "Campos",
+        "area_code": "22",
+        "dialing_code": "+55 22"
+    },
+    {
+        "city": "Caruaru",
+        "area_code": "81",
+        "dialing_code": "+55 81"
+    },
+    {
+        "city": "Caxias do Sul",
+        "area_code": "54",
+        "dialing_code": "+55 54"
+    },
+    {
+        "city": "Cuiaba",
+        "area_code": "65",
+        "dialing_code": "+55 65"
+    },
+    {
+        "city": "Curitiba",
+        "area_code": "41",
+        "dialing_code": "+55 41"
+    },
+    {
+        "city": "Feira de Santana",
+        "area_code": "75",
+        "dialing_code": "+55 75"
+    },
+    {
+        "city": "Fernando de Noronha",
+        "area_code": "81",
+        "dialing_code": "+55 81"
+    },
+    {
+        "city": "Florianopolis",
+        "area_code": "48",
+        "dialing_code": "+55 48"
+    },
+    {
+        "city": "Florianypolis",
+        "area_code": "48",
+        "dialing_code": "+55 48"
+    },
+    {
+        "city": "Florianýpolis",
+        "area_code": "48",
+        "dialing_code": "+55 48"
+    },
+    {
+        "city": "Fortaleza",
+        "area_code": "85",
+        "dialing_code": "+55 85"
+    },
+    {
+        "city": "Garanhuns",
+        "area_code": "81",
+        "dialing_code": "+55 81"
+    },
+    {
+        "city": "Goiania",
+        "area_code": "62",
+        "dialing_code": "+55 62"
+    },
+    {
+        "city": "Governador Valadares",
+        "area_code": "33",
+        "dialing_code": "+55 33"
+    },
+    {
+        "city": "Ilheus",
+        "area_code": "73",
+        "dialing_code": "+55 73"
+    },
+    {
+        "city": "Itabuna",
+        "area_code": "73",
+        "dialing_code": "+55 73"
+    },
+    {
+        "city": "Jequie",
+        "area_code": "73",
+        "dialing_code": "+55 73"
+    },
+    {
+        "city": "Joao Pessoa",
+        "area_code": "83",
+        "dialing_code": "+55 83"
+    },
+    {
+        "city": "Joinville",
+        "area_code": "47",
+        "dialing_code": "+55 47"
+    },
+    {
+        "city": "Juazeiro do Norte",
+        "area_code": "74",
+        "dialing_code": "+55 74"
+    },
+    {
+        "city": "Juiz de Fora",
+        "area_code": "32",
+        "dialing_code": "+55 32"
+    },
+    {
+        "city": "Londrina",
+        "area_code": "43",
+        "dialing_code": "+55 43"
+    },
+    {
+        "city": "Macapa",
+        "area_code": "96",
+        "dialing_code": "+55 96"
+    },
+    {
+        "city": "Maceio",
+        "area_code": "82",
+        "dialing_code": "+55 82"
+    },
+    {
+        "city": "Macye",
+        "area_code": "24",
+        "dialing_code": "+55 24"
+    },
+    {
+        "city": "Macýe",
+        "area_code": "24",
+        "dialing_code": "+55 24"
+    },
+    {
+        "city": "Manaus",
+        "area_code": "92",
+        "dialing_code": "+55 92"
+    },
+    {
+        "city": "Medina",
+        "area_code": "830",
+        "dialing_code": "+55 830"
+    },
+    {
+        "city": "Montes Claros",
+        "area_code": "38",
+        "dialing_code": "+55 38"
+    },
+    {
+        "city": "Montezuma",
+        "area_code": "478",
+        "dialing_code": "+55 478"
+    },
+    {
+        "city": "Mossoro",
+        "area_code": "84",
+        "dialing_code": "+55 84"
+    },
+    {
+        "city": "Natal",
+        "area_code": "84",
+        "dialing_code": "+55 84"
+    },
+    {
+        "city": "Niteroi",
+        "area_code": "21",
+        "dialing_code": "+55 21"
+    },
+    {
+        "city": "Palmas",
+        "area_code": "63",
+        "dialing_code": "+55 63"
+    },
+    {
+        "city": "Panama",
+        "area_code": "712",
+        "dialing_code": "+55 712"
+    },
+    {
+        "city": "Parnaiba",
+        "area_code": "86",
+        "dialing_code": "+55 86"
+    },
+    {
+        "city": "Passo Fundo",
+        "area_code": "54",
+        "dialing_code": "+55 54"
+    },
+    {
+        "city": "Pelotas",
+        "area_code": "532",
+        "dialing_code": "+55 532"
+    },
+    {
+        "city": "Ponta Grossa",
+        "area_code": "42",
+        "dialing_code": "+55 42"
+    },
+    {
+        "city": "Porto Alegre",
+        "area_code": "51",
+        "dialing_code": "+55 51"
+    },
+    {
+        "city": "Porto Velho",
+        "area_code": "69",
+        "dialing_code": "+55 69"
+    },
+    {
+        "city": "Recife",
+        "area_code": "81",
+        "dialing_code": "+55 81"
+    },
+    {
+        "city": "Ribeirao Preto",
+        "area_code": "16",
+        "dialing_code": "+55 16"
+    },
+    {
+        "city": "Ribeirão Preto",
+        "area_code": "16",
+        "dialing_code": "+55 16"
+    },
+    {
+        "city": "Rio Branco",
+        "area_code": "68",
+        "dialing_code": "+55 68"
+    },
+    {
+        "city": "Rio Grande",
+        "area_code": "53",
+        "dialing_code": "+55 53"
+    },
+    {
+        "city": "Rio de Janeiro",
+        "area_code": "21",
+        "dialing_code": "+55 21"
+    },
+    {
+        "city": "Roraima",
+        "area_code": "95",
+        "dialing_code": "+55 95"
+    },
+    {
+        "city": "Sacramento",
+        "area_code": "916",
+        "dialing_code": "+55 916"
+    },
+    {
+        "city": "Salinas",
+        "area_code": "408",
+        "dialing_code": "+55 408"
+    },
+    {
+        "city": "Salvador",
+        "area_code": "71",
+        "dialing_code": "+55 71"
+    },
+    {
+        "city": "Santa Cruz",
+        "area_code": "831",
+        "dialing_code": "+55 831"
+    },
+    {
+        "city": "Santa Fe",
+        "area_code": "505",
+        "dialing_code": "+55 505"
+    },
+    {
+        "city": "Santa Maria",
+        "area_code": "34",
+        "dialing_code": "+55 34"
+    },
+    {
+        "city": "Santa Rosa",
+        "area_code": "707",
+        "dialing_code": "+55 707"
+    },
+    {
+        "city": "Santo Andre",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "Santo André",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "Santos",
+        "area_code": "13",
+        "dialing_code": "+55 13"
+    },
+    {
+        "city": "Sao Jose do Rio Preto",
+        "area_code": "17",
+        "dialing_code": "+55 17"
+    },
+    {
+        "city": "Sao Jose dos Campos",
+        "area_code": "12",
+        "dialing_code": "+55 12"
+    },
+    {
+        "city": "Sao Luis",
+        "area_code": "98",
+        "dialing_code": "+55 98"
+    },
+    {
+        "city": "Sao Paulo",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "Sobral",
+        "area_code": "88",
+        "dialing_code": "+55 88"
+    },
+    {
+        "city": "Sorocaba",
+        "area_code": "15",
+        "dialing_code": "+55 15"
+    },
+    {
+        "city": "Syo Josy dos Campos",
+        "area_code": "12",
+        "dialing_code": "+55 12"
+    },
+    {
+        "city": "Syo Paulo",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "São Jose do Rio Preto",
+        "area_code": "17",
+        "dialing_code": "+55 17"
+    },
+    {
+        "city": "São Jose dos Campos",
+        "area_code": "12",
+        "dialing_code": "+55 12"
+    },
+    {
+        "city": "São Luis",
+        "area_code": "98",
+        "dialing_code": "+55 98"
+    },
+    {
+        "city": "São Paulo",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "Sýo Josý dos Campos",
+        "area_code": "12",
+        "dialing_code": "+55 12"
+    },
+    {
+        "city": "Sýo Paulo",
+        "area_code": "11",
+        "dialing_code": "+55 11"
+    },
+    {
+        "city": "Teofilo Otoni",
+        "area_code": "33",
+        "dialing_code": "+55 33"
+    },
+    {
+        "city": "Teresina",
+        "area_code": "86",
+        "dialing_code": "+55 86"
+    },
+    {
+        "city": "Timbo",
+        "area_code": "870",
+        "dialing_code": "+55 870"
+    },
+    {
+        "city": "Uberaba",
+        "area_code": "34",
+        "dialing_code": "+55 34"
+    },
+    {
+        "city": "Uberlandia",
+        "area_code": "34",
+        "dialing_code": "+55 34"
+    },
+    {
+        "city": "Uruguaiana",
+        "area_code": "55",
+        "dialing_code": "+55 55"
+    },
+    {
+        "city": "Valparaiso",
+        "area_code": "850",
+        "dialing_code": "+55 850"
+    },
+    {
+        "city": "Vitoria",
+        "area_code": "27",
+        "dialing_code": "+55 27"
+    },
+    {
+        "city": "Vitoria da Conquista",
+        "area_code": "77",
+        "dialing_code": "+55 77"
+    },
+    {
+        "city": "Vityria",
+        "area_code": "27",
+        "dialing_code": "+55 27"
+    },
+    {
+        "city": "Vitýria",
+        "area_code": "27",
+        "dialing_code": "+55 27"
+    },
+    {
+        "city": "Volta Redonda",
+        "area_code": "24",
+        "dialing_code": "+55 24"
+    }
+]

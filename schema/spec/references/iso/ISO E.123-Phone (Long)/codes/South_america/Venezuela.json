@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Barcelona",
+        "area_code": "281",
+        "dialing_code": "+58 281"
+    },
+    {
+        "city": "Barquisimeto",
+        "area_code": "251",
+        "dialing_code": "+58 251"
+    },
+    {
+        "city": "Cabimas",
+        "area_code": "264",
+        "dialing_code": "+58 264"
+    },
+    {
+        "city": "Caracas",
+        "area_code": "212",
+        "dialing_code": "+58 212"
+    },
+    {
+        "city": "Ciudad Bolivar",
+        "area_code": "285",
+        "dialing_code": "+58 285"
+    },
+    {
+        "city": "Ciudad Guayana",
+        "area_code": "285",
+        "dialing_code": "+58 285"
+    },
+    {
+        "city": "Coro",
+        "area_code": "268",
+        "dialing_code": "+58 268"
+    },
+    {
+        "city": "Cumana",
+        "area_code": "293",
+        "dialing_code": "+58 293"
+    },
+    {
+        "city": "Los Teques",
+        "area_code": "212",
+        "dialing_code": "+58 212"
+    },
+    {
+        "city": "Maiquetia",
+        "area_code": "212",
+        "dialing_code": "+58 212"
+    },
+    {
+        "city": "Maracaibo",
+        "area_code": "261",
+        "dialing_code": "+58 261"
+    },
+    {
+        "city": "Maracay",
+        "area_code": "243",
+        "dialing_code": "+58 243"
+    },
+    {
+        "city": "Maturin",
+        "area_code": "291",
+        "dialing_code": "+58 291"
+    },
+    {
+        "city": "Merida",
+        "area_code": "274",
+        "dialing_code": "+58 274"
+    },
+    {
+        "city": "Mérida",
+        "area_code": "274",
+        "dialing_code": "+58 274"
+    },
+    {
+        "city": "Puerto Cabello",
+        "area_code": "242",
+        "dialing_code": "+58 242"
+    },
+    {
+        "city": "San Cristobal",
+        "area_code": "276",
+        "dialing_code": "+58 276"
+    },
+    {
+        "city": "Valencia",
+        "area_code": "241",
+        "dialing_code": "+58 241"
+    }
+]

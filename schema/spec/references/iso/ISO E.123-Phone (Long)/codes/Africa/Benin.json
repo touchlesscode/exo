@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Alibori",
+        "area_code": "23",
+        "dialing_code": "+229 23"
+    },
+    {
+        "city": "Atlantique",
+        "area_code": "21",
+        "dialing_code": "+229 21"
+    },
+    {
+        "city": "Collines",
+        "area_code": "22",
+        "dialing_code": "+229 22"
+    },
+    {
+        "city": "Cotonou",
+        "area_code": "",
+        "dialing_code": "+229"
+    },
+    {
+        "city": "Ouymy",
+        "area_code": "20",
+        "dialing_code": "+229 20"
+    },
+    {
+        "city": "Ouýmý",
+        "area_code": "20",
+        "dialing_code": "+229 20"
+    },
+    {
+        "city": "Porto Novo",
+        "area_code": "",
+        "dialing_code": "+229"
+    }
+]

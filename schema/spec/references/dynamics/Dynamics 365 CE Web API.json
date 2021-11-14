@@ -1,0 +1,2024 @@
+{
+	"info": {
+		"_postman_id": "53984234-f11f-4124-a476-ac8489a62beb",
+		"name": "Dynamics 365 CE Web API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Authentications",
+			"item": [
+				{
+					"name": "Authenticate - Client Credentials (SAMPLE)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resource",
+									"value": "{{Resource}}",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{ApplicationId}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{OAuth2Endpoint}}",
+							"host": [
+								"{{OAuth2Endpoint}}"
+							]
+						},
+						"description": "Sample request to get authenticate (get access token) with client credentials"
+					},
+					"response": []
+				},
+				{
+					"name": "Authenticate - User Credentials (SAMPLE)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "resource",
+									"value": "{{Resource}}",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{ApplicationId}}",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{OAuth2Endpoint}}",
+							"host": [
+								"{{OAuth2Endpoint}}"
+							]
+						},
+						"description": "Sample request to get authenticate (get access and refresh tokens) with user credentials"
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "noauth"
+			}
+		},
+		{
+			"name": "Basic Operations",
+			"item": [
+				{
+					"name": "Create Record (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							]
+						},
+						"description": "Sample request to create a record (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Record - Impersonation (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							},
+							{
+								"key": "MSCRMCallerID",
+								"value": "00000000-0000-0000-000000000000"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							]
+						},
+						"description": "Sample request to create a record using impersonation header (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Record - Data returned (SAMPLE)",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "05586a5b-fbe4-4742-94c1-f9f71f4b5bf8",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							},
+							{
+								"key": "Prefer",
+								"value": "return=representation "
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts?$select=contactid, fullname",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "contactid, fullname"
+								}
+							]
+						},
+						"description": "Sample request to create a record and return its ID (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Record - Deep insert (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\",\r\n  \"parentcustomerid_account\" : {\r\n    \"name\": \"Boca Juniors\",\r\n    \"telephone1\": \"123123123\",\r\n    \"Account_Tasks\": [\r\n    {\r\n      \"subject\": \"Task associated to Boca Juniors\",\r\n      \"description\": \"Description\"\r\n    }\r\n    ]\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							]
+						},
+						"description": "Sample request to create a record (contact) and related entities in a single operation"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Record - Associate (SAMPLE) ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\",\r\n  \"parentcustomerid_account@odata.bind\": \"/accounts(00000000-0000-0000-0000-000000000000)\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							]
+						},
+						"description": "Sample request to create a record (contact) and associating it to a existing one (account) "
+					},
+					"response": []
+				},
+				{
+					"name": "Create Record - Duplicate detection  (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							},
+							{
+								"key": "MSCRM.SuppressDuplicateDetection",
+								"value": "false"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstname\": \"JR\",\r\n  \"lastname\": \"Riquelme\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							]
+						},
+						"description": "Sample request to create a record (contact) using duplicate detection and preventing the create if D365 finds a match"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Record - Single property (SAMPLE)",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"value\": \"Juan Roman\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)/firstname",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)",
+								"firstname"
+							]
+						},
+						"description": "Sample request to update a single property in a record (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Record (SAMPLE)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gendercode\": 1,\r\n  \"emailaddress1\": \"riquelme@boca.com\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Sample request to update a record (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Record - Optimistic Concurrency (SAMPLE)",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							},
+							{
+								"key": "If-Match",
+								"value": "W/\"1109765\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"gendercode\": 1,\r\n  \"emailaddress1\": \"riquelme@boca.com\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Sample request to update a record (contact) using optimistic concurrency"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Record (SAMPLE)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Sample request to delete a record (contact)"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Record - Single property (SAMPLE)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)/jobtitle",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)",
+								"jobtitle"
+							]
+						},
+						"description": "Sample request to delete a single property in a record (contact).\n\nThis can’t be used with a single-valued navigation property to disassociate two entities, review Delete Lookup Value (SAMPLE).\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Record - Lookup property (SAMPLE)",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0"
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json"
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)/parentcustomerid_account/$ref",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)",
+								"parentcustomerid_account",
+								"$ref"
+							]
+						},
+						"description": "Sample request to delete a lookup property in a record (contact).\n"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Retrieve Operations",
+			"item": [
+				{
+					"name": "Retrieve (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Retrieves a contact"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve - Single property (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)/fullname",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)",
+								"fullname"
+							]
+						},
+						"description": "Retrieves a single property from a contact"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve - Alternate Key (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(emailaddress1='riquelme@boca.com')?$select=fullname",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(emailaddress1='riquelme@boca.com')"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "fullname"
+								}
+							]
+						},
+						"description": "Retrieves a contact using an alternate key"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve - Conditional (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							},
+							{
+								"key": "If-None-Match",
+								"value": "W/\"1112339\""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Retrieves a contact only if the record has changed since last retrieved"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve - Expand (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts(00000000-0000-0000-0000-000000000000)?$select=fullname&$expand=parentcustomerid_account($select=name)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts(00000000-0000-0000-0000-000000000000)"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "fullname"
+								},
+								{
+									"key": "$expand",
+									"value": "parentcustomerid_account($select=name)"
+								}
+							]
+						},
+						"description": "Retrieves a contact and expand related account"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveMultiple (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts?$select=fullname,contactid, gendercode",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "fullname,contactid, gendercode"
+								}
+							]
+						},
+						"description": "Retrieves contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve using FetchXML (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts?fetchXml=<fetch count=\"10\" ><entity name=\"contact\" ><attribute name=\"fullname\" /></entity></fetch>",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "fetchXml",
+									"value": "<fetch count=\"10\" ><entity name=\"contact\" ><attribute name=\"fullname\" /></entity></fetch>"
+								}
+							]
+						},
+						"description": "Retrieves contacts"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveEntityChanges (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.track-changes, odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts?$select=contactid",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "contactid"
+								}
+							]
+						},
+						"description": "Retrieves entity changes for Accounts using the odata.trackchanges header"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveEntityChanges with token (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8  "
+							},
+							{
+								"key": "Prefer",
+								"value": " odata.track-changes, odata.include-annotations=OData.Community.Display.V1.FormattedValue"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/contacts?$select=contactid&$deltatoken=7350047%2102%2f18%2f2018%2021%3a24%3a10",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "contactid"
+								},
+								{
+									"key": "$deltatoken",
+									"value": "7350047%2102%2f18%2f2018%2021%3a24%3a10"
+								}
+							]
+						},
+						"description": "Retrieves entity changes for Accounts using the odata.trackchanges header and a previously adquired token"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Batch Operations",
+			"item": [
+				{
+					"name": "Batch Operation",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "70c126ce-0fbf-4511-8ba8-db9f891326a3",
+								"type": "text/javascript",
+								"exec": [
+									"var value = pm.environment.get(\"WebAPIUrl\");",
+									"pm.globals.set(\"GlobalWebApiUrl\", value);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/mixed;boundary=batch_B1"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "--batch_B1\r\nContent-Type: multipart/mixed;boundary=changeset_CS1\r\n\r\n--changeset_CS1\r\nContent-Type: application/http\r\nContent-Transfer-Encoding:binary\r\nContent-ID: 1\r\n\r\nPOST {{GlobalWebApiUrl}}contacts  HTTP/1.1\r\nContent-Type: application/json\r\n\r\n{\r\n  \"firstname\": \"Batch\",\r\n  \"lastname\": \"Riquelme1\"\r\n}\r\n\r\n--changeset_CS1\r\nContent-Type: application/http\r\nContent-Transfer-Encoding:binary\r\nContent-ID: 2\r\n\r\nPOST {{GlobalWebApiUrl}}contacts  HTTP/1.1\r\nContent-Type: application/json\r\n\r\n{\r\n  \"firstname\": \"Batch\",\r\n  \"lastname\": \"Riquelme2\"\r\n}\r\n\r\n--changeset_CS1\r\nContent-Type: application/http\r\nContent-Transfer-Encoding:binary\r\nContent-ID: 3\r\n\r\nPOST {{GlobalWebApiUrl}}contacts  HTTP/1.1\r\nContent-Type: application/json\r\n\r\n{\r\n  \"firstname\": \"Batch\",\r\n  \"lastname\": \"Riquelme3\"\r\n}\r\n\r\n--changeset_CS1--\r\n--batch_B1--"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/$batch",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"$batch"
+							]
+						},
+						"description": "Executes a batch operation within a transaction"
+					},
+					"response": []
+				},
+				{
+					"name": "Batch Operation FetchXML",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "7ea38379-7aaa-4a8a-9d84-35a2b8e3329d",
+								"type": "text/javascript",
+								"exec": [
+									"var value = pm.environment.get(\"WebAPIUrl\");",
+									"pm.globals.set(\"GlobalWebApiUrl\", value);"
+								]
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/mixed;boundary=batch_fetch"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "--batch_fetch\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET {{GlobalWebApiUrl}}contacts?fetchXml=<fetch count=\"10\" ><entity name=\"contact\" ><attribute name=\"fullname\" /></entity></fetch> HTTP/1.1\nContent-Type: application/json;type=entry\n\n--batch_fetch--"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/$batch",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"$batch"
+							]
+						},
+						"description": "Executes a batch operation containing a FetchXML to workaround the URI limit (\"Invalid URI: The Uri scheme is too long\")"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Functions",
+			"item": [
+				{
+					"name": "WhoAmI (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/WhoAmI()",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"WhoAmI()"
+							]
+						},
+						"description": "Example of using an unbound function without parameters (WhoAmI)"
+					},
+					"response": []
+				},
+				{
+					"name": "FetchXmlToQueryExpression (SAMPLE) ",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/FetchXmlToQueryExpression(FetchXml=@p1)?@p1='<fetch count=\"10\" ><entity name=\"contact\" ><attribute name=\"fullname\" /></entity></fetch>'",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"FetchXmlToQueryExpression(FetchXml=@p1)"
+							],
+							"query": [
+								{
+									"key": "@p1",
+									"value": "'<fetch count=\"10\" ><entity name=\"contact\" ><attribute name=\"fullname\" /></entity></fetch>'"
+								}
+							]
+						},
+						"description": "Example of using an unbound function with parameters (FetchXmlToQueryExpression)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllTimeZonesWithDisplayName (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/timezonedefinitions/Microsoft.Dynamics.CRM.GetAllTimeZonesWithDisplayName(LocaleId=1033)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"timezonedefinitions",
+								"Microsoft.Dynamics.CRM.GetAllTimeZonesWithDisplayName(LocaleId=1033)"
+							]
+						},
+						"description": "Example of using an bound function with parameters (GetAllTimeZonesWithDisplayName)"
+					},
+					"response": []
+				},
+				{
+					"name": "GetTimeZoneCodeByLocalizedName (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/GetTimeZoneCodeByLocalizedName(LocalizedStandardName=@p1,LocaleId=@p2)?@p1='Coordinated Universal Time'&@p2=1033",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"GetTimeZoneCodeByLocalizedName(LocalizedStandardName=@p1,LocaleId=@p2)"
+							],
+							"query": [
+								{
+									"key": "@p1",
+									"value": "'Coordinated Universal Time'"
+								},
+								{
+									"key": "@p2",
+									"value": "1033"
+								}
+							]
+						},
+						"description": "Example of using an unbound function with parameters (GetTimeZoneCodeByLocalizedName)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveVersion (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveVersion()",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveVersion()"
+							]
+						},
+						"description": "Example of using an unbound function without parameters (RetrieveVersion)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveCurrentOrganization (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveCurrentOrganization(AccessType=Microsoft.Dynamics.CRM.EndpointAccessType'Default')",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveCurrentOrganization(AccessType=Microsoft.Dynamics.CRM.EndpointAccessType'Default')"
+							]
+						},
+						"description": "Example of using an unbound function with parameters (RetrieveCurrentOrganization)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveOrganizationInfo (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveOrganizationInfo()",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveOrganizationInfo()"
+							]
+						},
+						"description": "Example of using an unbound function without parameters (RetrieveOrganizationInfo)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveOrganizationResources (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveOrganizationResources()",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveOrganizationResources()"
+							]
+						},
+						"description": "Example of using an unbound function without parameters (RetrieveOrganizationResources)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveDependenciesForDelete (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveDependenciesForDelete(ObjectId=00000000-0000-0000-0000-000000000000, ComponentType=1)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveDependenciesForDelete(ObjectId=00000000-0000-0000-0000-000000000000, ComponentType=1)"
+							]
+						},
+						"description": "Example of using an unbound function with parameters (RetrieveDependenciesForDelete)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveEntityRibbon (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveEntityRibbon(EntityName='contact', RibbonLocationFilter=Microsoft.Dynamics.CRM.RibbonLocationFilters'Form')",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveEntityRibbon(EntityName='contact', RibbonLocationFilter=Microsoft.Dynamics.CRM.RibbonLocationFilters'Form')"
+							]
+						},
+						"description": "Example of using an unbound function with parameters (RetrieveEntityRibbon)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveExchangeRate (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveExchangeRate(TransactionCurrencyId=00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveExchangeRate(TransactionCurrencyId=00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Example of using an unbound function with parameters (RetrieveExchangeRate)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrieveMissingDependencies (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/RetrieveMissingDependencies(SolutionUniqueName='solutionname')",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"RetrieveMissingDependencies(SolutionUniqueName='solutionname')"
+							]
+						},
+						"description": "Example of using an unbound function with parameters (RetrieveMissingDependencies)"
+					},
+					"response": []
+				},
+				{
+					"name": "RetrievePrincipalAccess (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/systemusers(00000000-0000-0000-0000-000000000000)/Microsoft.Dynamics.CRM.RetrievePrincipalAccess(Target=@p1)?@p1={'@odata.id':'contacts(00000000-0000-0000-0000-000000000000)'}",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"systemusers(00000000-0000-0000-0000-000000000000)",
+								"Microsoft.Dynamics.CRM.RetrievePrincipalAccess(Target=@p1)"
+							],
+							"query": [
+								{
+									"key": "@p1",
+									"value": "{'@odata.id':'contacts(00000000-0000-0000-0000-000000000000)'}"
+								}
+							]
+						},
+						"description": "Example of using a bound function with parameters (RetrievePrincipalAccess)"
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "fe354009-06bb-4772-ada9-16dfd64eb4d7",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "6cecb01d-1345-49f8-8ac3-2e661c823b7b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Actions",
+			"item": [
+				{
+					"name": "PublishAllXml (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/PublishAllXml",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"PublishAllXml"
+							]
+						},
+						"description": "Example of executing an unbound action (PublishAllXml)"
+					},
+					"response": []
+				},
+				{
+					"name": "AddToQueue (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"Target\": {\r\n  \"activityid\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"@odata.type\": \"Microsoft.Dynamics.CRM.task\"\r\n }\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/queues(00000000-0000-0000-0000-000000000000)/Microsoft.Dynamics.CRM.AddToQueue",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"queues(00000000-0000-0000-0000-000000000000)",
+								"Microsoft.Dynamics.CRM.AddToQueue"
+							]
+						},
+						"description": "Example of executing a bounded action (AddToQueue)"
+					},
+					"response": []
+				},
+				{
+					"name": "Custom Action (SAMPLE)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0  "
+							},
+							{
+								"key": "Content-Type",
+								"value": " application/json; charset=utf-8"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"InputParameter1\": \"Some text\",\r\n \"InputParameter2\": \"Some more text\"\r\n}"
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/new_youraction",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"new_youraction"
+							]
+						},
+						"description": "Example of executing a custom action (PublishAllXml)"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Metadata",
+			"item": [
+				{
+					"name": "Retrieve EntityMetadata (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/EntityDefinitions(LogicalName='contact')",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"EntityDefinitions(LogicalName='contact')"
+							]
+						},
+						"description": "Example of retriving entity metadata"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve EntityMetadata - Attributes (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/EntityDefinitions(LogicalName='contact')/Attributes?$select=LogicalName",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"EntityDefinitions(LogicalName='contact')",
+								"Attributes"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "LogicalName"
+								}
+							]
+						},
+						"description": "Example of retriving entity metadata attributes"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve EntityMetadata - Single Attribute (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/EntityDefinitions(LogicalName='contact')/Attributes(LogicalName='emailaddress1')",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"EntityDefinitions(LogicalName='contact')",
+								"Attributes(LogicalName='emailaddress1')"
+							]
+						},
+						"description": "Example of retriving entity metadata single attribute"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve EntityMetadata - OptionSet (SAMPLE) Copy",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/EntityDefinitions(LogicalName='contact')/Attributes(LogicalName='gendercode')/Microsoft.Dynamics.CRM.PicklistAttributeMetadata/OptionSet?$select=Options",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"EntityDefinitions(LogicalName='contact')",
+								"Attributes(LogicalName='gendercode')",
+								"Microsoft.Dynamics.CRM.PicklistAttributeMetadata",
+								"OptionSet"
+							],
+							"query": [
+								{
+									"key": "$select",
+									"value": "Options"
+								}
+							]
+						},
+						"description": "Example of retriving entity local optionset values"
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Global OptionSets (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/GlobalOptionSetDefinitions",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"GlobalOptionSetDefinitions"
+							]
+						},
+						"description": "Example of retriving global option sets. \n\nThis path does not support the use of the $filter so it's necessary to find in advance the MetadataId property or you'll be retrieving all the records."
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Global OptionSets - Single optionset (SAMPLE)",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": " application/json  "
+							},
+							{
+								"key": "OData-MaxVersion",
+								"value": " 4.0  "
+							},
+							{
+								"key": "OData-Version",
+								"value": " 4.0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{WebAPIUrl}}/GlobalOptionSetDefinitions(00000000-0000-0000-0000-000000000000)",
+							"host": [
+								"{{WebAPIUrl}}"
+							],
+							"path": [
+								"GlobalOptionSetDefinitions(00000000-0000-0000-0000-000000000000)"
+							]
+						},
+						"description": "Example of retriving global option sets. \n\nThis path does not support the use of the $filter so it's necessary to find in advance the MetadataId property."
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "accessToken",
+				"value": "",
+				"type": "string"
+			},
+			{
+				"key": "tokenType",
+				"value": "Bearer",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "70eb496d-51a9-4f8b-bcfc-600a5399867d",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "0c740310-eca4-4d4e-858b-b672f37d09b1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

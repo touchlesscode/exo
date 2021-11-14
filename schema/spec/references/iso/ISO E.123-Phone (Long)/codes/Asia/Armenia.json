@@ -1,0 +1,387 @@
+[
+    {
+        "city": "Abovian",
+        "area_code": "22",
+        "dialing_code": "+374 22"
+    },
+    {
+        "city": "Abovyan",
+        "area_code": "22",
+        "dialing_code": "+374 22"
+    },
+    {
+        "city": "Akhurian",
+        "area_code": "43",
+        "dialing_code": "+374 43"
+    },
+    {
+        "city": "Alapars",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Alaverdi",
+        "area_code": "53",
+        "dialing_code": "+374 53"
+    },
+    {
+        "city": "Amasia",
+        "area_code": "46",
+        "dialing_code": "+374 46"
+    },
+    {
+        "city": "Aparan",
+        "area_code": "52",
+        "dialing_code": "+374 52"
+    },
+    {
+        "city": "Arapi",
+        "area_code": "43",
+        "dialing_code": "+374 43"
+    },
+    {
+        "city": "Ararat",
+        "area_code": "38",
+        "dialing_code": "+374 38"
+    },
+    {
+        "city": "Argel",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Armavir",
+        "area_code": "37",
+        "dialing_code": "+374 37"
+    },
+    {
+        "city": "Artashat",
+        "area_code": "35",
+        "dialing_code": "+374 35"
+    },
+    {
+        "city": "Artik",
+        "area_code": "44",
+        "dialing_code": "+374 44"
+    },
+    {
+        "city": "Ashotsk",
+        "area_code": "45",
+        "dialing_code": "+374 45"
+    },
+    {
+        "city": "Ashtarak",
+        "area_code": "32",
+        "dialing_code": "+374 32"
+    },
+    {
+        "city": "Baghramian",
+        "area_code": "33",
+        "dialing_code": "+374 33"
+    },
+    {
+        "city": "Bjni",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Chambarak",
+        "area_code": "65",
+        "dialing_code": "+374 65"
+    },
+    {
+        "city": "Charentsavan",
+        "area_code": "26",
+        "dialing_code": "+374 26"
+    },
+    {
+        "city": "Dalarik",
+        "area_code": "33",
+        "dialing_code": "+374 33"
+    },
+    {
+        "city": "Dzoraget",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Echmiadzin",
+        "area_code": "31",
+        "dialing_code": "+374 31"
+    },
+    {
+        "city": "Eghegnut",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Eghvard",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Gavar",
+        "area_code": "64",
+        "dialing_code": "+374 64"
+    },
+    {
+        "city": "Goris",
+        "area_code": "84",
+        "dialing_code": "+374 84"
+    },
+    {
+        "city": "Gyumri",
+        "area_code": "41",
+        "dialing_code": "+374 41"
+    },
+    {
+        "city": "Hoktember",
+        "area_code": "37",
+        "dialing_code": "+374 37"
+    },
+    {
+        "city": "Hrazdan",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Ijevan",
+        "area_code": "63",
+        "dialing_code": "+374 63"
+    },
+    {
+        "city": "Jermuk",
+        "area_code": "87",
+        "dialing_code": "+374 87"
+    },
+    {
+        "city": "Kadjaran",
+        "area_code": "85",
+        "dialing_code": "+374 85"
+    },
+    {
+        "city": "Kamo",
+        "area_code": "43",
+        "dialing_code": "+374 43"
+    },
+    {
+        "city": "Kapan",
+        "area_code": "85",
+        "dialing_code": "+374 85"
+    },
+    {
+        "city": "Karakerd",
+        "area_code": "33",
+        "dialing_code": "+374 33"
+    },
+    {
+        "city": "Khndzoresk",
+        "area_code": "84",
+        "dialing_code": "+374 84"
+    },
+    {
+        "city": "Koghb",
+        "area_code": "66",
+        "dialing_code": "+374 66"
+    },
+    {
+        "city": "Lermontov",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Maralik",
+        "area_code": "42",
+        "dialing_code": "+374 42"
+    },
+    {
+        "city": "Margahovit",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Martuni",
+        "area_code": "62",
+        "dialing_code": "+374 62"
+    },
+    {
+        "city": "Masis",
+        "area_code": "36",
+        "dialing_code": "+374 36"
+    },
+    {
+        "city": "Meghradzor",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Meghri",
+        "area_code": "86",
+        "dialing_code": "+374 86"
+    },
+    {
+        "city": "Metsamor",
+        "area_code": "37",
+        "dialing_code": "+374 37"
+    },
+    {
+        "city": "Miasnikian",
+        "area_code": "33",
+        "dialing_code": "+374 33"
+    },
+    {
+        "city": "Mobile",
+        "area_code": "9",
+        "dialing_code": "+374 9"
+    },
+    {
+        "city": "Nor Gekhi",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Nor Hajn",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Noyemberian",
+        "area_code": "66",
+        "dialing_code": "+374 66"
+    },
+    {
+        "city": "Pambak",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Pernzashen",
+        "area_code": "44",
+        "dialing_code": "+374 44"
+    },
+    {
+        "city": "Piunik",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Proshyan",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Ptghni",
+        "area_code": "22",
+        "dialing_code": "+374 22"
+    },
+    {
+        "city": "Sarnakhpyur",
+        "area_code": "42",
+        "dialing_code": "+374 42"
+    },
+    {
+        "city": "Sarukhan",
+        "area_code": "64",
+        "dialing_code": "+374 64"
+    },
+    {
+        "city": "Sevan",
+        "area_code": "61",
+        "dialing_code": "+374 61"
+    },
+    {
+        "city": "Shirakavan",
+        "area_code": "42",
+        "dialing_code": "+374 42"
+    },
+    {
+        "city": "Sisian",
+        "area_code": "83",
+        "dialing_code": "+374 83"
+    },
+    {
+        "city": "Solak",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Spitak",
+        "area_code": "55",
+        "dialing_code": "+374 55"
+    },
+    {
+        "city": "Stepanavan",
+        "area_code": "56",
+        "dialing_code": "+374 56"
+    },
+    {
+        "city": "Talin",
+        "area_code": "49",
+        "dialing_code": "+374 49"
+    },
+    {
+        "city": "Tashir",
+        "area_code": "54",
+        "dialing_code": "+374 54"
+    },
+    {
+        "city": "Tsaghkahovit",
+        "area_code": "57",
+        "dialing_code": "+374 57"
+    },
+    {
+        "city": "Tsakhkadzor",
+        "area_code": "23",
+        "dialing_code": "+374 23"
+    },
+    {
+        "city": "Vahagni",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Vanadzor",
+        "area_code": "51",
+        "dialing_code": "+374 51"
+    },
+    {
+        "city": "Vardenis",
+        "area_code": "69",
+        "dialing_code": "+374 69"
+    },
+    {
+        "city": "Vayk",
+        "area_code": "82",
+        "dialing_code": "+374 82"
+    },
+    {
+        "city": "Vedi",
+        "area_code": "34",
+        "dialing_code": "+374 34"
+    },
+    {
+        "city": "Verishen",
+        "area_code": "84",
+        "dialing_code": "+374 84"
+    },
+    {
+        "city": "Yeghegnadzor",
+        "area_code": "81",
+        "dialing_code": "+374 81"
+    },
+    {
+        "city": "Yerevan",
+        "area_code": "10",
+        "dialing_code": "+374 10"
+    },
+    {
+        "city": "Zovuni",
+        "area_code": "24",
+        "dialing_code": "+374 24"
+    },
+    {
+        "city": "Zvartnots",
+        "area_code": "31",
+        "dialing_code": "+374 31"
+    }
+]

@@ -1,0 +1,686 @@
+{
+    "RU": [
+        "/Europe/Russia.json"
+    ],
+    "DE": [
+        "/Europe/Germany.json"
+    ],
+    "GB": [
+        "/Europe/United_Kingdom.json"
+    ],
+    "ES": [
+        "/Europe/Spain.json"
+    ],
+    "FR": [
+        "/Europe/France.json"
+    ],
+    "IT": [
+        "/Europe/Italy.json"
+    ],
+    "IE": [
+        "/Europe/Ireland.json"
+    ],
+    "PT": [
+        "/Europe/Portugal.json"
+    ],
+    "SE": [
+        "/Europe/Sweden.json"
+    ],
+    "TR": [
+        "/Europe/Turkey.json"
+    ],
+    "AT": [
+        "/Europe/Austria.json"
+    ],
+    "UA": [
+        "/Europe/Ukraine.json"
+    ],
+    "PL": [
+        "/Europe/Poland.json"
+    ],
+    "GR": [
+        "/Europe/Greece.json"
+    ],
+    "DK": [
+        "/Europe/Denmark.json"
+    ],
+    "CS": [
+        "/Europe/Serbia_and_Montenegro.json"
+    ],
+    "NL": [
+        "/Europe/Netherlands.json"
+    ],
+    "CH": [
+        "/Europe/Switzerland.json"
+    ],
+    "NO": [
+        "/Europe/Norway.json"
+    ],
+    "RO": [
+        "/Europe/Romania.json"
+    ],
+    "FI": [
+        "/Europe/Finland.json"
+    ],
+    "BE": [
+        "/Europe/Belgium.json"
+    ],
+    "CZ": [
+        "/Europe/Czech_Republic.json"
+    ],
+    "BY": [
+        "/Europe/Belarus.json"
+    ],
+    "BA": [
+        "/Europe/Bosnia_&_Herzegovina.json"
+    ],
+    "HU": [
+        "/Europe/Hungary.json"
+    ],
+    "BG": [
+        "/Europe/Bulgaria.json"
+    ],
+    "EE": [
+        "/Europe/Estonia.json"
+    ],
+    "SK": [
+        "/Europe/Slovakia.json"
+    ],
+    "IS": [
+        "/Europe/Iceland.json"
+    ],
+    "HR": [
+        "/Europe/Croatia.json"
+    ],
+    "LV": [
+        "/Europe/Latvia.json"
+    ],
+    "LT": [
+        "/Europe/Lithuania.json"
+    ],
+    "ME": [
+        "/Europe/Montenegro.json"
+    ],
+    "LU": [
+        "/Europe/Luxembourg.json"
+    ],
+    "MD": [
+        "/Europe/Moldova.json"
+    ],
+    "SI": [
+        "/Europe/Slovenia.json"
+    ],
+    "AL": [
+        "/Europe/Albania.json"
+    ],
+    "AD": [
+        "/Europe/Andorra.json"
+    ],
+    "MC": [
+        "/Europe/Monaco.json"
+    ],
+    "GI": [
+        "/Europe/Gibraltar.json"
+    ],
+    "LI": [
+        "/Europe/Liechtenstein.json"
+    ],
+    "ZA": [
+        "/Africa/South_Africa.json"
+    ],
+    "DZ": [
+        "/Africa/Algeria.json"
+    ],
+    "EG": [
+        "/Africa/Egypt.json"
+    ],
+    "MA": [
+        "/Africa/Morocco.json"
+    ],
+    "NG": [
+        "/Africa/Nigeria.json"
+    ],
+    "TN": [
+        "/Africa/Tunisia.json"
+    ],
+    "KE": [
+        "/Africa/Kenya.json"
+    ],
+    "BW": [
+        "/Africa/Botswana.json"
+    ],
+    "ZW": [
+        "/Africa/Zimbabwe.json"
+    ],
+    "NE": [
+        "/Africa/Niger.json"
+    ],
+    "LY": [
+        "/Africa/Libya.json"
+    ],
+    "GA": [
+        "/Africa/Gabon.json"
+    ],
+    "SD": [
+        "/Africa/Sudan.json"
+    ],
+    "ET": [
+        "/Africa/Ethiopia.json"
+    ],
+    "TZ": [
+        "/Africa/Tanzania.json"
+    ],
+    "CM": [
+        "/Africa/Cameroon.json"
+    ],
+    "MZ": [
+        "/Africa/Mozambique.json"
+    ],
+    "ML": [
+        "/Africa/Mali.json"
+    ],
+    "NA": [
+        "/Africa/Namibia.json"
+    ],
+    "MU": [
+        "/Africa/Mauritius.json"
+    ],
+    "CD": [
+        "/Africa/Congo_(Dem._Rep.).json"
+    ],
+    "SN": [
+        "/Africa/Senegal.json"
+    ],
+    "EH": [
+        "/Africa/Western_Sahara.json"
+    ],
+    "MR": [
+        "/Africa/Mauritania.json"
+    ],
+    "ZM": [
+        "/Africa/Zambia.json"
+    ],
+    "CI": [
+        "/Africa/Cote_d'Ivoire.json"
+    ],
+    "MT": [
+        "/Africa/Malta.json"
+    ],
+    "CG": [
+        "/Africa/Congo_(Rep.).json"
+    ],
+    "MG": [
+        "/Africa/Madagascar.json"
+    ],
+    "AO": [
+        "/Africa/Angola.json"
+    ],
+    "CF": [
+        "/Africa/Central_African_Rep.json"
+    ],
+    "SO": [
+        "/Africa/Somalia.json"
+    ],
+    "BJ": [
+        "/Africa/Benin.json"
+    ],
+    "GH": [
+        "/Africa/Ghana.json"
+    ],
+    "KM": [
+        "/Africa/Comoros.json"
+    ],
+    "LS": [
+        "/Africa/Lesotho.json"
+    ],
+    "GQ": [
+        "/Africa/Equatorial_Guinea.json"
+    ],
+    "GN": [
+        "/Africa/Guinea.json"
+    ],
+    "CV": [
+        "/Africa/Cape_Verde.json"
+    ],
+    "ER": [
+        "/Africa/Eritrea.json"
+    ],
+    "RE": [
+        "/Africa/Reunion.json"
+    ],
+    "UG": [
+        "/Africa/Uganda.json"
+    ],
+    "MW": [
+        "/Africa/Malawi.json"
+    ],
+    "LR": [
+        "/Africa/Liberia.json"
+    ],
+    "SL": [
+        "/Africa/Sierra_Leone.json"
+    ],
+    "DJ": [
+        "/Africa/Djibouti.json"
+    ],
+    "RW": [
+        "/Africa/Rwanda.json"
+    ],
+    "SZ": [
+        "/Africa/Swaziland.json"
+    ],
+    "ST": [
+        "/Africa/Sao_Tome_&_Principe.json"
+    ],
+    "GW": [
+        "/Africa/Guinea_Bissau.json"
+    ],
+    "GM": [
+        "/Africa/Gambia.json"
+    ],
+    "BI": [
+        "/Africa/Burundi.json"
+    ],
+    "BF": [
+        "/Africa/Burkina_Faso.json"
+    ],
+    "TG": [
+        "/Africa/Togo.json"
+    ],
+    "CN": [
+        "/Asia/China.json"
+    ],
+    "IN": [
+        "/Asia/India.json"
+    ],
+    "JP": [
+        "/Asia/Japan.json"
+    ],
+    "ID": [
+        "/Asia/Indonesia.json"
+    ],
+    "PH": [
+        "/Asia/Philippines.json"
+    ],
+    "KZ": [
+        "/Asia/Kazakhstan.json"
+    ],
+    "TH": [
+        "/Asia/Thailand.json"
+    ],
+    "KR": [
+        "/Asia/Korea_(South).json"
+    ],
+    "MN": [
+        "/Asia/Mongolia.json"
+    ],
+    "SA": [
+        "/Asia/Saudi_Arabia.json"
+    ],
+    "VN": [
+        "/Asia/Vietnam.json"
+    ],
+    "IR": [
+        "/Asia/Iran.json"
+    ],
+    "IL": [
+        "/Asia/Israel.json"
+    ],
+    "MY": [
+        "/Asia/Malaysia.json"
+    ],
+    "TW": [
+        "/Asia/Taiwan.json"
+    ],
+    "TM": [
+        "/Asia/Turkmenistan.json"
+    ],
+    "PK": [
+        "/Asia/Pakistan.json"
+    ],
+    "UZ": [
+        "/Asia/Uzbekistan.json"
+    ],
+    "KP": [
+        "/Asia/Korea_(North).json"
+    ],
+    "SY": [
+        "/Asia/Syria.json"
+    ],
+    "IQ": [
+        "/Asia/Iraq.json"
+    ],
+    "BD": [
+        "/Asia/Bangladesh.json"
+    ],
+    "OM": [
+        "/Asia/Oman.json"
+    ],
+    "CY": [
+        "/Asia/Cyprus.json"
+    ],
+    "AZ": [
+        "/Asia/Azerbaijan.json"
+    ],
+    "KG": [
+        "/Asia/Kyrgyzstan.json"
+    ],
+    "MK": [
+        "/Asia/Macedonia.json"
+    ],
+    "LB": [
+        "/Asia/Lebanon.json"
+    ],
+    "YE": [
+        "/Asia/Yemen.json"
+    ],
+    "JO": [
+        "/Asia/Jordan.json"
+    ],
+    "AE": [
+        "/Asia/United_Arab_Emirates.json"
+    ],
+    "SG": [
+        "/Asia/Singapore.json"
+    ],
+    "AF": [
+        "/Asia/Afghanistan.json"
+    ],
+    "LK": [
+        "/Asia/Sri_Lanka.json"
+    ],
+    "MM": [
+        "/Asia/Myanmar_(Burma).json"
+    ],
+    "NP": [
+        "/Asia/Nepal.json"
+    ],
+    "GE": [
+        "/Asia/Georgia.json",
+        "/North_america/United_States/Georgia.json"
+    ],
+    "HK": [
+        "/Asia/Hong_Kong.json"
+    ],
+    "QA": [
+        "/Asia/Qatar.json"
+    ],
+    "KW": [
+        "/Asia/Kuwait.json"
+    ],
+    "AM": [
+        "/Asia/Armenia.json"
+    ],
+    "BT": [
+        "/Asia/Bhutan.json"
+    ],
+    "BH": [
+        "/Asia/Bahrain.json"
+    ],
+    "TJ": [
+        "/Asia/Tajikistan.json"
+    ],
+    "BN": [
+        "/Asia/Brunei.json"
+    ],
+    "MO": [
+        "/Asia/Macau.json"
+    ],
+    "MV": [
+        "/Asia/Maldives.json"
+    ],
+    "LA": [
+        "/Asia/Laos.json"
+    ],
+    "KH": [
+        "/Asia/Cambodia.json"
+    ],
+    "US": [
+        "/North_america/United_States.json",
+        "/North_america/United_States/California.json",
+        "/North_america/United_States/Hawaii.json",
+        "/North_america/United_States/Texas.json",
+        "/North_america/United_States/Illinois.json",
+        "/North_america/United_States/New_York.json",
+        "/North_america/United_States/Massachusetts.json",
+        "/North_america/United_States/Michigan.json",
+        "/North_america/United_States/Florida.json",
+        "/North_america/United_States/Wisconsin.json",
+        "/North_america/United_States/New_Jersey.json",
+        "/North_america/United_States/North_Carolina.json",
+        "/North_america/United_States/Minnesota.json",
+        "/North_america/United_States/Washington.json",
+        "/North_america/United_States/Ohio.json",
+        "/North_america/United_States/Virginia.json",
+        "/North_america/United_States/Pennsylvania.json",
+        "/North_america/United_States/Indiana.json",
+        "/North_america/United_States/Oregon.json",
+        "/North_america/United_States/Missouri.json",
+        "/North_america/United_States/Colorado.json",
+        "/North_america/United_States/Tennessee.json",
+        "/North_america/United_States/Utah.json",
+        "/North_america/United_States/Connecticut.json",
+        "/North_america/United_States/Oklahoma.json",
+        "/North_america/United_States/Maryland.json",
+        "/North_america/United_States/Iowa.json",
+        "/North_america/United_States/Arkansas.json",
+        "/North_america/United_States/Mississippi.json",
+        "/North_america/United_States/Arizona.json",
+        "/North_america/United_States/South_Carolina.json",
+        "/North_america/United_States/Louisiana.json",
+        "/North_america/United_States/Kentucky.json",
+        "/North_america/United_States/Alabama.json",
+        "/North_america/United_States/Kansas.json",
+        "/North_america/United_States/Rhode_Island.json",
+        "/North_america/United_States/Idaho.json",
+        "/North_america/United_States/Maine.json",
+        "/North_america/United_States/New_Mexico.json",
+        "/North_america/United_States/Nebraska.json",
+        "/North_america/United_States/Nevada.json",
+        "/North_america/United_States/West_Virginia.json",
+        "/North_america/United_States/New_Hampshire.json",
+        "/North_america/United_States/North_Dakota.json",
+        "/North_america/United_States/Montana.json",
+        "/North_america/United_States/Wyoming.json",
+        "/North_america/United_States/South_Dakota.json",
+        "/North_america/United_States/Virgin_Islands.json",
+        "/North_america/United_States/Alaska.json",
+        "/North_america/United_States/Vermont.json",
+        "/North_america/United_States/Delaware.json",
+        "/North_america/United_States/District_of_Columbia.json"
+    ],
+    "null": [],
+    "PR": [
+        "/North_america/United_States/Puerto_Rico.json"
+    ],
+    "CA": [
+        "/North_america/Canada.json",
+        "/North_america/Canada/Ontario.json",
+        "/North_america/Canada/British_Columbia.json",
+        "/North_america/Canada/Quebec.json",
+        "/North_america/Canada/Alberta.json",
+        "/North_america/Canada/Manitoba.json",
+        "/North_america/Canada/Saskatchewan.json",
+        "/North_america/Canada/Newfoundland.json",
+        "/North_america/Canada/New_Brunswick.json",
+        "/North_america/Canada/Nova_Scotia.json",
+        "/North_america/Canada/Northwest_Territories.json",
+        "/North_america/Canada/Nova_Scotia_-_North.json",
+        "/North_america/Canada/Ontario_-_Lake_Nipigon.json",
+        "/North_america/Canada/Ontario_-_Thunder_Bay.json",
+        "/North_america/Canada/Yukon_Territory.json",
+        "/North_america/Canada/Labrador.json",
+        "/North_america/Canada/British_Columbia_-_North.json",
+        "/North_america/Canada/Nunavut.json",
+        "/North_america/Canada/Prince_Edward_Island.json",
+        "/North_america/Canada/Quebec_-_North.json"
+    ],
+    "MX": [
+        "/North_america/Mexico.json"
+    ],
+    "CU": [
+        "/Central_america/Cuba.json"
+    ],
+    "HN": [
+        "/Central_america/Honduras.json"
+    ],
+    "GT": [
+        "/Central_america/Guatemala.json"
+    ],
+    "CR": [
+        "/Central_america/Costa_Rica.json"
+    ],
+    "DO": [
+        "/Central_america/Dominican_Republic.json"
+    ],
+    "JM": [
+        "/Central_america/Jamaica.json"
+    ],
+    "NI": [
+        "/Central_america/Nicaragua.json"
+    ],
+    "SV": [
+        "/Central_america/El_Salvador.json"
+    ],
+    "PA": [
+        "/Central_america/Panama.json"
+    ],
+    "GP": [
+        "/Central_america/Guadeloupe.json"
+    ],
+    "BS": [
+        "/Central_america/Bahamas.json"
+    ],
+    "AN": [
+        "/Central_america/Netherlands_Antilles.json"
+    ],
+    "HT": [
+        "/Central_america/Haiti.json"
+    ],
+    "MQ": [
+        "/Central_america/Martinique.json"
+    ],
+    "LC": [
+        "/Central_america/St_Lucia.json"
+    ],
+    "TT": [
+        "/Central_america/Trinidad_&_Tobago.json"
+    ],
+    "BZ": [
+        "/Central_america/Belize.json"
+    ],
+    "AW": [
+        "/Central_america/Aruba.json"
+    ],
+    "DM": [
+        "/Central_america/Dominica.json"
+    ],
+    "GD": [
+        "/Central_america/Grenada.json"
+    ],
+    "AG": [
+        "/Central_america/Antigua_&_Barbuda.json"
+    ],
+    "BB": [
+        "/Central_america/Barbados.json"
+    ],
+    "KY": [
+        "/Central_america/Cayman_Islands.json"
+    ],
+    "AI": [
+        "/Central_america/Anguilla.json"
+    ],
+    "BM": [
+        "/Central_america/Bermuda.json"
+    ],
+    "KN": [
+        "/Central_america/St_Kitts_&_Nevis.json"
+    ],
+    "BR": [
+        "/South_america/Brazil.json"
+    ],
+    "AR": [
+        "/South_america/Argentina.json"
+    ],
+    "CO": [
+        "/South_america/Colombia.json"
+    ],
+    "CL": [
+        "/South_america/Chile.json"
+    ],
+    "VE": [
+        "/South_america/Venezuela.json"
+    ],
+    "BO": [
+        "/South_america/Bolivia.json"
+    ],
+    "PE": [
+        "/South_america/Peru.json"
+    ],
+    "UY": [
+        "/South_america/Uruguay.json"
+    ],
+    "PY": [
+        "/South_america/Paraguay.json"
+    ],
+    "EC": [
+        "/South_america/Ecuador.json"
+    ],
+    "GY": [
+        "/South_america/Guyana.json"
+    ],
+    "SR": [
+        "/South_america/Suriname.json"
+    ],
+    "GF": [
+        "/South_america/French_Guiana.json"
+    ],
+    "FK": [
+        "/South_america/Falkland_Islands.json"
+    ],
+    "AS": [
+        "/Oceania/Samoa_(American).json"
+    ],
+    "AU": [
+        "/Oceania/Australia.json"
+    ],
+    "NZ": [
+        "/Oceania/New_Zealand.json"
+    ],
+    "FJ": [
+        "/Oceania/Fiji.json"
+    ],
+    "PF": [
+        "/Oceania/French_Polynesia.json"
+    ],
+    "NC": [
+        "/Oceania/New_Caledonia.json"
+    ],
+    "PG": [
+        "/Oceania/Papua_New_Guinea.json"
+    ],
+    "VU": [
+        "/Oceania/Vanuatu.json"
+    ],
+    "SB": [
+        "/Oceania/Solomon_Islands.json"
+    ],
+    "KI": [
+        "/Oceania/Kiribati.json"
+    ],
+    "TV": [
+        "/Oceania/Tuvalu.json"
+    ],
+    "TO": [
+        "/Oceania/Tonga.json"
+    ],
+    "SC": [
+        "/Oceania/Seychelles.json"
+    ],
+    "NR": [
+        "/Oceania/Nauru.json"
+    ],
+    "WS": [
+        "/Oceania/Samoa_(western).json"
+    ]
+}

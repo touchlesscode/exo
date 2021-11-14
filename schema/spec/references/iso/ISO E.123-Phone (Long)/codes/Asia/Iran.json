@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Esfahan",
+        "area_code": "311",
+        "dialing_code": "+98 311"
+    },
+    {
+        "city": "Mashhad",
+        "area_code": "511",
+        "dialing_code": "+98 511"
+    },
+    {
+        "city": "Tabriz",
+        "area_code": "411",
+        "dialing_code": "+98 411"
+    },
+    {
+        "city": "Tehran",
+        "area_code": "21",
+        "dialing_code": "+98 21"
+    },
+    {
+        "city": "Yazd",
+        "area_code": "352",
+        "dialing_code": "+98 352"
+    },
+    {
+        "city": "Zanjan",
+        "area_code": "242",
+        "dialing_code": "+98 242"
+    }
+]

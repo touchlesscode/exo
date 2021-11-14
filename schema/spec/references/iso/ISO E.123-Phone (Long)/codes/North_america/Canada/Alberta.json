@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Banff",
+        "area_code": "403",
+        "dialing_code": "+1 403"
+    },
+    {
+        "city": "Calgary",
+        "area_code": "587",
+        "dialing_code": "+1 587"
+    },
+    {
+        "city": "Edmonton",
+        "area_code": "780",
+        "dialing_code": "+1 780"
+    },
+    {
+        "city": "Grande Prairie",
+        "area_code": "780",
+        "dialing_code": "+1 780"
+    },
+    {
+        "city": "Lethbridge",
+        "area_code": "403",
+        "dialing_code": "+1 403"
+    },
+    {
+        "city": "Lloydminster",
+        "area_code": "780",
+        "dialing_code": "+1 780"
+    },
+    {
+        "city": "Medicine Hat",
+        "area_code": "403",
+        "dialing_code": "+1 403"
+    },
+    {
+        "city": "Red Deer",
+        "area_code": "403",
+        "dialing_code": "+1 403"
+    }
+]

@@ -1,0 +1,237 @@
+[
+    {
+        "city": "?akiai",
+        "area_code": "345",
+        "dialing_code": "+370 345"
+    },
+    {
+        "city": "?alcininkai",
+        "area_code": "380",
+        "dialing_code": "+370 380"
+    },
+    {
+        "city": "?ilale",
+        "area_code": "449",
+        "dialing_code": "+370 449"
+    },
+    {
+        "city": "?ilute",
+        "area_code": "441",
+        "dialing_code": "+370 441"
+    },
+    {
+        "city": "?irvintos",
+        "area_code": "382",
+        "dialing_code": "+370 382"
+    },
+    {
+        "city": "?vencionys",
+        "area_code": "387",
+        "dialing_code": "+370 387"
+    },
+    {
+        "city": "Akmene",
+        "area_code": "425",
+        "dialing_code": "+370 425"
+    },
+    {
+        "city": "Alytus",
+        "area_code": "315",
+        "dialing_code": "+370 315"
+    },
+    {
+        "city": "Anyk?ciai",
+        "area_code": "381",
+        "dialing_code": "+370 381"
+    },
+    {
+        "city": "Bir?ai",
+        "area_code": "450",
+        "dialing_code": "+370 450"
+    },
+    {
+        "city": "Bir?tonas",
+        "area_code": "319",
+        "dialing_code": "+370 319"
+    },
+    {
+        "city": "Druskininkai",
+        "area_code": "313",
+        "dialing_code": "+370 313"
+    },
+    {
+        "city": "Elektrenai",
+        "area_code": "528",
+        "dialing_code": "+370 528"
+    },
+    {
+        "city": "Ignalina",
+        "area_code": "386",
+        "dialing_code": "+370 386"
+    },
+    {
+        "city": "Jonava",
+        "area_code": "349",
+        "dialing_code": "+370 349"
+    },
+    {
+        "city": "Joni?kis",
+        "area_code": "426",
+        "dialing_code": "+370 426"
+    },
+    {
+        "city": "Jurbarkas",
+        "area_code": "447",
+        "dialing_code": "+370 447"
+    },
+    {
+        "city": "Kai?iadorys",
+        "area_code": "346",
+        "dialing_code": "+370 346"
+    },
+    {
+        "city": "Kaunas",
+        "area_code": "37",
+        "dialing_code": "+370 37"
+    },
+    {
+        "city": "Kedainiai",
+        "area_code": "57",
+        "dialing_code": "+370 57"
+    },
+    {
+        "city": "Kelme",
+        "area_code": "427",
+        "dialing_code": "+370 427"
+    },
+    {
+        "city": "Kretinga",
+        "area_code": "445",
+        "dialing_code": "+370 445"
+    },
+    {
+        "city": "Kupi?kis",
+        "area_code": "459",
+        "dialing_code": "+370 459"
+    },
+    {
+        "city": "Lazdijai",
+        "area_code": "318",
+        "dialing_code": "+370 318"
+    },
+    {
+        "city": "Ma?eikiai",
+        "area_code": "443",
+        "dialing_code": "+370 443"
+    },
+    {
+        "city": "Marijampole",
+        "area_code": "343",
+        "dialing_code": "+370 343"
+    },
+    {
+        "city": "Moletai",
+        "area_code": "383",
+        "dialing_code": "+370 383"
+    },
+    {
+        "city": "Neringa",
+        "area_code": "469",
+        "dialing_code": "+370 469"
+    },
+    {
+        "city": "Pakruojis",
+        "area_code": "421",
+        "dialing_code": "+370 421"
+    },
+    {
+        "city": "Palanga",
+        "area_code": "460",
+        "dialing_code": "+370 460"
+    },
+    {
+        "city": "Paneve?ys",
+        "area_code": "45",
+        "dialing_code": "+370 45"
+    },
+    {
+        "city": "Pasvalys",
+        "area_code": "451",
+        "dialing_code": "+370 451"
+    },
+    {
+        "city": "Plunge",
+        "area_code": "448",
+        "dialing_code": "+370 448"
+    },
+    {
+        "city": "Prienai",
+        "area_code": "319",
+        "dialing_code": "+370 319"
+    },
+    {
+        "city": "Radvili?kis",
+        "area_code": "422",
+        "dialing_code": "+370 422"
+    },
+    {
+        "city": "Raseiniai",
+        "area_code": "428",
+        "dialing_code": "+370 428"
+    },
+    {
+        "city": "Roki?kis",
+        "area_code": "458",
+        "dialing_code": "+370 458"
+    },
+    {
+        "city": "Taurage",
+        "area_code": "446",
+        "dialing_code": "+370 446"
+    },
+    {
+        "city": "Tel?iai",
+        "area_code": "444",
+        "dialing_code": "+370 444"
+    },
+    {
+        "city": "Trakai",
+        "area_code": "528",
+        "dialing_code": "+370 528"
+    },
+    {
+        "city": "Ukmerge",
+        "area_code": "340",
+        "dialing_code": "+370 340"
+    },
+    {
+        "city": "Utena",
+        "area_code": "389",
+        "dialing_code": "+370 389"
+    },
+    {
+        "city": "Varena",
+        "area_code": "310",
+        "dialing_code": "+370 310"
+    },
+    {
+        "city": "Vilkavi?kis",
+        "area_code": "342",
+        "dialing_code": "+370 342"
+    },
+    {
+        "city": "Vilnius",
+        "area_code": "521",
+        "dialing_code": "+370 521"
+    },
+    {
+        "city": "Visaginas",
+        "area_code": "386",
+        "dialing_code": "+370 386"
+    },
+    {
+        "city": "Zarasai",
+        "area_code": "385",
+        "dialing_code": "+370 385"
+    }
+]

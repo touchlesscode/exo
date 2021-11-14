@@ -1,0 +1,262 @@
+[
+    {
+        "city": "Albany",
+        "area_code": "518",
+        "dialing_code": "+1 518"
+    },
+    {
+        "city": "Auburn",
+        "area_code": "315",
+        "dialing_code": "+1 315"
+    },
+    {
+        "city": "Baldwin",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Bay Shore",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Brentwood",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Buffalo",
+        "area_code": "716",
+        "dialing_code": "+1 716"
+    },
+    {
+        "city": "Central Islip",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Commack",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Deer Park",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "East Meadow",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Elmira",
+        "area_code": "607",
+        "dialing_code": "+1 607"
+    },
+    {
+        "city": "Elmont",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Franklin Square",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Freeport",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Glen Cove",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Harrison",
+        "area_code": "870",
+        "dialing_code": "+1 870"
+    },
+    {
+        "city": "Hempstead",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Hicksville",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Holbrook",
+        "area_code": "208",
+        "dialing_code": "+1 208"
+    },
+    {
+        "city": "Jamestown",
+        "area_code": "716",
+        "dialing_code": "+1 716"
+    },
+    {
+        "city": "Levittown",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Lindenhurst",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Long Beach",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Massapequa",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Middletown",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Mount Vernon",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "New City",
+        "area_code": "845",
+        "dialing_code": "+1 845"
+    },
+    {
+        "city": "New Rochelle",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "New York",
+        "area_code": "212",
+        "dialing_code": "+1 212"
+    },
+    {
+        "city": "Newburgh",
+        "area_code": "845",
+        "dialing_code": "+1 845"
+    },
+    {
+        "city": "Niagara Falls",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Oceanside",
+        "area_code": "760",
+        "dialing_code": "+1 760"
+    },
+    {
+        "city": "Ossining",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Peekskill",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Plainview",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Poughkeepsie",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Rochester",
+        "area_code": "585",
+        "dialing_code": "+1 585"
+    },
+    {
+        "city": "Rockville Centre",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Rome",
+        "area_code": "315",
+        "dialing_code": "+1 315"
+    },
+    {
+        "city": "Saratoga Springs",
+        "area_code": "518",
+        "dialing_code": "+1 518"
+    },
+    {
+        "city": "Schenectady",
+        "area_code": "518",
+        "dialing_code": "+1 518"
+    },
+    {
+        "city": "Shirley",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Smithtown",
+        "area_code": "631",
+        "dialing_code": "+1 631"
+    },
+    {
+        "city": "Spring Valley",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Syracuse",
+        "area_code": "315",
+        "dialing_code": "+1 315"
+    },
+    {
+        "city": "Tonawanda",
+        "area_code": "716",
+        "dialing_code": "+1 716"
+    },
+    {
+        "city": "Troy",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Uniondale",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "Utica",
+        "area_code": "315",
+        "dialing_code": "+1 315"
+    },
+    {
+        "city": "Valley Stream",
+        "area_code": "516",
+        "dialing_code": "+1 516"
+    },
+    {
+        "city": "White Plains",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    },
+    {
+        "city": "Yonkers",
+        "area_code": "914",
+        "dialing_code": "+1 914"
+    }
+]

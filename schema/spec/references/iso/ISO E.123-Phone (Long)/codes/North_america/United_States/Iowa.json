@@ -1,0 +1,87 @@
+[
+    {
+        "city": "Ames",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Ankeny",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Burlington",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Cedar Rapids",
+        "area_code": "319",
+        "dialing_code": "+1 319"
+    },
+    {
+        "city": "Clinton",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Council Bluffs",
+        "area_code": "712",
+        "dialing_code": "+1 712"
+    },
+    {
+        "city": "Davenport",
+        "area_code": "563",
+        "dialing_code": "+1 563"
+    },
+    {
+        "city": "Des Moines",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Dubuque",
+        "area_code": "563",
+        "dialing_code": "+1 563"
+    },
+    {
+        "city": "Fort Dodge",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Iowa City",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Marion",
+        "area_code": "765",
+        "dialing_code": "+1 765"
+    },
+    {
+        "city": "Mason City",
+        "area_code": "641",
+        "dialing_code": "+1 641"
+    },
+    {
+        "city": "Muscatine",
+        "area_code": "563",
+        "dialing_code": "+1 563"
+    },
+    {
+        "city": "Newton",
+        "area_code": "316",
+        "dialing_code": "+1 316"
+    },
+    {
+        "city": "Sioux City",
+        "area_code": "712",
+        "dialing_code": "+1 712"
+    },
+    {
+        "city": "Waterloo",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    }
+]

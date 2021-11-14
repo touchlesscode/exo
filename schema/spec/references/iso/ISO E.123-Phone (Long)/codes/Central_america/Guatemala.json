@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Guatemala City",
+        "area_code": "2",
+        "dialing_code": "+502 2"
+    },
+    {
+        "city": "Quetzaltenango",
+        "area_code": "",
+        "dialing_code": "+502"
+    },
+    {
+        "city": "San Jose",
+        "area_code": "309",
+        "dialing_code": "+502 309"
+    }
+]

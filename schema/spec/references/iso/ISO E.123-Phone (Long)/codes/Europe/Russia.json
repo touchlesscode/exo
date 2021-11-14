@@ -1,0 +1,402 @@
+[
+    {
+        "city": "Amursk",
+        "area_code": "416",
+        "dialing_code": "+7 416"
+    },
+    {
+        "city": "Anadyr",
+        "area_code": "42722",
+        "dialing_code": "+7 42722"
+    },
+    {
+        "city": "Arkhangelsk",
+        "area_code": "8182",
+        "dialing_code": "+7 8182"
+    },
+    {
+        "city": "Astrahanka",
+        "area_code": "8512",
+        "dialing_code": "+7 8512"
+    },
+    {
+        "city": "Astrakhan",
+        "area_code": "8512",
+        "dialing_code": "+7 8512"
+    },
+    {
+        "city": "Barnaul",
+        "area_code": "3852",
+        "dialing_code": "+7 3852"
+    },
+    {
+        "city": "Belgorod",
+        "area_code": "472",
+        "dialing_code": "+7 472"
+    },
+    {
+        "city": "Bryansk",
+        "area_code": "483",
+        "dialing_code": "+7 483"
+    },
+    {
+        "city": "Cheboksary",
+        "area_code": "8352",
+        "dialing_code": "+7 8352"
+    },
+    {
+        "city": "Chelyabinsk",
+        "area_code": "351",
+        "dialing_code": "+7 351"
+    },
+    {
+        "city": "Cherepovets",
+        "area_code": "820",
+        "dialing_code": "+7 820"
+    },
+    {
+        "city": "Cherkessk",
+        "area_code": "87822",
+        "dialing_code": "+7 87822"
+    },
+    {
+        "city": "Chita",
+        "area_code": "302",
+        "dialing_code": "+7 302"
+    },
+    {
+        "city": "Ekaterinburg",
+        "area_code": "343",
+        "dialing_code": "+7 343"
+    },
+    {
+        "city": "Gorno Altaysk",
+        "area_code": "388",
+        "dialing_code": "+7 388"
+    },
+    {
+        "city": "Groznyy",
+        "area_code": "871",
+        "dialing_code": "+7 871"
+    },
+    {
+        "city": "Irkutsk",
+        "area_code": "3952",
+        "dialing_code": "+7 3952"
+    },
+    {
+        "city": "Ivanovo",
+        "area_code": "493",
+        "dialing_code": "+7 493"
+    },
+    {
+        "city": "Izhevsk",
+        "area_code": "3412",
+        "dialing_code": "+7 3412"
+    },
+    {
+        "city": "Kaliningrad",
+        "area_code": "401",
+        "dialing_code": "+7 401"
+    },
+    {
+        "city": "Kaluga",
+        "area_code": "484",
+        "dialing_code": "+7 484"
+    },
+    {
+        "city": "Kazan",
+        "area_code": "843",
+        "dialing_code": "+7 843"
+    },
+    {
+        "city": "Kemerovo",
+        "area_code": "3842",
+        "dialing_code": "+7 3842"
+    },
+    {
+        "city": "Khabarovsk",
+        "area_code": "4212",
+        "dialing_code": "+7 4212"
+    },
+    {
+        "city": "Kirov",
+        "area_code": "833",
+        "dialing_code": "+7 833"
+    },
+    {
+        "city": "Kostroma",
+        "area_code": "494",
+        "dialing_code": "+7 494"
+    },
+    {
+        "city": "Krasnodar",
+        "area_code": "8612",
+        "dialing_code": "+7 8612"
+    },
+    {
+        "city": "Krasnoyarsk",
+        "area_code": "3912",
+        "dialing_code": "+7 3912"
+    },
+    {
+        "city": "Kurgan",
+        "area_code": "352",
+        "dialing_code": "+7 352"
+    },
+    {
+        "city": "Kursk",
+        "area_code": "471",
+        "dialing_code": "+7 471"
+    },
+    {
+        "city": "Lipetsk",
+        "area_code": "474",
+        "dialing_code": "+7 474"
+    },
+    {
+        "city": "Magadan",
+        "area_code": "41322",
+        "dialing_code": "+7 41322"
+    },
+    {
+        "city": "Mineral nyye Vody",
+        "area_code": "879",
+        "dialing_code": "+7 879"
+    },
+    {
+        "city": "Moscow",
+        "area_code": "495",
+        "dialing_code": "+7 495"
+    },
+    {
+        "city": "Moscow (municipal)",
+        "area_code": "495",
+        "dialing_code": "+7 495"
+    },
+    {
+        "city": "Moscow (regional)",
+        "area_code": "496",
+        "dialing_code": "+7 496"
+    },
+    {
+        "city": "Murmansk",
+        "area_code": "8152",
+        "dialing_code": "+7 8152"
+    },
+    {
+        "city": "Naberezhnye Chelny",
+        "area_code": "8552",
+        "dialing_code": "+7 8552"
+    },
+    {
+        "city": "Norilsk",
+        "area_code": "39152",
+        "dialing_code": "+7 39152"
+    },
+    {
+        "city": "Novgorod",
+        "area_code": "81622",
+        "dialing_code": "+7 81622"
+    },
+    {
+        "city": "Novorossiysk",
+        "area_code": "86117",
+        "dialing_code": "+7 86117"
+    },
+    {
+        "city": "Novosibirsk",
+        "area_code": "383",
+        "dialing_code": "+7 383"
+    },
+    {
+        "city": "Omsk",
+        "area_code": "3812",
+        "dialing_code": "+7 3812"
+    },
+    {
+        "city": "Orel",
+        "area_code": "8262",
+        "dialing_code": "+7 8262"
+    },
+    {
+        "city": "Orenburg",
+        "area_code": "3532",
+        "dialing_code": "+7 3532"
+    },
+    {
+        "city": "Oryol",
+        "area_code": "486",
+        "dialing_code": "+7 486"
+    },
+    {
+        "city": "Penza",
+        "area_code": "8412",
+        "dialing_code": "+7 8412"
+    },
+    {
+        "city": "Perm",
+        "area_code": "3422",
+        "dialing_code": "+7 3422"
+    },
+    {
+        "city": "Petropavlovsk Kamchatskiy",
+        "area_code": "4152",
+        "dialing_code": "+7 4152"
+    },
+    {
+        "city": "Petrozavodsk",
+        "area_code": "814",
+        "dialing_code": "+7 814"
+    },
+    {
+        "city": "Rostov",
+        "area_code": "863",
+        "dialing_code": "+7 863"
+    },
+    {
+        "city": "Ryazan",
+        "area_code": "491",
+        "dialing_code": "+7 491"
+    },
+    {
+        "city": "Samara",
+        "area_code": "8462",
+        "dialing_code": "+7 8462"
+    },
+    {
+        "city": "Saransk",
+        "area_code": "834",
+        "dialing_code": "+7 834"
+    },
+    {
+        "city": "Saratov",
+        "area_code": "8452",
+        "dialing_code": "+7 8452"
+    },
+    {
+        "city": "Smolensk",
+        "area_code": "481",
+        "dialing_code": "+7 481"
+    },
+    {
+        "city": "Sochi",
+        "area_code": "862",
+        "dialing_code": "+7 862"
+    },
+    {
+        "city": "St. Petersburg",
+        "area_code": "812",
+        "dialing_code": "+7 812"
+    },
+    {
+        "city": "Stavropol",
+        "area_code": "8652",
+        "dialing_code": "+7 8652"
+    },
+    {
+        "city": "Surgut",
+        "area_code": "3462",
+        "dialing_code": "+7 3462"
+    },
+    {
+        "city": "Syktyvkar",
+        "area_code": "821",
+        "dialing_code": "+7 821"
+    },
+    {
+        "city": "Tambov",
+        "area_code": "475",
+        "dialing_code": "+7 475"
+    },
+    {
+        "city": "Tomsk",
+        "area_code": "3822",
+        "dialing_code": "+7 3822"
+    },
+    {
+        "city": "Tula",
+        "area_code": "487",
+        "dialing_code": "+7 487"
+    },
+    {
+        "city": "Tura",
+        "area_code": "39113",
+        "dialing_code": "+7 39113"
+    },
+    {
+        "city": "Tver",
+        "area_code": "482",
+        "dialing_code": "+7 482"
+    },
+    {
+        "city": "Ufa",
+        "area_code": "3472",
+        "dialing_code": "+7 3472"
+    },
+    {
+        "city": "Ul'yanovsk",
+        "area_code": "8422",
+        "dialing_code": "+7 8422"
+    },
+    {
+        "city": "Ulan Ude",
+        "area_code": "3012",
+        "dialing_code": "+7 3012"
+    },
+    {
+        "city": "Ulyanovsk",
+        "area_code": "842",
+        "dialing_code": "+7 842"
+    },
+    {
+        "city": "Vladikavkaz",
+        "area_code": "867",
+        "dialing_code": "+7 867"
+    },
+    {
+        "city": "Vladimir",
+        "area_code": "492",
+        "dialing_code": "+7 492"
+    },
+    {
+        "city": "Vladivostok",
+        "area_code": "4232",
+        "dialing_code": "+7 4232"
+    },
+    {
+        "city": "Volgograd",
+        "area_code": "8442",
+        "dialing_code": "+7 8442"
+    },
+    {
+        "city": "Vologda",
+        "area_code": "817",
+        "dialing_code": "+7 817"
+    },
+    {
+        "city": "Voronezh",
+        "area_code": "473",
+        "dialing_code": "+7 473"
+    },
+    {
+        "city": "Yakutsk",
+        "area_code": "4112",
+        "dialing_code": "+7 4112"
+    },
+    {
+        "city": "Yaroslavl",
+        "area_code": "485",
+        "dialing_code": "+7 485"
+    },
+    {
+        "city": "Yekaterinburg",
+        "area_code": "343",
+        "dialing_code": "+7 343"
+    },
+    {
+        "city": "Yoshkar Ola",
+        "area_code": "836",
+        "dialing_code": "+7 836"
+    }
+]

@@ -1,0 +1,286 @@
+{
+    "@context": {
+      "Address": "http://www.w3.org/ns/locn#Address",
+      "Address.addressArea": {
+        "@id": "http://www.w3.org/ns/locn#addressArea",
+        "@type": "@id"
+      },
+      "Address.addressId": {
+        "@id": "http://www.w3.org/ns/locn#addressID",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Address.administrativeUnitLevel1 (country)": {
+        "@id": "http://www.w3.org/ns/locn#adminUnitL1",
+        "@type": ""
+      },
+      "Address.administrativeUnitLevel2 (country/region/state)": {
+        "@id": "http://www.w3.org/ns/locn#adminUnitL2",
+        "@type": "@id"
+      },
+      "Address.fullAddress": {
+        "@id": "http://www.w3.org/ns/locn#fullAddress",
+        "@type": "@id"
+      },
+      "Address.locatorDesignator": {
+        "@id": "http://www.w3.org/ns/locn#locatorDesignator",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Address.locatorName": {
+        "@id": "http://www.w3.org/ns/locn#locatorName",
+        "@type": "@id"
+      },
+      "Address.postCode": {
+        "@id": "http://www.w3.org/ns/locn#postCode",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Address.postName (city)": {
+        "@id": "http://www.w3.org/ns/locn#postName",
+        "@type": "@id"
+      },
+      "Address.postOfficeBox": {
+        "@id": "http://www.w3.org/ns/locn#poBox",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Address.thoroughfare": {
+        "@id": "http://www.w3.org/ns/locn#thoroughfare",
+        "@type": "@id"
+      },
+      "AdministrativeTerritorialUnits": "http://data.europa.eu/88u/dataset/atu-type",
+      "AdministrativeTerritorialUnits.geometry": {
+        "@container": "@set",
+        "@id": "http://w3.org/ns/locn#geometry",
+        "@type": "@id"
+      },
+      "ChangeEvent": "http://www.w3.org/ns/org#ChangeEvent",
+      "ChangeEvent.description": {
+        "@id": "http://purl.org/dc/terms/description",
+        "@type": "@id"
+      },
+      "ChangeEvent.endedAtTime": {
+        "@id": "http://www.w3.org/ns/prov#endedAtTime",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "ChangeEvent.hasFormalFramework": {
+        "@container": "@set",
+        "@id": "http://data.europa.eu/m8g/hasFormalFramework",
+        "@type": "@id"
+      },
+      "ChangeEvent.originalOrganization": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#originalOrganization",
+        "@type": "@id"
+      },
+      "ChangeEvent.resultingOrganization": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#resultingOrganization",
+        "@type": "@id"
+      },
+      "ChangeEvent.startedAtTime": {
+        "@id": "http://www.w3.org/ns/prov#startedAtTime",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "Concept": "http://www.w3.org/2004/02/skos/core#Concept",
+      "ContactPoint": "https://schema.org/ContactPoint",
+      "ContactPoint.availabilityRestriction": {
+        "@container": "@set",
+        "@id": "http://schema.org/hoursAvailable",
+        "@type": "@id"
+      },
+      "ContactPoint.hasEmail": {
+        "@id": "https://schema.org/email",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "ContactPoint.hasTelephone": {
+        "@id": "https://schema.org/telephone",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "ContactPoint.openingHours": {
+        "@id": "https://schema.org/openingHours",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "Document": "http://xmlns.com/foaf/0.1/Document",
+      "FormalFramework": "http://purl.org/vocab/cpsv#FormalFramework",
+      "FormalFramework.identifier": {
+        "@id": "http://www.w3.org/ns/org#identifier",
+        "@type": "@id"
+      },
+      "FormalFramework.implements": {
+        "@container": "@set",
+        "@id": "http://purl.org/vocab/cpsv#implements",
+        "@type": "@id"
+      },
+      "FormalFramework.name": {
+        "@id": "http://xmlns.com/foaf/0.1/name",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "FoundationEvent": "http://data.europa.eu/m8g/FoundationEvent",
+      "Geometry": "http://www.w3.org/ns/locn#Geometry",
+      "Geometry.coordinates": {
+        "@container": "@set",
+        "@id": "https://data.europa.eu/m8g/coordinates",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Geometry.crs": {
+        "@container": "@set",
+        "@id": "https://data.europa.eu/m8g/crs",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      },
+      "Geometry.geometryType": {
+        "@container": "@set",
+        "@id": "https://data.europa.eu/m8g/geometryType",
+        "@type": ""
+      },
+      "Geometry.gml": {
+        "@id": "https://data.europa.eu/m8g/gml",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "Geometry.latitude": {
+        "@id": "http://schema.org/latitude",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Geometry.longitude": {
+        "@id": "http://schema.org/longitude",
+        "@type": "http://www.w3.org/2001/XMLSchema#string"
+      },
+      "Geometry.wkt": {
+        "@id": "http://www.opengis.net/ont/geosparql#wktLiteral",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "Identifier": "http://www.w3.org/ns/adms#Identifier",
+      "Identifier.dateOfIssue": {
+        "@id": "http://purl.org/dc/terms/issued",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "Identifier.identifier": {
+        "@id": "http://www.w3.org/2004/02/skos/core#notation",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "Identifier.issuingAuthority": {
+        "@id": "http://www.w3.org/ns/adms#schemeAgency",
+        "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      },
+      "Identifier.issuingAuthorityUri": {
+        "@id": "http://purl.org/dc/terms/creator",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      },
+      "ImageObject": "https://schema.org/ImageObject",
+      "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
+      "OpeningHoursSpecification.dayOfWeek": {
+        "@id": "https://schema.org/dayOfWeek",
+        "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+      },
+      "OpeningHoursSpecification.validFrom": {
+        "@id": "https://schema.org/validFrom",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "OpeningHoursSpecification.validThrough": {
+        "@id": "https://schema.org/validThrough",
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      },
+      "Organization": "http://www.w3.org/ns/org#organization",
+      "OrganizationalUnit": "http://www.w3.org/ns/org#hasUnit",
+      "OrganizationalUnit.unitOf": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#unitOf",
+        "@type": "@id"
+      },
+      "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
+      "PublicOrganization.address": {
+        "@container": "@set",
+        "@id": "http://w3.org/ns/locn#address",
+        "@type": "@id"
+      },
+      "PublicOrganization.alternativeLabel": {
+        "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+        "@type": "@id"
+      },
+      "PublicOrganization.changedBy": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#changedBy",
+        "@type": "@id"
+      },
+      "PublicOrganization.classification": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#classification",
+        "@type": "@id"
+      },
+      "PublicOrganization.contactPoint": {
+        "@container": "@set",
+        "@id": "https://schema.org/contactPoint",
+        "@type": "@id"
+      },
+      "PublicOrganization.description": {
+        "@id": "http://purl.org/dc/terms/description",
+        "@type": "@id"
+      },
+      "PublicOrganization.hasMember": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#hasMember",
+        "@type": "@id"
+      },
+      "PublicOrganization.hasSubOrganization": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#hasSubOrganization",
+        "@type": "@id"
+      },
+      "PublicOrganization.hasUnit": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#hasUnit",
+        "@type": "@id"
+      },
+      "PublicOrganization.homepage": {
+        "@container": "@set",
+        "@id": "http://xmlns.com/foaf/0.1/homepage",
+        "@type": "@id"
+      },
+      "PublicOrganization.identifier": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#identifier",
+        "@type": "@id"
+      },
+      "PublicOrganization.logo": {
+        "@container": "@set",
+        "@id": "https://schema.org/logo",
+        "@type": "@id"
+      },
+      "PublicOrganization.memberOf": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#memberOf",
+        "@type": "@id"
+      },
+      "PublicOrganization.next": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/1999/xhtml/vocab#next",
+        "@type": "@id"
+      },
+      "PublicOrganization.preferredLabel": {
+        "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+        "@type": "@id"
+      },
+      "PublicOrganization.prev": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/1999/xhtml/vocab#prev",
+        "@type": "@id"
+      },
+      "PublicOrganization.purpose": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#purpose",
+        "@type": "@id"
+      },
+      "PublicOrganization.resultedFrom": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#resultedFrom",
+        "@type": "@id"
+      },
+      "PublicOrganization.spatial": {
+        "@container": "@set",
+        "@id": "http://purl.org/dc/terms/spatial",
+        "@type": "@id"
+      },
+      "PublicOrganization.subOrganizationOf": {
+        "@container": "@set",
+        "@id": "http://www.w3.org/ns/org#subOrganizationOf",
+        "@type": "@id"
+      }
+    }
+  }

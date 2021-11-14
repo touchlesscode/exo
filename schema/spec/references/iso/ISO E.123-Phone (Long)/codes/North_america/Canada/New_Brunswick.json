@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Dieppe",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Edmundston",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Fredericton",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Hampton",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Miramichi",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Moncton",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Rothesay",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Saint John",
+        "area_code": "506",
+        "dialing_code": "+1 506"
+    },
+    {
+        "city": "Woodstock",
+        "area_code": "802",
+        "dialing_code": "+1 802"
+    }
+]

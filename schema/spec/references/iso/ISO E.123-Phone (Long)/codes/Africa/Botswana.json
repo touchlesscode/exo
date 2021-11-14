@@ -1,0 +1,112 @@
+[
+    {
+        "city": "Barolong/Ngwaketse",
+        "area_code": "54",
+        "dialing_code": "+267 54"
+    },
+    {
+        "city": "Francistown",
+        "area_code": "24",
+        "dialing_code": "+267 24"
+    },
+    {
+        "city": "Gaborone",
+        "area_code": "36",
+        "dialing_code": "+267 36"
+    },
+    {
+        "city": "Gantsi",
+        "area_code": "65",
+        "dialing_code": "+267 65"
+    },
+    {
+        "city": "Ghanzi",
+        "area_code": "65",
+        "dialing_code": "+267 65"
+    },
+    {
+        "city": "Jwaneng",
+        "area_code": "58",
+        "dialing_code": "+267 58"
+    },
+    {
+        "city": "Kanye",
+        "area_code": "340",
+        "dialing_code": "+267 340"
+    },
+    {
+        "city": "Kasane",
+        "area_code": "62",
+        "dialing_code": "+267 62"
+    },
+    {
+        "city": "Letlhakane",
+        "area_code": "29",
+        "dialing_code": "+267 29"
+    },
+    {
+        "city": "Letlhakane/Orapa",
+        "area_code": "29",
+        "dialing_code": "+267 29"
+    },
+    {
+        "city": "Lobatse",
+        "area_code": "53",
+        "dialing_code": "+267 53"
+    },
+    {
+        "city": "Mahalapye",
+        "area_code": "47",
+        "dialing_code": "+267 47"
+    },
+    {
+        "city": "Maun",
+        "area_code": "68",
+        "dialing_code": "+267 68"
+    },
+    {
+        "city": "Mobile Phones - Mascom",
+        "area_code": "71",
+        "dialing_code": "+267 71"
+    },
+    {
+        "city": "Mobile Phones - Orange",
+        "area_code": "72",
+        "dialing_code": "+267 72"
+    },
+    {
+        "city": "Mochudi",
+        "area_code": "57",
+        "dialing_code": "+267 57"
+    },
+    {
+        "city": "Molepolole",
+        "area_code": "59",
+        "dialing_code": "+267 59"
+    },
+    {
+        "city": "Palapye",
+        "area_code": "49",
+        "dialing_code": "+267 49"
+    },
+    {
+        "city": "Ramotswa",
+        "area_code": "53",
+        "dialing_code": "+267 53"
+    },
+    {
+        "city": "Selebi Phikwe",
+        "area_code": "26",
+        "dialing_code": "+267 26"
+    },
+    {
+        "city": "Selebi-Phikwe",
+        "area_code": "26",
+        "dialing_code": "+267 26"
+    },
+    {
+        "city": "Serowe",
+        "area_code": "46",
+        "dialing_code": "+267 46"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Bulawayo",
+        "area_code": "9",
+        "dialing_code": "+263 9"
+    },
+    {
+        "city": "Harare",
+        "area_code": "4",
+        "dialing_code": "+263 4"
+    },
+    {
+        "city": "Mobile Phones - Econet",
+        "area_code": "091 + six digits",
+        "dialing_code": "+263 091 + six digits"
+    },
+    {
+        "city": "Mobile Phones - NetOne",
+        "area_code": "011 + six digits",
+        "dialing_code": "+263 011 + six digits"
+    },
+    {
+        "city": "Mobile Phones - Telecel Zimbab",
+        "area_code": "023 + six digits",
+        "dialing_code": "+263 023 + six digits"
+    },
+    {
+        "city": "Mutare",
+        "area_code": "20",
+        "dialing_code": "+263 20"
+    }
+]

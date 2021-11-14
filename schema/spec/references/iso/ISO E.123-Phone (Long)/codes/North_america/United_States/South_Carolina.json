@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Anderson",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Charleston",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Columbia",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Conway",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Easley",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Florence",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Greenville",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Greenwood",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Greer",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Lexington",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Mount Pleasant",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Myrtle Beach",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "North Augusta",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Rock Hill",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Simpsonville",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Spartanburg",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Summerville",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Sumter",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    }
+]

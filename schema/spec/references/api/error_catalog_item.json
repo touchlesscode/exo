@@ -1,0 +1,15 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "error_catalog_item",
+    "description": "Schema for item in error catalog.",
+    "properties": {
+        "error_spec": {
+            "description": "Error metadata.",
+            "$ref": "error_spec.json"
+        }
+    },
+    "required": [
+        "error_spec"
+    ]
+}

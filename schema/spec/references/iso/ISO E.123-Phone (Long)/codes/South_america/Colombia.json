@@ -1,0 +1,107 @@
+[
+    {
+        "city": "Armenia",
+        "area_code": "6",
+        "dialing_code": "+57 6"
+    },
+    {
+        "city": "Barranquilla",
+        "area_code": "5",
+        "dialing_code": "+57 5"
+    },
+    {
+        "city": "Bogota",
+        "area_code": "1",
+        "dialing_code": "+57 1"
+    },
+    {
+        "city": "Bucaramanga",
+        "area_code": "7",
+        "dialing_code": "+57 7"
+    },
+    {
+        "city": "Buenaventura",
+        "area_code": "222",
+        "dialing_code": "+57 222"
+    },
+    {
+        "city": "Cali",
+        "area_code": "2",
+        "dialing_code": "+57 2"
+    },
+    {
+        "city": "Cartagena",
+        "area_code": "5",
+        "dialing_code": "+57 5"
+    },
+    {
+        "city": "Cucuta",
+        "area_code": "7",
+        "dialing_code": "+57 7"
+    },
+    {
+        "city": "Ibague",
+        "area_code": "8",
+        "dialing_code": "+57 8"
+    },
+    {
+        "city": "Manizales",
+        "area_code": "6",
+        "dialing_code": "+57 6"
+    },
+    {
+        "city": "Medellin",
+        "area_code": "4",
+        "dialing_code": "+57 4"
+    },
+    {
+        "city": "Mobile Phones - Comcel",
+        "area_code": "312",
+        "dialing_code": "+57 312"
+    },
+    {
+        "city": "Mobile Phones - Movistar",
+        "area_code": "316",
+        "dialing_code": "+57 316"
+    },
+    {
+        "city": "Mobile Phones - Ola",
+        "area_code": "301",
+        "dialing_code": "+57 301"
+    },
+    {
+        "city": "Neiva",
+        "area_code": "8",
+        "dialing_code": "+57 8"
+    },
+    {
+        "city": "Palmira",
+        "area_code": "2",
+        "dialing_code": "+57 2"
+    },
+    {
+        "city": "Pasto",
+        "area_code": "27",
+        "dialing_code": "+57 27"
+    },
+    {
+        "city": "Pereira",
+        "area_code": "6",
+        "dialing_code": "+57 6"
+    },
+    {
+        "city": "Santa Marta",
+        "area_code": "5",
+        "dialing_code": "+57 5"
+    },
+    {
+        "city": "Soledad",
+        "area_code": "831",
+        "dialing_code": "+57 831"
+    },
+    {
+        "city": "Villavicencio",
+        "area_code": "8",
+        "dialing_code": "+57 8"
+    }
+]

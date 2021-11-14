@@ -1,0 +1,97 @@
+[
+    {
+        "city": "Changhua",
+        "area_code": "4",
+        "dialing_code": "+886 4"
+    },
+    {
+        "city": "Chiayi",
+        "area_code": "5",
+        "dialing_code": "+886 5"
+    },
+    {
+        "city": "Chiayi County",
+        "area_code": "5",
+        "dialing_code": "+886 5"
+    },
+    {
+        "city": "Chunan",
+        "area_code": "37",
+        "dialing_code": "+886 37"
+    },
+    {
+        "city": "Chunghsing-Hsintsun",
+        "area_code": "49",
+        "dialing_code": "+886 49"
+    },
+    {
+        "city": "Chungli",
+        "area_code": "3",
+        "dialing_code": "+886 3"
+    },
+    {
+        "city": "Fengyuan",
+        "area_code": "4",
+        "dialing_code": "+886 4"
+    },
+    {
+        "city": "Hsiaying",
+        "area_code": "6",
+        "dialing_code": "+886 6"
+    },
+    {
+        "city": "Hualian",
+        "area_code": "38",
+        "dialing_code": "+886 38"
+    },
+    {
+        "city": "Hualien",
+        "area_code": "38",
+        "dialing_code": "+886 38"
+    },
+    {
+        "city": "Kaohsiung",
+        "area_code": "7",
+        "dialing_code": "+886 7"
+    },
+    {
+        "city": "Keelung",
+        "area_code": "2",
+        "dialing_code": "+886 2"
+    },
+    {
+        "city": "Lotung",
+        "area_code": "39",
+        "dialing_code": "+886 39"
+    },
+    {
+        "city": "Pingtung",
+        "area_code": "8",
+        "dialing_code": "+886 8"
+    },
+    {
+        "city": "Taichung",
+        "area_code": "4",
+        "dialing_code": "+886 4"
+    },
+    {
+        "city": "Tainan",
+        "area_code": "6",
+        "dialing_code": "+886 6"
+    },
+    {
+        "city": "Taipei",
+        "area_code": "2",
+        "dialing_code": "+886 2"
+    },
+    {
+        "city": "Taitung",
+        "area_code": "89",
+        "dialing_code": "+886 89"
+    },
+    {
+        "city": "Taoyuan",
+        "area_code": "3",
+        "dialing_code": "+886 3"
+    }
+]

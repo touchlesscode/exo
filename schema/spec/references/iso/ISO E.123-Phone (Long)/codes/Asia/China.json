@@ -1,0 +1,2872 @@
+[
+    {
+        "city": "Aihui",
+        "area_code": "456",
+        "dialing_code": "+86 456"
+    },
+    {
+        "city": "Akesu",
+        "area_code": "997",
+        "dialing_code": "+86 997"
+    },
+    {
+        "city": "Akesu - Xinjiang",
+        "area_code": "997",
+        "dialing_code": "+86 997"
+    },
+    {
+        "city": "Ankang",
+        "area_code": "915",
+        "dialing_code": "+86 915"
+    },
+    {
+        "city": "Ankang - Shaanxi",
+        "area_code": "915",
+        "dialing_code": "+86 915"
+    },
+    {
+        "city": "Anqing",
+        "area_code": "556",
+        "dialing_code": "+86 556"
+    },
+    {
+        "city": "Anqing - Anhui",
+        "area_code": "556",
+        "dialing_code": "+86 556"
+    },
+    {
+        "city": "Anqiu - Shandong",
+        "area_code": "5467",
+        "dialing_code": "+86 5467"
+    },
+    {
+        "city": "Anshan",
+        "area_code": "412",
+        "dialing_code": "+86 412"
+    },
+    {
+        "city": "Anshun",
+        "area_code": "853",
+        "dialing_code": "+86 853"
+    },
+    {
+        "city": "Anshun - Guizhou",
+        "area_code": "853",
+        "dialing_code": "+86 853"
+    },
+    {
+        "city": "Antu - Jilin",
+        "area_code": "4434",
+        "dialing_code": "+86 4434"
+    },
+    {
+        "city": "Anxi - Gansu",
+        "area_code": "9472",
+        "dialing_code": "+86 9472"
+    },
+    {
+        "city": "Anyang",
+        "area_code": "372",
+        "dialing_code": "+86 372"
+    },
+    {
+        "city": "Anyang - Henan",
+        "area_code": "372",
+        "dialing_code": "+86 372"
+    },
+    {
+        "city": "Atushi - Xinjiang",
+        "area_code": "9081",
+        "dialing_code": "+86 9081"
+    },
+    {
+        "city": "Baicheng - Jilin",
+        "area_code": "436",
+        "dialing_code": "+86 436"
+    },
+    {
+        "city": "Baise",
+        "area_code": "776",
+        "dialing_code": "+86 776"
+    },
+    {
+        "city": "Baise - Guangxi",
+        "area_code": "776",
+        "dialing_code": "+86 776"
+    },
+    {
+        "city": "Bama - Guangxi",
+        "area_code": "7808",
+        "dialing_code": "+86 7808"
+    },
+    {
+        "city": "Baodin - Hebei",
+        "area_code": "312",
+        "dialing_code": "+86 312"
+    },
+    {
+        "city": "Baoding",
+        "area_code": "312",
+        "dialing_code": "+86 312"
+    },
+    {
+        "city": "Baoji",
+        "area_code": "917",
+        "dialing_code": "+86 917"
+    },
+    {
+        "city": "Baoji - Shaanxi",
+        "area_code": "917",
+        "dialing_code": "+86 917"
+    },
+    {
+        "city": "Baotou",
+        "area_code": "472",
+        "dialing_code": "+86 472"
+    },
+    {
+        "city": "Baotou - Nei Mongol",
+        "area_code": "472",
+        "dialing_code": "+86 472"
+    },
+    {
+        "city": "Bazhong - Sichuan",
+        "area_code": "8279",
+        "dialing_code": "+86 8279"
+    },
+    {
+        "city": "Beihai",
+        "area_code": "779",
+        "dialing_code": "+86 779"
+    },
+    {
+        "city": "Beihai - Guangxi",
+        "area_code": "779",
+        "dialing_code": "+86 779"
+    },
+    {
+        "city": "Beijing",
+        "area_code": "10",
+        "dialing_code": "+86 10"
+    },
+    {
+        "city": "Beijing - Beijing",
+        "area_code": "10",
+        "dialing_code": "+86 10"
+    },
+    {
+        "city": "Beipiao - Liaoning",
+        "area_code": "421",
+        "dialing_code": "+86 421"
+    },
+    {
+        "city": "Bengbu",
+        "area_code": "552",
+        "dialing_code": "+86 552"
+    },
+    {
+        "city": "Bengbu - Anhui",
+        "area_code": "552",
+        "dialing_code": "+86 552"
+    },
+    {
+        "city": "Benxi",
+        "area_code": "414",
+        "dialing_code": "+86 414"
+    },
+    {
+        "city": "Benxi - Liaoning",
+        "area_code": "414",
+        "dialing_code": "+86 414"
+    },
+    {
+        "city": "Bole - Xinjiang",
+        "area_code": "9093",
+        "dialing_code": "+86 9093"
+    },
+    {
+        "city": "Cangwu - Guangxi",
+        "area_code": "774",
+        "dialing_code": "+86 774"
+    },
+    {
+        "city": "Chang-an - Shaanxi",
+        "area_code": "29",
+        "dialing_code": "+86 29"
+    },
+    {
+        "city": "Changbai",
+        "area_code": "4458",
+        "dialing_code": "+86 4458"
+    },
+    {
+        "city": "Changbai - Jilin",
+        "area_code": "4458",
+        "dialing_code": "+86 4458"
+    },
+    {
+        "city": "Changchun",
+        "area_code": "431",
+        "dialing_code": "+86 431"
+    },
+    {
+        "city": "Changchun - Jilin",
+        "area_code": "431",
+        "dialing_code": "+86 431"
+    },
+    {
+        "city": "Changde",
+        "area_code": "736",
+        "dialing_code": "+86 736"
+    },
+    {
+        "city": "Changde - Hunan",
+        "area_code": "736",
+        "dialing_code": "+86 736"
+    },
+    {
+        "city": "Changdu - Xizang (Tibet)",
+        "area_code": "895",
+        "dialing_code": "+86 895"
+    },
+    {
+        "city": "Changfeng - Anhui",
+        "area_code": "551",
+        "dialing_code": "+86 551"
+    },
+    {
+        "city": "Changji",
+        "area_code": "994",
+        "dialing_code": "+86 994"
+    },
+    {
+        "city": "Changji - Xinjiang",
+        "area_code": "994",
+        "dialing_code": "+86 994"
+    },
+    {
+        "city": "Changle - Fujian",
+        "area_code": "591",
+        "dialing_code": "+86 591"
+    },
+    {
+        "city": "Changsha",
+        "area_code": "731",
+        "dialing_code": "+86 731"
+    },
+    {
+        "city": "Changsha - Hunan",
+        "area_code": "731",
+        "dialing_code": "+86 731"
+    },
+    {
+        "city": "Changshu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Changshu - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Changye - Shanxi",
+        "area_code": "355",
+        "dialing_code": "+86 355"
+    },
+    {
+        "city": "Changzhou",
+        "area_code": "519",
+        "dialing_code": "+86 519"
+    },
+    {
+        "city": "Changzhou - Jiangsu",
+        "area_code": "519",
+        "dialing_code": "+86 519"
+    },
+    {
+        "city": "Chaoyang",
+        "area_code": "421",
+        "dialing_code": "+86 421"
+    },
+    {
+        "city": "Chaozhou - Guangdong",
+        "area_code": "7681",
+        "dialing_code": "+86 7681"
+    },
+    {
+        "city": "Chengde",
+        "area_code": "314",
+        "dialing_code": "+86 314"
+    },
+    {
+        "city": "Chengde - Hebei",
+        "area_code": "314",
+        "dialing_code": "+86 314"
+    },
+    {
+        "city": "Chengdu",
+        "area_code": "28",
+        "dialing_code": "+86 28"
+    },
+    {
+        "city": "Chengdu - Sichuan",
+        "area_code": "28",
+        "dialing_code": "+86 28"
+    },
+    {
+        "city": "Chifeng",
+        "area_code": "476",
+        "dialing_code": "+86 476"
+    },
+    {
+        "city": "Chifeng - Nei Mongol",
+        "area_code": "476",
+        "dialing_code": "+86 476"
+    },
+    {
+        "city": "Chongqing",
+        "area_code": "23",
+        "dialing_code": "+86 23"
+    },
+    {
+        "city": "Chongqing - Chongqing",
+        "area_code": "23",
+        "dialing_code": "+86 23"
+    },
+    {
+        "city": "Chuxiong",
+        "area_code": "878",
+        "dialing_code": "+86 878"
+    },
+    {
+        "city": "Chuxiong - Yunnan",
+        "area_code": "878",
+        "dialing_code": "+86 878"
+    },
+    {
+        "city": "Cixi - Zhejiang",
+        "area_code": "574",
+        "dialing_code": "+86 574"
+    },
+    {
+        "city": "Conghua - Guangdong",
+        "area_code": "20",
+        "dialing_code": "+86 20"
+    },
+    {
+        "city": "Da-tong - Qinghai",
+        "area_code": "971",
+        "dialing_code": "+86 971"
+    },
+    {
+        "city": "Dali",
+        "area_code": "872",
+        "dialing_code": "+86 872"
+    },
+    {
+        "city": "Dali - Yunnan",
+        "area_code": "872",
+        "dialing_code": "+86 872"
+    },
+    {
+        "city": "Dalian",
+        "area_code": "411",
+        "dialing_code": "+86 411"
+    },
+    {
+        "city": "Dalian - Liaoning",
+        "area_code": "411",
+        "dialing_code": "+86 411"
+    },
+    {
+        "city": "Dandong",
+        "area_code": "415",
+        "dialing_code": "+86 415"
+    },
+    {
+        "city": "Dandong - Liaoning",
+        "area_code": "415",
+        "dialing_code": "+86 415"
+    },
+    {
+        "city": "Danyang - Jiangsu",
+        "area_code": "5211",
+        "dialing_code": "+86 5211"
+    },
+    {
+        "city": "Daqing",
+        "area_code": "459",
+        "dialing_code": "+86 459"
+    },
+    {
+        "city": "Daqing - Heilongjiang",
+        "area_code": "459",
+        "dialing_code": "+86 459"
+    },
+    {
+        "city": "Datong",
+        "area_code": "352",
+        "dialing_code": "+86 352"
+    },
+    {
+        "city": "Datong - Shanxi",
+        "area_code": "352",
+        "dialing_code": "+86 352"
+    },
+    {
+        "city": "Dezhou - Shandong",
+        "area_code": "534",
+        "dialing_code": "+86 534"
+    },
+    {
+        "city": "Dinxi - Gansu",
+        "area_code": "932",
+        "dialing_code": "+86 932"
+    },
+    {
+        "city": "Dinyuan - Anhui",
+        "area_code": "5604",
+        "dialing_code": "+86 5604"
+    },
+    {
+        "city": "Dongfang",
+        "area_code": "8003",
+        "dialing_code": "+86 8003"
+    },
+    {
+        "city": "Dongfang - Hainan",
+        "area_code": "8003",
+        "dialing_code": "+86 8003"
+    },
+    {
+        "city": "Dongwan - Guangdong",
+        "area_code": "7620",
+        "dialing_code": "+86 7620"
+    },
+    {
+        "city": "Dongyang - Zhejiang",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Dujiangyan - Sichuan",
+        "area_code": "8236",
+        "dialing_code": "+86 8236"
+    },
+    {
+        "city": "Dunhua",
+        "area_code": "4435",
+        "dialing_code": "+86 4435"
+    },
+    {
+        "city": "Dunhua - Jilin",
+        "area_code": "4435",
+        "dialing_code": "+86 4435"
+    },
+    {
+        "city": "Dunhuang",
+        "area_code": "9473",
+        "dialing_code": "+86 9473"
+    },
+    {
+        "city": "Dunhuang - Gansu",
+        "area_code": "9473",
+        "dialing_code": "+86 9473"
+    },
+    {
+        "city": "Erlianhaote",
+        "area_code": "4813",
+        "dialing_code": "+86 4813"
+    },
+    {
+        "city": "Erlianhaote - Nei Mongol",
+        "area_code": "4813",
+        "dialing_code": "+86 4813"
+    },
+    {
+        "city": "Erlunchun - Nei Mongol",
+        "area_code": "4803",
+        "dialing_code": "+86 4803"
+    },
+    {
+        "city": "Ezhou - Hubei",
+        "area_code": "711",
+        "dialing_code": "+86 711"
+    },
+    {
+        "city": "Fanyu - Guangdong",
+        "area_code": "20",
+        "dialing_code": "+86 20"
+    },
+    {
+        "city": "Fengcheng",
+        "area_code": "7888",
+        "dialing_code": "+86 7888"
+    },
+    {
+        "city": "Fenghua - Zhejiang",
+        "area_code": "574",
+        "dialing_code": "+86 574"
+    },
+    {
+        "city": "Fenghuang - Hunan",
+        "area_code": "7480",
+        "dialing_code": "+86 7480"
+    },
+    {
+        "city": "Fengzhen - Nei Mongol",
+        "area_code": "4841",
+        "dialing_code": "+86 4841"
+    },
+    {
+        "city": "Fenjie - Sichuan",
+        "area_code": "8286",
+        "dialing_code": "+86 8286"
+    },
+    {
+        "city": "Fenqiu - Henan",
+        "area_code": "3836",
+        "dialing_code": "+86 3836"
+    },
+    {
+        "city": "Fenyang - Shanxi",
+        "area_code": "3602",
+        "dialing_code": "+86 3602"
+    },
+    {
+        "city": "Foshan",
+        "area_code": "757",
+        "dialing_code": "+86 757"
+    },
+    {
+        "city": "Foshan - Guangdong",
+        "area_code": "757",
+        "dialing_code": "+86 757"
+    },
+    {
+        "city": "Fu-an - Fujian",
+        "area_code": "593",
+        "dialing_code": "+86 593"
+    },
+    {
+        "city": "Fu-zhou - Jiangxi",
+        "area_code": "794",
+        "dialing_code": "+86 794"
+    },
+    {
+        "city": "Fuding",
+        "area_code": "5033",
+        "dialing_code": "+86 5033"
+    },
+    {
+        "city": "Fumin - Yunnan",
+        "area_code": "871",
+        "dialing_code": "+86 871"
+    },
+    {
+        "city": "Fuopin - Shaanxi",
+        "area_code": "9263",
+        "dialing_code": "+86 9263"
+    },
+    {
+        "city": "Fushun",
+        "area_code": "413",
+        "dialing_code": "+86 413"
+    },
+    {
+        "city": "Fushun - Liaoning",
+        "area_code": "413",
+        "dialing_code": "+86 413"
+    },
+    {
+        "city": "Fuxin - Liaoning",
+        "area_code": "418",
+        "dialing_code": "+86 418"
+    },
+    {
+        "city": "Fuyang",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Fuyang - Zhejiang",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Fuzhou",
+        "area_code": "591",
+        "dialing_code": "+86 591"
+    },
+    {
+        "city": "Fuzhou - Fujian",
+        "area_code": "591",
+        "dialing_code": "+86 591"
+    },
+    {
+        "city": "Ganzhou",
+        "area_code": "797",
+        "dialing_code": "+86 797"
+    },
+    {
+        "city": "Ganzhou - Jiangxi",
+        "area_code": "797",
+        "dialing_code": "+86 797"
+    },
+    {
+        "city": "Gao-an - Jiangxi",
+        "area_code": "7056",
+        "dialing_code": "+86 7056"
+    },
+    {
+        "city": "Gaoyou - Jiangsu",
+        "area_code": "5247",
+        "dialing_code": "+86 5247"
+    },
+    {
+        "city": "Gejiu - Yunnan",
+        "area_code": "873",
+        "dialing_code": "+86 873"
+    },
+    {
+        "city": "Germu - Qinghai",
+        "area_code": "979",
+        "dialing_code": "+86 979"
+    },
+    {
+        "city": "Guang an",
+        "area_code": "8269",
+        "dialing_code": "+86 8269"
+    },
+    {
+        "city": "Guang-an - Sichuan",
+        "area_code": "8269",
+        "dialing_code": "+86 8269"
+    },
+    {
+        "city": "Guangling - Shanxi",
+        "area_code": "3627",
+        "dialing_code": "+86 3627"
+    },
+    {
+        "city": "Guangning - Guangdong",
+        "area_code": "758",
+        "dialing_code": "+86 758"
+    },
+    {
+        "city": "Guangzhou",
+        "area_code": "20",
+        "dialing_code": "+86 20"
+    },
+    {
+        "city": "Guangzhou - Guangdong",
+        "area_code": "20",
+        "dialing_code": "+86 20"
+    },
+    {
+        "city": "Guilin",
+        "area_code": "773",
+        "dialing_code": "+86 773"
+    },
+    {
+        "city": "Guilin - Guangxi",
+        "area_code": "773",
+        "dialing_code": "+86 773"
+    },
+    {
+        "city": "Guiyang",
+        "area_code": "851",
+        "dialing_code": "+86 851"
+    },
+    {
+        "city": "Guiyang - Guizhou",
+        "area_code": "851",
+        "dialing_code": "+86 851"
+    },
+    {
+        "city": "Gulang - Gansu",
+        "area_code": "9453",
+        "dialing_code": "+86 9453"
+    },
+    {
+        "city": "Guliu - Xinjiang",
+        "area_code": "9097",
+        "dialing_code": "+86 9097"
+    },
+    {
+        "city": "Gutian - Fujian",
+        "area_code": "593",
+        "dialing_code": "+86 593"
+    },
+    {
+        "city": "Guyang",
+        "area_code": "4823",
+        "dialing_code": "+86 4823"
+    },
+    {
+        "city": "Guyang - Neimengu",
+        "area_code": "4823",
+        "dialing_code": "+86 4823"
+    },
+    {
+        "city": "Guyuan - Ningxia",
+        "area_code": "954",
+        "dialing_code": "+86 954"
+    },
+    {
+        "city": "Haifeng - Guangdong",
+        "area_code": "7647",
+        "dialing_code": "+86 7647"
+    },
+    {
+        "city": "Haikou",
+        "area_code": "898",
+        "dialing_code": "+86 898"
+    },
+    {
+        "city": "Haikou - Hainan",
+        "area_code": "898",
+        "dialing_code": "+86 898"
+    },
+    {
+        "city": "Hailar - Nei Mongol",
+        "area_code": "470",
+        "dialing_code": "+86 470"
+    },
+    {
+        "city": "Hailun",
+        "area_code": "4652",
+        "dialing_code": "+86 4652"
+    },
+    {
+        "city": "Hailun - Heilongjiang",
+        "area_code": "4652",
+        "dialing_code": "+86 4652"
+    },
+    {
+        "city": "Haimen - Jiangsu",
+        "area_code": "5231",
+        "dialing_code": "+86 5231"
+    },
+    {
+        "city": "Haining",
+        "area_code": "5834",
+        "dialing_code": "+86 5834"
+    },
+    {
+        "city": "Haiyan - Zhejiang",
+        "area_code": "573",
+        "dialing_code": "+86 573"
+    },
+    {
+        "city": "Hami",
+        "area_code": "9022",
+        "dialing_code": "+86 9022"
+    },
+    {
+        "city": "Hami - Xinjiang",
+        "area_code": "9022",
+        "dialing_code": "+86 9022"
+    },
+    {
+        "city": "Handan - Hebei",
+        "area_code": "310",
+        "dialing_code": "+86 310"
+    },
+    {
+        "city": "Hangzhou",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Hangzhou - Zhejiang",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Hanning - Zhejiang",
+        "area_code": "573",
+        "dialing_code": "+86 573"
+    },
+    {
+        "city": "Hanyang - Hubei",
+        "area_code": "7212",
+        "dialing_code": "+86 7212"
+    },
+    {
+        "city": "Hanzhong",
+        "area_code": "916",
+        "dialing_code": "+86 916"
+    },
+    {
+        "city": "Hanzhong - Shaanxi",
+        "area_code": "916",
+        "dialing_code": "+86 916"
+    },
+    {
+        "city": "Harbin",
+        "area_code": "451",
+        "dialing_code": "+86 451"
+    },
+    {
+        "city": "Harbin - Heilongjiang",
+        "area_code": "451",
+        "dialing_code": "+86 451"
+    },
+    {
+        "city": "Hechi",
+        "area_code": "778",
+        "dialing_code": "+86 778"
+    },
+    {
+        "city": "Hechi - Guangxi",
+        "area_code": "778",
+        "dialing_code": "+86 778"
+    },
+    {
+        "city": "Hefei",
+        "area_code": "551",
+        "dialing_code": "+86 551"
+    },
+    {
+        "city": "Hefei - Anhui",
+        "area_code": "551",
+        "dialing_code": "+86 551"
+    },
+    {
+        "city": "Hegang - Heilongjiang",
+        "area_code": "4618",
+        "dialing_code": "+86 4618"
+    },
+    {
+        "city": "Heishan - Liaoning",
+        "area_code": "416",
+        "dialing_code": "+86 416"
+    },
+    {
+        "city": "Helan - Ningxia",
+        "area_code": "951",
+        "dialing_code": "+86 951"
+    },
+    {
+        "city": "Hengyang - Hunan",
+        "area_code": "734",
+        "dialing_code": "+86 734"
+    },
+    {
+        "city": "Henshan - Hunan",
+        "area_code": "7446",
+        "dialing_code": "+86 7446"
+    },
+    {
+        "city": "Heshuo - Xinjiang",
+        "area_code": "996",
+        "dialing_code": "+86 996"
+    },
+    {
+        "city": "Hetian - Xinjiang",
+        "area_code": "9032",
+        "dialing_code": "+86 9032"
+    },
+    {
+        "city": "Heze - Shandong",
+        "area_code": "530",
+        "dialing_code": "+86 530"
+    },
+    {
+        "city": "Hohhot",
+        "area_code": "471",
+        "dialing_code": "+86 471"
+    },
+    {
+        "city": "Hohhot - Nei Mongol",
+        "area_code": "471",
+        "dialing_code": "+86 471"
+    },
+    {
+        "city": "Houma - Shanxi",
+        "area_code": "3651",
+        "dialing_code": "+86 3651"
+    },
+    {
+        "city": "Huachi - Gansu",
+        "area_code": "9447",
+        "dialing_code": "+86 9447"
+    },
+    {
+        "city": "Huai-an - Jiangsu",
+        "area_code": "517",
+        "dialing_code": "+86 517"
+    },
+    {
+        "city": "Huaihua - Hunan",
+        "area_code": "7402",
+        "dialing_code": "+86 7402"
+    },
+    {
+        "city": "Huaiyuan - Anhui",
+        "area_code": "552",
+        "dialing_code": "+86 552"
+    },
+    {
+        "city": "Huanglin - Shaanxi",
+        "area_code": "911",
+        "dialing_code": "+86 911"
+    },
+    {
+        "city": "Huangmei - Hubei",
+        "area_code": "7238",
+        "dialing_code": "+86 7238"
+    },
+    {
+        "city": "Huangshanshi - Anhui",
+        "area_code": "559",
+        "dialing_code": "+86 559"
+    },
+    {
+        "city": "Huangshi",
+        "area_code": "714",
+        "dialing_code": "+86 714"
+    },
+    {
+        "city": "Huangshi - Hubei",
+        "area_code": "714",
+        "dialing_code": "+86 714"
+    },
+    {
+        "city": "Huangyan - Zhejiang",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Huaxian - Guangdong",
+        "area_code": "20",
+        "dialing_code": "+86 20"
+    },
+    {
+        "city": "Huayin - Shaanxi",
+        "area_code": "9231",
+        "dialing_code": "+86 9231"
+    },
+    {
+        "city": "Hui-an - Fujian",
+        "area_code": "595",
+        "dialing_code": "+86 595"
+    },
+    {
+        "city": "Huizhou",
+        "area_code": "752",
+        "dialing_code": "+86 752"
+    },
+    {
+        "city": "Huizhou - Guangdong",
+        "area_code": "752",
+        "dialing_code": "+86 752"
+    },
+    {
+        "city": "Hunchun - Jilin",
+        "area_code": "4437",
+        "dialing_code": "+86 4437"
+    },
+    {
+        "city": "Hunjiang - Jilin",
+        "area_code": "439",
+        "dialing_code": "+86 439"
+    },
+    {
+        "city": "Huocheng - Xinjiang",
+        "area_code": "9091",
+        "dialing_code": "+86 9091"
+    },
+    {
+        "city": "Huzhou",
+        "area_code": "572",
+        "dialing_code": "+86 572"
+    },
+    {
+        "city": "Huzhou - Zhejiang",
+        "area_code": "572",
+        "dialing_code": "+86 572"
+    },
+    {
+        "city": "Ji-an - Jiangxi",
+        "area_code": "796",
+        "dialing_code": "+86 796"
+    },
+    {
+        "city": "Ji-lin - Jilin",
+        "area_code": "432",
+        "dialing_code": "+86 432"
+    },
+    {
+        "city": "Ji-ning - Nei Mongol",
+        "area_code": "474",
+        "dialing_code": "+86 474"
+    },
+    {
+        "city": "Jiamusi - Heilongjiang",
+        "area_code": "454",
+        "dialing_code": "+86 454"
+    },
+    {
+        "city": "JianOu - Fujian",
+        "area_code": "599",
+        "dialing_code": "+86 599"
+    },
+    {
+        "city": "Jiangdu - Jiangsu",
+        "area_code": "5244",
+        "dialing_code": "+86 5244"
+    },
+    {
+        "city": "Jiangjin",
+        "area_code": "8221",
+        "dialing_code": "+86 8221"
+    },
+    {
+        "city": "Jiangjin - Sichuan",
+        "area_code": "8221",
+        "dialing_code": "+86 8221"
+    },
+    {
+        "city": "Jiangling",
+        "area_code": "716",
+        "dialing_code": "+86 716"
+    },
+    {
+        "city": "Jiangling - Hubei",
+        "area_code": "716",
+        "dialing_code": "+86 716"
+    },
+    {
+        "city": "Jiangmen",
+        "area_code": "750",
+        "dialing_code": "+86 750"
+    },
+    {
+        "city": "Jiangmen - Guangdong",
+        "area_code": "750",
+        "dialing_code": "+86 750"
+    },
+    {
+        "city": "Jiangyin - Jiangsu",
+        "area_code": "5217",
+        "dialing_code": "+86 5217"
+    },
+    {
+        "city": "Jiangyou - Sichuan",
+        "area_code": "8244",
+        "dialing_code": "+86 8244"
+    },
+    {
+        "city": "Jiaozhou - Shandong",
+        "area_code": "5422",
+        "dialing_code": "+86 5422"
+    },
+    {
+        "city": "Jiaozuo - Henan",
+        "area_code": "391",
+        "dialing_code": "+86 391"
+    },
+    {
+        "city": "Jiaxin - Zhejiang",
+        "area_code": "573",
+        "dialing_code": "+86 573"
+    },
+    {
+        "city": "Jiayuguan - Gansu",
+        "area_code": "9477",
+        "dialing_code": "+86 9477"
+    },
+    {
+        "city": "Jilin",
+        "area_code": "432",
+        "dialing_code": "+86 432"
+    },
+    {
+        "city": "Jinan",
+        "area_code": "531",
+        "dialing_code": "+86 531"
+    },
+    {
+        "city": "Jinan - Shandong",
+        "area_code": "531",
+        "dialing_code": "+86 531"
+    },
+    {
+        "city": "Jingangshan - Jiangxi",
+        "area_code": "7060",
+        "dialing_code": "+86 7060"
+    },
+    {
+        "city": "Jingdezhen",
+        "area_code": "798",
+        "dialing_code": "+86 798"
+    },
+    {
+        "city": "Jingdezhen - Jiangxi",
+        "area_code": "798",
+        "dialing_code": "+86 798"
+    },
+    {
+        "city": "Jinhua - Zhejiang",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Jining",
+        "area_code": "537",
+        "dialing_code": "+86 537"
+    },
+    {
+        "city": "Jining - Shandong",
+        "area_code": "537",
+        "dialing_code": "+86 537"
+    },
+    {
+        "city": "Jinmen - Hubei",
+        "area_code": "724",
+        "dialing_code": "+86 724"
+    },
+    {
+        "city": "Jinsha - Guizhou",
+        "area_code": "8676",
+        "dialing_code": "+86 8676"
+    },
+    {
+        "city": "Jinxi - Liaoning",
+        "area_code": "429",
+        "dialing_code": "+86 429"
+    },
+    {
+        "city": "Jinxian - Jiangxi",
+        "area_code": "791",
+        "dialing_code": "+86 791"
+    },
+    {
+        "city": "Jinyuan - Gansu",
+        "area_code": "9467",
+        "dialing_code": "+86 9467"
+    },
+    {
+        "city": "Jinzhou",
+        "area_code": "416",
+        "dialing_code": "+86 416"
+    },
+    {
+        "city": "Jinzhou - Liaoning",
+        "area_code": "416",
+        "dialing_code": "+86 416"
+    },
+    {
+        "city": "Jiujiang",
+        "area_code": "792",
+        "dialing_code": "+86 792"
+    },
+    {
+        "city": "Jiujiang - Jiangxi",
+        "area_code": "792",
+        "dialing_code": "+86 792"
+    },
+    {
+        "city": "Jiuquan",
+        "area_code": "937",
+        "dialing_code": "+86 937"
+    },
+    {
+        "city": "Jiuquan - Gansu",
+        "area_code": "937",
+        "dialing_code": "+86 937"
+    },
+    {
+        "city": "Jixi",
+        "area_code": "4617",
+        "dialing_code": "+86 4617"
+    },
+    {
+        "city": "Jixi - Heilongjiang",
+        "area_code": "4617",
+        "dialing_code": "+86 4617"
+    },
+    {
+        "city": "Jiyang - Shandong",
+        "area_code": "5448",
+        "dialing_code": "+86 5448"
+    },
+    {
+        "city": "Jiyuan - Henan",
+        "area_code": "391",
+        "dialing_code": "+86 391"
+    },
+    {
+        "city": "Julu - Hebei",
+        "area_code": "3276",
+        "dialing_code": "+86 3276"
+    },
+    {
+        "city": "Juye - Shandong",
+        "area_code": "5401",
+        "dialing_code": "+86 5401"
+    },
+    {
+        "city": "Kaifeng",
+        "area_code": "378",
+        "dialing_code": "+86 378"
+    },
+    {
+        "city": "Kaifeng - Henan",
+        "area_code": "378",
+        "dialing_code": "+86 378"
+    },
+    {
+        "city": "Kaihua - Zhejiang",
+        "area_code": "570",
+        "dialing_code": "+86 570"
+    },
+    {
+        "city": "Kaili - Guizhou",
+        "area_code": "855",
+        "dialing_code": "+86 855"
+    },
+    {
+        "city": "Kaiyuan - Liaoning",
+        "area_code": "410",
+        "dialing_code": "+86 410"
+    },
+    {
+        "city": "Kangdin - Sichuan",
+        "area_code": "836",
+        "dialing_code": "+86 836"
+    },
+    {
+        "city": "Kashi",
+        "area_code": "998",
+        "dialing_code": "+86 998"
+    },
+    {
+        "city": "Kashi - Xinjiang",
+        "area_code": "998",
+        "dialing_code": "+86 998"
+    },
+    {
+        "city": "Kelamayi - Xinjiang",
+        "area_code": "990",
+        "dialing_code": "+86 990"
+    },
+    {
+        "city": "Kuitun - Xinjiang",
+        "area_code": "992",
+        "dialing_code": "+86 992"
+    },
+    {
+        "city": "Kunming",
+        "area_code": "871",
+        "dialing_code": "+86 871"
+    },
+    {
+        "city": "Kunming - Yunnan",
+        "area_code": "871",
+        "dialing_code": "+86 871"
+    },
+    {
+        "city": "Kunshan - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Kurle - Xinjiang",
+        "area_code": "996",
+        "dialing_code": "+86 996"
+    },
+    {
+        "city": "Lai-yang - Shandong",
+        "area_code": "5427",
+        "dialing_code": "+86 5427"
+    },
+    {
+        "city": "Laiyang - Hunan",
+        "area_code": "7442",
+        "dialing_code": "+86 7442"
+    },
+    {
+        "city": "Lankao - Henan",
+        "area_code": "3881",
+        "dialing_code": "+86 3881"
+    },
+    {
+        "city": "Lanxi",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Lanxi - Zhejiang",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Lanzhou",
+        "area_code": "931",
+        "dialing_code": "+86 931"
+    },
+    {
+        "city": "Lanzhou - Gansu",
+        "area_code": "931",
+        "dialing_code": "+86 931"
+    },
+    {
+        "city": "Leshan - Sichuan",
+        "area_code": "833",
+        "dialing_code": "+86 833"
+    },
+    {
+        "city": "Lhasa",
+        "area_code": "891",
+        "dialing_code": "+86 891"
+    },
+    {
+        "city": "Lhasa - Xizang (Tibet)",
+        "area_code": "891",
+        "dialing_code": "+86 891"
+    },
+    {
+        "city": "Liancheng - Fujian",
+        "area_code": "597",
+        "dialing_code": "+86 597"
+    },
+    {
+        "city": "Liangcheng - Nei Mongol",
+        "area_code": "4848",
+        "dialing_code": "+86 4848"
+    },
+    {
+        "city": "Lianyungang - Jiangsu",
+        "area_code": "518",
+        "dialing_code": "+86 518"
+    },
+    {
+        "city": "Liaoyang",
+        "area_code": "419",
+        "dialing_code": "+86 419"
+    },
+    {
+        "city": "Liaoyang - Liaoning",
+        "area_code": "419",
+        "dialing_code": "+86 419"
+    },
+    {
+        "city": "Liaoyuan - Jilin",
+        "area_code": "437",
+        "dialing_code": "+86 437"
+    },
+    {
+        "city": "Lijiangshi - Yunnan",
+        "area_code": "8891",
+        "dialing_code": "+86 8891"
+    },
+    {
+        "city": "Lijin - Shandong",
+        "area_code": "5430",
+        "dialing_code": "+86 5430"
+    },
+    {
+        "city": "Lijing",
+        "area_code": "5430",
+        "dialing_code": "+86 5430"
+    },
+    {
+        "city": "Lin-an - Zhejiang",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Linfen - Shanxi",
+        "area_code": "357",
+        "dialing_code": "+86 357"
+    },
+    {
+        "city": "Linhai",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Linhai - Zhejiang",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Lintong",
+        "area_code": "29",
+        "dialing_code": "+86 29"
+    },
+    {
+        "city": "Lintong - Shaanxi",
+        "area_code": "29",
+        "dialing_code": "+86 29"
+    },
+    {
+        "city": "Linxi",
+        "area_code": "4868",
+        "dialing_code": "+86 4868"
+    },
+    {
+        "city": "Linxi - Neimengu",
+        "area_code": "4868",
+        "dialing_code": "+86 4868"
+    },
+    {
+        "city": "Linyi - Shandong",
+        "area_code": "539",
+        "dialing_code": "+86 539"
+    },
+    {
+        "city": "Linzhi",
+        "area_code": "894",
+        "dialing_code": "+86 894"
+    },
+    {
+        "city": "Linzhi - Xizang (Tibet)",
+        "area_code": "894",
+        "dialing_code": "+86 894"
+    },
+    {
+        "city": "Liujiang - Guangxi",
+        "area_code": "772",
+        "dialing_code": "+86 772"
+    },
+    {
+        "city": "Liuyang",
+        "area_code": "731",
+        "dialing_code": "+86 731"
+    },
+    {
+        "city": "Liuyang - Hunan",
+        "area_code": "731",
+        "dialing_code": "+86 731"
+    },
+    {
+        "city": "Liuzhou",
+        "area_code": "772",
+        "dialing_code": "+86 772"
+    },
+    {
+        "city": "Liuzhou - Guangxi",
+        "area_code": "772",
+        "dialing_code": "+86 772"
+    },
+    {
+        "city": "Longquan - Zhejiang",
+        "area_code": "5885",
+        "dialing_code": "+86 5885"
+    },
+    {
+        "city": "Longxi - Gansu",
+        "area_code": "9421",
+        "dialing_code": "+86 9421"
+    },
+    {
+        "city": "Luntai - Xinjiang",
+        "area_code": "996",
+        "dialing_code": "+86 996"
+    },
+    {
+        "city": "Luoyang",
+        "area_code": "379",
+        "dialing_code": "+86 379"
+    },
+    {
+        "city": "Luoyang - Henan",
+        "area_code": "379",
+        "dialing_code": "+86 379"
+    },
+    {
+        "city": "Lushanshi - Jiangxi",
+        "area_code": "792",
+        "dialing_code": "+86 792"
+    },
+    {
+        "city": "Ma-anshan - Anhui",
+        "area_code": "555",
+        "dialing_code": "+86 555"
+    },
+    {
+        "city": "Machen - Hubei",
+        "area_code": "7232",
+        "dialing_code": "+86 7232"
+    },
+    {
+        "city": "Mangkang - Xizang",
+        "area_code": "8054",
+        "dialing_code": "+86 8054"
+    },
+    {
+        "city": "Manzhouli - Nei Mongol",
+        "area_code": "4812",
+        "dialing_code": "+86 4812"
+    },
+    {
+        "city": "Maomin - Guangdong",
+        "area_code": "7683",
+        "dialing_code": "+86 7683"
+    },
+    {
+        "city": "Maoming",
+        "area_code": "7683",
+        "dialing_code": "+86 7683"
+    },
+    {
+        "city": "Meishan",
+        "area_code": "8425",
+        "dialing_code": "+86 8425"
+    },
+    {
+        "city": "Meishan - Sichuan",
+        "area_code": "8425",
+        "dialing_code": "+86 8425"
+    },
+    {
+        "city": "Meizhou - Guangdong",
+        "area_code": "753",
+        "dialing_code": "+86 753"
+    },
+    {
+        "city": "Mianyang",
+        "area_code": "816",
+        "dialing_code": "+86 816"
+    },
+    {
+        "city": "Mianyang - Sichuan",
+        "area_code": "816",
+        "dialing_code": "+86 816"
+    },
+    {
+        "city": "Minhou - Fujian",
+        "area_code": "591",
+        "dialing_code": "+86 591"
+    },
+    {
+        "city": "Miquan",
+        "area_code": "9041",
+        "dialing_code": "+86 9041"
+    },
+    {
+        "city": "Miquan - Xinjiang",
+        "area_code": "9041",
+        "dialing_code": "+86 9041"
+    },
+    {
+        "city": "Mohe",
+        "area_code": "457",
+        "dialing_code": "+86 457"
+    },
+    {
+        "city": "Mohe - Heilongjiang",
+        "area_code": "457",
+        "dialing_code": "+86 457"
+    },
+    {
+        "city": "Mudanjiang",
+        "area_code": "467",
+        "dialing_code": "+86 467"
+    },
+    {
+        "city": "Mudanjiang - Heilongjiang",
+        "area_code": "467",
+        "dialing_code": "+86 467"
+    },
+    {
+        "city": "Nanchang",
+        "area_code": "791",
+        "dialing_code": "+86 791"
+    },
+    {
+        "city": "Nanchang - Jiangxi",
+        "area_code": "791",
+        "dialing_code": "+86 791"
+    },
+    {
+        "city": "Nanfeng - Jiangxi",
+        "area_code": "7048",
+        "dialing_code": "+86 7048"
+    },
+    {
+        "city": "Nanjing",
+        "area_code": "25",
+        "dialing_code": "+86 25"
+    },
+    {
+        "city": "Nanjing - Jiangsu",
+        "area_code": "25",
+        "dialing_code": "+86 25"
+    },
+    {
+        "city": "Nanning",
+        "area_code": "771",
+        "dialing_code": "+86 771"
+    },
+    {
+        "city": "Nanning - Guangxi",
+        "area_code": "771",
+        "dialing_code": "+86 771"
+    },
+    {
+        "city": "Nantong",
+        "area_code": "513",
+        "dialing_code": "+86 513"
+    },
+    {
+        "city": "Nantong - Jiangsu",
+        "area_code": "513",
+        "dialing_code": "+86 513"
+    },
+    {
+        "city": "Nanyang",
+        "area_code": "377",
+        "dialing_code": "+86 377"
+    },
+    {
+        "city": "Nanyang - Henan",
+        "area_code": "377",
+        "dialing_code": "+86 377"
+    },
+    {
+        "city": "Nenjiang",
+        "area_code": "4665",
+        "dialing_code": "+86 4665"
+    },
+    {
+        "city": "Nenjiang - Heilongjiang",
+        "area_code": "4665",
+        "dialing_code": "+86 4665"
+    },
+    {
+        "city": "Ningbo",
+        "area_code": "574",
+        "dialing_code": "+86 574"
+    },
+    {
+        "city": "Ningbo - Zhejiang",
+        "area_code": "574",
+        "dialing_code": "+86 574"
+    },
+    {
+        "city": "Ningcheng - Nei Mongol",
+        "area_code": "4862",
+        "dialing_code": "+86 4862"
+    },
+    {
+        "city": "Ningguo - Anhui",
+        "area_code": "5639",
+        "dialing_code": "+86 5639"
+    },
+    {
+        "city": "Ninghua - Fujian",
+        "area_code": "598",
+        "dialing_code": "+86 598"
+    },
+    {
+        "city": "Nnchong - Sichuan",
+        "area_code": "817",
+        "dialing_code": "+86 817"
+    },
+    {
+        "city": "Panzhihua - Sichuan",
+        "area_code": "812",
+        "dialing_code": "+86 812"
+    },
+    {
+        "city": "Peilin - Sichuan",
+        "area_code": "810",
+        "dialing_code": "+86 810"
+    },
+    {
+        "city": "Penglai - Shandong",
+        "area_code": "5457",
+        "dialing_code": "+86 5457"
+    },
+    {
+        "city": "Pindinshan - Henan",
+        "area_code": "375",
+        "dialing_code": "+86 375"
+    },
+    {
+        "city": "Ping-xiang - Jiangxi",
+        "area_code": "799",
+        "dialing_code": "+86 799"
+    },
+    {
+        "city": "Pingliang",
+        "area_code": "933",
+        "dialing_code": "+86 933"
+    },
+    {
+        "city": "Pingliang - Gansu",
+        "area_code": "933",
+        "dialing_code": "+86 933"
+    },
+    {
+        "city": "Pingxiang - Guangxi",
+        "area_code": "7815",
+        "dialing_code": "+86 7815"
+    },
+    {
+        "city": "Pinle - Guangxi",
+        "area_code": "7847",
+        "dialing_code": "+86 7847"
+    },
+    {
+        "city": "Putian - Fujian",
+        "area_code": "594",
+        "dialing_code": "+86 594"
+    },
+    {
+        "city": "Qidong - Jiangsu",
+        "area_code": "5232",
+        "dialing_code": "+86 5232"
+    },
+    {
+        "city": "Qin-an - Gansu",
+        "area_code": "938",
+        "dialing_code": "+86 938"
+    },
+    {
+        "city": "Qingdao",
+        "area_code": "532",
+        "dialing_code": "+86 532"
+    },
+    {
+        "city": "Qingdao - Shandong",
+        "area_code": "532",
+        "dialing_code": "+86 532"
+    },
+    {
+        "city": "Qinhuangdao - Hebei",
+        "area_code": "335",
+        "dialing_code": "+86 335"
+    },
+    {
+        "city": "Qiongshan - Hainan",
+        "area_code": "898",
+        "dialing_code": "+86 898"
+    },
+    {
+        "city": "Qiqihar",
+        "area_code": "452",
+        "dialing_code": "+86 452"
+    },
+    {
+        "city": "Qiqihar - Heilongjiang",
+        "area_code": "452",
+        "dialing_code": "+86 452"
+    },
+    {
+        "city": "Qitai",
+        "area_code": "994",
+        "dialing_code": "+86 994"
+    },
+    {
+        "city": "Qitai - Xinjiang",
+        "area_code": "994",
+        "dialing_code": "+86 994"
+    },
+    {
+        "city": "Quanzhou",
+        "area_code": "595",
+        "dialing_code": "+86 595"
+    },
+    {
+        "city": "Quanzhou - Fujian",
+        "area_code": "595",
+        "dialing_code": "+86 595"
+    },
+    {
+        "city": "Qufu - Shandong",
+        "area_code": "5473",
+        "dialing_code": "+86 5473"
+    },
+    {
+        "city": "Qujiang",
+        "area_code": "751",
+        "dialing_code": "+86 751"
+    },
+    {
+        "city": "Qujiang - Guangdong",
+        "area_code": "751",
+        "dialing_code": "+86 751"
+    },
+    {
+        "city": "Renqiu - Hebei",
+        "area_code": "3420",
+        "dialing_code": "+86 3420"
+    },
+    {
+        "city": "Rikeze - Xizang (Tibet)",
+        "area_code": "892",
+        "dialing_code": "+86 892"
+    },
+    {
+        "city": "Rongxian - Guangxi",
+        "area_code": "775",
+        "dialing_code": "+86 775"
+    },
+    {
+        "city": "Ruijin - Jiangxi",
+        "area_code": "7077",
+        "dialing_code": "+86 7077"
+    },
+    {
+        "city": "Ruili",
+        "area_code": "8885",
+        "dialing_code": "+86 8885"
+    },
+    {
+        "city": "Ruili - Yunnan",
+        "area_code": "8885",
+        "dialing_code": "+86 8885"
+    },
+    {
+        "city": "Runan - Henan",
+        "area_code": "3013",
+        "dialing_code": "+86 3013"
+    },
+    {
+        "city": "Sanmen - Zhejiang",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Sanmenxia - Henan",
+        "area_code": "3891",
+        "dialing_code": "+86 3891"
+    },
+    {
+        "city": "Sanya - Hainan",
+        "area_code": "898",
+        "dialing_code": "+86 898"
+    },
+    {
+        "city": "Shangdu - Nei Mongol",
+        "area_code": "4843",
+        "dialing_code": "+86 4843"
+    },
+    {
+        "city": "Shanggao - Jiangxi",
+        "area_code": "7051",
+        "dialing_code": "+86 7051"
+    },
+    {
+        "city": "Shanghai",
+        "area_code": "21",
+        "dialing_code": "+86 21"
+    },
+    {
+        "city": "Shanghai - Shanghai",
+        "area_code": "21",
+        "dialing_code": "+86 21"
+    },
+    {
+        "city": "Shangqiu - Henan",
+        "area_code": "370",
+        "dialing_code": "+86 370"
+    },
+    {
+        "city": "Shangrao - Jiangxi",
+        "area_code": "793",
+        "dialing_code": "+86 793"
+    },
+    {
+        "city": "Shangzhou - Shaanxi",
+        "area_code": "914",
+        "dialing_code": "+86 914"
+    },
+    {
+        "city": "Shantou",
+        "area_code": "754",
+        "dialing_code": "+86 754"
+    },
+    {
+        "city": "Shantou - Guangdong",
+        "area_code": "754",
+        "dialing_code": "+86 754"
+    },
+    {
+        "city": "Shaoguan",
+        "area_code": "751",
+        "dialing_code": "+86 751"
+    },
+    {
+        "city": "Shaoguan - Guangdong",
+        "area_code": "751",
+        "dialing_code": "+86 751"
+    },
+    {
+        "city": "Shaoshan - Hunan",
+        "area_code": "732",
+        "dialing_code": "+86 732"
+    },
+    {
+        "city": "Shaoxing",
+        "area_code": "575",
+        "dialing_code": "+86 575"
+    },
+    {
+        "city": "Shaoxing - Zhejiang",
+        "area_code": "575",
+        "dialing_code": "+86 575"
+    },
+    {
+        "city": "Shaoyang",
+        "area_code": "739",
+        "dialing_code": "+86 739"
+    },
+    {
+        "city": "Shaoyang - Hunan",
+        "area_code": "739",
+        "dialing_code": "+86 739"
+    },
+    {
+        "city": "Shenmu - Shaanxi",
+        "area_code": "9229",
+        "dialing_code": "+86 9229"
+    },
+    {
+        "city": "Shenyang",
+        "area_code": "24",
+        "dialing_code": "+86 24"
+    },
+    {
+        "city": "Shenyang - Liaoning",
+        "area_code": "24",
+        "dialing_code": "+86 24"
+    },
+    {
+        "city": "Shenzhen",
+        "area_code": "755",
+        "dialing_code": "+86 755"
+    },
+    {
+        "city": "Shenzhen - Guangdong",
+        "area_code": "755",
+        "dialing_code": "+86 755"
+    },
+    {
+        "city": "Shihezi - Xinjiang",
+        "area_code": "993",
+        "dialing_code": "+86 993"
+    },
+    {
+        "city": "Shijiazhuang",
+        "area_code": "311",
+        "dialing_code": "+86 311"
+    },
+    {
+        "city": "Shijiazhuang - Hebei",
+        "area_code": "311",
+        "dialing_code": "+86 311"
+    },
+    {
+        "city": "Shimen - Hunan",
+        "area_code": "7462",
+        "dialing_code": "+86 7462"
+    },
+    {
+        "city": "Shimian - Sichuan",
+        "area_code": "8437",
+        "dialing_code": "+86 8437"
+    },
+    {
+        "city": "Shishi - Fujian",
+        "area_code": "595",
+        "dialing_code": "+86 595"
+    },
+    {
+        "city": "Shiyan - Hubei",
+        "area_code": "719",
+        "dialing_code": "+86 719"
+    },
+    {
+        "city": "Shuangcheng",
+        "area_code": "4615",
+        "dialing_code": "+86 4615"
+    },
+    {
+        "city": "Shuangcheng - Heilongjiang",
+        "area_code": "4615",
+        "dialing_code": "+86 4615"
+    },
+    {
+        "city": "Siping",
+        "area_code": "434",
+        "dialing_code": "+86 434"
+    },
+    {
+        "city": "Siping - Jilin",
+        "area_code": "434",
+        "dialing_code": "+86 434"
+    },
+    {
+        "city": "Sishui - Shandong",
+        "area_code": "5483",
+        "dialing_code": "+86 5483"
+    },
+    {
+        "city": "Songyuan - Jilin",
+        "area_code": "438",
+        "dialing_code": "+86 438"
+    },
+    {
+        "city": "Stanley",
+        "area_code": "270",
+        "dialing_code": "+86 270"
+    },
+    {
+        "city": "Suifenhe",
+        "area_code": "4638",
+        "dialing_code": "+86 4638"
+    },
+    {
+        "city": "Suifenhe - Heilongjiang",
+        "area_code": "4638",
+        "dialing_code": "+86 4638"
+    },
+    {
+        "city": "Suzhou - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Tacheng",
+        "area_code": "9003",
+        "dialing_code": "+86 9003"
+    },
+    {
+        "city": "Tacheng - Xinjiang",
+        "area_code": "9003",
+        "dialing_code": "+86 9003"
+    },
+    {
+        "city": "Tai-an - Shandong",
+        "area_code": "538",
+        "dialing_code": "+86 538"
+    },
+    {
+        "city": "Tai-hu - Anhui",
+        "area_code": "556",
+        "dialing_code": "+86 556"
+    },
+    {
+        "city": "Taicang - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Taiyuan",
+        "area_code": "351",
+        "dialing_code": "+86 351"
+    },
+    {
+        "city": "Taiyuan - Shanxi",
+        "area_code": "351",
+        "dialing_code": "+86 351"
+    },
+    {
+        "city": "Taizhou - Jiangsu",
+        "area_code": "5241",
+        "dialing_code": "+86 5241"
+    },
+    {
+        "city": "Tangshan",
+        "area_code": "315",
+        "dialing_code": "+86 315"
+    },
+    {
+        "city": "Tangshan - Hebei",
+        "area_code": "315",
+        "dialing_code": "+86 315"
+    },
+    {
+        "city": "Tianjin",
+        "area_code": "22",
+        "dialing_code": "+86 22"
+    },
+    {
+        "city": "Tianjin - Tianjin",
+        "area_code": "22",
+        "dialing_code": "+86 22"
+    },
+    {
+        "city": "Tianshui",
+        "area_code": "938",
+        "dialing_code": "+86 938"
+    },
+    {
+        "city": "Tianshui - Gansu",
+        "area_code": "938",
+        "dialing_code": "+86 938"
+    },
+    {
+        "city": "Tiantai - Zhejiang",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Tongchuan - Shaanxi",
+        "area_code": "919",
+        "dialing_code": "+86 919"
+    },
+    {
+        "city": "Tongguan - Shaanxi",
+        "area_code": "9233",
+        "dialing_code": "+86 9233"
+    },
+    {
+        "city": "Tonghua - Jilin",
+        "area_code": "435",
+        "dialing_code": "+86 435"
+    },
+    {
+        "city": "Tongliao",
+        "area_code": "475",
+        "dialing_code": "+86 475"
+    },
+    {
+        "city": "Tongliao - Nei Mongol",
+        "area_code": "475",
+        "dialing_code": "+86 475"
+    },
+    {
+        "city": "Tongling - Anhui",
+        "area_code": "5612",
+        "dialing_code": "+86 5612"
+    },
+    {
+        "city": "Tongren - Guizhou",
+        "area_code": "856",
+        "dialing_code": "+86 856"
+    },
+    {
+        "city": "Tumen - Jilin",
+        "area_code": "4436",
+        "dialing_code": "+86 4436"
+    },
+    {
+        "city": "Tuquan - Neimengu",
+        "area_code": "4858",
+        "dialing_code": "+86 4858"
+    },
+    {
+        "city": "Turufan - Xinjiang",
+        "area_code": "995",
+        "dialing_code": "+86 995"
+    },
+    {
+        "city": "Urumqi",
+        "area_code": "991",
+        "dialing_code": "+86 991"
+    },
+    {
+        "city": "Urumqi - Xinjiang",
+        "area_code": "991",
+        "dialing_code": "+86 991"
+    },
+    {
+        "city": "Wanxian - Sichuan",
+        "area_code": "819",
+        "dialing_code": "+86 819"
+    },
+    {
+        "city": "Weifang",
+        "area_code": "536",
+        "dialing_code": "+86 536"
+    },
+    {
+        "city": "Weifang - Shandong",
+        "area_code": "536",
+        "dialing_code": "+86 536"
+    },
+    {
+        "city": "Weili - Xinjiang",
+        "area_code": "996",
+        "dialing_code": "+86 996"
+    },
+    {
+        "city": "Weinan",
+        "area_code": "913",
+        "dialing_code": "+86 913"
+    },
+    {
+        "city": "Weinan - Shaanxi",
+        "area_code": "913",
+        "dialing_code": "+86 913"
+    },
+    {
+        "city": "Wenshan - Yunnan",
+        "area_code": "876",
+        "dialing_code": "+86 876"
+    },
+    {
+        "city": "Wenzhou",
+        "area_code": "577",
+        "dialing_code": "+86 577"
+    },
+    {
+        "city": "Wenzhou - Zhejiang",
+        "area_code": "577",
+        "dialing_code": "+86 577"
+    },
+    {
+        "city": "Wuchuan - Nei Mongol",
+        "area_code": "4817",
+        "dialing_code": "+86 4817"
+    },
+    {
+        "city": "Wudu",
+        "area_code": "939",
+        "dialing_code": "+86 939"
+    },
+    {
+        "city": "Wudu - Gansu",
+        "area_code": "939",
+        "dialing_code": "+86 939"
+    },
+    {
+        "city": "Wuhai - Nei Mongol",
+        "area_code": "473",
+        "dialing_code": "+86 473"
+    },
+    {
+        "city": "Wuhan",
+        "area_code": "27",
+        "dialing_code": "+86 27"
+    },
+    {
+        "city": "Wuhan - Hubei",
+        "area_code": "27",
+        "dialing_code": "+86 27"
+    },
+    {
+        "city": "Wuhu",
+        "area_code": "553",
+        "dialing_code": "+86 553"
+    },
+    {
+        "city": "Wuhu - Anhui",
+        "area_code": "553",
+        "dialing_code": "+86 553"
+    },
+    {
+        "city": "Wulanhaote - Nei Mongol",
+        "area_code": "4814",
+        "dialing_code": "+86 4814"
+    },
+    {
+        "city": "Wuwei - Gansu",
+        "area_code": "935",
+        "dialing_code": "+86 935"
+    },
+    {
+        "city": "Wuxi - Jiangsu",
+        "area_code": "510",
+        "dialing_code": "+86 510"
+    },
+    {
+        "city": "Wuxian - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Wuxue - Hubei",
+        "area_code": "7239",
+        "dialing_code": "+86 7239"
+    },
+    {
+        "city": "Wuyishan",
+        "area_code": "599",
+        "dialing_code": "+86 599"
+    },
+    {
+        "city": "Wuyishan - Fujian",
+        "area_code": "599",
+        "dialing_code": "+86 599"
+    },
+    {
+        "city": "Wuyuan - Neimengu",
+        "area_code": "4881",
+        "dialing_code": "+86 4881"
+    },
+    {
+        "city": "Xi an",
+        "area_code": "29",
+        "dialing_code": "+86 29"
+    },
+    {
+        "city": "Xi'an - Shaanxi",
+        "area_code": "29",
+        "dialing_code": "+86 29"
+    },
+    {
+        "city": "Xi-feng - Gansu",
+        "area_code": "934",
+        "dialing_code": "+86 934"
+    },
+    {
+        "city": "Xiamen",
+        "area_code": "592",
+        "dialing_code": "+86 592"
+    },
+    {
+        "city": "Xiamen - Fujian",
+        "area_code": "592",
+        "dialing_code": "+86 592"
+    },
+    {
+        "city": "Xiangfan - Hubei",
+        "area_code": "710",
+        "dialing_code": "+86 710"
+    },
+    {
+        "city": "Xiangtan",
+        "area_code": "732",
+        "dialing_code": "+86 732"
+    },
+    {
+        "city": "Xiangtan - Hunan",
+        "area_code": "732",
+        "dialing_code": "+86 732"
+    },
+    {
+        "city": "Xianju - Zhejiang",
+        "area_code": "576",
+        "dialing_code": "+86 576"
+    },
+    {
+        "city": "Xianyang",
+        "area_code": "910",
+        "dialing_code": "+86 910"
+    },
+    {
+        "city": "Xianyang - Shaanxi",
+        "area_code": "910",
+        "dialing_code": "+86 910"
+    },
+    {
+        "city": "Xichang",
+        "area_code": "834",
+        "dialing_code": "+86 834"
+    },
+    {
+        "city": "Xichang - Sichuan",
+        "area_code": "834",
+        "dialing_code": "+86 834"
+    },
+    {
+        "city": "Xifeng - Guizhou",
+        "area_code": "8638",
+        "dialing_code": "+86 8638"
+    },
+    {
+        "city": "Xin an",
+        "area_code": "5482",
+        "dialing_code": "+86 5482"
+    },
+    {
+        "city": "Xin-tai - Shandong",
+        "area_code": "5482",
+        "dialing_code": "+86 5482"
+    },
+    {
+        "city": "Xingguo - Jiangxi",
+        "area_code": "7073",
+        "dialing_code": "+86 7073"
+    },
+    {
+        "city": "Xinhui - Guangdong",
+        "area_code": "750",
+        "dialing_code": "+86 750"
+    },
+    {
+        "city": "Xining",
+        "area_code": "971",
+        "dialing_code": "+86 971"
+    },
+    {
+        "city": "Xining - Qinghai",
+        "area_code": "971",
+        "dialing_code": "+86 971"
+    },
+    {
+        "city": "Xinjin",
+        "area_code": "971",
+        "dialing_code": "+86 971"
+    },
+    {
+        "city": "Xinmin - Liaoning",
+        "area_code": "24",
+        "dialing_code": "+86 24"
+    },
+    {
+        "city": "Xintai - Hebei",
+        "area_code": "319",
+        "dialing_code": "+86 319"
+    },
+    {
+        "city": "Xinxiang",
+        "area_code": "373",
+        "dialing_code": "+86 373"
+    },
+    {
+        "city": "Xinxiang - Henan",
+        "area_code": "373",
+        "dialing_code": "+86 373"
+    },
+    {
+        "city": "Xinyang",
+        "area_code": "373",
+        "dialing_code": "+86 373"
+    },
+    {
+        "city": "Xinyi",
+        "area_code": "859",
+        "dialing_code": "+86 859"
+    },
+    {
+        "city": "Xinyi - Guizhou",
+        "area_code": "859",
+        "dialing_code": "+86 859"
+    },
+    {
+        "city": "Xinyu - Jiangxi",
+        "area_code": "790",
+        "dialing_code": "+86 790"
+    },
+    {
+        "city": "Xinyuan - Xinjiang",
+        "area_code": "9096",
+        "dialing_code": "+86 9096"
+    },
+    {
+        "city": "Xuanhua - Hebei",
+        "area_code": "313",
+        "dialing_code": "+86 313"
+    },
+    {
+        "city": "Xuchang - Henan",
+        "area_code": "374",
+        "dialing_code": "+86 374"
+    },
+    {
+        "city": "Xuejiawan - Nei Mongol",
+        "area_code": "477",
+        "dialing_code": "+86 477"
+    },
+    {
+        "city": "Xuzhou",
+        "area_code": "516",
+        "dialing_code": "+86 516"
+    },
+    {
+        "city": "Xuzhou - Jiangsu",
+        "area_code": "516",
+        "dialing_code": "+86 516"
+    },
+    {
+        "city": "Ya An",
+        "area_code": "835",
+        "dialing_code": "+86 835"
+    },
+    {
+        "city": "Ya-an - Sichuan",
+        "area_code": "835",
+        "dialing_code": "+86 835"
+    },
+    {
+        "city": "Yan An",
+        "area_code": "911",
+        "dialing_code": "+86 911"
+    },
+    {
+        "city": "Yan-an - Shaanxi",
+        "area_code": "911",
+        "dialing_code": "+86 911"
+    },
+    {
+        "city": "Yancheng - Jiangsu",
+        "area_code": "515",
+        "dialing_code": "+86 515"
+    },
+    {
+        "city": "Yangpu - Hainan",
+        "area_code": "890",
+        "dialing_code": "+86 890"
+    },
+    {
+        "city": "Yangquan",
+        "area_code": "353",
+        "dialing_code": "+86 353"
+    },
+    {
+        "city": "Yangquan - Shanxi",
+        "area_code": "353",
+        "dialing_code": "+86 353"
+    },
+    {
+        "city": "Yangzhou",
+        "area_code": "514",
+        "dialing_code": "+86 514"
+    },
+    {
+        "city": "Yangzhou - Jiangsu",
+        "area_code": "514",
+        "dialing_code": "+86 514"
+    },
+    {
+        "city": "Yanji",
+        "area_code": "433",
+        "dialing_code": "+86 433"
+    },
+    {
+        "city": "Yanji - Jilin",
+        "area_code": "433",
+        "dialing_code": "+86 433"
+    },
+    {
+        "city": "Yanjin - Henan",
+        "area_code": "3832",
+        "dialing_code": "+86 3832"
+    },
+    {
+        "city": "Yantai - Shandong",
+        "area_code": "535",
+        "dialing_code": "+86 535"
+    },
+    {
+        "city": "Yi-chun - Jiangxi",
+        "area_code": "795",
+        "dialing_code": "+86 795"
+    },
+    {
+        "city": "Yi-yang - Hunan",
+        "area_code": "737",
+        "dialing_code": "+86 737"
+    },
+    {
+        "city": "Yibin",
+        "area_code": "831",
+        "dialing_code": "+86 831"
+    },
+    {
+        "city": "Yibin - Sichuan",
+        "area_code": "831",
+        "dialing_code": "+86 831"
+    },
+    {
+        "city": "Yichun - Heilongjiang",
+        "area_code": "4652",
+        "dialing_code": "+86 4652"
+    },
+    {
+        "city": "Yimin - Nei Mongol",
+        "area_code": "4890",
+        "dialing_code": "+86 4890"
+    },
+    {
+        "city": "Yinchuan",
+        "area_code": "951",
+        "dialing_code": "+86 951"
+    },
+    {
+        "city": "Yinchuan - Ningxia",
+        "area_code": "951",
+        "dialing_code": "+86 951"
+    },
+    {
+        "city": "Yingkou",
+        "area_code": "417",
+        "dialing_code": "+86 417"
+    },
+    {
+        "city": "Yingkou - Liaoning",
+        "area_code": "417",
+        "dialing_code": "+86 417"
+    },
+    {
+        "city": "Yingtan - Jiangxi",
+        "area_code": "7032",
+        "dialing_code": "+86 7032"
+    },
+    {
+        "city": "Yining",
+        "area_code": "999",
+        "dialing_code": "+86 999"
+    },
+    {
+        "city": "Yining - Xinjiang",
+        "area_code": "999",
+        "dialing_code": "+86 999"
+    },
+    {
+        "city": "Yishui - Shandong",
+        "area_code": "5492",
+        "dialing_code": "+86 5492"
+    },
+    {
+        "city": "Yiwu",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Yiwu - Zhejiang",
+        "area_code": "579",
+        "dialing_code": "+86 579"
+    },
+    {
+        "city": "Yixin - Jiangsu",
+        "area_code": "5218",
+        "dialing_code": "+86 5218"
+    },
+    {
+        "city": "Yiyang",
+        "area_code": "7038",
+        "dialing_code": "+86 7038"
+    },
+    {
+        "city": "Yiyang - Jiangxi",
+        "area_code": "7038",
+        "dialing_code": "+86 7038"
+    },
+    {
+        "city": "Yongchuan",
+        "area_code": "814",
+        "dialing_code": "+86 814"
+    },
+    {
+        "city": "Yongchuan - Sichuan",
+        "area_code": "814",
+        "dialing_code": "+86 814"
+    },
+    {
+        "city": "Yongfu - Guangxi",
+        "area_code": "7848",
+        "dialing_code": "+86 7848"
+    },
+    {
+        "city": "Yongxiu - Jiangxi",
+        "area_code": "792",
+        "dialing_code": "+86 792"
+    },
+    {
+        "city": "Yu-shu - Jilin",
+        "area_code": "4415",
+        "dialing_code": "+86 4415"
+    },
+    {
+        "city": "Yuanmou",
+        "area_code": "8869",
+        "dialing_code": "+86 8869"
+    },
+    {
+        "city": "Yuanmou - Yunnan",
+        "area_code": "8869",
+        "dialing_code": "+86 8869"
+    },
+    {
+        "city": "Yueyang",
+        "area_code": "730",
+        "dialing_code": "+86 730"
+    },
+    {
+        "city": "Yueyang - Hunan",
+        "area_code": "730",
+        "dialing_code": "+86 730"
+    },
+    {
+        "city": "Yuhang - Zhejiang",
+        "area_code": "571",
+        "dialing_code": "+86 571"
+    },
+    {
+        "city": "Yulin",
+        "area_code": "912",
+        "dialing_code": "+86 912"
+    },
+    {
+        "city": "Yulin - Shaanxi",
+        "area_code": "912",
+        "dialing_code": "+86 912"
+    },
+    {
+        "city": "Yumen - Gansu",
+        "area_code": "9471",
+        "dialing_code": "+86 9471"
+    },
+    {
+        "city": "Yushu",
+        "area_code": "976",
+        "dialing_code": "+86 976"
+    },
+    {
+        "city": "Yushu - Qinghai",
+        "area_code": "976",
+        "dialing_code": "+86 976"
+    },
+    {
+        "city": "Yuxi - Yunnan",
+        "area_code": "877",
+        "dialing_code": "+86 877"
+    },
+    {
+        "city": "Yuyao - Zhejiang",
+        "area_code": "574",
+        "dialing_code": "+86 574"
+    },
+    {
+        "city": "Yuzhong - Gansu",
+        "area_code": "9440",
+        "dialing_code": "+86 9440"
+    },
+    {
+        "city": "Zhangjiagang - Jiangsu",
+        "area_code": "512",
+        "dialing_code": "+86 512"
+    },
+    {
+        "city": "Zhangjiakou",
+        "area_code": "313",
+        "dialing_code": "+86 313"
+    },
+    {
+        "city": "Zhangjiakou - Hebei",
+        "area_code": "313",
+        "dialing_code": "+86 313"
+    },
+    {
+        "city": "Zhangshu - Jiangxi",
+        "area_code": "7052",
+        "dialing_code": "+86 7052"
+    },
+    {
+        "city": "Zhangzhou",
+        "area_code": "596",
+        "dialing_code": "+86 596"
+    },
+    {
+        "city": "Zhangzhou - Fujian",
+        "area_code": "596",
+        "dialing_code": "+86 596"
+    },
+    {
+        "city": "Zhanjiang",
+        "area_code": "759",
+        "dialing_code": "+86 759"
+    },
+    {
+        "city": "Zhanjiang - Guangdong",
+        "area_code": "759",
+        "dialing_code": "+86 759"
+    },
+    {
+        "city": "Zhengzhou",
+        "area_code": "371",
+        "dialing_code": "+86 371"
+    },
+    {
+        "city": "Zhengzhou - Henan",
+        "area_code": "371",
+        "dialing_code": "+86 371"
+    },
+    {
+        "city": "Zhenjiang",
+        "area_code": "511",
+        "dialing_code": "+86 511"
+    },
+    {
+        "city": "Zhenjiang - Jiangsu",
+        "area_code": "511",
+        "dialing_code": "+86 511"
+    },
+    {
+        "city": "Zhicheng - Hubei",
+        "area_code": "27",
+        "dialing_code": "+86 27"
+    },
+    {
+        "city": "Zhijiang",
+        "area_code": "7420",
+        "dialing_code": "+86 7420"
+    },
+    {
+        "city": "Zhijiang - Hunan",
+        "area_code": "7420",
+        "dialing_code": "+86 7420"
+    },
+    {
+        "city": "Zhongshan - Guangdong",
+        "area_code": "760",
+        "dialing_code": "+86 760"
+    },
+    {
+        "city": "Zhuhai - Guangdong",
+        "area_code": "756",
+        "dialing_code": "+86 756"
+    },
+    {
+        "city": "Zhumadian",
+        "area_code": "3011",
+        "dialing_code": "+86 3011"
+    },
+    {
+        "city": "Zhumadian - Henan",
+        "area_code": "3011",
+        "dialing_code": "+86 3011"
+    },
+    {
+        "city": "Zhunger - Nei Mongol",
+        "area_code": "4873",
+        "dialing_code": "+86 4873"
+    },
+    {
+        "city": "Zhuzhou - Hunan",
+        "area_code": "733",
+        "dialing_code": "+86 733"
+    },
+    {
+        "city": "Zibo",
+        "area_code": "533",
+        "dialing_code": "+86 533"
+    },
+    {
+        "city": "Zibo - Shandong",
+        "area_code": "533",
+        "dialing_code": "+86 533"
+    },
+    {
+        "city": "Zigong - Sichuan",
+        "area_code": "813",
+        "dialing_code": "+86 813"
+    },
+    {
+        "city": "Zigui - Hubei",
+        "area_code": "7278",
+        "dialing_code": "+86 7278"
+    },
+    {
+        "city": "Ziyuan - Guangxi",
+        "area_code": "7852",
+        "dialing_code": "+86 7852"
+    },
+    {
+        "city": "Zunhua - Hebei",
+        "area_code": "315",
+        "dialing_code": "+86 315"
+    },
+    {
+        "city": "Zunyi",
+        "area_code": "852",
+        "dialing_code": "+86 852"
+    },
+    {
+        "city": "Zunyi - Guizhou",
+        "area_code": "852",
+        "dialing_code": "+86 852"
+    }
+]

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "JSON patch",
+  "description": "A JSON patch object used to apply partial updates to resources.",
+  "properties": {
+    "op": {
+      "type": "string",
+      "description": "The operation to perform.",
+      "enum": [
+        "add",
+        "remove",
+        "replace",
+        "move",
+        "copy",
+        "test"
+      ]
+    },
+    "path": {
+      "type": "string",
+      "description": "String. Contains a JSON pointer value to a location within the target document where the operation is performed."
+    },
+    "value": {
+      "type":[ "number","integer", "string","boolean","null","array","object" ] ,
+      "description": "New value to apply based on the operation. `op=remove` does not require a value."
+    },
+    "from": {
+      "type": "string",
+      "description": "String. Contains a JSON pointer value to the location in the target document from which to move the value. Required for `op=move`."
+    }
+  },
+  "required": ["op"]
+}

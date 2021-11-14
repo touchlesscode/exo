@@ -1,0 +1,317 @@
+[
+    {
+        "city": "Bangtar DAMA",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Basochu",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Chapcha",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Chargary",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Chumey",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    },
+    {
+        "city": "Dagana",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Dagapela",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Daifam DAMA",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Damphu DAMA",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Dechencholing",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Deothang",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Drujegang",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Drukgyel Dzong",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Gasa",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Gedu/Tala/Padechu/ Sinchekha",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Gelephu",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Gelpoyshing",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Gomtu",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Ha",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Ha (Damthang)",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Jakar",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    },
+    {
+        "city": "Kanglung",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Khaling",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Kharsadrapchu",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Lhamoi Zingkha",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Lhuntse",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Lingshi DAMA",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Lodrai",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "17",
+        "dialing_code": "+975 17"
+    },
+    {
+        "city": "Mongar",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Nganglam",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Nganglam DAMA",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "P/Gatshel",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "P/Gatshel DAMA",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Panbang DAMA",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Paro",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Pasakha",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Phuntsholing",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Punakha",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Rangjung",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "S/Jongkhar",
+        "area_code": "7",
+        "dialing_code": "+975 7"
+    },
+    {
+        "city": "Sakteng DAMA",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Samtse",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Sarpang",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Shaba",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Sibsoo",
+        "area_code": "5",
+        "dialing_code": "+975 5"
+    },
+    {
+        "city": "Simtokha",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Suray",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Taba",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Tangmachu",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Thimphu",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Tingtibi",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    },
+    {
+        "city": "Trashi Yangtse",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Trashigang",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Trongsa",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    },
+    {
+        "city": "Tsenkharla",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Tsimasham",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Tsirang (Damphu)",
+        "area_code": "6",
+        "dialing_code": "+975 6"
+    },
+    {
+        "city": "Wamrong",
+        "area_code": "4",
+        "dialing_code": "+975 4"
+    },
+    {
+        "city": "Wangdue",
+        "area_code": "2",
+        "dialing_code": "+975 2"
+    },
+    {
+        "city": "Wangkha",
+        "area_code": "8",
+        "dialing_code": "+975 8"
+    },
+    {
+        "city": "Zhemgang",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    },
+    {
+        "city": "Zhemgang DAMA",
+        "area_code": "3",
+        "dialing_code": "+975 3"
+    }
+]

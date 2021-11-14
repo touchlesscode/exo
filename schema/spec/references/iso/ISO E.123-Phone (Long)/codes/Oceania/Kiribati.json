@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Abaiang",
+        "area_code": "33",
+        "dialing_code": "+686 33"
+    },
+    {
+        "city": "Abaokoro, Tarawa",
+        "area_code": "32",
+        "dialing_code": "+686 32"
+    },
+    {
+        "city": "Abemama",
+        "area_code": "41",
+        "dialing_code": "+686 41"
+    },
+    {
+        "city": "Aranuka",
+        "area_code": "40",
+        "dialing_code": "+686 40"
+    },
+    {
+        "city": "Arorae",
+        "area_code": "49",
+        "dialing_code": "+686 49"
+    },
+    {
+        "city": "Bairiki, Tarawa",
+        "area_code": "24",
+        "dialing_code": "+686 24"
+    },
+    {
+        "city": "Banaba",
+        "area_code": "37",
+        "dialing_code": "+686 37"
+    },
+    {
+        "city": "Beru",
+        "area_code": "46",
+        "dialing_code": "+686 46"
+    },
+    {
+        "city": "Betio, Tarawa",
+        "area_code": "26",
+        "dialing_code": "+686 26"
+    },
+    {
+        "city": "Bikenibeu, Tarawa",
+        "area_code": "29",
+        "dialing_code": "+686 29"
+    },
+    {
+        "city": "Butaritari",
+        "area_code": "35",
+        "dialing_code": "+686 35"
+    },
+    {
+        "city": "Fanning (Tabuaeran)",
+        "area_code": "83",
+        "dialing_code": "+686 83"
+    },
+    {
+        "city": "Kanton",
+        "area_code": "85",
+        "dialing_code": "+686 85"
+    },
+    {
+        "city": "Kiritimati",
+        "area_code": "82",
+        "dialing_code": "+686 82"
+    },
+    {
+        "city": "Kuria",
+        "area_code": "39",
+        "dialing_code": "+686 39"
+    },
+    {
+        "city": "Maiana",
+        "area_code": "38",
+        "dialing_code": "+686 38"
+    },
+    {
+        "city": "Makin",
+        "area_code": "36",
+        "dialing_code": "+686 36"
+    },
+    {
+        "city": "Marakei",
+        "area_code": "34",
+        "dialing_code": "+686 34"
+    },
+    {
+        "city": "Nikunau",
+        "area_code": "47",
+        "dialing_code": "+686 47"
+    },
+    {
+        "city": "Nonouti",
+        "area_code": "42",
+        "dialing_code": "+686 42"
+    },
+    {
+        "city": "Onotoa",
+        "area_code": "45",
+        "dialing_code": "+686 45"
+    },
+    {
+        "city": "Rawaki",
+        "area_code": "",
+        "dialing_code": "+686"
+    },
+    {
+        "city": "Tabiteuea North",
+        "area_code": "43",
+        "dialing_code": "+686 43"
+    },
+    {
+        "city": "Tabiteuea South",
+        "area_code": "44",
+        "dialing_code": "+686 44"
+    },
+    {
+        "city": "Tamana",
+        "area_code": "48",
+        "dialing_code": "+686 48"
+    },
+    {
+        "city": "Tarawa",
+        "area_code": "",
+        "dialing_code": "+686"
+    },
+    {
+        "city": "Washington (Teraina)",
+        "area_code": "84",
+        "dialing_code": "+686 84"
+    }
+]

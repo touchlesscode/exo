@@ -1,0 +1,387 @@
+[
+    {
+        "city": "An Giang",
+        "area_code": "77",
+        "dialing_code": "+84 77"
+    },
+    {
+        "city": "Ba Ria",
+        "area_code": "64",
+        "dialing_code": "+84 64"
+    },
+    {
+        "city": "Bac Giang",
+        "area_code": "240",
+        "dialing_code": "+84 240"
+    },
+    {
+        "city": "Bac Kan",
+        "area_code": "281",
+        "dialing_code": "+84 281"
+    },
+    {
+        "city": "Bac Lieu",
+        "area_code": "781",
+        "dialing_code": "+84 781"
+    },
+    {
+        "city": "Bac Ninh",
+        "area_code": "241",
+        "dialing_code": "+84 241"
+    },
+    {
+        "city": "Ben Tre",
+        "area_code": "75",
+        "dialing_code": "+84 75"
+    },
+    {
+        "city": "Bien Hoa",
+        "area_code": "61",
+        "dialing_code": "+84 61"
+    },
+    {
+        "city": "Binh Dinh",
+        "area_code": "56",
+        "dialing_code": "+84 56"
+    },
+    {
+        "city": "Binh Duong",
+        "area_code": "650",
+        "dialing_code": "+84 650"
+    },
+    {
+        "city": "Binh Phuoc",
+        "area_code": "651",
+        "dialing_code": "+84 651"
+    },
+    {
+        "city": "Binh Thuan",
+        "area_code": "62",
+        "dialing_code": "+84 62"
+    },
+    {
+        "city": "Ca Mau",
+        "area_code": "780",
+        "dialing_code": "+84 780"
+    },
+    {
+        "city": "Can Tho",
+        "area_code": "71",
+        "dialing_code": "+84 71"
+    },
+    {
+        "city": "Cao Bang",
+        "area_code": "26",
+        "dialing_code": "+84 26"
+    },
+    {
+        "city": "Cuu Long",
+        "area_code": "70",
+        "dialing_code": "+84 70"
+    },
+    {
+        "city": "Da Nang",
+        "area_code": "511",
+        "dialing_code": "+84 511"
+    },
+    {
+        "city": "Dak Lak",
+        "area_code": "50",
+        "dialing_code": "+84 50"
+    },
+    {
+        "city": "Dong Nai",
+        "area_code": "61",
+        "dialing_code": "+84 61"
+    },
+    {
+        "city": "Dong Thap",
+        "area_code": "67",
+        "dialing_code": "+84 67"
+    },
+    {
+        "city": "Gia Lai",
+        "area_code": "59",
+        "dialing_code": "+84 59"
+    },
+    {
+        "city": "Ha Giang",
+        "area_code": "19",
+        "dialing_code": "+84 19"
+    },
+    {
+        "city": "Ha Nam",
+        "area_code": "351",
+        "dialing_code": "+84 351"
+    },
+    {
+        "city": "Ha Tay",
+        "area_code": "34",
+        "dialing_code": "+84 34"
+    },
+    {
+        "city": "Ha Tinh",
+        "area_code": "39",
+        "dialing_code": "+84 39"
+    },
+    {
+        "city": "Hai Duong",
+        "area_code": "320",
+        "dialing_code": "+84 320"
+    },
+    {
+        "city": "Hai Phong",
+        "area_code": "31",
+        "dialing_code": "+84 31"
+    },
+    {
+        "city": "Haiphong",
+        "area_code": "31",
+        "dialing_code": "+84 31"
+    },
+    {
+        "city": "Hanoi",
+        "area_code": "4",
+        "dialing_code": "+84 4"
+    },
+    {
+        "city": "Hanoi City",
+        "area_code": "4",
+        "dialing_code": "+84 4"
+    },
+    {
+        "city": "Ho Chi Minh",
+        "area_code": "8",
+        "dialing_code": "+84 8"
+    },
+    {
+        "city": "Ho Chi Minh City",
+        "area_code": "8",
+        "dialing_code": "+84 8"
+    },
+    {
+        "city": "Ho Chi Minh City (Saigon)",
+        "area_code": "8",
+        "dialing_code": "+84 8"
+    },
+    {
+        "city": "Ho Chi Minh City City (formerl",
+        "area_code": "8",
+        "dialing_code": "+84 8"
+    },
+    {
+        "city": "Hoa Binh",
+        "area_code": "18",
+        "dialing_code": "+84 18"
+    },
+    {
+        "city": "Hue",
+        "area_code": "54",
+        "dialing_code": "+84 54"
+    },
+    {
+        "city": "Hung Yen",
+        "area_code": "321",
+        "dialing_code": "+84 321"
+    },
+    {
+        "city": "Khanh Hoa",
+        "area_code": "58",
+        "dialing_code": "+84 58"
+    },
+    {
+        "city": "Kien Giang",
+        "area_code": "77",
+        "dialing_code": "+84 77"
+    },
+    {
+        "city": "Kon Tum",
+        "area_code": "60",
+        "dialing_code": "+84 60"
+    },
+    {
+        "city": "Lai Chau",
+        "area_code": "23",
+        "dialing_code": "+84 23"
+    },
+    {
+        "city": "Lang Son",
+        "area_code": "25",
+        "dialing_code": "+84 25"
+    },
+    {
+        "city": "Lao Cai",
+        "area_code": "20",
+        "dialing_code": "+84 20"
+    },
+    {
+        "city": "Long An",
+        "area_code": "72",
+        "dialing_code": "+84 72"
+    },
+    {
+        "city": "Long Xuyen",
+        "area_code": "76",
+        "dialing_code": "+84 76"
+    },
+    {
+        "city": "Minh Hai",
+        "area_code": "78",
+        "dialing_code": "+84 78"
+    },
+    {
+        "city": "Nam Dinh",
+        "area_code": "350",
+        "dialing_code": "+84 350"
+    },
+    {
+        "city": "Nghe An",
+        "area_code": "38",
+        "dialing_code": "+84 38"
+    },
+    {
+        "city": "Nha Trang",
+        "area_code": "58",
+        "dialing_code": "+84 58"
+    },
+    {
+        "city": "Nin Thuan",
+        "area_code": "68",
+        "dialing_code": "+84 68"
+    },
+    {
+        "city": "Ninh Binh",
+        "area_code": "30",
+        "dialing_code": "+84 30"
+    },
+    {
+        "city": "Phan Thiet",
+        "area_code": "62",
+        "dialing_code": "+84 62"
+    },
+    {
+        "city": "Phu Tho",
+        "area_code": "210",
+        "dialing_code": "+84 210"
+    },
+    {
+        "city": "Phu Yen",
+        "area_code": "57",
+        "dialing_code": "+84 57"
+    },
+    {
+        "city": "Quang Binh",
+        "area_code": "52",
+        "dialing_code": "+84 52"
+    },
+    {
+        "city": "Quang Nam",
+        "area_code": "510",
+        "dialing_code": "+84 510"
+    },
+    {
+        "city": "Quang Ngai",
+        "area_code": "55",
+        "dialing_code": "+84 55"
+    },
+    {
+        "city": "Quang Tri",
+        "area_code": "53",
+        "dialing_code": "+84 53"
+    },
+    {
+        "city": "Quant Ninh",
+        "area_code": "33",
+        "dialing_code": "+84 33"
+    },
+    {
+        "city": "Qui Nhon",
+        "area_code": "56",
+        "dialing_code": "+84 56"
+    },
+    {
+        "city": "Saigon",
+        "area_code": "8",
+        "dialing_code": "+84 8"
+    },
+    {
+        "city": "Soc Trang",
+        "area_code": "79",
+        "dialing_code": "+84 79"
+    },
+    {
+        "city": "Son La",
+        "area_code": "22",
+        "dialing_code": "+84 22"
+    },
+    {
+        "city": "Tay Ninh",
+        "area_code": "66",
+        "dialing_code": "+84 66"
+    },
+    {
+        "city": "Thai Binh",
+        "area_code": "36",
+        "dialing_code": "+84 36"
+    },
+    {
+        "city": "Thai Nguyen",
+        "area_code": "280",
+        "dialing_code": "+84 280"
+    },
+    {
+        "city": "Thanh Hoa",
+        "area_code": "37",
+        "dialing_code": "+84 37"
+    },
+    {
+        "city": "Thua Thien Hue",
+        "area_code": "54",
+        "dialing_code": "+84 54"
+    },
+    {
+        "city": "Thuan Lam Dong",
+        "area_code": "63",
+        "dialing_code": "+84 63"
+    },
+    {
+        "city": "Tien Giang",
+        "area_code": "73",
+        "dialing_code": "+84 73"
+    },
+    {
+        "city": "Tra Vinh",
+        "area_code": "74",
+        "dialing_code": "+84 74"
+    },
+    {
+        "city": "Tuyen Quang",
+        "area_code": "27",
+        "dialing_code": "+84 27"
+    },
+    {
+        "city": "Vinh Long",
+        "area_code": "70",
+        "dialing_code": "+84 70"
+    },
+    {
+        "city": "Vinh Phu",
+        "area_code": "211",
+        "dialing_code": "+84 211"
+    },
+    {
+        "city": "Vung Tau",
+        "area_code": "64",
+        "dialing_code": "+84 64"
+    },
+    {
+        "city": "Vung Tàu",
+        "area_code": "64",
+        "dialing_code": "+84 64"
+    },
+    {
+        "city": "Yen Bai",
+        "area_code": "29",
+        "dialing_code": "+84 29"
+    }
+]

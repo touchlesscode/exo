@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Boaco",
+        "area_code": "54",
+        "dialing_code": "+505 54"
+    },
+    {
+        "city": "Chinandega",
+        "area_code": "341",
+        "dialing_code": "+505 341"
+    },
+    {
+        "city": "Diriamba",
+        "area_code": "4222",
+        "dialing_code": "+505 4222"
+    },
+    {
+        "city": "Esteli",
+        "area_code": "71",
+        "dialing_code": "+505 71"
+    },
+    {
+        "city": "Granada",
+        "area_code": "55",
+        "dialing_code": "+505 55"
+    },
+    {
+        "city": "Leon",
+        "area_code": "311",
+        "dialing_code": "+505 311"
+    },
+    {
+        "city": "Managua",
+        "area_code": "2",
+        "dialing_code": "+505 2"
+    },
+    {
+        "city": "Masatepe",
+        "area_code": "44",
+        "dialing_code": "+505 44"
+    },
+    {
+        "city": "Masaya",
+        "area_code": "52",
+        "dialing_code": "+505 52"
+    },
+    {
+        "city": "Nandaime",
+        "area_code": "4522",
+        "dialing_code": "+505 4522"
+    },
+    {
+        "city": "Rivas",
+        "area_code": "46",
+        "dialing_code": "+505 46"
+    },
+    {
+        "city": "San Juan Del Sur",
+        "area_code": "4682",
+        "dialing_code": "+505 4682"
+    },
+    {
+        "city": "San Marcos",
+        "area_code": "43",
+        "dialing_code": "+505 43"
+    },
+    {
+        "city": "Tipitapa",
+        "area_code": "53",
+        "dialing_code": "+505 53"
+    }
+]

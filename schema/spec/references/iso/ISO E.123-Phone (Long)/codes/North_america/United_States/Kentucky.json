@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Ashland",
+        "area_code": "606",
+        "dialing_code": "+1 606"
+    },
+    {
+        "city": "Bowling Green",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Covington",
+        "area_code": "859",
+        "dialing_code": "+1 859"
+    },
+    {
+        "city": "Frankfort",
+        "area_code": "502",
+        "dialing_code": "+1 502"
+    },
+    {
+        "city": "Georgetown",
+        "area_code": "502",
+        "dialing_code": "+1 502"
+    },
+    {
+        "city": "Henderson",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Independence",
+        "area_code": "816",
+        "dialing_code": "+1 816"
+    },
+    {
+        "city": "Lexington",
+        "area_code": "859",
+        "dialing_code": "+1 859"
+    },
+    {
+        "city": "Louisville",
+        "area_code": "502",
+        "dialing_code": "+1 502"
+    },
+    {
+        "city": "Nicholasville",
+        "area_code": "859",
+        "dialing_code": "+1 859"
+    },
+    {
+        "city": "Owensboro",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Paducah",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Winchester",
+        "area_code": "859",
+        "dialing_code": "+1 859"
+    }
+]

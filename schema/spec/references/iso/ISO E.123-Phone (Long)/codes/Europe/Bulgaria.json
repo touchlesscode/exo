@@ -1,0 +1,177 @@
+[
+    {
+        "city": "Blagoevgrad",
+        "area_code": "73",
+        "dialing_code": "+359 73"
+    },
+    {
+        "city": "Bourgas",
+        "area_code": "56",
+        "dialing_code": "+359 56"
+    },
+    {
+        "city": "Dobritch",
+        "area_code": "58",
+        "dialing_code": "+359 58"
+    },
+    {
+        "city": "Gabrovo",
+        "area_code": "66",
+        "dialing_code": "+359 66"
+    },
+    {
+        "city": "Gotse Delchev",
+        "area_code": "751",
+        "dialing_code": "+359 751"
+    },
+    {
+        "city": "Haskovo",
+        "area_code": "38",
+        "dialing_code": "+359 38"
+    },
+    {
+        "city": "Kardjali",
+        "area_code": "361",
+        "dialing_code": "+359 361"
+    },
+    {
+        "city": "Kazanluk",
+        "area_code": "431",
+        "dialing_code": "+359 431"
+    },
+    {
+        "city": "Kjustendil",
+        "area_code": "78",
+        "dialing_code": "+359 78"
+    },
+    {
+        "city": "Lovech",
+        "area_code": "68",
+        "dialing_code": "+359 68"
+    },
+    {
+        "city": "Lovetch",
+        "area_code": "68",
+        "dialing_code": "+359 68"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "89",
+        "dialing_code": "+359 89"
+    },
+    {
+        "city": "Mobile Phones - Globul",
+        "area_code": "89",
+        "dialing_code": "+359 89"
+    },
+    {
+        "city": "Mobile Phones - Mtel",
+        "area_code": "88",
+        "dialing_code": "+359 88"
+    },
+    {
+        "city": "Mobile Phones - Vivacom",
+        "area_code": "87",
+        "dialing_code": "+359 87"
+    },
+    {
+        "city": "Montana",
+        "area_code": "96",
+        "dialing_code": "+359 96"
+    },
+    {
+        "city": "Pazardjik",
+        "area_code": "34",
+        "dialing_code": "+359 34"
+    },
+    {
+        "city": "Pernik",
+        "area_code": "76",
+        "dialing_code": "+359 76"
+    },
+    {
+        "city": "Pleven",
+        "area_code": "64",
+        "dialing_code": "+359 64"
+    },
+    {
+        "city": "Plovdiv",
+        "area_code": "32",
+        "dialing_code": "+359 32"
+    },
+    {
+        "city": "Razgrad",
+        "area_code": "84",
+        "dialing_code": "+359 84"
+    },
+    {
+        "city": "Rousse",
+        "area_code": "82",
+        "dialing_code": "+359 82"
+    },
+    {
+        "city": "Ruse",
+        "area_code": "82",
+        "dialing_code": "+359 82"
+    },
+    {
+        "city": "Shoumen",
+        "area_code": "54",
+        "dialing_code": "+359 54"
+    },
+    {
+        "city": "Silistra",
+        "area_code": "86",
+        "dialing_code": "+359 86"
+    },
+    {
+        "city": "Sliven",
+        "area_code": "44",
+        "dialing_code": "+359 44"
+    },
+    {
+        "city": "Smolyan",
+        "area_code": "301",
+        "dialing_code": "+359 301"
+    },
+    {
+        "city": "Sofia",
+        "area_code": "2",
+        "dialing_code": "+359 2"
+    },
+    {
+        "city": "Stara Zagora",
+        "area_code": "42",
+        "dialing_code": "+359 42"
+    },
+    {
+        "city": "Targovishte",
+        "area_code": "601",
+        "dialing_code": "+359 601"
+    },
+    {
+        "city": "Varna",
+        "area_code": "52",
+        "dialing_code": "+359 52"
+    },
+    {
+        "city": "Veliko Tarnovo",
+        "area_code": "62",
+        "dialing_code": "+359 62"
+    },
+    {
+        "city": "Vidin",
+        "area_code": "94",
+        "dialing_code": "+359 94"
+    },
+    {
+        "city": "Vratsa",
+        "area_code": "92",
+        "dialing_code": "+359 92"
+    },
+    {
+        "city": "Yambol",
+        "area_code": "46",
+        "dialing_code": "+359 46"
+    }
+]

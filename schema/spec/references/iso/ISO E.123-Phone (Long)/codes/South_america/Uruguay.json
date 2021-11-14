@@ -1,0 +1,627 @@
+[
+    {
+        "city": "Aigui",
+        "area_code": "446",
+        "dialing_code": "+598 446"
+    },
+    {
+        "city": "Araminda",
+        "area_code": "337",
+        "dialing_code": "+598 337"
+    },
+    {
+        "city": "Artigas",
+        "area_code": "772",
+        "dialing_code": "+598 772"
+    },
+    {
+        "city": "Balneario Las Flores",
+        "area_code": "43",
+        "dialing_code": "+598 43"
+    },
+    {
+        "city": "Baltasar Brum",
+        "area_code": "776",
+        "dialing_code": "+598 776"
+    },
+    {
+        "city": "Barra del Chuy",
+        "area_code": "474",
+        "dialing_code": "+598 474"
+    },
+    {
+        "city": "Barrio Escavino",
+        "area_code": "349",
+        "dialing_code": "+598 349"
+    },
+    {
+        "city": "Bella Uniyn",
+        "area_code": "779",
+        "dialing_code": "+598 779"
+    },
+    {
+        "city": "Bella Uniýn",
+        "area_code": "779",
+        "dialing_code": "+598 779"
+    },
+    {
+        "city": "Belyn",
+        "area_code": "766",
+        "dialing_code": "+598 766"
+    },
+    {
+        "city": "Belýn",
+        "area_code": "766",
+        "dialing_code": "+598 766"
+    },
+    {
+        "city": "Boca del Rosario",
+        "area_code": "557",
+        "dialing_code": "+598 557"
+    },
+    {
+        "city": "Caballada",
+        "area_code": "52",
+        "dialing_code": "+598 52"
+    },
+    {
+        "city": "Canelones",
+        "area_code": "32",
+        "dialing_code": "+598 32"
+    },
+    {
+        "city": "Canelyn Chico",
+        "area_code": "33",
+        "dialing_code": "+598 33"
+    },
+    {
+        "city": "Canelýn Chico",
+        "area_code": "33",
+        "dialing_code": "+598 33"
+    },
+    {
+        "city": "Capurro",
+        "area_code": "338",
+        "dialing_code": "+598 338"
+    },
+    {
+        "city": "Cardal",
+        "area_code": "339",
+        "dialing_code": "+598 339"
+    },
+    {
+        "city": "Cardona",
+        "area_code": "536",
+        "dialing_code": "+598 536"
+    },
+    {
+        "city": "Carlos Reyles",
+        "area_code": "368",
+        "dialing_code": "+598 368"
+    },
+    {
+        "city": "Carmelo",
+        "area_code": "542",
+        "dialing_code": "+598 542"
+    },
+    {
+        "city": "Carmen",
+        "area_code": "365",
+        "dialing_code": "+598 365"
+    },
+    {
+        "city": "Caserko Murialdo",
+        "area_code": "313",
+        "dialing_code": "+598 313"
+    },
+    {
+        "city": "Castillos",
+        "area_code": "475",
+        "dialing_code": "+598 475"
+    },
+    {
+        "city": "Casupi",
+        "area_code": "311",
+        "dialing_code": "+598 311"
+    },
+    {
+        "city": "Cebollatk",
+        "area_code": "459",
+        "dialing_code": "+598 459"
+    },
+    {
+        "city": "Cerro Chato",
+        "area_code": "466",
+        "dialing_code": "+598 466"
+    },
+    {
+        "city": "Cerro Colorado",
+        "area_code": "318",
+        "dialing_code": "+598 318"
+    },
+    {
+        "city": "Chamizo",
+        "area_code": "319",
+        "dialing_code": "+598 319"
+    },
+    {
+        "city": "Colonia Cosmopolita",
+        "area_code": "556",
+        "dialing_code": "+598 556"
+    },
+    {
+        "city": "Colonia Miguelete",
+        "area_code": "575",
+        "dialing_code": "+598 575"
+    },
+    {
+        "city": "Colonia Piamontesa",
+        "area_code": "552",
+        "dialing_code": "+598 552"
+    },
+    {
+        "city": "Colonia Rapettti",
+        "area_code": "546",
+        "dialing_code": "+598 546"
+    },
+    {
+        "city": "Colonia Tomis",
+        "area_code": "562",
+        "dialing_code": "+598 562"
+    },
+    {
+        "city": "Colonia Valdense",
+        "area_code": "55",
+        "dialing_code": "+598 55"
+    },
+    {
+        "city": "Conchillas",
+        "area_code": "577",
+        "dialing_code": "+598 577"
+    },
+    {
+        "city": "Constituciyn",
+        "area_code": "764",
+        "dialing_code": "+598 764"
+    },
+    {
+        "city": "Constituciýn",
+        "area_code": "764",
+        "dialing_code": "+598 764"
+    },
+    {
+        "city": "Costa Azul (Rocha)",
+        "area_code": "479",
+        "dialing_code": "+598 479"
+    },
+    {
+        "city": "Dayman",
+        "area_code": "73",
+        "dialing_code": "+598 73"
+    },
+    {
+        "city": "Dolores",
+        "area_code": "534",
+        "dialing_code": "+598 534"
+    },
+    {
+        "city": "Durazno",
+        "area_code": "36",
+        "dialing_code": "+598 36"
+    },
+    {
+        "city": "Estaciyn Andreoni",
+        "area_code": "317",
+        "dialing_code": "+598 317"
+    },
+    {
+        "city": "Estaciyn Sosa Dkaz",
+        "area_code": "390",
+        "dialing_code": "+598 390"
+    },
+    {
+        "city": "Estaciýn Andreoni",
+        "area_code": "317",
+        "dialing_code": "+598 317"
+    },
+    {
+        "city": "Estaciýn Sosa Dkaz",
+        "area_code": "390",
+        "dialing_code": "+598 390"
+    },
+    {
+        "city": "Faro Josy Ignacio",
+        "area_code": "486",
+        "dialing_code": "+598 486"
+    },
+    {
+        "city": "Faro Josý Ignacio",
+        "area_code": "486",
+        "dialing_code": "+598 486"
+    },
+    {
+        "city": "Florida",
+        "area_code": "352",
+        "dialing_code": "+598 352"
+    },
+    {
+        "city": "Fraile Muerto",
+        "area_code": "688",
+        "dialing_code": "+598 688"
+    },
+    {
+        "city": "Guichyn",
+        "area_code": "742",
+        "dialing_code": "+598 742"
+    },
+    {
+        "city": "Guichýn",
+        "area_code": "742",
+        "dialing_code": "+598 742"
+    },
+    {
+        "city": "Ismael Cortinas",
+        "area_code": "539",
+        "dialing_code": "+598 539"
+    },
+    {
+        "city": "Izcua",
+        "area_code": "412",
+        "dialing_code": "+598 412"
+    },
+    {
+        "city": "J.P.Varela",
+        "area_code": "455",
+        "dialing_code": "+598 455"
+    },
+    {
+        "city": "Josy Batlle y Ordonez",
+        "area_code": "469",
+        "dialing_code": "+598 469"
+    },
+    {
+        "city": "Josy Enrique Rody",
+        "area_code": "538",
+        "dialing_code": "+598 538"
+    },
+    {
+        "city": "Josý Batlle y Ordonez",
+        "area_code": "469",
+        "dialing_code": "+598 469"
+    },
+    {
+        "city": "Josý Enrique Rodý",
+        "area_code": "538",
+        "dialing_code": "+598 538"
+    },
+    {
+        "city": "Juan Lacaze",
+        "area_code": "586",
+        "dialing_code": "+598 586"
+    },
+    {
+        "city": "La Barra (Maldonado)",
+        "area_code": "42",
+        "dialing_code": "+598 42"
+    },
+    {
+        "city": "La Coronilla",
+        "area_code": "476",
+        "dialing_code": "+598 476"
+    },
+    {
+        "city": "Lagomar",
+        "area_code": "38",
+        "dialing_code": "+598 38"
+    },
+    {
+        "city": "Laguna Merkn",
+        "area_code": "679",
+        "dialing_code": "+598 679"
+    },
+    {
+        "city": "Las Canas",
+        "area_code": "413",
+        "dialing_code": "+598 413"
+    },
+    {
+        "city": "Las Piedras",
+        "area_code": "324",
+        "dialing_code": "+598 324"
+    },
+    {
+        "city": "Lascano",
+        "area_code": "456",
+        "dialing_code": "+598 456"
+    },
+    {
+        "city": "Libertad",
+        "area_code": "345",
+        "dialing_code": "+598 345"
+    },
+    {
+        "city": "Maldonado",
+        "area_code": "42",
+        "dialing_code": "+598 42"
+    },
+    {
+        "city": "Mariscala",
+        "area_code": "449",
+        "dialing_code": "+598 449"
+    },
+    {
+        "city": "Melo",
+        "area_code": "64",
+        "dialing_code": "+598 64"
+    },
+    {
+        "city": "Mercedes",
+        "area_code": "532",
+        "dialing_code": "+598 532"
+    },
+    {
+        "city": "Minas",
+        "area_code": "442",
+        "dialing_code": "+598 442"
+    },
+    {
+        "city": "Minas de Corrales",
+        "area_code": "658",
+        "dialing_code": "+598 658"
+    },
+    {
+        "city": "Mones Quintela",
+        "area_code": "778",
+        "dialing_code": "+598 778"
+    },
+    {
+        "city": "Montevideo",
+        "area_code": "2",
+        "dialing_code": "+598 2"
+    },
+    {
+        "city": "Nueva Carrara",
+        "area_code": "415",
+        "dialing_code": "+598 415"
+    },
+    {
+        "city": "Nueva Palmira",
+        "area_code": "544",
+        "dialing_code": "+598 544"
+    },
+    {
+        "city": "Nuevo Berlkn",
+        "area_code": "568",
+        "dialing_code": "+598 568"
+    },
+    {
+        "city": "Ombses de Lavalle",
+        "area_code": "576",
+        "dialing_code": "+598 576"
+    },
+    {
+        "city": "Palmitas",
+        "area_code": "537",
+        "dialing_code": "+598 537"
+    },
+    {
+        "city": "Paso de los Toros",
+        "area_code": "664",
+        "dialing_code": "+598 664"
+    },
+    {
+        "city": "Paysands",
+        "area_code": "72",
+        "dialing_code": "+598 72"
+    },
+    {
+        "city": "Paysandu",
+        "area_code": "722",
+        "dialing_code": "+598 722"
+    },
+    {
+        "city": "Piedras Coloradas",
+        "area_code": "747",
+        "dialing_code": "+598 747"
+    },
+    {
+        "city": "Pintado",
+        "area_code": "354",
+        "dialing_code": "+598 354"
+    },
+    {
+        "city": "Piraraji",
+        "area_code": "448",
+        "dialing_code": "+598 448"
+    },
+    {
+        "city": "Playa Fomento",
+        "area_code": "587",
+        "dialing_code": "+598 587"
+    },
+    {
+        "city": "Punta Del Este",
+        "area_code": "42",
+        "dialing_code": "+598 42"
+    },
+    {
+        "city": "Punta del Diablo",
+        "area_code": "477",
+        "dialing_code": "+598 477"
+    },
+    {
+        "city": "Punta del Este",
+        "area_code": "42",
+        "dialing_code": "+598 42"
+    },
+    {
+        "city": "Quebracho",
+        "area_code": "754",
+        "dialing_code": "+598 754"
+    },
+    {
+        "city": "Rivera",
+        "area_code": "62",
+        "dialing_code": "+598 62"
+    },
+    {
+        "city": "Rko Branco",
+        "area_code": "675",
+        "dialing_code": "+598 675"
+    },
+    {
+        "city": "Rocha",
+        "area_code": "47",
+        "dialing_code": "+598 47"
+    },
+    {
+        "city": "Rodrkguez",
+        "area_code": "348",
+        "dialing_code": "+598 348"
+    },
+    {
+        "city": "Salto",
+        "area_code": "73",
+        "dialing_code": "+598 73"
+    },
+    {
+        "city": "San Gregorio de Polanco",
+        "area_code": "369",
+        "dialing_code": "+598 369"
+    },
+    {
+        "city": "San Jacinto",
+        "area_code": "399",
+        "dialing_code": "+598 399"
+    },
+    {
+        "city": "San Javier",
+        "area_code": "569",
+        "dialing_code": "+598 569"
+    },
+    {
+        "city": "San Jose",
+        "area_code": "342",
+        "dialing_code": "+598 342"
+    },
+    {
+        "city": "San Jose De Carrasco",
+        "area_code": "38",
+        "dialing_code": "+598 38"
+    },
+    {
+        "city": "San Josy",
+        "area_code": "34",
+        "dialing_code": "+598 34"
+    },
+    {
+        "city": "San Josý",
+        "area_code": "34",
+        "dialing_code": "+598 34"
+    },
+    {
+        "city": "San Ramyn",
+        "area_code": "312",
+        "dialing_code": "+598 312"
+    },
+    {
+        "city": "San Ramýn",
+        "area_code": "312",
+        "dialing_code": "+598 312"
+    },
+    {
+        "city": "Santa Ana",
+        "area_code": "588",
+        "dialing_code": "+598 588"
+    },
+    {
+        "city": "Santa Clara de Olimar",
+        "area_code": "464",
+        "dialing_code": "+598 464"
+    },
+    {
+        "city": "Sarandk del Yk",
+        "area_code": "367",
+        "dialing_code": "+598 367"
+    },
+    {
+        "city": "Solks de Mataojo",
+        "area_code": "379",
+        "dialing_code": "+598 379"
+    },
+    {
+        "city": "Tacuarembo",
+        "area_code": "63",
+        "dialing_code": "+598 63"
+    },
+    {
+        "city": "Tacuaremby",
+        "area_code": "63",
+        "dialing_code": "+598 63"
+    },
+    {
+        "city": "Tacuarembý",
+        "area_code": "63",
+        "dialing_code": "+598 63"
+    },
+    {
+        "city": "Tala",
+        "area_code": "315",
+        "dialing_code": "+598 315"
+    },
+    {
+        "city": "Tarariras",
+        "area_code": "574",
+        "dialing_code": "+598 574"
+    },
+    {
+        "city": "Termas del Arapey",
+        "area_code": "645",
+        "dialing_code": "+598 645"
+    },
+    {
+        "city": "Tomis Gomensoro",
+        "area_code": "777",
+        "dialing_code": "+598 777"
+    },
+    {
+        "city": "Tranqueras",
+        "area_code": "656",
+        "dialing_code": "+598 656"
+    },
+    {
+        "city": "Treinta y Tres",
+        "area_code": "45",
+        "dialing_code": "+598 45"
+    },
+    {
+        "city": "Trinidad",
+        "area_code": "364",
+        "dialing_code": "+598 364"
+    },
+    {
+        "city": "Velizquez",
+        "area_code": "457",
+        "dialing_code": "+598 457"
+    },
+    {
+        "city": "Vergara",
+        "area_code": "458",
+        "dialing_code": "+598 458"
+    },
+    {
+        "city": "Vichadero",
+        "area_code": "654",
+        "dialing_code": "+598 654"
+    },
+    {
+        "city": "Young",
+        "area_code": "567",
+        "dialing_code": "+598 567"
+    },
+    {
+        "city": "Zapicin",
+        "area_code": "463",
+        "dialing_code": "+598 463"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "city": "Alabaster",
+        "area_code": "205",
+        "dialing_code": "+1 205"
+    },
+    {
+        "city": "Anniston",
+        "area_code": "256",
+        "dialing_code": "+1 256"
+    },
+    {
+        "city": "Athens",
+        "area_code": "256",
+        "dialing_code": "+1 256"
+    },
+    {
+        "city": "Auburn",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Bessemer",
+        "area_code": "205",
+        "dialing_code": "+1 205"
+    },
+    {
+        "city": "Decatur",
+        "area_code": "256",
+        "dialing_code": "+1 256"
+    },
+    {
+        "city": "Dothan",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Enterprise",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Huntsville",
+        "area_code": "256",
+        "dialing_code": "+1 256"
+    },
+    {
+        "city": "Madison",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Mobile",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Montgomery",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Pelham",
+        "area_code": "229",
+        "dialing_code": "+1 229"
+    },
+    {
+        "city": "Phenix City",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Prattville",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Tuscaloosa",
+        "area_code": "205",
+        "dialing_code": "+1 205"
+    }
+]

@@ -1,0 +1,187 @@
+[
+    {
+        "city": "Ann Arbor",
+        "area_code": "734",
+        "dialing_code": "+1 734"
+    },
+    {
+        "city": "Battle Creek",
+        "area_code": "269",
+        "dialing_code": "+1 269"
+    },
+    {
+        "city": "Bay City",
+        "area_code": "989",
+        "dialing_code": "+1 989"
+    },
+    {
+        "city": "Canton",
+        "area_code": "734",
+        "dialing_code": "+1 734"
+    },
+    {
+        "city": "Clinton",
+        "area_code": "517",
+        "dialing_code": "+1 517"
+    },
+    {
+        "city": "Dearborn",
+        "area_code": "313",
+        "dialing_code": "+1 313"
+    },
+    {
+        "city": "Detroit",
+        "area_code": "313",
+        "dialing_code": "+1 313"
+    },
+    {
+        "city": "Flint",
+        "area_code": "810",
+        "dialing_code": "+1 810"
+    },
+    {
+        "city": "Garden City",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Grand Rapids",
+        "area_code": "616",
+        "dialing_code": "+1 616"
+    },
+    {
+        "city": "Harrison",
+        "area_code": "989",
+        "dialing_code": "+1 989"
+    },
+    {
+        "city": "Holland",
+        "area_code": "616",
+        "dialing_code": "+1 616"
+    },
+    {
+        "city": "Jackson",
+        "area_code": "601",
+        "dialing_code": "+1 601"
+    },
+    {
+        "city": "Lansing",
+        "area_code": "517",
+        "dialing_code": "+1 517"
+    },
+    {
+        "city": "Lincoln Park",
+        "area_code": "313",
+        "dialing_code": "+1 313"
+    },
+    {
+        "city": "Livonia",
+        "area_code": "734",
+        "dialing_code": "+1 734"
+    },
+    {
+        "city": "Madison Heights",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Midland",
+        "area_code": "432",
+        "dialing_code": "+1 432"
+    },
+    {
+        "city": "Mount Pleasant",
+        "area_code": "989",
+        "dialing_code": "+1 989"
+    },
+    {
+        "city": "Novi",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Oak Park",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Pontiac",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Port Huron",
+        "area_code": "810",
+        "dialing_code": "+1 810"
+    },
+    {
+        "city": "Reading",
+        "area_code": "517",
+        "dialing_code": "+1 517"
+    },
+    {
+        "city": "Redford",
+        "area_code": "313",
+        "dialing_code": "+1 313"
+    },
+    {
+        "city": "Roseville",
+        "area_code": "586",
+        "dialing_code": "+1 586"
+    },
+    {
+        "city": "Royal Oak",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Saginaw",
+        "area_code": "989",
+        "dialing_code": "+1 989"
+    },
+    {
+        "city": "Shelby",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Southfield",
+        "area_code": "810",
+        "dialing_code": "+1 810"
+    },
+    {
+        "city": "Sterling Heights",
+        "area_code": "586",
+        "dialing_code": "+1 586"
+    },
+    {
+        "city": "Troy",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Wakefield",
+        "area_code": "906",
+        "dialing_code": "+1 906"
+    },
+    {
+        "city": "Warren",
+        "area_code": "586",
+        "dialing_code": "+1 586"
+    },
+    {
+        "city": "Waterford",
+        "area_code": "947",
+        "dialing_code": "+1 947"
+    },
+    {
+        "city": "Westland",
+        "area_code": "734",
+        "dialing_code": "+1 734"
+    },
+    {
+        "city": "Wyandotte",
+        "area_code": "734",
+        "dialing_code": "+1 734"
+    }
+]

@@ -1,0 +1,97 @@
+[
+    {
+        "city": "Abbotabad",
+        "area_code": "992",
+        "dialing_code": "+92 992"
+    },
+    {
+        "city": "Bahawalpur",
+        "area_code": "621",
+        "dialing_code": "+92 621"
+    },
+    {
+        "city": "Faisalabad",
+        "area_code": "41",
+        "dialing_code": "+92 41"
+    },
+    {
+        "city": "Ghourghushi",
+        "area_code": "5799",
+        "dialing_code": "+92 5799"
+    },
+    {
+        "city": "Gujranwala",
+        "area_code": "55",
+        "dialing_code": "+92 55"
+    },
+    {
+        "city": "Hyderabad",
+        "area_code": "221",
+        "dialing_code": "+92 221"
+    },
+    {
+        "city": "Islamabad",
+        "area_code": "51",
+        "dialing_code": "+92 51"
+    },
+    {
+        "city": "Karachi",
+        "area_code": "21",
+        "dialing_code": "+92 21"
+    },
+    {
+        "city": "Lahore",
+        "area_code": "42",
+        "dialing_code": "+92 42"
+    },
+    {
+        "city": "Multan",
+        "area_code": "61",
+        "dialing_code": "+92 61"
+    },
+    {
+        "city": "Okara",
+        "area_code": "442",
+        "dialing_code": "+92 442"
+    },
+    {
+        "city": "Peshawar",
+        "area_code": "91",
+        "dialing_code": "+92 91"
+    },
+    {
+        "city": "Quetta",
+        "area_code": "81",
+        "dialing_code": "+92 81"
+    },
+    {
+        "city": "Rawalpindi",
+        "area_code": "51",
+        "dialing_code": "+92 51"
+    },
+    {
+        "city": "Rojhan",
+        "area_code": "604",
+        "dialing_code": "+92 604"
+    },
+    {
+        "city": "Sahiwal",
+        "area_code": "441",
+        "dialing_code": "+92 441"
+    },
+    {
+        "city": "Sargodha",
+        "area_code": "451",
+        "dialing_code": "+92 451"
+    },
+    {
+        "city": "Sialkot",
+        "area_code": "524",
+        "dialing_code": "+92 524"
+    },
+    {
+        "city": "Sukkur",
+        "area_code": "71",
+        "dialing_code": "+92 71"
+    }
+]

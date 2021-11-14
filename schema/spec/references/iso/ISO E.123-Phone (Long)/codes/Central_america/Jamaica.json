@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Falmouth",
+        "area_code": "859",
+        "dialing_code": "+1876 859"
+    },
+    {
+        "city": "Kingston",
+        "area_code": "770",
+        "dialing_code": "+1876 770"
+    },
+    {
+        "city": "Reading",
+        "area_code": "610",
+        "dialing_code": "+1876 610"
+    }
+]

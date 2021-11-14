@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A 7 character string representing a year and month in ISO 8601 YYYY-MM date format. This is a floating time and considered to be time zone independent",
+    "type": "string",
+    "format": "paypal_common_date_year_month_v1",
+    "minLength": 7,
+    "maxLength": 7,
+    "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])$"
+}

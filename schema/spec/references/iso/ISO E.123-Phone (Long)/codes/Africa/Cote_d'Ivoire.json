@@ -1,0 +1,77 @@
+[
+    {
+        "city": "Abengourou",
+        "area_code": "35",
+        "dialing_code": "+225 35"
+    },
+    {
+        "city": "Abidjan",
+        "area_code": "21",
+        "dialing_code": "+225 21"
+    },
+    {
+        "city": "Abobo",
+        "area_code": "24",
+        "dialing_code": "+225 24"
+    },
+    {
+        "city": "Banco",
+        "area_code": "23",
+        "dialing_code": "+225 23"
+    },
+    {
+        "city": "Bouake",
+        "area_code": "31",
+        "dialing_code": "+225 31"
+    },
+    {
+        "city": "Bouaky",
+        "area_code": "31",
+        "dialing_code": "+225 31"
+    },
+    {
+        "city": "Bouaké",
+        "area_code": "31",
+        "dialing_code": "+225 31"
+    },
+    {
+        "city": "Bouaký",
+        "area_code": "31",
+        "dialing_code": "+225 31"
+    },
+    {
+        "city": "Cocody",
+        "area_code": "22",
+        "dialing_code": "+225 22"
+    },
+    {
+        "city": "Daloa",
+        "area_code": "32",
+        "dialing_code": "+225 32"
+    },
+    {
+        "city": "Korhogo",
+        "area_code": "36",
+        "dialing_code": "+225 36"
+    },
+    {
+        "city": "Man",
+        "area_code": "33",
+        "dialing_code": "+225 33"
+    },
+    {
+        "city": "Plateau",
+        "area_code": "20",
+        "dialing_code": "+225 20"
+    },
+    {
+        "city": "San Pedro",
+        "area_code": "34",
+        "dialing_code": "+225 34"
+    },
+    {
+        "city": "Yamoussoukro",
+        "area_code": "30",
+        "dialing_code": "+225 30"
+    }
+]

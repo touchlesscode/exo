@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Bandar Seri Begawan",
+        "area_code": "2",
+        "dialing_code": "+599 2"
+    },
+    {
+        "city": "Bonaire",
+        "area_code": "7",
+        "dialing_code": "+599 7"
+    },
+    {
+        "city": "Curacao",
+        "area_code": "9",
+        "dialing_code": "+599 9"
+    },
+    {
+        "city": "Saba",
+        "area_code": "4",
+        "dialing_code": "+599 4"
+    },
+    {
+        "city": "St. Eustatius",
+        "area_code": "3",
+        "dialing_code": "+599 3"
+    },
+    {
+        "city": "St. Maarten",
+        "area_code": "5",
+        "dialing_code": "+599 5"
+    },
+    {
+        "city": "Willemstad",
+        "area_code": "9",
+        "dialing_code": "+599 9"
+    }
+]

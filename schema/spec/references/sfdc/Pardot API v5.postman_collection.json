@@ -1,0 +1,3381 @@
+{
+	"info": {
+		"_postman_id": "87a7ffa0-f397-443e-9a3d-e6a74e0e8c26",
+		"name": "Pardot API v5",
+		"description": "The Pardot V5 API collection contains requests for the following Salesforce Pardot APIs:\n\n<table>\n   <tr>\n      <td> V5 Synchronous API</td>\n   </tr>\n</table>\n\n**⚠️ Disclaimers:**\n- This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.\n- API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.salesforce.com/docs/marketing/pardot/overview).\n\nℹ️ Report issues and ask questions [on GitHub](https://github.com/pardot/postman-pardot-apis).\n\n## Get started\n\nFollow [this documentation](https://github.com/pardot/postman-pardot-apis) to get started with the collection.\n\n## Authentication\n\nThe collection uses the [Web Server OAuth flow](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_web_server_flow.htm&type=5). Add your connected app's client ID and secret as a collection variable.  Next go to the collection->Auth & request a token.\n\nLearn more about setting up a connected app and authentication in the [developer documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/getting-started.html#authentication). \n\n## Variables Reference\n\nThe collection relies on the following variables:\n\n| Variable | Description |\n| --- | --- |\n| `access_token`| Set automatically when you authenticate.|\n| `oauth_domain` | The base login URL for authentication. Either:<br/>- `https://test.salesforce.com` for sandboxes or scratch orgs<br/>- `https://login.salesforce.com` for production, Trailhead Playground and Developer Edition orgs<br/>- your custom My Domain base URL. |\n| `domain` | The base login URL for authentication. Either:<br/>- 'https://pi.demo.pardot.com' for Pardot Sandboxes and Developer Environments<br/>- 'https://pi.pardot.com' for Pardot Production instances |\n|`grant_type`| Used only if you change to the username-password flow. Don't change the initial value.| \n| `sf_username ` | Your Salesforce username. |\n| `sf_password ` | Your Salesforce password. |\n| `clientId ` | Connected App Consumer Key. |\n| `clientSecret ` | Connected App Consumer Secret. |\n| `pardot_business_unit ` | The Pardot Business Unit ID of your specific Pardot instance |",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Campaign",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/campaigns/:id?fields=id,name,folderId, cost, parentCampaignId, isDeleted, createdById, updatedById, createdAt, updatedAt, salesforceId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"campaigns",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,folderId, cost, parentCampaignId, isDeleted, createdById, updatedById, createdAt, updatedAt, salesforceId",
+									"description": "(required) record fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieves a single campaign."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/campaigns?fields=id,name,folderId, cost, parentCampaignId, isDeleted, createdById, updatedById, createdAt, updatedAt, salesforceId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"campaigns"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,folderId, cost, parentCampaignId, isDeleted, createdById, updatedById, createdAt, updatedAt, salesforceId",
+									"description": "(required) record fields to return"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id DESC",
+									"description": "Order Results By: id, createdAt, updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqual",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqual",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a collection of campaigns."
+					},
+					"response": []
+				}
+			],
+			"description": "A Pardot campaign tracks the first interaction that a person has with your online marketing materials. Associate your assets to a Pardot campaign to organize and track your marketing efforts. Learn more about Pardot campaigns in [Salesforce Help](https://help.salesforce.com/s/articleView?id=sf.pardot_campaigns_parent.htm&type=5).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/campaign-v5.html#campaign-resources)"
+		},
+		{
+			"name": "Custom Field",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-fields/:id?fields=id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-fields",
+								":id"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Retrieves a single custom field."
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"TestField2\",\n\t\"fieldId\": \"Number_Field2\",\n\t\"type\":\"text\",\n\t\"valuesPrefill\":\"us states\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-fields?fields=id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-fields"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+									"description": "fields to return"
+								}
+							]
+						},
+						"description": "Creates a custom field."
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"TestField3\",\n\t\"fieldId\": \"Number_Field3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-fields/:id?fields=id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-fields",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+									"description": "fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Updates a custom field."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-fields?fields=id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-fields"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id, name, fieldId, apiFieldId, type, isRecordMultipleResponses, salesforceId, isUseValues, isAnalyticsSynced, createdById, updatedById, createdAt, updatedAt"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "createdAt ASC",
+									"description": "Order Results By: id, createdAt, updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a collection of custom fields."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-fields/:id",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-fields",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) CustomField record id"
+								}
+							]
+						},
+						"description": "Deletes a custom field."
+					},
+					"response": []
+				}
+			],
+			"description": "Use custom fields to capture and track more data about your prospects. You can use custom fields in forms and sync the Pardot fields with Salesforce fields. Learn more about Pardot fields in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_forms_prospect_fields.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/custom-field-v5.html)",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Custom redirects",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-redirects/:id?fields=id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-redirects",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+									"description": "(required) CustomRedirect fields to return"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"description": "(required) CustomRedirect record id"
+								}
+							]
+						},
+						"description": "Retrieves a single custom redirect."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-redirects?fields=id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-redirects"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+									"description": "(required) CustomRedirect fields to return"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order Results By: id",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a collection of custom redirects."
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"folderId\": 0,\n    \"name\": \"my CustomRedirect\",\n    \"destinationUrl\": \"my CustomRedirect\",\n    \"campaignId\": 0,\n    \"trackerDomainId\": 0,\n    \"vanityUrlPath\": \"my CustomRedirect\",\n    \"gaSource\": \"my CustomRedirect\",\n    \"gaMedium\": \"my CustomRedirect\",\n    \"gaTerm\": \"my CustomRedirect\",\n    \"gaContent\": \"my CustomRedirect\",\n    \"gaCampaign\": \"my CustomRedirect\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-redirects/:id?fields=id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-redirects",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+									"description": "(required) CustomRedirect fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"description": "(required) CustomRedirect record id"
+								}
+							]
+						},
+						"description": "Updates a custom redirect."
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"folderId\": 0,\n    \"name\": \"my CustomRedirect\",\n    \"destinationUrl\": \"my CustomRedirect\",\n    \"campaignId\": 0,\n    \"trackerDomainId\": 0,\n    \"vanityUrlPath\": \"my CustomRedirect\",\n    \"gaSource\": \"my CustomRedirect\",\n    \"gaMedium\": \"my CustomRedirect\",\n    \"gaTerm\": \"my CustomRedirect\",\n    \"gaContent\": \"my CustomRedirect\",\n    \"gaCampaign\": \"my CustomRedirect\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-redirects?fields=id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-redirects"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,salesforceId,folderId,name,destinationUrl,campaignId,trackerDomainId,vanityUrlPath,vanityUrl,trackedUrl,gaSource,gaMedium,gaTerm,gaContent,gaCampaign,bitlyIsPersonalized,bitlyShortUrl,createdAt,updatedAt,createdById,updatedById,isDeleted",
+									"description": "(required) CustomRedirect fields to return"
+								}
+							]
+						},
+						"description": "Creates a custom redirect."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/custom-redirects/:id",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"custom-redirects",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"description": "(required) CustomRedirect record id"
+								}
+							]
+						},
+						"description": "Deletes a custom redirect."
+					},
+					"response": []
+				}
+			],
+			"description": "Track links on your website or third-party site with Pardot’s custom redirects. For example, you can track a link on your Twitter page or a banner ad on a third-party site. When a user clicks a link, a corresponding activity is created on their profile. Learn about custom redirects in [Salefsorce Help](https://help.salesforce.com/articleView?id=sf.pardot_content_custom_redirects.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/custom-redirect-v5.html)",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "External Activities",
+			"item": [
+				{
+					"name": "Ingestion",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"extension\": \"extension API name\",\n    \"type\": \"activity type API name\",\n    \"email\": \"prospect@email.com\",\n    \"value\": \"any value\",\n    \"activityDate\": \"2021-01-01T11:08:00-04:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/external-activities",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"external-activities"
+							]
+						},
+						"description": "Submits external activity to Pardot. \n\n| Variable | Description |\n| --- | --- |\n| extension | The developer name (API Name) of the Marketing App Extension that generates this activity. |\n| type | The developer name (API Name) of the Marketing App Extension Activity Type that belongs to this activity. |\n| email | The email address of the prospect to which this activity should be assigned. |\n| value | A value representing the instance of this activity type. For example, a webinar name. |\n| activityDate | The date the activity occurred.  This isn't available for automations. |"
+					},
+					"response": []
+				}
+			],
+			"description": "External activity helps marketers use all of their prospect engagement to drive their marketing automations. There are two main components to external activity: an extension, which represents an integration, and the activity type, which is the type of engagement that can be submitted. For example, an extension can be an integration with Zoom, and the activity type can be registered for call and attended call.\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/external-activities-v5.html)"
+		},
+		{
+			"name": "Files",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/files/:id?fields=id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"files",
+								":id"
+							],
+							"query": [
+								{
+									"key": "deleted",
+									"value": "",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Retrieves a single file."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/files?fields=id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId&orderBy=id ASC",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"files"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId",
+									"description": "(required) file fields to return"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order Results By: id"
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a collection of files."
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "input",
+									"value": "{\n\t\"name\":\"my file\",\n\t\"campaignId\":1,\n\t\"trackerDomainId\":1,\n\t\"folderId\":1,\n\t\"vanityUrlPath\":\"myFile\"\n}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/files?fields=id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"files"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId",
+									"description": "fields to return"
+								}
+							]
+						},
+						"description": "Creates a file."
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"my file\",\n    \"campaignId\": 1,\n    \"trackerDomainId\": 2,\n    \"folderId\": 1,\n    \"vanityUrlPath\": \"myFile\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/files/:id?fields=id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId,createdBy.id,createdBy.username,updatedBy.id,updatedBy.username,trackerDomain.id,trackerDomain.domain",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"files",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,url,size,bitlyIsPersonalized,bitlyShortUrl,vanityUrl,vanityUrlPath,createdById,updatedById,createdAt,updatedAt,salesforceId,campaignId,trackerDomainId,isTracked,folderId,createdBy.id,createdBy.username,updatedBy.id,updatedBy.username,trackerDomain.id,trackerDomain.domain",
+									"description": "fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
+								}
+							]
+						},
+						"description": "Updates a file."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/files/:id",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"files",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Deletes a file."
+					},
+					"response": []
+				}
+			],
+			"description": "Upload images and other files to use in your Pardot emails, forms, and landing pages. Learn about files in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_content_files_parent.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/file-v5.html)"
+		},
+		{
+			"name": "Folder",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/folders/:id?fields=id,name,parentFolderId,path,usePermissions,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"folders",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,parentFolderId,path,usePermissions,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "deleted",
+									"value": "",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single folder."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/folders?fields=id,name,parentFolderId,path,usePermissions,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"folders"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,parentFolderId,path,usePermissions,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order Results By: id",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderIdGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderIdGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderIdLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderIdLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "parentFolderIdIsNull",
+									"value": "true",
+									"description": "Optional Filter - Boolean",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieves a collection of folders."
+					},
+					"response": []
+				}
+			],
+			"description": "Organize and nest your content and marketing assets in a way that makes sense for your team. Learn about folders in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_content_folders_parent.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/folder-v5.html)"
+		},
+		{
+			"name": "Form",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/forms/:id?fields=id,name,campaignId,embedCode,salesforceId,layoutTemplateId,submitButtonText,beforeFormContent,afterFormContent,thankYouContent,isAlwaysDisplay,redirectLocation,isUseRedirectLocation,fontSize,fontFamily,fontColor,labelAlignment,radioAlignment,checkboxAlignment,requiredCharacter,isCookieless,showNotProspect,isCaptchaEnabled,isDeleted,trackerDomainId,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"forms",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,campaignId,embedCode,salesforceId,layoutTemplateId,submitButtonText,beforeFormContent,afterFormContent,thankYouContent,isAlwaysDisplay,redirectLocation,isUseRedirectLocation,fontSize,fontFamily,fontColor,labelAlignment,radioAlignment,checkboxAlignment,requiredCharacter,isCookieless,showNotProspect,isCaptchaEnabled,isDeleted,trackerDomainId,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "deleted",
+									"value": "",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single form."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/forms?fields=id,name,campaignId,embedCode,salesforceId,layoutTemplateId,submitButtonText,beforeFormContent,afterFormContent,thankYouContent,isAlwaysDisplay,redirectLocation,isUseRedirectLocation,fontSize,fontFamily,fontColor,labelAlignment,radioAlignment,checkboxAlignment,requiredCharacter,isCookieless,showNotProspect,isCaptchaEnabled,isDeleted,trackerDomainId,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"forms"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,campaignId,embedCode,salesforceId,layoutTemplateId,submitButtonText,beforeFormContent,afterFormContent,thankYouContent,isAlwaysDisplay,redirectLocation,isUseRedirectLocation,fontSize,fontFamily,fontColor,labelAlignment,radioAlignment,checkboxAlignment,requiredCharacter,isCookieless,showNotProspect,isCaptchaEnabled,isDeleted,trackerDomainId,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id",
+									"description": "Order Results By:",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of forms."
+					},
+					"response": []
+				}
+			],
+			"description": "Use forms to collect visitor information and create identified prospects. Learn more about forms in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_forms.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/form-v5.html)"
+		},
+		{
+			"name": "Layout Templates",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/layout-templates/:id?fields=id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"layout-templates",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById",
+									"description": "(required) fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single layout template."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/layout-templates?fields=id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById&orderBy=id ASC",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"layout-templates"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order Results By: id"
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filters",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filters",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filters",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filters",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of layout templates."
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"my template\",\n    \"layoutContent\": \"<html></html>\",\n    \"formContent\": \"<form></form>\",\n    \"siteSearchContent\": \"search content\",\n    \"isIncludeDefaultCss\": true,\n    \"folderId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/layout-templates?fields=id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"layout-templates"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById"
+								}
+							]
+						},
+						"description": "Create a layout template."
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"my template\",\n    \"layoutContent\": \"<html></html>\",\n    \"formContent\": \"<form></form>\",\n    \"siteSearchContent\": \"search content\",\n    \"isIncludeDefaultCss\": true,\n    \"folderId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/layout-templates/:id?fields=id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"layout-templates",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,layoutContent,formContent,siteSearchContent,isIncludeDefaultCss,folderId,isDeleted,createdAt,updatedAt,createdById,updatedById",
+									"description": "(required) fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Update a layout template."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/layout-templates/:id",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"layout-templates",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Delete a layout template."
+					},
+					"response": []
+				}
+			],
+			"description": "Layout templates are used to format landing pages, forms, and site search results. Learn more about layout templates in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_landing_pages_create_layout.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/layout-template-v5.html)"
+		},
+		{
+			"name": "Lists",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/lists/:id?fields=id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"lists",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+									"description": "(required) file fields to return"
+								},
+								{
+									"key": "deleted",
+									"value": "",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) file record id"
+								}
+							]
+						},
+						"description": "Retrieve a single list."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/lists?fields=id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+									"description": "(required) file fields to return"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "createdAt ASC",
+									"description": "Order Results By: id, createdAt, updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "deleted",
+									"value": "true",
+									"description": "determines if deleted records are returned in the result set. Valid values are \"true\" to return only deleted, \"false\" to return no deleted records, and \"all\" to return all records. Default value is false.",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "Education Nurture",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of lists."
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"test name 3\",\n    \"description\": \"test description\",\n    \"title\": \"test title\",\n    \"isPublic\": false,\n    \"campaignId\": 1,\n    \"folderId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/lists?fields=id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId"
+								}
+							]
+						},
+						"description": "Create a list."
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"updated name\",\n    \"description\" : \"updated description\",\n    \"title\": \"updated title\",\n    \"isPublic\": false,\n    \"campaignId\": 2,\n    \"folderId\": 2\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/lists/47?fields=id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"lists",
+								"47"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,title,description,isDeleted,isDynamic,isPublic,isSalesforceVisible,createdAt,updatedAt,createdById,updatedById,folderId,campaignId"
+								}
+							]
+						},
+						"description": "Update a list."
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/lists/:id",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"lists",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Delete a list."
+					},
+					"response": []
+				}
+			],
+			"description": "A list is a group of prospects that you can use to send list emails or to feed engagement programs. Learn more about lists in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_segmentation_overview.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/list-v5.html)"
+		},
+		{
+			"name": "Prospect",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/prospects/:id?fields=id,addressOne,addressTwo,annualRevenue,assignedToId,campaignId,campaignParameter,city,comments,company,contentParameter,convertedAt,convertedFromObjectName,convertedFromObjectType,country,createdAt,salesforceAccountId,salesforceCampaignId,salesforceContactId,salesforceLastSync,salesforceLeadId,salesforceOwnerId,salesforceUrl,department,email,emailBouncedAt,emailBouncedReason,employees,fax,firstActivityAt,firstAssignedAt,firstName,firstReferrerQuery,firstReferrerType,firstReferrerUrl,grade,industry,isDeleted,isDoNotCall,isDoNotEmail,isEmailHardBounced,isReviewed,isStarred,jobTitle,lastActivityAt,lastName,lifecycleStageId,mediumParameter,notes,optedOut,password,phone,profileId,prospectAccountId,recentInteraction,salesforceId,salutation,score,source,sourceParameter,state,termParameter,territory,updatedAt,userId,website,yearsInBusiness,zip,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"prospects",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,addressOne,addressTwo,annualRevenue,assignedToId,campaignId,campaignParameter,city,comments,company,contentParameter,convertedAt,convertedFromObjectName,convertedFromObjectType,country,createdAt,salesforceAccountId,salesforceCampaignId,salesforceContactId,salesforceLastSync,salesforceLeadId,salesforceOwnerId,salesforceUrl,department,email,emailBouncedAt,emailBouncedReason,employees,fax,firstActivityAt,firstAssignedAt,firstName,firstReferrerQuery,firstReferrerType,firstReferrerUrl,grade,industry,isDeleted,isDoNotCall,isDoNotEmail,isEmailHardBounced,isReviewed,isStarred,jobTitle,lastActivityAt,lastName,lifecycleStageId,mediumParameter,notes,optedOut,password,phone,profileId,prospectAccountId,recentInteraction,salesforceId,salutation,score,source,sourceParameter,state,termParameter,territory,updatedAt,userId,website,yearsInBusiness,zip,createdById,updatedById",
+									"description": "(required) record fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single prospect."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/prospects?fields=id,addressOne,addressTwo,annualRevenue,assignedToId,campaignId,campaignParameter,city,comments,company,contentParameter,convertedAt,convertedFromObjectName,convertedFromObjectType,country,createdAt,salesforceAccountId,salesforceCampaignId,salesforceContactId,salesforceLastSync,salesforceLeadId,salesforceOwnerId,salesforceUrl,department,email,emailBouncedAt,emailBouncedReason,employees,fax,firstActivityAt,firstAssignedAt,firstName,firstReferrerQuery,firstReferrerType,firstReferrerUrl,grade,industry,isDeleted,isDoNotCall,isDoNotEmail,isEmailHardBounced,isReviewed,isStarred,jobTitle,lastActivityAt,lastName,lifecycleStageId,mediumParameter,notes,optedOut,password,phone,profileId,prospectAccountId,recentInteraction,salesforceId,salutation,score,source,sourceParameter,state,termParameter,territory,updatedAt,userId,website,yearsInBusiness,zip,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"prospects"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,addressOne,addressTwo,annualRevenue,assignedToId,campaignId,campaignParameter,city,comments,company,contentParameter,convertedAt,convertedFromObjectName,convertedFromObjectType,country,createdAt,salesforceAccountId,salesforceCampaignId,salesforceContactId,salesforceLastSync,salesforceLeadId,salesforceOwnerId,salesforceUrl,department,email,emailBouncedAt,emailBouncedReason,employees,fax,firstActivityAt,firstAssignedAt,firstName,firstReferrerQuery,firstReferrerType,firstReferrerUrl,grade,industry,isDeleted,isDoNotCall,isDoNotEmail,isEmailHardBounced,isReviewed,isStarred,jobTitle,lastActivityAt,lastName,lifecycleStageId,mediumParameter,notes,optedOut,password,phone,profileId,prospectAccountId,recentInteraction,salesforceId,salutation,score,source,sourceParameter,state,termParameter,territory,updatedAt,userId,website,yearsInBusiness,zip,createdById,updatedById"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "lastActivityAt ASC",
+									"description": "Order Results By: id, lastActivityAt, createdAt, updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "lastActivityAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "lastActivityAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "lastActivityAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "lastActivityAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "userId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "assignedToId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of prospects."
+					},
+					"response": []
+				}
+			],
+			"description": "Use the prospect resources to create and delete prospects, and to query and modify their information. Learn more about prospects in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_prospects.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/prospect-v5.html)"
+		},
+		{
+			"name": "Prospect Accounts",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true,
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/prospect-accounts/:id?fields=id,name,salesforceId,createdAt,updatedAt,createdById,updatedById,assignedToId,annualRevenue,billingAddressOne,billingAddressTwo,billingCity,billingCountry,billingState,billingZip,description,employees,fax,industry,number,ownership,phone,rating,shippingAddressOne,shippingAddressTwo,shippingCity,shippingCountry,shippingState,shippingZip,sic,site,tickerSymbol,type,website,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"prospect-accounts",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,salesforceId,createdAt,updatedAt,createdById,updatedById,assignedToId,annualRevenue,billingAddressOne,billingAddressTwo,billingCity,billingCountry,billingState,billingZip,description,employees,fax,industry,number,ownership,phone,rating,shippingAddressOne,shippingAddressTwo,shippingCity,shippingCountry,shippingState,shippingZip,sic,site,tickerSymbol,type,website,isDeleted",
+									"description": "(required) ProspectAccount fields to return"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) ProspectAccount record id"
+								}
+							]
+						},
+						"description": "Retrieve a single prospect account."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"description": true,
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/prospect-accounts?fields=id,name,salesforceId,createdAt,updatedAt,createdById,updatedById,assignedToId,annualRevenue,billingAddressOne,billingAddressTwo,billingCity,billingCountry,billingState,billingZip,description,employees,fax,industry,number,ownership,phone,rating,shippingAddressOne,shippingAddressTwo,shippingCity,shippingCountry,shippingState,shippingZip,sic,site,tickerSymbol,type,website,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"prospect-accounts"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,name,salesforceId,createdAt,updatedAt,createdById,updatedById,assignedToId,annualRevenue,billingAddressOne,billingAddressTwo,billingCity,billingCountry,billingState,billingZip,description,employees,fax,industry,number,ownership,phone,rating,shippingAddressOne,shippingAddressTwo,shippingCity,shippingCountry,shippingState,shippingZip,sic,site,tickerSymbol,type,website,isDeleted",
+									"description": "(required) ProspectAccount fields to return"
+								},
+								{
+									"key": "deleted",
+									"value": "false",
+									"description": "boolean - return deleted records",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order By Options: id, salesforceId",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of prospect accounts."
+					},
+					"response": []
+				}
+			],
+			"description": "Prospect accounts group prospect accounts that work for the same company under the same umbrella, keeping all the information about the company in one place. Use prospect account resources to request the name and Pardot ID of your prospect accounts. Learn more about prospect accounts in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_prospect_account_parent.htm).\n\n[View this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/prospect-account-v5.html)"
+		},
+		{
+			"name": "Tracker Domain",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/tracker-domains/:id?fields=id,domain,isPrimary,isDeleted",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"tracker-domains",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,domain,isPrimary,isDeleted",
+									"description": "(required) record fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single tracker domain."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/tracker-domains?fields=id,domain,isPrimary,isDeleted,defaultCampaignId,httpsStatus,sslStatus,sslStatusDetails,sslRequestedById,validationStatus,validatedAt,vanityUrlStatus,trackingCode,createdAt,updatedAt,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"tracker-domains"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,domain,isPrimary,isDeleted,defaultCampaignId,httpsStatus,sslStatus,sslStatusDetails,sslRequestedById,validationStatus,validatedAt,vanityUrlStatus,trackingCode,createdAt,updatedAt,createdById,updatedById"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "id ASC",
+									"description": "Order By Options: id",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of tracker domains."
+					},
+					"response": []
+				}
+			],
+			"description": "Tracker domains give your visitors a seamless transition between your hosted pages and forms and your Pardot assets. Learn more about tracker domains in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_admin_tracker_domain_parent.htm).\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/tracker-domain-v5.html)"
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/users/:id?fields=id,email,firstName,lastName,username,jobTitle,role,salesforceId,createdAt,updatedAt,isDeleted,createdById,updatedById",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"users",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,email,firstName,lastName,username,jobTitle,role,salesforceId,createdAt,updatedAt,isDeleted,createdById,updatedById",
+									"description": "(required) record fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single user."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/users?fields=id,email,firstName,lastName,username,jobTitle,role,salesforceId,createdAt,updatedAt,isDeleted,createdById,updatedById&orderBy",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"users"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,email,firstName,lastName,username,jobTitle,role,salesforceId,createdAt,updatedAt,isDeleted,createdById,updatedById"
+								},
+								{
+									"key": "offset",
+									"value": "1",
+									"description": "integer - the offset of the first record to return. This is zero-based value, where no offset is equivalent to 0. This value must be between 1 and 2000, inclusive.",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "Email",
+									"value": "christopher.cornett@salesforce.com",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": ""
+								}
+							]
+						},
+						"description": "Retrieve a collection of users."
+					},
+					"response": []
+				}
+			],
+			"description": "User resources tell you about the Pardot users in your organization. Learn more about users in [Salesforce Help](https://help.salesforce.com/articleView?id=sf.pardot_users_managing_users.htm).\n\n\n[See this object's documentation](https://developer.salesforce.com/docs/marketing/pardot/guide/user-v5.html)"
+		},
+		{
+			"name": "Visit",
+			"item": [
+				{
+					"name": "Read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/visits/:id?fields=id,visitorId,prospectId,visitorPageViewCount,firstVisitorPageViewAt,lastVisitorPageViewAt,durationInSeconds,campaignParameter,mediumParameter,sourceParameter,contentParameter,termParameter,createdAt,updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"visits",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,visitorId,prospectId,visitorPageViewCount,firstVisitorPageViewAt,lastVisitorPageViewAt,durationInSeconds,campaignParameter,mediumParameter,sourceParameter,contentParameter,termParameter,createdAt,updatedAt",
+									"description": "(required) record fields to return"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single visit."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "If-Modified-Since",
+								"type": "text",
+								"value": "Thu, 21 May 2020 19:16:31 GMT",
+								"disabled": true
+							},
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/visits?fields=id,visitorId,prospectId,visitorPageViewCount,firstVisitorPageViewAt,lastVisitorPageViewAt,durationInSeconds,campaignParameter,mediumParameter,sourceParameter,contentParameter,termParameter,createdAt,updatedAt",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"visits"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,visitorId,prospectId,visitorPageViewCount,firstVisitorPageViewAt,lastVisitorPageViewAt,durationInSeconds,campaignParameter,mediumParameter,sourceParameter,contentParameter,termParameter,createdAt,updatedAt"
+								},
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "prospectId ASC",
+									"description": "Order Results By: id, prospectId, createdAt, updatedAt",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThan",
+									"value": "10",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idGreaterThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThan",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "idLessThanOrEqualTo",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "updatedAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "visitorId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "prospectId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of visits."
+					},
+					"response": []
+				}
+			],
+			"description": "Use visit resources to learn about a user visit to your website. Discover the user's Pardot ID, Google Analytics parameters, and other information."
+		},
+		{
+			"name": "Visitor Page Views",
+			"item": [
+				{
+					"name": "Read",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/visitor-page-views/:id?fields=id,url,title,createdAt,visitorId,campaignId,visitId,durationInSeconds,salesforceId",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"visitor-page-views",
+								":id"
+							],
+							"query": [
+								{
+									"key": "fields",
+									"value": "id,url,title,createdAt,visitorId,campaignId,visitId,durationInSeconds,salesforceId"
+								}
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "",
+									"description": "(required) record id"
+								}
+							]
+						},
+						"description": "Retrieve a single visitor page view."
+					},
+					"response": []
+				},
+				{
+					"name": "Query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Pardot-Business-Unit-Id",
+								"value": "{{pardot_business_unit}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://{{domain}}/api/v5/objects/visitor-page-views?fields=id,url,title,createdAt,visitorId,campaignId,visitId,durationInSeconds,salesforceId&orderBy=createdAt ASC",
+							"protocol": "https",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"api",
+								"v5",
+								"objects",
+								"visitor-page-views"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "200",
+									"description": "integer - the number of records to return. This value must be between 1 and 1000, inclusive. Default value is 200.",
+									"disabled": true
+								},
+								{
+									"key": "fields",
+									"value": "id,url,title,createdAt,visitorId,campaignId,visitId,durationInSeconds,salesforceId"
+								},
+								{
+									"key": "orderBy",
+									"value": "createdAt ASC",
+									"description": "Order Results By: createdAt"
+								},
+								{
+									"key": "visitorId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "visitId",
+									"value": "",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBefore",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtBeforeOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfter",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								},
+								{
+									"key": "createdAtAfterOrEqualTo",
+									"value": "2019-09-07T15:50:00-04:00",
+									"description": "Optional Filter",
+									"disabled": true
+								}
+							]
+						},
+						"description": "Retrieve a collection of visitor page views."
+					},
+					"response": []
+				}
+			],
+			"description": "Use visitor page view resources to learn about page views on your website."
+		},
+		{
+			"name": "Alternative Auth Requests",
+			"item": [
+				{
+					"name": "OAuth Username-Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const jsonObject = JSON.parse(responseBody);",
+									"",
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"context.set(\"access_token\", jsonObject.access_token);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "{{sf_username}}",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "{{sf_password}}",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "{{client_secret}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{oauth_domain}}/services/oauth2/token",
+							"protocol": "https",
+							"host": [
+								"{{oauth_domain}}"
+							],
+							"path": [
+								"services",
+								"oauth2",
+								"token"
+							]
+						},
+						"description": "An alternative way to authenticate using your username and password.  Update the collection authorization type to leverage \"Bearer\" vs. \"OAuth2.0\" for this login flow to work with this collection."
+					},
+					"response": []
+				}
+			],
+			"description": "Authentication alternatives to Salesforce OAuth2.0.",
+			"auth": {
+				"type": "noauth"
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "oauth2",
+		"oauth2": [
+			{
+				"key": "useBrowser",
+				"value": true,
+				"type": "boolean"
+			},
+			{
+				"key": "scope",
+				"value": "pardot_api",
+				"type": "string"
+			},
+			{
+				"key": "clientId",
+				"value": "{{client_id}}",
+				"type": "string"
+			},
+			{
+				"key": "authUrl",
+				"value": "https://{{oauth_domain}}/services/oauth2/authorize",
+				"type": "string"
+			},
+			{
+				"key": "grant_type",
+				"value": "implicit",
+				"type": "string"
+			},
+			{
+				"key": "tokenName",
+				"value": "access_token",
+				"type": "string"
+			},
+			{
+				"key": "challengeAlgorithm",
+				"value": "S256",
+				"type": "string"
+			},
+			{
+				"key": "addTokenTo",
+				"value": "header",
+				"type": "string"
+			},
+			{
+				"key": "client_authentication",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": ""
+		},
+		{
+			"key": "domain",
+			"value": "pi.demo.pardot.com"
+		},
+		{
+			"key": "oauth_domain",
+			"value": "login.salesforce.com"
+		},
+		{
+			"key": "grant_type",
+			"value": "password"
+		},
+		{
+			"key": "sf_username",
+			"value": "<Insert Username>"
+		},
+		{
+			"key": "sf_password",
+			"value": "<Insert Password>"
+		},
+		{
+			"key": "pardot_business_unit",
+			"value": "<Insert Pardot Business Unit>"
+		},
+		{
+			"key": "client_id",
+			"value": "<Insert Consumer ID>"
+		},
+		{
+			"key": "client_secret",
+			"value": "<Insert Consumer Secret>"
+		}
+	]
+}

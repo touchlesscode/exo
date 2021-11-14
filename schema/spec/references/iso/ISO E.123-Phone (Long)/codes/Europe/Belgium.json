@@ -1,0 +1,307 @@
+[
+    {
+        "city": "Aalst (Alost)",
+        "area_code": "53",
+        "dialing_code": "+32 53"
+    },
+    {
+        "city": "Anderlecht",
+        "area_code": "2",
+        "dialing_code": "+32 2"
+    },
+    {
+        "city": "Antwerp",
+        "area_code": "3",
+        "dialing_code": "+32 3"
+    },
+    {
+        "city": "Antwerpen (Anvers) \"Antwerp\"",
+        "area_code": "3",
+        "dialing_code": "+32 3"
+    },
+    {
+        "city": "Arlon",
+        "area_code": "63",
+        "dialing_code": "+32 63"
+    },
+    {
+        "city": "Ath",
+        "area_code": "67",
+        "dialing_code": "+32 67"
+    },
+    {
+        "city": "Bruges",
+        "area_code": "50",
+        "dialing_code": "+32 50"
+    },
+    {
+        "city": "Brugge (Bruges)",
+        "area_code": "50",
+        "dialing_code": "+32 50"
+    },
+    {
+        "city": "Brussel/Bruxelles \"Brussels\"",
+        "area_code": "2",
+        "dialing_code": "+32 2"
+    },
+    {
+        "city": "Brussels",
+        "area_code": "2",
+        "dialing_code": "+32 2"
+    },
+    {
+        "city": "Charleroi",
+        "area_code": "71",
+        "dialing_code": "+32 71"
+    },
+    {
+        "city": "Chimay",
+        "area_code": "60",
+        "dialing_code": "+32 60"
+    },
+    {
+        "city": "Ciney",
+        "area_code": "83",
+        "dialing_code": "+32 83"
+    },
+    {
+        "city": "Dendermonde",
+        "area_code": "52",
+        "dialing_code": "+32 52"
+    },
+    {
+        "city": "Diest",
+        "area_code": "13",
+        "dialing_code": "+32 13"
+    },
+    {
+        "city": "Dinant",
+        "area_code": "82",
+        "dialing_code": "+32 82"
+    },
+    {
+        "city": "Durbuy",
+        "area_code": "86",
+        "dialing_code": "+32 86"
+    },
+    {
+        "city": "Genk",
+        "area_code": "89",
+        "dialing_code": "+32 89"
+    },
+    {
+        "city": "Gent",
+        "area_code": "9",
+        "dialing_code": "+32 9"
+    },
+    {
+        "city": "Gent (Gand) \"Ghent\"",
+        "area_code": "9",
+        "dialing_code": "+32 9"
+    },
+    {
+        "city": "Ghent",
+        "area_code": "9",
+        "dialing_code": "+32 9"
+    },
+    {
+        "city": "Hasselt",
+        "area_code": "11",
+        "dialing_code": "+32 11"
+    },
+    {
+        "city": "Herentals",
+        "area_code": "14",
+        "dialing_code": "+32 14"
+    },
+    {
+        "city": "Huy (Hoei)",
+        "area_code": "85",
+        "dialing_code": "+32 85"
+    },
+    {
+        "city": "La Louviere",
+        "area_code": "64",
+        "dialing_code": "+32 64"
+    },
+    {
+        "city": "La Louviyre",
+        "area_code": "64",
+        "dialing_code": "+32 64"
+    },
+    {
+        "city": "La Louvière",
+        "area_code": "64",
+        "dialing_code": "+32 64"
+    },
+    {
+        "city": "La Louviýre",
+        "area_code": "64",
+        "dialing_code": "+32 64"
+    },
+    {
+        "city": "Leuven",
+        "area_code": "16",
+        "dialing_code": "+32 16"
+    },
+    {
+        "city": "Leuven (Louvain)",
+        "area_code": "16",
+        "dialing_code": "+32 16"
+    },
+    {
+        "city": "Libramont",
+        "area_code": "61",
+        "dialing_code": "+32 61"
+    },
+    {
+        "city": "Liege",
+        "area_code": "4",
+        "dialing_code": "+32 4"
+    },
+    {
+        "city": "Liege (Luik)",
+        "area_code": "4",
+        "dialing_code": "+32 4"
+    },
+    {
+        "city": "Liyge (Luik)",
+        "area_code": "4",
+        "dialing_code": "+32 4"
+    },
+    {
+        "city": "Liège (Luik)",
+        "area_code": "4",
+        "dialing_code": "+32 4"
+    },
+    {
+        "city": "Liýge (Luik)",
+        "area_code": "4",
+        "dialing_code": "+32 4"
+    },
+    {
+        "city": "Mechelen",
+        "area_code": "15",
+        "dialing_code": "+32 15"
+    },
+    {
+        "city": "Mechelen (Malines)",
+        "area_code": "15",
+        "dialing_code": "+32 15"
+    },
+    {
+        "city": "Mobile Phones - Base",
+        "area_code": "486",
+        "dialing_code": "+32 486"
+    },
+    {
+        "city": "Mobile Phones - Mobistar",
+        "area_code": "49",
+        "dialing_code": "+32 49"
+    },
+    {
+        "city": "Mobile Phones - Proximus",
+        "area_code": "47",
+        "dialing_code": "+32 47"
+    },
+    {
+        "city": "Mons",
+        "area_code": "65",
+        "dialing_code": "+32 65"
+    },
+    {
+        "city": "Mons (Bergen)",
+        "area_code": "65",
+        "dialing_code": "+32 65"
+    },
+    {
+        "city": "Namur",
+        "area_code": "81",
+        "dialing_code": "+32 81"
+    },
+    {
+        "city": "Namur (Namen)",
+        "area_code": "81",
+        "dialing_code": "+32 81"
+    },
+    {
+        "city": "Nieuwpoort (Nieuport)",
+        "area_code": "58",
+        "dialing_code": "+32 58"
+    },
+    {
+        "city": "Ninove",
+        "area_code": "54",
+        "dialing_code": "+32 54"
+    },
+    {
+        "city": "Nivelles (Nijvel)",
+        "area_code": "67",
+        "dialing_code": "+32 67"
+    },
+    {
+        "city": "Oostende",
+        "area_code": "59",
+        "dialing_code": "+32 59"
+    },
+    {
+        "city": "Oostende (Ostende) \"Ostend\"",
+        "area_code": "59",
+        "dialing_code": "+32 59"
+    },
+    {
+        "city": "Roeselare (Roulers)",
+        "area_code": "51",
+        "dialing_code": "+32 51"
+    },
+    {
+        "city": "Ronse",
+        "area_code": "55",
+        "dialing_code": "+32 55"
+    },
+    {
+        "city": "Stavelot",
+        "area_code": "80",
+        "dialing_code": "+32 80"
+    },
+    {
+        "city": "Tongeren (Tongres)",
+        "area_code": "12",
+        "dialing_code": "+32 12"
+    },
+    {
+        "city": "Tounai",
+        "area_code": "69",
+        "dialing_code": "+32 69"
+    },
+    {
+        "city": "Turnhout",
+        "area_code": "14",
+        "dialing_code": "+32 14"
+    },
+    {
+        "city": "Verviers",
+        "area_code": "87",
+        "dialing_code": "+32 87"
+    },
+    {
+        "city": "Veurne",
+        "area_code": "58",
+        "dialing_code": "+32 58"
+    },
+    {
+        "city": "Wareme",
+        "area_code": "19",
+        "dialing_code": "+32 19"
+    },
+    {
+        "city": "Wavre (Waver)",
+        "area_code": "10",
+        "dialing_code": "+32 10"
+    },
+    {
+        "city": "Zeebrugge",
+        "area_code": "50",
+        "dialing_code": "+32 50"
+    }
+]

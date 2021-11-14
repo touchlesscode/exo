@@ -1,0 +1,10 @@
+{
+    "type": "array",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "JSON patch request",
+    "description": "Request object used for a JSON patch.",
+    "additionalItems": false,
+    "items": {
+        "$ref": "patch.json"
+    }
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "city": "Addis Ababa",
+        "area_code": "1",
+        "dialing_code": "+251 1"
+    },
+    {
+        "city": "East Region",
+        "area_code": "5",
+        "dialing_code": "+251 5"
+    },
+    {
+        "city": "Gonder",
+        "area_code": "58",
+        "dialing_code": "+251 58"
+    },
+    {
+        "city": "MOBILE PHONES",
+        "area_code": "9",
+        "dialing_code": "+251 9"
+    },
+    {
+        "city": "North East Region",
+        "area_code": "3",
+        "dialing_code": "+251 3"
+    },
+    {
+        "city": "North Region",
+        "area_code": "4",
+        "dialing_code": "+251 4"
+    },
+    {
+        "city": "North West Region",
+        "area_code": "8",
+        "dialing_code": "+251 8"
+    },
+    {
+        "city": "South East Region",
+        "area_code": "2",
+        "dialing_code": "+251 2"
+    },
+    {
+        "city": "Southern Region",
+        "area_code": "6",
+        "dialing_code": "+251 6"
+    },
+    {
+        "city": "Western Region",
+        "area_code": "7",
+        "dialing_code": "+251 7"
+    }
+]

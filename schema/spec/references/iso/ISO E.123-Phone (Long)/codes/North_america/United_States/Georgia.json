@@ -1,0 +1,157 @@
+[
+    {
+        "city": "Albany",
+        "area_code": "518",
+        "dialing_code": "+1 518"
+    },
+    {
+        "city": "Alpharetta",
+        "area_code": "404",
+        "dialing_code": "+1 404"
+    },
+    {
+        "city": "Americus",
+        "area_code": "229",
+        "dialing_code": "+1 229"
+    },
+    {
+        "city": "Athens",
+        "area_code": "762",
+        "dialing_code": "+1 762"
+    },
+    {
+        "city": "Atlanta",
+        "area_code": "404",
+        "dialing_code": "+1 404"
+    },
+    {
+        "city": "Augusta",
+        "area_code": "207",
+        "dialing_code": "+1 207"
+    },
+    {
+        "city": "Brunswick",
+        "area_code": "912",
+        "dialing_code": "+1 912"
+    },
+    {
+        "city": "Canton",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Carrollton",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Cartersville",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Dalton",
+        "area_code": "762",
+        "dialing_code": "+1 762"
+    },
+    {
+        "city": "Decatur",
+        "area_code": "404",
+        "dialing_code": "+1 404"
+    },
+    {
+        "city": "Dublin",
+        "area_code": "478",
+        "dialing_code": "+1 478"
+    },
+    {
+        "city": "Forest Park",
+        "area_code": "404",
+        "dialing_code": "+1 404"
+    },
+    {
+        "city": "Gainesville",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Griffin",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Hinesville",
+        "area_code": "912",
+        "dialing_code": "+1 912"
+    },
+    {
+        "city": "Macon",
+        "area_code": "478",
+        "dialing_code": "+1 478"
+    },
+    {
+        "city": "Marietta",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Milledgeville",
+        "area_code": "478",
+        "dialing_code": "+1 478"
+    },
+    {
+        "city": "Newnan",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Roswell",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "Savannah",
+        "area_code": "912",
+        "dialing_code": "+1 912"
+    },
+    {
+        "city": "Statesboro",
+        "area_code": "912",
+        "dialing_code": "+1 912"
+    },
+    {
+        "city": "Thomasville",
+        "area_code": "229",
+        "dialing_code": "+1 229"
+    },
+    {
+        "city": "Tifton",
+        "area_code": "229",
+        "dialing_code": "+1 229"
+    },
+    {
+        "city": "Union City",
+        "area_code": "510",
+        "dialing_code": "+1 510"
+    },
+    {
+        "city": "Valdosta",
+        "area_code": "229",
+        "dialing_code": "+1 229"
+    },
+    {
+        "city": "Warner Robins",
+        "area_code": "478",
+        "dialing_code": "+1 478"
+    },
+    {
+        "city": "Woodstock",
+        "area_code": "802",
+        "dialing_code": "+1 802"
+    }
+]

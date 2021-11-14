@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Alotau/Daru/Kerema",
+        "area_code": "64",
+        "dialing_code": "+675 64"
+    },
+    {
+        "city": "Arawa/Rabaul",
+        "area_code": "98",
+        "dialing_code": "+675 98"
+    },
+    {
+        "city": "Goroka",
+        "area_code": "74",
+        "dialing_code": "+675 74"
+    },
+    {
+        "city": "Lae and Manus/Morobe",
+        "area_code": "49",
+        "dialing_code": "+675 49"
+    },
+    {
+        "city": "Lae/Manus",
+        "area_code": "47",
+        "dialing_code": "+675 47"
+    },
+    {
+        "city": "Madang/Wewal",
+        "area_code": "87",
+        "dialing_code": "+675 87"
+    },
+    {
+        "city": "Mt. Hagen",
+        "area_code": "56",
+        "dialing_code": "+675 56"
+    },
+    {
+        "city": "Port Moresby",
+        "area_code": "39",
+        "dialing_code": "+675 39"
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "city": "American Fork",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Bountiful",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Cedar City",
+        "area_code": "435",
+        "dialing_code": "+1 435"
+    },
+    {
+        "city": "Clearfield",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Draper",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Farmington",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Kaysville",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Layton",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Lehi",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Logan",
+        "area_code": "435",
+        "dialing_code": "+1 435"
+    },
+    {
+        "city": "Magna",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Midvale",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Ogden",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Orem",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Payson",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Pleasant Grove",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Provo",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Riverton",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Roy",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Salt Lake City",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Sandy",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "South Jordan",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    },
+    {
+        "city": "Spanish Fork",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Springville",
+        "area_code": "801",
+        "dialing_code": "+1 801"
+    },
+    {
+        "city": "Syracuse",
+        "area_code": "315",
+        "dialing_code": "+1 315"
+    },
+    {
+        "city": "Tooele",
+        "area_code": "435",
+        "dialing_code": "+1 435"
+    },
+    {
+        "city": "West Jordan",
+        "area_code": "385",
+        "dialing_code": "+1 385"
+    }
+]

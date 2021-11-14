@@ -1,0 +1,117 @@
+[
+    {
+        "city": "Arusha",
+        "area_code": "27",
+        "dialing_code": "+255 27"
+    },
+    {
+        "city": "Dar Es Salaam",
+        "area_code": "22",
+        "dialing_code": "+255 22"
+    },
+    {
+        "city": "Dodoma",
+        "area_code": "26",
+        "dialing_code": "+255 26"
+    },
+    {
+        "city": "Iringa",
+        "area_code": "26",
+        "dialing_code": "+255 26"
+    },
+    {
+        "city": "Kagera",
+        "area_code": "28",
+        "dialing_code": "+255 28"
+    },
+    {
+        "city": "Kigoma",
+        "area_code": "28",
+        "dialing_code": "+255 28"
+    },
+    {
+        "city": "Kilimanjao",
+        "area_code": "27",
+        "dialing_code": "+255 27"
+    },
+    {
+        "city": "Lindi",
+        "area_code": "23",
+        "dialing_code": "+255 23"
+    },
+    {
+        "city": "Mara",
+        "area_code": "28",
+        "dialing_code": "+255 28"
+    },
+    {
+        "city": "Mbeya",
+        "area_code": "25",
+        "dialing_code": "+255 25"
+    },
+    {
+        "city": "Morogoro",
+        "area_code": "223",
+        "dialing_code": "+255 223"
+    },
+    {
+        "city": "Mtara",
+        "area_code": "23",
+        "dialing_code": "+255 23"
+    },
+    {
+        "city": "Mtwara",
+        "area_code": "23",
+        "dialing_code": "+255 23"
+    },
+    {
+        "city": "Mwanza",
+        "area_code": "28",
+        "dialing_code": "+255 28"
+    },
+    {
+        "city": "Pemba",
+        "area_code": "24",
+        "dialing_code": "+255 24"
+    },
+    {
+        "city": "Pwani",
+        "area_code": "23",
+        "dialing_code": "+255 23"
+    },
+    {
+        "city": "Rukwa",
+        "area_code": "25",
+        "dialing_code": "+255 25"
+    },
+    {
+        "city": "Ruvuma",
+        "area_code": "25",
+        "dialing_code": "+255 25"
+    },
+    {
+        "city": "Shinyanga",
+        "area_code": "28",
+        "dialing_code": "+255 28"
+    },
+    {
+        "city": "Singida",
+        "area_code": "26",
+        "dialing_code": "+255 26"
+    },
+    {
+        "city": "Tabora",
+        "area_code": "26",
+        "dialing_code": "+255 26"
+    },
+    {
+        "city": "Tanga",
+        "area_code": "27",
+        "dialing_code": "+255 27"
+    },
+    {
+        "city": "Zanzibar",
+        "area_code": "24",
+        "dialing_code": "+255 24"
+    }
+]

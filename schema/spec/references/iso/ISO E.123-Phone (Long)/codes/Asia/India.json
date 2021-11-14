@@ -1,0 +1,2207 @@
+[
+    {
+        "city": "Agartala",
+        "area_code": "381",
+        "dialing_code": "+91 381"
+    },
+    {
+        "city": "Agra",
+        "area_code": "562",
+        "dialing_code": "+91 562"
+    },
+    {
+        "city": "Ahmedabad",
+        "area_code": "79",
+        "dialing_code": "+91 79"
+    },
+    {
+        "city": "Aizawl",
+        "area_code": "389",
+        "dialing_code": "+91 389"
+    },
+    {
+        "city": "Ajmer",
+        "area_code": "145",
+        "dialing_code": "+91 145"
+    },
+    {
+        "city": "Akbarpur",
+        "area_code": "5271",
+        "dialing_code": "+91 5271"
+    },
+    {
+        "city": "Akola",
+        "area_code": "724",
+        "dialing_code": "+91 724"
+    },
+    {
+        "city": "Alappuzha",
+        "area_code": "477",
+        "dialing_code": "+91 477"
+    },
+    {
+        "city": "Aligarh",
+        "area_code": "571",
+        "dialing_code": "+91 571"
+    },
+    {
+        "city": "Alipore",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Alwar",
+        "area_code": "144",
+        "dialing_code": "+91 144"
+    },
+    {
+        "city": "Amravati",
+        "area_code": "721",
+        "dialing_code": "+91 721"
+    },
+    {
+        "city": "Amritsar",
+        "area_code": "183",
+        "dialing_code": "+91 183"
+    },
+    {
+        "city": "Amroha",
+        "area_code": "5922",
+        "dialing_code": "+91 5922"
+    },
+    {
+        "city": "Anand",
+        "area_code": "2692",
+        "dialing_code": "+91 2692"
+    },
+    {
+        "city": "Anantapur",
+        "area_code": "8554",
+        "dialing_code": "+91 8554"
+    },
+    {
+        "city": "Anantnag",
+        "area_code": "193",
+        "dialing_code": "+91 193"
+    },
+    {
+        "city": "Angul",
+        "area_code": "6764",
+        "dialing_code": "+91 6764"
+    },
+    {
+        "city": "Araria",
+        "area_code": "6453",
+        "dialing_code": "+91 6453"
+    },
+    {
+        "city": "Arrah",
+        "area_code": "6182",
+        "dialing_code": "+91 6182"
+    },
+    {
+        "city": "Asansol",
+        "area_code": "341",
+        "dialing_code": "+91 341"
+    },
+    {
+        "city": "Auraiya",
+        "area_code": "5683",
+        "dialing_code": "+91 5683"
+    },
+    {
+        "city": "Aurangabad",
+        "area_code": "2432",
+        "dialing_code": "+91 2432"
+    },
+    {
+        "city": "Azamgarh",
+        "area_code": "5462",
+        "dialing_code": "+91 5462"
+    },
+    {
+        "city": "Badaun",
+        "area_code": "5832",
+        "dialing_code": "+91 5832"
+    },
+    {
+        "city": "Bagpat",
+        "area_code": "1234",
+        "dialing_code": "+91 1234"
+    },
+    {
+        "city": "Baharampur",
+        "area_code": "3482",
+        "dialing_code": "+91 3482"
+    },
+    {
+        "city": "Bahraich",
+        "area_code": "5252",
+        "dialing_code": "+91 5252"
+    },
+    {
+        "city": "Balaghat",
+        "area_code": "7632",
+        "dialing_code": "+91 7632"
+    },
+    {
+        "city": "Balangir",
+        "area_code": "6652",
+        "dialing_code": "+91 6652"
+    },
+    {
+        "city": "Balasore",
+        "area_code": "6782",
+        "dialing_code": "+91 6782"
+    },
+    {
+        "city": "Ballia",
+        "area_code": "5498",
+        "dialing_code": "+91 5498"
+    },
+    {
+        "city": "Balrampur",
+        "area_code": "5263",
+        "dialing_code": "+91 5263"
+    },
+    {
+        "city": "Balurghat",
+        "area_code": "3522",
+        "dialing_code": "+91 3522"
+    },
+    {
+        "city": "Banda",
+        "area_code": "5192",
+        "dialing_code": "+91 5192"
+    },
+    {
+        "city": "Bangalore",
+        "area_code": "80",
+        "dialing_code": "+91 80"
+    },
+    {
+        "city": "Banka",
+        "area_code": "6424",
+        "dialing_code": "+91 6424"
+    },
+    {
+        "city": "Bankura",
+        "area_code": "3242",
+        "dialing_code": "+91 3242"
+    },
+    {
+        "city": "Banswara",
+        "area_code": "2962",
+        "dialing_code": "+91 2962"
+    },
+    {
+        "city": "Barabanki",
+        "area_code": "5248",
+        "dialing_code": "+91 5248"
+    },
+    {
+        "city": "Baramulla",
+        "area_code": "1952",
+        "dialing_code": "+91 1952"
+    },
+    {
+        "city": "Baran",
+        "area_code": "7453",
+        "dialing_code": "+91 7453"
+    },
+    {
+        "city": "Barasat",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Barddhaman",
+        "area_code": "342",
+        "dialing_code": "+91 342"
+    },
+    {
+        "city": "Bardhaman",
+        "area_code": "342",
+        "dialing_code": "+91 342"
+    },
+    {
+        "city": "Bareilly",
+        "area_code": "581",
+        "dialing_code": "+91 581"
+    },
+    {
+        "city": "Bargarh",
+        "area_code": "6646",
+        "dialing_code": "+91 6646"
+    },
+    {
+        "city": "Baripada",
+        "area_code": "6792",
+        "dialing_code": "+91 6792"
+    },
+    {
+        "city": "Barmer",
+        "area_code": "2982",
+        "dialing_code": "+91 2982"
+    },
+    {
+        "city": "Barnala",
+        "area_code": "1679",
+        "dialing_code": "+91 1679"
+    },
+    {
+        "city": "Baroda",
+        "area_code": "265",
+        "dialing_code": "+91 265"
+    },
+    {
+        "city": "Barwani",
+        "area_code": "7290",
+        "dialing_code": "+91 7290"
+    },
+    {
+        "city": "Basti",
+        "area_code": "5542",
+        "dialing_code": "+91 5542"
+    },
+    {
+        "city": "Bathinda",
+        "area_code": "164",
+        "dialing_code": "+91 164"
+    },
+    {
+        "city": "Beawar",
+        "area_code": "1462",
+        "dialing_code": "+91 1462"
+    },
+    {
+        "city": "Beed",
+        "area_code": "2442",
+        "dialing_code": "+91 2442"
+    },
+    {
+        "city": "Begusarai",
+        "area_code": "6243",
+        "dialing_code": "+91 6243"
+    },
+    {
+        "city": "Berhampur",
+        "area_code": "680",
+        "dialing_code": "+91 680"
+    },
+    {
+        "city": "Bettiah",
+        "area_code": "6254",
+        "dialing_code": "+91 6254"
+    },
+    {
+        "city": "Betul",
+        "area_code": "7141",
+        "dialing_code": "+91 7141"
+    },
+    {
+        "city": "Bhabua",
+        "area_code": "6189",
+        "dialing_code": "+91 6189"
+    },
+    {
+        "city": "Bhadrachalam",
+        "area_code": "8743",
+        "dialing_code": "+91 8743"
+    },
+    {
+        "city": "Bhadrak",
+        "area_code": "6784",
+        "dialing_code": "+91 6784"
+    },
+    {
+        "city": "Bhagalpur",
+        "area_code": "641",
+        "dialing_code": "+91 641"
+    },
+    {
+        "city": "Bhandara",
+        "area_code": "7184",
+        "dialing_code": "+91 7184"
+    },
+    {
+        "city": "Bharatpur",
+        "area_code": "5644",
+        "dialing_code": "+91 5644"
+    },
+    {
+        "city": "Bharuch",
+        "area_code": "2642",
+        "dialing_code": "+91 2642"
+    },
+    {
+        "city": "Bhavnagar",
+        "area_code": "278",
+        "dialing_code": "+91 278"
+    },
+    {
+        "city": "Bhawanipatna",
+        "area_code": "6670",
+        "dialing_code": "+91 6670"
+    },
+    {
+        "city": "Bhilwara",
+        "area_code": "1482",
+        "dialing_code": "+91 1482"
+    },
+    {
+        "city": "Bhind",
+        "area_code": "7534",
+        "dialing_code": "+91 7534"
+    },
+    {
+        "city": "Bhinga",
+        "area_code": "5250",
+        "dialing_code": "+91 5250"
+    },
+    {
+        "city": "Bhopal",
+        "area_code": "755",
+        "dialing_code": "+91 755"
+    },
+    {
+        "city": "Bhubaneshwar",
+        "area_code": "674",
+        "dialing_code": "+91 674"
+    },
+    {
+        "city": "Bhubaneswar",
+        "area_code": "674",
+        "dialing_code": "+91 674"
+    },
+    {
+        "city": "Bhuj",
+        "area_code": "2832",
+        "dialing_code": "+91 2832"
+    },
+    {
+        "city": "Bijnor",
+        "area_code": "1342",
+        "dialing_code": "+91 1342"
+    },
+    {
+        "city": "Bikaner",
+        "area_code": "151",
+        "dialing_code": "+91 151"
+    },
+    {
+        "city": "Bokaro Steel City",
+        "area_code": "6542",
+        "dialing_code": "+91 6542"
+    },
+    {
+        "city": "Bombay",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Boudh",
+        "area_code": "6841",
+        "dialing_code": "+91 6841"
+    },
+    {
+        "city": "Bulandshahr",
+        "area_code": "5732",
+        "dialing_code": "+91 5732"
+    },
+    {
+        "city": "Buldhana",
+        "area_code": "7262",
+        "dialing_code": "+91 7262"
+    },
+    {
+        "city": "Bundi",
+        "area_code": "747",
+        "dialing_code": "+91 747"
+    },
+    {
+        "city": "Burhanpur",
+        "area_code": "7325",
+        "dialing_code": "+91 7325"
+    },
+    {
+        "city": "Buxar",
+        "area_code": "6183",
+        "dialing_code": "+91 6183"
+    },
+    {
+        "city": "Calcutta",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Chandauli",
+        "area_code": "5412",
+        "dialing_code": "+91 5412"
+    },
+    {
+        "city": "Chandigarh",
+        "area_code": "172",
+        "dialing_code": "+91 172"
+    },
+    {
+        "city": "Chandrapur",
+        "area_code": "7172",
+        "dialing_code": "+91 7172"
+    },
+    {
+        "city": "Chennai",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Chennai (Madras)",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Chennai (formerly Madras)",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Cherrapunji",
+        "area_code": "3637",
+        "dialing_code": "+91 3637"
+    },
+    {
+        "city": "Chhapra",
+        "area_code": "6152",
+        "dialing_code": "+91 6152"
+    },
+    {
+        "city": "Chhatarpur",
+        "area_code": "7682",
+        "dialing_code": "+91 7682"
+    },
+    {
+        "city": "Chhatrapur",
+        "area_code": "6811",
+        "dialing_code": "+91 6811"
+    },
+    {
+        "city": "Chhindwara",
+        "area_code": "7162",
+        "dialing_code": "+91 7162"
+    },
+    {
+        "city": "Chitrakuta",
+        "area_code": "5194",
+        "dialing_code": "+91 5194"
+    },
+    {
+        "city": "Chittoor",
+        "area_code": "8572",
+        "dialing_code": "+91 8572"
+    },
+    {
+        "city": "Chittorgarh",
+        "area_code": "8572",
+        "dialing_code": "+91 8572"
+    },
+    {
+        "city": "Churu",
+        "area_code": "1562",
+        "dialing_code": "+91 1562"
+    },
+    {
+        "city": "Cochin (Kochi)",
+        "area_code": "484",
+        "dialing_code": "+91 484"
+    },
+    {
+        "city": "Coimbator",
+        "area_code": "422",
+        "dialing_code": "+91 422"
+    },
+    {
+        "city": "Coimbatore",
+        "area_code": "422",
+        "dialing_code": "+91 422"
+    },
+    {
+        "city": "Cooch Behar",
+        "area_code": "3582",
+        "dialing_code": "+91 3582"
+    },
+    {
+        "city": "Cuddalore",
+        "area_code": "4142",
+        "dialing_code": "+91 4142"
+    },
+    {
+        "city": "Cuttack",
+        "area_code": "671",
+        "dialing_code": "+91 671"
+    },
+    {
+        "city": "Daman",
+        "area_code": "260",
+        "dialing_code": "+91 260"
+    },
+    {
+        "city": "Damoh",
+        "area_code": "7638",
+        "dialing_code": "+91 7638"
+    },
+    {
+        "city": "Darbhanga",
+        "area_code": "6272",
+        "dialing_code": "+91 6272"
+    },
+    {
+        "city": "Darjeeling",
+        "area_code": "354",
+        "dialing_code": "+91 354"
+    },
+    {
+        "city": "Datia",
+        "area_code": "7522",
+        "dialing_code": "+91 7522"
+    },
+    {
+        "city": "Dausa",
+        "area_code": "1427",
+        "dialing_code": "+91 1427"
+    },
+    {
+        "city": "Debagarh",
+        "area_code": "6641",
+        "dialing_code": "+91 6641"
+    },
+    {
+        "city": "Dehra Dun",
+        "area_code": "135",
+        "dialing_code": "+91 135"
+    },
+    {
+        "city": "Dehradun",
+        "area_code": "135",
+        "dialing_code": "+91 135"
+    },
+    {
+        "city": "Delhi",
+        "area_code": "11",
+        "dialing_code": "+91 11"
+    },
+    {
+        "city": "Deogarh",
+        "area_code": "6432",
+        "dialing_code": "+91 6432"
+    },
+    {
+        "city": "Deoghar",
+        "area_code": "6432",
+        "dialing_code": "+91 6432"
+    },
+    {
+        "city": "Deoria",
+        "area_code": "5568",
+        "dialing_code": "+91 5568"
+    },
+    {
+        "city": "Dewas",
+        "area_code": "7272",
+        "dialing_code": "+91 7272"
+    },
+    {
+        "city": "Dhanbad",
+        "area_code": "326",
+        "dialing_code": "+91 326"
+    },
+    {
+        "city": "Dhar",
+        "area_code": "7292",
+        "dialing_code": "+91 7292"
+    },
+    {
+        "city": "Dharmapuri",
+        "area_code": "4342",
+        "dialing_code": "+91 4342"
+    },
+    {
+        "city": "Dhenkanal",
+        "area_code": "6762",
+        "dialing_code": "+91 6762"
+    },
+    {
+        "city": "Dholpur",
+        "area_code": "5642",
+        "dialing_code": "+91 5642"
+    },
+    {
+        "city": "Dhule",
+        "area_code": "2562",
+        "dialing_code": "+91 2562"
+    },
+    {
+        "city": "Dibrugarh",
+        "area_code": "373",
+        "dialing_code": "+91 373"
+    },
+    {
+        "city": "Dimapur",
+        "area_code": "3862",
+        "dialing_code": "+91 3862"
+    },
+    {
+        "city": "Dindigul",
+        "area_code": "451",
+        "dialing_code": "+91 451"
+    },
+    {
+        "city": "Dispur",
+        "area_code": "361",
+        "dialing_code": "+91 361"
+    },
+    {
+        "city": "Dungarpur",
+        "area_code": "2964",
+        "dialing_code": "+91 2964"
+    },
+    {
+        "city": "Eluru",
+        "area_code": "8812",
+        "dialing_code": "+91 8812"
+    },
+    {
+        "city": "Erode",
+        "area_code": "424",
+        "dialing_code": "+91 424"
+    },
+    {
+        "city": "Etah",
+        "area_code": "5742",
+        "dialing_code": "+91 5742"
+    },
+    {
+        "city": "Etawah",
+        "area_code": "5688",
+        "dialing_code": "+91 5688"
+    },
+    {
+        "city": "Faizabad",
+        "area_code": "5278",
+        "dialing_code": "+91 5278"
+    },
+    {
+        "city": "Faridabad",
+        "area_code": "129",
+        "dialing_code": "+91 129"
+    },
+    {
+        "city": "Faridkot",
+        "area_code": "1639",
+        "dialing_code": "+91 1639"
+    },
+    {
+        "city": "Fatehgarh",
+        "area_code": "5692",
+        "dialing_code": "+91 5692"
+    },
+    {
+        "city": "Fatehgarh Sahib",
+        "area_code": "1763",
+        "dialing_code": "+91 1763"
+    },
+    {
+        "city": "Fatehpur",
+        "area_code": "5240",
+        "dialing_code": "+91 5240"
+    },
+    {
+        "city": "Fathepur Sikri",
+        "area_code": "5619",
+        "dialing_code": "+91 5619"
+    },
+    {
+        "city": "Firozabad",
+        "area_code": "5612",
+        "dialing_code": "+91 5612"
+    },
+    {
+        "city": "Firozpur",
+        "area_code": "1632",
+        "dialing_code": "+91 1632"
+    },
+    {
+        "city": "Gadchiroli",
+        "area_code": "7132",
+        "dialing_code": "+91 7132"
+    },
+    {
+        "city": "Gandhinagar",
+        "area_code": "2712",
+        "dialing_code": "+91 2712"
+    },
+    {
+        "city": "Ganganagar",
+        "area_code": "154",
+        "dialing_code": "+91 154"
+    },
+    {
+        "city": "Gangtok",
+        "area_code": "3592",
+        "dialing_code": "+91 3592"
+    },
+    {
+        "city": "Gaya",
+        "area_code": "631",
+        "dialing_code": "+91 631"
+    },
+    {
+        "city": "Ghaziabad",
+        "area_code": "120",
+        "dialing_code": "+91 120"
+    },
+    {
+        "city": "Ghazipur",
+        "area_code": "548",
+        "dialing_code": "+91 548"
+    },
+    {
+        "city": "Giridih",
+        "area_code": "1933",
+        "dialing_code": "+91 1933"
+    },
+    {
+        "city": "Gonda",
+        "area_code": "5262",
+        "dialing_code": "+91 5262"
+    },
+    {
+        "city": "Gondia",
+        "area_code": "7182",
+        "dialing_code": "+91 7182"
+    },
+    {
+        "city": "Gopalganj",
+        "area_code": "6156",
+        "dialing_code": "+91 6156"
+    },
+    {
+        "city": "Gorakhpur",
+        "area_code": "551",
+        "dialing_code": "+91 551"
+    },
+    {
+        "city": "Gumla",
+        "area_code": "6524",
+        "dialing_code": "+91 6524"
+    },
+    {
+        "city": "Guna",
+        "area_code": "7542",
+        "dialing_code": "+91 7542"
+    },
+    {
+        "city": "Guntur",
+        "area_code": "863",
+        "dialing_code": "+91 863"
+    },
+    {
+        "city": "Gurdaspur",
+        "area_code": "1874",
+        "dialing_code": "+91 1874"
+    },
+    {
+        "city": "Gurgaon",
+        "area_code": "124",
+        "dialing_code": "+91 124"
+    },
+    {
+        "city": "Guwahati",
+        "area_code": "361",
+        "dialing_code": "+91 361"
+    },
+    {
+        "city": "Gwalior",
+        "area_code": "751",
+        "dialing_code": "+91 751"
+    },
+    {
+        "city": "Gyanpur",
+        "area_code": "5414",
+        "dialing_code": "+91 5414"
+    },
+    {
+        "city": "Hajipur",
+        "area_code": "6224",
+        "dialing_code": "+91 6224"
+    },
+    {
+        "city": "Haldwani",
+        "area_code": "5946",
+        "dialing_code": "+91 5946"
+    },
+    {
+        "city": "Hamirpur",
+        "area_code": "5282",
+        "dialing_code": "+91 5282"
+    },
+    {
+        "city": "Hanumangarh",
+        "area_code": "1552",
+        "dialing_code": "+91 1552"
+    },
+    {
+        "city": "Harda",
+        "area_code": "7577",
+        "dialing_code": "+91 7577"
+    },
+    {
+        "city": "Hardoi",
+        "area_code": "5852",
+        "dialing_code": "+91 5852"
+    },
+    {
+        "city": "Haridwar",
+        "area_code": "1332",
+        "dialing_code": "+91 1332"
+    },
+    {
+        "city": "Hathras",
+        "area_code": "5722",
+        "dialing_code": "+91 5722"
+    },
+    {
+        "city": "Hazaribagh",
+        "area_code": "6546",
+        "dialing_code": "+91 6546"
+    },
+    {
+        "city": "Hingoli",
+        "area_code": "2456",
+        "dialing_code": "+91 2456"
+    },
+    {
+        "city": "Hoshangabad",
+        "area_code": "7574",
+        "dialing_code": "+91 7574"
+    },
+    {
+        "city": "Hoshiarpur",
+        "area_code": "1882",
+        "dialing_code": "+91 1882"
+    },
+    {
+        "city": "Howrah",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Hugli-Chuchura",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Hyderabad",
+        "area_code": "40",
+        "dialing_code": "+91 40"
+    },
+    {
+        "city": "Imphal",
+        "area_code": "3852",
+        "dialing_code": "+91 3852"
+    },
+    {
+        "city": "Indore",
+        "area_code": "731",
+        "dialing_code": "+91 731"
+    },
+    {
+        "city": "Itanagar",
+        "area_code": "360",
+        "dialing_code": "+91 360"
+    },
+    {
+        "city": "Jabalpur",
+        "area_code": "761",
+        "dialing_code": "+91 761"
+    },
+    {
+        "city": "Jagatsinghpur",
+        "area_code": "6724",
+        "dialing_code": "+91 6724"
+    },
+    {
+        "city": "Jaipur",
+        "area_code": "141",
+        "dialing_code": "+91 141"
+    },
+    {
+        "city": "Jaisalmer",
+        "area_code": "2922",
+        "dialing_code": "+91 2922"
+    },
+    {
+        "city": "Jalandhar",
+        "area_code": "181",
+        "dialing_code": "+91 181"
+    },
+    {
+        "city": "Jalgaon",
+        "area_code": "257",
+        "dialing_code": "+91 257"
+    },
+    {
+        "city": "Jalna",
+        "area_code": "2482",
+        "dialing_code": "+91 2482"
+    },
+    {
+        "city": "Jalore",
+        "area_code": "2972",
+        "dialing_code": "+91 2972"
+    },
+    {
+        "city": "Jalpaiguri",
+        "area_code": "3561",
+        "dialing_code": "+91 3561"
+    },
+    {
+        "city": "Jammu",
+        "area_code": "191",
+        "dialing_code": "+91 191"
+    },
+    {
+        "city": "Jamnagar",
+        "area_code": "288",
+        "dialing_code": "+91 288"
+    },
+    {
+        "city": "Jamshedpur",
+        "area_code": "657",
+        "dialing_code": "+91 657"
+    },
+    {
+        "city": "Jamui",
+        "area_code": "6345",
+        "dialing_code": "+91 6345"
+    },
+    {
+        "city": "Jaunpur",
+        "area_code": "5452",
+        "dialing_code": "+91 5452"
+    },
+    {
+        "city": "Jehanabad",
+        "area_code": "6114",
+        "dialing_code": "+91 6114"
+    },
+    {
+        "city": "Jhabua",
+        "area_code": "7392",
+        "dialing_code": "+91 7392"
+    },
+    {
+        "city": "Jhalawar",
+        "area_code": "7432",
+        "dialing_code": "+91 7432"
+    },
+    {
+        "city": "Jhansi",
+        "area_code": "510",
+        "dialing_code": "+91 510"
+    },
+    {
+        "city": "Jharsuguda",
+        "area_code": "6645",
+        "dialing_code": "+91 6645"
+    },
+    {
+        "city": "Jhunjhunu",
+        "area_code": "1595",
+        "dialing_code": "+91 1595"
+    },
+    {
+        "city": "Jodhpur",
+        "area_code": "291",
+        "dialing_code": "+91 291"
+    },
+    {
+        "city": "Jullundur",
+        "area_code": "181",
+        "dialing_code": "+91 181"
+    },
+    {
+        "city": "Junagadh",
+        "area_code": "285",
+        "dialing_code": "+91 285"
+    },
+    {
+        "city": "Kalpetta",
+        "area_code": "4936",
+        "dialing_code": "+91 4936"
+    },
+    {
+        "city": "Kanchipuram",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Kannauj",
+        "area_code": "5694",
+        "dialing_code": "+91 5694"
+    },
+    {
+        "city": "Kanpur",
+        "area_code": "512",
+        "dialing_code": "+91 512"
+    },
+    {
+        "city": "Kapurthala",
+        "area_code": "1822",
+        "dialing_code": "+91 1822"
+    },
+    {
+        "city": "Karauli",
+        "area_code": "7464",
+        "dialing_code": "+91 7464"
+    },
+    {
+        "city": "Karjat",
+        "area_code": "2489",
+        "dialing_code": "+91 2489"
+    },
+    {
+        "city": "Karur",
+        "area_code": "4324",
+        "dialing_code": "+91 4324"
+    },
+    {
+        "city": "Kasaragod",
+        "area_code": "494",
+        "dialing_code": "+91 494"
+    },
+    {
+        "city": "Kathua",
+        "area_code": "1922",
+        "dialing_code": "+91 1922"
+    },
+    {
+        "city": "Katihar",
+        "area_code": "6452",
+        "dialing_code": "+91 6452"
+    },
+    {
+        "city": "Katni",
+        "area_code": "7622",
+        "dialing_code": "+91 7622"
+    },
+    {
+        "city": "Kavaratti",
+        "area_code": "4896",
+        "dialing_code": "+91 4896"
+    },
+    {
+        "city": "Kendrapara",
+        "area_code": "6727",
+        "dialing_code": "+91 6727"
+    },
+    {
+        "city": "Kendujhar",
+        "area_code": "6766",
+        "dialing_code": "+91 6766"
+    },
+    {
+        "city": "Khagaria",
+        "area_code": "6244",
+        "dialing_code": "+91 6244"
+    },
+    {
+        "city": "Khalilabad",
+        "area_code": "5547",
+        "dialing_code": "+91 5547"
+    },
+    {
+        "city": "Khandwa",
+        "area_code": "733",
+        "dialing_code": "+91 733"
+    },
+    {
+        "city": "Kharagpur",
+        "area_code": "3222",
+        "dialing_code": "+91 3222"
+    },
+    {
+        "city": "Khargone",
+        "area_code": "7282",
+        "dialing_code": "+91 7282"
+    },
+    {
+        "city": "Khordha",
+        "area_code": "6755",
+        "dialing_code": "+91 6755"
+    },
+    {
+        "city": "Kishanganj",
+        "area_code": "6466",
+        "dialing_code": "+91 6466"
+    },
+    {
+        "city": "Kochi",
+        "area_code": "484",
+        "dialing_code": "+91 484"
+    },
+    {
+        "city": "Kohima",
+        "area_code": "370",
+        "dialing_code": "+91 370"
+    },
+    {
+        "city": "Kolhapur",
+        "area_code": "231",
+        "dialing_code": "+91 231"
+    },
+    {
+        "city": "Kolkata",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Kolkata (Calcutta)",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Kolkatta (formerly Calcutta)",
+        "area_code": "33",
+        "dialing_code": "+91 33"
+    },
+    {
+        "city": "Kollam",
+        "area_code": "474",
+        "dialing_code": "+91 474"
+    },
+    {
+        "city": "Koraput",
+        "area_code": "6852",
+        "dialing_code": "+91 6852"
+    },
+    {
+        "city": "Kota",
+        "area_code": "744",
+        "dialing_code": "+91 744"
+    },
+    {
+        "city": "Kottayam",
+        "area_code": "481",
+        "dialing_code": "+91 481"
+    },
+    {
+        "city": "Kozhikode",
+        "area_code": "495",
+        "dialing_code": "+91 495"
+    },
+    {
+        "city": "Krishnagiri",
+        "area_code": "4343",
+        "dialing_code": "+91 4343"
+    },
+    {
+        "city": "Krishnanagar",
+        "area_code": "3472",
+        "dialing_code": "+91 3472"
+    },
+    {
+        "city": "Kulti",
+        "area_code": "341",
+        "dialing_code": "+91 341"
+    },
+    {
+        "city": "Lakhimpur",
+        "area_code": "5872",
+        "dialing_code": "+91 5872"
+    },
+    {
+        "city": "Lakhisarai",
+        "area_code": "6346",
+        "dialing_code": "+91 6346"
+    },
+    {
+        "city": "Lalitpur",
+        "area_code": "5176",
+        "dialing_code": "+91 5176"
+    },
+    {
+        "city": "Latur",
+        "area_code": "2382",
+        "dialing_code": "+91 2382"
+    },
+    {
+        "city": "Lucknow",
+        "area_code": "522",
+        "dialing_code": "+91 522"
+    },
+    {
+        "city": "Ludhiana",
+        "area_code": "161",
+        "dialing_code": "+91 161"
+    },
+    {
+        "city": "Madhepura",
+        "area_code": "6476",
+        "dialing_code": "+91 6476"
+    },
+    {
+        "city": "Madhubani",
+        "area_code": "6276",
+        "dialing_code": "+91 6276"
+    },
+    {
+        "city": "Madras",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Madurai",
+        "area_code": "452",
+        "dialing_code": "+91 452"
+    },
+    {
+        "city": "Maharajganj",
+        "area_code": "5523",
+        "dialing_code": "+91 5523"
+    },
+    {
+        "city": "Mahoba",
+        "area_code": "5281",
+        "dialing_code": "+91 5281"
+    },
+    {
+        "city": "Mainpuri",
+        "area_code": "5672",
+        "dialing_code": "+91 5672"
+    },
+    {
+        "city": "Malda",
+        "area_code": "3512",
+        "dialing_code": "+91 3512"
+    },
+    {
+        "city": "Malkangiri",
+        "area_code": "6861",
+        "dialing_code": "+91 6861"
+    },
+    {
+        "city": "Mandla",
+        "area_code": "7642",
+        "dialing_code": "+91 7642"
+    },
+    {
+        "city": "Mandsaur",
+        "area_code": "7422",
+        "dialing_code": "+91 7422"
+    },
+    {
+        "city": "Manipal",
+        "area_code": "8252",
+        "dialing_code": "+91 8252"
+    },
+    {
+        "city": "Manjhanpur",
+        "area_code": "5331",
+        "dialing_code": "+91 5331"
+    },
+    {
+        "city": "Mansa",
+        "area_code": "1652",
+        "dialing_code": "+91 1652"
+    },
+    {
+        "city": "Margao",
+        "area_code": "8342",
+        "dialing_code": "+91 8342"
+    },
+    {
+        "city": "Mathura",
+        "area_code": "565",
+        "dialing_code": "+91 565"
+    },
+    {
+        "city": "Mau",
+        "area_code": "5195",
+        "dialing_code": "+91 5195"
+    },
+    {
+        "city": "Meerut",
+        "area_code": "121",
+        "dialing_code": "+91 121"
+    },
+    {
+        "city": "Midnapore",
+        "area_code": "3222",
+        "dialing_code": "+91 3222"
+    },
+    {
+        "city": "Mirzapur",
+        "area_code": "5442",
+        "dialing_code": "+91 5442"
+    },
+    {
+        "city": "Moga",
+        "area_code": "1636",
+        "dialing_code": "+91 1636"
+    },
+    {
+        "city": "Mohali",
+        "area_code": "172",
+        "dialing_code": "+91 172"
+    },
+    {
+        "city": "Moradabad",
+        "area_code": "591",
+        "dialing_code": "+91 591"
+    },
+    {
+        "city": "Morena",
+        "area_code": "7532",
+        "dialing_code": "+91 7532"
+    },
+    {
+        "city": "Motihari",
+        "area_code": "6252",
+        "dialing_code": "+91 6252"
+    },
+    {
+        "city": "Mount Abu",
+        "area_code": "2974",
+        "dialing_code": "+91 2974"
+    },
+    {
+        "city": "Muktsar",
+        "area_code": "1633",
+        "dialing_code": "+91 1633"
+    },
+    {
+        "city": "Mumbai",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Mumbai (Bombay)",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Mumbai (formerly Bombay )",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Munger",
+        "area_code": "6344",
+        "dialing_code": "+91 6344"
+    },
+    {
+        "city": "Mussooree",
+        "area_code": "1362",
+        "dialing_code": "+91 1362"
+    },
+    {
+        "city": "Muzaffarnagar",
+        "area_code": "131",
+        "dialing_code": "+91 131"
+    },
+    {
+        "city": "Muzaffarpur",
+        "area_code": "621",
+        "dialing_code": "+91 621"
+    },
+    {
+        "city": "Mysore",
+        "area_code": "821",
+        "dialing_code": "+91 821"
+    },
+    {
+        "city": "Nabarangpur",
+        "area_code": "685",
+        "dialing_code": "+91 685"
+    },
+    {
+        "city": "Nadiad",
+        "area_code": "268",
+        "dialing_code": "+91 268"
+    },
+    {
+        "city": "Nagaon",
+        "area_code": "3672",
+        "dialing_code": "+91 3672"
+    },
+    {
+        "city": "Nagapattinam",
+        "area_code": "4365",
+        "dialing_code": "+91 4365"
+    },
+    {
+        "city": "Nagaur",
+        "area_code": "1582",
+        "dialing_code": "+91 1582"
+    },
+    {
+        "city": "Nagercoil",
+        "area_code": "4652",
+        "dialing_code": "+91 4652"
+    },
+    {
+        "city": "Nagpur",
+        "area_code": "712",
+        "dialing_code": "+91 712"
+    },
+    {
+        "city": "Nalanda",
+        "area_code": "6119",
+        "dialing_code": "+91 6119"
+    },
+    {
+        "city": "Namakkal",
+        "area_code": "4286",
+        "dialing_code": "+91 4286"
+    },
+    {
+        "city": "Nanded",
+        "area_code": "2462",
+        "dialing_code": "+91 2462"
+    },
+    {
+        "city": "Nandurbar",
+        "area_code": "2564",
+        "dialing_code": "+91 2564"
+    },
+    {
+        "city": "Narsinghpur",
+        "area_code": "7792",
+        "dialing_code": "+91 7792"
+    },
+    {
+        "city": "Nashik",
+        "area_code": "253",
+        "dialing_code": "+91 253"
+    },
+    {
+        "city": "Nasik",
+        "area_code": "253",
+        "dialing_code": "+91 253"
+    },
+    {
+        "city": "Naugarh",
+        "area_code": "5544",
+        "dialing_code": "+91 5544"
+    },
+    {
+        "city": "Navi Mumbai",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Navsari",
+        "area_code": "2637",
+        "dialing_code": "+91 2637"
+    },
+    {
+        "city": "Nawabganj",
+        "area_code": "6324",
+        "dialing_code": "+91 6324"
+    },
+    {
+        "city": "Nawada",
+        "area_code": "6324",
+        "dialing_code": "+91 6324"
+    },
+    {
+        "city": "Nawanshahr",
+        "area_code": "1823",
+        "dialing_code": "+91 1823"
+    },
+    {
+        "city": "Nayagarh",
+        "area_code": "6753",
+        "dialing_code": "+91 6753"
+    },
+    {
+        "city": "Neemuch",
+        "area_code": "7423",
+        "dialing_code": "+91 7423"
+    },
+    {
+        "city": "New Delhi",
+        "area_code": "11",
+        "dialing_code": "+91 11"
+    },
+    {
+        "city": "New Okhla Industrial Development Authority",
+        "area_code": "120",
+        "dialing_code": "+91 120"
+    },
+    {
+        "city": "Nuapada",
+        "area_code": "6678",
+        "dialing_code": "+91 6678"
+    },
+    {
+        "city": "Ootacamund",
+        "area_code": "423",
+        "dialing_code": "+91 423"
+    },
+    {
+        "city": "Orai",
+        "area_code": "5162",
+        "dialing_code": "+91 5162"
+    },
+    {
+        "city": "Osmanabad",
+        "area_code": "2472",
+        "dialing_code": "+91 2472"
+    },
+    {
+        "city": "Padrauna",
+        "area_code": "5564",
+        "dialing_code": "+91 5564"
+    },
+    {
+        "city": "Painavu",
+        "area_code": "486",
+        "dialing_code": "+91 486"
+    },
+    {
+        "city": "Palakkad",
+        "area_code": "491",
+        "dialing_code": "+91 491"
+    },
+    {
+        "city": "Pampore",
+        "area_code": "1933",
+        "dialing_code": "+91 1933"
+    },
+    {
+        "city": "Panaji",
+        "area_code": "832",
+        "dialing_code": "+91 832"
+    },
+    {
+        "city": "Panchkula",
+        "area_code": "172",
+        "dialing_code": "+91 172"
+    },
+    {
+        "city": "Panipat",
+        "area_code": "180",
+        "dialing_code": "+91 180"
+    },
+    {
+        "city": "Panna",
+        "area_code": "7732",
+        "dialing_code": "+91 7732"
+    },
+    {
+        "city": "Panskura",
+        "area_code": "3228",
+        "dialing_code": "+91 3228"
+    },
+    {
+        "city": "Panvel",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Paralakhemundi",
+        "area_code": "6815",
+        "dialing_code": "+91 6815"
+    },
+    {
+        "city": "Parbhani",
+        "area_code": "2452",
+        "dialing_code": "+91 2452"
+    },
+    {
+        "city": "Pathanamthitta",
+        "area_code": "468",
+        "dialing_code": "+91 468"
+    },
+    {
+        "city": "Patiala",
+        "area_code": "175",
+        "dialing_code": "+91 175"
+    },
+    {
+        "city": "Patna",
+        "area_code": "612",
+        "dialing_code": "+91 612"
+    },
+    {
+        "city": "Perambalur",
+        "area_code": "4328",
+        "dialing_code": "+91 4328"
+    },
+    {
+        "city": "Phulbani",
+        "area_code": "6842",
+        "dialing_code": "+91 6842"
+    },
+    {
+        "city": "Pilibhit",
+        "area_code": "5882",
+        "dialing_code": "+91 5882"
+    },
+    {
+        "city": "Ponnani",
+        "area_code": "483",
+        "dialing_code": "+91 483"
+    },
+    {
+        "city": "Port Blair",
+        "area_code": "3192",
+        "dialing_code": "+91 3192"
+    },
+    {
+        "city": "Pratapgarh",
+        "area_code": "5342",
+        "dialing_code": "+91 5342"
+    },
+    {
+        "city": "Puducherry",
+        "area_code": "413",
+        "dialing_code": "+91 413"
+    },
+    {
+        "city": "Pudukkottai",
+        "area_code": "4322",
+        "dialing_code": "+91 4322"
+    },
+    {
+        "city": "Pune",
+        "area_code": "20",
+        "dialing_code": "+91 20"
+    },
+    {
+        "city": "Pune (formerly Poona)",
+        "area_code": "20",
+        "dialing_code": "+91 20"
+    },
+    {
+        "city": "Puri",
+        "area_code": "6752",
+        "dialing_code": "+91 6752"
+    },
+    {
+        "city": "Purnia",
+        "area_code": "6454",
+        "dialing_code": "+91 6454"
+    },
+    {
+        "city": "Purulia",
+        "area_code": "3252",
+        "dialing_code": "+91 3252"
+    },
+    {
+        "city": "Pushkar",
+        "area_code": "145",
+        "dialing_code": "+91 145"
+    },
+    {
+        "city": "Rae Bareli",
+        "area_code": "535",
+        "dialing_code": "+91 535"
+    },
+    {
+        "city": "Raebareli",
+        "area_code": "535",
+        "dialing_code": "+91 535"
+    },
+    {
+        "city": "Raiganj",
+        "area_code": "3523",
+        "dialing_code": "+91 3523"
+    },
+    {
+        "city": "Raipur",
+        "area_code": "771",
+        "dialing_code": "+91 771"
+    },
+    {
+        "city": "Rajgarh",
+        "area_code": "7372",
+        "dialing_code": "+91 7372"
+    },
+    {
+        "city": "Rajkot",
+        "area_code": "281",
+        "dialing_code": "+91 281"
+    },
+    {
+        "city": "Rajsamand",
+        "area_code": "2952",
+        "dialing_code": "+91 2952"
+    },
+    {
+        "city": "Ramanathapuram",
+        "area_code": "4567",
+        "dialing_code": "+91 4567"
+    },
+    {
+        "city": "Rampur",
+        "area_code": "595",
+        "dialing_code": "+91 595"
+    },
+    {
+        "city": "Ranchi",
+        "area_code": "651",
+        "dialing_code": "+91 651"
+    },
+    {
+        "city": "Ranthambhore Natl. Park",
+        "area_code": "7462",
+        "dialing_code": "+91 7462"
+    },
+    {
+        "city": "Ratlam",
+        "area_code": "7412",
+        "dialing_code": "+91 7412"
+    },
+    {
+        "city": "Ratnagiri",
+        "area_code": "2353",
+        "dialing_code": "+91 2353"
+    },
+    {
+        "city": "Rayagada",
+        "area_code": "6856",
+        "dialing_code": "+91 6856"
+    },
+    {
+        "city": "Rewa",
+        "area_code": "7662",
+        "dialing_code": "+91 7662"
+    },
+    {
+        "city": "Robertsganj",
+        "area_code": "5444",
+        "dialing_code": "+91 5444"
+    },
+    {
+        "city": "Roorkee",
+        "area_code": "1332",
+        "dialing_code": "+91 1332"
+    },
+    {
+        "city": "Rourkela",
+        "area_code": "661",
+        "dialing_code": "+91 661"
+    },
+    {
+        "city": "Rupnagar",
+        "area_code": "1881",
+        "dialing_code": "+91 1881"
+    },
+    {
+        "city": "Sagar",
+        "area_code": "7582",
+        "dialing_code": "+91 7582"
+    },
+    {
+        "city": "Saharanpur",
+        "area_code": "132",
+        "dialing_code": "+91 132"
+    },
+    {
+        "city": "Saharsa",
+        "area_code": "6478",
+        "dialing_code": "+91 6478"
+    },
+    {
+        "city": "Samastipur",
+        "area_code": "6274",
+        "dialing_code": "+91 6274"
+    },
+    {
+        "city": "Sambalpur",
+        "area_code": "663",
+        "dialing_code": "+91 663"
+    },
+    {
+        "city": "Sangli",
+        "area_code": "233",
+        "dialing_code": "+91 233"
+    },
+    {
+        "city": "Sangrur",
+        "area_code": "1672",
+        "dialing_code": "+91 1672"
+    },
+    {
+        "city": "Sariska",
+        "area_code": "144",
+        "dialing_code": "+91 144"
+    },
+    {
+        "city": "Sasaram",
+        "area_code": "6184",
+        "dialing_code": "+91 6184"
+    },
+    {
+        "city": "Satara",
+        "area_code": "2162",
+        "dialing_code": "+91 2162"
+    },
+    {
+        "city": "Satna",
+        "area_code": "7672",
+        "dialing_code": "+91 7672"
+    },
+    {
+        "city": "Sawai Madhopur",
+        "area_code": "7462",
+        "dialing_code": "+91 7462"
+    },
+    {
+        "city": "Sehore",
+        "area_code": "7562",
+        "dialing_code": "+91 7562"
+    },
+    {
+        "city": "Seoni",
+        "area_code": "7692",
+        "dialing_code": "+91 7692"
+    },
+    {
+        "city": "Shahdol",
+        "area_code": "7652",
+        "dialing_code": "+91 7652"
+    },
+    {
+        "city": "Shahjahanpur",
+        "area_code": "5842",
+        "dialing_code": "+91 5842"
+    },
+    {
+        "city": "Shajapur",
+        "area_code": "7364",
+        "dialing_code": "+91 7364"
+    },
+    {
+        "city": "Sheikhpura",
+        "area_code": "6341",
+        "dialing_code": "+91 6341"
+    },
+    {
+        "city": "Sheohar",
+        "area_code": "6222",
+        "dialing_code": "+91 6222"
+    },
+    {
+        "city": "Sheopur",
+        "area_code": "7530",
+        "dialing_code": "+91 7530"
+    },
+    {
+        "city": "Shillong",
+        "area_code": "364",
+        "dialing_code": "+91 364"
+    },
+    {
+        "city": "Shimla",
+        "area_code": "177",
+        "dialing_code": "+91 177"
+    },
+    {
+        "city": "Shivpuri",
+        "area_code": "7492",
+        "dialing_code": "+91 7492"
+    },
+    {
+        "city": "Sibsagar",
+        "area_code": "3772",
+        "dialing_code": "+91 3772"
+    },
+    {
+        "city": "Sidhi",
+        "area_code": "7822",
+        "dialing_code": "+91 7822"
+    },
+    {
+        "city": "Sikar",
+        "area_code": "1572",
+        "dialing_code": "+91 1572"
+    },
+    {
+        "city": "Silchar",
+        "area_code": "3842",
+        "dialing_code": "+91 3842"
+    },
+    {
+        "city": "Silvassa",
+        "area_code": "260",
+        "dialing_code": "+91 260"
+    },
+    {
+        "city": "Simla",
+        "area_code": "177",
+        "dialing_code": "+91 177"
+    },
+    {
+        "city": "Sindri",
+        "area_code": "326",
+        "dialing_code": "+91 326"
+    },
+    {
+        "city": "Sitamarhi",
+        "area_code": "6226",
+        "dialing_code": "+91 6226"
+    },
+    {
+        "city": "Sitapur",
+        "area_code": "5862",
+        "dialing_code": "+91 5862"
+    },
+    {
+        "city": "Sivaganga",
+        "area_code": "4575",
+        "dialing_code": "+91 4575"
+    },
+    {
+        "city": "Siwan",
+        "area_code": "6154",
+        "dialing_code": "+91 6154"
+    },
+    {
+        "city": "Solapur",
+        "area_code": "217",
+        "dialing_code": "+91 217"
+    },
+    {
+        "city": "Sonepur",
+        "area_code": "6654",
+        "dialing_code": "+91 6654"
+    },
+    {
+        "city": "Sopore",
+        "area_code": "1954",
+        "dialing_code": "+91 1954"
+    },
+    {
+        "city": "Srinagar",
+        "area_code": "194",
+        "dialing_code": "+91 194"
+    },
+    {
+        "city": "Sultanpur",
+        "area_code": "5362",
+        "dialing_code": "+91 5362"
+    },
+    {
+        "city": "Sundergarh",
+        "area_code": "6622",
+        "dialing_code": "+91 6622"
+    },
+    {
+        "city": "Supaul",
+        "area_code": "6473",
+        "dialing_code": "+91 6473"
+    },
+    {
+        "city": "Surat",
+        "area_code": "261",
+        "dialing_code": "+91 261"
+    },
+    {
+        "city": "Suri",
+        "area_code": "3462",
+        "dialing_code": "+91 3462"
+    },
+    {
+        "city": "Tamluk",
+        "area_code": "3228",
+        "dialing_code": "+91 3228"
+    },
+    {
+        "city": "Tarn Taran Sahib",
+        "area_code": "1852",
+        "dialing_code": "+91 1852"
+    },
+    {
+        "city": "Thalassery",
+        "area_code": "490",
+        "dialing_code": "+91 490"
+    },
+    {
+        "city": "Thane",
+        "area_code": "22",
+        "dialing_code": "+91 22"
+    },
+    {
+        "city": "Thanjavur",
+        "area_code": "4362",
+        "dialing_code": "+91 4362"
+    },
+    {
+        "city": "Theni",
+        "area_code": "4546",
+        "dialing_code": "+91 4546"
+    },
+    {
+        "city": "Thiruvan",
+        "area_code": "471",
+        "dialing_code": "+91 471"
+    },
+    {
+        "city": "Thiruvananthapuram",
+        "area_code": "471",
+        "dialing_code": "+91 471"
+    },
+    {
+        "city": "Thiruvannaamalai",
+        "area_code": "4175",
+        "dialing_code": "+91 4175"
+    },
+    {
+        "city": "Thoothukudi",
+        "area_code": "461",
+        "dialing_code": "+91 461"
+    },
+    {
+        "city": "Thrissur",
+        "area_code": "487",
+        "dialing_code": "+91 487"
+    },
+    {
+        "city": "Tikamgarh",
+        "area_code": "7683",
+        "dialing_code": "+91 7683"
+    },
+    {
+        "city": "Tinsukia",
+        "area_code": "374",
+        "dialing_code": "+91 374"
+    },
+    {
+        "city": "Tiruchirapalli",
+        "area_code": "431",
+        "dialing_code": "+91 431"
+    },
+    {
+        "city": "Tirumala",
+        "area_code": "877",
+        "dialing_code": "+91 877"
+    },
+    {
+        "city": "Tirunelveli",
+        "area_code": "462",
+        "dialing_code": "+91 462"
+    },
+    {
+        "city": "Tiruvallur",
+        "area_code": "44",
+        "dialing_code": "+91 44"
+    },
+    {
+        "city": "Tiruvarur",
+        "area_code": "4366",
+        "dialing_code": "+91 4366"
+    },
+    {
+        "city": "Tonk",
+        "area_code": "1435",
+        "dialing_code": "+91 1435"
+    },
+    {
+        "city": "Udaipur",
+        "area_code": "294",
+        "dialing_code": "+91 294"
+    },
+    {
+        "city": "Udhampur",
+        "area_code": "199",
+        "dialing_code": "+91 199"
+    },
+    {
+        "city": "Ujjain",
+        "area_code": "734",
+        "dialing_code": "+91 734"
+    },
+    {
+        "city": "Unnao",
+        "area_code": "515",
+        "dialing_code": "+91 515"
+    },
+    {
+        "city": "Vadodara",
+        "area_code": "265",
+        "dialing_code": "+91 265"
+    },
+    {
+        "city": "Vadodara (Baroda)",
+        "area_code": "265",
+        "dialing_code": "+91 265"
+    },
+    {
+        "city": "Varanasi",
+        "area_code": "542",
+        "dialing_code": "+91 542"
+    },
+    {
+        "city": "Vasco da Gama",
+        "area_code": "832",
+        "dialing_code": "+91 832"
+    },
+    {
+        "city": "Vellore",
+        "area_code": "416",
+        "dialing_code": "+91 416"
+    },
+    {
+        "city": "Vidisha",
+        "area_code": "7592",
+        "dialing_code": "+91 7592"
+    },
+    {
+        "city": "Vijayawada",
+        "area_code": "866",
+        "dialing_code": "+91 866"
+    },
+    {
+        "city": "Viluppuram",
+        "area_code": "4146",
+        "dialing_code": "+91 4146"
+    },
+    {
+        "city": "Virudhunagar",
+        "area_code": "4562",
+        "dialing_code": "+91 4562"
+    },
+    {
+        "city": "Virudunagar",
+        "area_code": "4562",
+        "dialing_code": "+91 4562"
+    },
+    {
+        "city": "Visakhapatnam",
+        "area_code": "891",
+        "dialing_code": "+91 891"
+    },
+    {
+        "city": "Warangal",
+        "area_code": "870",
+        "dialing_code": "+91 870"
+    },
+    {
+        "city": "Wardha",
+        "area_code": "7152",
+        "dialing_code": "+91 7152"
+    },
+    {
+        "city": "Washim",
+        "area_code": "7252",
+        "dialing_code": "+91 7252"
+    },
+    {
+        "city": "Yavatmal",
+        "area_code": "7232",
+        "dialing_code": "+91 7232"
+    }
+]

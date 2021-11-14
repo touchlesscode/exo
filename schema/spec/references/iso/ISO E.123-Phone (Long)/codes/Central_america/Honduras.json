@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Centro Sur Occidental",
+        "area_code": "7",
+        "dialing_code": "+504 7"
+    },
+    {
+        "city": "Centro Sur Oriental",
+        "area_code": "8",
+        "dialing_code": "+504 8"
+    },
+    {
+        "city": "Litoral Atlyntico",
+        "area_code": "4",
+        "dialing_code": "+504 4"
+    },
+    {
+        "city": "Litoral Atlýntico",
+        "area_code": "4",
+        "dialing_code": "+504 4"
+    },
+    {
+        "city": "Regiyn Nor-Occidental",
+        "area_code": "6",
+        "dialing_code": "+504 6"
+    },
+    {
+        "city": "Regiýn Nor-Occidental",
+        "area_code": "6",
+        "dialing_code": "+504 6"
+    },
+    {
+        "city": "San Pedro Sula",
+        "area_code": "5",
+        "dialing_code": "+504 5"
+    },
+    {
+        "city": "Tegucigalpa",
+        "area_code": "2",
+        "dialing_code": "+504 2"
+    }
+]

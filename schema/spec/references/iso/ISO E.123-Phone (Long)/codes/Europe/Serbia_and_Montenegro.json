@@ -1,0 +1,117 @@
+[
+    {
+        "city": "Belgrade",
+        "area_code": "11",
+        "dialing_code": "+381 11"
+    },
+    {
+        "city": "Beograd (Belgrade)",
+        "area_code": "11",
+        "dialing_code": "+381 11"
+    },
+    {
+        "city": "Jagodina",
+        "area_code": "35",
+        "dialing_code": "+381 35"
+    },
+    {
+        "city": "Kosovska Mitrovica",
+        "area_code": "28",
+        "dialing_code": "+381 28"
+    },
+    {
+        "city": "Kragujevac",
+        "area_code": "34",
+        "dialing_code": "+381 34"
+    },
+    {
+        "city": "Kraljevo",
+        "area_code": "36",
+        "dialing_code": "+381 36"
+    },
+    {
+        "city": "Krusevac",
+        "area_code": "37",
+        "dialing_code": "+381 37"
+    },
+    {
+        "city": "Krushevac",
+        "area_code": "37",
+        "dialing_code": "+381 37"
+    },
+    {
+        "city": "Nis",
+        "area_code": "18",
+        "dialing_code": "+381 18"
+    },
+    {
+        "city": "Novi Pazar",
+        "area_code": "20",
+        "dialing_code": "+381 20"
+    },
+    {
+        "city": "Novi Sad",
+        "area_code": "21",
+        "dialing_code": "+381 21"
+    },
+    {
+        "city": "Panchevo",
+        "area_code": "13",
+        "dialing_code": "+381 13"
+    },
+    {
+        "city": "Pec",
+        "area_code": "39",
+        "dialing_code": "+381 39"
+    },
+    {
+        "city": "Pirot",
+        "area_code": "10",
+        "dialing_code": "+381 10"
+    },
+    {
+        "city": "Pozarevac",
+        "area_code": "12",
+        "dialing_code": "+381 12"
+    },
+    {
+        "city": "Prishtina",
+        "area_code": "38",
+        "dialing_code": "+381 38"
+    },
+    {
+        "city": "Pristina",
+        "area_code": "38",
+        "dialing_code": "+381 38"
+    },
+    {
+        "city": "Sombor",
+        "area_code": "25",
+        "dialing_code": "+381 25"
+    },
+    {
+        "city": "Sremska Mitrovica",
+        "area_code": "22",
+        "dialing_code": "+381 22"
+    },
+    {
+        "city": "Subotica",
+        "area_code": "24",
+        "dialing_code": "+381 24"
+    },
+    {
+        "city": "Uzice",
+        "area_code": "31",
+        "dialing_code": "+381 31"
+    },
+    {
+        "city": "Valjevo",
+        "area_code": "14",
+        "dialing_code": "+381 14"
+    },
+    {
+        "city": "Zajechar",
+        "area_code": "19",
+        "dialing_code": "+381 19"
+    }
+]

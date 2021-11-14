@@ -1,0 +1,62 @@
+[
+    {
+        "city": "Akureyri",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Akurnes",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Hveragerdi",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Hveragerði",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Keflavik",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Outside Reykjavyk",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Outside Reykjavýk",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    },
+    {
+        "city": "Reykjavik",
+        "area_code": "5",
+        "dialing_code": "+354 5"
+    },
+    {
+        "city": "Reykjavyk",
+        "area_code": "5",
+        "dialing_code": "+354 5"
+    },
+    {
+        "city": "Reykjavík",
+        "area_code": "5",
+        "dialing_code": "+354 5"
+    },
+    {
+        "city": "Reykjavýk",
+        "area_code": "5",
+        "dialing_code": "+354 5"
+    },
+    {
+        "city": "Vestmannaeyjar",
+        "area_code": "4",
+        "dialing_code": "+354 4"
+    }
+]

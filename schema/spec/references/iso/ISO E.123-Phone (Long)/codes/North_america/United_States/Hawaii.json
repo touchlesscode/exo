@@ -1,0 +1,52 @@
+[
+    {
+        "city": "Hilo",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Honolulu",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Kailua",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Kihei",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Mountain View",
+        "area_code": "650",
+        "dialing_code": "+1 650"
+    },
+    {
+        "city": "Pearl City",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Volcano",
+        "area_code": "209",
+        "dialing_code": "+1 209"
+    },
+    {
+        "city": "Wahiawa",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Wailuku",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    },
+    {
+        "city": "Waimea",
+        "area_code": "808",
+        "dialing_code": "+1 808"
+    }
+]

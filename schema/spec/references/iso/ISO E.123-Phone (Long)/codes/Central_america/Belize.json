@@ -1,0 +1,57 @@
+[
+    {
+        "city": "Belize City",
+        "area_code": "2",
+        "dialing_code": "+501 2"
+    },
+    {
+        "city": "Belmopan",
+        "area_code": "8",
+        "dialing_code": "+501 8"
+    },
+    {
+        "city": "Benque Viejo",
+        "area_code": "93",
+        "dialing_code": "+501 93"
+    },
+    {
+        "city": "Cayo",
+        "area_code": "9",
+        "dialing_code": "+501 9"
+    },
+    {
+        "city": "Corozal",
+        "area_code": "4",
+        "dialing_code": "+501 4"
+    },
+    {
+        "city": "Dangriga",
+        "area_code": "5",
+        "dialing_code": "+501 5"
+    },
+    {
+        "city": "Independence",
+        "area_code": "6",
+        "dialing_code": "+501 6"
+    },
+    {
+        "city": "Orange Walk",
+        "area_code": "3",
+        "dialing_code": "+501 3"
+    },
+    {
+        "city": "Punta Gorda",
+        "area_code": "7",
+        "dialing_code": "+501 7"
+    },
+    {
+        "city": "Stann Creek",
+        "area_code": "5",
+        "dialing_code": "+501 5"
+    },
+    {
+        "city": "Toledo",
+        "area_code": "7",
+        "dialing_code": "+501 7"
+    }
+]

@@ -1,0 +1,407 @@
+[
+    {
+        "city": "Adana",
+        "area_code": "322",
+        "dialing_code": "+90 322"
+    },
+    {
+        "city": "Adapazari",
+        "area_code": "264",
+        "dialing_code": "+90 264"
+    },
+    {
+        "city": "Adiyaman",
+        "area_code": "416",
+        "dialing_code": "+90 416"
+    },
+    {
+        "city": "Afyon",
+        "area_code": "272",
+        "dialing_code": "+90 272"
+    },
+    {
+        "city": "Agri",
+        "area_code": "472",
+        "dialing_code": "+90 472"
+    },
+    {
+        "city": "Aksaray",
+        "area_code": "382",
+        "dialing_code": "+90 382"
+    },
+    {
+        "city": "Amasya",
+        "area_code": "358",
+        "dialing_code": "+90 358"
+    },
+    {
+        "city": "Ankara",
+        "area_code": "312",
+        "dialing_code": "+90 312"
+    },
+    {
+        "city": "Antalya",
+        "area_code": "242",
+        "dialing_code": "+90 242"
+    },
+    {
+        "city": "Ardahan",
+        "area_code": "478",
+        "dialing_code": "+90 478"
+    },
+    {
+        "city": "Artvin",
+        "area_code": "466",
+        "dialing_code": "+90 466"
+    },
+    {
+        "city": "Aydin",
+        "area_code": "256",
+        "dialing_code": "+90 256"
+    },
+    {
+        "city": "Balikesir",
+        "area_code": "266",
+        "dialing_code": "+90 266"
+    },
+    {
+        "city": "Bartin",
+        "area_code": "378",
+        "dialing_code": "+90 378"
+    },
+    {
+        "city": "Batman",
+        "area_code": "488",
+        "dialing_code": "+90 488"
+    },
+    {
+        "city": "Bayburt",
+        "area_code": "458",
+        "dialing_code": "+90 458"
+    },
+    {
+        "city": "Bilecik",
+        "area_code": "228",
+        "dialing_code": "+90 228"
+    },
+    {
+        "city": "Bingol",
+        "area_code": "426",
+        "dialing_code": "+90 426"
+    },
+    {
+        "city": "Bitus",
+        "area_code": "434",
+        "dialing_code": "+90 434"
+    },
+    {
+        "city": "Bolu",
+        "area_code": "374",
+        "dialing_code": "+90 374"
+    },
+    {
+        "city": "Burdur",
+        "area_code": "248",
+        "dialing_code": "+90 248"
+    },
+    {
+        "city": "Bursa",
+        "area_code": "224",
+        "dialing_code": "+90 224"
+    },
+    {
+        "city": "Canakkale",
+        "area_code": "286",
+        "dialing_code": "+90 286"
+    },
+    {
+        "city": "Cankiri",
+        "area_code": "376",
+        "dialing_code": "+90 376"
+    },
+    {
+        "city": "Corum",
+        "area_code": "364",
+        "dialing_code": "+90 364"
+    },
+    {
+        "city": "Denizli",
+        "area_code": "258",
+        "dialing_code": "+90 258"
+    },
+    {
+        "city": "Diyarbakir",
+        "area_code": "412",
+        "dialing_code": "+90 412"
+    },
+    {
+        "city": "Edirne",
+        "area_code": "284",
+        "dialing_code": "+90 284"
+    },
+    {
+        "city": "Elazig",
+        "area_code": "424",
+        "dialing_code": "+90 424"
+    },
+    {
+        "city": "Erzincan",
+        "area_code": "446",
+        "dialing_code": "+90 446"
+    },
+    {
+        "city": "Erzurum",
+        "area_code": "442",
+        "dialing_code": "+90 442"
+    },
+    {
+        "city": "Eskisehir",
+        "area_code": "222",
+        "dialing_code": "+90 222"
+    },
+    {
+        "city": "Gaziantep",
+        "area_code": "342",
+        "dialing_code": "+90 342"
+    },
+    {
+        "city": "Giresun",
+        "area_code": "454",
+        "dialing_code": "+90 454"
+    },
+    {
+        "city": "Gumushane",
+        "area_code": "456",
+        "dialing_code": "+90 456"
+    },
+    {
+        "city": "Hakkari",
+        "area_code": "438",
+        "dialing_code": "+90 438"
+    },
+    {
+        "city": "Hatay",
+        "area_code": "326",
+        "dialing_code": "+90 326"
+    },
+    {
+        "city": "Icel (Mersin)",
+        "area_code": "324",
+        "dialing_code": "+90 324"
+    },
+    {
+        "city": "Igdir",
+        "area_code": "476",
+        "dialing_code": "+90 476"
+    },
+    {
+        "city": "Isparta",
+        "area_code": "246",
+        "dialing_code": "+90 246"
+    },
+    {
+        "city": "Istanbul",
+        "area_code": "212",
+        "dialing_code": "+90 212"
+    },
+    {
+        "city": "Istanbul Asya (Asia side)",
+        "area_code": "216",
+        "dialing_code": "+90 216"
+    },
+    {
+        "city": "Istanbul Avrupa (Europe side)",
+        "area_code": "212",
+        "dialing_code": "+90 212"
+    },
+    {
+        "city": "Izmir",
+        "area_code": "232",
+        "dialing_code": "+90 232"
+    },
+    {
+        "city": "Izmit",
+        "area_code": "262",
+        "dialing_code": "+90 262"
+    },
+    {
+        "city": "Kahramanmaras",
+        "area_code": "344",
+        "dialing_code": "+90 344"
+    },
+    {
+        "city": "Karaman",
+        "area_code": "338",
+        "dialing_code": "+90 338"
+    },
+    {
+        "city": "Kars",
+        "area_code": "474",
+        "dialing_code": "+90 474"
+    },
+    {
+        "city": "Kastamonu",
+        "area_code": "366",
+        "dialing_code": "+90 366"
+    },
+    {
+        "city": "Kayseri",
+        "area_code": "352",
+        "dialing_code": "+90 352"
+    },
+    {
+        "city": "Kirikkale",
+        "area_code": "318",
+        "dialing_code": "+90 318"
+    },
+    {
+        "city": "Kirklareli",
+        "area_code": "288",
+        "dialing_code": "+90 288"
+    },
+    {
+        "city": "Kirsehir",
+        "area_code": "386",
+        "dialing_code": "+90 386"
+    },
+    {
+        "city": "Kocaeli",
+        "area_code": "262",
+        "dialing_code": "+90 262"
+    },
+    {
+        "city": "Konya",
+        "area_code": "332",
+        "dialing_code": "+90 332"
+    },
+    {
+        "city": "Kutahya",
+        "area_code": "274",
+        "dialing_code": "+90 274"
+    },
+    {
+        "city": "Malatya",
+        "area_code": "422",
+        "dialing_code": "+90 422"
+    },
+    {
+        "city": "Manisa",
+        "area_code": "236",
+        "dialing_code": "+90 236"
+    },
+    {
+        "city": "Mardin",
+        "area_code": "482",
+        "dialing_code": "+90 482"
+    },
+    {
+        "city": "Mugla",
+        "area_code": "252",
+        "dialing_code": "+90 252"
+    },
+    {
+        "city": "Mus",
+        "area_code": "436",
+        "dialing_code": "+90 436"
+    },
+    {
+        "city": "Nevsehir",
+        "area_code": "384",
+        "dialing_code": "+90 384"
+    },
+    {
+        "city": "Nigde",
+        "area_code": "388",
+        "dialing_code": "+90 388"
+    },
+    {
+        "city": "Ordu",
+        "area_code": "452",
+        "dialing_code": "+90 452"
+    },
+    {
+        "city": "Rize",
+        "area_code": "464",
+        "dialing_code": "+90 464"
+    },
+    {
+        "city": "Sakarya",
+        "area_code": "264",
+        "dialing_code": "+90 264"
+    },
+    {
+        "city": "Samsun",
+        "area_code": "362",
+        "dialing_code": "+90 362"
+    },
+    {
+        "city": "Sanliurfa",
+        "area_code": "414",
+        "dialing_code": "+90 414"
+    },
+    {
+        "city": "Siirt",
+        "area_code": "484",
+        "dialing_code": "+90 484"
+    },
+    {
+        "city": "Sinop",
+        "area_code": "368",
+        "dialing_code": "+90 368"
+    },
+    {
+        "city": "Sirnak",
+        "area_code": "486",
+        "dialing_code": "+90 486"
+    },
+    {
+        "city": "Sivas",
+        "area_code": "346",
+        "dialing_code": "+90 346"
+    },
+    {
+        "city": "Tekirdag",
+        "area_code": "282",
+        "dialing_code": "+90 282"
+    },
+    {
+        "city": "Tokat",
+        "area_code": "356",
+        "dialing_code": "+90 356"
+    },
+    {
+        "city": "Trabzon",
+        "area_code": "462",
+        "dialing_code": "+90 462"
+    },
+    {
+        "city": "Tunceli",
+        "area_code": "428",
+        "dialing_code": "+90 428"
+    },
+    {
+        "city": "Usak",
+        "area_code": "276",
+        "dialing_code": "+90 276"
+    },
+    {
+        "city": "Van",
+        "area_code": "432",
+        "dialing_code": "+90 432"
+    },
+    {
+        "city": "Yalova",
+        "area_code": "226",
+        "dialing_code": "+90 226"
+    },
+    {
+        "city": "Yozgat",
+        "area_code": "354",
+        "dialing_code": "+90 354"
+    },
+    {
+        "city": "Zonguldak",
+        "area_code": "372",
+        "dialing_code": "+90 372"
+    }
+]

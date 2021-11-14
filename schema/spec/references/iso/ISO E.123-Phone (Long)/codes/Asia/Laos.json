@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Loungprabang",
+        "area_code": "71",
+        "dialing_code": "+856 71"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "20",
+        "dialing_code": "+856 20"
+    },
+    {
+        "city": "Pakse",
+        "area_code": "31",
+        "dialing_code": "+856 31"
+    },
+    {
+        "city": "Pakxan",
+        "area_code": "54",
+        "dialing_code": "+856 54"
+    },
+    {
+        "city": "Svannakhet",
+        "area_code": "41",
+        "dialing_code": "+856 41"
+    },
+    {
+        "city": "Thakhek",
+        "area_code": "51",
+        "dialing_code": "+856 51"
+    },
+    {
+        "city": "Vientiane",
+        "area_code": "21",
+        "dialing_code": "+856 21"
+    },
+    {
+        "city": "Vientiane (Capital)",
+        "area_code": "21",
+        "dialing_code": "+856 21"
+    }
+]

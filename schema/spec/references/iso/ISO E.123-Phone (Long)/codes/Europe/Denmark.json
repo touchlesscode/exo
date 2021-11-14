@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Aalborg",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Arhus",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Copenhagen",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Esbjerg",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Odense",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Randers",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Roskilde",
+        "area_code": "",
+        "dialing_code": "+45"
+    },
+    {
+        "city": "Århus",
+        "area_code": "",
+        "dialing_code": "+45"
+    }
+]

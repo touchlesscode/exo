@@ -1,0 +1,152 @@
+[
+    {
+        "city": "Abdalli",
+        "area_code": "470",
+        "dialing_code": "+965 470"
+    },
+    {
+        "city": "Ahmadi",
+        "area_code": "398",
+        "dialing_code": "+965 398"
+    },
+    {
+        "city": "Ahmadi & Umm-Alhaiman",
+        "area_code": "328",
+        "dialing_code": "+965 328"
+    },
+    {
+        "city": "Ardhiyah",
+        "area_code": "489",
+        "dialing_code": "+965 489"
+    },
+    {
+        "city": "Fahaheel",
+        "area_code": "392",
+        "dialing_code": "+965 392"
+    },
+    {
+        "city": "Farwaniah",
+        "area_code": "476",
+        "dialing_code": "+965 476"
+    },
+    {
+        "city": "Free Trade Zone",
+        "area_code": "461",
+        "dialing_code": "+965 461"
+    },
+    {
+        "city": "Funtas",
+        "area_code": "390",
+        "dialing_code": "+965 390"
+    },
+    {
+        "city": "Hawalli",
+        "area_code": "266",
+        "dialing_code": "+965 266"
+    },
+    {
+        "city": "Jaber Al-Ali",
+        "area_code": "384",
+        "dialing_code": "+965 384"
+    },
+    {
+        "city": "Jabriyah",
+        "area_code": "534",
+        "dialing_code": "+965 534"
+    },
+    {
+        "city": "Jahra",
+        "area_code": "477",
+        "dialing_code": "+965 477"
+    },
+    {
+        "city": "Jahra-B",
+        "area_code": "458",
+        "dialing_code": "+965 458"
+    },
+    {
+        "city": "Jaleeb Al-Shuyoukh",
+        "area_code": "431",
+        "dialing_code": "+965 431"
+    },
+    {
+        "city": "Kuwait City",
+        "area_code": "",
+        "dialing_code": "+965"
+    },
+    {
+        "city": "Manqaf & Shuiba",
+        "area_code": "376",
+        "dialing_code": "+965 376"
+    },
+    {
+        "city": "Mushrif",
+        "area_code": "538",
+        "dialing_code": "+965 538"
+    },
+    {
+        "city": "Nuzha",
+        "area_code": "259",
+        "dialing_code": "+965 259"
+    },
+    {
+        "city": "Qurain",
+        "area_code": "544",
+        "dialing_code": "+965 544"
+    },
+    {
+        "city": "Ras Salmiyah",
+        "area_code": "575",
+        "dialing_code": "+965 575"
+    },
+    {
+        "city": "Rekka",
+        "area_code": "396",
+        "dialing_code": "+965 396"
+    },
+    {
+        "city": "Sabah Salem",
+        "area_code": "552",
+        "dialing_code": "+965 552"
+    },
+    {
+        "city": "Safat",
+        "area_code": "249",
+        "dialing_code": "+965 249"
+    },
+    {
+        "city": "Salmiyah",
+        "area_code": "565",
+        "dialing_code": "+965 565"
+    },
+    {
+        "city": "Shuwaikh",
+        "area_code": "484",
+        "dialing_code": "+965 484"
+    },
+    {
+        "city": "South Subahiyah",
+        "area_code": "362",
+        "dialing_code": "+965 362"
+    },
+    {
+        "city": "Sulaibikhat",
+        "area_code": "487",
+        "dialing_code": "+965 487"
+    },
+    {
+        "city": "Sulaibiyah",
+        "area_code": "467",
+        "dialing_code": "+965 467"
+    },
+    {
+        "city": "Wafra",
+        "area_code": "381",
+        "dialing_code": "+965 381"
+    },
+    {
+        "city": "Zoor",
+        "area_code": "395",
+        "dialing_code": "+965 395"
+    }
+]

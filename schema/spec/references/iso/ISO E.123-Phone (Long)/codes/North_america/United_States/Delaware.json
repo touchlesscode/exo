@@ -1,0 +1,162 @@
+[
+    {
+        "city": "Akron",
+        "area_code": "330",
+        "dialing_code": "+1 330"
+    },
+    {
+        "city": "Bowling Green",
+        "area_code": "567",
+        "dialing_code": "+1 567"
+    },
+    {
+        "city": "Canton",
+        "area_code": "330",
+        "dialing_code": "+1 330"
+    },
+    {
+        "city": "Cincinnati",
+        "area_code": "513",
+        "dialing_code": "+1 513"
+    },
+    {
+        "city": "Cleveland",
+        "area_code": "216",
+        "dialing_code": "+1 216"
+    },
+    {
+        "city": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Dayton",
+        "area_code": "937",
+        "dialing_code": "+1 937"
+    },
+    {
+        "city": "Dublin",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Elyria",
+        "area_code": "440",
+        "dialing_code": "+1 440"
+    },
+    {
+        "city": "Euclid",
+        "area_code": "216",
+        "dialing_code": "+1 216"
+    },
+    {
+        "city": "Findlay",
+        "area_code": "567",
+        "dialing_code": "+1 567"
+    },
+    {
+        "city": "Grove City",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Hamilton",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Lakewood",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Lancaster",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Lima",
+        "area_code": "567",
+        "dialing_code": "+1 567"
+    },
+    {
+        "city": "Lorain",
+        "area_code": "440",
+        "dialing_code": "+1 440"
+    },
+    {
+        "city": "Mansfield",
+        "area_code": "567",
+        "dialing_code": "+1 567"
+    },
+    {
+        "city": "Marion",
+        "area_code": "740",
+        "dialing_code": "+1 740"
+    },
+    {
+        "city": "Mason",
+        "area_code": "513",
+        "dialing_code": "+1 513"
+    },
+    {
+        "city": "Massillon",
+        "area_code": "330",
+        "dialing_code": "+1 330"
+    },
+    {
+        "city": "Mentor",
+        "area_code": "440",
+        "dialing_code": "+1 440"
+    },
+    {
+        "city": "Middletown",
+        "area_code": "513",
+        "dialing_code": "+1 513"
+    },
+    {
+        "city": "Newark",
+        "area_code": "973",
+        "dialing_code": "+1 973"
+    },
+    {
+        "city": "North Royalton",
+        "area_code": "440",
+        "dialing_code": "+1 440"
+    },
+    {
+        "city": "Reynoldsburg",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Strongsville",
+        "area_code": "440",
+        "dialing_code": "+1 440"
+    },
+    {
+        "city": "Toledo",
+        "area_code": "419",
+        "dialing_code": "+1 419"
+    },
+    {
+        "city": "Warren",
+        "area_code": "586",
+        "dialing_code": "+1 586"
+    },
+    {
+        "city": "Westerville",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Youngstown",
+        "area_code": "330",
+        "dialing_code": "+1 330"
+    }
+]

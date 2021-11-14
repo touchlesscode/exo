@@ -1,0 +1,13 @@
+{
+    "type": "string",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "List of supported phone types.",
+    "title": "Phone types for a person or business party",
+    "enum": [
+        "FAX",
+        "HOME",
+        "MOBILE",
+        "OTHER",
+        "PAGER"
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Three-letter ISO 4217 alphabetical currency code.",
+    "type": "string",
+    "format": "paypal_common_currency_code_v1",
+    "minLength": 3,
+    "maxLength": 3
+}

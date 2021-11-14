@@ -1,0 +1,52 @@
+[
+    {
+        "city": "Ang Mo Kio",
+        "area_code": "645",
+        "dialing_code": "+65 645"
+    },
+    {
+        "city": "Ayer Rajah",
+        "area_code": "676",
+        "dialing_code": "+65 676"
+    },
+    {
+        "city": "Bedok",
+        "area_code": "644",
+        "dialing_code": "+65 644"
+    },
+    {
+        "city": "City",
+        "area_code": "653",
+        "dialing_code": "+65 653"
+    },
+    {
+        "city": "Geylang",
+        "area_code": "673",
+        "dialing_code": "+65 673"
+    },
+    {
+        "city": "Jurong West, Tampines",
+        "area_code": "678",
+        "dialing_code": "+65 678"
+    },
+    {
+        "city": "North",
+        "area_code": "635",
+        "dialing_code": "+65 635"
+    },
+    {
+        "city": "Sembawang",
+        "area_code": "675",
+        "dialing_code": "+65 675"
+    },
+    {
+        "city": "Singapore",
+        "area_code": "",
+        "dialing_code": "+65"
+    },
+    {
+        "city": "Tampines",
+        "area_code": "677",
+        "dialing_code": "+65 677"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "city": "Halifax",
+        "area_code": "902",
+        "dialing_code": "+1 902"
+    },
+    {
+        "city": "Truro",
+        "area_code": "641",
+        "dialing_code": "+1 641"
+    }
+]

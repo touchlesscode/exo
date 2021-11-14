@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Burlington",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Montpelier",
+        "area_code": "802",
+        "dialing_code": "+1 802"
+    },
+    {
+        "city": "Rutland",
+        "area_code": "802",
+        "dialing_code": "+1 802"
+    }
+]

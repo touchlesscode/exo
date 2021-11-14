@@ -1,0 +1,352 @@
+[
+    {
+        "city": "A Coruya",
+        "area_code": "981",
+        "dialing_code": "+34 981"
+    },
+    {
+        "city": "A Coruýa",
+        "area_code": "981",
+        "dialing_code": "+34 981"
+    },
+    {
+        "city": "Alava",
+        "area_code": "945",
+        "dialing_code": "+34 945"
+    },
+    {
+        "city": "Albacete",
+        "area_code": "967",
+        "dialing_code": "+34 967"
+    },
+    {
+        "city": "Alicante",
+        "area_code": "96",
+        "dialing_code": "+34 96"
+    },
+    {
+        "city": "Almeria",
+        "area_code": "950",
+        "dialing_code": "+34 950"
+    },
+    {
+        "city": "Almería",
+        "area_code": "950",
+        "dialing_code": "+34 950"
+    },
+    {
+        "city": "Asturias",
+        "area_code": "985",
+        "dialing_code": "+34 985"
+    },
+    {
+        "city": "Avila",
+        "area_code": "920",
+        "dialing_code": "+34 920"
+    },
+    {
+        "city": "Badajoz",
+        "area_code": "924",
+        "dialing_code": "+34 924"
+    },
+    {
+        "city": "Baleares",
+        "area_code": "971",
+        "dialing_code": "+34 971"
+    },
+    {
+        "city": "Barcelona",
+        "area_code": "93",
+        "dialing_code": "+34 93"
+    },
+    {
+        "city": "Bilbao",
+        "area_code": "94",
+        "dialing_code": "+34 94"
+    },
+    {
+        "city": "Burgos",
+        "area_code": "947",
+        "dialing_code": "+34 947"
+    },
+    {
+        "city": "Caceres",
+        "area_code": "927",
+        "dialing_code": "+34 927"
+    },
+    {
+        "city": "Cadiz",
+        "area_code": "956",
+        "dialing_code": "+34 956"
+    },
+    {
+        "city": "Cantabria",
+        "area_code": "942",
+        "dialing_code": "+34 942"
+    },
+    {
+        "city": "Castellon",
+        "area_code": "964",
+        "dialing_code": "+34 964"
+    },
+    {
+        "city": "Ceuta",
+        "area_code": "952",
+        "dialing_code": "+34 952"
+    },
+    {
+        "city": "Cordoba",
+        "area_code": "957",
+        "dialing_code": "+34 957"
+    },
+    {
+        "city": "Cuenca",
+        "area_code": "969",
+        "dialing_code": "+34 969"
+    },
+    {
+        "city": "Durango",
+        "area_code": "970",
+        "dialing_code": "+34 970"
+    },
+    {
+        "city": "Girona",
+        "area_code": "972",
+        "dialing_code": "+34 972"
+    },
+    {
+        "city": "Granada",
+        "area_code": "958",
+        "dialing_code": "+34 958"
+    },
+    {
+        "city": "Guadalajara",
+        "area_code": "949",
+        "dialing_code": "+34 949"
+    },
+    {
+        "city": "Guipuzcoa",
+        "area_code": "943",
+        "dialing_code": "+34 943"
+    },
+    {
+        "city": "Huelva",
+        "area_code": "959",
+        "dialing_code": "+34 959"
+    },
+    {
+        "city": "Huesca",
+        "area_code": "974",
+        "dialing_code": "+34 974"
+    },
+    {
+        "city": "Igualada",
+        "area_code": "93",
+        "dialing_code": "+34 93"
+    },
+    {
+        "city": "Jaen",
+        "area_code": "953",
+        "dialing_code": "+34 953"
+    },
+    {
+        "city": "La Coruna",
+        "area_code": "81",
+        "dialing_code": "+34 81"
+    },
+    {
+        "city": "La Coruña",
+        "area_code": "81",
+        "dialing_code": "+34 81"
+    },
+    {
+        "city": "La Rioja",
+        "area_code": "941",
+        "dialing_code": "+34 941"
+    },
+    {
+        "city": "Las Palmas",
+        "area_code": "928",
+        "dialing_code": "+34 928"
+    },
+    {
+        "city": "Las Palmas de Gran Canaria",
+        "area_code": "928",
+        "dialing_code": "+34 928"
+    },
+    {
+        "city": "Leon",
+        "area_code": "987",
+        "dialing_code": "+34 987"
+    },
+    {
+        "city": "Lerida",
+        "area_code": "973",
+        "dialing_code": "+34 973"
+    },
+    {
+        "city": "Lugo",
+        "area_code": "982",
+        "dialing_code": "+34 982"
+    },
+    {
+        "city": "Madrid",
+        "area_code": "91",
+        "dialing_code": "+34 91"
+    },
+    {
+        "city": "Malaga",
+        "area_code": "95",
+        "dialing_code": "+34 95"
+    },
+    {
+        "city": "Melilla",
+        "area_code": "952",
+        "dialing_code": "+34 952"
+    },
+    {
+        "city": "Murcia",
+        "area_code": "968",
+        "dialing_code": "+34 968"
+    },
+    {
+        "city": "Navarra",
+        "area_code": "948",
+        "dialing_code": "+34 948"
+    },
+    {
+        "city": "Orense",
+        "area_code": "988",
+        "dialing_code": "+34 988"
+    },
+    {
+        "city": "Oviedo",
+        "area_code": "407",
+        "dialing_code": "+34 407"
+    },
+    {
+        "city": "Palencia",
+        "area_code": "979",
+        "dialing_code": "+34 979"
+    },
+    {
+        "city": "Palma",
+        "area_code": "971",
+        "dialing_code": "+34 971"
+    },
+    {
+        "city": "Palma De Mallorca",
+        "area_code": "971",
+        "dialing_code": "+34 971"
+    },
+    {
+        "city": "Palma de Mallorca",
+        "area_code": "971",
+        "dialing_code": "+34 971"
+    },
+    {
+        "city": "Pamplona",
+        "area_code": "948",
+        "dialing_code": "+34 948"
+    },
+    {
+        "city": "Pontevedra",
+        "area_code": "986",
+        "dialing_code": "+34 986"
+    },
+    {
+        "city": "Salamanca",
+        "area_code": "923",
+        "dialing_code": "+34 923"
+    },
+    {
+        "city": "Santa Cruz",
+        "area_code": "922",
+        "dialing_code": "+34 922"
+    },
+    {
+        "city": "Santa Cruz de Tenerife",
+        "area_code": "922",
+        "dialing_code": "+34 922"
+    },
+    {
+        "city": "Santander",
+        "area_code": "942",
+        "dialing_code": "+34 942"
+    },
+    {
+        "city": "Segovia",
+        "area_code": "921",
+        "dialing_code": "+34 921"
+    },
+    {
+        "city": "Sevilla",
+        "area_code": "95",
+        "dialing_code": "+34 95"
+    },
+    {
+        "city": "Seville",
+        "area_code": "95",
+        "dialing_code": "+34 95"
+    },
+    {
+        "city": "Soria",
+        "area_code": "954",
+        "dialing_code": "+34 954"
+    },
+    {
+        "city": "Tarragona",
+        "area_code": "977",
+        "dialing_code": "+34 977"
+    },
+    {
+        "city": "Tenerife",
+        "area_code": "922",
+        "dialing_code": "+34 922"
+    },
+    {
+        "city": "Toledo",
+        "area_code": "925",
+        "dialing_code": "+34 925"
+    },
+    {
+        "city": "Torremolinos",
+        "area_code": "952",
+        "dialing_code": "+34 952"
+    },
+    {
+        "city": "Turuel",
+        "area_code": "978",
+        "dialing_code": "+34 978"
+    },
+    {
+        "city": "Valencia",
+        "area_code": "96",
+        "dialing_code": "+34 96"
+    },
+    {
+        "city": "Valladolid",
+        "area_code": "983",
+        "dialing_code": "+34 983"
+    },
+    {
+        "city": "Vizcaya",
+        "area_code": "94",
+        "dialing_code": "+34 94"
+    },
+    {
+        "city": "Zamora",
+        "area_code": "980",
+        "dialing_code": "+34 980"
+    },
+    {
+        "city": "Zaragoza",
+        "area_code": "976",
+        "dialing_code": "+34 976"
+    },
+    {
+        "city": "Ávila",
+        "area_code": "920",
+        "dialing_code": "+34 920"
+    }
+]

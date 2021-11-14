@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Percentages as fixed-point, signed decimal values. Use for all interest rates. Represent an interest rate of 19.99% as 19.99. Valid number formats are plain decimal numbers and whole numbers. Unlike a JSON number or JSON schema number type, this value MUST NOT be deserialized in JavaScript into a JavaScript Number object, which is 64-bit floating-point and cannot accurately represent all values transmitted by this type. Likewise, in Java, this type MUST be deserialized into a BigDecimal or other fixed-point numeric type.",
+    "type": "string",
+    "format": "paypal_common_percentage_v1",
+    "pattern": "^((-?[0-9]+)|(-?([0-9]+)?[.][0-9]+))$"
+}

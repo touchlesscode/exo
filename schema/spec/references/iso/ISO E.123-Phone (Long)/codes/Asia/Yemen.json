@@ -1,0 +1,52 @@
+[
+    {
+        "city": "Aden",
+        "area_code": "2",
+        "dialing_code": "+967 2"
+    },
+    {
+        "city": "Almahrah",
+        "area_code": "5",
+        "dialing_code": "+967 5"
+    },
+    {
+        "city": "Amran",
+        "area_code": "7",
+        "dialing_code": "+967 7"
+    },
+    {
+        "city": "Hodeidah",
+        "area_code": "3",
+        "dialing_code": "+967 3"
+    },
+    {
+        "city": "San`a",
+        "area_code": "1",
+        "dialing_code": "+967 1"
+    },
+    {
+        "city": "Sana'a",
+        "area_code": "1",
+        "dialing_code": "+967 1"
+    },
+    {
+        "city": "Ta izz",
+        "area_code": "4",
+        "dialing_code": "+967 4"
+    },
+    {
+        "city": "Taiz",
+        "area_code": "4",
+        "dialing_code": "+967 4"
+    },
+    {
+        "city": "Yarim",
+        "area_code": "4",
+        "dialing_code": "+967 4"
+    },
+    {
+        "city": "Zabid",
+        "area_code": "3",
+        "dialing_code": "+967 3"
+    }
+]

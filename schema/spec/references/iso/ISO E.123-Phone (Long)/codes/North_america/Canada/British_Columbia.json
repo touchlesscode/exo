@@ -1,0 +1,112 @@
+[
+    {
+        "city": "Abbotsford",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Burnaby",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Chilliwack",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Clinton",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Cranbrook",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Cumberland",
+        "area_code": "902",
+        "dialing_code": "+1 902"
+    },
+    {
+        "city": "Hope",
+        "area_code": "812",
+        "dialing_code": "+1 812"
+    },
+    {
+        "city": "Kamloops",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Kelowna",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Nanaimo",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Nelson",
+        "area_code": "770",
+        "dialing_code": "+1 770"
+    },
+    {
+        "city": "New Westminster",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Port Coquitlam",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Prince George",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Saanich",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Summerland",
+        "area_code": "805",
+        "dialing_code": "+1 805"
+    },
+    {
+        "city": "Surrey",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Vancouver",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Victoria",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Whistler",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Yale",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    }
+]

@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Bristol",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Cranston",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Newport",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Pawtucket",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Providence",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Warwick",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "West Warwick",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Westerly",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    },
+    {
+        "city": "Woonsocket",
+        "area_code": "401",
+        "dialing_code": "+1 401"
+    }
+]

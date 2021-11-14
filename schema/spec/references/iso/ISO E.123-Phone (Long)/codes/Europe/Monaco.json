@@ -1,0 +1,12 @@
+[
+    {
+        "city": "Monaco",
+        "area_code": "9",
+        "dialing_code": "+377 9"
+    },
+    {
+        "city": "Monte Carlo",
+        "area_code": "",
+        "dialing_code": "+377"
+    }
+]

@@ -1,0 +1,1317 @@
+[
+    {
+        "city": "Acharnes",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Aegina",
+        "area_code": "2297",
+        "dialing_code": "+30 2297"
+    },
+    {
+        "city": "Aeginio",
+        "area_code": "2353",
+        "dialing_code": "+30 2353"
+    },
+    {
+        "city": "Aegio",
+        "area_code": "2691",
+        "dialing_code": "+30 2691"
+    },
+    {
+        "city": "Afidnes",
+        "area_code": "2295",
+        "dialing_code": "+30 2295"
+    },
+    {
+        "city": "Ag. Kirikos",
+        "area_code": "2275",
+        "dialing_code": "+30 2275"
+    },
+    {
+        "city": "Ag. Nikolaos",
+        "area_code": "2841",
+        "dialing_code": "+30 2841"
+    },
+    {
+        "city": "Ag. Sotira",
+        "area_code": "2293",
+        "dialing_code": "+30 2293"
+    },
+    {
+        "city": "Ag. Varvara",
+        "area_code": "2894",
+        "dialing_code": "+30 2894"
+    },
+    {
+        "city": "Agia",
+        "area_code": "2494",
+        "dialing_code": "+30 2494"
+    },
+    {
+        "city": "Agiasos",
+        "area_code": "2252",
+        "dialing_code": "+30 2252"
+    },
+    {
+        "city": "Agrinio",
+        "area_code": "2641",
+        "dialing_code": "+30 2641"
+    },
+    {
+        "city": "Agrinion",
+        "area_code": "2641",
+        "dialing_code": "+30 2641"
+    },
+    {
+        "city": "Aitoliko",
+        "area_code": "2632",
+        "dialing_code": "+30 2632"
+    },
+    {
+        "city": "Akrata",
+        "area_code": "2696",
+        "dialing_code": "+30 2696"
+    },
+    {
+        "city": "Alexandria",
+        "area_code": "2333",
+        "dialing_code": "+30 2333"
+    },
+    {
+        "city": "Alexandroupoli",
+        "area_code": "2551",
+        "dialing_code": "+30 2551"
+    },
+    {
+        "city": "Alexandroupolis",
+        "area_code": "2551",
+        "dialing_code": "+30 2551"
+    },
+    {
+        "city": "Aliartos",
+        "area_code": "2268",
+        "dialing_code": "+30 2268"
+    },
+    {
+        "city": "Aliveri",
+        "area_code": "2223",
+        "dialing_code": "+30 2223"
+    },
+    {
+        "city": "Almyros",
+        "area_code": "2422",
+        "dialing_code": "+30 2422"
+    },
+    {
+        "city": "Amaliada",
+        "area_code": "2622",
+        "dialing_code": "+30 2622"
+    },
+    {
+        "city": "Amari",
+        "area_code": "2833",
+        "dialing_code": "+30 2833"
+    },
+    {
+        "city": "Amfikleia",
+        "area_code": "2234",
+        "dialing_code": "+30 2234"
+    },
+    {
+        "city": "Amfilochia",
+        "area_code": "2642",
+        "dialing_code": "+30 2642"
+    },
+    {
+        "city": "Amfissa",
+        "area_code": "2265",
+        "dialing_code": "+30 2265"
+    },
+    {
+        "city": "Amynteo",
+        "area_code": "2386",
+        "dialing_code": "+30 2386"
+    },
+    {
+        "city": "Anc. Olympia",
+        "area_code": "2624",
+        "dialing_code": "+30 2624"
+    },
+    {
+        "city": "Andritsena",
+        "area_code": "2626",
+        "dialing_code": "+30 2626"
+    },
+    {
+        "city": "Andros",
+        "area_code": "2282",
+        "dialing_code": "+30 2282"
+    },
+    {
+        "city": "Archagelos",
+        "area_code": "2244",
+        "dialing_code": "+30 2244"
+    },
+    {
+        "city": "Argos",
+        "area_code": "2751",
+        "dialing_code": "+30 2751"
+    },
+    {
+        "city": "Argostoli",
+        "area_code": "2671",
+        "dialing_code": "+30 2671"
+    },
+    {
+        "city": "Aridea",
+        "area_code": "2384",
+        "dialing_code": "+30 2384"
+    },
+    {
+        "city": "Arkalochori",
+        "area_code": "2891",
+        "dialing_code": "+30 2891"
+    },
+    {
+        "city": "Arnea",
+        "area_code": "2372",
+        "dialing_code": "+30 2372"
+    },
+    {
+        "city": "Arta",
+        "area_code": "2681",
+        "dialing_code": "+30 2681"
+    },
+    {
+        "city": "Asprovalta",
+        "area_code": "2397",
+        "dialing_code": "+30 2397"
+    },
+    {
+        "city": "Astros",
+        "area_code": "2755",
+        "dialing_code": "+30 2755"
+    },
+    {
+        "city": "Atalanti",
+        "area_code": "2233",
+        "dialing_code": "+30 2233"
+    },
+    {
+        "city": "Athens",
+        "area_code": "21",
+        "dialing_code": "+30 21"
+    },
+    {
+        "city": "Chalandritsa",
+        "area_code": "2694",
+        "dialing_code": "+30 2694"
+    },
+    {
+        "city": "Chalkiopoulo",
+        "area_code": "2647",
+        "dialing_code": "+30 2647"
+    },
+    {
+        "city": "Chania",
+        "area_code": "2821",
+        "dialing_code": "+30 2821"
+    },
+    {
+        "city": "Chios",
+        "area_code": "2271",
+        "dialing_code": "+30 2271"
+    },
+    {
+        "city": "Chlkidona",
+        "area_code": "2391",
+        "dialing_code": "+30 2391"
+    },
+    {
+        "city": "Chrysoupoli",
+        "area_code": "2591",
+        "dialing_code": "+30 2591"
+    },
+    {
+        "city": "Corfu",
+        "area_code": "2661",
+        "dialing_code": "+30 2661"
+    },
+    {
+        "city": "Delvinaki",
+        "area_code": "2657",
+        "dialing_code": "+30 2657"
+    },
+    {
+        "city": "Didymoticho",
+        "area_code": "2553",
+        "dialing_code": "+30 2553"
+    },
+    {
+        "city": "Distomo",
+        "area_code": "2267",
+        "dialing_code": "+30 2267"
+    },
+    {
+        "city": "Domokos",
+        "area_code": "2232",
+        "dialing_code": "+30 2232"
+    },
+    {
+        "city": "Domvrena",
+        "area_code": "2264",
+        "dialing_code": "+30 2264"
+    },
+    {
+        "city": "Drama",
+        "area_code": "2521",
+        "dialing_code": "+30 2521"
+    },
+    {
+        "city": "Echinos",
+        "area_code": "2544",
+        "dialing_code": "+30 2544"
+    },
+    {
+        "city": "Edessa",
+        "area_code": "2381",
+        "dialing_code": "+30 2381"
+    },
+    {
+        "city": "Elassona",
+        "area_code": "2493",
+        "dialing_code": "+30 2493"
+    },
+    {
+        "city": "Eleftheroupoli",
+        "area_code": "2592",
+        "dialing_code": "+30 2592"
+    },
+    {
+        "city": "Eretria",
+        "area_code": "2229",
+        "dialing_code": "+30 2229"
+    },
+    {
+        "city": "Farkadona",
+        "area_code": "2433",
+        "dialing_code": "+30 2433"
+    },
+    {
+        "city": "Farsala",
+        "area_code": "2491",
+        "dialing_code": "+30 2491"
+    },
+    {
+        "city": "Feres",
+        "area_code": "2555",
+        "dialing_code": "+30 2555"
+    },
+    {
+        "city": "Filiates",
+        "area_code": "2664",
+        "dialing_code": "+30 2664"
+    },
+    {
+        "city": "Florina",
+        "area_code": "2385",
+        "dialing_code": "+30 2385"
+    },
+    {
+        "city": "Fyties",
+        "area_code": "2646",
+        "dialing_code": "+30 2646"
+    },
+    {
+        "city": "Gargalianoi",
+        "area_code": "2763",
+        "dialing_code": "+30 2763"
+    },
+    {
+        "city": "Giannitsa",
+        "area_code": "2382",
+        "dialing_code": "+30 2382"
+    },
+    {
+        "city": "Glyfada",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Grevena",
+        "area_code": "2462",
+        "dialing_code": "+30 2462"
+    },
+    {
+        "city": "Gytheio",
+        "area_code": "2733",
+        "dialing_code": "+30 2733"
+    },
+    {
+        "city": "Halkida",
+        "area_code": "2221",
+        "dialing_code": "+30 2221"
+    },
+    {
+        "city": "Herakleia",
+        "area_code": "2325",
+        "dialing_code": "+30 2325"
+    },
+    {
+        "city": "Heraklion",
+        "area_code": "2810",
+        "dialing_code": "+30 2810"
+    },
+    {
+        "city": "Heraklion (Iraklion)",
+        "area_code": "2810",
+        "dialing_code": "+30 2810"
+    },
+    {
+        "city": "Iasmos",
+        "area_code": "2534",
+        "dialing_code": "+30 2534"
+    },
+    {
+        "city": "Ierapetra",
+        "area_code": "2842",
+        "dialing_code": "+30 2842"
+    },
+    {
+        "city": "Ierissos",
+        "area_code": "2377",
+        "dialing_code": "+30 2377"
+    },
+    {
+        "city": "Igoumenitsa",
+        "area_code": "2665",
+        "dialing_code": "+30 2665"
+    },
+    {
+        "city": "Ilio",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Iraklion",
+        "area_code": "281",
+        "dialing_code": "+30 281"
+    },
+    {
+        "city": "K. Nevrokopi",
+        "area_code": "2523",
+        "dialing_code": "+30 2523"
+    },
+    {
+        "city": "Kala Nera",
+        "area_code": "2423",
+        "dialing_code": "+30 2423"
+    },
+    {
+        "city": "Kalabaka",
+        "area_code": "2432",
+        "dialing_code": "+30 2432"
+    },
+    {
+        "city": "Kalamaria",
+        "area_code": "2310",
+        "dialing_code": "+30 2310"
+    },
+    {
+        "city": "Kalamata",
+        "area_code": "2721",
+        "dialing_code": "+30 2721"
+    },
+    {
+        "city": "Kalavrita",
+        "area_code": "2692",
+        "dialing_code": "+30 2692"
+    },
+    {
+        "city": "Kalentzi",
+        "area_code": "2659",
+        "dialing_code": "+30 2659"
+    },
+    {
+        "city": "Kalianoi",
+        "area_code": "2747",
+        "dialing_code": "+30 2747"
+    },
+    {
+        "city": "Kalimnos",
+        "area_code": "2243",
+        "dialing_code": "+30 2243"
+    },
+    {
+        "city": "Kallikrateia",
+        "area_code": "2399",
+        "dialing_code": "+30 2399"
+    },
+    {
+        "city": "Kallisti",
+        "area_code": "2535",
+        "dialing_code": "+30 2535"
+    },
+    {
+        "city": "Kallithea",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Kalloni",
+        "area_code": "2253",
+        "dialing_code": "+30 2253"
+    },
+    {
+        "city": "Kam.Vourla",
+        "area_code": "2235",
+        "dialing_code": "+30 2235"
+    },
+    {
+        "city": "Kanalaki",
+        "area_code": "2684",
+        "dialing_code": "+30 2684"
+    },
+    {
+        "city": "Kantanos",
+        "area_code": "2823",
+        "dialing_code": "+30 2823"
+    },
+    {
+        "city": "Kardamila",
+        "area_code": "2272",
+        "dialing_code": "+30 2272"
+    },
+    {
+        "city": "Karditsa",
+        "area_code": "2441",
+        "dialing_code": "+30 2441"
+    },
+    {
+        "city": "Karies",
+        "area_code": "2653",
+        "dialing_code": "+30 2653"
+    },
+    {
+        "city": "Karpathos",
+        "area_code": "2245",
+        "dialing_code": "+30 2245"
+    },
+    {
+        "city": "Karpenisi",
+        "area_code": "2237",
+        "dialing_code": "+30 2237"
+    },
+    {
+        "city": "Karystos",
+        "area_code": "2224",
+        "dialing_code": "+30 2224"
+    },
+    {
+        "city": "Kassandreia",
+        "area_code": "2374",
+        "dialing_code": "+30 2374"
+    },
+    {
+        "city": "Kastoria",
+        "area_code": "2467",
+        "dialing_code": "+30 2467"
+    },
+    {
+        "city": "Kastri",
+        "area_code": "2792",
+        "dialing_code": "+30 2792"
+    },
+    {
+        "city": "Katerini",
+        "area_code": "2351",
+        "dialing_code": "+30 2351"
+    },
+    {
+        "city": "Kavala",
+        "area_code": "251",
+        "dialing_code": "+30 251"
+    },
+    {
+        "city": "Kea",
+        "area_code": "2288",
+        "dialing_code": "+30 2288"
+    },
+    {
+        "city": "Keratsini",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Khania",
+        "area_code": "28210",
+        "dialing_code": "+30 28210"
+    },
+    {
+        "city": "Khania/Souda",
+        "area_code": "28210",
+        "dialing_code": "+30 28210"
+    },
+    {
+        "city": "Khaniá",
+        "area_code": "28210",
+        "dialing_code": "+30 28210"
+    },
+    {
+        "city": "Kiato",
+        "area_code": "2742",
+        "dialing_code": "+30 2742"
+    },
+    {
+        "city": "Kilkis",
+        "area_code": "2341",
+        "dialing_code": "+30 2341"
+    },
+    {
+        "city": "Kissamos",
+        "area_code": "2822",
+        "dialing_code": "+30 2822"
+    },
+    {
+        "city": "Kolympari",
+        "area_code": "2824",
+        "dialing_code": "+30 2824"
+    },
+    {
+        "city": "Komotini",
+        "area_code": "2531",
+        "dialing_code": "+30 2531"
+    },
+    {
+        "city": "Konitsa",
+        "area_code": "2655",
+        "dialing_code": "+30 2655"
+    },
+    {
+        "city": "Kopanaki",
+        "area_code": "2765",
+        "dialing_code": "+30 2765"
+    },
+    {
+        "city": "Korinthos",
+        "area_code": "2741",
+        "dialing_code": "+30 2741"
+    },
+    {
+        "city": "Koroni",
+        "area_code": "2725",
+        "dialing_code": "+30 2725"
+    },
+    {
+        "city": "Kos",
+        "area_code": "2242",
+        "dialing_code": "+30 2242"
+    },
+    {
+        "city": "Kozani",
+        "area_code": "2461",
+        "dialing_code": "+30 2461"
+    },
+    {
+        "city": "Kranidi",
+        "area_code": "2754",
+        "dialing_code": "+30 2754"
+    },
+    {
+        "city": "Krestena",
+        "area_code": "2625",
+        "dialing_code": "+30 2625"
+    },
+    {
+        "city": "Kymi",
+        "area_code": "2222",
+        "dialing_code": "+30 2222"
+    },
+    {
+        "city": "Kyparissia",
+        "area_code": "2761",
+        "dialing_code": "+30 2761"
+    },
+    {
+        "city": "Kyprinos",
+        "area_code": "2556",
+        "dialing_code": "+30 2556"
+    },
+    {
+        "city": "Kythira",
+        "area_code": "2736",
+        "dialing_code": "+30 2736"
+    },
+    {
+        "city": "Lagadas",
+        "area_code": "2394",
+        "dialing_code": "+30 2394"
+    },
+    {
+        "city": "Lagadikia",
+        "area_code": "2393",
+        "dialing_code": "+30 2393"
+    },
+    {
+        "city": "Lagonisi",
+        "area_code": "2291",
+        "dialing_code": "+30 2291"
+    },
+    {
+        "city": "Lamia",
+        "area_code": "2231",
+        "dialing_code": "+30 2231"
+    },
+    {
+        "city": "Larissa",
+        "area_code": "241",
+        "dialing_code": "+30 241"
+    },
+    {
+        "city": "Lavrion",
+        "area_code": "2292",
+        "dialing_code": "+30 2292"
+    },
+    {
+        "city": "Lechena",
+        "area_code": "2623",
+        "dialing_code": "+30 2623"
+    },
+    {
+        "city": "Lefkada",
+        "area_code": "2645",
+        "dialing_code": "+30 2645"
+    },
+    {
+        "city": "Lefkimi Corfu",
+        "area_code": "2662",
+        "dialing_code": "+30 2662"
+    },
+    {
+        "city": "Leonidio",
+        "area_code": "2757",
+        "dialing_code": "+30 2757"
+    },
+    {
+        "city": "Leros",
+        "area_code": "2247",
+        "dialing_code": "+30 2247"
+    },
+    {
+        "city": "Levidi",
+        "area_code": "2796",
+        "dialing_code": "+30 2796"
+    },
+    {
+        "city": "Lidoriki",
+        "area_code": "2266",
+        "dialing_code": "+30 2266"
+    },
+    {
+        "city": "Limenari",
+        "area_code": "2593",
+        "dialing_code": "+30 2593"
+    },
+    {
+        "city": "Limin Chersonisou",
+        "area_code": "2897",
+        "dialing_code": "+30 2897"
+    },
+    {
+        "city": "Livadeia",
+        "area_code": "2261",
+        "dialing_code": "+30 2261"
+    },
+    {
+        "city": "Loutra Aidipsou",
+        "area_code": "2226",
+        "dialing_code": "+30 2226"
+    },
+    {
+        "city": "Loutraki",
+        "area_code": "2744",
+        "dialing_code": "+30 2744"
+    },
+    {
+        "city": "Lygourgio",
+        "area_code": "2753",
+        "dialing_code": "+30 2753"
+    },
+    {
+        "city": "Makrakomi",
+        "area_code": "2236",
+        "dialing_code": "+30 2236"
+    },
+    {
+        "city": "Makrychori",
+        "area_code": "2495",
+        "dialing_code": "+30 2495"
+    },
+    {
+        "city": "Mantoudi",
+        "area_code": "2227",
+        "dialing_code": "+30 2227"
+    },
+    {
+        "city": "Markopoulo",
+        "area_code": "2299",
+        "dialing_code": "+30 2299"
+    },
+    {
+        "city": "Mataraga",
+        "area_code": "2635",
+        "dialing_code": "+30 2635"
+    },
+    {
+        "city": "Megalopoli",
+        "area_code": "2791",
+        "dialing_code": "+30 2791"
+    },
+    {
+        "city": "Megara",
+        "area_code": "2296",
+        "dialing_code": "+30 2296"
+    },
+    {
+        "city": "Meligalas",
+        "area_code": "2724",
+        "dialing_code": "+30 2724"
+    },
+    {
+        "city": "Messini",
+        "area_code": "2722",
+        "dialing_code": "+30 2722"
+    },
+    {
+        "city": "Messologi",
+        "area_code": "2631",
+        "dialing_code": "+30 2631"
+    },
+    {
+        "city": "Mikonos",
+        "area_code": "2289",
+        "dialing_code": "+30 2289"
+    },
+    {
+        "city": "Milos",
+        "area_code": "2287",
+        "dialing_code": "+30 2287"
+    },
+    {
+        "city": "Mirina",
+        "area_code": "2254",
+        "dialing_code": "+30 2254"
+    },
+    {
+        "city": "Mitilini",
+        "area_code": "2251",
+        "dialing_code": "+30 2251"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "69",
+        "dialing_code": "+30 69"
+    },
+    {
+        "city": "Moires",
+        "area_code": "2892",
+        "dialing_code": "+30 2892"
+    },
+    {
+        "city": "Molaoi",
+        "area_code": "2732",
+        "dialing_code": "+30 2732"
+    },
+    {
+        "city": "Moudania",
+        "area_code": "2373",
+        "dialing_code": "+30 2373"
+    },
+    {
+        "city": "Mouzaki",
+        "area_code": "2445",
+        "dialing_code": "+30 2445"
+    },
+    {
+        "city": "Nafpaktos",
+        "area_code": "2634",
+        "dialing_code": "+30 2634"
+    },
+    {
+        "city": "Nafplion",
+        "area_code": "2752",
+        "dialing_code": "+30 2752"
+    },
+    {
+        "city": "Naousa",
+        "area_code": "2332",
+        "dialing_code": "+30 2332"
+    },
+    {
+        "city": "Naxos",
+        "area_code": "2285",
+        "dialing_code": "+30 2285"
+    },
+    {
+        "city": "Nea Smyrni",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Neapoli S",
+        "area_code": "2734",
+        "dialing_code": "+30 2734"
+    },
+    {
+        "city": "Nemea",
+        "area_code": "2746",
+        "dialing_code": "+30 2746"
+    },
+    {
+        "city": "Nigrita",
+        "area_code": "2322",
+        "dialing_code": "+30 2322"
+    },
+    {
+        "city": "Nikaia",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Nikitas",
+        "area_code": "2375",
+        "dialing_code": "+30 2375"
+    },
+    {
+        "city": "Orestiada",
+        "area_code": "2552",
+        "dialing_code": "+30 2552"
+    },
+    {
+        "city": "Palamas",
+        "area_code": "2444",
+        "dialing_code": "+30 2444"
+    },
+    {
+        "city": "Paramythia",
+        "area_code": "2666",
+        "dialing_code": "+30 2666"
+    },
+    {
+        "city": "Paranesti",
+        "area_code": "2524",
+        "dialing_code": "+30 2524"
+    },
+    {
+        "city": "Paros",
+        "area_code": "2284",
+        "dialing_code": "+30 2284"
+    },
+    {
+        "city": "Patra",
+        "area_code": "261",
+        "dialing_code": "+30 261"
+    },
+    {
+        "city": "Patras",
+        "area_code": "2610",
+        "dialing_code": "+30 2610"
+    },
+    {
+        "city": "Perama",
+        "area_code": "2834",
+        "dialing_code": "+30 2834"
+    },
+    {
+        "city": "Peramos",
+        "area_code": "2594",
+        "dialing_code": "+30 2594"
+    },
+    {
+        "city": "Perdika",
+        "area_code": "2654",
+        "dialing_code": "+30 2654"
+    },
+    {
+        "city": "Perea",
+        "area_code": "2392",
+        "dialing_code": "+30 2392"
+    },
+    {
+        "city": "Peristeri",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Peristerion",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Philippiada",
+        "area_code": "2683",
+        "dialing_code": "+30 2683"
+    },
+    {
+        "city": "Piraeus",
+        "area_code": "210",
+        "dialing_code": "+30 210"
+    },
+    {
+        "city": "Plaka",
+        "area_code": "2352",
+        "dialing_code": "+30 2352"
+    },
+    {
+        "city": "Polikastro",
+        "area_code": "2343",
+        "dialing_code": "+30 2343"
+    },
+    {
+        "city": "Polygyros",
+        "area_code": "2371",
+        "dialing_code": "+30 2371"
+    },
+    {
+        "city": "Poros",
+        "area_code": "2298",
+        "dialing_code": "+30 2298"
+    },
+    {
+        "city": "Preveza",
+        "area_code": "2682",
+        "dialing_code": "+30 2682"
+    },
+    {
+        "city": "Prosotsani",
+        "area_code": "2522",
+        "dialing_code": "+30 2522"
+    },
+    {
+        "city": "Préveza",
+        "area_code": "2682",
+        "dialing_code": "+30 2682"
+    },
+    {
+        "city": "Psachna",
+        "area_code": "2228",
+        "dialing_code": "+30 2228"
+    },
+    {
+        "city": "Ptolemaida",
+        "area_code": "2463",
+        "dialing_code": "+30 2463"
+    },
+    {
+        "city": "Pyli",
+        "area_code": "2434",
+        "dialing_code": "+30 2434"
+    },
+    {
+        "city": "Pylos",
+        "area_code": "2723",
+        "dialing_code": "+30 2723"
+    },
+    {
+        "city": "Pyrgos",
+        "area_code": "2621",
+        "dialing_code": "+30 2621"
+    },
+    {
+        "city": "Pyrgos (Creta)",
+        "area_code": "2893",
+        "dialing_code": "+30 2893"
+    },
+    {
+        "city": "Rafina",
+        "area_code": "2294",
+        "dialing_code": "+30 2294"
+    },
+    {
+        "city": "Rethymno",
+        "area_code": "2831",
+        "dialing_code": "+30 2831"
+    },
+    {
+        "city": "Rhodes",
+        "area_code": "2241",
+        "dialing_code": "+30 2241"
+    },
+    {
+        "city": "Rodhos",
+        "area_code": "22410",
+        "dialing_code": "+30 22410"
+    },
+    {
+        "city": "Rodopoli",
+        "area_code": "2327",
+        "dialing_code": "+30 2327"
+    },
+    {
+        "city": "Ródhos",
+        "area_code": "22410",
+        "dialing_code": "+30 22410"
+    },
+    {
+        "city": "Salakos",
+        "area_code": "2246",
+        "dialing_code": "+30 2246"
+    },
+    {
+        "city": "Sami",
+        "area_code": "2674",
+        "dialing_code": "+30 2674"
+    },
+    {
+        "city": "Samos",
+        "area_code": "2273",
+        "dialing_code": "+30 2273"
+    },
+    {
+        "city": "Sapes",
+        "area_code": "2532",
+        "dialing_code": "+30 2532"
+    },
+    {
+        "city": "Serres",
+        "area_code": "2321",
+        "dialing_code": "+30 2321"
+    },
+    {
+        "city": "Servia",
+        "area_code": "2464",
+        "dialing_code": "+30 2464"
+    },
+    {
+        "city": "Siatista",
+        "area_code": "2465",
+        "dialing_code": "+30 2465"
+    },
+    {
+        "city": "Sidirokastro",
+        "area_code": "2323",
+        "dialing_code": "+30 2323"
+    },
+    {
+        "city": "Siros",
+        "area_code": "2281",
+        "dialing_code": "+30 2281"
+    },
+    {
+        "city": "Sitia",
+        "area_code": "2843",
+        "dialing_code": "+30 2843"
+    },
+    {
+        "city": "Skala",
+        "area_code": "2735",
+        "dialing_code": "+30 2735"
+    },
+    {
+        "city": "Skiathos",
+        "area_code": "2427",
+        "dialing_code": "+30 2427"
+    },
+    {
+        "city": "Skopelos",
+        "area_code": "2424",
+        "dialing_code": "+30 2424"
+    },
+    {
+        "city": "Skripero Corfu",
+        "area_code": "2663",
+        "dialing_code": "+30 2663"
+    },
+    {
+        "city": "Sochos",
+        "area_code": "2395",
+        "dialing_code": "+30 2395"
+    },
+    {
+        "city": "Sofades",
+        "area_code": "2443",
+        "dialing_code": "+30 2443"
+    },
+    {
+        "city": "Soufli",
+        "area_code": "2554",
+        "dialing_code": "+30 2554"
+    },
+    {
+        "city": "Sparti",
+        "area_code": "2731",
+        "dialing_code": "+30 2731"
+    },
+    {
+        "city": "Spili",
+        "area_code": "2832",
+        "dialing_code": "+30 2832"
+    },
+    {
+        "city": "Stavroupoli",
+        "area_code": "2542",
+        "dialing_code": "+30 2542"
+    },
+    {
+        "city": "Stilida",
+        "area_code": "2238",
+        "dialing_code": "+30 2238"
+    },
+    {
+        "city": "Stratoni",
+        "area_code": "2376",
+        "dialing_code": "+30 2376"
+    },
+    {
+        "city": "Tampouria",
+        "area_code": "2656",
+        "dialing_code": "+30 2656"
+    },
+    {
+        "city": "Thermo",
+        "area_code": "2644",
+        "dialing_code": "+30 2644"
+    },
+    {
+        "city": "Thessaloniki",
+        "area_code": "231",
+        "dialing_code": "+30 231"
+    },
+    {
+        "city": "Thira",
+        "area_code": "2286",
+        "dialing_code": "+30 2286"
+    },
+    {
+        "city": "Thiva",
+        "area_code": "2262",
+        "dialing_code": "+30 2262"
+    },
+    {
+        "city": "Tinos",
+        "area_code": "2283",
+        "dialing_code": "+30 2283"
+    },
+    {
+        "city": "Trikala",
+        "area_code": "2431",
+        "dialing_code": "+30 2431"
+    },
+    {
+        "city": "Tripoli",
+        "area_code": "271",
+        "dialing_code": "+30 271"
+    },
+    {
+        "city": "Tripolis",
+        "area_code": "271",
+        "dialing_code": "+30 271"
+    },
+    {
+        "city": "Tropea",
+        "area_code": "2797",
+        "dialing_code": "+30 2797"
+    },
+    {
+        "city": "Tyrnavos",
+        "area_code": "2492",
+        "dialing_code": "+30 2492"
+    },
+    {
+        "city": "Tzermiades",
+        "area_code": "2844",
+        "dialing_code": "+30 2844"
+    },
+    {
+        "city": "Vamos",
+        "area_code": "2825",
+        "dialing_code": "+30 2825"
+    },
+    {
+        "city": "Vasilika",
+        "area_code": "2396",
+        "dialing_code": "+30 2396"
+    },
+    {
+        "city": "Velestino",
+        "area_code": "2425",
+        "dialing_code": "+30 2425"
+    },
+    {
+        "city": "Veroia",
+        "area_code": "2331",
+        "dialing_code": "+30 2331"
+    },
+    {
+        "city": "Viannos",
+        "area_code": "2895",
+        "dialing_code": "+30 2895"
+    },
+    {
+        "city": "Vilia",
+        "area_code": "2263",
+        "dialing_code": "+30 2263"
+    },
+    {
+        "city": "Vitina",
+        "area_code": "2795",
+        "dialing_code": "+30 2795"
+    },
+    {
+        "city": "Volissos",
+        "area_code": "2274",
+        "dialing_code": "+30 2274"
+    },
+    {
+        "city": "Volos",
+        "area_code": "2428",
+        "dialing_code": "+30 2428"
+    },
+    {
+        "city": "Vonitsa",
+        "area_code": "2643",
+        "dialing_code": "+30 2643"
+    },
+    {
+        "city": "Voulgareli",
+        "area_code": "2685",
+        "dialing_code": "+30 2685"
+    },
+    {
+        "city": "Xanthi",
+        "area_code": "2541",
+        "dialing_code": "+30 2541"
+    },
+    {
+        "city": "Xylagani",
+        "area_code": "2533",
+        "dialing_code": "+30 2533"
+    },
+    {
+        "city": "Xylokastro",
+        "area_code": "2743",
+        "dialing_code": "+30 2743"
+    },
+    {
+        "city": "Zagora",
+        "area_code": "2426",
+        "dialing_code": "+30 2426"
+    },
+    {
+        "city": "Zakynthos",
+        "area_code": "2695",
+        "dialing_code": "+30 2695"
+    },
+    {
+        "city": "Zichni",
+        "area_code": "2324",
+        "dialing_code": "+30 2324"
+    },
+    {
+        "city": "Zitsa",
+        "area_code": "2658",
+        "dialing_code": "+30 2658"
+    }
+]

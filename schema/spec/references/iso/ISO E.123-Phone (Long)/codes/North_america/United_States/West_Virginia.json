@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Charleston",
+        "area_code": "843",
+        "dialing_code": "+1 843"
+    },
+    {
+        "city": "Dothan",
+        "area_code": "334",
+        "dialing_code": "+1 334"
+    },
+    {
+        "city": "Fairmont",
+        "area_code": "681",
+        "dialing_code": "+1 681"
+    },
+    {
+        "city": "Huntington",
+        "area_code": "681",
+        "dialing_code": "+1 681"
+    },
+    {
+        "city": "Morgantown",
+        "area_code": "681",
+        "dialing_code": "+1 681"
+    },
+    {
+        "city": "Parkersburg",
+        "area_code": "304",
+        "dialing_code": "+1 304"
+    },
+    {
+        "city": "Wheeling",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    }
+]

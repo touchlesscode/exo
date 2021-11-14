@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Central and East Suriname",
+        "area_code": "3",
+        "dialing_code": "+597 3"
+    },
+    {
+        "city": "Paramaribo",
+        "area_code": "4",
+        "dialing_code": "+597 4"
+    },
+    {
+        "city": "West Suriname",
+        "area_code": "2",
+        "dialing_code": "+597 2"
+    }
+]

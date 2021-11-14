@@ -1,0 +1,152 @@
+[
+    {
+        "city": "Banteay Meanchey",
+        "area_code": "54",
+        "dialing_code": "+855 54"
+    },
+    {
+        "city": "Battambang",
+        "area_code": "53",
+        "dialing_code": "+855 53"
+    },
+    {
+        "city": "Kampong Cham",
+        "area_code": "42",
+        "dialing_code": "+855 42"
+    },
+    {
+        "city": "Kampong Chhnang",
+        "area_code": "26",
+        "dialing_code": "+855 26"
+    },
+    {
+        "city": "Kampong Speu",
+        "area_code": "25",
+        "dialing_code": "+855 25"
+    },
+    {
+        "city": "Kampong Thom",
+        "area_code": "62",
+        "dialing_code": "+855 62"
+    },
+    {
+        "city": "Kampot",
+        "area_code": "33",
+        "dialing_code": "+855 33"
+    },
+    {
+        "city": "Kandal",
+        "area_code": "24",
+        "dialing_code": "+855 24"
+    },
+    {
+        "city": "Kep",
+        "area_code": "36",
+        "dialing_code": "+855 36"
+    },
+    {
+        "city": "Koh Kong",
+        "area_code": "35",
+        "dialing_code": "+855 35"
+    },
+    {
+        "city": "Kratie",
+        "area_code": "72",
+        "dialing_code": "+855 72"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "12",
+        "dialing_code": "+855 12"
+    },
+    {
+        "city": "Mobile Phones - CamGSM",
+        "area_code": "12",
+        "dialing_code": "+855 12"
+    },
+    {
+        "city": "Mobile Phones - Camshin",
+        "area_code": "11",
+        "dialing_code": "+855 11"
+    },
+    {
+        "city": "Mobile Phones - Camtel AMPS",
+        "area_code": "18",
+        "dialing_code": "+855 18"
+    },
+    {
+        "city": "Mobile Phones - Casacom",
+        "area_code": "16",
+        "dialing_code": "+855 16"
+    },
+    {
+        "city": "Mondolkiri",
+        "area_code": "73",
+        "dialing_code": "+855 73"
+    },
+    {
+        "city": "Pailin",
+        "area_code": "55",
+        "dialing_code": "+855 55"
+    },
+    {
+        "city": "Phnom Penh",
+        "area_code": "23",
+        "dialing_code": "+855 23"
+    },
+    {
+        "city": "Preah Vihear",
+        "area_code": "64",
+        "dialing_code": "+855 64"
+    },
+    {
+        "city": "Prey Veng",
+        "area_code": "43",
+        "dialing_code": "+855 43"
+    },
+    {
+        "city": "Pursat",
+        "area_code": "52",
+        "dialing_code": "+855 52"
+    },
+    {
+        "city": "Ratanakiri",
+        "area_code": "75",
+        "dialing_code": "+855 75"
+    },
+    {
+        "city": "Siem Reap",
+        "area_code": "63",
+        "dialing_code": "+855 63"
+    },
+    {
+        "city": "Siem Riep",
+        "area_code": "63",
+        "dialing_code": "+855 63"
+    },
+    {
+        "city": "Sihanoukville",
+        "area_code": "34",
+        "dialing_code": "+855 34"
+    },
+    {
+        "city": "Stung Treng",
+        "area_code": "74",
+        "dialing_code": "+855 74"
+    },
+    {
+        "city": "Svay Rieng",
+        "area_code": "44",
+        "dialing_code": "+855 44"
+    },
+    {
+        "city": "Takeo",
+        "area_code": "32",
+        "dialing_code": "+855 32"
+    },
+    {
+        "city": "Udar Meanchey",
+        "area_code": "65",
+        "dialing_code": "+855 65"
+    }
+]

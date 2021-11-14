@@ -1,0 +1,217 @@
+[
+    {
+        "city": "Boca Raton",
+        "area_code": "561",
+        "dialing_code": "+1 561"
+    },
+    {
+        "city": "Bonita Springs",
+        "area_code": "239",
+        "dialing_code": "+1 239"
+    },
+    {
+        "city": "Boynton Beach",
+        "area_code": "561",
+        "dialing_code": "+1 561"
+    },
+    {
+        "city": "Bradenton",
+        "area_code": "941",
+        "dialing_code": "+1 941"
+    },
+    {
+        "city": "Brandon",
+        "area_code": "204",
+        "dialing_code": "+1 204"
+    },
+    {
+        "city": "Cape Coral",
+        "area_code": "239",
+        "dialing_code": "+1 239"
+    },
+    {
+        "city": "Clearwater",
+        "area_code": "727",
+        "dialing_code": "+1 727"
+    },
+    {
+        "city": "Daytona Beach",
+        "area_code": "386",
+        "dialing_code": "+1 386"
+    },
+    {
+        "city": "Deerfield Beach",
+        "area_code": "954",
+        "dialing_code": "+1 954"
+    },
+    {
+        "city": "Delray Beach",
+        "area_code": "561",
+        "dialing_code": "+1 561"
+    },
+    {
+        "city": "Deltona",
+        "area_code": "407",
+        "dialing_code": "+1 407"
+    },
+    {
+        "city": "Fort Lauderdale",
+        "area_code": "754",
+        "dialing_code": "+1 754"
+    },
+    {
+        "city": "Fort Myers",
+        "area_code": "239",
+        "dialing_code": "+1 239"
+    },
+    {
+        "city": "Gainesville",
+        "area_code": "352",
+        "dialing_code": "+1 352"
+    },
+    {
+        "city": "Hialeah",
+        "area_code": "305",
+        "dialing_code": "+1 305"
+    },
+    {
+        "city": "Hollywood",
+        "area_code": "323",
+        "dialing_code": "+1 323"
+    },
+    {
+        "city": "Homestead",
+        "area_code": "305",
+        "dialing_code": "+1 305"
+    },
+    {
+        "city": "Jacksonville",
+        "area_code": "904",
+        "dialing_code": "+1 904"
+    },
+    {
+        "city": "Jupiter",
+        "area_code": "561",
+        "dialing_code": "+1 561"
+    },
+    {
+        "city": "Kissimmee",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "Lakeland",
+        "area_code": "863",
+        "dialing_code": "+1 863"
+    },
+    {
+        "city": "Largo",
+        "area_code": "727",
+        "dialing_code": "+1 727"
+    },
+    {
+        "city": "Lehigh Acres",
+        "area_code": "239",
+        "dialing_code": "+1 239"
+    },
+    {
+        "city": "Melbourne",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "Miami",
+        "area_code": "305",
+        "dialing_code": "+1 305"
+    },
+    {
+        "city": "Miami Beach",
+        "area_code": "786",
+        "dialing_code": "+1 786"
+    },
+    {
+        "city": "Naples",
+        "area_code": "239",
+        "dialing_code": "+1 239"
+    },
+    {
+        "city": "North Fort Myers",
+        "area_code": "941",
+        "dialing_code": "+1 941"
+    },
+    {
+        "city": "North Port",
+        "area_code": "941",
+        "dialing_code": "+1 941"
+    },
+    {
+        "city": "Ocala",
+        "area_code": "352",
+        "dialing_code": "+1 352"
+    },
+    {
+        "city": "Orlando",
+        "area_code": "407",
+        "dialing_code": "+1 407"
+    },
+    {
+        "city": "Palm Bay",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "Palm Coast",
+        "area_code": "386",
+        "dialing_code": "+1 386"
+    },
+    {
+        "city": "Palm Harbor",
+        "area_code": "727",
+        "dialing_code": "+1 727"
+    },
+    {
+        "city": "Pensacola",
+        "area_code": "0",
+        "dialing_code": "+1 0"
+    },
+    {
+        "city": "Pompano Beach",
+        "area_code": "954",
+        "dialing_code": "+1 954"
+    },
+    {
+        "city": "Sanford",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "Sarasota",
+        "area_code": "941",
+        "dialing_code": "+1 941"
+    },
+    {
+        "city": "Spring Hill",
+        "area_code": "352",
+        "dialing_code": "+1 352"
+    },
+    {
+        "city": "Tallahassee",
+        "area_code": "850",
+        "dialing_code": "+1 850"
+    },
+    {
+        "city": "Tampa",
+        "area_code": "813",
+        "dialing_code": "+1 813"
+    },
+    {
+        "city": "Titusville",
+        "area_code": "321",
+        "dialing_code": "+1 321"
+    },
+    {
+        "city": "West Palm Beach",
+        "area_code": "561",
+        "dialing_code": "+1 561"
+    }
+]

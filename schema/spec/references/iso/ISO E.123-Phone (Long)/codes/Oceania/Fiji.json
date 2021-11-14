@@ -1,0 +1,17 @@
+[
+    {
+        "city": "Labasa",
+        "area_code": "88",
+        "dialing_code": "+679 88"
+    },
+    {
+        "city": "Sigatoka",
+        "area_code": "67",
+        "dialing_code": "+679 67"
+    },
+    {
+        "city": "Suva",
+        "area_code": "34",
+        "dialing_code": "+679 34"
+    }
+]

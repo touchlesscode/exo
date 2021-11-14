@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A stand-alone date, as represented by the full-date chunk specified in RFC 3339, section 5.6. Dates with no associated time or time-zone data SHOULD be used to represent special legal values, such as date of birth. Implementers SHOULD consider using the standard date_time schema whenever possible instead. Note that this regular expression is not a complete validation: February 31, for example, is allowed, and nothing is known about leap years.",
+    "type": "string",
+    "format": "paypal_common_date_notime_v1",
+    "minLength": 10,
+    "maxLength": 10,
+    "pattern": "^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1])$"
+}

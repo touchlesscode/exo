@@ -1,0 +1,22 @@
+[
+    {
+        "city": "A Dakhliyah",
+        "area_code": "25",
+        "dialing_code": "+968 25"
+    },
+    {
+        "city": "Al Batinah",
+        "area_code": "26",
+        "dialing_code": "+968 26"
+    },
+    {
+        "city": "Dhofar",
+        "area_code": "23",
+        "dialing_code": "+968 23"
+    },
+    {
+        "city": "Muscat",
+        "area_code": "24",
+        "dialing_code": "+968 24"
+    }
+]

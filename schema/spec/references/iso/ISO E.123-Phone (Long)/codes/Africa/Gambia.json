@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Bakau",
+        "area_code": "449",
+        "dialing_code": "+220 449"
+    },
+    {
+        "city": "Banjul",
+        "area_code": "42",
+        "dialing_code": "+220 42"
+    },
+    {
+        "city": "Kotu",
+        "area_code": "446",
+        "dialing_code": "+220 446"
+    },
+    {
+        "city": "Outside Libreville",
+        "area_code": "2",
+        "dialing_code": "+220 2"
+    },
+    {
+        "city": "Sanyang",
+        "area_code": "441",
+        "dialing_code": "+220 441"
+    },
+    {
+        "city": "Serekunda",
+        "area_code": "43",
+        "dialing_code": "+220 43"
+    },
+    {
+        "city": "Yundum",
+        "area_code": "447",
+        "dialing_code": "+220 447"
+    }
+]

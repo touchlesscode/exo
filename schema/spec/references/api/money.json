@@ -1,0 +1,25 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A money type for all financial-related fields, such as balance, payment due, and so on.",
+    "title": "Money type",
+    "properties": 
+    {
+        "currency_code": 
+        {
+            "$ref": "currency_code.json"
+        },
+        "value": 
+        {
+            "type": "string",
+            "description": "The value, which can be anything from:<ul><li>An integer. For currencies that are not typically fractional, such as `JPY`.</li><li>A three-place decimal fraction. For currencies that are subdivided into thousandths, such as `TND`.</li><li> An eight-place decimal fraction. For currencies such as Bitcoin.</li></li>For the required number of decimal places for a currency code, see ISO 4217.",
+            "maxLength": 32,
+            "pattern": "^((-?[0-9]+)|(-?([0-9]+)?[.][0-9]+))$"
+        }
+    },
+    "required": 
+    [
+        "currency_code",
+        "value"
+    ]
+}

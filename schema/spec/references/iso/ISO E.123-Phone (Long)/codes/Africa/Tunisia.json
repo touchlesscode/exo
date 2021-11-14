@@ -1,0 +1,162 @@
+[
+    {
+        "city": "Agareb",
+        "area_code": "4",
+        "dialing_code": "+216 4"
+    },
+    {
+        "city": "Ariana",
+        "area_code": "1",
+        "dialing_code": "+216 1"
+    },
+    {
+        "city": "Beja",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Ben Arous",
+        "area_code": "1",
+        "dialing_code": "+216 1"
+    },
+    {
+        "city": "Bizerte",
+        "area_code": "2",
+        "dialing_code": "+216 2"
+    },
+    {
+        "city": "Carthage",
+        "area_code": "1",
+        "dialing_code": "+216 1"
+    },
+    {
+        "city": "Cell phones",
+        "area_code": "9",
+        "dialing_code": "+216 9"
+    },
+    {
+        "city": "Chebba",
+        "area_code": "4",
+        "dialing_code": "+216 4"
+    },
+    {
+        "city": "Gabes",
+        "area_code": "5",
+        "dialing_code": "+216 5"
+    },
+    {
+        "city": "Gafsa",
+        "area_code": "6",
+        "dialing_code": "+216 6"
+    },
+    {
+        "city": "Haffouz",
+        "area_code": "7",
+        "dialing_code": "+216 7"
+    },
+    {
+        "city": "Hamman-Sousse",
+        "area_code": "3",
+        "dialing_code": "+216 3"
+    },
+    {
+        "city": "Jendouba",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Kairouan",
+        "area_code": "7",
+        "dialing_code": "+216 7"
+    },
+    {
+        "city": "Kasserine",
+        "area_code": "7",
+        "dialing_code": "+216 7"
+    },
+    {
+        "city": "Kebili",
+        "area_code": "5",
+        "dialing_code": "+216 5"
+    },
+    {
+        "city": "Kef",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Khenis",
+        "area_code": "3",
+        "dialing_code": "+216 3"
+    },
+    {
+        "city": "La Kef",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Mahdia",
+        "area_code": "3",
+        "dialing_code": "+216 3"
+    },
+    {
+        "city": "Medenine",
+        "area_code": "5",
+        "dialing_code": "+216 5"
+    },
+    {
+        "city": "Monastir",
+        "area_code": "3",
+        "dialing_code": "+216 3"
+    },
+    {
+        "city": "Nabeul",
+        "area_code": "2",
+        "dialing_code": "+216 2"
+    },
+    {
+        "city": "Sfax",
+        "area_code": "4",
+        "dialing_code": "+216 4"
+    },
+    {
+        "city": "Sidi Bouzid",
+        "area_code": "6",
+        "dialing_code": "+216 6"
+    },
+    {
+        "city": "Siliana",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Sousse",
+        "area_code": "3",
+        "dialing_code": "+216 3"
+    },
+    {
+        "city": "Tabarka",
+        "area_code": "8",
+        "dialing_code": "+216 8"
+    },
+    {
+        "city": "Tataouine",
+        "area_code": "5",
+        "dialing_code": "+216 5"
+    },
+    {
+        "city": "Tozeur",
+        "area_code": "6",
+        "dialing_code": "+216 6"
+    },
+    {
+        "city": "Tunis",
+        "area_code": "1",
+        "dialing_code": "+216 1"
+    },
+    {
+        "city": "Zaghouan",
+        "area_code": "2",
+        "dialing_code": "+216 2"
+    }
+]

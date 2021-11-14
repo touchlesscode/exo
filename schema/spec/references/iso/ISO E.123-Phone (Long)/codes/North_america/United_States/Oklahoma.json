@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Ardmore",
+        "area_code": "580",
+        "dialing_code": "+1 580"
+    },
+    {
+        "city": "Bethany",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Broken Arrow",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Claremore",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Duncan",
+        "area_code": "928",
+        "dialing_code": "+1 928"
+    },
+    {
+        "city": "El Reno",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Enid",
+        "area_code": "580",
+        "dialing_code": "+1 580"
+    },
+    {
+        "city": "Lawton",
+        "area_code": "580",
+        "dialing_code": "+1 580"
+    },
+    {
+        "city": "Mustang",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Norman",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Oklahoma City",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Owasso",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Sand Springs",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Shawnee",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Stillwater",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    },
+    {
+        "city": "Tahlequah",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Tulsa",
+        "area_code": "918",
+        "dialing_code": "+1 918"
+    },
+    {
+        "city": "Yukon",
+        "area_code": "405",
+        "dialing_code": "+1 405"
+    }
+]

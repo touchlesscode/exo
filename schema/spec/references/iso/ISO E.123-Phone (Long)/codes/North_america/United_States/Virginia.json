@@ -1,0 +1,192 @@
+[
+    {
+        "city": "Alexandria",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Annandale",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Arlington",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Blacksburg",
+        "area_code": "540",
+        "dialing_code": "+1 540"
+    },
+    {
+        "city": "Burke",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Centreville",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Chantilly",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Charlottesville",
+        "area_code": "434",
+        "dialing_code": "+1 434"
+    },
+    {
+        "city": "Chesapeake",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Danville",
+        "area_code": "434",
+        "dialing_code": "+1 434"
+    },
+    {
+        "city": "Fairfax",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Fredericksburg",
+        "area_code": "540",
+        "dialing_code": "+1 540"
+    },
+    {
+        "city": "Hampton",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Harrisonburg",
+        "area_code": "540",
+        "dialing_code": "+1 540"
+    },
+    {
+        "city": "Herndon",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Hopewell",
+        "area_code": "804",
+        "dialing_code": "+1 804"
+    },
+    {
+        "city": "Leesburg",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Lynchburg",
+        "area_code": "434",
+        "dialing_code": "+1 434"
+    },
+    {
+        "city": "Manassas",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Mechanicsville",
+        "area_code": "804",
+        "dialing_code": "+1 804"
+    },
+    {
+        "city": "Mount Vernon",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Newington",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Newport News",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Norfolk",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Oakton",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Petersburg",
+        "area_code": "804",
+        "dialing_code": "+1 804"
+    },
+    {
+        "city": "Portsmouth",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Reston",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "604",
+        "dialing_code": "+1 604"
+    },
+    {
+        "city": "Roanoke",
+        "area_code": "276",
+        "dialing_code": "+1 276"
+    },
+    {
+        "city": "Salem",
+        "area_code": "503",
+        "dialing_code": "+1 503"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Staunton",
+        "area_code": "540",
+        "dialing_code": "+1 540"
+    },
+    {
+        "city": "Suffolk",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Virginia Beach",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Waynesboro",
+        "area_code": "931",
+        "dialing_code": "+1 931"
+    },
+    {
+        "city": "Winchester",
+        "area_code": "913",
+        "dialing_code": "+1 913"
+    },
+    {
+        "city": "Woodbridge",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    }
+]

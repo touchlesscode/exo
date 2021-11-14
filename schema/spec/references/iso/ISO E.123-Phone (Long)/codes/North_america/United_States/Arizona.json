@@ -1,0 +1,87 @@
+[
+    {
+        "city": "Bullhead City",
+        "area_code": "928",
+        "dialing_code": "+1 928"
+    },
+    {
+        "city": "Casa Grande",
+        "area_code": "520",
+        "dialing_code": "+1 520"
+    },
+    {
+        "city": "Chandler",
+        "area_code": "480",
+        "dialing_code": "+1 480"
+    },
+    {
+        "city": "Flagstaff",
+        "area_code": "928",
+        "dialing_code": "+1 928"
+    },
+    {
+        "city": "Gilbert",
+        "area_code": "480",
+        "dialing_code": "+1 480"
+    },
+    {
+        "city": "Glendale",
+        "area_code": "818",
+        "dialing_code": "+1 818"
+    },
+    {
+        "city": "Lake Havasu City",
+        "area_code": "928",
+        "dialing_code": "+1 928"
+    },
+    {
+        "city": "Maricopa",
+        "area_code": "520",
+        "dialing_code": "+1 520"
+    },
+    {
+        "city": "Mesa",
+        "area_code": "480",
+        "dialing_code": "+1 480"
+    },
+    {
+        "city": "Peoria",
+        "area_code": "309",
+        "dialing_code": "+1 309"
+    },
+    {
+        "city": "Phoenix",
+        "area_code": "602",
+        "dialing_code": "+1 602"
+    },
+    {
+        "city": "Prescott",
+        "area_code": "520",
+        "dialing_code": "+1 520"
+    },
+    {
+        "city": "Scottsdale",
+        "area_code": "480",
+        "dialing_code": "+1 480"
+    },
+    {
+        "city": "Sierra Vista",
+        "area_code": "520",
+        "dialing_code": "+1 520"
+    },
+    {
+        "city": "Tempe",
+        "area_code": "480",
+        "dialing_code": "+1 480"
+    },
+    {
+        "city": "Tucson",
+        "area_code": "520",
+        "dialing_code": "+1 520"
+    },
+    {
+        "city": "Yuma",
+        "area_code": "928",
+        "dialing_code": "+1 928"
+    }
+]

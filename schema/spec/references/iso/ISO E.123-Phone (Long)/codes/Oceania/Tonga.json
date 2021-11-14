@@ -1,0 +1,67 @@
+[
+    {
+        "city": "Eua",
+        "area_code": "50",
+        "dialing_code": "+676 50"
+    },
+    {
+        "city": "Ha'apai Group",
+        "area_code": "69",
+        "dialing_code": "+676 69"
+    },
+    {
+        "city": "Kolonga",
+        "area_code": "34",
+        "dialing_code": "+676 34"
+    },
+    {
+        "city": "Masilamea",
+        "area_code": "42",
+        "dialing_code": "+676 42"
+    },
+    {
+        "city": "Matangiake",
+        "area_code": "44",
+        "dialing_code": "+676 44"
+    },
+    {
+        "city": "Mua",
+        "area_code": "32",
+        "dialing_code": "+676 32"
+    },
+    {
+        "city": "Nakolo",
+        "area_code": "36",
+        "dialing_code": "+676 36"
+    },
+    {
+        "city": "Neiafu",
+        "area_code": "79",
+        "dialing_code": "+676 79"
+    },
+    {
+        "city": "Niuafo'ou",
+        "area_code": "80",
+        "dialing_code": "+676 80"
+    },
+    {
+        "city": "Niuatoputapu",
+        "area_code": "85",
+        "dialing_code": "+676 85"
+    },
+    {
+        "city": "Nuku'alofa",
+        "area_code": "28",
+        "dialing_code": "+676 28"
+    },
+    {
+        "city": "Pea",
+        "area_code": "30",
+        "dialing_code": "+676 30"
+    },
+    {
+        "city": "Vaini",
+        "area_code": "38",
+        "dialing_code": "+676 38"
+    }
+]

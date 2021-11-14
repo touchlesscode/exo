@@ -1,0 +1,212 @@
+[
+    {
+        "city": "Adelaide",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Albury",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Alice Springs",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Ballarat",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Bendigo",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Brisbane",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Bunbury",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Bundaberg",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Cairns",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Canberra",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Casey",
+        "area_code": "12",
+        "dialing_code": "+61 12"
+    },
+    {
+        "city": "Central East Region",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Central West Region",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Coffs Harbour",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Darwin",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Davis",
+        "area_code": "10",
+        "dialing_code": "+61 10"
+    },
+    {
+        "city": "Forrest",
+        "area_code": "815",
+        "dialing_code": "+61 815"
+    },
+    {
+        "city": "Geelong",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Gibson",
+        "area_code": "706",
+        "dialing_code": "+61 706"
+    },
+    {
+        "city": "Gold Coast",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Hamilton",
+        "area_code": "620",
+        "dialing_code": "+61 620"
+    },
+    {
+        "city": "Hobart",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Kingston",
+        "area_code": "770",
+        "dialing_code": "+61 770"
+    },
+    {
+        "city": "Launceston",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Mackay",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Macquarie Island",
+        "area_code": "13",
+        "dialing_code": "+61 13"
+    },
+    {
+        "city": "Marion",
+        "area_code": "765",
+        "dialing_code": "+61 765"
+    },
+    {
+        "city": "Mawson",
+        "area_code": "11",
+        "dialing_code": "+61 11"
+    },
+    {
+        "city": "Melbourne",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "4",
+        "dialing_code": "+61 4"
+    },
+    {
+        "city": "Newcastle",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "North East Region",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Perth",
+        "area_code": "8",
+        "dialing_code": "+61 8"
+    },
+    {
+        "city": "Portland",
+        "area_code": "207",
+        "dialing_code": "+61 207"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "765",
+        "dialing_code": "+61 765"
+    },
+    {
+        "city": "Rockhampton",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "South East Region",
+        "area_code": "3",
+        "dialing_code": "+61 3"
+    },
+    {
+        "city": "Sydney",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Townsville",
+        "area_code": "7",
+        "dialing_code": "+61 7"
+    },
+    {
+        "city": "Warwick",
+        "area_code": "229",
+        "dialing_code": "+61 229"
+    },
+    {
+        "city": "Wollongong",
+        "area_code": "2",
+        "dialing_code": "+61 2"
+    },
+    {
+        "city": "Young",
+        "area_code": "928",
+        "dialing_code": "+61 928"
+    }
+]

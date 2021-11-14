@@ -1,0 +1,217 @@
+[
+    {
+        "city": "Ammerswil (Aarau)",
+        "area_code": "62",
+        "dialing_code": "+41 62"
+    },
+    {
+        "city": "Andermatt",
+        "area_code": "41",
+        "dialing_code": "+41 41"
+    },
+    {
+        "city": "Arosa",
+        "area_code": "81",
+        "dialing_code": "+41 81"
+    },
+    {
+        "city": "Baden",
+        "area_code": "56",
+        "dialing_code": "+41 56"
+    },
+    {
+        "city": "Basel",
+        "area_code": "61",
+        "dialing_code": "+41 61"
+    },
+    {
+        "city": "Basel Stadt",
+        "area_code": "61",
+        "dialing_code": "+41 61"
+    },
+    {
+        "city": "Bellinzona",
+        "area_code": "91",
+        "dialing_code": "+41 91"
+    },
+    {
+        "city": "Bern",
+        "area_code": "31",
+        "dialing_code": "+41 31"
+    },
+    {
+        "city": "Berne",
+        "area_code": "31",
+        "dialing_code": "+41 31"
+    },
+    {
+        "city": "Biel",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Biel (Bienne)",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Bienne",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Chiasso",
+        "area_code": "91",
+        "dialing_code": "+41 91"
+    },
+    {
+        "city": "Crans",
+        "area_code": "27",
+        "dialing_code": "+41 27"
+    },
+    {
+        "city": "Crans-sur-Sierre",
+        "area_code": "27",
+        "dialing_code": "+41 27"
+    },
+    {
+        "city": "Davos",
+        "area_code": "81",
+        "dialing_code": "+41 81"
+    },
+    {
+        "city": "Fribourg",
+        "area_code": "26",
+        "dialing_code": "+41 26"
+    },
+    {
+        "city": "Geneva",
+        "area_code": "22",
+        "dialing_code": "+41 22"
+    },
+    {
+        "city": "Gryon (Yverdon",
+        "area_code": "24",
+        "dialing_code": "+41 24"
+    },
+    {
+        "city": "Gryon (Yverdon-les-Bains)",
+        "area_code": "24",
+        "dialing_code": "+41 24"
+    },
+    {
+        "city": "Gstaad",
+        "area_code": "33",
+        "dialing_code": "+41 33"
+    },
+    {
+        "city": "Interlaken",
+        "area_code": "33",
+        "dialing_code": "+41 33"
+    },
+    {
+        "city": "Klosters",
+        "area_code": "81",
+        "dialing_code": "+41 81"
+    },
+    {
+        "city": "La Chaux",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "La Chaux-de-Fonds",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Lausanne",
+        "area_code": "21",
+        "dialing_code": "+41 21"
+    },
+    {
+        "city": "Lenk im Simmental",
+        "area_code": "33",
+        "dialing_code": "+41 33"
+    },
+    {
+        "city": "Locarno",
+        "area_code": "91",
+        "dialing_code": "+41 91"
+    },
+    {
+        "city": "Lucerne",
+        "area_code": "41",
+        "dialing_code": "+41 41"
+    },
+    {
+        "city": "Lugano",
+        "area_code": "91",
+        "dialing_code": "+41 91"
+    },
+    {
+        "city": "Montreux",
+        "area_code": "21",
+        "dialing_code": "+41 21"
+    },
+    {
+        "city": "Neuchatel",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Neuchâtel",
+        "area_code": "32",
+        "dialing_code": "+41 32"
+    },
+    {
+        "city": "Obewil im Simmental",
+        "area_code": "33",
+        "dialing_code": "+41 33"
+    },
+    {
+        "city": "Schaffhausen",
+        "area_code": "52",
+        "dialing_code": "+41 52"
+    },
+    {
+        "city": "St. Gallen",
+        "area_code": "71",
+        "dialing_code": "+41 71"
+    },
+    {
+        "city": "St. Moritz",
+        "area_code": "81",
+        "dialing_code": "+41 81"
+    },
+    {
+        "city": "Vevey",
+        "area_code": "21",
+        "dialing_code": "+41 21"
+    },
+    {
+        "city": "Wengen",
+        "area_code": "33",
+        "dialing_code": "+41 33"
+    },
+    {
+        "city": "Winterthur",
+        "area_code": "52",
+        "dialing_code": "+41 52"
+    },
+    {
+        "city": "Zermatt",
+        "area_code": "27",
+        "dialing_code": "+41 27"
+    },
+    {
+        "city": "Zug",
+        "area_code": "41",
+        "dialing_code": "+41 41"
+    },
+    {
+        "city": "Zurich",
+        "area_code": "43",
+        "dialing_code": "+41 43"
+    }
+]

@@ -1,0 +1,217 @@
+[
+    {
+        "city": "Antofagasta",
+        "area_code": "55",
+        "dialing_code": "+56 55"
+    },
+    {
+        "city": "Arica",
+        "area_code": "58",
+        "dialing_code": "+56 58"
+    },
+    {
+        "city": "Calama",
+        "area_code": "55",
+        "dialing_code": "+56 55"
+    },
+    {
+        "city": "Chillan",
+        "area_code": "42",
+        "dialing_code": "+56 42"
+    },
+    {
+        "city": "Chillyn",
+        "area_code": "42",
+        "dialing_code": "+56 42"
+    },
+    {
+        "city": "Chillýn",
+        "area_code": "42",
+        "dialing_code": "+56 42"
+    },
+    {
+        "city": "Concepcion",
+        "area_code": "41",
+        "dialing_code": "+56 41"
+    },
+    {
+        "city": "Concepciyn",
+        "area_code": "41",
+        "dialing_code": "+56 41"
+    },
+    {
+        "city": "Concepciýn",
+        "area_code": "41",
+        "dialing_code": "+56 41"
+    },
+    {
+        "city": "Copiacy",
+        "area_code": "52",
+        "dialing_code": "+56 52"
+    },
+    {
+        "city": "Copiacý",
+        "area_code": "52",
+        "dialing_code": "+56 52"
+    },
+    {
+        "city": "Copiapo",
+        "area_code": "52",
+        "dialing_code": "+56 52"
+    },
+    {
+        "city": "Coquimbo",
+        "area_code": "51",
+        "dialing_code": "+56 51"
+    },
+    {
+        "city": "Coyhaique",
+        "area_code": "67",
+        "dialing_code": "+56 67"
+    },
+    {
+        "city": "Curico",
+        "area_code": "75",
+        "dialing_code": "+56 75"
+    },
+    {
+        "city": "Curicy",
+        "area_code": "75",
+        "dialing_code": "+56 75"
+    },
+    {
+        "city": "Curicý",
+        "area_code": "75",
+        "dialing_code": "+56 75"
+    },
+    {
+        "city": "Iquique",
+        "area_code": "57",
+        "dialing_code": "+56 57"
+    },
+    {
+        "city": "La Serena",
+        "area_code": "51",
+        "dialing_code": "+56 51"
+    },
+    {
+        "city": "Linares",
+        "area_code": "73",
+        "dialing_code": "+56 73"
+    },
+    {
+        "city": "Los Andes",
+        "area_code": "34",
+        "dialing_code": "+56 34"
+    },
+    {
+        "city": "Los Angeles",
+        "area_code": "43",
+        "dialing_code": "+56 43"
+    },
+    {
+        "city": "Osorno",
+        "area_code": "64",
+        "dialing_code": "+56 64"
+    },
+    {
+        "city": "Ovalle",
+        "area_code": "53",
+        "dialing_code": "+56 53"
+    },
+    {
+        "city": "Puerto Montt",
+        "area_code": "65",
+        "dialing_code": "+56 65"
+    },
+    {
+        "city": "Punta Arenas",
+        "area_code": "61",
+        "dialing_code": "+56 61"
+    },
+    {
+        "city": "Quillota",
+        "area_code": "33",
+        "dialing_code": "+56 33"
+    },
+    {
+        "city": "Rancagua",
+        "area_code": "72",
+        "dialing_code": "+56 72"
+    },
+    {
+        "city": "San Antonio",
+        "area_code": "35",
+        "dialing_code": "+56 35"
+    },
+    {
+        "city": "San Felipe",
+        "area_code": "34",
+        "dialing_code": "+56 34"
+    },
+    {
+        "city": "San Fernando",
+        "area_code": "72",
+        "dialing_code": "+56 72"
+    },
+    {
+        "city": "Santiago",
+        "area_code": "2",
+        "dialing_code": "+56 2"
+    },
+    {
+        "city": "Santiago (Metropolitan Region)",
+        "area_code": "2",
+        "dialing_code": "+56 2"
+    },
+    {
+        "city": "Talca",
+        "area_code": "71",
+        "dialing_code": "+56 71"
+    },
+    {
+        "city": "Talcahuano",
+        "area_code": "41",
+        "dialing_code": "+56 41"
+    },
+    {
+        "city": "Temuco",
+        "area_code": "45",
+        "dialing_code": "+56 45"
+    },
+    {
+        "city": "Valdivia",
+        "area_code": "63",
+        "dialing_code": "+56 63"
+    },
+    {
+        "city": "Valparaiso",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    },
+    {
+        "city": "Valparayso",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    },
+    {
+        "city": "Valparaýso",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    },
+    {
+        "city": "Vina del Mar",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    },
+    {
+        "city": "Viya del Mar",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    },
+    {
+        "city": "Viýa del Mar",
+        "area_code": "32",
+        "dialing_code": "+56 32"
+    }
+]

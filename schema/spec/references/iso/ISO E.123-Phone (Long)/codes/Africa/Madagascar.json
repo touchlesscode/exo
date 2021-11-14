@@ -1,0 +1,117 @@
+[
+    {
+        "city": "Ambatolampy",
+        "area_code": "42",
+        "dialing_code": "+261 42"
+    },
+    {
+        "city": "Ambositra",
+        "area_code": "47",
+        "dialing_code": "+261 47"
+    },
+    {
+        "city": "Ambotondrazaka",
+        "area_code": "54",
+        "dialing_code": "+261 54"
+    },
+    {
+        "city": "Andevoranto",
+        "area_code": "22",
+        "dialing_code": "+261 22"
+    },
+    {
+        "city": "Antananarivo",
+        "area_code": "22",
+        "dialing_code": "+261 22"
+    },
+    {
+        "city": "Antsirabe",
+        "area_code": "44",
+        "dialing_code": "+261 44"
+    },
+    {
+        "city": "Antsiranana (Diego Suarez)",
+        "area_code": "82",
+        "dialing_code": "+261 82"
+    },
+    {
+        "city": "Antsohihy",
+        "area_code": "67",
+        "dialing_code": "+261 67"
+    },
+    {
+        "city": "Farafangana",
+        "area_code": "73",
+        "dialing_code": "+261 73"
+    },
+    {
+        "city": "Fianarantsoa",
+        "area_code": "75",
+        "dialing_code": "+261 75"
+    },
+    {
+        "city": "Mahajanga",
+        "area_code": "62",
+        "dialing_code": "+261 62"
+    },
+    {
+        "city": "Maintirano",
+        "area_code": "69",
+        "dialing_code": "+261 69"
+    },
+    {
+        "city": "Manakara",
+        "area_code": "72",
+        "dialing_code": "+261 72"
+    },
+    {
+        "city": "Mananjary",
+        "area_code": "72",
+        "dialing_code": "+261 72"
+    },
+    {
+        "city": "Mideast Region",
+        "area_code": "13",
+        "dialing_code": "+261 13"
+    },
+    {
+        "city": "Moramanga",
+        "area_code": "56",
+        "dialing_code": "+261 56"
+    },
+    {
+        "city": "Morondava",
+        "area_code": "95",
+        "dialing_code": "+261 95"
+    },
+    {
+        "city": "Nosy Be Is.",
+        "area_code": "86",
+        "dialing_code": "+261 86"
+    },
+    {
+        "city": "Sainte Marie",
+        "area_code": "57",
+        "dialing_code": "+261 57"
+    },
+    {
+        "city": "Sambava",
+        "area_code": "88",
+        "dialing_code": "+261 88"
+    },
+    {
+        "city": "Toamasina",
+        "area_code": "53",
+        "dialing_code": "+261 53"
+    },
+    {
+        "city": "Tolagnaro",
+        "area_code": "92",
+        "dialing_code": "+261 92"
+    },
+    {
+        "city": "Toliaray",
+        "area_code": "94",
+        "dialing_code": "+261 94"
+    }
+]

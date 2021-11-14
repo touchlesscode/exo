@@ -1,0 +1,38 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "Name of a party",
+    "title": "Name of a party",
+    "properties": {
+        "prefix": {
+            "type": "string",
+            "description": "Prefix to the party name. Also known as title.",
+            "maxLength": 140
+        },
+        "given_name": {
+            "type": "string",
+            "description": "The given name of the party. Also known as first name or name. Required when the party name is for a person.",
+            "maxLength": 140
+        },
+        "surname": {
+            "type": "string",
+            "description": "The surname or family name of the party. Also known as last name. Required when the party name is for a person. Can also be used to store multiple surnames including matronymic surname, or mother's family name.",
+            "maxLength": 140
+        },
+        "middle_name": {
+            "type": "string",
+            "description": "The middle name of the party. Can also be used to store multiple middle names including patronymic name.",
+            "maxLength": 140
+        },
+        "suffix": {
+            "type": "string",
+            "description": "The name suffix for the party.",
+            "maxLength": 140
+        },
+        "alternate_full_name": {
+            "type": "string",
+            "description": "The alternate name for the party. Can be business name, nick name, or any other name that cannot be parsed into first, last name. Required when the party name is for a business. Can also be used to record yomikata or phonetic name in Japanese.",
+            "maxLength": 300
+        }
+    }
+}

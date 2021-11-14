@@ -1,0 +1,12 @@
+[
+    {
+        "city": "Hong Kong",
+        "area_code": "363",
+        "dialing_code": "+852 363"
+    },
+    {
+        "city": "Kowloon",
+        "area_code": "",
+        "dialing_code": "+852"
+    }
+]

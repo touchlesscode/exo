@@ -1,0 +1,9 @@
+{
+ "$schema": "http://json-schema.org/draft-04/schema#",
+"description": "Expiration month and year expressed as MM/YY or MM/YYYY. Typically used for credit card expiration. This value is time zone independent.",
+    "type": "string",
+    "format": "paypal_common_expiration_v1",
+    "minLength": 5,
+    "maxLength": 7,
+    "pattern": "^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$"
+}

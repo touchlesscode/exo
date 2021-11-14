@@ -1,0 +1,147 @@
+[
+    {
+        "city": "Allentown",
+        "area_code": "484",
+        "dialing_code": "+1 484"
+    },
+    {
+        "city": "Bethel Park",
+        "area_code": "878",
+        "dialing_code": "+1 878"
+    },
+    {
+        "city": "Bethlehem",
+        "area_code": "835",
+        "dialing_code": "+1 835"
+    },
+    {
+        "city": "Carlisle",
+        "area_code": "717",
+        "dialing_code": "+1 717"
+    },
+    {
+        "city": "Chambersburg",
+        "area_code": "717",
+        "dialing_code": "+1 717"
+    },
+    {
+        "city": "Chester",
+        "area_code": "563",
+        "dialing_code": "+1 563"
+    },
+    {
+        "city": "Easton",
+        "area_code": "484",
+        "dialing_code": "+1 484"
+    },
+    {
+        "city": "Erie",
+        "area_code": "814",
+        "dialing_code": "+1 814"
+    },
+    {
+        "city": "Greensburg",
+        "area_code": "412",
+        "dialing_code": "+1 412"
+    },
+    {
+        "city": "Hanover",
+        "area_code": "204",
+        "dialing_code": "+1 204"
+    },
+    {
+        "city": "Harrisburg",
+        "area_code": "717",
+        "dialing_code": "+1 717"
+    },
+    {
+        "city": "Hermitage",
+        "area_code": "870",
+        "dialing_code": "+1 870"
+    },
+    {
+        "city": "Lancaster",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Lansdale",
+        "area_code": "267",
+        "dialing_code": "+1 267"
+    },
+    {
+        "city": "Lebanon",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Levittown",
+        "area_code": "267",
+        "dialing_code": "+1 267"
+    },
+    {
+        "city": "Monroeville",
+        "area_code": "878",
+        "dialing_code": "+1 878"
+    },
+    {
+        "city": "New Castle",
+        "area_code": "878",
+        "dialing_code": "+1 878"
+    },
+    {
+        "city": "Philadelphia",
+        "area_code": "267",
+        "dialing_code": "+1 267"
+    },
+    {
+        "city": "Phoenixville",
+        "area_code": "610",
+        "dialing_code": "+1 610"
+    },
+    {
+        "city": "Pittsburgh",
+        "area_code": "412",
+        "dialing_code": "+1 412"
+    },
+    {
+        "city": "Pottstown",
+        "area_code": "610",
+        "dialing_code": "+1 610"
+    },
+    {
+        "city": "Reading",
+        "area_code": "610",
+        "dialing_code": "+1 610"
+    },
+    {
+        "city": "Sharon",
+        "area_code": "724",
+        "dialing_code": "+1 724"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "State College",
+        "area_code": "814",
+        "dialing_code": "+1 814"
+    },
+    {
+        "city": "West Chester",
+        "area_code": "610",
+        "dialing_code": "+1 610"
+    },
+    {
+        "city": "Williamsport",
+        "area_code": "240",
+        "dialing_code": "+1 240"
+    },
+    {
+        "city": "York",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    }
+]

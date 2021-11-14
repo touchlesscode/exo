@@ -1,0 +1,62 @@
+[
+    {
+        "city": "Baghdad",
+        "area_code": "1",
+        "dialing_code": "+964 1"
+    },
+    {
+        "city": "Basra",
+        "area_code": "40",
+        "dialing_code": "+964 40"
+    },
+    {
+        "city": "Hilla",
+        "area_code": "30",
+        "dialing_code": "+964 30"
+    },
+    {
+        "city": "Irbil",
+        "area_code": "66",
+        "dialing_code": "+964 66"
+    },
+    {
+        "city": "Karbala",
+        "area_code": "32",
+        "dialing_code": "+964 32"
+    },
+    {
+        "city": "Kerbela",
+        "area_code": "32",
+        "dialing_code": "+964 32"
+    },
+    {
+        "city": "Kirkuk",
+        "area_code": "50",
+        "dialing_code": "+964 50"
+    },
+    {
+        "city": "Mosul",
+        "area_code": "60",
+        "dialing_code": "+964 60"
+    },
+    {
+        "city": "Mousil",
+        "area_code": "60",
+        "dialing_code": "+964 60"
+    },
+    {
+        "city": "Najaf",
+        "area_code": "33",
+        "dialing_code": "+964 33"
+    },
+    {
+        "city": "Nasiriya",
+        "area_code": "42",
+        "dialing_code": "+964 42"
+    },
+    {
+        "city": "Sulaimaniya",
+        "area_code": "53",
+        "dialing_code": "+964 53"
+    }
+]

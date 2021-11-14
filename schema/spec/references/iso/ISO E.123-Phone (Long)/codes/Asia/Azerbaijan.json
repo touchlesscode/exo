@@ -1,0 +1,327 @@
+[
+    {
+        "city": "Agdam",
+        "area_code": "192",
+        "dialing_code": "+994 192"
+    },
+    {
+        "city": "Agdash",
+        "area_code": "193",
+        "dialing_code": "+994 193"
+    },
+    {
+        "city": "Agdjabedi",
+        "area_code": "113",
+        "dialing_code": "+994 113"
+    },
+    {
+        "city": "Agstafa",
+        "area_code": "244",
+        "dialing_code": "+994 244"
+    },
+    {
+        "city": "Agsu",
+        "area_code": "198",
+        "dialing_code": "+994 198"
+    },
+    {
+        "city": "Ali",
+        "area_code": "197",
+        "dialing_code": "+994 197"
+    },
+    {
+        "city": "Ali-Bayramli",
+        "area_code": "197",
+        "dialing_code": "+994 197"
+    },
+    {
+        "city": "Astara",
+        "area_code": "195",
+        "dialing_code": "+994 195"
+    },
+    {
+        "city": "Baku",
+        "area_code": "12",
+        "dialing_code": "+994 12"
+    },
+    {
+        "city": "Balaken",
+        "area_code": "119",
+        "dialing_code": "+994 119"
+    },
+    {
+        "city": "Barda",
+        "area_code": "110",
+        "dialing_code": "+994 110"
+    },
+    {
+        "city": "Beylagan",
+        "area_code": "152",
+        "dialing_code": "+994 152"
+    },
+    {
+        "city": "Bilesuvar",
+        "area_code": "159",
+        "dialing_code": "+994 159"
+    },
+    {
+        "city": "Dashkesan",
+        "area_code": "216",
+        "dialing_code": "+994 216"
+    },
+    {
+        "city": "Devechi",
+        "area_code": "115",
+        "dialing_code": "+994 115"
+    },
+    {
+        "city": "Djalilabad",
+        "area_code": "114",
+        "dialing_code": "+994 114"
+    },
+    {
+        "city": "Eizuli",
+        "area_code": "141",
+        "dialing_code": "+994 141"
+    },
+    {
+        "city": "Gabala",
+        "area_code": "160",
+        "dialing_code": "+994 160"
+    },
+    {
+        "city": "Gakh",
+        "area_code": "144",
+        "dialing_code": "+994 144"
+    },
+    {
+        "city": "Gazakh",
+        "area_code": "279",
+        "dialing_code": "+994 279"
+    },
+    {
+        "city": "Geokchay",
+        "area_code": "167",
+        "dialing_code": "+994 167"
+    },
+    {
+        "city": "Geranboy",
+        "area_code": "234",
+        "dialing_code": "+994 234"
+    },
+    {
+        "city": "Gobustan",
+        "area_code": "150",
+        "dialing_code": "+994 150"
+    },
+    {
+        "city": "Guba",
+        "area_code": "169",
+        "dialing_code": "+994 169"
+    },
+    {
+        "city": "Gyandia",
+        "area_code": "22",
+        "dialing_code": "+994 22"
+    },
+    {
+        "city": "Hachmaz",
+        "area_code": "172",
+        "dialing_code": "+994 172"
+    },
+    {
+        "city": "Hadjigabul",
+        "area_code": "140",
+        "dialing_code": "+994 140"
+    },
+    {
+        "city": "Hanlar",
+        "area_code": "230",
+        "dialing_code": "+994 230"
+    },
+    {
+        "city": "Hizi",
+        "area_code": "199",
+        "dialing_code": "+994 199"
+    },
+    {
+        "city": "Imishli",
+        "area_code": "154",
+        "dialing_code": "+994 154"
+    },
+    {
+        "city": "Ismayilli",
+        "area_code": "178",
+        "dialing_code": "+994 178"
+    },
+    {
+        "city": "Kedabek",
+        "area_code": "232",
+        "dialing_code": "+994 232"
+    },
+    {
+        "city": "Kusari",
+        "area_code": "138",
+        "dialing_code": "+994 138"
+    },
+    {
+        "city": "Kyurdamir",
+        "area_code": "145",
+        "dialing_code": "+994 145"
+    },
+    {
+        "city": "Lankaran",
+        "area_code": "171",
+        "dialing_code": "+994 171"
+    },
+    {
+        "city": "Lenkaran",
+        "area_code": "171",
+        "dialing_code": "+994 171"
+    },
+    {
+        "city": "Lerik",
+        "area_code": "157",
+        "dialing_code": "+994 157"
+    },
+    {
+        "city": "Masalli",
+        "area_code": "151",
+        "dialing_code": "+994 151"
+    },
+    {
+        "city": "Mingechevir",
+        "area_code": "147",
+        "dialing_code": "+994 147"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "50",
+        "dialing_code": "+994 50"
+    },
+    {
+        "city": "Mobile Phones - Azercell",
+        "area_code": "50",
+        "dialing_code": "+994 50"
+    },
+    {
+        "city": "Mobile Phones - Bakcell (GSM 9",
+        "area_code": "55",
+        "dialing_code": "+994 55"
+    },
+    {
+        "city": "Naftalan",
+        "area_code": "255",
+        "dialing_code": "+994 255"
+    },
+    {
+        "city": "Nahichevan",
+        "area_code": "136",
+        "dialing_code": "+994 136"
+    },
+    {
+        "city": "Nakhichevan",
+        "area_code": "136",
+        "dialing_code": "+994 136"
+    },
+    {
+        "city": "Neftechala",
+        "area_code": "153",
+        "dialing_code": "+994 153"
+    },
+    {
+        "city": "Oguz",
+        "area_code": "111",
+        "dialing_code": "+994 111"
+    },
+    {
+        "city": "Saatli",
+        "area_code": "168",
+        "dialing_code": "+994 168"
+    },
+    {
+        "city": "Sabirabad",
+        "area_code": "143",
+        "dialing_code": "+994 143"
+    },
+    {
+        "city": "Salyan",
+        "area_code": "163",
+        "dialing_code": "+994 163"
+    },
+    {
+        "city": "Samukh",
+        "area_code": "265",
+        "dialing_code": "+994 265"
+    },
+    {
+        "city": "Shamaha",
+        "area_code": "176",
+        "dialing_code": "+994 176"
+    },
+    {
+        "city": "Shamkir",
+        "area_code": "241",
+        "dialing_code": "+994 241"
+    },
+    {
+        "city": "Sheki",
+        "area_code": "177",
+        "dialing_code": "+994 177"
+    },
+    {
+        "city": "Siyazan",
+        "area_code": "190",
+        "dialing_code": "+994 190"
+    },
+    {
+        "city": "Sumgayit",
+        "area_code": "164",
+        "dialing_code": "+994 164"
+    },
+    {
+        "city": "Ter",
+        "area_code": "246",
+        "dialing_code": "+994 246"
+    },
+    {
+        "city": "Ter-Ter",
+        "area_code": "246",
+        "dialing_code": "+994 246"
+    },
+    {
+        "city": "Tovuz",
+        "area_code": "231",
+        "dialing_code": "+994 231"
+    },
+    {
+        "city": "Udjar",
+        "area_code": "170",
+        "dialing_code": "+994 170"
+    },
+    {
+        "city": "Yardimli",
+        "area_code": "175",
+        "dialing_code": "+994 175"
+    },
+    {
+        "city": "Yevlakh",
+        "area_code": "166",
+        "dialing_code": "+994 166"
+    },
+    {
+        "city": "Zagatala",
+        "area_code": "174",
+        "dialing_code": "+994 174"
+    },
+    {
+        "city": "Zakatala",
+        "area_code": "174",
+        "dialing_code": "+994 174"
+    },
+    {
+        "city": "Zardab",
+        "area_code": "135",
+        "dialing_code": "+994 135"
+    }
+]

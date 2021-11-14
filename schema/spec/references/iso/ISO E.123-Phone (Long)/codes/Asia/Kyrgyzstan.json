@@ -1,0 +1,22 @@
+[
+    {
+        "city": "Bishkek",
+        "area_code": "312",
+        "dialing_code": "+996 312"
+    },
+    {
+        "city": "Mobile Phones - Bitel",
+        "area_code": "502",
+        "dialing_code": "+996 502"
+    },
+    {
+        "city": "Mobile Phones - Katel",
+        "area_code": "517",
+        "dialing_code": "+996 517"
+    },
+    {
+        "city": "Osh",
+        "area_code": "322",
+        "dialing_code": "+996 322"
+    }
+]

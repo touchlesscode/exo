@@ -1,0 +1,22 @@
+[
+    {
+        "city": "Anchorage",
+        "area_code": "907",
+        "dialing_code": "+1 907"
+    },
+    {
+        "city": "Fairbanks",
+        "area_code": "907",
+        "dialing_code": "+1 907"
+    },
+    {
+        "city": "Juneau",
+        "area_code": "907",
+        "dialing_code": "+1 907"
+    },
+    {
+        "city": "Sitka",
+        "area_code": "907",
+        "dialing_code": "+1 907"
+    }
+]

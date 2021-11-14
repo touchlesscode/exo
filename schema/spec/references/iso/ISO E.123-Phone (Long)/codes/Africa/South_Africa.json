@@ -1,0 +1,97 @@
+[
+    {
+        "city": "Bethlehem",
+        "area_code": "835",
+        "dialing_code": "+27 835"
+    },
+    {
+        "city": "Bloemfontein",
+        "area_code": "51",
+        "dialing_code": "+27 51"
+    },
+    {
+        "city": "Cape Town",
+        "area_code": "21",
+        "dialing_code": "+27 21"
+    },
+    {
+        "city": "De Aar",
+        "area_code": "571",
+        "dialing_code": "+27 571"
+    },
+    {
+        "city": "Durban",
+        "area_code": "31",
+        "dialing_code": "+27 31"
+    },
+    {
+        "city": "East London",
+        "area_code": "431",
+        "dialing_code": "+27 431"
+    },
+    {
+        "city": "George",
+        "area_code": "712",
+        "dialing_code": "+27 712"
+    },
+    {
+        "city": "Gordons Bay",
+        "area_code": "24",
+        "dialing_code": "+27 24"
+    },
+    {
+        "city": "Johannesburg",
+        "area_code": "11",
+        "dialing_code": "+27 11"
+    },
+    {
+        "city": "Johannesburg CBD",
+        "area_code": "102103",
+        "dialing_code": "+27 102103"
+    },
+    {
+        "city": "La Lucia",
+        "area_code": "31",
+        "dialing_code": "+27 31"
+    },
+    {
+        "city": "Pietermaritzburg",
+        "area_code": "331",
+        "dialing_code": "+27 331"
+    },
+    {
+        "city": "Port Elizabeth",
+        "area_code": "41",
+        "dialing_code": "+27 41"
+    },
+    {
+        "city": "Pretoria",
+        "area_code": "12",
+        "dialing_code": "+27 12"
+    },
+    {
+        "city": "Sasolburg",
+        "area_code": "16",
+        "dialing_code": "+27 16"
+    },
+    {
+        "city": "Somerset West",
+        "area_code": "21",
+        "dialing_code": "+27 21"
+    },
+    {
+        "city": "Uitenhage",
+        "area_code": "41",
+        "dialing_code": "+27 41"
+    },
+    {
+        "city": "Vereeniging",
+        "area_code": "11",
+        "dialing_code": "+27 11"
+    },
+    {
+        "city": "Welkom",
+        "area_code": "57",
+        "dialing_code": "+27 57"
+    }
+]

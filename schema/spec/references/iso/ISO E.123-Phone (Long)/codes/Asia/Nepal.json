@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Bhaktapur",
+        "area_code": "1",
+        "dialing_code": "+977 1"
+    },
+    {
+        "city": "Bharatput",
+        "area_code": "56",
+        "dialing_code": "+977 56"
+    },
+    {
+        "city": "Biratnagar",
+        "area_code": "21",
+        "dialing_code": "+977 21"
+    },
+    {
+        "city": "Bjojpur",
+        "area_code": "29",
+        "dialing_code": "+977 29"
+    },
+    {
+        "city": "Dhangadi",
+        "area_code": "91",
+        "dialing_code": "+977 91"
+    },
+    {
+        "city": "Dhankuta",
+        "area_code": "26",
+        "dialing_code": "+977 26"
+    },
+    {
+        "city": "Dolakha",
+        "area_code": "49",
+        "dialing_code": "+977 49"
+    },
+    {
+        "city": "Gorkha",
+        "area_code": "64",
+        "dialing_code": "+977 64"
+    },
+    {
+        "city": "Jhapa",
+        "area_code": "23",
+        "dialing_code": "+977 23"
+    },
+    {
+        "city": "Kathmandu",
+        "area_code": "1",
+        "dialing_code": "+977 1"
+    },
+    {
+        "city": "Nepalgunj",
+        "area_code": "81",
+        "dialing_code": "+977 81"
+    },
+    {
+        "city": "Phidim",
+        "area_code": "24",
+        "dialing_code": "+977 24"
+    },
+    {
+        "city": "Pokhara",
+        "area_code": "41",
+        "dialing_code": "+977 41"
+    },
+    {
+        "city": "Sarlahi",
+        "area_code": "46",
+        "dialing_code": "+977 46"
+    }
+]

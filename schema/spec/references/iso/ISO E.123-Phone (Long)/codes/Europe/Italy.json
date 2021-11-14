@@ -1,0 +1,1222 @@
+[
+    {
+        "city": "Acqui Terme",
+        "area_code": "144",
+        "dialing_code": "+39 144"
+    },
+    {
+        "city": "Adria",
+        "area_code": "426",
+        "dialing_code": "+39 426"
+    },
+    {
+        "city": "Agrigento",
+        "area_code": "922",
+        "dialing_code": "+39 922"
+    },
+    {
+        "city": "Alba",
+        "area_code": "173",
+        "dialing_code": "+39 173"
+    },
+    {
+        "city": "Albenga",
+        "area_code": "182",
+        "dialing_code": "+39 182"
+    },
+    {
+        "city": "Alcamo",
+        "area_code": "924",
+        "dialing_code": "+39 924"
+    },
+    {
+        "city": "Alessandria",
+        "area_code": "131",
+        "dialing_code": "+39 131"
+    },
+    {
+        "city": "Ancona",
+        "area_code": "71",
+        "dialing_code": "+39 71"
+    },
+    {
+        "city": "Andria",
+        "area_code": "883",
+        "dialing_code": "+39 883"
+    },
+    {
+        "city": "Aosta",
+        "area_code": "165",
+        "dialing_code": "+39 165"
+    },
+    {
+        "city": "Arezzo",
+        "area_code": "575",
+        "dialing_code": "+39 575"
+    },
+    {
+        "city": "Arona",
+        "area_code": "322",
+        "dialing_code": "+39 322"
+    },
+    {
+        "city": "Ascoli Piceno",
+        "area_code": "736",
+        "dialing_code": "+39 736"
+    },
+    {
+        "city": "Asti",
+        "area_code": "141",
+        "dialing_code": "+39 141"
+    },
+    {
+        "city": "Avellino",
+        "area_code": "825",
+        "dialing_code": "+39 825"
+    },
+    {
+        "city": "Avezzano",
+        "area_code": "863",
+        "dialing_code": "+39 863"
+    },
+    {
+        "city": "Bari",
+        "area_code": "80",
+        "dialing_code": "+39 80"
+    },
+    {
+        "city": "Bassano Del Grappa",
+        "area_code": "424",
+        "dialing_code": "+39 424"
+    },
+    {
+        "city": "Battipaglia",
+        "area_code": "828",
+        "dialing_code": "+39 828"
+    },
+    {
+        "city": "Baveno",
+        "area_code": "323",
+        "dialing_code": "+39 323"
+    },
+    {
+        "city": "Belluno",
+        "area_code": "437",
+        "dialing_code": "+39 437"
+    },
+    {
+        "city": "Benevento",
+        "area_code": "824",
+        "dialing_code": "+39 824"
+    },
+    {
+        "city": "Bergamo",
+        "area_code": "35",
+        "dialing_code": "+39 35"
+    },
+    {
+        "city": "Biella",
+        "area_code": "15",
+        "dialing_code": "+39 15"
+    },
+    {
+        "city": "Bologna",
+        "area_code": "51",
+        "dialing_code": "+39 51"
+    },
+    {
+        "city": "Bolzano",
+        "area_code": "471",
+        "dialing_code": "+39 471"
+    },
+    {
+        "city": "Borgosesia",
+        "area_code": "163",
+        "dialing_code": "+39 163"
+    },
+    {
+        "city": "Breno",
+        "area_code": "364",
+        "dialing_code": "+39 364"
+    },
+    {
+        "city": "Brescia",
+        "area_code": "30",
+        "dialing_code": "+39 30"
+    },
+    {
+        "city": "Bressanone",
+        "area_code": "472",
+        "dialing_code": "+39 472"
+    },
+    {
+        "city": "Brindisi",
+        "area_code": "831",
+        "dialing_code": "+39 831"
+    },
+    {
+        "city": "Brunico",
+        "area_code": "474",
+        "dialing_code": "+39 474"
+    },
+    {
+        "city": "Busto Arsizio",
+        "area_code": "331",
+        "dialing_code": "+39 331"
+    },
+    {
+        "city": "Cagliari",
+        "area_code": "70",
+        "dialing_code": "+39 70"
+    },
+    {
+        "city": "Caltagirone",
+        "area_code": "933",
+        "dialing_code": "+39 933"
+    },
+    {
+        "city": "Caltanisetta",
+        "area_code": "934",
+        "dialing_code": "+39 934"
+    },
+    {
+        "city": "Camerino",
+        "area_code": "737",
+        "dialing_code": "+39 737"
+    },
+    {
+        "city": "Campobasso",
+        "area_code": "874",
+        "dialing_code": "+39 874"
+    },
+    {
+        "city": "Capri",
+        "area_code": "81",
+        "dialing_code": "+39 81"
+    },
+    {
+        "city": "Casale Monferrato",
+        "area_code": "142",
+        "dialing_code": "+39 142"
+    },
+    {
+        "city": "Casalmaggiore",
+        "area_code": "375",
+        "dialing_code": "+39 375"
+    },
+    {
+        "city": "Caserta",
+        "area_code": "823",
+        "dialing_code": "+39 823"
+    },
+    {
+        "city": "Cassino",
+        "area_code": "776",
+        "dialing_code": "+39 776"
+    },
+    {
+        "city": "Castrovillari",
+        "area_code": "981",
+        "dialing_code": "+39 981"
+    },
+    {
+        "city": "Catania",
+        "area_code": "95",
+        "dialing_code": "+39 95"
+    },
+    {
+        "city": "Catanzaro",
+        "area_code": "961",
+        "dialing_code": "+39 961"
+    },
+    {
+        "city": "Cavalese",
+        "area_code": "462",
+        "dialing_code": "+39 462"
+    },
+    {
+        "city": "Cefalu'",
+        "area_code": "921",
+        "dialing_code": "+39 921"
+    },
+    {
+        "city": "Cerignola",
+        "area_code": "885",
+        "dialing_code": "+39 885"
+    },
+    {
+        "city": "Cervignano Del Friuli",
+        "area_code": "431",
+        "dialing_code": "+39 431"
+    },
+    {
+        "city": "Cesena",
+        "area_code": "547",
+        "dialing_code": "+39 547"
+    },
+    {
+        "city": "Chianciano Terme",
+        "area_code": "578",
+        "dialing_code": "+39 578"
+    },
+    {
+        "city": "Chiavenna",
+        "area_code": "343",
+        "dialing_code": "+39 343"
+    },
+    {
+        "city": "Chieti",
+        "area_code": "871",
+        "dialing_code": "+39 871"
+    },
+    {
+        "city": "Civitavecchia",
+        "area_code": "766",
+        "dialing_code": "+39 766"
+    },
+    {
+        "city": "Cles",
+        "area_code": "463",
+        "dialing_code": "+39 463"
+    },
+    {
+        "city": "Clusone",
+        "area_code": "346",
+        "dialing_code": "+39 346"
+    },
+    {
+        "city": "Codogno",
+        "area_code": "377",
+        "dialing_code": "+39 377"
+    },
+    {
+        "city": "Comacchio",
+        "area_code": "533",
+        "dialing_code": "+39 533"
+    },
+    {
+        "city": "Como",
+        "area_code": "31",
+        "dialing_code": "+39 31"
+    },
+    {
+        "city": "Conegliano",
+        "area_code": "438",
+        "dialing_code": "+39 438"
+    },
+    {
+        "city": "Cortina d Ampezzo",
+        "area_code": "436",
+        "dialing_code": "+39 436"
+    },
+    {
+        "city": "Cortina d'Ampezzo",
+        "area_code": "436",
+        "dialing_code": "+39 436"
+    },
+    {
+        "city": "Cosenza",
+        "area_code": "984",
+        "dialing_code": "+39 984"
+    },
+    {
+        "city": "Crema",
+        "area_code": "373",
+        "dialing_code": "+39 373"
+    },
+    {
+        "city": "Cremona",
+        "area_code": "372",
+        "dialing_code": "+39 372"
+    },
+    {
+        "city": "Crotone",
+        "area_code": "962",
+        "dialing_code": "+39 962"
+    },
+    {
+        "city": "Cuneo",
+        "area_code": "171",
+        "dialing_code": "+39 171"
+    },
+    {
+        "city": "Domodossola",
+        "area_code": "324",
+        "dialing_code": "+39 324"
+    },
+    {
+        "city": "Empoli",
+        "area_code": "571",
+        "dialing_code": "+39 571"
+    },
+    {
+        "city": "Enna",
+        "area_code": "935",
+        "dialing_code": "+39 935"
+    },
+    {
+        "city": "Este",
+        "area_code": "429",
+        "dialing_code": "+39 429"
+    },
+    {
+        "city": "Fabriano",
+        "area_code": "732",
+        "dialing_code": "+39 732"
+    },
+    {
+        "city": "Faenza",
+        "area_code": "546",
+        "dialing_code": "+39 546"
+    },
+    {
+        "city": "Feltre",
+        "area_code": "439",
+        "dialing_code": "+39 439"
+    },
+    {
+        "city": "Fermo",
+        "area_code": "734",
+        "dialing_code": "+39 734"
+    },
+    {
+        "city": "Ferrara",
+        "area_code": "532",
+        "dialing_code": "+39 532"
+    },
+    {
+        "city": "Fidenza",
+        "area_code": "524",
+        "dialing_code": "+39 524"
+    },
+    {
+        "city": "Firenze",
+        "area_code": "55",
+        "dialing_code": "+39 55"
+    },
+    {
+        "city": "Florence",
+        "area_code": "55",
+        "dialing_code": "+39 55"
+    },
+    {
+        "city": "Florence (Firenze)",
+        "area_code": "55",
+        "dialing_code": "+39 55"
+    },
+    {
+        "city": "Foggia",
+        "area_code": "881",
+        "dialing_code": "+39 881"
+    },
+    {
+        "city": "Foligno",
+        "area_code": "742",
+        "dialing_code": "+39 742"
+    },
+    {
+        "city": "Follonica",
+        "area_code": "566",
+        "dialing_code": "+39 566"
+    },
+    {
+        "city": "Forli'",
+        "area_code": "543",
+        "dialing_code": "+39 543"
+    },
+    {
+        "city": "Formia",
+        "area_code": "771",
+        "dialing_code": "+39 771"
+    },
+    {
+        "city": "Fornovo Di Taro",
+        "area_code": "525",
+        "dialing_code": "+39 525"
+    },
+    {
+        "city": "Frosinone",
+        "area_code": "775",
+        "dialing_code": "+39 775"
+    },
+    {
+        "city": "Gallipoli",
+        "area_code": "833",
+        "dialing_code": "+39 833"
+    },
+    {
+        "city": "Genoa",
+        "area_code": "10",
+        "dialing_code": "+39 10"
+    },
+    {
+        "city": "Gorizia",
+        "area_code": "481",
+        "dialing_code": "+39 481"
+    },
+    {
+        "city": "Grosseto",
+        "area_code": "564",
+        "dialing_code": "+39 564"
+    },
+    {
+        "city": "Iglesias",
+        "area_code": "781",
+        "dialing_code": "+39 781"
+    },
+    {
+        "city": "Imola",
+        "area_code": "542",
+        "dialing_code": "+39 542"
+    },
+    {
+        "city": "Imperia",
+        "area_code": "183",
+        "dialing_code": "+39 183"
+    },
+    {
+        "city": "Isernia",
+        "area_code": "865",
+        "dialing_code": "+39 865"
+    },
+    {
+        "city": "Ivrea",
+        "area_code": "125",
+        "dialing_code": "+39 125"
+    },
+    {
+        "city": "Jesi",
+        "area_code": "731",
+        "dialing_code": "+39 731"
+    },
+    {
+        "city": "L Aquila",
+        "area_code": "862",
+        "dialing_code": "+39 862"
+    },
+    {
+        "city": "L'aquila",
+        "area_code": "862",
+        "dialing_code": "+39 862"
+    },
+    {
+        "city": "La Spezia",
+        "area_code": "187",
+        "dialing_code": "+39 187"
+    },
+    {
+        "city": "Lagonegro",
+        "area_code": "973",
+        "dialing_code": "+39 973"
+    },
+    {
+        "city": "Lamezia Terme",
+        "area_code": "968",
+        "dialing_code": "+39 968"
+    },
+    {
+        "city": "Lanciano",
+        "area_code": "872",
+        "dialing_code": "+39 872"
+    },
+    {
+        "city": "Lanusei",
+        "area_code": "782",
+        "dialing_code": "+39 782"
+    },
+    {
+        "city": "Lanzo Torinese",
+        "area_code": "123",
+        "dialing_code": "+39 123"
+    },
+    {
+        "city": "Latina",
+        "area_code": "773",
+        "dialing_code": "+39 773"
+    },
+    {
+        "city": "Lecce",
+        "area_code": "832",
+        "dialing_code": "+39 832"
+    },
+    {
+        "city": "Lecco",
+        "area_code": "341",
+        "dialing_code": "+39 341"
+    },
+    {
+        "city": "Legnano",
+        "area_code": "442",
+        "dialing_code": "+39 442"
+    },
+    {
+        "city": "Livorno",
+        "area_code": "586",
+        "dialing_code": "+39 586"
+    },
+    {
+        "city": "Locri",
+        "area_code": "964",
+        "dialing_code": "+39 964"
+    },
+    {
+        "city": "Lodi",
+        "area_code": "371",
+        "dialing_code": "+39 371"
+    },
+    {
+        "city": "Lucca",
+        "area_code": "583",
+        "dialing_code": "+39 583"
+    },
+    {
+        "city": "Lugo",
+        "area_code": "545",
+        "dialing_code": "+39 545"
+    },
+    {
+        "city": "Macerata",
+        "area_code": "733",
+        "dialing_code": "+39 733"
+    },
+    {
+        "city": "Macomer",
+        "area_code": "785",
+        "dialing_code": "+39 785"
+    },
+    {
+        "city": "Madonna de Campiglio",
+        "area_code": "465",
+        "dialing_code": "+39 465"
+    },
+    {
+        "city": "Maglie",
+        "area_code": "836",
+        "dialing_code": "+39 836"
+    },
+    {
+        "city": "Manfredonia",
+        "area_code": "884",
+        "dialing_code": "+39 884"
+    },
+    {
+        "city": "Mantova",
+        "area_code": "376",
+        "dialing_code": "+39 376"
+    },
+    {
+        "city": "Massa",
+        "area_code": "585",
+        "dialing_code": "+39 585"
+    },
+    {
+        "city": "Matera",
+        "area_code": "835",
+        "dialing_code": "+39 835"
+    },
+    {
+        "city": "Melfi",
+        "area_code": "972",
+        "dialing_code": "+39 972"
+    },
+    {
+        "city": "Menaggio",
+        "area_code": "344",
+        "dialing_code": "+39 344"
+    },
+    {
+        "city": "Merano",
+        "area_code": "473",
+        "dialing_code": "+39 473"
+    },
+    {
+        "city": "Messina",
+        "area_code": "90",
+        "dialing_code": "+39 90"
+    },
+    {
+        "city": "Milan",
+        "area_code": "2",
+        "dialing_code": "+39 2"
+    },
+    {
+        "city": "Milano",
+        "area_code": "2",
+        "dialing_code": "+39 2"
+    },
+    {
+        "city": "Mirandola",
+        "area_code": "535",
+        "dialing_code": "+39 535"
+    },
+    {
+        "city": "Modena",
+        "area_code": "59",
+        "dialing_code": "+39 59"
+    },
+    {
+        "city": "Mondovi'",
+        "area_code": "174",
+        "dialing_code": "+39 174"
+    },
+    {
+        "city": "Montebelluna",
+        "area_code": "423",
+        "dialing_code": "+39 423"
+    },
+    {
+        "city": "Montecatini Terme",
+        "area_code": "572",
+        "dialing_code": "+39 572"
+    },
+    {
+        "city": "Monza",
+        "area_code": "39",
+        "dialing_code": "+39 39"
+    },
+    {
+        "city": "Mortara",
+        "area_code": "384",
+        "dialing_code": "+39 384"
+    },
+    {
+        "city": "Muro Lucano",
+        "area_code": "976",
+        "dialing_code": "+39 976"
+    },
+    {
+        "city": "Naples",
+        "area_code": "81",
+        "dialing_code": "+39 81"
+    },
+    {
+        "city": "Napoli",
+        "area_code": "81",
+        "dialing_code": "+39 81"
+    },
+    {
+        "city": "Novara",
+        "area_code": "321",
+        "dialing_code": "+39 321"
+    },
+    {
+        "city": "Novi Ligure",
+        "area_code": "143",
+        "dialing_code": "+39 143"
+    },
+    {
+        "city": "Novi Lígure",
+        "area_code": "143",
+        "dialing_code": "+39 143"
+    },
+    {
+        "city": "Nuoro",
+        "area_code": "784",
+        "dialing_code": "+39 784"
+    },
+    {
+        "city": "Olbia",
+        "area_code": "789",
+        "dialing_code": "+39 789"
+    },
+    {
+        "city": "Oristano",
+        "area_code": "783",
+        "dialing_code": "+39 783"
+    },
+    {
+        "city": "Orvieto",
+        "area_code": "763",
+        "dialing_code": "+39 763"
+    },
+    {
+        "city": "Ostiglia",
+        "area_code": "386",
+        "dialing_code": "+39 386"
+    },
+    {
+        "city": "Padova",
+        "area_code": "49",
+        "dialing_code": "+39 49"
+    },
+    {
+        "city": "Palermo",
+        "area_code": "91",
+        "dialing_code": "+39 91"
+    },
+    {
+        "city": "Palmi",
+        "area_code": "966",
+        "dialing_code": "+39 966"
+    },
+    {
+        "city": "Paola",
+        "area_code": "982",
+        "dialing_code": "+39 982"
+    },
+    {
+        "city": "Parma",
+        "area_code": "521",
+        "dialing_code": "+39 521"
+    },
+    {
+        "city": "Patti",
+        "area_code": "941",
+        "dialing_code": "+39 941"
+    },
+    {
+        "city": "Pavia",
+        "area_code": "382",
+        "dialing_code": "+39 382"
+    },
+    {
+        "city": "Perugia",
+        "area_code": "75",
+        "dialing_code": "+39 75"
+    },
+    {
+        "city": "Pesaro",
+        "area_code": "721",
+        "dialing_code": "+39 721"
+    },
+    {
+        "city": "Pescara",
+        "area_code": "85",
+        "dialing_code": "+39 85"
+    },
+    {
+        "city": "Piacenza",
+        "area_code": "523",
+        "dialing_code": "+39 523"
+    },
+    {
+        "city": "Pieve di adore",
+        "area_code": "435",
+        "dialing_code": "+39 435"
+    },
+    {
+        "city": "Pinerolo",
+        "area_code": "121",
+        "dialing_code": "+39 121"
+    },
+    {
+        "city": "Piombino",
+        "area_code": "565",
+        "dialing_code": "+39 565"
+    },
+    {
+        "city": "Pisa",
+        "area_code": "50",
+        "dialing_code": "+39 50"
+    },
+    {
+        "city": "Pistoia",
+        "area_code": "573",
+        "dialing_code": "+39 573"
+    },
+    {
+        "city": "Poggio Mirteto",
+        "area_code": "765",
+        "dialing_code": "+39 765"
+    },
+    {
+        "city": "Pontedera",
+        "area_code": "587",
+        "dialing_code": "+39 587"
+    },
+    {
+        "city": "Pordenone",
+        "area_code": "434",
+        "dialing_code": "+39 434"
+    },
+    {
+        "city": "Porretta Terme",
+        "area_code": "534",
+        "dialing_code": "+39 534"
+    },
+    {
+        "city": "Potenza",
+        "area_code": "971",
+        "dialing_code": "+39 971"
+    },
+    {
+        "city": "Prato",
+        "area_code": "574",
+        "dialing_code": "+39 574"
+    },
+    {
+        "city": "Ragusa",
+        "area_code": "932",
+        "dialing_code": "+39 932"
+    },
+    {
+        "city": "Rapallo",
+        "area_code": "185",
+        "dialing_code": "+39 185"
+    },
+    {
+        "city": "Ravenna",
+        "area_code": "544",
+        "dialing_code": "+39 544"
+    },
+    {
+        "city": "Reggio Calabria",
+        "area_code": "965",
+        "dialing_code": "+39 965"
+    },
+    {
+        "city": "Reggio Emilia",
+        "area_code": "522",
+        "dialing_code": "+39 522"
+    },
+    {
+        "city": "Rieti",
+        "area_code": "746",
+        "dialing_code": "+39 746"
+    },
+    {
+        "city": "Rimini",
+        "area_code": "541",
+        "dialing_code": "+39 541"
+    },
+    {
+        "city": "Rivarolo Canavese",
+        "area_code": "124",
+        "dialing_code": "+39 124"
+    },
+    {
+        "city": "Rome",
+        "area_code": "6",
+        "dialing_code": "+39 6"
+    },
+    {
+        "city": "Rossano",
+        "area_code": "983",
+        "dialing_code": "+39 983"
+    },
+    {
+        "city": "Rovereto",
+        "area_code": "464",
+        "dialing_code": "+39 464"
+    },
+    {
+        "city": "Rovigo",
+        "area_code": "425",
+        "dialing_code": "+39 425"
+    },
+    {
+        "city": "S. Angelo Dei Lombardi",
+        "area_code": "827",
+        "dialing_code": "+39 827"
+    },
+    {
+        "city": "S. Benedetto Del Tronto",
+        "area_code": "735",
+        "dialing_code": "+39 735"
+    },
+    {
+        "city": "S. Dona' Di Piave",
+        "area_code": "421",
+        "dialing_code": "+39 421"
+    },
+    {
+        "city": "S. Pellegrino Terme",
+        "area_code": "345",
+        "dialing_code": "+39 345"
+    },
+    {
+        "city": "Saint Vincent",
+        "area_code": "166",
+        "dialing_code": "+39 166"
+    },
+    {
+        "city": "Sala Consilina",
+        "area_code": "975",
+        "dialing_code": "+39 975"
+    },
+    {
+        "city": "Salerno",
+        "area_code": "89",
+        "dialing_code": "+39 89"
+    },
+    {
+        "city": "Salo'",
+        "area_code": "365",
+        "dialing_code": "+39 365"
+    },
+    {
+        "city": "Saluzzo",
+        "area_code": "175",
+        "dialing_code": "+39 175"
+    },
+    {
+        "city": "San Marino",
+        "area_code": "549",
+        "dialing_code": "+39 549"
+    },
+    {
+        "city": "San Remo",
+        "area_code": "184",
+        "dialing_code": "+39 184"
+    },
+    {
+        "city": "San Severo",
+        "area_code": "882",
+        "dialing_code": "+39 882"
+    },
+    {
+        "city": "Sassari",
+        "area_code": "79",
+        "dialing_code": "+39 79"
+    },
+    {
+        "city": "Sassuolo",
+        "area_code": "536",
+        "dialing_code": "+39 536"
+    },
+    {
+        "city": "Savigliano",
+        "area_code": "172",
+        "dialing_code": "+39 172"
+    },
+    {
+        "city": "Savona",
+        "area_code": "19",
+        "dialing_code": "+39 19"
+    },
+    {
+        "city": "Scalea",
+        "area_code": "985",
+        "dialing_code": "+39 985"
+    },
+    {
+        "city": "Schio",
+        "area_code": "445",
+        "dialing_code": "+39 445"
+    },
+    {
+        "city": "Sciacca",
+        "area_code": "925",
+        "dialing_code": "+39 925"
+    },
+    {
+        "city": "Seregno",
+        "area_code": "362",
+        "dialing_code": "+39 362"
+    },
+    {
+        "city": "Siena",
+        "area_code": "577",
+        "dialing_code": "+39 577"
+    },
+    {
+        "city": "Siracusa",
+        "area_code": "931",
+        "dialing_code": "+39 931"
+    },
+    {
+        "city": "Sondrio",
+        "area_code": "342",
+        "dialing_code": "+39 342"
+    },
+    {
+        "city": "Soresina",
+        "area_code": "374",
+        "dialing_code": "+39 374"
+    },
+    {
+        "city": "Soverato",
+        "area_code": "967",
+        "dialing_code": "+39 967"
+    },
+    {
+        "city": "Spilimbergo",
+        "area_code": "427",
+        "dialing_code": "+39 427"
+    },
+    {
+        "city": "Spoleto",
+        "area_code": "743",
+        "dialing_code": "+39 743"
+    },
+    {
+        "city": "Stradella",
+        "area_code": "385",
+        "dialing_code": "+39 385"
+    },
+    {
+        "city": "Sulmona",
+        "area_code": "864",
+        "dialing_code": "+39 864"
+    },
+    {
+        "city": "Susa",
+        "area_code": "122",
+        "dialing_code": "+39 122"
+    },
+    {
+        "city": "Taormina",
+        "area_code": "942",
+        "dialing_code": "+39 942"
+    },
+    {
+        "city": "Taranto",
+        "area_code": "99",
+        "dialing_code": "+39 99"
+    },
+    {
+        "city": "Tarvisio",
+        "area_code": "428",
+        "dialing_code": "+39 428"
+    },
+    {
+        "city": "Teramo",
+        "area_code": "861",
+        "dialing_code": "+39 861"
+    },
+    {
+        "city": "Termoli",
+        "area_code": "875",
+        "dialing_code": "+39 875"
+    },
+    {
+        "city": "Terni",
+        "area_code": "744",
+        "dialing_code": "+39 744"
+    },
+    {
+        "city": "Tione Di Trento",
+        "area_code": "465",
+        "dialing_code": "+39 465"
+    },
+    {
+        "city": "Tivoli",
+        "area_code": "774",
+        "dialing_code": "+39 774"
+    },
+    {
+        "city": "Tolmezzo",
+        "area_code": "433",
+        "dialing_code": "+39 433"
+    },
+    {
+        "city": "Torino",
+        "area_code": "11",
+        "dialing_code": "+39 11"
+    },
+    {
+        "city": "Trapani",
+        "area_code": "923",
+        "dialing_code": "+39 923"
+    },
+    {
+        "city": "Trento",
+        "area_code": "461",
+        "dialing_code": "+39 461"
+    },
+    {
+        "city": "Treviglio",
+        "area_code": "363",
+        "dialing_code": "+39 363"
+    },
+    {
+        "city": "Treviso",
+        "area_code": "422",
+        "dialing_code": "+39 422"
+    },
+    {
+        "city": "Trieste",
+        "area_code": "40",
+        "dialing_code": "+39 40"
+    },
+    {
+        "city": "Turin",
+        "area_code": "11",
+        "dialing_code": "+39 11"
+    },
+    {
+        "city": "Udine",
+        "area_code": "432",
+        "dialing_code": "+39 432"
+    },
+    {
+        "city": "Urbino",
+        "area_code": "722",
+        "dialing_code": "+39 722"
+    },
+    {
+        "city": "Varese",
+        "area_code": "332",
+        "dialing_code": "+39 332"
+    },
+    {
+        "city": "Vasto",
+        "area_code": "873",
+        "dialing_code": "+39 873"
+    },
+    {
+        "city": "Vatican City",
+        "area_code": "6",
+        "dialing_code": "+39 6"
+    },
+    {
+        "city": "Venezia (Mestre)",
+        "area_code": "41",
+        "dialing_code": "+39 41"
+    },
+    {
+        "city": "Venice",
+        "area_code": "41",
+        "dialing_code": "+39 41"
+    },
+    {
+        "city": "Vercelli",
+        "area_code": "161",
+        "dialing_code": "+39 161"
+    },
+    {
+        "city": "Verona",
+        "area_code": "45",
+        "dialing_code": "+39 45"
+    },
+    {
+        "city": "Viareggio",
+        "area_code": "584",
+        "dialing_code": "+39 584"
+    },
+    {
+        "city": "Vibo Valentia",
+        "area_code": "963",
+        "dialing_code": "+39 963"
+    },
+    {
+        "city": "Vicenza",
+        "area_code": "444",
+        "dialing_code": "+39 444"
+    },
+    {
+        "city": "Vigevano",
+        "area_code": "381",
+        "dialing_code": "+39 381"
+    },
+    {
+        "city": "Villa Della Lucania",
+        "area_code": "974",
+        "dialing_code": "+39 974"
+    },
+    {
+        "city": "Viterbo",
+        "area_code": "761",
+        "dialing_code": "+39 761"
+    },
+    {
+        "city": "Voghera",
+        "area_code": "383",
+        "dialing_code": "+39 383"
+    },
+    {
+        "city": "Volterra",
+        "area_code": "588",
+        "dialing_code": "+39 588"
+    }
+]

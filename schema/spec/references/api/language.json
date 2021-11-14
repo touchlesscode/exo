@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "The BCP-47 language tag. Composed of:<ul><li>The ISO-639 alpha-2 language code</li><li>(Optional) The ISO-15924 script tag</li><li>The ISO-3166 alpha-2 country code</li></ul>",
+    "type": "string",
+    "format": "paypal_common_language_v1",
+    "maxLength": 10,
+    "minLength": 2,
+    "pattern": "^[a-z]{2}(?:-[A-Z][a-z]{3})?(?:-(?:[A-Z]{2}))?$"
+}

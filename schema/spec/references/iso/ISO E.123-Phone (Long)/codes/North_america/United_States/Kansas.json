@@ -1,0 +1,82 @@
+[
+    {
+        "city": "Dodge City",
+        "area_code": "620",
+        "dialing_code": "+1 620"
+    },
+    {
+        "city": "Emporia",
+        "area_code": "620",
+        "dialing_code": "+1 620"
+    },
+    {
+        "city": "Garden City",
+        "area_code": "515",
+        "dialing_code": "+1 515"
+    },
+    {
+        "city": "Hays",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Junction City",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Kansas City",
+        "area_code": "660",
+        "dialing_code": "+1 660"
+    },
+    {
+        "city": "Lawrence",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Leavenworth",
+        "area_code": "913",
+        "dialing_code": "+1 913"
+    },
+    {
+        "city": "Liberal",
+        "area_code": "620",
+        "dialing_code": "+1 620"
+    },
+    {
+        "city": "Manhattan",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Olathe",
+        "area_code": "913",
+        "dialing_code": "+1 913"
+    },
+    {
+        "city": "Overland Park",
+        "area_code": "913",
+        "dialing_code": "+1 913"
+    },
+    {
+        "city": "Salina",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Shawnee",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Topeka",
+        "area_code": "785",
+        "dialing_code": "+1 785"
+    },
+    {
+        "city": "Wichita",
+        "area_code": "316",
+        "dialing_code": "+1 316"
+    }
+]

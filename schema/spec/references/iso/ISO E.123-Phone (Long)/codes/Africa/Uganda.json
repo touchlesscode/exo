@@ -1,0 +1,22 @@
+[
+    {
+        "city": "Entebbe",
+        "area_code": "42",
+        "dialing_code": "+256 42"
+    },
+    {
+        "city": "Jinja",
+        "area_code": "43",
+        "dialing_code": "+256 43"
+    },
+    {
+        "city": "Kampala",
+        "area_code": "41",
+        "dialing_code": "+256 41"
+    },
+    {
+        "city": "Kyambogo",
+        "area_code": "41",
+        "dialing_code": "+256 41"
+    }
+]

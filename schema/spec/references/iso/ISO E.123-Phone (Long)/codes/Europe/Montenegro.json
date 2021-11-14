@@ -1,0 +1,57 @@
+[
+    {
+        "city": "Bar",
+        "area_code": "85",
+        "dialing_code": "+382 85"
+    },
+    {
+        "city": "Berane",
+        "area_code": "87",
+        "dialing_code": "+382 87"
+    },
+    {
+        "city": "Bijelo Polje",
+        "area_code": "84",
+        "dialing_code": "+382 84"
+    },
+    {
+        "city": "Cetinje",
+        "area_code": "86",
+        "dialing_code": "+382 86"
+    },
+    {
+        "city": "Herceg Novi",
+        "area_code": "88",
+        "dialing_code": "+382 88"
+    },
+    {
+        "city": "Kotor",
+        "area_code": "82",
+        "dialing_code": "+382 82"
+    },
+    {
+        "city": "Nikshic",
+        "area_code": "83",
+        "dialing_code": "+382 83"
+    },
+    {
+        "city": "Niksic",
+        "area_code": "83",
+        "dialing_code": "+382 83"
+    },
+    {
+        "city": "Plevlja",
+        "area_code": "89",
+        "dialing_code": "+382 89"
+    },
+    {
+        "city": "Pljevlja",
+        "area_code": "89",
+        "dialing_code": "+382 89"
+    },
+    {
+        "city": "Podgorica",
+        "area_code": "81",
+        "dialing_code": "+382 81"
+    }
+]

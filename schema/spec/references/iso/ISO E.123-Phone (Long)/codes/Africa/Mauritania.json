@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Fire brigade",
+        "area_code": "18",
+        "dialing_code": "+222 18"
+    },
+    {
+        "city": "Nouakchott",
+        "area_code": "",
+        "dialing_code": "+222"
+    },
+    {
+        "city": "Police",
+        "area_code": "17",
+        "dialing_code": "+222 17"
+    },
+    {
+        "city": "Speaking clock",
+        "area_code": "16",
+        "dialing_code": "+222 16"
+    },
+    {
+        "city": "Telephone inquiries",
+        "area_code": "12",
+        "dialing_code": "+222 12"
+    }
+]

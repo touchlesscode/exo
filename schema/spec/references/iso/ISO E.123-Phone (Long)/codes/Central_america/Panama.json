@@ -1,0 +1,22 @@
+[
+    {
+        "city": "Bocas del Toro",
+        "area_code": "7",
+        "dialing_code": "+507 7"
+    },
+    {
+        "city": "Colon",
+        "area_code": "4",
+        "dialing_code": "+507 4"
+    },
+    {
+        "city": "Los Santos",
+        "area_code": "9",
+        "dialing_code": "+507 9"
+    },
+    {
+        "city": "Panama City",
+        "area_code": "3",
+        "dialing_code": "+507 3"
+    }
+]

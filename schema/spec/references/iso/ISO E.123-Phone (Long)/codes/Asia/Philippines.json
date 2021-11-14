@@ -1,0 +1,237 @@
+[
+    {
+        "city": "Albay",
+        "area_code": "52",
+        "dialing_code": "+63 52"
+    },
+    {
+        "city": "Angeles",
+        "area_code": "455",
+        "dialing_code": "+63 455"
+    },
+    {
+        "city": "Angeles City",
+        "area_code": "455",
+        "dialing_code": "+63 455"
+    },
+    {
+        "city": "Bacolod",
+        "area_code": "34",
+        "dialing_code": "+63 34"
+    },
+    {
+        "city": "Bacolod City",
+        "area_code": "34",
+        "dialing_code": "+63 34"
+    },
+    {
+        "city": "Baguio City",
+        "area_code": "74",
+        "dialing_code": "+63 74"
+    },
+    {
+        "city": "Batangas",
+        "area_code": "43",
+        "dialing_code": "+63 43"
+    },
+    {
+        "city": "Cacayan de Oro",
+        "area_code": "8822",
+        "dialing_code": "+63 8822"
+    },
+    {
+        "city": "Caloocan",
+        "area_code": "2",
+        "dialing_code": "+63 2"
+    },
+    {
+        "city": "Cavite",
+        "area_code": "46",
+        "dialing_code": "+63 46"
+    },
+    {
+        "city": "Cebu City",
+        "area_code": "32",
+        "dialing_code": "+63 32"
+    },
+    {
+        "city": "Cotabato",
+        "area_code": "64",
+        "dialing_code": "+63 64"
+    },
+    {
+        "city": "Dagupan",
+        "area_code": "75",
+        "dialing_code": "+63 75"
+    },
+    {
+        "city": "Dagupan City",
+        "area_code": "75",
+        "dialing_code": "+63 75"
+    },
+    {
+        "city": "Dalaguete",
+        "area_code": "32",
+        "dialing_code": "+63 32"
+    },
+    {
+        "city": "Dauin",
+        "area_code": "3522",
+        "dialing_code": "+63 3522"
+    },
+    {
+        "city": "Davao",
+        "area_code": "82",
+        "dialing_code": "+63 82"
+    },
+    {
+        "city": "Davao City",
+        "area_code": "82",
+        "dialing_code": "+63 82"
+    },
+    {
+        "city": "Dumaguete City",
+        "area_code": "3524",
+        "dialing_code": "+63 3524"
+    },
+    {
+        "city": "General Santos",
+        "area_code": "83",
+        "dialing_code": "+63 83"
+    },
+    {
+        "city": "Iligan City",
+        "area_code": "63",
+        "dialing_code": "+63 63"
+    },
+    {
+        "city": "Iloilo",
+        "area_code": "33",
+        "dialing_code": "+63 33"
+    },
+    {
+        "city": "Iloilo City",
+        "area_code": "33",
+        "dialing_code": "+63 33"
+    },
+    {
+        "city": "Lipa",
+        "area_code": "43",
+        "dialing_code": "+63 43"
+    },
+    {
+        "city": "Lucena",
+        "area_code": "42",
+        "dialing_code": "+63 42"
+    },
+    {
+        "city": "Manila",
+        "area_code": "2",
+        "dialing_code": "+63 2"
+    },
+    {
+        "city": "Masbate",
+        "area_code": "56",
+        "dialing_code": "+63 56"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "9",
+        "dialing_code": "+63 9"
+    },
+    {
+        "city": "Naga City",
+        "area_code": "5421",
+        "dialing_code": "+63 5421"
+    },
+    {
+        "city": "Ozamis City",
+        "area_code": "88",
+        "dialing_code": "+63 88"
+    },
+    {
+        "city": "Pampanga",
+        "area_code": "45",
+        "dialing_code": "+63 45"
+    },
+    {
+        "city": "Pasay",
+        "area_code": "2",
+        "dialing_code": "+63 2"
+    },
+    {
+        "city": "Puerto Princesa",
+        "area_code": "48",
+        "dialing_code": "+63 48"
+    },
+    {
+        "city": "Puerto Princesa City",
+        "area_code": "48",
+        "dialing_code": "+63 48"
+    },
+    {
+        "city": "Quezon City",
+        "area_code": "2",
+        "dialing_code": "+63 2"
+    },
+    {
+        "city": "San Fernando",
+        "area_code": "818",
+        "dialing_code": "+63 818"
+    },
+    {
+        "city": "San Fernando: La Union",
+        "area_code": "72",
+        "dialing_code": "+63 72"
+    },
+    {
+        "city": "San Jose",
+        "area_code": "309",
+        "dialing_code": "+63 309"
+    },
+    {
+        "city": "San Pablo",
+        "area_code": "93",
+        "dialing_code": "+63 93"
+    },
+    {
+        "city": "San Pablo City",
+        "area_code": "93",
+        "dialing_code": "+63 93"
+    },
+    {
+        "city": "Santa Cruz",
+        "area_code": "831",
+        "dialing_code": "+63 831"
+    },
+    {
+        "city": "Subic Bay",
+        "area_code": "47",
+        "dialing_code": "+63 47"
+    },
+    {
+        "city": "Tacloban",
+        "area_code": "53",
+        "dialing_code": "+63 53"
+    },
+    {
+        "city": "Tacloban City",
+        "area_code": "53",
+        "dialing_code": "+63 53"
+    },
+    {
+        "city": "Tarlac",
+        "area_code": "452",
+        "dialing_code": "+63 452"
+    },
+    {
+        "city": "Tarlac City",
+        "area_code": "452",
+        "dialing_code": "+63 452"
+    },
+    {
+        "city": "Zamboanga",
+        "area_code": "62",
+        "dialing_code": "+63 62"
+    }
+]

@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Benton",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Bentonville",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "Cabot",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Conway",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Fayetteville",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "Fort Smith",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Hot Springs",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Jacksonville",
+        "area_code": "904",
+        "dialing_code": "+1 904"
+    },
+    {
+        "city": "Jonesboro",
+        "area_code": "870",
+        "dialing_code": "+1 870"
+    },
+    {
+        "city": "Little Rock",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Maumelle",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Rogers",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "Russellville",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "Searcy",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Sherwood",
+        "area_code": "501",
+        "dialing_code": "+1 501"
+    },
+    {
+        "city": "Springdale",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "Van Buren",
+        "area_code": "479",
+        "dialing_code": "+1 479"
+    },
+    {
+        "city": "West Memphis",
+        "area_code": "870",
+        "dialing_code": "+1 870"
+    }
+]

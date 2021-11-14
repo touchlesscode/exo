@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Annapolis",
+        "area_code": "410",
+        "dialing_code": "+1 410"
+    },
+    {
+        "city": "Baltimore",
+        "area_code": "410",
+        "dialing_code": "+1 410"
+    },
+    {
+        "city": "Bethesda",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Bowie",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Catonsville",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Clinton",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Columbia",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Dundalk",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Ellicott City",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Essex",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Frederick",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Gaithersburg",
+        "area_code": "240",
+        "dialing_code": "+1 240"
+    },
+    {
+        "city": "Germantown",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Glen Burnie",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Hagerstown",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Montgomery Village",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Olney",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Parkville",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Perry Hall",
+        "area_code": "410",
+        "dialing_code": "+1 410"
+    },
+    {
+        "city": "Pikesville",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Potomac",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Randallstown",
+        "area_code": "410",
+        "dialing_code": "+1 410"
+    },
+    {
+        "city": "Rockville",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Severn",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Severna Park",
+        "area_code": "443",
+        "dialing_code": "+1 443"
+    },
+    {
+        "city": "Silver Spring",
+        "area_code": "301",
+        "dialing_code": "+1 301"
+    },
+    {
+        "city": "Towson",
+        "area_code": "410",
+        "dialing_code": "+1 410"
+    }
+]

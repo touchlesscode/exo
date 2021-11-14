@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Agadir",
+        "area_code": "548",
+        "dialing_code": "+212 548"
+    },
+    {
+        "city": "Casablanca",
+        "area_code": "22",
+        "dialing_code": "+212 22"
+    },
+    {
+        "city": "Fes",
+        "area_code": "55",
+        "dialing_code": "+212 55"
+    },
+    {
+        "city": "Lyayoune",
+        "area_code": "48",
+        "dialing_code": "+212 48"
+    },
+    {
+        "city": "Lýayoune",
+        "area_code": "48",
+        "dialing_code": "+212 48"
+    },
+    {
+        "city": "Marrakech",
+        "area_code": "44",
+        "dialing_code": "+212 44"
+    },
+    {
+        "city": "Marrakesh",
+        "area_code": "44",
+        "dialing_code": "+212 44"
+    },
+    {
+        "city": "Meknes",
+        "area_code": "55",
+        "dialing_code": "+212 55"
+    },
+    {
+        "city": "Myknys",
+        "area_code": "55",
+        "dialing_code": "+212 55"
+    },
+    {
+        "city": "Mýknýs",
+        "area_code": "55",
+        "dialing_code": "+212 55"
+    },
+    {
+        "city": "Oujda",
+        "area_code": "56",
+        "dialing_code": "+212 56"
+    },
+    {
+        "city": "Rabat",
+        "area_code": "37",
+        "dialing_code": "+212 37"
+    },
+    {
+        "city": "Settat",
+        "area_code": "23",
+        "dialing_code": "+212 23"
+    },
+    {
+        "city": "Tanger (Tangiers)",
+        "area_code": "39",
+        "dialing_code": "+212 39"
+    },
+    {
+        "city": "Tangier",
+        "area_code": "5399",
+        "dialing_code": "+212 5399"
+    },
+    {
+        "city": "Tetouan",
+        "area_code": "39",
+        "dialing_code": "+212 39"
+    },
+    {
+        "city": "Tytouan",
+        "area_code": "39",
+        "dialing_code": "+212 39"
+    },
+    {
+        "city": "Týtouan",
+        "area_code": "39",
+        "dialing_code": "+212 39"
+    }
+]

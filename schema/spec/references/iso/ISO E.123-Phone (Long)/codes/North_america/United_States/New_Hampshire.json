@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Concord",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Derry",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Dover",
+        "area_code": "302",
+        "dialing_code": "+1 302"
+    },
+    {
+        "city": "Keene",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Laconia",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Manchester",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Nashua",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Portsmouth",
+        "area_code": "757",
+        "dialing_code": "+1 757"
+    },
+    {
+        "city": "Rochester",
+        "area_code": "585",
+        "dialing_code": "+1 585"
+    }
+]

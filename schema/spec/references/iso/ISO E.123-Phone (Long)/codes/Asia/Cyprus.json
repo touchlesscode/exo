@@ -1,0 +1,62 @@
+[
+    {
+        "city": "Akrotiri",
+        "area_code": "",
+        "dialing_code": "+357"
+    },
+    {
+        "city": "Cabo Kormakitis",
+        "area_code": "",
+        "dialing_code": "+357"
+    },
+    {
+        "city": "Famagusta",
+        "area_code": "23",
+        "dialing_code": "+357 23"
+    },
+    {
+        "city": "Larnaca",
+        "area_code": "24",
+        "dialing_code": "+357 24"
+    },
+    {
+        "city": "Limassol",
+        "area_code": "25",
+        "dialing_code": "+357 25"
+    },
+    {
+        "city": "Lárnaca",
+        "area_code": "24",
+        "dialing_code": "+357 24"
+    },
+    {
+        "city": "Mobile Phones - CYTA",
+        "area_code": "99",
+        "dialing_code": "+357 99"
+    },
+    {
+        "city": "Mobile Phones - NMT",
+        "area_code": "992",
+        "dialing_code": "+357 992"
+    },
+    {
+        "city": "Mobile Phones - SoEasy",
+        "area_code": "998",
+        "dialing_code": "+357 998"
+    },
+    {
+        "city": "Nicosia",
+        "area_code": "22",
+        "dialing_code": "+357 22"
+    },
+    {
+        "city": "Pafos",
+        "area_code": "26",
+        "dialing_code": "+357 26"
+    },
+    {
+        "city": "Paphos",
+        "area_code": "26",
+        "dialing_code": "+357 26"
+    }
+]

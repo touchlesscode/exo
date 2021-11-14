@@ -1,0 +1,152 @@
+[
+    {
+        "city": "Arvada",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Aspen",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Aurora",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Boulder",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Brighton",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Broomfield",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Canon City",
+        "area_code": "719",
+        "dialing_code": "+1 719"
+    },
+    {
+        "city": "Castle Rock",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Colorado Springs",
+        "area_code": "719",
+        "dialing_code": "+1 719"
+    },
+    {
+        "city": "Commerce City",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Denver",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Durango",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Englewood",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Erie",
+        "area_code": "814",
+        "dialing_code": "+1 814"
+    },
+    {
+        "city": "Fort Collins",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Golden",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Grand Junction",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Greeley",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Lafayette",
+        "area_code": "337",
+        "dialing_code": "+1 337"
+    },
+    {
+        "city": "Lakewood",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Littleton",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Longmont",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Louisville",
+        "area_code": "502",
+        "dialing_code": "+1 502"
+    },
+    {
+        "city": "Loveland",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Montrose",
+        "area_code": "970",
+        "dialing_code": "+1 970"
+    },
+    {
+        "city": "Parker",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Pueblo",
+        "area_code": "719",
+        "dialing_code": "+1 719"
+    },
+    {
+        "city": "Westminster",
+        "area_code": "720",
+        "dialing_code": "+1 720"
+    },
+    {
+        "city": "Wheat Ridge",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Windsor",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    }
+]

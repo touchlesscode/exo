@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A valid internationalized email address, as defined by RFC 5322, RFC 6530, and other RFCs. To validate an email address, services must send an email to it and not rely on static validation of the address.<blockquote><strong>Note:</strong> Due to RFC 5321, an email address can be up to 254 characters long even though up to 64 characters are allowed before and 255 characters are allowed after the @ sign. It is nearly impossible to define a regular expression that validates email addresses correctly, especially after you take internationalization into account. This pattern verifies only that the string contains an unquoted @ sign.</blockquote>",
+    "type": "string",
+    "format": "paypal_common_email_address_v1",
+    "minLength": 3,
+    "maxLength": 254,
+    "pattern": "^.+@[^\"\\-].+$"
+}

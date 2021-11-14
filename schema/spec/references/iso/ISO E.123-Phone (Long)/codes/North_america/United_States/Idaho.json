@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Boise",
+        "area_code": "208",
+        "dialing_code": "+1 208"
+    },
+    {
+        "city": "Caldwell",
+        "area_code": "208",
+        "dialing_code": "+1 208"
+    },
+    {
+        "city": "Idaho Falls",
+        "area_code": "208",
+        "dialing_code": "+1 208"
+    },
+    {
+        "city": "Moscow",
+        "area_code": "620",
+        "dialing_code": "+1 620"
+    },
+    {
+        "city": "Pocatello",
+        "area_code": "208",
+        "dialing_code": "+1 208"
+    }
+]

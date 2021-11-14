@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Dakar",
+        "area_code": "8",
+        "dialing_code": "+221 8"
+    },
+    {
+        "city": "Kaolack",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Mbour",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Outside Dakar",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Saint Louis",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Thies",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Thiès",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    },
+    {
+        "city": "Ziguinchor",
+        "area_code": "9",
+        "dialing_code": "+221 9"
+    }
+]

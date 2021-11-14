@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Andorra la Vella",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    },
+    {
+        "city": "Canilo",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    },
+    {
+        "city": "Encamp",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    },
+    {
+        "city": "La Massana",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "3",
+        "dialing_code": "+376 3"
+    },
+    {
+        "city": "Ordino",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    },
+    {
+        "city": "Sant Julia de Loria",
+        "area_code": "8",
+        "dialing_code": "+376 8"
+    }
+]

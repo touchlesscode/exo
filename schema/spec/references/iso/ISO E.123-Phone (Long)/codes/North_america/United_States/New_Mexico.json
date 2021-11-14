@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Alamogordo",
+        "area_code": "575",
+        "dialing_code": "+1 575"
+    },
+    {
+        "city": "Albuquerque",
+        "area_code": "505",
+        "dialing_code": "+1 505"
+    },
+    {
+        "city": "Deming",
+        "area_code": "575",
+        "dialing_code": "+1 575"
+    },
+    {
+        "city": "Farmington",
+        "area_code": "505",
+        "dialing_code": "+1 505"
+    },
+    {
+        "city": "Gallup",
+        "area_code": "505",
+        "dialing_code": "+1 505"
+    },
+    {
+        "city": "Las Cruces",
+        "area_code": "575",
+        "dialing_code": "+1 575"
+    },
+    {
+        "city": "Roswell",
+        "area_code": "575",
+        "dialing_code": "+1 575"
+    },
+    {
+        "city": "Santa Fe",
+        "area_code": "505",
+        "dialing_code": "+1 505"
+    }
+]

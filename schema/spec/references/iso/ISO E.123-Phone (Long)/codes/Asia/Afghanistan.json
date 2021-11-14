@@ -1,0 +1,77 @@
+[
+    {
+        "city": "Baghlan",
+        "area_code": "58",
+        "dialing_code": "+93 58"
+    },
+    {
+        "city": "Balkh",
+        "area_code": "50",
+        "dialing_code": "+93 50"
+    },
+    {
+        "city": "Bamyan",
+        "area_code": "27",
+        "dialing_code": "+93 27"
+    },
+    {
+        "city": "Ghazni",
+        "area_code": "31",
+        "dialing_code": "+93 31"
+    },
+    {
+        "city": "Heart",
+        "area_code": "40",
+        "dialing_code": "+93 40"
+    },
+    {
+        "city": "Herat",
+        "area_code": "40",
+        "dialing_code": "+93 40"
+    },
+    {
+        "city": "Jalalabad",
+        "area_code": "60",
+        "dialing_code": "+93 60"
+    },
+    {
+        "city": "Kabul",
+        "area_code": "20",
+        "dialing_code": "+93 20"
+    },
+    {
+        "city": "Kandahar",
+        "area_code": "30",
+        "dialing_code": "+93 30"
+    },
+    {
+        "city": "Kunduz",
+        "area_code": "51",
+        "dialing_code": "+93 51"
+    },
+    {
+        "city": "Mazar",
+        "area_code": "50",
+        "dialing_code": "+93 50"
+    },
+    {
+        "city": "Mazar-E-Sherif",
+        "area_code": "50",
+        "dialing_code": "+93 50"
+    },
+    {
+        "city": "Mazari Sharif",
+        "area_code": "50",
+        "dialing_code": "+93 50"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "70",
+        "dialing_code": "+93 70"
+    },
+    {
+        "city": "Tahiti",
+        "area_code": "",
+        "dialing_code": "+93"
+    }
+]

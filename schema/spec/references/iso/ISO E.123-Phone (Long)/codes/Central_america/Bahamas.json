@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Andros Town",
+        "area_code": "",
+        "dialing_code": "+1242"
+    },
+    {
+        "city": "Coopers Town",
+        "area_code": "242",
+        "dialing_code": "+1 242"
+    },
+    {
+        "city": "Freeport",
+        "area_code": "242",
+        "dialing_code": "+1 242"
+    },
+    {
+        "city": "Freeport/Lucaya",
+        "area_code": "",
+        "dialing_code": "+1242"
+    },
+    {
+        "city": "George Town",
+        "area_code": "",
+        "dialing_code": "+1242"
+    },
+    {
+        "city": "Governor s Harbour",
+        "area_code": "",
+        "dialing_code": "+1242"
+    },
+    {
+        "city": "Matthew Town",
+        "area_code": "",
+        "dialing_code": "+1242"
+    },
+    {
+        "city": "Nassau",
+        "area_code": "242",
+        "dialing_code": "+1 242"
+    },
+    {
+        "city": "West End",
+        "area_code": "242",
+        "dialing_code": "+1 242"
+    }
+]

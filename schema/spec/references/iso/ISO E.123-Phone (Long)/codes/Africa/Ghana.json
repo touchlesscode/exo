@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Accra",
+        "area_code": "21",
+        "dialing_code": "+233 21"
+    },
+    {
+        "city": "Bolgatanga",
+        "area_code": "72",
+        "dialing_code": "+233 72"
+    },
+    {
+        "city": "Cape Coast",
+        "area_code": "42",
+        "dialing_code": "+233 42"
+    },
+    {
+        "city": "Koforidua",
+        "area_code": "81",
+        "dialing_code": "+233 81"
+    },
+    {
+        "city": "Kumasi",
+        "area_code": "51",
+        "dialing_code": "+233 51"
+    },
+    {
+        "city": "Takoradi",
+        "area_code": "31",
+        "dialing_code": "+233 31"
+    },
+    {
+        "city": "Tamale",
+        "area_code": "71",
+        "dialing_code": "+233 71"
+    },
+    {
+        "city": "Tema",
+        "area_code": "22",
+        "dialing_code": "+233 22"
+    }
+]

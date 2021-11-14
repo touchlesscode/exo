@@ -1,0 +1,122 @@
+[
+    {
+        "city": "Bjelovar",
+        "area_code": "43",
+        "dialing_code": "+385 43"
+    },
+    {
+        "city": "Cakovec",
+        "area_code": "40",
+        "dialing_code": "+385 40"
+    },
+    {
+        "city": "Dubrovnik",
+        "area_code": "20",
+        "dialing_code": "+385 20"
+    },
+    {
+        "city": "Gospic",
+        "area_code": "53",
+        "dialing_code": "+385 53"
+    },
+    {
+        "city": "Karlovac",
+        "area_code": "47",
+        "dialing_code": "+385 47"
+    },
+    {
+        "city": "Koprivnica",
+        "area_code": "48",
+        "dialing_code": "+385 48"
+    },
+    {
+        "city": "Krapina",
+        "area_code": "49",
+        "dialing_code": "+385 49"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "95",
+        "dialing_code": "+385 95"
+    },
+    {
+        "city": "Mobile Phones - T-Mobile",
+        "area_code": "99",
+        "dialing_code": "+385 99"
+    },
+    {
+        "city": "Mobile Phones - Tele 2",
+        "area_code": "95",
+        "dialing_code": "+385 95"
+    },
+    {
+        "city": "Mobile Phones - VIP",
+        "area_code": "92",
+        "dialing_code": "+385 92"
+    },
+    {
+        "city": "Osijek",
+        "area_code": "31",
+        "dialing_code": "+385 31"
+    },
+    {
+        "city": "Pazin",
+        "area_code": "52",
+        "dialing_code": "+385 52"
+    },
+    {
+        "city": "Pozega",
+        "area_code": "34",
+        "dialing_code": "+385 34"
+    },
+    {
+        "city": "Rijeka",
+        "area_code": "51",
+        "dialing_code": "+385 51"
+    },
+    {
+        "city": "Sibenik",
+        "area_code": "22",
+        "dialing_code": "+385 22"
+    },
+    {
+        "city": "Sisak",
+        "area_code": "44",
+        "dialing_code": "+385 44"
+    },
+    {
+        "city": "Slavonski Brod",
+        "area_code": "35",
+        "dialing_code": "+385 35"
+    },
+    {
+        "city": "Split",
+        "area_code": "21",
+        "dialing_code": "+385 21"
+    },
+    {
+        "city": "Varazdin",
+        "area_code": "42",
+        "dialing_code": "+385 42"
+    },
+    {
+        "city": "Vinkovci",
+        "area_code": "32",
+        "dialing_code": "+385 32"
+    },
+    {
+        "city": "Virovitica",
+        "area_code": "33",
+        "dialing_code": "+385 33"
+    },
+    {
+        "city": "Zadar",
+        "area_code": "23",
+        "dialing_code": "+385 23"
+    },
+    {
+        "city": "Zagreb",
+        "area_code": "1",
+        "dialing_code": "+385 1"
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Auckland",
+        "area_code": "9",
+        "dialing_code": "+64 9"
+    },
+    {
+        "city": "Chatham Islands",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Christchurch",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Dunedin",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Hamilton",
+        "area_code": "7",
+        "dialing_code": "+64 7"
+    },
+    {
+        "city": "Hastings",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "Invercargill",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Napier",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "Nelson",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "New Plymouth",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "New Zealand External Territori",
+        "area_code": "24",
+        "dialing_code": "+64 24"
+    },
+    {
+        "city": "North Island (Central and East",
+        "area_code": "7",
+        "dialing_code": "+64 7"
+    },
+    {
+        "city": "North Island (North)",
+        "area_code": "9",
+        "dialing_code": "+64 9"
+    },
+    {
+        "city": "North Island (Western)",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "Palmerston North",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "Pokeno",
+        "area_code": "9",
+        "dialing_code": "+64 9"
+    },
+    {
+        "city": "Richmond",
+        "area_code": "765",
+        "dialing_code": "+64 765"
+    },
+    {
+        "city": "Rotorua",
+        "area_code": "7",
+        "dialing_code": "+64 7"
+    },
+    {
+        "city": "South Island",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Tauranga",
+        "area_code": "7",
+        "dialing_code": "+64 7"
+    },
+    {
+        "city": "Tauranga Harbour",
+        "area_code": "7",
+        "dialing_code": "+64 7"
+    },
+    {
+        "city": "Timaru",
+        "area_code": "3",
+        "dialing_code": "+64 3"
+    },
+    {
+        "city": "Wanganui",
+        "area_code": "6",
+        "dialing_code": "+64 6"
+    },
+    {
+        "city": "Wellington",
+        "area_code": "4",
+        "dialing_code": "+64 4"
+    },
+    {
+        "city": "Wellington Region",
+        "area_code": "4",
+        "dialing_code": "+64 4"
+    },
+    {
+        "city": "Westport",
+        "area_code": "812",
+        "dialing_code": "+64 812"
+    },
+    {
+        "city": "Whangarei",
+        "area_code": "9",
+        "dialing_code": "+64 9"
+    }
+]

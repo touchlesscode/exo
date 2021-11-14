@@ -1,0 +1,182 @@
+[
+    {
+        "city": "Atlantic City",
+        "area_code": "609",
+        "dialing_code": "+1 609"
+    },
+    {
+        "city": "Bayonne",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Belleville",
+        "area_code": "613",
+        "dialing_code": "+1 613"
+    },
+    {
+        "city": "Bloomfield",
+        "area_code": "973",
+        "dialing_code": "+1 973"
+    },
+    {
+        "city": "Camden",
+        "area_code": "609",
+        "dialing_code": "+1 609"
+    },
+    {
+        "city": "Clifton",
+        "area_code": "862",
+        "dialing_code": "+1 862"
+    },
+    {
+        "city": "East Brunswick",
+        "area_code": "848",
+        "dialing_code": "+1 848"
+    },
+    {
+        "city": "East Orange",
+        "area_code": "862",
+        "dialing_code": "+1 862"
+    },
+    {
+        "city": "Edison",
+        "area_code": "848",
+        "dialing_code": "+1 848"
+    },
+    {
+        "city": "Elizabeth",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Fair Lawn",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Fort Lee",
+        "area_code": "201",
+        "dialing_code": "+1 201"
+    },
+    {
+        "city": "Hackensack",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Hoboken",
+        "area_code": "201",
+        "dialing_code": "+1 201"
+    },
+    {
+        "city": "Irvington",
+        "area_code": "862",
+        "dialing_code": "+1 862"
+    },
+    {
+        "city": "Jersey City",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Kearny",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Lakewood",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Linden",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Long Branch",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "New Brunswick",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Newark",
+        "area_code": "973",
+        "dialing_code": "+1 973"
+    },
+    {
+        "city": "North Bergen",
+        "area_code": "201",
+        "dialing_code": "+1 201"
+    },
+    {
+        "city": "Orange",
+        "area_code": "714",
+        "dialing_code": "+1 714"
+    },
+    {
+        "city": "Passaic",
+        "area_code": "973",
+        "dialing_code": "+1 973"
+    },
+    {
+        "city": "Paterson",
+        "area_code": "973",
+        "dialing_code": "+1 973"
+    },
+    {
+        "city": "Perth Amboy",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Plainfield",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Teaneck",
+        "area_code": "201",
+        "dialing_code": "+1 201"
+    },
+    {
+        "city": "Toms River",
+        "area_code": "908",
+        "dialing_code": "+1 908"
+    },
+    {
+        "city": "Trenton",
+        "area_code": "609",
+        "dialing_code": "+1 609"
+    },
+    {
+        "city": "Union",
+        "area_code": "815",
+        "dialing_code": "+1 815"
+    },
+    {
+        "city": "Union City",
+        "area_code": "551",
+        "dialing_code": "+1 551"
+    },
+    {
+        "city": "Vineland",
+        "area_code": "609",
+        "dialing_code": "+1 609"
+    },
+    {
+        "city": "Wayne",
+        "area_code": "862",
+        "dialing_code": "+1 862"
+    },
+    {
+        "city": "West New York",
+        "area_code": "201",
+        "dialing_code": "+1 201"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Basse Terre",
+        "area_code": "81",
+        "dialing_code": "+502 81"
+    },
+    {
+        "city": "Capesterre",
+        "area_code": "86",
+        "dialing_code": "+502 86"
+    },
+    {
+        "city": "Gosier",
+        "area_code": "84",
+        "dialing_code": "+502 84"
+    },
+    {
+        "city": "Grand Bourg",
+        "area_code": "97",
+        "dialing_code": "+502 97"
+    },
+    {
+        "city": "Guatemala",
+        "area_code": "",
+        "dialing_code": "+502"
+    },
+    {
+        "city": "Jarry",
+        "area_code": "26",
+        "dialing_code": "+502 26"
+    }
+]

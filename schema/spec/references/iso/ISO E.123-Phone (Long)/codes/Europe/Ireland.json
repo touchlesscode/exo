@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Arklow",
+        "area_code": "402",
+        "dialing_code": "+353 402"
+    },
+    {
+        "city": "Cork",
+        "area_code": "21",
+        "dialing_code": "+353 21"
+    },
+    {
+        "city": "Dingle",
+        "area_code": "66",
+        "dialing_code": "+353 66"
+    },
+    {
+        "city": "Drogheda",
+        "area_code": "41",
+        "dialing_code": "+353 41"
+    },
+    {
+        "city": "Dublin",
+        "area_code": "1",
+        "dialing_code": "+353 1"
+    },
+    {
+        "city": "Dundalk",
+        "area_code": "42",
+        "dialing_code": "+353 42"
+    },
+    {
+        "city": "Ennis",
+        "area_code": "65",
+        "dialing_code": "+353 65"
+    },
+    {
+        "city": "Galway",
+        "area_code": "91",
+        "dialing_code": "+353 91"
+    },
+    {
+        "city": "Galway City",
+        "area_code": "91",
+        "dialing_code": "+353 91"
+    },
+    {
+        "city": "Kildare",
+        "area_code": "45",
+        "dialing_code": "+353 45"
+    },
+    {
+        "city": "Killarney",
+        "area_code": "64",
+        "dialing_code": "+353 64"
+    },
+    {
+        "city": "Limerick",
+        "area_code": "61",
+        "dialing_code": "+353 61"
+    },
+    {
+        "city": "Sligo",
+        "area_code": "71",
+        "dialing_code": "+353 71"
+    },
+    {
+        "city": "Tipperary",
+        "area_code": "52",
+        "dialing_code": "+353 52"
+    },
+    {
+        "city": "Tralee",
+        "area_code": "66",
+        "dialing_code": "+353 66"
+    },
+    {
+        "city": "Tullamore",
+        "area_code": "506",
+        "dialing_code": "+353 506"
+    },
+    {
+        "city": "Waterford",
+        "area_code": "51",
+        "dialing_code": "+353 51"
+    },
+    {
+        "city": "Wexford",
+        "area_code": "53",
+        "dialing_code": "+353 53"
+    }
+]

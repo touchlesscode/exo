@@ -1,0 +1,192 @@
+[
+    {
+        "city": "Acre",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Afula",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Akko (Acre)",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Ashdod",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Ashkelon",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Bat Iam",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Bat Yam",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Be er Sheva",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Beersheba",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Beersheva",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Bnei Brak",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Carmiel",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Dimona",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Eilat",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Hadera",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Haifa",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Herzliya",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Herzliyya",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Holon",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Jaffa",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Jerusalem",
+        "area_code": "2",
+        "dialing_code": "+972 2"
+    },
+    {
+        "city": "Kfar Saba",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Nazareth",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Netanya",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Petah Tikva",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Petah Tiqwa",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Qiryat Shmona",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Ra'anana",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Raanana",
+        "area_code": "9",
+        "dialing_code": "+972 9"
+    },
+    {
+        "city": "Ramat Gan",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Rehovot",
+        "area_code": "8",
+        "dialing_code": "+972 8"
+    },
+    {
+        "city": "Rishon LeZion",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Rishon LeZiyyon",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Safed",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Tel Aviv",
+        "area_code": "3",
+        "dialing_code": "+972 3"
+    },
+    {
+        "city": "Tiberias",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Tiberius",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    },
+    {
+        "city": "Tsefat",
+        "area_code": "4",
+        "dialing_code": "+972 4"
+    }
+]

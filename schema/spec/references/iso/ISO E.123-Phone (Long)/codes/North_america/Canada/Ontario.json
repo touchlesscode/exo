@@ -1,0 +1,162 @@
+[
+    {
+        "city": "Ajax",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Barrie",
+        "area_code": "705",
+        "dialing_code": "+1 705"
+    },
+    {
+        "city": "Belleville",
+        "area_code": "613",
+        "dialing_code": "+1 613"
+    },
+    {
+        "city": "Brampton",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Brantford",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Burlington",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Cambridge",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Chatham",
+        "area_code": "217",
+        "dialing_code": "+1 217"
+    },
+    {
+        "city": "Guelph",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Hamilton",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Kingston",
+        "area_code": "613",
+        "dialing_code": "+1 613"
+    },
+    {
+        "city": "Kitchener",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "London",
+        "area_code": "226",
+        "dialing_code": "+1 226"
+    },
+    {
+        "city": "Markham",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Milton",
+        "area_code": "641",
+        "dialing_code": "+1 641"
+    },
+    {
+        "city": "Mississauga",
+        "area_code": "289",
+        "dialing_code": "+1 289"
+    },
+    {
+        "city": "Niagara Falls",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "North Bay",
+        "area_code": "705",
+        "dialing_code": "+1 705"
+    },
+    {
+        "city": "Oakville",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Oshawa",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Ottawa",
+        "area_code": "343",
+        "dialing_code": "+1 343"
+    },
+    {
+        "city": "Peterborough",
+        "area_code": "705",
+        "dialing_code": "+1 705"
+    },
+    {
+        "city": "Pickering",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Richmond Hill",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Sarnia",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Timmins",
+        "area_code": "705",
+        "dialing_code": "+1 705"
+    },
+    {
+        "city": "Toronto",
+        "area_code": "416",
+        "dialing_code": "+1 416"
+    },
+    {
+        "city": "Trenton",
+        "area_code": "609",
+        "dialing_code": "+1 609"
+    },
+    {
+        "city": "Waterloo",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    },
+    {
+        "city": "Welland",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Whitby",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Woodbridge",
+        "area_code": "703",
+        "dialing_code": "+1 703"
+    }
+]

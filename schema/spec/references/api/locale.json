@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Locale",
+    "description": "JSON schema for locale. Based off the BCP-47 language tag, ISO-3166 alpha-2 country code, and Olsen IANA time zone ID.",
+    "properties": {
+        "country_code": {
+            "$ref": "country_code.json"
+        },
+        "language": {
+            "$ref": "language.json"
+        },
+        "timezone": {
+            "$ref": "time_zone.json"
+        }
+    },
+    "required": [
+        "country_code",
+        "language"
+    ]
+}

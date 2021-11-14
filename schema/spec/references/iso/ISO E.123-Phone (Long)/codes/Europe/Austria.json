@@ -1,0 +1,117 @@
+[
+    {
+        "city": "Bludenz",
+        "area_code": "5552",
+        "dialing_code": "+43 5552"
+    },
+    {
+        "city": "Graz",
+        "area_code": "316",
+        "dialing_code": "+43 316"
+    },
+    {
+        "city": "Innsbruck",
+        "area_code": "512",
+        "dialing_code": "+43 512"
+    },
+    {
+        "city": "Kitzbuhel",
+        "area_code": "5356",
+        "dialing_code": "+43 5356"
+    },
+    {
+        "city": "Klagenfurt",
+        "area_code": "463",
+        "dialing_code": "+43 463"
+    },
+    {
+        "city": "Krems An Der Donau",
+        "area_code": "2732",
+        "dialing_code": "+43 2732"
+    },
+    {
+        "city": "Leoben",
+        "area_code": "3842",
+        "dialing_code": "+43 3842"
+    },
+    {
+        "city": "Linz",
+        "area_code": "70",
+        "dialing_code": "+43 70"
+    },
+    {
+        "city": "Linz Donau",
+        "area_code": "732",
+        "dialing_code": "+43 732"
+    },
+    {
+        "city": "Mobile Phones - A1",
+        "area_code": "664",
+        "dialing_code": "+43 664"
+    },
+    {
+        "city": "Mobile Phones - Drei",
+        "area_code": "660",
+        "dialing_code": "+43 660"
+    },
+    {
+        "city": "Mobile Phones - Max",
+        "area_code": "676",
+        "dialing_code": "+43 676"
+    },
+    {
+        "city": "Mobile Phones - One",
+        "area_code": "699",
+        "dialing_code": "+43 699"
+    },
+    {
+        "city": "Mobile Phones - Telering",
+        "area_code": "650",
+        "dialing_code": "+43 650"
+    },
+    {
+        "city": "Neunkirchen Niederosterreich",
+        "area_code": "2635",
+        "dialing_code": "+43 2635"
+    },
+    {
+        "city": "Salzburg",
+        "area_code": "662",
+        "dialing_code": "+43 662"
+    },
+    {
+        "city": "St. Polten",
+        "area_code": "2742",
+        "dialing_code": "+43 2742"
+    },
+    {
+        "city": "Vienna",
+        "area_code": "1",
+        "dialing_code": "+43 1"
+    },
+    {
+        "city": "Vienna (Wien)",
+        "area_code": "1",
+        "dialing_code": "+43 1"
+    },
+    {
+        "city": "Villach",
+        "area_code": "4242",
+        "dialing_code": "+43 4242"
+    },
+    {
+        "city": "Wels",
+        "area_code": "7242",
+        "dialing_code": "+43 7242"
+    },
+    {
+        "city": "Wiener Neustadt",
+        "area_code": "2622",
+        "dialing_code": "+43 2622"
+    },
+    {
+        "city": "Wolfsberg",
+        "area_code": "4352",
+        "dialing_code": "+43 4352"
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Corner Brook",
+        "area_code": "709",
+        "dialing_code": "+1 709"
+    },
+    {
+        "city": "Gander",
+        "area_code": "709",
+        "dialing_code": "+1 709"
+    },
+    {
+        "city": "Glenwood",
+        "area_code": "912",
+        "dialing_code": "+1 912"
+    },
+    {
+        "city": "Mount Pearl",
+        "area_code": "709",
+        "dialing_code": "+1 709"
+    },
+    {
+        "city": "St. John s",
+        "area_code": "709",
+        "dialing_code": "+1 709"
+    },
+    {
+        "city": "Stephenville",
+        "area_code": "709",
+        "dialing_code": "+1 709"
+    },
+    {
+        "city": "Windsor",
+        "area_code": "519",
+        "dialing_code": "+1 519"
+    }
+]

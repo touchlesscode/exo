@@ -1,0 +1,2092 @@
+[
+    {
+        "city": "32211 (manual exchange) Lancut",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "4 Grodzisk Mazowiecki",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "5 Szaflary",
+        "area_code": "87",
+        "dialing_code": "+48 87"
+    },
+    {
+        "city": "8 Lask (Sieradz)",
+        "area_code": "198",
+        "dialing_code": "+48 198"
+    },
+    {
+        "city": "8 Wadowice (Bielsko)",
+        "area_code": "387",
+        "dialing_code": "+48 387"
+    },
+    {
+        "city": "Albigowa",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Aleksandrow Kujawski",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Aleksandrow Lodzki",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Alwernia",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Andrespol",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Andrychow",
+        "area_code": "387",
+        "dialing_code": "+48 387"
+    },
+    {
+        "city": "Andrzejow",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Aniolowo",
+        "area_code": "49",
+        "dialing_code": "+48 49"
+    },
+    {
+        "city": "Ankamaty",
+        "area_code": "55",
+        "dialing_code": "+48 55"
+    },
+    {
+        "city": "Antonin",
+        "area_code": "64",
+        "dialing_code": "+48 64"
+    },
+    {
+        "city": "Babica",
+        "area_code": "387",
+        "dialing_code": "+48 387"
+    },
+    {
+        "city": "Babice Stare",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Baczyna",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Bagart (Elblag)",
+        "area_code": "55",
+        "dialing_code": "+48 55"
+    },
+    {
+        "city": "Baldowo",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Balice",
+        "area_code": "496",
+        "dialing_code": "+48 496"
+    },
+    {
+        "city": "Balin",
+        "area_code": "35",
+        "dialing_code": "+48 35"
+    },
+    {
+        "city": "Balucz",
+        "area_code": "435",
+        "dialing_code": "+48 435"
+    },
+    {
+        "city": "Banie",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Banino",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Baniocha",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Banska Dolina",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Banska Nizna",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Baranow Sandomierski",
+        "area_code": "15",
+        "dialing_code": "+48 15"
+    },
+    {
+        "city": "Baranowo (Ostroleka)",
+        "area_code": "478",
+        "dialing_code": "+48 478"
+    },
+    {
+        "city": "Baranowo (Poznan)",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Barcice",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Barcin",
+        "area_code": "52",
+        "dialing_code": "+48 52"
+    },
+    {
+        "city": "Barczewko",
+        "area_code": "89",
+        "dialing_code": "+48 89"
+    },
+    {
+        "city": "Barczewo",
+        "area_code": "89",
+        "dialing_code": "+48 89"
+    },
+    {
+        "city": "Barlozno",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Baruchowo",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Barwald",
+        "area_code": "387",
+        "dialing_code": "+48 387"
+    },
+    {
+        "city": "Baszkow",
+        "area_code": "641",
+        "dialing_code": "+48 641"
+    },
+    {
+        "city": "Bedzin",
+        "area_code": "44",
+        "dialing_code": "+48 44"
+    },
+    {
+        "city": "Biala Podlaska",
+        "area_code": "57",
+        "dialing_code": "+48 57"
+    },
+    {
+        "city": "Bialka (Biala Podlaska)",
+        "area_code": "80",
+        "dialing_code": "+48 80"
+    },
+    {
+        "city": "Bialka Tatrzanska (Nowy Sacz)",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Bialobrzegi (Piotrkow Trybunal",
+        "area_code": "451",
+        "dialing_code": "+48 451"
+    },
+    {
+        "city": "Bialobrzegi (Radom)",
+        "area_code": "48",
+        "dialing_code": "+48 48"
+    },
+    {
+        "city": "Bialobrzegi (Rzeszow)",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Bialobrzegi (Warszawa)",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Bialobrzegi (Zamosc)",
+        "area_code": "84",
+        "dialing_code": "+48 84"
+    },
+    {
+        "city": "Bialobrzegi k/Aug (Suwalki)",
+        "area_code": "119",
+        "dialing_code": "+48 119"
+    },
+    {
+        "city": "Bialogard",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Bialy Dunajec",
+        "area_code": "165",
+        "dialing_code": "+48 165"
+    },
+    {
+        "city": "Bialystok",
+        "area_code": "85",
+        "dialing_code": "+48 85"
+    },
+    {
+        "city": "Bielsko Biala",
+        "area_code": "33",
+        "dialing_code": "+48 33"
+    },
+    {
+        "city": "Bilgoraj",
+        "area_code": "84",
+        "dialing_code": "+48 84"
+    },
+    {
+        "city": "Biskupiec (Olsztyn)",
+        "area_code": "89",
+        "dialing_code": "+48 89"
+    },
+    {
+        "city": "Bochnia",
+        "area_code": "197",
+        "dialing_code": "+48 197"
+    },
+    {
+        "city": "Bogatynia",
+        "area_code": "797",
+        "dialing_code": "+48 797"
+    },
+    {
+        "city": "Bogdanki (Bialystok)",
+        "area_code": "85",
+        "dialing_code": "+48 85"
+    },
+    {
+        "city": "Boguchwala",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Borowa (Wroclaw)",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Borowa k. Mielca",
+        "area_code": "196",
+        "dialing_code": "+48 196"
+    },
+    {
+        "city": "Braniewo",
+        "area_code": "506",
+        "dialing_code": "+48 506"
+    },
+    {
+        "city": "Brenna (Bielsko Biala)",
+        "area_code": "33",
+        "dialing_code": "+48 33"
+    },
+    {
+        "city": "Brusy (Bydgoszcz)",
+        "area_code": "531",
+        "dialing_code": "+48 531"
+    },
+    {
+        "city": "Brzeg",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Brzeg Dolny",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Brzesko (Szczecin)",
+        "area_code": "92",
+        "dialing_code": "+48 92"
+    },
+    {
+        "city": "Brzesko (Tarnow)",
+        "area_code": "192",
+        "dialing_code": "+48 192"
+    },
+    {
+        "city": "Brzeznica (Pila)",
+        "area_code": "67",
+        "dialing_code": "+48 67"
+    },
+    {
+        "city": "Brzeznica (Radom)",
+        "area_code": "48",
+        "dialing_code": "+48 48"
+    },
+    {
+        "city": "Brzeznica (Tarnow)",
+        "area_code": "197",
+        "dialing_code": "+48 197"
+    },
+    {
+        "city": "Brzeznica Debicka",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Brzeznica n/Warta (Czestochowa",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Bukowina Tatrzanska",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Busko Zdroj",
+        "area_code": "52",
+        "dialing_code": "+48 52"
+    },
+    {
+        "city": "Bydgoszcz",
+        "area_code": "52",
+        "dialing_code": "+48 52"
+    },
+    {
+        "city": "Bytom",
+        "area_code": "82",
+        "dialing_code": "+48 82"
+    },
+    {
+        "city": "Chelmza",
+        "area_code": "56",
+        "dialing_code": "+48 56"
+    },
+    {
+        "city": "Chocholow",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Chojnice",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Chojnice (Bydgoszcz)",
+        "area_code": "531",
+        "dialing_code": "+48 531"
+    },
+    {
+        "city": "Chojnow (Legnica)",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Chorzow",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Choszczno",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Ciechanow",
+        "area_code": "23",
+        "dialing_code": "+48 23"
+    },
+    {
+        "city": "Ciechocinek",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Cieszyn",
+        "area_code": "33",
+        "dialing_code": "+48 33"
+    },
+    {
+        "city": "Crakow (Krakow)",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Czarna (Rzeszow)",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Czarna (Tarnow)",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Czarna Woda",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Czarny Dunajec",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Czechowice",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Czechowice Dziedzice",
+        "area_code": "531",
+        "dialing_code": "+48 531"
+    },
+    {
+        "city": "Czestochowa",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Czorsztyn",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Czudec (Rzeszow)",
+        "area_code": "171",
+        "dialing_code": "+48 171"
+    },
+    {
+        "city": "Czêstochowa",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Dabie (Siedlce)",
+        "area_code": "255",
+        "dialing_code": "+48 255"
+    },
+    {
+        "city": "Dabrowa Gornicza",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Dabrowa Tarnowska",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Debki (Koszalin)",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Debno (Kielce)",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Debno Lub.",
+        "area_code": "962",
+        "dialing_code": "+48 962"
+    },
+    {
+        "city": "Dobre Miasto",
+        "area_code": "89",
+        "dialing_code": "+48 89"
+    },
+    {
+        "city": "Drzonkow",
+        "area_code": "68",
+        "dialing_code": "+48 68"
+    },
+    {
+        "city": "Dzierzoniow",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Elblag",
+        "area_code": "50",
+        "dialing_code": "+48 50"
+    },
+    {
+        "city": "Elk",
+        "area_code": "87",
+        "dialing_code": "+48 87"
+    },
+    {
+        "city": "Frombork",
+        "area_code": "506",
+        "dialing_code": "+48 506"
+    },
+    {
+        "city": "Gdansk",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Gdynia",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Gizycko",
+        "area_code": "878",
+        "dialing_code": "+48 878"
+    },
+    {
+        "city": "Gliwice",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Glogow Malopolski (Rzeszow)",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Glogowek",
+        "area_code": "794",
+        "dialing_code": "+48 794"
+    },
+    {
+        "city": "Gniezno",
+        "area_code": "66",
+        "dialing_code": "+48 66"
+    },
+    {
+        "city": "Goleniow",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Goleniów",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Golub-Dobrzyn",
+        "area_code": "56",
+        "dialing_code": "+48 56"
+    },
+    {
+        "city": "Gorlice",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Gorzow Wielkopolski",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Gorzów Wielkopolski",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Gostyn (Katowice)",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Gostyn (Szczecin)",
+        "area_code": "928",
+        "dialing_code": "+48 928"
+    },
+    {
+        "city": "Gostyn Poznanski",
+        "area_code": "657",
+        "dialing_code": "+48 657"
+    },
+    {
+        "city": "Grajewo",
+        "area_code": "868",
+        "dialing_code": "+48 868"
+    },
+    {
+        "city": "Grudziadz",
+        "area_code": "51",
+        "dialing_code": "+48 51"
+    },
+    {
+        "city": "Grybow",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Gryfice",
+        "area_code": "931",
+        "dialing_code": "+48 931"
+    },
+    {
+        "city": "Gryfino",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Hel",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Inowroclaw",
+        "area_code": "536",
+        "dialing_code": "+48 536"
+    },
+    {
+        "city": "Iwonicz",
+        "area_code": "131",
+        "dialing_code": "+48 131"
+    },
+    {
+        "city": "Iwonicz Zdroj",
+        "area_code": "131",
+        "dialing_code": "+48 131"
+    },
+    {
+        "city": "Jablonka Orawska",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Janow Lubelski",
+        "area_code": "16",
+        "dialing_code": "+48 16"
+    },
+    {
+        "city": "Jarocin (Kalisz)",
+        "area_code": "646",
+        "dialing_code": "+48 646"
+    },
+    {
+        "city": "Jarocin (Tarnobrzeg)",
+        "area_code": "16",
+        "dialing_code": "+48 16"
+    },
+    {
+        "city": "Jaroslaw (Przemysl)",
+        "area_code": "194",
+        "dialing_code": "+48 194"
+    },
+    {
+        "city": "Jaslo",
+        "area_code": "136",
+        "dialing_code": "+48 136"
+    },
+    {
+        "city": "Jastarnia",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Jastrzebie (Katowice)",
+        "area_code": "36",
+        "dialing_code": "+48 36"
+    },
+    {
+        "city": "Jastrzebie (Torun)",
+        "area_code": "511",
+        "dialing_code": "+48 511"
+    },
+    {
+        "city": "Jastrzebie Zdroj (Katowice)",
+        "area_code": "36",
+        "dialing_code": "+48 36"
+    },
+    {
+        "city": "Jawor",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Jaworzno",
+        "area_code": "35",
+        "dialing_code": "+48 35"
+    },
+    {
+        "city": "Jedrzejow (Kielce)",
+        "area_code": "498",
+        "dialing_code": "+48 498"
+    },
+    {
+        "city": "Jedrzejow (Siedlce)",
+        "area_code": "256",
+        "dialing_code": "+48 256"
+    },
+    {
+        "city": "Jelcz (Wroclaw)",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Jelcz Laskowice",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Jelenia Gora",
+        "area_code": "75",
+        "dialing_code": "+48 75"
+    },
+    {
+        "city": "Jelesnia",
+        "area_code": "30",
+        "dialing_code": "+48 30"
+    },
+    {
+        "city": "Jordanow (Nowy Sacz)",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Jordanow (Wroclaw)",
+        "area_code": "725",
+        "dialing_code": "+48 725"
+    },
+    {
+        "city": "Kalisz",
+        "area_code": "62",
+        "dialing_code": "+48 62"
+    },
+    {
+        "city": "Kalwaria Zebrzydowska",
+        "area_code": "387",
+        "dialing_code": "+48 387"
+    },
+    {
+        "city": "Kamien Pomorski",
+        "area_code": "928",
+        "dialing_code": "+48 928"
+    },
+    {
+        "city": "Karczew (Warszawa)",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Karpacz",
+        "area_code": "75",
+        "dialing_code": "+48 75"
+    },
+    {
+        "city": "Kartuzy",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Katowice",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Kedzierzyn-Kozle",
+        "area_code": "794",
+        "dialing_code": "+48 794"
+    },
+    {
+        "city": "Kepno",
+        "area_code": "647",
+        "dialing_code": "+48 647"
+    },
+    {
+        "city": "Kety",
+        "area_code": "381",
+        "dialing_code": "+48 381"
+    },
+    {
+        "city": "Kielce",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Klobuck",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Klodawa (Gdansk)",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Klodawa (Gorzow)",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Klodawa (Konin)",
+        "area_code": "636",
+        "dialing_code": "+48 636"
+    },
+    {
+        "city": "Klucze",
+        "area_code": "376",
+        "dialing_code": "+48 376"
+    },
+    {
+        "city": "Knurow",
+        "area_code": "136",
+        "dialing_code": "+48 136"
+    },
+    {
+        "city": "Kolbuszowa",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Kolno (Lomza)",
+        "area_code": "86",
+        "dialing_code": "+48 86"
+    },
+    {
+        "city": "Kolo",
+        "area_code": "636",
+        "dialing_code": "+48 636"
+    },
+    {
+        "city": "Kolobrzeg",
+        "area_code": "965",
+        "dialing_code": "+48 965"
+    },
+    {
+        "city": "Konin",
+        "area_code": "63",
+        "dialing_code": "+48 63"
+    },
+    {
+        "city": "Konskie (Kielce)",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Koscian",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Koscielisko",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Koszalin",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Kowal",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Kowary",
+        "area_code": "75",
+        "dialing_code": "+48 75"
+    },
+    {
+        "city": "Kozienice",
+        "area_code": "48",
+        "dialing_code": "+48 48"
+    },
+    {
+        "city": "Krakow",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Krakow (Cracow)",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Krasiczyn",
+        "area_code": "10",
+        "dialing_code": "+48 10"
+    },
+    {
+        "city": "Krasnik",
+        "area_code": "837",
+        "dialing_code": "+48 837"
+    },
+    {
+        "city": "Krosno",
+        "area_code": "131",
+        "dialing_code": "+48 131"
+    },
+    {
+        "city": "Krotoszyn",
+        "area_code": "64",
+        "dialing_code": "+48 64"
+    },
+    {
+        "city": "Kruszwica",
+        "area_code": "536",
+        "dialing_code": "+48 536"
+    },
+    {
+        "city": "Krynica",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Krzeszowice",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Ksiaz (Poznan)",
+        "area_code": "667",
+        "dialing_code": "+48 667"
+    },
+    {
+        "city": "Kutno",
+        "area_code": "218",
+        "dialing_code": "+48 218"
+    },
+    {
+        "city": "Kwidzyn",
+        "area_code": "555",
+        "dialing_code": "+48 555"
+    },
+    {
+        "city": "Labedy",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Lacko (Koszalin)",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Lacko (Nowy Sacz)",
+        "area_code": "184",
+        "dialing_code": "+48 184"
+    },
+    {
+        "city": "Lapsze Nizne",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Lapy",
+        "area_code": "85",
+        "dialing_code": "+48 85"
+    },
+    {
+        "city": "Lasin",
+        "area_code": "518",
+        "dialing_code": "+48 518"
+    },
+    {
+        "city": "Laski (Kalisz)",
+        "area_code": "647",
+        "dialing_code": "+48 647"
+    },
+    {
+        "city": "Laski (Szczecin)",
+        "area_code": "936",
+        "dialing_code": "+48 936"
+    },
+    {
+        "city": "Leba",
+        "area_code": "59",
+        "dialing_code": "+48 59"
+    },
+    {
+        "city": "Lebork",
+        "area_code": "59",
+        "dialing_code": "+48 59"
+    },
+    {
+        "city": "Legionowo",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Legnica",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Lesko",
+        "area_code": "137",
+        "dialing_code": "+48 137"
+    },
+    {
+        "city": "Leszno",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Lezajsk",
+        "area_code": "195",
+        "dialing_code": "+48 195"
+    },
+    {
+        "city": "Lipno (Leszno)",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Lipno (Wroclaw)",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Lobez",
+        "area_code": "923",
+        "dialing_code": "+48 923"
+    },
+    {
+        "city": "Lodz",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Lomza",
+        "area_code": "86",
+        "dialing_code": "+48 86"
+    },
+    {
+        "city": "Lowicz",
+        "area_code": "40",
+        "dialing_code": "+48 40"
+    },
+    {
+        "city": "Lubartow",
+        "area_code": "836",
+        "dialing_code": "+48 836"
+    },
+    {
+        "city": "Lubichowo",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Lubin (Legnica)",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Lublin",
+        "area_code": "81",
+        "dialing_code": "+48 81"
+    },
+    {
+        "city": "Lubliniec",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Lukow",
+        "area_code": "255",
+        "dialing_code": "+48 255"
+    },
+    {
+        "city": "Magdalenka",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Maksymilianowo",
+        "area_code": "52",
+        "dialing_code": "+48 52"
+    },
+    {
+        "city": "Malbork",
+        "area_code": "55",
+        "dialing_code": "+48 55"
+    },
+    {
+        "city": "Malogoszcz",
+        "area_code": "498",
+        "dialing_code": "+48 498"
+    },
+    {
+        "city": "Maniowy",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Medyka",
+        "area_code": "10",
+        "dialing_code": "+48 10"
+    },
+    {
+        "city": "Miedzyrzecz",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Miedzyzdroje",
+        "area_code": "936",
+        "dialing_code": "+48 936"
+    },
+    {
+        "city": "Mielec",
+        "area_code": "196",
+        "dialing_code": "+48 196"
+    },
+    {
+        "city": "Mielno",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Mikolow",
+        "area_code": "85",
+        "dialing_code": "+48 85"
+    },
+    {
+        "city": "Murzasichle",
+        "area_code": "165",
+        "dialing_code": "+48 165"
+    },
+    {
+        "city": "Muszyna",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Myslenice",
+        "area_code": "115",
+        "dialing_code": "+48 115"
+    },
+    {
+        "city": "Mysliborz",
+        "area_code": "95",
+        "dialing_code": "+48 95"
+    },
+    {
+        "city": "Myslowice",
+        "area_code": "53",
+        "dialing_code": "+48 53"
+    },
+    {
+        "city": "Naleczow",
+        "area_code": "81",
+        "dialing_code": "+48 81"
+    },
+    {
+        "city": "Nasielsk",
+        "area_code": "238",
+        "dialing_code": "+48 238"
+    },
+    {
+        "city": "Niedzica",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Nisko",
+        "area_code": "16",
+        "dialing_code": "+48 16"
+    },
+    {
+        "city": "Nowa Deba",
+        "area_code": "15",
+        "dialing_code": "+48 15"
+    },
+    {
+        "city": "Nowa Ruda",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Nowiny (Kielce)",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Nowogard Szczecinski",
+        "area_code": "932",
+        "dialing_code": "+48 932"
+    },
+    {
+        "city": "Nowy Dwor (Gdansk)",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Nowy Dwor Mazowiecki",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Nowy Targ",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Nowy Tomysl",
+        "area_code": "666",
+        "dialing_code": "+48 666"
+    },
+    {
+        "city": "Oborniki Wielkopolskie (Poznan",
+        "area_code": "668",
+        "dialing_code": "+48 668"
+    },
+    {
+        "city": "Olawa",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Olesnica",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Olesnica Slaska (Wroclaw)",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Olkusz",
+        "area_code": "35",
+        "dialing_code": "+48 35"
+    },
+    {
+        "city": "Olsztyn",
+        "area_code": "89",
+        "dialing_code": "+48 89"
+    },
+    {
+        "city": "Opoczno",
+        "area_code": "44",
+        "dialing_code": "+48 44"
+    },
+    {
+        "city": "Opole",
+        "area_code": "77",
+        "dialing_code": "+48 77"
+    },
+    {
+        "city": "Orzesze",
+        "area_code": "29",
+        "dialing_code": "+48 29"
+    },
+    {
+        "city": "Ostrow Wielkopolski",
+        "area_code": "64",
+        "dialing_code": "+48 64"
+    },
+    {
+        "city": "Ostrowiec (Koszalin)",
+        "area_code": "94",
+        "dialing_code": "+48 94"
+    },
+    {
+        "city": "Ostrowiec (Slupsk)",
+        "area_code": "591",
+        "dialing_code": "+48 591"
+    },
+    {
+        "city": "Ostrowiec Swietokrzyski (Kielc",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Oswiecim",
+        "area_code": "381",
+        "dialing_code": "+48 381"
+    },
+    {
+        "city": "Otwock",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Pabianice",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Pajeczno",
+        "area_code": "34",
+        "dialing_code": "+48 34"
+    },
+    {
+        "city": "Paslek",
+        "area_code": "50",
+        "dialing_code": "+48 50"
+    },
+    {
+        "city": "Piaseczno (Gdansk)",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Piaseczno (Szczecin)",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Piaseczno (Warszawa)",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Piekary Slaskie",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Pila",
+        "area_code": "67",
+        "dialing_code": "+48 67"
+    },
+    {
+        "city": "Pilzno (Tarnow)",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Pionki (Radom)",
+        "area_code": "48",
+        "dialing_code": "+48 48"
+    },
+    {
+        "city": "Piotrkow Trybunalski",
+        "area_code": "44",
+        "dialing_code": "+48 44"
+    },
+    {
+        "city": "Piwniczna",
+        "area_code": "184",
+        "dialing_code": "+48 184"
+    },
+    {
+        "city": "Plesna",
+        "area_code": "62",
+        "dialing_code": "+48 62"
+    },
+    {
+        "city": "Pleszew",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Plock",
+        "area_code": "24",
+        "dialing_code": "+48 24"
+    },
+    {
+        "city": "Plonsk",
+        "area_code": "23",
+        "dialing_code": "+48 23"
+    },
+    {
+        "city": "Ploty",
+        "area_code": "931",
+        "dialing_code": "+48 931"
+    },
+    {
+        "city": "Podkowa Lesna",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Police",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Polkowice",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Poronin",
+        "area_code": "165",
+        "dialing_code": "+48 165"
+    },
+    {
+        "city": "Poznan",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Poznañ",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Pruszkow",
+        "area_code": "196",
+        "dialing_code": "+48 196"
+    },
+    {
+        "city": "Przeclaw (Szczecin)",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Przemysl",
+        "area_code": "10",
+        "dialing_code": "+48 10"
+    },
+    {
+        "city": "Pszczyna",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Pulawy",
+        "area_code": "831",
+        "dialing_code": "+48 831"
+    },
+    {
+        "city": "Pultusk",
+        "area_code": "238",
+        "dialing_code": "+48 238"
+    },
+    {
+        "city": "Pustkow Osiedle",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Rabka",
+        "area_code": "187",
+        "dialing_code": "+48 187"
+    },
+    {
+        "city": "Raciborz",
+        "area_code": "335",
+        "dialing_code": "+48 335"
+    },
+    {
+        "city": "Radom",
+        "area_code": "48",
+        "dialing_code": "+48 48"
+    },
+    {
+        "city": "Radomsko",
+        "area_code": "457",
+        "dialing_code": "+48 457"
+    },
+    {
+        "city": "Raszyn",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Reda",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Resko",
+        "area_code": "923",
+        "dialing_code": "+48 923"
+    },
+    {
+        "city": "Ropczyce",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Ruda Slaska",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Rumia",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Rybnik",
+        "area_code": "36",
+        "dialing_code": "+48 36"
+    },
+    {
+        "city": "Ryki",
+        "area_code": "131",
+        "dialing_code": "+48 131"
+    },
+    {
+        "city": "Rymanow Zdrow",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Rzemien",
+        "area_code": "196",
+        "dialing_code": "+48 196"
+    },
+    {
+        "city": "Rzeszow",
+        "area_code": "17",
+        "dialing_code": "+48 17"
+    },
+    {
+        "city": "Rzezawa",
+        "area_code": "197",
+        "dialing_code": "+48 197"
+    },
+    {
+        "city": "Rzuchowa (Tarnow)",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Sandomierz",
+        "area_code": "15",
+        "dialing_code": "+48 15"
+    },
+    {
+        "city": "Sanok",
+        "area_code": "137",
+        "dialing_code": "+48 137"
+    },
+    {
+        "city": "Sawin",
+        "area_code": "82",
+        "dialing_code": "+48 82"
+    },
+    {
+        "city": "Sepolno Krajenskie",
+        "area_code": "52",
+        "dialing_code": "+48 52"
+    },
+    {
+        "city": "Siedlce",
+        "area_code": "25",
+        "dialing_code": "+48 25"
+    },
+    {
+        "city": "Siemianowice Slaskie",
+        "area_code": "43",
+        "dialing_code": "+48 43"
+    },
+    {
+        "city": "Skarszewy",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Skarzysko Kamienna",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Skawina",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Skierniewice",
+        "area_code": "40",
+        "dialing_code": "+48 40"
+    },
+    {
+        "city": "Skoczow",
+        "area_code": "33",
+        "dialing_code": "+48 33"
+    },
+    {
+        "city": "Skorcz",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Slupsk",
+        "area_code": "59",
+        "dialing_code": "+48 59"
+    },
+    {
+        "city": "Sokolka",
+        "area_code": "85",
+        "dialing_code": "+48 85"
+    },
+    {
+        "city": "Sopot",
+        "area_code": "58",
+        "dialing_code": "+48 58"
+    },
+    {
+        "city": "Sosnowiec",
+        "area_code": "667",
+        "dialing_code": "+48 667"
+    },
+    {
+        "city": "Sroda Slaska",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Sroda Wielkopolska (Poznan)",
+        "area_code": "667",
+        "dialing_code": "+48 667"
+    },
+    {
+        "city": "Stalowa Wola",
+        "area_code": "16",
+        "dialing_code": "+48 16"
+    },
+    {
+        "city": "Starachowice",
+        "area_code": "41",
+        "dialing_code": "+48 41"
+    },
+    {
+        "city": "Stargard Szczecinski",
+        "area_code": "92",
+        "dialing_code": "+48 92"
+    },
+    {
+        "city": "Starogard Gdanski",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Stary Sacz",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Staszow",
+        "area_code": "15",
+        "dialing_code": "+48 15"
+    },
+    {
+        "city": "Strzelce (Opole)",
+        "area_code": "77",
+        "dialing_code": "+48 77"
+    },
+    {
+        "city": "Strzelce (Plock)",
+        "area_code": "218",
+        "dialing_code": "+48 218"
+    },
+    {
+        "city": "Strzelce (Walbrzych)",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Strzelin",
+        "area_code": "725",
+        "dialing_code": "+48 725"
+    },
+    {
+        "city": "Suwalki",
+        "area_code": "87",
+        "dialing_code": "+48 87"
+    },
+    {
+        "city": "Swarzedz",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Swidnica (Walbrzych)",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Swidnica (Zielona Gora)",
+        "area_code": "68",
+        "dialing_code": "+48 68"
+    },
+    {
+        "city": "Swidnik (Lublin)",
+        "area_code": "81",
+        "dialing_code": "+48 81"
+    },
+    {
+        "city": "Swiebodzice",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Swiecie (Bydgoszcz)",
+        "area_code": "532",
+        "dialing_code": "+48 532"
+    },
+    {
+        "city": "Swiecie (Torun)",
+        "area_code": "51",
+        "dialing_code": "+48 51"
+    },
+    {
+        "city": "Swietochlowice",
+        "area_code": "32",
+        "dialing_code": "+48 32"
+    },
+    {
+        "city": "Swinoujscie",
+        "area_code": "936",
+        "dialing_code": "+48 936"
+    },
+    {
+        "city": "Sycow (Kalisz)",
+        "area_code": "647",
+        "dialing_code": "+48 647"
+    },
+    {
+        "city": "Szamotuly",
+        "area_code": "668",
+        "dialing_code": "+48 668"
+    },
+    {
+        "city": "Szczecin",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Szczecin (Stettin)",
+        "area_code": "91",
+        "dialing_code": "+48 91"
+    },
+    {
+        "city": "Szczecinek",
+        "area_code": "966",
+        "dialing_code": "+48 966"
+    },
+    {
+        "city": "Szczyrk",
+        "area_code": "30",
+        "dialing_code": "+48 30"
+    },
+    {
+        "city": "Szklarska Poreba",
+        "area_code": "75",
+        "dialing_code": "+48 75"
+    },
+    {
+        "city": "Sztum (Elblag)",
+        "area_code": "557",
+        "dialing_code": "+48 557"
+    },
+    {
+        "city": "Sztutowo",
+        "area_code": "50",
+        "dialing_code": "+48 50"
+    },
+    {
+        "city": "Tarnobrzeg",
+        "area_code": "15",
+        "dialing_code": "+48 15"
+    },
+    {
+        "city": "Tarnow",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Tarnowskie Gory",
+        "area_code": "69",
+        "dialing_code": "+48 69"
+    },
+    {
+        "city": "Tluszcz",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Tolkmicko",
+        "area_code": "50",
+        "dialing_code": "+48 50"
+    },
+    {
+        "city": "Tomaszow Mazowiecki",
+        "area_code": "44",
+        "dialing_code": "+48 44"
+    },
+    {
+        "city": "Torun",
+        "area_code": "56",
+        "dialing_code": "+48 56"
+    },
+    {
+        "city": "Trzebiatow (Szczecin)",
+        "area_code": "931",
+        "dialing_code": "+48 931"
+    },
+    {
+        "city": "Trzebinia (Bielsko)",
+        "area_code": "30",
+        "dialing_code": "+48 30"
+    },
+    {
+        "city": "Trzebinia (Katowice)",
+        "area_code": "35",
+        "dialing_code": "+48 35"
+    },
+    {
+        "city": "Tuchola (Bydgoszcz)",
+        "area_code": "531",
+        "dialing_code": "+48 531"
+    },
+    {
+        "city": "Tuchow",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Turek",
+        "area_code": "63",
+        "dialing_code": "+48 63"
+    },
+    {
+        "city": "Tuszyn",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Tychy",
+        "area_code": "59",
+        "dialing_code": "+48 59"
+    },
+    {
+        "city": "Ustronie",
+        "area_code": "33",
+        "dialing_code": "+48 33"
+    },
+    {
+        "city": "Wabrzezno",
+        "area_code": "568",
+        "dialing_code": "+48 568"
+    },
+    {
+        "city": "Walbrzych",
+        "area_code": "74",
+        "dialing_code": "+48 74"
+    },
+    {
+        "city": "Warsaw",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Warszawa (Warsaw)",
+        "area_code": "22",
+        "dialing_code": "+48 22"
+    },
+    {
+        "city": "Warta Boleslawiecka",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Wieliczka",
+        "area_code": "12",
+        "dialing_code": "+48 12"
+    },
+    {
+        "city": "Wierzchoslawice (Bydgoszcz)",
+        "area_code": "536",
+        "dialing_code": "+48 536"
+    },
+    {
+        "city": "Wierzchoslawice (Tarnow)",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Wisla",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Wloclawek",
+        "area_code": "54",
+        "dialing_code": "+48 54"
+    },
+    {
+        "city": "Wodzislaw (Katowice)",
+        "area_code": "36",
+        "dialing_code": "+48 36"
+    },
+    {
+        "city": "Wola Rzedzinska",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Wolbrom",
+        "area_code": "35",
+        "dialing_code": "+48 35"
+    },
+    {
+        "city": "Wolomin",
+        "area_code": "61",
+        "dialing_code": "+48 61"
+    },
+    {
+        "city": "Wroclaw",
+        "area_code": "71",
+        "dialing_code": "+48 71"
+    },
+    {
+        "city": "Wrzesnia",
+        "area_code": "66",
+        "dialing_code": "+48 66"
+    },
+    {
+        "city": "Wschowa",
+        "area_code": "65",
+        "dialing_code": "+48 65"
+    },
+    {
+        "city": "Wysokie Mazowieckie",
+        "area_code": "86",
+        "dialing_code": "+48 86"
+    },
+    {
+        "city": "Wyszkow",
+        "area_code": "216",
+        "dialing_code": "+48 216"
+    },
+    {
+        "city": "Zabkowice",
+        "area_code": "72",
+        "dialing_code": "+48 72"
+    },
+    {
+        "city": "Zabno",
+        "area_code": "14",
+        "dialing_code": "+48 14"
+    },
+    {
+        "city": "Zabrze",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Zakliczyn k. Myslenic (Krakow)",
+        "area_code": "115",
+        "dialing_code": "+48 115"
+    },
+    {
+        "city": "Zakliczyn n. Dunajcem (Tarnow)",
+        "area_code": "192",
+        "dialing_code": "+48 192"
+    },
+    {
+        "city": "Zakopane",
+        "area_code": "165",
+        "dialing_code": "+48 165"
+    },
+    {
+        "city": "Zambrow",
+        "area_code": "86",
+        "dialing_code": "+48 86"
+    },
+    {
+        "city": "Zamosc",
+        "area_code": "84",
+        "dialing_code": "+48 84"
+    },
+    {
+        "city": "Zawada (Opole)",
+        "area_code": "77",
+        "dialing_code": "+48 77"
+    },
+    {
+        "city": "Zawada (Tarnow)",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Zawada (Zamosc)",
+        "area_code": "84",
+        "dialing_code": "+48 84"
+    },
+    {
+        "city": "Zawada (Zielona Gora)",
+        "area_code": "68",
+        "dialing_code": "+48 68"
+    },
+    {
+        "city": "Zawadzkie",
+        "area_code": "77",
+        "dialing_code": "+48 77"
+    },
+    {
+        "city": "Zawiercie",
+        "area_code": "376",
+        "dialing_code": "+48 376"
+    },
+    {
+        "city": "Zegiestow Zdroj",
+        "area_code": "18",
+        "dialing_code": "+48 18"
+    },
+    {
+        "city": "Zgierz",
+        "area_code": "42",
+        "dialing_code": "+48 42"
+    },
+    {
+        "city": "Ziebice",
+        "area_code": "72",
+        "dialing_code": "+48 72"
+    },
+    {
+        "city": "Zielona Gora",
+        "area_code": "68",
+        "dialing_code": "+48 68"
+    },
+    {
+        "city": "Zlotoryja",
+        "area_code": "76",
+        "dialing_code": "+48 76"
+    },
+    {
+        "city": "Zory (Katowice)",
+        "area_code": "36",
+        "dialing_code": "+48 36"
+    },
+    {
+        "city": "Zuromina",
+        "area_code": "23",
+        "dialing_code": "+48 23"
+    },
+    {
+        "city": "Zyrakow",
+        "area_code": "146",
+        "dialing_code": "+48 146"
+    },
+    {
+        "city": "Zywiec",
+        "area_code": "30",
+        "dialing_code": "+48 30"
+    }
+]

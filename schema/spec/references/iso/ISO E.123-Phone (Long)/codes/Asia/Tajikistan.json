@@ -1,0 +1,62 @@
+[
+    {
+        "city": "Bokhtar",
+        "area_code": "37745",
+        "dialing_code": "+992 37745"
+    },
+    {
+        "city": "Dushanbe",
+        "area_code": "372",
+        "dialing_code": "+992 372"
+    },
+    {
+        "city": "Dusti",
+        "area_code": "3249",
+        "dialing_code": "+992 3249"
+    },
+    {
+        "city": "Gharm",
+        "area_code": "3131",
+        "dialing_code": "+992 3131"
+    },
+    {
+        "city": "Kairakkum",
+        "area_code": "34402",
+        "dialing_code": "+992 34402"
+    },
+    {
+        "city": "Khorog",
+        "area_code": "35220",
+        "dialing_code": "+992 35220"
+    },
+    {
+        "city": "Khujand",
+        "area_code": "3422",
+        "dialing_code": "+992 3422"
+    },
+    {
+        "city": "Kolkhozabad",
+        "area_code": "3771",
+        "dialing_code": "+992 3771"
+    },
+    {
+        "city": "Kulob",
+        "area_code": "3322",
+        "dialing_code": "+992 3322"
+    },
+    {
+        "city": "Panjakent",
+        "area_code": "3475",
+        "dialing_code": "+992 3475"
+    },
+    {
+        "city": "Qurghonteppa",
+        "area_code": "3222",
+        "dialing_code": "+992 3222"
+    },
+    {
+        "city": "Shartuz",
+        "area_code": "3240",
+        "dialing_code": "+992 3240"
+    }
+]

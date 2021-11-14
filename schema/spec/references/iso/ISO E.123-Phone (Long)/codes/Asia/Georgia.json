@@ -1,0 +1,222 @@
+[
+    {
+        "city": "Adigeni",
+        "area_code": "366",
+        "dialing_code": "+995 366"
+    },
+    {
+        "city": "Akhalgori",
+        "area_code": "342",
+        "dialing_code": "+995 342"
+    },
+    {
+        "city": "Akhalkalaki",
+        "area_code": "362",
+        "dialing_code": "+995 362"
+    },
+    {
+        "city": "Akhaltsikhe",
+        "area_code": "365",
+        "dialing_code": "+995 365"
+    },
+    {
+        "city": "Akhmeta",
+        "area_code": "349",
+        "dialing_code": "+995 349"
+    },
+    {
+        "city": "Aspindza",
+        "area_code": "364",
+        "dialing_code": "+995 364"
+    },
+    {
+        "city": "Batumi",
+        "area_code": "222",
+        "dialing_code": "+995 222"
+    },
+    {
+        "city": "Bolnisi",
+        "area_code": "358",
+        "dialing_code": "+995 358"
+    },
+    {
+        "city": "Borjomi",
+        "area_code": "367",
+        "dialing_code": "+995 367"
+    },
+    {
+        "city": "Chiatura",
+        "area_code": "379",
+        "dialing_code": "+995 379"
+    },
+    {
+        "city": "Dedoplls Tskaro",
+        "area_code": "356",
+        "dialing_code": "+995 356"
+    },
+    {
+        "city": "Dmanisi",
+        "area_code": "360",
+        "dialing_code": "+995 360"
+    },
+    {
+        "city": "Dushetl",
+        "area_code": "344",
+        "dialing_code": "+995 344"
+    },
+    {
+        "city": "Gori",
+        "area_code": "370",
+        "dialing_code": "+995 370"
+    },
+    {
+        "city": "Gurjaani",
+        "area_code": "353",
+        "dialing_code": "+995 353"
+    },
+    {
+        "city": "Kareli",
+        "area_code": "369",
+        "dialing_code": "+995 369"
+    },
+    {
+        "city": "Kaspi",
+        "area_code": "371",
+        "dialing_code": "+995 371"
+    },
+    {
+        "city": "Kazbegi",
+        "area_code": "345",
+        "dialing_code": "+995 345"
+    },
+    {
+        "city": "Khashuri",
+        "area_code": "368",
+        "dialing_code": "+995 368"
+    },
+    {
+        "city": "Kutaisi",
+        "area_code": "331",
+        "dialing_code": "+995 331"
+    },
+    {
+        "city": "Kvarell",
+        "area_code": "352",
+        "dialing_code": "+995 352"
+    },
+    {
+        "city": "Lagodekhi",
+        "area_code": "335",
+        "dialing_code": "+995 335"
+    },
+    {
+        "city": "Marneull",
+        "area_code": "357",
+        "dialing_code": "+995 357"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "77",
+        "dialing_code": "+995 77"
+    },
+    {
+        "city": "Mobile Phones - Geocell",
+        "area_code": "77",
+        "dialing_code": "+995 77"
+    },
+    {
+        "city": "Mobile Phones - Magti Com",
+        "area_code": "99",
+        "dialing_code": "+995 99"
+    },
+    {
+        "city": "Ninotsminda",
+        "area_code": "361",
+        "dialing_code": "+995 361"
+    },
+    {
+        "city": "Ozurgeti",
+        "area_code": "396",
+        "dialing_code": "+995 396"
+    },
+    {
+        "city": "Poti",
+        "area_code": "393",
+        "dialing_code": "+995 393"
+    },
+    {
+        "city": "Rustavi",
+        "area_code": "335",
+        "dialing_code": "+995 335"
+    },
+    {
+        "city": "Sagarejo",
+        "area_code": "351",
+        "dialing_code": "+995 351"
+    },
+    {
+        "city": "Samtredia",
+        "area_code": "311",
+        "dialing_code": "+995 311"
+    },
+    {
+        "city": "Senaki",
+        "area_code": "313",
+        "dialing_code": "+995 313"
+    },
+    {
+        "city": "Signagi",
+        "area_code": "355",
+        "dialing_code": "+995 355"
+    },
+    {
+        "city": "Sukhumi",
+        "area_code": "122",
+        "dialing_code": "+995 122"
+    },
+    {
+        "city": "Tbilisi",
+        "area_code": "32",
+        "dialing_code": "+995 32"
+    },
+    {
+        "city": "Telavi",
+        "area_code": "350",
+        "dialing_code": "+995 350"
+    },
+    {
+        "city": "Tetri Tskaro",
+        "area_code": "359",
+        "dialing_code": "+995 359"
+    },
+    {
+        "city": "Tianeti",
+        "area_code": "348",
+        "dialing_code": "+995 348"
+    },
+    {
+        "city": "Tskaltubo",
+        "area_code": "340",
+        "dialing_code": "+995 340"
+    },
+    {
+        "city": "Tskhinvall",
+        "area_code": "341",
+        "dialing_code": "+995 341"
+    },
+    {
+        "city": "Tzalka",
+        "area_code": "363",
+        "dialing_code": "+995 363"
+    },
+    {
+        "city": "Zestafoni",
+        "area_code": "392",
+        "dialing_code": "+995 392"
+    },
+    {
+        "city": "Zugdidi",
+        "area_code": "315",
+        "dialing_code": "+995 315"
+    }
+]

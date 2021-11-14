@@ -1,0 +1,22 @@
+{
+  "name": "tcpserver",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "t": "node server",
+    "w": "node web",
+    "start": "concurrently \"node server\" \"node web\""
+  },
+  "author": "Danstan Otieno Onyango",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "date-fns": "^1.29.0",
+    "express": "^4.16.4",
+    "express-xml-bodyparser": "^0.3.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.0"
+  }
+}

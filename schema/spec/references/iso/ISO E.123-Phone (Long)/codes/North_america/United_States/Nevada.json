@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Boulder City",
+        "area_code": "702",
+        "dialing_code": "+1 702"
+    },
+    {
+        "city": "Carson City",
+        "area_code": "775",
+        "dialing_code": "+1 775"
+    },
+    {
+        "city": "Henderson",
+        "area_code": "702",
+        "dialing_code": "+1 702"
+    },
+    {
+        "city": "Las Vegas",
+        "area_code": "702",
+        "dialing_code": "+1 702"
+    },
+    {
+        "city": "Mesquite",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "North Las Vegas",
+        "area_code": "702",
+        "dialing_code": "+1 702"
+    },
+    {
+        "city": "Reno",
+        "area_code": "775",
+        "dialing_code": "+1 775"
+    },
+    {
+        "city": "Sparks",
+        "area_code": "775",
+        "dialing_code": "+1 775"
+    }
+]

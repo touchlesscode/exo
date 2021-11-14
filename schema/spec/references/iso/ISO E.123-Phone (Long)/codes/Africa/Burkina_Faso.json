@@ -1,0 +1,92 @@
+[
+    {
+        "city": "Banfora",
+        "area_code": "88XXXX",
+        "dialing_code": "+226 88XXXX"
+    },
+    {
+        "city": "Diybougou",
+        "area_code": "86XXXX",
+        "dialing_code": "+226 86XXXX"
+    },
+    {
+        "city": "Diýbougou",
+        "area_code": "86XXXX",
+        "dialing_code": "+226 86XXXX"
+    },
+    {
+        "city": "Dori",
+        "area_code": "66XXXX",
+        "dialing_code": "+226 66XXXX"
+    },
+    {
+        "city": "Dydougou",
+        "area_code": "52XXXX",
+        "dialing_code": "+226 52XXXX"
+    },
+    {
+        "city": "Dýdougou",
+        "area_code": "52XXXX",
+        "dialing_code": "+226 52XXXX"
+    },
+    {
+        "city": "Fada",
+        "area_code": "77XXXX",
+        "dialing_code": "+226 77XXXX"
+    },
+    {
+        "city": "Gaoua",
+        "area_code": "87XXXX",
+        "dialing_code": "+226 87XXXX"
+    },
+    {
+        "city": "Kantchari",
+        "area_code": "79XXXX",
+        "dialing_code": "+226 79XXXX"
+    },
+    {
+        "city": "Kaya",
+        "area_code": "49XXXX",
+        "dialing_code": "+226 49XXXX"
+    },
+    {
+        "city": "Koudougou",
+        "area_code": "44XXXX",
+        "dialing_code": "+226 44XXXX"
+    },
+    {
+        "city": "Koupyla",
+        "area_code": "70XXXX",
+        "dialing_code": "+226 70XXXX"
+    },
+    {
+        "city": "Koupýla",
+        "area_code": "70XXXX",
+        "dialing_code": "+226 70XXXX"
+    },
+    {
+        "city": "Orodara",
+        "area_code": "96XXXX",
+        "dialing_code": "+226 96XXXX"
+    },
+    {
+        "city": "Ouagadougou",
+        "area_code": "30XXXX ? 38XXXX",
+        "dialing_code": "+226 30XXXX ? 38XXXX"
+    },
+    {
+        "city": "Ouahigouya",
+        "area_code": "56XXXX",
+        "dialing_code": "+226 56XXXX"
+    },
+    {
+        "city": "Tenkodogo",
+        "area_code": "71XXXX",
+        "dialing_code": "+226 71XXXX"
+    },
+    {
+        "city": "Tougan",
+        "area_code": "54XXXX",
+        "dialing_code": "+226 54XXXX"
+    }
+]

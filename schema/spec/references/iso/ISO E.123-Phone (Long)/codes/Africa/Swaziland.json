@@ -1,0 +1,147 @@
+[
+    {
+        "city": "All other points",
+        "area_code": "5 digits with no Cit",
+        "dialing_code": "+268 5 digits with no Cit"
+    },
+    {
+        "city": "Bhunya",
+        "area_code": "453",
+        "dialing_code": "+268 453"
+    },
+    {
+        "city": "Big Bend",
+        "area_code": "364",
+        "dialing_code": "+268 364"
+    },
+    {
+        "city": "Hlathikulu",
+        "area_code": "217",
+        "dialing_code": "+268 217"
+    },
+    {
+        "city": "Hluthi",
+        "area_code": "227",
+        "dialing_code": "+268 227"
+    },
+    {
+        "city": "Lobamba",
+        "area_code": "416",
+        "dialing_code": "+268 416"
+    },
+    {
+        "city": "Ludzeludze",
+        "area_code": "548",
+        "dialing_code": "+268 548"
+    },
+    {
+        "city": "Mahamba",
+        "area_code": "237",
+        "dialing_code": "+268 237"
+    },
+    {
+        "city": "Mahwalala",
+        "area_code": "472",
+        "dialing_code": "+268 472"
+    },
+    {
+        "city": "Malkerns",
+        "area_code": "528",
+        "dialing_code": "+268 528"
+    },
+    {
+        "city": "Mankayane",
+        "area_code": "538",
+        "dialing_code": "+268 538"
+    },
+    {
+        "city": "Manzini",
+        "area_code": "506",
+        "dialing_code": "+268 506"
+    },
+    {
+        "city": "Maphiveni",
+        "area_code": "373",
+        "dialing_code": "+268 373"
+    },
+    {
+        "city": "Matsapha",
+        "area_code": "518",
+        "dialing_code": "+268 518"
+    },
+    {
+        "city": "Mbabane",
+        "area_code": "406",
+        "dialing_code": "+268 406"
+    },
+    {
+        "city": "Mhlambanyatsi",
+        "area_code": "467",
+        "dialing_code": "+268 467"
+    },
+    {
+        "city": "Mhlume",
+        "area_code": "313",
+        "dialing_code": "+268 313"
+    },
+    {
+        "city": "Mpaka",
+        "area_code": "333",
+        "dialing_code": "+268 333"
+    },
+    {
+        "city": "Ngwenya",
+        "area_code": "442",
+        "dialing_code": "+268 442"
+    },
+    {
+        "city": "Nhlangano",
+        "area_code": "207",
+        "dialing_code": "+268 207"
+    },
+    {
+        "city": "Nsoko",
+        "area_code": "303",
+        "dialing_code": "+268 303"
+    },
+    {
+        "city": "Pigg's Peak",
+        "area_code": "437",
+        "dialing_code": "+268 437"
+    },
+    {
+        "city": "Sidwashini",
+        "area_code": "422",
+        "dialing_code": "+268 422"
+    },
+    {
+        "city": "Simunye",
+        "area_code": "383",
+        "dialing_code": "+268 383"
+    },
+    {
+        "city": "Siphocosini",
+        "area_code": "482",
+        "dialing_code": "+268 482"
+    },
+    {
+        "city": "Siphofaneni",
+        "area_code": "344",
+        "dialing_code": "+268 344"
+    },
+    {
+        "city": "Siteki",
+        "area_code": "343",
+        "dialing_code": "+268 343"
+    },
+    {
+        "city": "Tshaneni",
+        "area_code": "323",
+        "dialing_code": "+268 323"
+    },
+    {
+        "city": "Villaverde de Guadalimar",
+        "area_code": "67",
+        "dialing_code": "+268 67"
+    }
+]

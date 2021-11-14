@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Beira",
+        "area_code": "23",
+        "dialing_code": "+258 23"
+    },
+    {
+        "city": "Chimolo",
+        "area_code": "251",
+        "dialing_code": "+258 251"
+    },
+    {
+        "city": "Chokwe",
+        "area_code": "221",
+        "dialing_code": "+258 221"
+    },
+    {
+        "city": "Maputo",
+        "area_code": "21",
+        "dialing_code": "+258 21"
+    },
+    {
+        "city": "Matola",
+        "area_code": "24",
+        "dialing_code": "+258 24"
+    },
+    {
+        "city": "Nampula",
+        "area_code": "26",
+        "dialing_code": "+258 26"
+    },
+    {
+        "city": "Quelimane",
+        "area_code": "24",
+        "dialing_code": "+258 24"
+    },
+    {
+        "city": "Tete",
+        "area_code": "252",
+        "dialing_code": "+258 252"
+    },
+    {
+        "city": "Xai-Xai",
+        "area_code": "222",
+        "dialing_code": "+258 222"
+    }
+]

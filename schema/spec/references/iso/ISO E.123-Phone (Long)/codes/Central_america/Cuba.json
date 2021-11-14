@@ -1,0 +1,1527 @@
+[
+    {
+        "city": "Abreus",
+        "area_code": "43",
+        "dialing_code": "+53 43"
+    },
+    {
+        "city": "Aguacate",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "Aguada de Pasajeros",
+        "area_code": "43",
+        "dialing_code": "+53 43"
+    },
+    {
+        "city": "Alquizar",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Alquyzar",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Alquízar",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Alquýzar",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Alto Cedro",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Amancio",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Antilla",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Artemisa",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Baguanos",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Bahia Honda",
+        "area_code": "86",
+        "dialing_code": "+53 86"
+    },
+    {
+        "city": "Banes",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Baragua",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Bartle",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Bartolome Maso",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Batabano",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Batabany",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Batabanó",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Batabaný",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Batalla de Las Guasimas",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Bauta",
+        "area_code": "680",
+        "dialing_code": "+53 680"
+    },
+    {
+        "city": "Bayamo",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Bejucal",
+        "area_code": "66",
+        "dialing_code": "+53 66"
+    },
+    {
+        "city": "Biran",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Boca de Jaruco",
+        "area_code": "6929",
+        "dialing_code": "+53 6929"
+    },
+    {
+        "city": "Bolivia",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Brasil",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Buey Arriba",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Cabanas",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Cabayas",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Cabañas",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Cabaýas",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Cacocum",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Caimito del Guayabal",
+        "area_code": "680",
+        "dialing_code": "+53 680"
+    },
+    {
+        "city": "Calimete",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Calixto Garcia",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Camaguey",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Camagyey",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Camagýey",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Camalote",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Camarioca",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Camilo Cienfuegos",
+        "area_code": "692",
+        "dialing_code": "+53 692"
+    },
+    {
+        "city": "Camino",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "Campechuela",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Canasi",
+        "area_code": "6929",
+        "dialing_code": "+53 6929"
+    },
+    {
+        "city": "Canasy",
+        "area_code": "6929",
+        "dialing_code": "+53 6929"
+    },
+    {
+        "city": "Canasí",
+        "area_code": "6929",
+        "dialing_code": "+53 6929"
+    },
+    {
+        "city": "Canasý",
+        "area_code": "6929",
+        "dialing_code": "+53 6929"
+    },
+    {
+        "city": "Candelaria",
+        "area_code": "85",
+        "dialing_code": "+53 85"
+    },
+    {
+        "city": "Candido Gonzalez",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Cardenas",
+        "area_code": "45",
+        "dialing_code": "+53 45"
+    },
+    {
+        "city": "Cascorro",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Catalina de Guines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Catalina de Gyines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Catalina de Güines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Catalina de Gýines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Cauto Cristo",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Cayo Coco",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Cayo Largo",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Ceba Mocha",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Ceballos",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Ceiba Nuevo",
+        "area_code": "680",
+        "dialing_code": "+53 680"
+    },
+    {
+        "city": "Cespedes",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Chambas",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Chile",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "Cidra",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Ciego de Avila",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Ciego de yvila",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Ciego de Ávila",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Ciego de ývila",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Cienaga de Zapata",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Cienfuegos",
+        "area_code": "432",
+        "dialing_code": "+53 432"
+    },
+    {
+        "city": "Ciro Redondo",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Ciynaga de Zapata",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Ciénaga de Zapata",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Ciýnaga de Zapata",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Colombia",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Colon",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Colyn",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Colón",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Colýn",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Communidad Pueblo Nuevo",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Consolacion del Sur",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Consolaciyn del Sur",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Consolación del Sur",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Consolaciýn del Sur",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Contramaestre",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "Cortes",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Cortys",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Cortés",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Cortýs",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Cristino Naranjo",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Cueto",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Cyrdenas",
+        "area_code": "45",
+        "dialing_code": "+53 45"
+    },
+    {
+        "city": "Cárdenas",
+        "area_code": "45",
+        "dialing_code": "+53 45"
+    },
+    {
+        "city": "Cýrdenas",
+        "area_code": "45",
+        "dialing_code": "+53 45"
+    },
+    {
+        "city": "Delicias",
+        "area_code": "315",
+        "dialing_code": "+53 315"
+    },
+    {
+        "city": "Dos Caminos de San Luis",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "El Cobre",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "El Cristo",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "Enrique Varona",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Entronque de Herradura",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Esmeralda",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Felton",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Florencia",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Florida",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Floro Perez",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Frank Pais",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Gaspar",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Gibara",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Gramma",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Guaimaro",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Guanajay",
+        "area_code": "686",
+        "dialing_code": "+53 686"
+    },
+    {
+        "city": "Guane",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Guantanamo",
+        "area_code": "21",
+        "dialing_code": "+53 21"
+    },
+    {
+        "city": "Guantanamo Bay Naval Air Stati",
+        "area_code": "21",
+        "dialing_code": "+53 21"
+    },
+    {
+        "city": "Guantynamo",
+        "area_code": "21",
+        "dialing_code": "+53 21"
+    },
+    {
+        "city": "Guantánamo",
+        "area_code": "21",
+        "dialing_code": "+53 21"
+    },
+    {
+        "city": "Guantýnamo",
+        "area_code": "21",
+        "dialing_code": "+53 21"
+    },
+    {
+        "city": "Guardalavaca",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Guaro",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Guatemala",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Guayabal",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Guayacanas",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Guines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Guira de Melena",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Guisa",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Gyines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Gyira de Melena",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Güines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Güira de Melena",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Gýines",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Gýira de Melena",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Haiti",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Havana",
+        "area_code": "7",
+        "dialing_code": "+53 7"
+    },
+    {
+        "city": "Havana (Ciudad La Habana)",
+        "area_code": "7",
+        "dialing_code": "+53 7"
+    },
+    {
+        "city": "Holguin",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Holguyn",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Holguýn",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Imias",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Isabel Rubio",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Isla de la Juventud",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "Jaguey Grande",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Jagyey Grande",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Jagüey Grande",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Jagýey Grande",
+        "area_code": "59",
+        "dialing_code": "+53 59"
+    },
+    {
+        "city": "Jaruco",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "Jiguani",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Jimaguayu",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Jobabo",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Jovellanos",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Jucaro",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Julio Antonio Mella",
+        "area_code": "225",
+        "dialing_code": "+53 225"
+    },
+    {
+        "city": "La Boca",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "La Coloma",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "La Demajagua",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Fe",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Fy",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Fé",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Fý",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Jagua",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "La Palma",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "La Reforma",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "La Salud",
+        "area_code": "66",
+        "dialing_code": "+53 66"
+    },
+    {
+        "city": "La Victoria",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "Las Martinas",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Las Mercedes",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Las Ovas",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Las Parras",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Las Tunas",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Limonar",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Lopez Pena",
+        "area_code": "85",
+        "dialing_code": "+53 85"
+    },
+    {
+        "city": "Lopez Peya",
+        "area_code": "85",
+        "dialing_code": "+53 85"
+    },
+    {
+        "city": "Lopez Peña",
+        "area_code": "85",
+        "dialing_code": "+53 85"
+    },
+    {
+        "city": "Lopez Peýa",
+        "area_code": "85",
+        "dialing_code": "+53 85"
+    },
+    {
+        "city": "Los Angeles",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Los Palacios",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Los Reynaldos",
+        "area_code": "22",
+        "dialing_code": "+53 22"
+    },
+    {
+        "city": "Lugareno",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Lugareyo",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Lugareño",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Lugareýo",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "MOBILE PHONES",
+        "area_code": "789",
+        "dialing_code": "+53 789"
+    },
+    {
+        "city": "Mabay",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Maceo",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Madruga",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "Majagua",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Majibacoa",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Manati",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Mangos de Baragua",
+        "area_code": "225",
+        "dialing_code": "+53 225"
+    },
+    {
+        "city": "Mantua",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Manzanillo",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Marcane",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Marea de Portillo",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Mariel",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Marti",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Marty",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Martí",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Martý",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Matanzas",
+        "area_code": "52",
+        "dialing_code": "+53 52"
+    },
+    {
+        "city": "Maximo Gomez",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Mayari",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Media Luna",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Melena del Sur",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Menendez",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Minas",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Minas de Matahumbre",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Mir",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Miraflores",
+        "area_code": "338",
+        "dialing_code": "+53 338"
+    },
+    {
+        "city": "Moa",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Moron",
+        "area_code": "335",
+        "dialing_code": "+53 335"
+    },
+    {
+        "city": "Najasa",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Neuvitas",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Nicaragua",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Nicaro",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Nicaro-Levisa",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Niquero",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Nueva",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Nueva Gerona",
+        "area_code": "61",
+        "dialing_code": "+53 61"
+    },
+    {
+        "city": "Nueva Paz",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Omaja",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Orlando Gonzalez",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Pablo de Torriente",
+        "area_code": "86",
+        "dialing_code": "+53 86"
+    },
+    {
+        "city": "Palma Soriano",
+        "area_code": "225",
+        "dialing_code": "+53 225"
+    },
+    {
+        "city": "Pedro Betancourt",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Peralejo",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Pilon",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Pinar del Rio",
+        "area_code": "82",
+        "dialing_code": "+53 82"
+    },
+    {
+        "city": "Pinar del Ryo",
+        "area_code": "82",
+        "dialing_code": "+53 82"
+    },
+    {
+        "city": "Pinar del Rýo",
+        "area_code": "82",
+        "dialing_code": "+53 82"
+    },
+    {
+        "city": "Playa Baracoa",
+        "area_code": "680",
+        "dialing_code": "+53 680"
+    },
+    {
+        "city": "Playa Garon",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Garyn",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Garón",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Garýn",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Giron",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Girón",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Playa Santa Lucia",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Primero de Enero",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Puerto Esperanza",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Puerto Marti",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Puerto Padre",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Quivican",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Quivicyn",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Quivicán",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Quivicýn",
+        "area_code": "67",
+        "dialing_code": "+53 67"
+    },
+    {
+        "city": "Rafael Freyre",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Rio Cauto",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Rodolfo Ramirez Esquivel",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Ruta Invasora",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Sabalo",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Sagua de Tanamo",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "San Andres",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "San Antonio",
+        "area_code": "650",
+        "dialing_code": "+53 650"
+    },
+    {
+        "city": "San Antonio de Las Vegas",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "San Antonio de Los Banos",
+        "area_code": "650",
+        "dialing_code": "+53 650"
+    },
+    {
+        "city": "San Antonio de Los Bayos",
+        "area_code": "650",
+        "dialing_code": "+53 650"
+    },
+    {
+        "city": "San Antonio de Los Baños",
+        "area_code": "650",
+        "dialing_code": "+53 650"
+    },
+    {
+        "city": "San Antonio de Los Baýos",
+        "area_code": "650",
+        "dialing_code": "+53 650"
+    },
+    {
+        "city": "San Jose de Las Lajas",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "San Juan y Martinez",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "San Juan y Martynez",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "San Juan y Martínez",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "San Juan y Martýnez",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "San Luis",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "San Nicolas de Bari",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "San Nicolys de Bari",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "San Nicolás de Bari",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "San Nicolýs de Bari",
+        "area_code": "62",
+        "dialing_code": "+53 62"
+    },
+    {
+        "city": "Sancti Spiritus",
+        "area_code": "41",
+        "dialing_code": "+53 41"
+    },
+    {
+        "city": "Sancti Spíritus",
+        "area_code": "41",
+        "dialing_code": "+53 41"
+    },
+    {
+        "city": "Sanguili",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Santa Cruz del Norte",
+        "area_code": "692",
+        "dialing_code": "+53 692"
+    },
+    {
+        "city": "Santa Cruz del Sur",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Santiago de Cuba",
+        "area_code": "226",
+        "dialing_code": "+53 226"
+    },
+    {
+        "city": "Sibanicu",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Siboney",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Silvio Caro",
+        "area_code": "63",
+        "dialing_code": "+53 63"
+    },
+    {
+        "city": "Sola",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Sybalo",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Sábalo",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Sýbalo",
+        "area_code": "84",
+        "dialing_code": "+53 84"
+    },
+    {
+        "city": "Tacajo",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Tamarindo",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Tapaste",
+        "area_code": "64",
+        "dialing_code": "+53 64"
+    },
+    {
+        "city": "Union de Reyes",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Uniyn de Reyes",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Unión de Reyes",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Uniýn de Reyes",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Urbano Noris",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Varadero",
+        "area_code": "5",
+        "dialing_code": "+53 5"
+    },
+    {
+        "city": "Vasquez",
+        "area_code": "31",
+        "dialing_code": "+53 31"
+    },
+    {
+        "city": "Velasco",
+        "area_code": "24",
+        "dialing_code": "+53 24"
+    },
+    {
+        "city": "Venezuela",
+        "area_code": "33",
+        "dialing_code": "+53 33"
+    },
+    {
+        "city": "Vertientes",
+        "area_code": "32",
+        "dialing_code": "+53 32"
+    },
+    {
+        "city": "Villa Clara",
+        "area_code": "42",
+        "dialing_code": "+53 42"
+    },
+    {
+        "city": "Vinales",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Viyales",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Viñales",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Viýales",
+        "area_code": "8",
+        "dialing_code": "+53 8"
+    },
+    {
+        "city": "Yado del Yeso",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Yara",
+        "area_code": "23",
+        "dialing_code": "+53 23"
+    },
+    {
+        "city": "Yarual",
+        "area_code": "338",
+        "dialing_code": "+53 338"
+    }
+]

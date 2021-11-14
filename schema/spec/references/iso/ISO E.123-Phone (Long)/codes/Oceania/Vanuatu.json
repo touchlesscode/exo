@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Banks",
+        "area_code": "385",
+        "dialing_code": "+678 385"
+    },
+    {
+        "city": "Efate",
+        "area_code": "23",
+        "dialing_code": "+678 23"
+    },
+    {
+        "city": "Epi",
+        "area_code": "24",
+        "dialing_code": "+678 24"
+    },
+    {
+        "city": "Luganville",
+        "area_code": "36",
+        "dialing_code": "+678 36"
+    },
+    {
+        "city": "Maewo",
+        "area_code": "383",
+        "dialing_code": "+678 383"
+    },
+    {
+        "city": "Malekula",
+        "area_code": "484",
+        "dialing_code": "+678 484"
+    },
+    {
+        "city": "Port Vila",
+        "area_code": "22",
+        "dialing_code": "+678 22"
+    },
+    {
+        "city": "Shepherds",
+        "area_code": "282",
+        "dialing_code": "+678 282"
+    },
+    {
+        "city": "Tanna",
+        "area_code": "686",
+        "dialing_code": "+678 686"
+    }
+]

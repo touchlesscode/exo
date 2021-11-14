@@ -1,0 +1,252 @@
+[
+    {
+        "city": "Algonquin",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Alton",
+        "area_code": "730",
+        "dialing_code": "+1 730"
+    },
+    {
+        "city": "Arlington Heights",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Aurora",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Bartlett",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Batavia",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Belleville",
+        "area_code": "613",
+        "dialing_code": "+1 613"
+    },
+    {
+        "city": "Berwyn",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Bloomington",
+        "area_code": "309",
+        "dialing_code": "+1 309"
+    },
+    {
+        "city": "Burbank",
+        "area_code": "818",
+        "dialing_code": "+1 818"
+    },
+    {
+        "city": "Calumet City",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Champaign",
+        "area_code": "447",
+        "dialing_code": "+1 447"
+    },
+    {
+        "city": "Chicago",
+        "area_code": "312",
+        "dialing_code": "+1 312"
+    },
+    {
+        "city": "Chicago Heights",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Cicero",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Danville",
+        "area_code": "217",
+        "dialing_code": "+1 217"
+    },
+    {
+        "city": "Decatur",
+        "area_code": "217",
+        "dialing_code": "+1 217"
+    },
+    {
+        "city": "Des Plaines",
+        "area_code": "224",
+        "dialing_code": "+1 224"
+    },
+    {
+        "city": "Downers Grove",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Elgin",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Elmhurst",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Evanston",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Glen Ellyn",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Glenview",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Harvey",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Highland Park",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Joliet",
+        "area_code": "815",
+        "dialing_code": "+1 815"
+    },
+    {
+        "city": "Lombard",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Mundelein",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Naperville",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Northbrook",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Oak Lawn",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Oak Park",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Orland Park",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Oswego",
+        "area_code": "331",
+        "dialing_code": "+1 331"
+    },
+    {
+        "city": "Palatine",
+        "area_code": "224",
+        "dialing_code": "+1 224"
+    },
+    {
+        "city": "Park Ridge",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Pekin",
+        "area_code": "309",
+        "dialing_code": "+1 309"
+    },
+    {
+        "city": "Peoria",
+        "area_code": "309",
+        "dialing_code": "+1 309"
+    },
+    {
+        "city": "Plainfield",
+        "area_code": "815",
+        "dialing_code": "+1 815"
+    },
+    {
+        "city": "Quincy",
+        "area_code": "217",
+        "dialing_code": "+1 217"
+    },
+    {
+        "city": "Rock Island",
+        "area_code": "309",
+        "dialing_code": "+1 309"
+    },
+    {
+        "city": "Rockford",
+        "area_code": "815",
+        "dialing_code": "+1 815"
+    },
+    {
+        "city": "Schaumburg",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Skokie",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Tinley Park",
+        "area_code": "708",
+        "dialing_code": "+1 708"
+    },
+    {
+        "city": "Urbana",
+        "area_code": "217",
+        "dialing_code": "+1 217"
+    },
+    {
+        "city": "Wheaton",
+        "area_code": "630",
+        "dialing_code": "+1 630"
+    },
+    {
+        "city": "Wheeling",
+        "area_code": "847",
+        "dialing_code": "+1 847"
+    }
+]

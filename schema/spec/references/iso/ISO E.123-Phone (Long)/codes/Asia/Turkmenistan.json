@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Ashgabat",
+        "area_code": "12",
+        "dialing_code": "+993 12"
+    },
+    {
+        "city": "Dashhowuz",
+        "area_code": "322",
+        "dialing_code": "+993 322"
+    },
+    {
+        "city": "Dashkhouvuz",
+        "area_code": "322",
+        "dialing_code": "+993 322"
+    },
+    {
+        "city": "Mary",
+        "area_code": "522",
+        "dialing_code": "+993 522"
+    },
+    {
+        "city": "Serdarabad (formerly Nebitdag)",
+        "area_code": "222",
+        "dialing_code": "+993 222"
+    },
+    {
+        "city": "Turkmenabad (formerly Chardzho",
+        "area_code": "378",
+        "dialing_code": "+993 378"
+    },
+    {
+        "city": "Turkmenbashi",
+        "area_code": "378",
+        "dialing_code": "+993 378"
+    },
+    {
+        "city": "Turkmenbashi (formerly Krasnov",
+        "area_code": "243",
+        "dialing_code": "+993 243"
+    }
+]

@@ -1,0 +1,57 @@
+[
+    {
+        "city": "Atbara",
+        "area_code": "21",
+        "dialing_code": "+249 21"
+    },
+    {
+        "city": "Elobeid",
+        "area_code": "81",
+        "dialing_code": "+249 81"
+    },
+    {
+        "city": "Jedaraf",
+        "area_code": "441",
+        "dialing_code": "+249 441"
+    },
+    {
+        "city": "Kassala",
+        "area_code": "41",
+        "dialing_code": "+249 41"
+    },
+    {
+        "city": "Khartoum",
+        "area_code": "183",
+        "dialing_code": "+249 183"
+    },
+    {
+        "city": "Kosti",
+        "area_code": "71",
+        "dialing_code": "+249 71"
+    },
+    {
+        "city": "Modurman",
+        "area_code": "11",
+        "dialing_code": "+249 11"
+    },
+    {
+        "city": "Port Sudan",
+        "area_code": "31",
+        "dialing_code": "+249 31"
+    },
+    {
+        "city": "Sennar",
+        "area_code": "61",
+        "dialing_code": "+249 61"
+    },
+    {
+        "city": "Shetnzi",
+        "area_code": "616",
+        "dialing_code": "+249 616"
+    },
+    {
+        "city": "Wadmedai",
+        "area_code": "51",
+        "dialing_code": "+249 51"
+    }
+]

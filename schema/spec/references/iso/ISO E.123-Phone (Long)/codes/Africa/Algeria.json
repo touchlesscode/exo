@@ -1,0 +1,272 @@
+[
+    {
+        "city": "Adrar",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "Ain Defla",
+        "area_code": "27",
+        "dialing_code": "+213 27"
+    },
+    {
+        "city": "Ain Temouchent",
+        "area_code": "43",
+        "dialing_code": "+213 43"
+    },
+    {
+        "city": "Alger",
+        "area_code": "21",
+        "dialing_code": "+213 21"
+    },
+    {
+        "city": "Algiers",
+        "area_code": "21",
+        "dialing_code": "+213 21"
+    },
+    {
+        "city": "Annaba",
+        "area_code": "38",
+        "dialing_code": "+213 38"
+    },
+    {
+        "city": "Batna",
+        "area_code": "33",
+        "dialing_code": "+213 33"
+    },
+    {
+        "city": "Bechar",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "Bejaia",
+        "area_code": "34",
+        "dialing_code": "+213 34"
+    },
+    {
+        "city": "Bejaïa",
+        "area_code": "34",
+        "dialing_code": "+213 34"
+    },
+    {
+        "city": "Beskra",
+        "area_code": "33",
+        "dialing_code": "+213 33"
+    },
+    {
+        "city": "Biskra",
+        "area_code": "33",
+        "dialing_code": "+213 33"
+    },
+    {
+        "city": "Blida",
+        "area_code": "25",
+        "dialing_code": "+213 25"
+    },
+    {
+        "city": "Bordj Bou Arreridj",
+        "area_code": "35",
+        "dialing_code": "+213 35"
+    },
+    {
+        "city": "Bouira",
+        "area_code": "26",
+        "dialing_code": "+213 26"
+    },
+    {
+        "city": "Boumerdes",
+        "area_code": "24",
+        "dialing_code": "+213 24"
+    },
+    {
+        "city": "Béchar",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "Chlef",
+        "area_code": "27",
+        "dialing_code": "+213 27"
+    },
+    {
+        "city": "Constantine",
+        "area_code": "31",
+        "dialing_code": "+213 31"
+    },
+    {
+        "city": "Djelfa",
+        "area_code": "27",
+        "dialing_code": "+213 27"
+    },
+    {
+        "city": "El Bayadh",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "El Oued",
+        "area_code": "32",
+        "dialing_code": "+213 32"
+    },
+    {
+        "city": "El Tarf",
+        "area_code": "38",
+        "dialing_code": "+213 38"
+    },
+    {
+        "city": "Ghardaia",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "Guelma",
+        "area_code": "37",
+        "dialing_code": "+213 37"
+    },
+    {
+        "city": "Illizi",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "Jijel",
+        "area_code": "34",
+        "dialing_code": "+213 34"
+    },
+    {
+        "city": "Khenchela",
+        "area_code": "32",
+        "dialing_code": "+213 32"
+    },
+    {
+        "city": "Laghouat",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "M?sila",
+        "area_code": "35",
+        "dialing_code": "+213 35"
+    },
+    {
+        "city": "Mascara",
+        "area_code": "45",
+        "dialing_code": "+213 45"
+    },
+    {
+        "city": "Medea",
+        "area_code": "25",
+        "dialing_code": "+213 25"
+    },
+    {
+        "city": "Mila",
+        "area_code": "31",
+        "dialing_code": "+213 31"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "61",
+        "dialing_code": "+213 61"
+    },
+    {
+        "city": "Mostaganem",
+        "area_code": "45",
+        "dialing_code": "+213 45"
+    },
+    {
+        "city": "Naama",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "Oran",
+        "area_code": "41",
+        "dialing_code": "+213 41"
+    },
+    {
+        "city": "Ouargla",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "Oum El Bouaghi",
+        "area_code": "32",
+        "dialing_code": "+213 32"
+    },
+    {
+        "city": "Relizane",
+        "area_code": "46",
+        "dialing_code": "+213 46"
+    },
+    {
+        "city": "Saida",
+        "area_code": "48",
+        "dialing_code": "+213 48"
+    },
+    {
+        "city": "Setif",
+        "area_code": "36",
+        "dialing_code": "+213 36"
+    },
+    {
+        "city": "Sidi Bel Abbes",
+        "area_code": "48",
+        "dialing_code": "+213 48"
+    },
+    {
+        "city": "Skikda",
+        "area_code": "38",
+        "dialing_code": "+213 38"
+    },
+    {
+        "city": "Souk Ahras",
+        "area_code": "37",
+        "dialing_code": "+213 37"
+    },
+    {
+        "city": "Tamanrasset",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "Tamenrasset",
+        "area_code": "29",
+        "dialing_code": "+213 29"
+    },
+    {
+        "city": "Tebessa",
+        "area_code": "37",
+        "dialing_code": "+213 37"
+    },
+    {
+        "city": "Tiaret",
+        "area_code": "46",
+        "dialing_code": "+213 46"
+    },
+    {
+        "city": "Tindouf",
+        "area_code": "49",
+        "dialing_code": "+213 49"
+    },
+    {
+        "city": "Tipaza",
+        "area_code": "24",
+        "dialing_code": "+213 24"
+    },
+    {
+        "city": "Tissemsilt",
+        "area_code": "46",
+        "dialing_code": "+213 46"
+    },
+    {
+        "city": "Tizi Ouzou",
+        "area_code": "26",
+        "dialing_code": "+213 26"
+    },
+    {
+        "city": "Tlemcen",
+        "area_code": "43",
+        "dialing_code": "+213 43"
+    }
+]

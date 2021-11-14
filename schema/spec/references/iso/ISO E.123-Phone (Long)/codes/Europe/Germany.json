@@ -1,0 +1,492 @@
+[
+    {
+        "city": "Aachen",
+        "area_code": "241",
+        "dialing_code": "+49 241"
+    },
+    {
+        "city": "Augsburg",
+        "area_code": "821",
+        "dialing_code": "+49 821"
+    },
+    {
+        "city": "Bad Homburg",
+        "area_code": "6172",
+        "dialing_code": "+49 6172"
+    },
+    {
+        "city": "Bergisch Gladbach",
+        "area_code": "2202",
+        "dialing_code": "+49 2202"
+    },
+    {
+        "city": "Berlin",
+        "area_code": "30",
+        "dialing_code": "+49 30"
+    },
+    {
+        "city": "Bielefeld",
+        "area_code": "521",
+        "dialing_code": "+49 521"
+    },
+    {
+        "city": "Bonn",
+        "area_code": "228",
+        "dialing_code": "+49 228"
+    },
+    {
+        "city": "Bottrop",
+        "area_code": "2041",
+        "dialing_code": "+49 2041"
+    },
+    {
+        "city": "Braunschweig",
+        "area_code": "531",
+        "dialing_code": "+49 531"
+    },
+    {
+        "city": "Bremen",
+        "area_code": "421",
+        "dialing_code": "+49 421"
+    },
+    {
+        "city": "Bremerhaven",
+        "area_code": "471",
+        "dialing_code": "+49 471"
+    },
+    {
+        "city": "Chemnitz",
+        "area_code": "371",
+        "dialing_code": "+49 371"
+    },
+    {
+        "city": "Cologne",
+        "area_code": "221",
+        "dialing_code": "+49 221"
+    },
+    {
+        "city": "Cologne (Koln)",
+        "area_code": "221",
+        "dialing_code": "+49 221"
+    },
+    {
+        "city": "Cottbus",
+        "area_code": "355",
+        "dialing_code": "+49 355"
+    },
+    {
+        "city": "Darmstadt",
+        "area_code": "6151",
+        "dialing_code": "+49 6151"
+    },
+    {
+        "city": "Dortmund",
+        "area_code": "231",
+        "dialing_code": "+49 231"
+    },
+    {
+        "city": "Dresden",
+        "area_code": "351",
+        "dialing_code": "+49 351"
+    },
+    {
+        "city": "Duisburg",
+        "area_code": "203",
+        "dialing_code": "+49 203"
+    },
+    {
+        "city": "Dusseldorf",
+        "area_code": "211",
+        "dialing_code": "+49 211"
+    },
+    {
+        "city": "Düsseldorf",
+        "area_code": "211",
+        "dialing_code": "+49 211"
+    },
+    {
+        "city": "Erfurt",
+        "area_code": "361",
+        "dialing_code": "+49 361"
+    },
+    {
+        "city": "Erlangen",
+        "area_code": "9131",
+        "dialing_code": "+49 9131"
+    },
+    {
+        "city": "Essen",
+        "area_code": "201",
+        "dialing_code": "+49 201"
+    },
+    {
+        "city": "Frankfurt",
+        "area_code": "69",
+        "dialing_code": "+49 69"
+    },
+    {
+        "city": "Frankfurt am Main",
+        "area_code": "69",
+        "dialing_code": "+49 69"
+    },
+    {
+        "city": "Frankfurt am Main (west)",
+        "area_code": "69",
+        "dialing_code": "+49 69"
+    },
+    {
+        "city": "Frankfurt an der Oder",
+        "area_code": "335",
+        "dialing_code": "+49 335"
+    },
+    {
+        "city": "Frankfurt an der Oder (east)",
+        "area_code": "335",
+        "dialing_code": "+49 335"
+    },
+    {
+        "city": "Freiburg",
+        "area_code": "761",
+        "dialing_code": "+49 761"
+    },
+    {
+        "city": "Furth",
+        "area_code": "911",
+        "dialing_code": "+49 911"
+    },
+    {
+        "city": "Fürth",
+        "area_code": "911",
+        "dialing_code": "+49 911"
+    },
+    {
+        "city": "Gelsenkirchen",
+        "area_code": "209",
+        "dialing_code": "+49 209"
+    },
+    {
+        "city": "Gera",
+        "area_code": "365",
+        "dialing_code": "+49 365"
+    },
+    {
+        "city": "Gottingen",
+        "area_code": "",
+        "dialing_code": "+49"
+    },
+    {
+        "city": "Göttingen",
+        "area_code": "",
+        "dialing_code": "+49"
+    },
+    {
+        "city": "Hagen",
+        "area_code": "2331",
+        "dialing_code": "+49 2331"
+    },
+    {
+        "city": "Halle",
+        "area_code": "345",
+        "dialing_code": "+49 345"
+    },
+    {
+        "city": "Hamburg",
+        "area_code": "40",
+        "dialing_code": "+49 40"
+    },
+    {
+        "city": "Hamm",
+        "area_code": "2381",
+        "dialing_code": "+49 2381"
+    },
+    {
+        "city": "Hannover",
+        "area_code": "511",
+        "dialing_code": "+49 511"
+    },
+    {
+        "city": "Hanover",
+        "area_code": "511",
+        "dialing_code": "+49 511"
+    },
+    {
+        "city": "Heidelberg",
+        "area_code": "6221",
+        "dialing_code": "+49 6221"
+    },
+    {
+        "city": "Heilbronn",
+        "area_code": "7131",
+        "dialing_code": "+49 7131"
+    },
+    {
+        "city": "Herne",
+        "area_code": "2323",
+        "dialing_code": "+49 2323"
+    },
+    {
+        "city": "Hildesheim",
+        "area_code": "5121",
+        "dialing_code": "+49 5121"
+    },
+    {
+        "city": "Ingolstadt",
+        "area_code": "841",
+        "dialing_code": "+49 841"
+    },
+    {
+        "city": "Karl-Stadt",
+        "area_code": "9353",
+        "dialing_code": "+49 9353"
+    },
+    {
+        "city": "Karlsruhe",
+        "area_code": "721",
+        "dialing_code": "+49 721"
+    },
+    {
+        "city": "Kassel",
+        "area_code": "561",
+        "dialing_code": "+49 561"
+    },
+    {
+        "city": "Kiel",
+        "area_code": "431",
+        "dialing_code": "+49 431"
+    },
+    {
+        "city": "Koblenz",
+        "area_code": "261",
+        "dialing_code": "+49 261"
+    },
+    {
+        "city": "Krefeld",
+        "area_code": "2151",
+        "dialing_code": "+49 2151"
+    },
+    {
+        "city": "Leipzig",
+        "area_code": "341",
+        "dialing_code": "+49 341"
+    },
+    {
+        "city": "Leverkusen",
+        "area_code": "214",
+        "dialing_code": "+49 214"
+    },
+    {
+        "city": "Lubeck",
+        "area_code": "451",
+        "dialing_code": "+49 451"
+    },
+    {
+        "city": "Ludwigsburg",
+        "area_code": "7141",
+        "dialing_code": "+49 7141"
+    },
+    {
+        "city": "Ludwigshafen",
+        "area_code": "621",
+        "dialing_code": "+49 621"
+    },
+    {
+        "city": "Lübeck",
+        "area_code": "451",
+        "dialing_code": "+49 451"
+    },
+    {
+        "city": "Magdeburg",
+        "area_code": "391",
+        "dialing_code": "+49 391"
+    },
+    {
+        "city": "Mainz",
+        "area_code": "6131",
+        "dialing_code": "+49 6131"
+    },
+    {
+        "city": "Mannheim",
+        "area_code": "621",
+        "dialing_code": "+49 621"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "17",
+        "dialing_code": "+49 17"
+    },
+    {
+        "city": "Monchengladbach",
+        "area_code": "2161",
+        "dialing_code": "+49 2161"
+    },
+    {
+        "city": "Munich",
+        "area_code": "89",
+        "dialing_code": "+49 89"
+    },
+    {
+        "city": "Munster",
+        "area_code": "251",
+        "dialing_code": "+49 251"
+    },
+    {
+        "city": "Mönchengladbach",
+        "area_code": "2161",
+        "dialing_code": "+49 2161"
+    },
+    {
+        "city": "Neubrandenburg",
+        "area_code": "395",
+        "dialing_code": "+49 395"
+    },
+    {
+        "city": "Neuss",
+        "area_code": "2131",
+        "dialing_code": "+49 2131"
+    },
+    {
+        "city": "Nuremberg",
+        "area_code": "911",
+        "dialing_code": "+49 911"
+    },
+    {
+        "city": "Nurnberg",
+        "area_code": "911",
+        "dialing_code": "+49 911"
+    },
+    {
+        "city": "Oberhausen",
+        "area_code": "208",
+        "dialing_code": "+49 208"
+    },
+    {
+        "city": "Offenbach",
+        "area_code": "69",
+        "dialing_code": "+49 69"
+    },
+    {
+        "city": "Oldenburg",
+        "area_code": "441",
+        "dialing_code": "+49 441"
+    },
+    {
+        "city": "Osnabruck",
+        "area_code": "541",
+        "dialing_code": "+49 541"
+    },
+    {
+        "city": "Osnabrück",
+        "area_code": "541",
+        "dialing_code": "+49 541"
+    },
+    {
+        "city": "Paderborn",
+        "area_code": "5251",
+        "dialing_code": "+49 5251"
+    },
+    {
+        "city": "Pforzheim",
+        "area_code": "7231",
+        "dialing_code": "+49 7231"
+    },
+    {
+        "city": "Potsdam",
+        "area_code": "331",
+        "dialing_code": "+49 331"
+    },
+    {
+        "city": "Recklinghausen",
+        "area_code": "2361",
+        "dialing_code": "+49 2361"
+    },
+    {
+        "city": "Regensburg",
+        "area_code": "941",
+        "dialing_code": "+49 941"
+    },
+    {
+        "city": "Remscheid",
+        "area_code": "2191",
+        "dialing_code": "+49 2191"
+    },
+    {
+        "city": "Rostock",
+        "area_code": "381",
+        "dialing_code": "+49 381"
+    },
+    {
+        "city": "Saal",
+        "area_code": "38223",
+        "dialing_code": "+49 38223"
+    },
+    {
+        "city": "Saarbrucken",
+        "area_code": "681",
+        "dialing_code": "+49 681"
+    },
+    {
+        "city": "Saarbrücken",
+        "area_code": "681",
+        "dialing_code": "+49 681"
+    },
+    {
+        "city": "Salzgitter",
+        "area_code": "5341",
+        "dialing_code": "+49 5341"
+    },
+    {
+        "city": "Schwerin",
+        "area_code": "385",
+        "dialing_code": "+49 385"
+    },
+    {
+        "city": "Siegen",
+        "area_code": "271",
+        "dialing_code": "+49 271"
+    },
+    {
+        "city": "Solingen",
+        "area_code": "212",
+        "dialing_code": "+49 212"
+    },
+    {
+        "city": "Stuttgart",
+        "area_code": "711",
+        "dialing_code": "+49 711"
+    },
+    {
+        "city": "Ulm",
+        "area_code": "731",
+        "dialing_code": "+49 731"
+    },
+    {
+        "city": "Wiesbaden",
+        "area_code": "611",
+        "dialing_code": "+49 611"
+    },
+    {
+        "city": "Wolfsburg",
+        "area_code": "5361",
+        "dialing_code": "+49 5361"
+    },
+    {
+        "city": "Wuppertal",
+        "area_code": "202",
+        "dialing_code": "+49 202"
+    },
+    {
+        "city": "Wurzburg",
+        "area_code": "931",
+        "dialing_code": "+49 931"
+    },
+    {
+        "city": "Würzburg",
+        "area_code": "931",
+        "dialing_code": "+49 931"
+    },
+    {
+        "city": "Zwickau",
+        "area_code": "375",
+        "dialing_code": "+49 375"
+    }
+]

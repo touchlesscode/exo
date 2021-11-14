@@ -1,0 +1,237 @@
+[
+    {
+        "city": "Alor Setar",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Beranang",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Bintulu",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Broga",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Cheras",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Dengkil",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Ipoh",
+        "area_code": "5",
+        "dialing_code": "+60 5"
+    },
+    {
+        "city": "Johor Bahru",
+        "area_code": "7",
+        "dialing_code": "+60 7"
+    },
+    {
+        "city": "Johore (state)",
+        "area_code": "7",
+        "dialing_code": "+60 7"
+    },
+    {
+        "city": "Kajang",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Kedah",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Kelantan (state)",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Kepala Batas",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Kota Baharu",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Kota Bharu",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Kota Kinabalu",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Kuala Lumpur",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Kuala Terengganu",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Kuantan",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Kuching",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Labuan",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Machang",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Maran",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Melaka",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Melaka (state)",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Miri",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Muar",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Muar (Bandar Maharani)",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Negeri Sembilan (state)",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Pahang",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    },
+    {
+        "city": "Penang",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Penang (state)",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Perak (state)",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Perlis (state)",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Port Dickson",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Sabah (state)",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Sandakan",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Sarawak (state)",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Selangor (state)",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Semenyih",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Seremban",
+        "area_code": "6",
+        "dialing_code": "+60 6"
+    },
+    {
+        "city": "Sibu",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Sintok",
+        "area_code": "4",
+        "dialing_code": "+60 4"
+    },
+    {
+        "city": "Sri Aman",
+        "area_code": "8",
+        "dialing_code": "+60 8"
+    },
+    {
+        "city": "Sungei Besi",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Sungei Renggam",
+        "area_code": "3",
+        "dialing_code": "+60 3"
+    },
+    {
+        "city": "Terengganu (state)",
+        "area_code": "9",
+        "dialing_code": "+60 9"
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Comcel",
+        "area_code": "420",
+        "dialing_code": "+509 420"
+    },
+    {
+        "city": "Haitel",
+        "area_code": "510",
+        "dialing_code": "+509 510"
+    },
+    {
+        "city": "Iris",
+        "area_code": "851",
+        "dialing_code": "+509 851"
+    },
+    {
+        "city": "Port au Prince",
+        "area_code": "",
+        "dialing_code": "+509"
+    },
+    {
+        "city": "Rectel",
+        "area_code": "330",
+        "dialing_code": "+509 330"
+    }
+]

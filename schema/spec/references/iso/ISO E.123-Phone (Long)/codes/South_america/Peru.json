@@ -1,0 +1,82 @@
+[
+    {
+        "city": "Arequipa",
+        "area_code": "54",
+        "dialing_code": "+51 54"
+    },
+    {
+        "city": "Ayacucho",
+        "area_code": "64",
+        "dialing_code": "+51 64"
+    },
+    {
+        "city": "Cajamarca",
+        "area_code": "44",
+        "dialing_code": "+51 44"
+    },
+    {
+        "city": "Callao",
+        "area_code": "14",
+        "dialing_code": "+51 14"
+    },
+    {
+        "city": "Chiclayo",
+        "area_code": "74",
+        "dialing_code": "+51 74"
+    },
+    {
+        "city": "Chimbote",
+        "area_code": "44",
+        "dialing_code": "+51 44"
+    },
+    {
+        "city": "Cusco",
+        "area_code": "84",
+        "dialing_code": "+51 84"
+    },
+    {
+        "city": "Cuzco",
+        "area_code": "84",
+        "dialing_code": "+51 84"
+    },
+    {
+        "city": "Huancavelica",
+        "area_code": "6495",
+        "dialing_code": "+51 6495"
+    },
+    {
+        "city": "Huancayo",
+        "area_code": "64",
+        "dialing_code": "+51 64"
+    },
+    {
+        "city": "Ica",
+        "area_code": "34",
+        "dialing_code": "+51 34"
+    },
+    {
+        "city": "Iquitos",
+        "area_code": "94",
+        "dialing_code": "+51 94"
+    },
+    {
+        "city": "Lima",
+        "area_code": "1",
+        "dialing_code": "+51 1"
+    },
+    {
+        "city": "Piura",
+        "area_code": "74",
+        "dialing_code": "+51 74"
+    },
+    {
+        "city": "Tacna",
+        "area_code": "54",
+        "dialing_code": "+51 54"
+    },
+    {
+        "city": "Trujillo",
+        "area_code": "44",
+        "dialing_code": "+51 44"
+    }
+]

@@ -1,0 +1,262 @@
+[
+    {
+        "city": "Ambon",
+        "area_code": "911",
+        "dialing_code": "+62 911"
+    },
+    {
+        "city": "Bali",
+        "area_code": "36",
+        "dialing_code": "+62 36"
+    },
+    {
+        "city": "Balikpapan",
+        "area_code": "542",
+        "dialing_code": "+62 542"
+    },
+    {
+        "city": "Bandung",
+        "area_code": "22",
+        "dialing_code": "+62 22"
+    },
+    {
+        "city": "Banjarmasin",
+        "area_code": "511",
+        "dialing_code": "+62 511"
+    },
+    {
+        "city": "Batam",
+        "area_code": "77",
+        "dialing_code": "+62 77"
+    },
+    {
+        "city": "Batang",
+        "area_code": "77",
+        "dialing_code": "+62 77"
+    },
+    {
+        "city": "Betung",
+        "area_code": "22",
+        "dialing_code": "+62 22"
+    },
+    {
+        "city": "Bintan",
+        "area_code": "770",
+        "dialing_code": "+62 770"
+    },
+    {
+        "city": "Bogor",
+        "area_code": "25",
+        "dialing_code": "+62 25"
+    },
+    {
+        "city": "Cirebon",
+        "area_code": "23",
+        "dialing_code": "+62 23"
+    },
+    {
+        "city": "Demak",
+        "area_code": "29",
+        "dialing_code": "+62 29"
+    },
+    {
+        "city": "Denpasar",
+        "area_code": "36",
+        "dialing_code": "+62 36"
+    },
+    {
+        "city": "Ende",
+        "area_code": "38",
+        "dialing_code": "+62 38"
+    },
+    {
+        "city": "Irian",
+        "area_code": "9",
+        "dialing_code": "+62 9"
+    },
+    {
+        "city": "Jakarta",
+        "area_code": "21",
+        "dialing_code": "+62 21"
+    },
+    {
+        "city": "Jayapura",
+        "area_code": "967",
+        "dialing_code": "+62 967"
+    },
+    {
+        "city": "Jember",
+        "area_code": "33",
+        "dialing_code": "+62 33"
+    },
+    {
+        "city": "Jombang",
+        "area_code": "32",
+        "dialing_code": "+62 32"
+    },
+    {
+        "city": "Kalimantan Islet",
+        "area_code": "5",
+        "dialing_code": "+62 5"
+    },
+    {
+        "city": "Kudus",
+        "area_code": "291",
+        "dialing_code": "+62 291"
+    },
+    {
+        "city": "Kupang",
+        "area_code": "39",
+        "dialing_code": "+62 39"
+    },
+    {
+        "city": "Madiun",
+        "area_code": "35",
+        "dialing_code": "+62 35"
+    },
+    {
+        "city": "Makassar",
+        "area_code": "411",
+        "dialing_code": "+62 411"
+    },
+    {
+        "city": "Malaku Islets",
+        "area_code": "5",
+        "dialing_code": "+62 5"
+    },
+    {
+        "city": "Malang",
+        "area_code": "34",
+        "dialing_code": "+62 34"
+    },
+    {
+        "city": "Manado",
+        "area_code": "431",
+        "dialing_code": "+62 431"
+    },
+    {
+        "city": "Mataram",
+        "area_code": "370",
+        "dialing_code": "+62 370"
+    },
+    {
+        "city": "Medan",
+        "area_code": "61",
+        "dialing_code": "+62 61"
+    },
+    {
+        "city": "North Sumatra",
+        "area_code": "6",
+        "dialing_code": "+62 6"
+    },
+    {
+        "city": "Padang",
+        "area_code": "75",
+        "dialing_code": "+62 75"
+    },
+    {
+        "city": "Palembang",
+        "area_code": "71",
+        "dialing_code": "+62 71"
+    },
+    {
+        "city": "Pekalongan",
+        "area_code": "285",
+        "dialing_code": "+62 285"
+    },
+    {
+        "city": "Pekanbaru",
+        "area_code": "761",
+        "dialing_code": "+62 761"
+    },
+    {
+        "city": "Pematangsiantar",
+        "area_code": "622",
+        "dialing_code": "+62 622"
+    },
+    {
+        "city": "Purwakarta",
+        "area_code": "28",
+        "dialing_code": "+62 28"
+    },
+    {
+        "city": "Riau",
+        "area_code": "76",
+        "dialing_code": "+62 76"
+    },
+    {
+        "city": "Samarinda",
+        "area_code": "541",
+        "dialing_code": "+62 541"
+    },
+    {
+        "city": "Sekurang",
+        "area_code": "778",
+        "dialing_code": "+62 778"
+    },
+    {
+        "city": "Semarang",
+        "area_code": "24",
+        "dialing_code": "+62 24"
+    },
+    {
+        "city": "Singaraja",
+        "area_code": "362",
+        "dialing_code": "+62 362"
+    },
+    {
+        "city": "Solo",
+        "area_code": "27",
+        "dialing_code": "+62 27"
+    },
+    {
+        "city": "Sulawesi Islet",
+        "area_code": "4",
+        "dialing_code": "+62 4"
+    },
+    {
+        "city": "Sumbawa",
+        "area_code": "37",
+        "dialing_code": "+62 37"
+    },
+    {
+        "city": "Sumedang",
+        "area_code": "26",
+        "dialing_code": "+62 26"
+    },
+    {
+        "city": "Surabaya",
+        "area_code": "31",
+        "dialing_code": "+62 31"
+    },
+    {
+        "city": "Tanjungkarang",
+        "area_code": "72",
+        "dialing_code": "+62 72"
+    },
+    {
+        "city": "Tasikmalaya",
+        "area_code": "265",
+        "dialing_code": "+62 265"
+    },
+    {
+        "city": "Tegal",
+        "area_code": "",
+        "dialing_code": "+62"
+    },
+    {
+        "city": "Ternate",
+        "area_code": "921",
+        "dialing_code": "+62 921"
+    },
+    {
+        "city": "West Sumatra",
+        "area_code": "75",
+        "dialing_code": "+62 75"
+    },
+    {
+        "city": "Yogyakarta",
+        "area_code": "27",
+        "dialing_code": "+62 27"
+    }
+]

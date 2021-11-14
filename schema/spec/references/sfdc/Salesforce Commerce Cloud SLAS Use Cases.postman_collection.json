@@ -1,0 +1,2468 @@
+{
+	"info": {
+		"_postman_id": "b59efa68-87fd-4398-ba68-f15e931b879f",
+		"name": "Salesforce Commerce Cloud SLAS Use Cases",
+		"description": "# Shopper Login and API Access Service (SLAS) Use Case Scenarios Using Postman\nThis Postman collection contains 6 use cases that SLAS supports. This collection will show how to get an authorization code, access token, create a shopper basket, place an item in the basket, and then delete the basket using a private SLAS client and a SLAS public client.\n\nThis collection was developed so that multiple SLAS deployments could be used by this collection simply by setting up different Postman environments.\n\nFor the registered user flow using a private client that is federated to a 3rd party IDP (like Okta, or Google) the IPD will need to be called from a browser to login and get an authentication code.\n\nFor the Proof Key for Code Exchange (PKCE) flows the `CODE_CHALLENGE` and `CODE_VERIFIER` will be created and stored as collection variables when using the tests that need them.\n\n**⚠️ Disclaimers:**\n- This collection is provided as-is. It's not officially supported by Salesforce or covered by SLAs.\n- API documentation is not provided with the collection. Please refer to the [official documentation](https://developer.commercecloud.com/s/api-details/a003k00000VzoEyAAJ/commerce-cloud-developer-centershopperloginandapiaccessadmin).\n\nℹ️ Report issues and ask questions [here](https://github.com/forcedotcom/postman-commerce-cloud-apis/issues).\n\n## Get started\n\nFollow [this startup guide](https://github.com/forcedotcom/postman-commerce-cloud-apis) to get started with the collection.\n\n## The 6 Use Cases\n* **Guest User • Private Client** - Creates a SLAS JSON Web Token (JWT) using a SLAS private client id and secret in a authorization header.\n* **Guest User • Public Client** - Creates a SLAS (JWT) using a PKCE flow using a code challenge, code verifier and a SLAS public user client id. An authorization header is not needed as the client id, without a secret is provider as a query parameter.\n* **Ecom Registered User • Private Client** - Creates a SLAS JWT using Ecom customer credentials, code challenge, code verifier with a SLAS private client id and secret.\n* **Ecom Public Registered User • Public Client** - Creates a SLAS JWT using the PKCE flow using Ecom customer credentials, code challenge, code verifier and a SLAS public client id.\n* **Registered User • Private Client** - Creates a SLAS JWT using a 3rd party identity provider (IDP) with a SLAS private client id and secret.\nNOTE: The IDP will need to be called from the browser and get an authorization code to be used for the SLAS `/token` endpoint.\n* **Registered User • Public Client** - Creates a SLAS JWT using the PKCE flow and a SLAS public client id.\n\n## Prerequisites\nSLAS Use Case collection should have a SLAS service deployed and running and a Salesforce Commerce Cloud (ECOM) environment running. During SLAS service and ECOM setup a tenant id, private client id and secret, and a public client id should be set up. There also needs to be an active ECOM customer (shopper) with password that can be used with this collection.\n\n## Variables Reference\nThe following variables should be setup as Postman environment variables before running any tests.\n\nRelated Environment: Salesforce Commerce Cloud SLAS Use Cases - Template\n\n| Variable | Description |\n| --- | --- |\n| `host` | The host to the SLAS service. Should include the `https://` protocol. |\n| `tenant_id` | The tenant id that was created when SLAS and ECOM was set up. |\n| `base_uri` | The base URI to SLAS. ex. `/api/v1/organizations/` |\n| `ocapi_uri` | The URI to ECOM to access the OCAPI APIs. Should include the `https://` protocol. |\n| `ocapi_site` | The ECOM Site used in OCAPI calls. Ex. `SiteGenesis` or `RefArch` |\n| `ecom_customer_id` | A customer (shopper) user from ECOM. |\n| `ecom_customer_pw` | A customer (shopper) user password from ECOM. |\n| `private_client_id` | The private client when client was created in SLAS. |\n| `private_client_secret` | The private client secret when client was created in SLAS. |\n| `public_client_id` | The public client when client was created in SLAS. |\n| `redirect_url` | One of the `redirect_uris` that are part of the SLAS client. |\n\n## Shopping Baskets\nAfter each SLAS authorization there are tests to create a basket, add an item to the basket, get the basket and delete the basket. The basket id is saved during the tests so it can be used by the other tests. However, in the Add Item to basket test there is an ECOM product id in the body of the request. The product is based on the ECOM site that is chosen. The product id in the body may need to change to a product id in ECOM.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Guest User • Private Client",
+			"item": [
+				{
+					"name": "SLAS - Private Client - Guest Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"guest_admin_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{private_client_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{private_client_id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							},
+							{
+								"key": "x-request-id",
+								"value": "111111",
+								"type": "text"
+							},
+							{
+								"key": "x-b3-traceid",
+								"value": "{{B3_TRACE_ID}}",
+								"type": "text"
+							},
+							{
+								"key": "x-b3-parentspanid",
+								"value": "{{B3_PARENT_SPAN_ID}}",
+								"type": "text"
+							},
+							{
+								"key": "x-b3-spanid",
+								"value": "{{B3_SPAN_ID}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "client_credentials",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket with Private Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{guest_admin_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=RefArch&client_id={{private_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "RefArch"
+								},
+								{
+									"key": "client_id",
+									"value": "{{private_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Private Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{guest_admin_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-d90-wlensM\",\n  \"quantity\" : 1.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Private Client Guest User",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{guest_admin_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket with Private Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{guest_admin_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Guest User • Public Client",
+			"item": [
+				{
+					"name": "SLAS - Public Client - Guest - Authorize",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function generateCodeVerifier() {",
+									"    return generateRandomString(96);",
+									"}",
+									"",
+									"function generateRandomString(length) {",
+									"    var text = \"\";",
+									"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+									"    for (var i = 0; i < length; i++) {",
+									"        text += possible.charAt(Math.floor(Math.random() * possible.length));",
+									"    }",
+									"    return text;",
+									"}",
+									"",
+									"function generateCodeChallenge(code_verifier) {",
+									"    return CryptoJS.SHA256(code_verifier);",
+									"}",
+									"",
+									"function base64URL(string) {",
+									"    return string.toString(CryptoJS.enc.Base64).replace(/=/g, '').replace(/\\+/g, '-').replace(/\\//g, '_')",
+									"}",
+									"",
+									"var verifier = base64URL(generateCodeVerifier());",
+									"var challenge = base64URL(generateCodeChallenge(verifier));",
+									"",
+									"pm.collectionVariables.set(\"PUBLIC_GUEST_CODE_VERIFIER\", verifier);",
+									"pm.collectionVariables.set(\"PUBLIC_GUEST_CODE_CHALLENGE\", challenge);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 303\", function () {",
+									"    pm.response.to.have.status(303);",
+									"});",
+									"",
+									"code = pm.response.headers.get(\"Location\").split('&').pop().substring(5);",
+									"pm.environment.set(\"public_guest_auth_code\", code);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/authorize?client_id={{public_client_id}}&redirect_uri={{redirect_url}}&channel_id=RefArch&hint=guest&code_challenge={{PUBLIC_GUEST_CODE_CHALLENGE}}",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch"
+								},
+								{
+									"key": "hint",
+									"value": "guest"
+								},
+								{
+									"key": "code_challenge",
+									"value": "{{PUBLIC_GUEST_CODE_CHALLENGE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SLAS - Public Client - Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"public_guest_user_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "{{public_guest_auth_code}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_pkce",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "{{PUBLIC_GUEST_CODE_VERIFIER}}",
+									"type": "text"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket  with Public Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_guest_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=RefArch&client_id={{public_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "RefArch"
+								},
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Public Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_guest_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-s60M\",\n  \"quantity\" : 1.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Public Client Guest User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_guest_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket  with Public Client Guest",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_guest_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ecom User • Private Client",
+			"item": [
+				{
+					"name": "SLAS- Private Client - Ecom User - Auth Code",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function generateCodeVerifier() {",
+									"    return generateRandomString(96);",
+									"}",
+									"",
+									"function generateRandomString(length) {",
+									"    var text = \"\";",
+									"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+									"    for (var i = 0; i < length; i++) {",
+									"        text += possible.charAt(Math.floor(Math.random() * possible.length));",
+									"    }",
+									"    return text;",
+									"}",
+									"",
+									"function generateCodeChallenge(code_verifier) {",
+									"    return CryptoJS.SHA256(code_verifier);",
+									"}",
+									"",
+									"function base64URL(string) {",
+									"    return string.toString(CryptoJS.enc.Base64).replace(/=/g, '').replace(/\\+/g, '-').replace(/\\//g, '_')",
+									"}",
+									"",
+									"var verifier = base64URL(generateCodeVerifier());",
+									"var challenge = base64URL(generateCodeChallenge(verifier));",
+									"",
+									"pm.collectionVariables.set(\"ECOM_USER_CODE_VERIFIER\", verifier);",
+									"pm.collectionVariables.set(\"ECOM_USER_CODE_CHALLENGE\", challenge);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"code = pm.response.headers.get(\"Location\").split('&').pop().substring(5);",
+									"pm.environment.set(\"private_ecom_auth_code\", code);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{ecom_customer_pw}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{ecom_customer_id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/login?client_id={{private_client_id}}&channel_id=RefArch&redirect_uri={{redirect_url}}&code_challenge={{ECOM_USER_CODE_CHALLENGE}}",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"login"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{private_client_id}}"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}"
+								},
+								{
+									"key": "code_challenge",
+									"value": "{{ECOM_USER_CODE_CHALLENGE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SLAS- Private Client - Ecom User - Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"private_ecom_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{private_client_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{private_client_id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "{{private_ecom_auth_code}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_pkce",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "{{ECOM_USER_CODE_VERIFIER}}",
+									"type": "text"
+								},
+								{
+									"key": "channel_id",
+									"value": "SiteGenesis",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket with Private Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_ecom_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=SiteGenesis&client_id={{private_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "SiteGenesis"
+								},
+								{
+									"key": "client_id",
+									"value": "{{private_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Private Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_ecom_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-d60-wlensM\",\n  \"quantity\" : 2.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Private Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_ecom_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket with Private Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_ecom_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ecom User • Public Client",
+			"item": [
+				{
+					"name": "SLAS - Public Client - Ecom User - Auth Code",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function generateCodeVerifier() {",
+									"    return generateRandomString(96);",
+									"}",
+									"",
+									"function generateRandomString(length) {",
+									"    var text = \"\";",
+									"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+									"    for (var i = 0; i < length; i++) {",
+									"        text += possible.charAt(Math.floor(Math.random() * possible.length));",
+									"    }",
+									"    return text;",
+									"}",
+									"",
+									"function generateCodeChallenge(code_verifier) {",
+									"    return CryptoJS.SHA256(code_verifier);",
+									"}",
+									"",
+									"function base64URL(string) {",
+									"    return string.toString(CryptoJS.enc.Base64).replace(/=/g, '').replace(/\\+/g, '-').replace(/\\//g, '_')",
+									"}",
+									"",
+									"var verifier = base64URL(generateCodeVerifier());",
+									"var challenge = base64URL(generateCodeChallenge(verifier));",
+									"",
+									"pm.collectionVariables.set(\"PUBLIC_ECOM_CODE_VERIFIER\", verifier);",
+									"pm.collectionVariables.set(\"PUBLIC_ECOM_CODE_CHALLENGE\", challenge);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 303\", function () {",
+									"    pm.response.to.have.status(303);",
+									"});",
+									"",
+									"code = pm.response.headers.get(\"Location\").split('&').pop().substring(5);",
+									"pm.environment.set(\"public_ecom_auth_code\", code);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{ecom_customer_pw}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{ecom_customer_id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/login?client_id={{public_client_id}}&channel_id=RefArch&redirect_uri={{redirect_url}}&code_challenge={{PUBLIC_ECOM_CODE_CHALLENGE}}",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"login"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}"
+								},
+								{
+									"key": "code_challenge",
+									"value": "{{PUBLIC_ECOM_CODE_CHALLENGE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SLAS - Public Client - Ecom User - Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"public_ecom_user_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "{{public_client_id}}",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "{{public_ecom_auth_code}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_pkce",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "{{PUBLIC_ECOM_CODE_VERIFIER}}",
+									"type": "text"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket with Public Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_ecom_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=SiteGenesis&client_id={{public_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "SiteGenesis"
+								},
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Public Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_ecom_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-d60-wlensM\",\n  \"quantity\" : 2.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Public Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_ecom_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket with Public Client Ecom User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_ecom_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registered User • Private Client",
+			"item": [
+				{
+					"name": "NOT CURRENTLY WORKING - PLEASE USER A BROWSER - SLAS Authorize Private Registered User - Google",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 303\", function () {",
+									"    pm.response.to.have.status(303);",
+									"});",
+									"",
+									"code = pm.response.headers.get(\"Location\").split('&').pop().substring(5);",
+									"pm.environment.set(\"prd_private_registered_auth_code\", code);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/authorize?client_id={{private_client_id}}&channel_id=SiteGenesis&redirect_uri=https://prd.us.shopper.commercecloud.salesforce.com/api/v1/idp/callback/Google&hint=Google",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{private_client_id}}"
+								},
+								{
+									"key": "channel_id",
+									"value": "SiteGenesis"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "https://prd.us.shopper.commercecloud.salesforce.com/api/v1/idp/callback/Google"
+								},
+								{
+									"key": "hint",
+									"value": "Google"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SLAS - Private Client - Registered User - Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"private_registered_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "{{private_client_secret}}",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "{{private_client_id}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "UpxXzZWSvRZ8SUtm2GHdr56OvMwmTmRJokzZ51jysE8",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket with Private Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=SiteGenesis&client_id={{private_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "SiteGenesis"
+								},
+								{
+									"key": "client_id",
+									"value": "{{private_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Private Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-d40-wlensM\",\n  \"quantity\" : 5.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Private Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_ecom_user_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket with Private Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{private_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Registered User • Public Client",
+			"item": [
+				{
+					"name": "SLAS -  Public Client - Registered User - Authorize",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"function generateCodeVerifier() {",
+									"    return generateRandomString(96);",
+									"}",
+									"",
+									"function generateRandomString(length) {",
+									"    var text = \"\";",
+									"    var possible = \"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\";",
+									"    for (var i = 0; i < length; i++) {",
+									"        text += possible.charAt(Math.floor(Math.random() * possible.length));",
+									"    }",
+									"    return text;",
+									"}",
+									"",
+									"function generateCodeChallenge(code_verifier) {",
+									"    return CryptoJS.SHA256(code_verifier);",
+									"}",
+									"",
+									"function base64URL(string) {",
+									"    return string.toString(CryptoJS.enc.Base64).replace(/=/g, '').replace(/\\+/g, '-').replace(/\\//g, '_')",
+									"}",
+									"",
+									"var verifier = base64URL(generateCodeVerifier());",
+									"var challenge = base64URL(generateCodeChallenge(verifier));",
+									"",
+									"pm.collectionVariables.set(\"PUBLIC_GUEST_CODE_VERIFIER\", verifier);",
+									"pm.collectionVariables.set(\"PUBLIC_GUEST_CODE_CHALLENGE\", challenge);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 303\", function () {",
+									"    pm.response.to.have.status(303);",
+									"});",
+									"",
+									"code = pm.response.headers.get(\"Location\").split('&').pop().substring(5);",
+									"pm.environment.set(\"public_registered_auth_code\", code);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/authorize?client_id={{public_client_id}}&redirect_uri={{redirect_url}}&hint=guest&channel_id=RefArch&code_challenge={{PUBLIC_GUEST_CODE_CHALLENGE}}",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"authorize"
+							],
+							"query": [
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}"
+								},
+								{
+									"key": "hint",
+									"value": "guest"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch"
+								},
+								{
+									"key": "code_challenge",
+									"value": "{{PUBLIC_GUEST_CODE_CHALLENGE}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SLAS - Public Client - Registered User - Access Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"public_registered_access_token\", jsonBody.access_token);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "code",
+									"value": "{{public_registered_auth_code}}",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "authorization_code_pkce",
+									"type": "text"
+								},
+								{
+									"key": "redirect_uri",
+									"value": "{{redirect_url}}",
+									"type": "text"
+								},
+								{
+									"key": "channel_id",
+									"value": "RefArch",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}",
+									"type": "text"
+								},
+								{
+									"key": "code_verifier",
+									"value": "{{PUBLIC_GUEST_CODE_VERIFIER}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{host}}{{base_uri}}{{tenant_id}}/oauth2/token",
+							"host": [
+								"{{host}}{{base_uri}}{{tenant_id}}"
+							],
+							"path": [
+								"oauth2",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Basket with Public Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"var jsonBody= pm.response.json();",
+									"pm.environment.set(\"basket_id\", jsonBody.basket_id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "{{slas_guest_jwt}}",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets?siteId=RefArch&client_id={{public_client_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets"
+							],
+							"query": [
+								{
+									"key": "siteId",
+									"value": "RefArch"
+								},
+								{
+									"key": "client_id",
+									"value": "{{public_client_id}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add item to basket with Public Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const context = pm.environment.name ? pm.environment : pm.collectionVariables;",
+									"",
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n  \"product_id\" : \"nikon-f700-bodyM\",\n  \"quantity\" : 5.00\n}]"
+						},
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}/items",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}",
+								"items"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Basket with Private Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Basket with Public Client Registered User",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {",
+									"    pm.response.to.have.status(204);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{public_registered_access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ocapi_uri}}/s/{{ocapi_site}}/dw/shop/v20_8/baskets/{{basket_id}}",
+							"host": [
+								"{{ocapi_uri}}"
+							],
+							"path": [
+								"s",
+								"{{ocapi_site}}",
+								"dw",
+								"shop",
+								"v20_8",
+								"baskets",
+								"{{basket_id}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "PUBLIC_GUEST_CODE_VERIFIER",
+			"value": "BCk5xVNYdHzlJbMT3YPPKA8jnh5FydKP5mvFWhZQqP7jKK6eCsfkzAludSFYXI3NcicdVqFue3rIVtOBCnYH9r66hZOJQemO"
+		},
+		{
+			"key": "PUBLIC_GUEST_CODE_CHALLENGE",
+			"value": "nAM0wbvG2_fbZIVMR2XwM2L20VscrUHCTY1jaPkiooI"
+		},
+		{
+			"key": "ECOM_USER_CODE_VERIFIER",
+			"value": ""
+		},
+		{
+			"key": "ECOM_USER_CODE_CHALLENGE",
+			"value": ""
+		},
+		{
+			"key": "PUBLIC_ECOM_CODE_CHALLENGE",
+			"value": ""
+		},
+		{
+			"key": "PUBLIC_ECOM_CODE_VERIFIER",
+			"value": ""
+		},
+		{
+			"key": "HOST",
+			"value": "The host to the SLAS service. Should include https://"
+		}
+	]
+}

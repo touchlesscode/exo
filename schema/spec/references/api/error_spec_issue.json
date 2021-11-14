@@ -1,0 +1,24 @@
+{
+	"type": "object",
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "error_issue",
+	"description": "An issue associated with an error. An issue corresponds to common `error_detail.json`.",
+	"properties": 
+	{
+		"id": 
+		{
+			"type": "string",
+			"description": "The ID for the issue."
+		},
+		"issue": 
+		{
+			"$ref": "error_issue.json",
+			"description": "Use the Java String Formatter syntax to format the issue as a parameterized string. Localize the string. Stream the value out in error response from catalog's `error_details.json#issue`."
+		}
+	},
+	"required": 
+	[
+		"id",
+		"issue"
+	]
+}

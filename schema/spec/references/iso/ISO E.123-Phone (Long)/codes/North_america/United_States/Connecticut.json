@@ -1,0 +1,132 @@
+[
+    {
+        "city": "Ansonia",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Bridgeport",
+        "area_code": "203",
+        "dialing_code": "+1 203"
+    },
+    {
+        "city": "Bristol",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "Danbury",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Darien",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "East Haven",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Hartford",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "Meriden",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Middletown",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "Milford",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Naugatuck",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "New Britain",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "New Haven",
+        "area_code": "203",
+        "dialing_code": "+1 203"
+    },
+    {
+        "city": "New London",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "North Haven",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Norwalk",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Norwich",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "Shelton",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Stamford",
+        "area_code": "203",
+        "dialing_code": "+1 203"
+    },
+    {
+        "city": "Stratford",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Torrington",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "Trumbull",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Waterbury",
+        "area_code": "203",
+        "dialing_code": "+1 203"
+    },
+    {
+        "city": "West Hartford",
+        "area_code": "860",
+        "dialing_code": "+1 860"
+    },
+    {
+        "city": "West Haven",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    },
+    {
+        "city": "Westport",
+        "area_code": "475",
+        "dialing_code": "+1 475"
+    }
+]

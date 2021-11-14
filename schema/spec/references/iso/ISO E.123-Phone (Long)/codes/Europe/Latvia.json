@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Aizkraukle",
+        "area_code": "51",
+        "dialing_code": "+371 51"
+    },
+    {
+        "city": "Aluksne",
+        "area_code": "43",
+        "dialing_code": "+371 43"
+    },
+    {
+        "city": "Balvi",
+        "area_code": "45",
+        "dialing_code": "+371 45"
+    },
+    {
+        "city": "Bauska",
+        "area_code": "39",
+        "dialing_code": "+371 39"
+    },
+    {
+        "city": "Cesis",
+        "area_code": "41",
+        "dialing_code": "+371 41"
+    },
+    {
+        "city": "Daugavpils",
+        "area_code": "54",
+        "dialing_code": "+371 54"
+    },
+    {
+        "city": "Dobele",
+        "area_code": "37",
+        "dialing_code": "+371 37"
+    },
+    {
+        "city": "Gulbene",
+        "area_code": "44",
+        "dialing_code": "+371 44"
+    },
+    {
+        "city": "Jekabpils",
+        "area_code": "52",
+        "dialing_code": "+371 52"
+    },
+    {
+        "city": "Jelgava",
+        "area_code": "30",
+        "dialing_code": "+371 30"
+    },
+    {
+        "city": "Kraslava",
+        "area_code": "56",
+        "dialing_code": "+371 56"
+    },
+    {
+        "city": "Kuldiga",
+        "area_code": "33",
+        "dialing_code": "+371 33"
+    },
+    {
+        "city": "Liepaja",
+        "area_code": "34",
+        "dialing_code": "+371 34"
+    },
+    {
+        "city": "Limbazi",
+        "area_code": "40",
+        "dialing_code": "+371 40"
+    },
+    {
+        "city": "Ludza",
+        "area_code": "57",
+        "dialing_code": "+371 57"
+    },
+    {
+        "city": "Madona",
+        "area_code": "48",
+        "dialing_code": "+371 48"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "61",
+        "dialing_code": "+371 61"
+    },
+    {
+        "city": "Ogre",
+        "area_code": "50",
+        "dialing_code": "+371 50"
+    },
+    {
+        "city": "Preili",
+        "area_code": "53",
+        "dialing_code": "+371 53"
+    },
+    {
+        "city": "Rezekne",
+        "area_code": "46",
+        "dialing_code": "+371 46"
+    },
+    {
+        "city": "Riga",
+        "area_code": "29",
+        "dialing_code": "+371 29"
+    },
+    {
+        "city": "Saldus",
+        "area_code": "38",
+        "dialing_code": "+371 38"
+    },
+    {
+        "city": "Talsi",
+        "area_code": "32",
+        "dialing_code": "+371 32"
+    },
+    {
+        "city": "Tukums",
+        "area_code": "31",
+        "dialing_code": "+371 31"
+    },
+    {
+        "city": "Valka",
+        "area_code": "47",
+        "dialing_code": "+371 47"
+    },
+    {
+        "city": "Valmiera",
+        "area_code": "42",
+        "dialing_code": "+371 42"
+    },
+    {
+        "city": "Ventspils",
+        "area_code": "36",
+        "dialing_code": "+371 36"
+    }
+]

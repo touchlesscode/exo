@@ -1,0 +1,47 @@
+[
+    {
+        "city": "Azuay",
+        "area_code": "7",
+        "dialing_code": "+593 7"
+    },
+    {
+        "city": "Bolyvar",
+        "area_code": "3",
+        "dialing_code": "+593 3"
+    },
+    {
+        "city": "Bolývar",
+        "area_code": "3",
+        "dialing_code": "+593 3"
+    },
+    {
+        "city": "Carchi",
+        "area_code": "6",
+        "dialing_code": "+593 6"
+    },
+    {
+        "city": "Guayaquil",
+        "area_code": "4",
+        "dialing_code": "+593 4"
+    },
+    {
+        "city": "Guayas (Guayaquil)",
+        "area_code": "4",
+        "dialing_code": "+593 4"
+    },
+    {
+        "city": "Los Rios",
+        "area_code": "5",
+        "dialing_code": "+593 5"
+    },
+    {
+        "city": "Pichincha (Quito)",
+        "area_code": "2",
+        "dialing_code": "+593 2"
+    },
+    {
+        "city": "Quito",
+        "area_code": "2",
+        "dialing_code": "+593 2"
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "city": "Bangkok",
+        "area_code": "2",
+        "dialing_code": "+66 2"
+    },
+    {
+        "city": "Burirum",
+        "area_code": "44",
+        "dialing_code": "+66 44"
+    },
+    {
+        "city": "Chanthaburi",
+        "area_code": "39",
+        "dialing_code": "+66 39"
+    },
+    {
+        "city": "Chiang Mai",
+        "area_code": "53",
+        "dialing_code": "+66 53"
+    },
+    {
+        "city": "Chiang Rai",
+        "area_code": "54",
+        "dialing_code": "+66 54"
+    },
+    {
+        "city": "Chon Buri",
+        "area_code": "38",
+        "dialing_code": "+66 38"
+    },
+    {
+        "city": "Kanchanaburi",
+        "area_code": "34",
+        "dialing_code": "+66 34"
+    },
+    {
+        "city": "Khon Kaen",
+        "area_code": "43",
+        "dialing_code": "+66 43"
+    },
+    {
+        "city": "Lampang",
+        "area_code": "54",
+        "dialing_code": "+66 54"
+    },
+    {
+        "city": "Nakhon Ratchasima",
+        "area_code": "44",
+        "dialing_code": "+66 44"
+    },
+    {
+        "city": "Nakhon Sawan",
+        "area_code": "56",
+        "dialing_code": "+66 56"
+    },
+    {
+        "city": "Namphaengphet",
+        "area_code": "55",
+        "dialing_code": "+66 55"
+    },
+    {
+        "city": "Nong Khai",
+        "area_code": "42",
+        "dialing_code": "+66 42"
+    },
+    {
+        "city": "Pattani",
+        "area_code": "73",
+        "dialing_code": "+66 73"
+    },
+    {
+        "city": "Pattaya",
+        "area_code": "38",
+        "dialing_code": "+66 38"
+    },
+    {
+        "city": "Pattaya City",
+        "area_code": "38",
+        "dialing_code": "+66 38"
+    },
+    {
+        "city": "Phitsanulok",
+        "area_code": "55",
+        "dialing_code": "+66 55"
+    },
+    {
+        "city": "Phuket",
+        "area_code": "76",
+        "dialing_code": "+66 76"
+    },
+    {
+        "city": "Ratchaburi",
+        "area_code": "32",
+        "dialing_code": "+66 32"
+    },
+    {
+        "city": "Saraburi",
+        "area_code": "36",
+        "dialing_code": "+66 36"
+    },
+    {
+        "city": "Songkhla",
+        "area_code": "74",
+        "dialing_code": "+66 74"
+    },
+    {
+        "city": "Surat Thani",
+        "area_code": "77",
+        "dialing_code": "+66 77"
+    },
+    {
+        "city": "Tak",
+        "area_code": "55",
+        "dialing_code": "+66 55"
+    },
+    {
+        "city": "Ubon Ratchathani",
+        "area_code": "45",
+        "dialing_code": "+66 45"
+    }
+]

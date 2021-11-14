@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Central area",
+        "area_code": "29",
+        "dialing_code": "+503 29"
+    },
+    {
+        "city": "Eastern area",
+        "area_code": "27",
+        "dialing_code": "+503 27"
+    },
+    {
+        "city": "Metropolitan area",
+        "area_code": "25",
+        "dialing_code": "+503 25"
+    },
+    {
+        "city": "San Salvador",
+        "area_code": "",
+        "dialing_code": "+503"
+    },
+    {
+        "city": "Santa Ana",
+        "area_code": "",
+        "dialing_code": "+503"
+    },
+    {
+        "city": "Western area",
+        "area_code": "28",
+        "dialing_code": "+503 28"
+    }
+]

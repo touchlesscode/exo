@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Casper",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    },
+    {
+        "city": "Cheyenne",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    },
+    {
+        "city": "Gillette",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    },
+    {
+        "city": "Laramie",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    },
+    {
+        "city": "Rock Springs",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    },
+    {
+        "city": "Sheridan",
+        "area_code": "307",
+        "dialing_code": "+1 307"
+    }
+]

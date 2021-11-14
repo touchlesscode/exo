@@ -1,0 +1,9 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Schema to represent a UUID per the format defined in RFC 4122 (https://tools.ietf.org/html/rfc4122).",
+    "type": "string",
+    "format": "paypal_common_uuid_v1",
+    "minLength": 36,
+    "maxLength": 36,
+    "pattern": "^[0-9a-zA-Z]{8}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{4}-[0-9a-zA-Z]{12}$"
+}

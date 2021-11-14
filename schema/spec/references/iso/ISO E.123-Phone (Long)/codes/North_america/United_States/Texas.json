@@ -1,0 +1,442 @@
+[
+    {
+        "city": "Abilene",
+        "area_code": "325",
+        "dialing_code": "+1 325"
+    },
+    {
+        "city": "Allen",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Amarillo",
+        "area_code": "806",
+        "dialing_code": "+1 806"
+    },
+    {
+        "city": "Arlington",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Austin",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Baytown",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Beaumont",
+        "area_code": "409",
+        "dialing_code": "+1 409"
+    },
+    {
+        "city": "Bedford",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Brownsville",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "Bryan",
+        "area_code": "979",
+        "dialing_code": "+1 979"
+    },
+    {
+        "city": "Burleson",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Carrollton",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Cedar Hill",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Cedar Park",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Channelview",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "College Station",
+        "area_code": "979",
+        "dialing_code": "+1 979"
+    },
+    {
+        "city": "Conroe",
+        "area_code": "936",
+        "dialing_code": "+1 936"
+    },
+    {
+        "city": "Corpus Christi",
+        "area_code": "361",
+        "dialing_code": "+1 361"
+    },
+    {
+        "city": "Dallas",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "DeSoto",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Deer Park",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Del Rio",
+        "area_code": "830",
+        "dialing_code": "+1 830"
+    },
+    {
+        "city": "Denton",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Duncanville",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Edinburg",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "El Paso",
+        "area_code": "915",
+        "dialing_code": "+1 915"
+    },
+    {
+        "city": "Euless",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Flower Mound",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Fort Worth",
+        "area_code": "682",
+        "dialing_code": "+1 682"
+    },
+    {
+        "city": "Friendswood",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Frisco",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Galveston",
+        "area_code": "409",
+        "dialing_code": "+1 409"
+    },
+    {
+        "city": "Garland",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Georgetown",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Grand Prairie",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Grapevine",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Haltom City",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Harlingen",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "Houston",
+        "area_code": "281",
+        "dialing_code": "+1 281"
+    },
+    {
+        "city": "Huntsville",
+        "area_code": "256",
+        "dialing_code": "+1 256"
+    },
+    {
+        "city": "Hurst",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Irving",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Keller",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "La Porte",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Lancaster",
+        "area_code": "661",
+        "dialing_code": "+1 661"
+    },
+    {
+        "city": "Laredo",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "League City",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Lewisville",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Longview",
+        "area_code": "903",
+        "dialing_code": "+1 903"
+    },
+    {
+        "city": "Lubbock",
+        "area_code": "806",
+        "dialing_code": "+1 806"
+    },
+    {
+        "city": "Lufkin",
+        "area_code": "936",
+        "dialing_code": "+1 936"
+    },
+    {
+        "city": "Mansfield",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "McAllen",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "McKinney",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Mesquite",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Midland",
+        "area_code": "432",
+        "dialing_code": "+1 432"
+    },
+    {
+        "city": "Mission",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "Missouri City",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Nacogdoches",
+        "area_code": "936",
+        "dialing_code": "+1 936"
+    },
+    {
+        "city": "New Braunfels",
+        "area_code": "830",
+        "dialing_code": "+1 830"
+    },
+    {
+        "city": "North Richland Hills",
+        "area_code": "817",
+        "dialing_code": "+1 817"
+    },
+    {
+        "city": "Odessa",
+        "area_code": "432",
+        "dialing_code": "+1 432"
+    },
+    {
+        "city": "Pasadena",
+        "area_code": "281",
+        "dialing_code": "+1 281"
+    },
+    {
+        "city": "Pflugerville",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Pharr",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "Plano",
+        "area_code": "214",
+        "dialing_code": "+1 214"
+    },
+    {
+        "city": "Port Arthur",
+        "area_code": "409",
+        "dialing_code": "+1 409"
+    },
+    {
+        "city": "Richardson",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Rockwall",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "Round Rock",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Rowlett",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "San Angelo",
+        "area_code": "325",
+        "dialing_code": "+1 325"
+    },
+    {
+        "city": "San Antonio",
+        "area_code": "210",
+        "dialing_code": "+1 210"
+    },
+    {
+        "city": "San Juan",
+        "area_code": "787",
+        "dialing_code": "+1 787"
+    },
+    {
+        "city": "San Marcos",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Spring",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Sugar Land",
+        "area_code": "713",
+        "dialing_code": "+1 713"
+    },
+    {
+        "city": "Temple",
+        "area_code": "254",
+        "dialing_code": "+1 254"
+    },
+    {
+        "city": "Texarkana",
+        "area_code": "430",
+        "dialing_code": "+1 430"
+    },
+    {
+        "city": "Texas City",
+        "area_code": "409",
+        "dialing_code": "+1 409"
+    },
+    {
+        "city": "The Colony",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    },
+    {
+        "city": "The Woodlands",
+        "area_code": "832",
+        "dialing_code": "+1 832"
+    },
+    {
+        "city": "Tyler",
+        "area_code": "903",
+        "dialing_code": "+1 903"
+    },
+    {
+        "city": "Victoria",
+        "area_code": "250",
+        "dialing_code": "+1 250"
+    },
+    {
+        "city": "Waco",
+        "area_code": "254",
+        "dialing_code": "+1 254"
+    },
+    {
+        "city": "Weslaco",
+        "area_code": "956",
+        "dialing_code": "+1 956"
+    },
+    {
+        "city": "Wichita Falls",
+        "area_code": "940",
+        "dialing_code": "+1 940"
+    },
+    {
+        "city": "Wylie",
+        "area_code": "972",
+        "dialing_code": "+1 972"
+    }
+]

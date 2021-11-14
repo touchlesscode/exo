@@ -1,0 +1,162 @@
+[
+    {
+        "city": "Ambalangoda",
+        "area_code": "97",
+        "dialing_code": "+94 97"
+    },
+    {
+        "city": "Ampara",
+        "area_code": "63 + 4 digits",
+        "dialing_code": "+94 63 + 4 digits"
+    },
+    {
+        "city": "Anuradhapura",
+        "area_code": "25 + 4 digits",
+        "dialing_code": "+94 25 + 4 digits"
+    },
+    {
+        "city": "Avissawella",
+        "area_code": "36 + 5 digits",
+        "dialing_code": "+94 36 + 5 digits"
+    },
+    {
+        "city": "Badulla",
+        "area_code": "55 + 4 digits",
+        "dialing_code": "+94 55 + 4 digits"
+    },
+    {
+        "city": "Bandarawella",
+        "area_code": "57 + 4 digits",
+        "dialing_code": "+94 57 + 4 digits"
+    },
+    {
+        "city": "Batticaloa",
+        "area_code": "65 + 4 digits",
+        "dialing_code": "+94 65 + 4 digits"
+    },
+    {
+        "city": "Chilaw",
+        "area_code": "32 + 4 digits",
+        "dialing_code": "+94 32 + 4 digits"
+    },
+    {
+        "city": "Colombo",
+        "area_code": "11",
+        "dialing_code": "+94 11"
+    },
+    {
+        "city": "Galle",
+        "area_code": "9 + 5 digits",
+        "dialing_code": "+94 9 + 5 digits"
+    },
+    {
+        "city": "Gampaha",
+        "area_code": "33 + 5 digits",
+        "dialing_code": "+94 33 + 5 digits"
+    },
+    {
+        "city": "Hambantota",
+        "area_code": "47 + 5 digits",
+        "dialing_code": "+94 47 + 5 digits"
+    },
+    {
+        "city": "Hatton",
+        "area_code": "51 + 5 digits",
+        "dialing_code": "+94 51 + 5 digits"
+    },
+    {
+        "city": "Jaffna",
+        "area_code": "21 + 4 digits",
+        "dialing_code": "+94 21 + 4 digits"
+    },
+    {
+        "city": "Kalmunai",
+        "area_code": "67 + 4 digits",
+        "dialing_code": "+94 67 + 4 digits"
+    },
+    {
+        "city": "Kalutara",
+        "area_code": "34 + 5 digits",
+        "dialing_code": "+94 34 + 5 digits"
+    },
+    {
+        "city": "Kandy",
+        "area_code": "8 + 6 digits",
+        "dialing_code": "+94 8 + 6 digits"
+    },
+    {
+        "city": "Katagastota",
+        "area_code": "8",
+        "dialing_code": "+94 8"
+    },
+    {
+        "city": "Kegalle",
+        "area_code": "35 + 4 digits",
+        "dialing_code": "+94 35 + 4 digits"
+    },
+    {
+        "city": "Kurunegala",
+        "area_code": "37 + 5 digits",
+        "dialing_code": "+94 37 + 5 digits"
+    },
+    {
+        "city": "Mannar",
+        "area_code": "23 + 4 digits",
+        "dialing_code": "+94 23 + 4 digits"
+    },
+    {
+        "city": "Matale",
+        "area_code": "66 + 4 digits",
+        "dialing_code": "+94 66 + 4 digits"
+    },
+    {
+        "city": "Mathara",
+        "area_code": "41 + 5 digits",
+        "dialing_code": "+94 41 + 5 digits"
+    },
+    {
+        "city": "Nawalapitiya",
+        "area_code": "542 + 4 digits",
+        "dialing_code": "+94 542 + 4 digits"
+    },
+    {
+        "city": "Negambo",
+        "area_code": "31 + 4 digits",
+        "dialing_code": "+94 31 + 4 digits"
+    },
+    {
+        "city": "Nuwara Eliya",
+        "area_code": "52 + 4 digits",
+        "dialing_code": "+94 52 + 4 digits"
+    },
+    {
+        "city": "Panadura",
+        "area_code": "34",
+        "dialing_code": "+94 34"
+    },
+    {
+        "city": "Polonnaruwa",
+        "area_code": "27 + 4 digits",
+        "dialing_code": "+94 27 + 4 digits"
+    },
+    {
+        "city": "Ratnapura",
+        "area_code": "45 + 4 digits",
+        "dialing_code": "+94 45 + 4 digits"
+    },
+    {
+        "city": "Sri Jayavardhanapura",
+        "area_code": "1",
+        "dialing_code": "+94 1"
+    },
+    {
+        "city": "Trincomalee",
+        "area_code": "26 + 5 digits",
+        "dialing_code": "+94 26 + 5 digits"
+    },
+    {
+        "city": "Vavuniya",
+        "area_code": "24 + 5 digits",
+        "dialing_code": "+94 24 + 5 digits"
+    }
+]

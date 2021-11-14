@@ -1,0 +1,27 @@
+[
+    {
+        "city": "Bata",
+        "area_code": "8",
+        "dialing_code": "+240 8"
+    },
+    {
+        "city": "Bata (Continent)",
+        "area_code": "8",
+        "dialing_code": "+240 8"
+    },
+    {
+        "city": "Malabo",
+        "area_code": "9",
+        "dialing_code": "+240 9"
+    },
+    {
+        "city": "Malabo (Bioko Island)",
+        "area_code": "9",
+        "dialing_code": "+240 9"
+    },
+    {
+        "city": "Malabo (Continent)",
+        "area_code": "7",
+        "dialing_code": "+240 7"
+    }
+]

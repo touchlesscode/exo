@@ -1,0 +1,222 @@
+[
+    {
+        "city": "'s-Hertogenbosch",
+        "area_code": "73",
+        "dialing_code": "+31 73"
+    },
+    {
+        "city": "Almere",
+        "area_code": "36",
+        "dialing_code": "+31 36"
+    },
+    {
+        "city": "Amersfoort",
+        "area_code": "33",
+        "dialing_code": "+31 33"
+    },
+    {
+        "city": "Amsterdam",
+        "area_code": "20",
+        "dialing_code": "+31 20"
+    },
+    {
+        "city": "Apeldoorn",
+        "area_code": "55",
+        "dialing_code": "+31 55"
+    },
+    {
+        "city": "Arnhem",
+        "area_code": "26",
+        "dialing_code": "+31 26"
+    },
+    {
+        "city": "Breda",
+        "area_code": "76",
+        "dialing_code": "+31 76"
+    },
+    {
+        "city": "Delft",
+        "area_code": "15",
+        "dialing_code": "+31 15"
+    },
+    {
+        "city": "Den Bosch",
+        "area_code": "73",
+        "dialing_code": "+31 73"
+    },
+    {
+        "city": "Denventer",
+        "area_code": "570",
+        "dialing_code": "+31 570"
+    },
+    {
+        "city": "Deventer",
+        "area_code": "570",
+        "dialing_code": "+31 570"
+    },
+    {
+        "city": "Dordrecht",
+        "area_code": "78",
+        "dialing_code": "+31 78"
+    },
+    {
+        "city": "Ede",
+        "area_code": "318",
+        "dialing_code": "+31 318"
+    },
+    {
+        "city": "Eindhoven",
+        "area_code": "40",
+        "dialing_code": "+31 40"
+    },
+    {
+        "city": "Emmen",
+        "area_code": "591",
+        "dialing_code": "+31 591"
+    },
+    {
+        "city": "Enschede",
+        "area_code": "53",
+        "dialing_code": "+31 53"
+    },
+    {
+        "city": "Groningen",
+        "area_code": "50",
+        "dialing_code": "+31 50"
+    },
+    {
+        "city": "Haarlem",
+        "area_code": "23",
+        "dialing_code": "+31 23"
+    },
+    {
+        "city": "Heemstede",
+        "area_code": "23",
+        "dialing_code": "+31 23"
+    },
+    {
+        "city": "Hillegersberg",
+        "area_code": "10",
+        "dialing_code": "+31 10"
+    },
+    {
+        "city": "Hilversum",
+        "area_code": "35",
+        "dialing_code": "+31 35"
+    },
+    {
+        "city": "Hoensbroek",
+        "area_code": "45",
+        "dialing_code": "+31 45"
+    },
+    {
+        "city": "Hoofddorp",
+        "area_code": "23",
+        "dialing_code": "+31 23"
+    },
+    {
+        "city": "Hoogkerk",
+        "area_code": "50",
+        "dialing_code": "+31 50"
+    },
+    {
+        "city": "Hoogvliet",
+        "area_code": "10",
+        "dialing_code": "+31 10"
+    },
+    {
+        "city": "Houten",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "IJsselstein",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "Leiden",
+        "area_code": "71",
+        "dialing_code": "+31 71"
+    },
+    {
+        "city": "Maastricht",
+        "area_code": "43",
+        "dialing_code": "+31 43"
+    },
+    {
+        "city": "Nieuwegein",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "Nijmegen",
+        "area_code": "24",
+        "dialing_code": "+31 24"
+    },
+    {
+        "city": "Oud Zuilen",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "Philipsburg",
+        "area_code": "",
+        "dialing_code": "+31"
+    },
+    {
+        "city": "Rotterdam",
+        "area_code": "10",
+        "dialing_code": "+31 10"
+    },
+    {
+        "city": "The Hague",
+        "area_code": "70",
+        "dialing_code": "+31 70"
+    },
+    {
+        "city": "The Hague (Den Haag)",
+        "area_code": "70",
+        "dialing_code": "+31 70"
+    },
+    {
+        "city": "Tilburg",
+        "area_code": "13",
+        "dialing_code": "+31 13"
+    },
+    {
+        "city": "Utrecht",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "Vught",
+        "area_code": "73",
+        "dialing_code": "+31 73"
+    },
+    {
+        "city": "Zaandam",
+        "area_code": "75",
+        "dialing_code": "+31 75"
+    },
+    {
+        "city": "Zeist",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    },
+    {
+        "city": "Zoetermeer",
+        "area_code": "79",
+        "dialing_code": "+31 79"
+    },
+    {
+        "city": "Zwolle",
+        "area_code": "38",
+        "dialing_code": "+31 38"
+    },
+    {
+        "city": "de Meern",
+        "area_code": "30",
+        "dialing_code": "+31 30"
+    }
+]

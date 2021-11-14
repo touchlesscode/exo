@@ -1,0 +1,132 @@
+[
+    {
+        "city": "Appleton",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Caledonia",
+        "area_code": "414",
+        "dialing_code": "+1 414"
+    },
+    {
+        "city": "De Pere",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Eau Claire",
+        "area_code": "715",
+        "dialing_code": "+1 715"
+    },
+    {
+        "city": "Fond du Lac",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Franklin",
+        "area_code": "414",
+        "dialing_code": "+1 414"
+    },
+    {
+        "city": "Green Bay",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Janesville",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Kaukauna",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Kenosha",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    },
+    {
+        "city": "La Crosse",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Madison",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Manitowoc",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Menomonee Falls",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    },
+    {
+        "city": "Middleton",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Milwaukee",
+        "area_code": "414",
+        "dialing_code": "+1 414"
+    },
+    {
+        "city": "Muskego",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    },
+    {
+        "city": "Neenah",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Oak Creek",
+        "area_code": "414",
+        "dialing_code": "+1 414"
+    },
+    {
+        "city": "Oshkosh",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Racine",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    },
+    {
+        "city": "Sheboygan",
+        "area_code": "920",
+        "dialing_code": "+1 920"
+    },
+    {
+        "city": "Sun Prairie",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Waukesha",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    },
+    {
+        "city": "Wauwatosa",
+        "area_code": "414",
+        "dialing_code": "+1 414"
+    },
+    {
+        "city": "West Bend",
+        "area_code": "262",
+        "dialing_code": "+1 262"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Belep",
+        "area_code": "47",
+        "dialing_code": "+687 47"
+    },
+    {
+        "city": "Boulouparis",
+        "area_code": "46",
+        "dialing_code": "+687 46"
+    },
+    {
+        "city": "Lifou",
+        "area_code": "45",
+        "dialing_code": "+687 45"
+    },
+    {
+        "city": "Noumea",
+        "area_code": "",
+        "dialing_code": "+687"
+    },
+    {
+        "city": "Noumya",
+        "area_code": "29",
+        "dialing_code": "+687 29"
+    },
+    {
+        "city": "Noumýa",
+        "area_code": "29",
+        "dialing_code": "+687 29"
+    }
+]

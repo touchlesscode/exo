@@ -1,0 +1,102 @@
+[
+    {
+        "city": "Biloxi",
+        "area_code": "228",
+        "dialing_code": "+1 228"
+    },
+    {
+        "city": "Brandon",
+        "area_code": "204",
+        "dialing_code": "+1 204"
+    },
+    {
+        "city": "Clinton",
+        "area_code": "270",
+        "dialing_code": "+1 270"
+    },
+    {
+        "city": "Columbus",
+        "area_code": "614",
+        "dialing_code": "+1 614"
+    },
+    {
+        "city": "Greenville",
+        "area_code": "662",
+        "dialing_code": "+1 662"
+    },
+    {
+        "city": "Greenwood",
+        "area_code": "662",
+        "dialing_code": "+1 662"
+    },
+    {
+        "city": "Gulfport",
+        "area_code": "228",
+        "dialing_code": "+1 228"
+    },
+    {
+        "city": "Hattiesburg",
+        "area_code": "769",
+        "dialing_code": "+1 769"
+    },
+    {
+        "city": "Jackson",
+        "area_code": "601",
+        "dialing_code": "+1 601"
+    },
+    {
+        "city": "Laurel",
+        "area_code": "601",
+        "dialing_code": "+1 601"
+    },
+    {
+        "city": "Long Beach",
+        "area_code": "562",
+        "dialing_code": "+1 562"
+    },
+    {
+        "city": "Madison",
+        "area_code": "608",
+        "dialing_code": "+1 608"
+    },
+    {
+        "city": "Meridian",
+        "area_code": "601",
+        "dialing_code": "+1 601"
+    },
+    {
+        "city": "Natchez",
+        "area_code": "601",
+        "dialing_code": "+1 601"
+    },
+    {
+        "city": "Ocean Springs",
+        "area_code": "228",
+        "dialing_code": "+1 228"
+    },
+    {
+        "city": "Oxford",
+        "area_code": "662",
+        "dialing_code": "+1 662"
+    },
+    {
+        "city": "Pascagoula",
+        "area_code": "228",
+        "dialing_code": "+1 228"
+    },
+    {
+        "city": "Starkville",
+        "area_code": "662",
+        "dialing_code": "+1 662"
+    },
+    {
+        "city": "Tupelo",
+        "area_code": "662",
+        "dialing_code": "+1 662"
+    },
+    {
+        "city": "Vicksburg",
+        "area_code": "769",
+        "dialing_code": "+1 769"
+    }
+]

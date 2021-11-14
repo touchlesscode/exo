@@ -1,0 +1,9 @@
+{
+    "$schema":"http://json-schema.org/draft-04/schema#",
+    "description": "The [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code.<blockquote><strong>Note:</strong> The country code for Great Britain is <code>GB</code> and not <code>UK</code> as is used in that country's top-level domain names.</blockquote>.  Note that PayPal adds the proprietary code <code>C2</code> for Chinese international transactions.",
+    "type": "string",
+    "format": "paypal_common_country_code_v1",
+    "maxLength": 2,
+    "minLength": 2,
+    "pattern": "^([A-Z]{2}|C2)$"
+}

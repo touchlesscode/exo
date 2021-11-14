@@ -1,0 +1,1287 @@
+[
+    {
+        "city": "Abenab",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Aminuis",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Anamulenge",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Andara",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Anker",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Aoba",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Arandis",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Aranos",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Aranos (party line)",
+        "area_code": "6642",
+        "dialing_code": "+264 6642"
+    },
+    {
+        "city": "Ariamsvlei",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Aroab",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Asab",
+        "area_code": "668",
+        "dialing_code": "+264 668"
+    },
+    {
+        "city": "Aus",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Babi",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Babi-Babi",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Bagani",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Bethanie",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Biermanskool",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Blue Sodalite Mine",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Blumfelde",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Bralano",
+        "area_code": "6642",
+        "dialing_code": "+264 6642"
+    },
+    {
+        "city": "Buitepos",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Bukalo",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Bulwana",
+        "area_code": "668",
+        "dialing_code": "+264 668"
+    },
+    {
+        "city": "Bunia",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Dawiab",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Deurstamp",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Dordabis",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Drimiopsis",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Edundja",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Eenhana",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ehomba",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Eland",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Elim",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Endola",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Epikuru",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Epupa",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Etanga",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Etosha Rurtel",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Etunda",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Feldschuhorn",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Friedental",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Gaibis",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Gam",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Gibeon",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Gibeon party line",
+        "area_code": "668",
+        "dialing_code": "+264 668"
+    },
+    {
+        "city": "Goageb",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Gobabis",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Gochas",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Grenslyn",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Groot ? Aub",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Grootfontein",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Grunau",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Guibis",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Haiyandja",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Hakasembe",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Halali",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Hamab",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Helmeringhausen",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Helmeringhausen (party line)",
+        "area_code": "6362",
+        "dialing_code": "+264 6362"
+    },
+    {
+        "city": "Henties Bay",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Hentiesbaai",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Hoachanas",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Hobas",
+        "area_code": "6342",
+        "dialing_code": "+264 6342"
+    },
+    {
+        "city": "Hochfeld",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Hochland",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Horabe",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Hosea Kutako INT Airport",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "K. Murangi",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Kahenge",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Kais",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Kalahariplaas",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Kalahariplaas ? Party Lines",
+        "area_code": "6642",
+        "dialing_code": "+264 6642"
+    },
+    {
+        "city": "Kalkfeld",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Kalkfeld (party lines)",
+        "area_code": "6642",
+        "dialing_code": "+264 6642"
+    },
+    {
+        "city": "Kalkrand",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Kamanjab",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Kaolo Otavi",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Karasburg",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Karibib",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Katima",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Katima-Mulilo",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Keetmanshoop",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Keetmanshoop (party line)",
+        "area_code": "638",
+        "dialing_code": "+264 638"
+    },
+    {
+        "city": "KhoriXas",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Klein Aub",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Klein Karas",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Klein Waterberg",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Koes",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Koes (party line)",
+        "area_code": "632532",
+        "dialing_code": "+264 632532"
+    },
+    {
+        "city": "Kombat",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Kongola",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Kumakams",
+        "area_code": "6638",
+        "dialing_code": "+264 6638"
+    },
+    {
+        "city": "Kunene River Lodge",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Kyes",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Köes",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Kýes",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Langstrand",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Leoburn",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Leonardville",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Lindequest",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Lorelei",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Luderitz",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Luderitz -Elizabeth Bay",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Lüderitz",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Mahanene",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Maltahohe",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Maltahohe (party line)",
+        "area_code": "6638",
+        "dialing_code": "+264 6638"
+    },
+    {
+        "city": "Mangetti duin",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Many Hills",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Marangi",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Mariental",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Mariental (party line)",
+        "area_code": "668",
+        "dialing_code": "+264 668"
+    },
+    {
+        "city": "Maroelaboom",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Mashare",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Matava",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Mobile Phones",
+        "area_code": "81",
+        "dialing_code": "+264 81"
+    },
+    {
+        "city": "Mokuti",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Mpacha",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Muveke",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Nakayale",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Namasvrede",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Namgorab",
+        "area_code": "6638",
+        "dialing_code": "+264 6638"
+    },
+    {
+        "city": "Namib Grens",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Namutoni",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Narubis",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Neudamm",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Nina",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Nkurenkuru",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Noordoewer",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Nouas",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Nudaus",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Nyangana",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Nzinze",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Oabis",
+        "area_code": "6342",
+        "dialing_code": "+264 6342"
+    },
+    {
+        "city": "Oamites",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Oamseb",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Obombo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Odibo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ogongo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ohandungu",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ohangwena",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okahandja",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Okahao",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okakarara",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Okalongo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okamatapati",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Okandjatu",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Okangwati",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okaputa",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Okatope",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okaukuejo",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Okorosave",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Okurusu",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Oluno",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Omafu",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Omaruru",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Omaruru (party line)",
+        "area_code": "628",
+        "dialing_code": "+264 628"
+    },
+    {
+        "city": "Omatjene",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Ombalantu",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ombika",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Ombotozu",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Omega",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Omitara",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Omitara (party line)",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Omungwelume",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Omuthya",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Onandjokwe",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Onathinge",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ondangwa",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ondjona",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Ondobe",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ondundu",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Onesi",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ongangdjera",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ongava",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Ongenga",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ongha",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Ongwediva",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Onuno",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Opuwo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oranjemund",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Orumana",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshakati",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshifo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshigambo",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshikango",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshikango Rurtel",
+        "area_code": "6751",
+        "dialing_code": "+264 6751"
+    },
+    {
+        "city": "Oshikuku",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshitayi",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Oshivello",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Otavi",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Otjerunda",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Otjihase",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Otjikondo",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Otjimbingwe",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Otjinene",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Otjiwa",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Otjiwarongo",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Otjondeka",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Otjozondu",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Otwani",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Outjo",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Ovitoto",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Panosa",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Plessisplaas",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Prosit",
+        "area_code": "658",
+        "dialing_code": "+264 658"
+    },
+    {
+        "city": "Rehoboth",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Rehoboth Station",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Rietfontein",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Rietoog",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Rosh Pinah",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Rossing Centrex",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Rossing Mine",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Ruacana",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Rundu",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Rupara",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Ruuga",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Ryssing Mine",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Rössing Mine",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Rýssing Mine",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Sandveld",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Schilp",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Seeheim",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Seeis",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Sesfontein",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Sikono",
+        "area_code": "66",
+        "dialing_code": "+264 66"
+    },
+    {
+        "city": "Sodalite",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Solitaire",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Sorris",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Sorris-Sorris",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Spatzenfeld",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Stampriet",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Steinhausen",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Stinkdoring",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Summerdown",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Swakopmund",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Toshari",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Tsandi",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Tsaobis",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Tses",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Tsumeb",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Tsumispark",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Tsumkwe",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Uchab",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Uhabis",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Uib",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Uis",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Usakos",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Vineta",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Walvis Bay",
+        "area_code": "64",
+        "dialing_code": "+264 64"
+    },
+    {
+        "city": "Warmbad",
+        "area_code": "63",
+        "dialing_code": "+264 63"
+    },
+    {
+        "city": "Warmquelle",
+        "area_code": "65",
+        "dialing_code": "+264 65"
+    },
+    {
+        "city": "Waterberg Plateau Park",
+        "area_code": "67",
+        "dialing_code": "+264 67"
+    },
+    {
+        "city": "Wilhemsthal",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    },
+    {
+        "city": "Windhoek",
+        "area_code": "61",
+        "dialing_code": "+264 61"
+    },
+    {
+        "city": "Witvlei",
+        "area_code": "62",
+        "dialing_code": "+264 62"
+    }
+]

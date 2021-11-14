@@ -1,0 +1,90 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Portable postal address",
+    "description": "Portable international postal address with medium-grained fields, which is the preferred successor to the international postal address. Maps to Google's open-source address metadata, [AddressValidationMetadata](https://github.com/googlei18n/libaddressinput/wiki/AddressValidationMetadata), and to [HTML 5.1](https://www.w3.org/TR/html51/semantics.html#attr-fe-autocomplete-street-address) auto-complete fields.",
+    "properties": {
+        "address_line_1": {
+            "type": "string",
+            "description": "Line 1 of the Address (eg. number, street, etc). Example: '173 Drury Lane'. Required for data entry. A[1] in i18napis and address-line1 in HTML5. Required for compliance and risk checks.  This should contain the full address line 1.",
+            "maxLength": 300
+        },
+        "address_line_2": {
+            "type": "string",
+            "description": "Optional line 2 of the Address (eg. suite, apt #, etc.). A[2] in i18napis and address-line2 in HTML5.1.",
+            "maxLength": 300
+        },
+        "address_line_3": {
+            "type": "string",
+            "description": "Optional Line 3 of the Address if needed. A[3] in i18napis, address-line3 in HTML5.1. Examples include Street Complement for Brazil, direction text such as 'next to Walmart' or landmark in Indian address.",
+            "maxLength": 300
+        },
+        "admin_area_4": {
+            "description": "May be neighborhood, ward or district. Smaller than admin_area_level_3. Smaller than sub_locality. May be X or (sort code) in i18napis and address-level4 in HTML5.1. Postal Sorting Code used in Guernsey, and many French territories such as French Guiana, and fine-grained administrative levels in China.",
+            "type": "string",
+            "maxLength": 300
+        },
+        "admin_area_3": {
+            "description": "Usually sub-locality, suburb, neighborhood, or district. Smaller than admin_area_level_2. D (dependant locality) in i18napis and address-level3 in HTML5.1. This could be suburb, or Bairro/Neighborhood in Brazil. In India, street name information is often not available, but a sublocality/district can be a very small area.",
+            "type": "string",
+            "maxLength": 300
+        },
+        "admin_area_2": {
+            "description": "Usually city, town or village. Smaller than admin_area_level_1. C (city) in i18napis and address-level2 in HTML5.1.",
+            "type": "string",
+            "maxLength": 300
+        },
+        "admin_area_1": {
+            "type": "string",
+            "description": "Usually corresponds to Province, State, or ISO-3166-2 subdivision. Highest level sub-division of a country. S (state/province) in i18napis and address-level1 in HTML5.1. This will be state in USA, province in Canada, prefecture in Japan, kanton in Switzerland, and may be county in UK. This would be expected to be the form that would appear in addresses formatted for postal delivery, e.g. 'CA' and not 'California'.  For full spelling and presentation forms of admin_area_2, use province.json",
+            "maxLength": 300
+        },
+        "postal_code": {
+            "type": "string",
+            "description": "Postal code. Z in i18napis and postal-code in HTML5.1.",
+            "maxLength": 60
+        },
+        "country_code": {
+            "$ref": "country_code.json"
+        },
+        "address_details": {
+            "type": "object",
+            "description": "Additional address details sometimes needed for compliance, risk, and other scenarios where fine-grain or high-resolution address information may be needed. Not portable with common 3rd party and opensource. Redundant with core fields. E.g., address_portable.address_line_1 is usually a combination of address_details.street_number + street_name + street_type.",
+            "properties": {
+                "street_number": {
+                    "description": "street number.",
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "street_name": {
+                    "description": "street name.  Just 'Drury' in 'Drury Lane'. If street type is not available from a address service, then this should contain both the street name and type as in 'Drury Lane'.",
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "street_type": {
+                    "description": "The street type of the address. 'Street', 'Lane', 'Boulevard', 'Court', etc.",
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "delivery_service": {
+                    "description": "Delivery service. Post Office Box, Bag number, Post Office Name.",
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "building_name": {
+                    "description": "Premise. The building name or number. Example: 'Craven House'. Named location, usually a building or collection of buildings with a common name.",
+                    "type": "string",
+                    "maxLength": 300
+                },
+                "sub_building": {
+                    "description": "Sub-premise. First-order entity below a named building or location, usually a singular building within a collection of buildings with a common name, or could be flat, storey, floor, unit number, room and/or apartment.",
+                    "type": "string",
+                    "maxLength": 300
+                }
+            }
+        }
+    },
+    "required": [
+        "country_code"
+    ]
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "city": "Abu Dhabi",
+        "area_code": "2",
+        "dialing_code": "+971 2"
+    },
+    {
+        "city": "Ajman",
+        "area_code": "6",
+        "dialing_code": "+971 6"
+    },
+    {
+        "city": "Al Ain",
+        "area_code": "3",
+        "dialing_code": "+971 3"
+    },
+    {
+        "city": "Aweir",
+        "area_code": "58",
+        "dialing_code": "+971 58"
+    },
+    {
+        "city": "Dhayd",
+        "area_code": "6",
+        "dialing_code": "+971 6"
+    },
+    {
+        "city": "Dibba",
+        "area_code": "9",
+        "dialing_code": "+971 9"
+    },
+    {
+        "city": "Dubai",
+        "area_code": "4",
+        "dialing_code": "+971 4"
+    },
+    {
+        "city": "Falaj-al-Moalla",
+        "area_code": "6",
+        "dialing_code": "+971 6"
+    },
+    {
+        "city": "Fujairah",
+        "area_code": "70",
+        "dialing_code": "+971 70"
+    },
+    {
+        "city": "Khawanij",
+        "area_code": "48",
+        "dialing_code": "+971 48"
+    },
+    {
+        "city": "Ras-al-Khaimah",
+        "area_code": "77",
+        "dialing_code": "+971 77"
+    },
+    {
+        "city": "Sharjah",
+        "area_code": "6",
+        "dialing_code": "+971 6"
+    },
+    {
+        "city": "Tarif",
+        "area_code": "88",
+        "dialing_code": "+971 88"
+    },
+    {
+        "city": "Umm-al-Qaiwain",
+        "area_code": "6",
+        "dialing_code": "+971 6"
+    }
+]

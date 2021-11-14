@@ -1,0 +1,37 @@
+[
+    {
+        "city": "Celje",
+        "area_code": "3",
+        "dialing_code": "+386 3"
+    },
+    {
+        "city": "Koper",
+        "area_code": "5",
+        "dialing_code": "+386 5"
+    },
+    {
+        "city": "Kranj",
+        "area_code": "4",
+        "dialing_code": "+386 4"
+    },
+    {
+        "city": "Ljubljana",
+        "area_code": "1",
+        "dialing_code": "+386 1"
+    },
+    {
+        "city": "Maribor",
+        "area_code": "2",
+        "dialing_code": "+386 2"
+    },
+    {
+        "city": "Novo mesto",
+        "area_code": "7",
+        "dialing_code": "+386 7"
+    },
+    {
+        "city": "Portoroz",
+        "area_code": "5",
+        "dialing_code": "+386 5"
+    }
+]

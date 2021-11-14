@@ -1,0 +1,87 @@
+[
+    {
+        "city": "Cheju",
+        "area_code": "64",
+        "dialing_code": "+82 64"
+    },
+    {
+        "city": "Chungcheongbuk-do",
+        "area_code": "43",
+        "dialing_code": "+82 43"
+    },
+    {
+        "city": "Chungcheongnam-do",
+        "area_code": "41",
+        "dialing_code": "+82 41"
+    },
+    {
+        "city": "Daejon",
+        "area_code": "42",
+        "dialing_code": "+82 42"
+    },
+    {
+        "city": "Gangwon-do",
+        "area_code": "33",
+        "dialing_code": "+82 33"
+    },
+    {
+        "city": "Gyeonggi-do",
+        "area_code": "31",
+        "dialing_code": "+82 31"
+    },
+    {
+        "city": "Gyeongsangbuk-do",
+        "area_code": "54",
+        "dialing_code": "+82 54"
+    },
+    {
+        "city": "Incheon",
+        "area_code": "32",
+        "dialing_code": "+82 32"
+    },
+    {
+        "city": "Jeju",
+        "area_code": "64",
+        "dialing_code": "+82 64"
+    },
+    {
+        "city": "Jeollabuk-do",
+        "area_code": "63",
+        "dialing_code": "+82 63"
+    },
+    {
+        "city": "Jeollanam-do",
+        "area_code": "61",
+        "dialing_code": "+82 61"
+    },
+    {
+        "city": "Kwangju",
+        "area_code": "62",
+        "dialing_code": "+82 62"
+    },
+    {
+        "city": "Kyongsangnamdo",
+        "area_code": "55",
+        "dialing_code": "+82 55"
+    },
+    {
+        "city": "Pusan",
+        "area_code": "51",
+        "dialing_code": "+82 51"
+    },
+    {
+        "city": "Seoul",
+        "area_code": "2",
+        "dialing_code": "+82 2"
+    },
+    {
+        "city": "Taegu",
+        "area_code": "53",
+        "dialing_code": "+82 53"
+    },
+    {
+        "city": "Ulsan",
+        "area_code": "52",
+        "dialing_code": "+82 52"
+    }
+]

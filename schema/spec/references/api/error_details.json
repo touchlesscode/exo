@@ -1,0 +1,25 @@
+{
+   "$schema":"http://json-schema.org/draft-04/schema#",
+   "type":"object",
+   "title":"PPaaS Error Details",
+   "description":"Error details.",
+   "properties":{
+      "field":{
+         "type":"string",
+         "description":"The field that caused the error. If the field is in the body, set this value to the JSON pointer to that field. Required for client-side errors."
+      },
+      "value":{
+         "type":"string",
+         "description":"The value of the field that caused the error."
+      },
+      "location":{
+         "type":"string",
+         "description":"The location of the field that caused the error. A valid value is `body`, `path`, or `query`. Default is `body`."
+      },
+      "issue":{
+         "type":"string",
+         "description":"The reason for the error."
+      }
+   },
+    "required" : ["issue"]
+}

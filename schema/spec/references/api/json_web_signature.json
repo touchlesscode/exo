@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A [JSON Web Signature](https://www.rfc-editor.org/rfc/rfc7515.txt) token used to represent signed content.",
+    "type": "string",
+    "format": "paypal_common_jws_v1",
+    "pattern": "([A-Za-z0-9_-]+)[.]([A-Za-z0-9_-]+)[.]([A-Za-z0-9_-]+)",
+    "minLength": 5
+}

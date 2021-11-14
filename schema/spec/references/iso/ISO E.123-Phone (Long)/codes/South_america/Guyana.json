@@ -1,0 +1,77 @@
+[
+    {
+        "city": "Anna Regina",
+        "area_code": "278",
+        "dialing_code": "+592 278"
+    },
+    {
+        "city": "Bartica",
+        "area_code": "455",
+        "dialing_code": "+592 455"
+    },
+    {
+        "city": "Cove & John",
+        "area_code": "229",
+        "dialing_code": "+592 229"
+    },
+    {
+        "city": "Georgetown",
+        "area_code": "223",
+        "dialing_code": "+592 223"
+    },
+    {
+        "city": "Ituni",
+        "area_code": "441",
+        "dialing_code": "+592 441"
+    },
+    {
+        "city": "Linden",
+        "area_code": "444",
+        "dialing_code": "+592 444"
+    },
+    {
+        "city": "Mabaruma",
+        "area_code": "777",
+        "dialing_code": "+592 777"
+    },
+    {
+        "city": "Mahaica",
+        "area_code": "228",
+        "dialing_code": "+592 228"
+    },
+    {
+        "city": "Mahaicony",
+        "area_code": "221",
+        "dialing_code": "+592 221"
+    },
+    {
+        "city": "New Amsterdam",
+        "area_code": "333",
+        "dialing_code": "+592 333"
+    },
+    {
+        "city": "New Hope",
+        "area_code": "266",
+        "dialing_code": "+592 266"
+    },
+    {
+        "city": "Rosignol",
+        "area_code": "330",
+        "dialing_code": "+592 330"
+    },
+    {
+        "city": "Timehri",
+        "area_code": "261",
+        "dialing_code": "+592 261"
+    },
+    {
+        "city": "Vreed-En-Hoop",
+        "area_code": "264",
+        "dialing_code": "+592 264"
+    },
+    {
+        "city": "Whim",
+        "area_code": "337",
+        "dialing_code": "+592 337"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "city": "Central Region",
+        "area_code": "5",
+        "dialing_code": "+228 5"
+    },
+    {
+        "city": "Kara",
+        "area_code": "6",
+        "dialing_code": "+228 6"
+    },
+    {
+        "city": "Lome",
+        "area_code": "2",
+        "dialing_code": "+228 2"
+    },
+    {
+        "city": "Lomy",
+        "area_code": "2",
+        "dialing_code": "+228 2"
+    },
+    {
+        "city": "Lomý",
+        "area_code": "2",
+        "dialing_code": "+228 2"
+    },
+    {
+        "city": "Maritime",
+        "area_code": "3",
+        "dialing_code": "+228 3"
+    },
+    {
+        "city": "Plateaux",
+        "area_code": "4",
+        "dialing_code": "+228 4"
+    },
+    {
+        "city": "Savannah",
+        "area_code": "7",
+        "dialing_code": "+228 7"
+    }
+]

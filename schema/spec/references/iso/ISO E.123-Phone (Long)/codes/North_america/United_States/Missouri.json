@@ -1,0 +1,107 @@
+[
+    {
+        "city": "Belton",
+        "area_code": "816",
+        "dialing_code": "+1 816"
+    },
+    {
+        "city": "Blue Springs",
+        "area_code": "816",
+        "dialing_code": "+1 816"
+    },
+    {
+        "city": "Cape Girardeau",
+        "area_code": "573",
+        "dialing_code": "+1 573"
+    },
+    {
+        "city": "Chesterfield",
+        "area_code": "636",
+        "dialing_code": "+1 636"
+    },
+    {
+        "city": "Columbia",
+        "area_code": "803",
+        "dialing_code": "+1 803"
+    },
+    {
+        "city": "Florissant",
+        "area_code": "314",
+        "dialing_code": "+1 314"
+    },
+    {
+        "city": "Independence",
+        "area_code": "816",
+        "dialing_code": "+1 816"
+    },
+    {
+        "city": "Jefferson City",
+        "area_code": "573",
+        "dialing_code": "+1 573"
+    },
+    {
+        "city": "Joplin",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Kansas City",
+        "area_code": "660",
+        "dialing_code": "+1 660"
+    },
+    {
+        "city": "Kirksville",
+        "area_code": "660",
+        "dialing_code": "+1 660"
+    },
+    {
+        "city": "Liberty",
+        "area_code": "816",
+        "dialing_code": "+1 816"
+    },
+    {
+        "city": "Nixa",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Ozark",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Rolla",
+        "area_code": "620",
+        "dialing_code": "+1 620"
+    },
+    {
+        "city": "Saint Charles",
+        "area_code": "636",
+        "dialing_code": "+1 636"
+    },
+    {
+        "city": "Sedalia",
+        "area_code": "303",
+        "dialing_code": "+1 303"
+    },
+    {
+        "city": "Sikeston",
+        "area_code": "573",
+        "dialing_code": "+1 573"
+    },
+    {
+        "city": "Springfield",
+        "area_code": "417",
+        "dialing_code": "+1 417"
+    },
+    {
+        "city": "Warrensburg",
+        "area_code": "660",
+        "dialing_code": "+1 660"
+    },
+    {
+        "city": "Wentzville",
+        "area_code": "636",
+        "dialing_code": "+1 636"
+    }
+]

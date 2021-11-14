@@ -1,0 +1,8 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A [JSON Web Encryption](https://www.rfc-editor.org/rfc/rfc7516.txt) token used to represent encrypted values.",
+    "type": "string",
+    "format": "paypal_common_jwe_v1",
+    "pattern": "([A-Za-z0-9_-]+)[.](([A-Za-z0-9_-]*)[.]){2}([A-Za-z0-9_-]+)[.]([A-Za-z0-9_-]*)",
+    "minLength": 6
+}

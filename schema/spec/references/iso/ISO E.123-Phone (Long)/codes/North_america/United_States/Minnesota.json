@@ -1,0 +1,127 @@
+[
+    {
+        "city": "Anoka",
+        "area_code": "763",
+        "dialing_code": "+1 763"
+    },
+    {
+        "city": "Austin",
+        "area_code": "512",
+        "dialing_code": "+1 512"
+    },
+    {
+        "city": "Blaine",
+        "area_code": "763",
+        "dialing_code": "+1 763"
+    },
+    {
+        "city": "Burnsville",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Champlin",
+        "area_code": "763",
+        "dialing_code": "+1 763"
+    },
+    {
+        "city": "Chanhassen",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Chaska",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Duluth",
+        "area_code": "218",
+        "dialing_code": "+1 218"
+    },
+    {
+        "city": "Eden Prairie",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Faribault",
+        "area_code": "507",
+        "dialing_code": "+1 507"
+    },
+    {
+        "city": "Hastings",
+        "area_code": "651",
+        "dialing_code": "+1 651"
+    },
+    {
+        "city": "Mankato",
+        "area_code": "507",
+        "dialing_code": "+1 507"
+    },
+    {
+        "city": "Minneapolis",
+        "area_code": "612",
+        "dialing_code": "+1 612"
+    },
+    {
+        "city": "Minnetonka",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Moorhead",
+        "area_code": "218",
+        "dialing_code": "+1 218"
+    },
+    {
+        "city": "Owatonna",
+        "area_code": "507",
+        "dialing_code": "+1 507"
+    },
+    {
+        "city": "Prior Lake",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Red Wing",
+        "area_code": "651",
+        "dialing_code": "+1 651"
+    },
+    {
+        "city": "Rochester",
+        "area_code": "585",
+        "dialing_code": "+1 585"
+    },
+    {
+        "city": "Saint Michael",
+        "area_code": "763",
+        "dialing_code": "+1 763"
+    },
+    {
+        "city": "Saint Paul",
+        "area_code": "651",
+        "dialing_code": "+1 651"
+    },
+    {
+        "city": "Savage",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Shakopee",
+        "area_code": "952",
+        "dialing_code": "+1 952"
+    },
+    {
+        "city": "Stillwater",
+        "area_code": "651",
+        "dialing_code": "+1 651"
+    },
+    {
+        "city": "Winona",
+        "area_code": "507",
+        "dialing_code": "+1 507"
+    }
+]

@@ -1,0 +1,137 @@
+[
+    {
+        "city": "Cherkassy",
+        "area_code": "47",
+        "dialing_code": "+380 47"
+    },
+    {
+        "city": "Chernigov",
+        "area_code": "46",
+        "dialing_code": "+380 46"
+    },
+    {
+        "city": "Chernivtsi",
+        "area_code": "3722",
+        "dialing_code": "+380 3722"
+    },
+    {
+        "city": "Dnepropetrovsk",
+        "area_code": "562",
+        "dialing_code": "+380 562"
+    },
+    {
+        "city": "Dniprodzerzhynsk",
+        "area_code": "56",
+        "dialing_code": "+380 56"
+    },
+    {
+        "city": "Donetsk",
+        "area_code": "62",
+        "dialing_code": "+380 62"
+    },
+    {
+        "city": "Ivano Frankivsk",
+        "area_code": "34",
+        "dialing_code": "+380 34"
+    },
+    {
+        "city": "Kharkov",
+        "area_code": "572",
+        "dialing_code": "+380 572"
+    },
+    {
+        "city": "Kherson",
+        "area_code": "55",
+        "dialing_code": "+380 55"
+    },
+    {
+        "city": "Khmelnitskiy",
+        "area_code": "38",
+        "dialing_code": "+380 38"
+    },
+    {
+        "city": "Kiev",
+        "area_code": "44",
+        "dialing_code": "+380 44"
+    },
+    {
+        "city": "Kirovograd",
+        "area_code": "52",
+        "dialing_code": "+380 52"
+    },
+    {
+        "city": "Kryvyi Rih",
+        "area_code": "564",
+        "dialing_code": "+380 564"
+    },
+    {
+        "city": "Lugansk",
+        "area_code": "642",
+        "dialing_code": "+380 642"
+    },
+    {
+        "city": "Lviv",
+        "area_code": "322",
+        "dialing_code": "+380 322"
+    },
+    {
+        "city": "Nikolaev",
+        "area_code": "51",
+        "dialing_code": "+380 51"
+    },
+    {
+        "city": "Odessa",
+        "area_code": "432",
+        "dialing_code": "+380 432"
+    },
+    {
+        "city": "Poltava",
+        "area_code": "53",
+        "dialing_code": "+380 53"
+    },
+    {
+        "city": "Rivne",
+        "area_code": "36",
+        "dialing_code": "+380 36"
+    },
+    {
+        "city": "Sevastopol",
+        "area_code": "69",
+        "dialing_code": "+380 69"
+    },
+    {
+        "city": "Simferopol",
+        "area_code": "652",
+        "dialing_code": "+380 652"
+    },
+    {
+        "city": "Sumy",
+        "area_code": "54",
+        "dialing_code": "+380 54"
+    },
+    {
+        "city": "Ternopil",
+        "area_code": "3522",
+        "dialing_code": "+380 3522"
+    },
+    {
+        "city": "Uman",
+        "area_code": "4744",
+        "dialing_code": "+380 4744"
+    },
+    {
+        "city": "Uzhgorod",
+        "area_code": "31",
+        "dialing_code": "+380 31"
+    },
+    {
+        "city": "Vinnitsa",
+        "area_code": "432",
+        "dialing_code": "+380 432"
+    },
+    {
+        "city": "Zaporozhye",
+        "area_code": "61",
+        "dialing_code": "+380 61"
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "city": "Fort Simpson",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Fort Smith",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Hay River",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Rae",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Slave Lake",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    },
+    {
+        "city": "Yellowknife",
+        "area_code": "867",
+        "dialing_code": "+1 867"
+    }
+]

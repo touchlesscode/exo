@@ -1,0 +1,317 @@
+[
+    {
+        "city": "Aba",
+        "area_code": "82",
+        "dialing_code": "+234 82"
+    },
+    {
+        "city": "Abakaliki",
+        "area_code": "43",
+        "dialing_code": "+234 43"
+    },
+    {
+        "city": "Abeokuta",
+        "area_code": "39",
+        "dialing_code": "+234 39"
+    },
+    {
+        "city": "Abuja",
+        "area_code": "9",
+        "dialing_code": "+234 9"
+    },
+    {
+        "city": "Ado Ekiti",
+        "area_code": "30",
+        "dialing_code": "+234 30"
+    },
+    {
+        "city": "Agbor",
+        "area_code": "55",
+        "dialing_code": "+234 55"
+    },
+    {
+        "city": "Ahoada",
+        "area_code": "86",
+        "dialing_code": "+234 86"
+    },
+    {
+        "city": "Akure",
+        "area_code": "34",
+        "dialing_code": "+234 34"
+    },
+    {
+        "city": "Asaba",
+        "area_code": "56",
+        "dialing_code": "+234 56"
+    },
+    {
+        "city": "Auchi",
+        "area_code": "57",
+        "dialing_code": "+234 57"
+    },
+    {
+        "city": "Awka",
+        "area_code": "48",
+        "dialing_code": "+234 48"
+    },
+    {
+        "city": "Azare",
+        "area_code": "71",
+        "dialing_code": "+234 71"
+    },
+    {
+        "city": "Badagry",
+        "area_code": "1",
+        "dialing_code": "+234 1"
+    },
+    {
+        "city": "Bauchi",
+        "area_code": "77",
+        "dialing_code": "+234 77"
+    },
+    {
+        "city": "Benin",
+        "area_code": "52",
+        "dialing_code": "+234 52"
+    },
+    {
+        "city": "Birnin",
+        "area_code": "68",
+        "dialing_code": "+234 68"
+    },
+    {
+        "city": "Birnin-Kebbi",
+        "area_code": "68",
+        "dialing_code": "+234 68"
+    },
+    {
+        "city": "Calabar",
+        "area_code": "87",
+        "dialing_code": "+234 87"
+    },
+    {
+        "city": "Damaturu",
+        "area_code": "74",
+        "dialing_code": "+234 74"
+    },
+    {
+        "city": "Edo",
+        "area_code": "52",
+        "dialing_code": "+234 52"
+    },
+    {
+        "city": "Enugu",
+        "area_code": "42",
+        "dialing_code": "+234 42"
+    },
+    {
+        "city": "Gombe",
+        "area_code": "72",
+        "dialing_code": "+234 72"
+    },
+    {
+        "city": "Gusau",
+        "area_code": "63",
+        "dialing_code": "+234 63"
+    },
+    {
+        "city": "Hadejia",
+        "area_code": "78",
+        "dialing_code": "+234 78"
+    },
+    {
+        "city": "Ibadan",
+        "area_code": "2",
+        "dialing_code": "+234 2"
+    },
+    {
+        "city": "Ijebu Ode",
+        "area_code": "37",
+        "dialing_code": "+234 37"
+    },
+    {
+        "city": "Ikare",
+        "area_code": "50",
+        "dialing_code": "+234 50"
+    },
+    {
+        "city": "Ile Ife",
+        "area_code": "36",
+        "dialing_code": "+234 36"
+    },
+    {
+        "city": "Ilorin",
+        "area_code": "31",
+        "dialing_code": "+234 31"
+    },
+    {
+        "city": "Jalingo",
+        "area_code": "79",
+        "dialing_code": "+234 79"
+    },
+    {
+        "city": "Jos",
+        "area_code": "73",
+        "dialing_code": "+234 73"
+    },
+    {
+        "city": "Kaduna",
+        "area_code": "62",
+        "dialing_code": "+234 62"
+    },
+    {
+        "city": "Kafanchau",
+        "area_code": "61",
+        "dialing_code": "+234 61"
+    },
+    {
+        "city": "Kano",
+        "area_code": "64",
+        "dialing_code": "+234 64"
+    },
+    {
+        "city": "Kano Nigeria",
+        "area_code": "64",
+        "dialing_code": "+234 64"
+    },
+    {
+        "city": "Katsina",
+        "area_code": "65",
+        "dialing_code": "+234 65"
+    },
+    {
+        "city": "Kontagora",
+        "area_code": "67",
+        "dialing_code": "+234 67"
+    },
+    {
+        "city": "Lafia",
+        "area_code": "47",
+        "dialing_code": "+234 47"
+    },
+    {
+        "city": "Lagos",
+        "area_code": "1",
+        "dialing_code": "+234 1"
+    },
+    {
+        "city": "Lokoja",
+        "area_code": "58",
+        "dialing_code": "+234 58"
+    },
+    {
+        "city": "Maiduguri",
+        "area_code": "76",
+        "dialing_code": "+234 76"
+    },
+    {
+        "city": "Makurdi",
+        "area_code": "44",
+        "dialing_code": "+234 44"
+    },
+    {
+        "city": "Minna",
+        "area_code": "66",
+        "dialing_code": "+234 66"
+    },
+    {
+        "city": "New Bussa",
+        "area_code": "33",
+        "dialing_code": "+234 33"
+    },
+    {
+        "city": "Niger Sate",
+        "area_code": "66",
+        "dialing_code": "+234 66"
+    },
+    {
+        "city": "Ogoja",
+        "area_code": "45",
+        "dialing_code": "+234 45"
+    },
+    {
+        "city": "Okitipupa",
+        "area_code": "59",
+        "dialing_code": "+234 59"
+    },
+    {
+        "city": "Onitsha",
+        "area_code": "46",
+        "dialing_code": "+234 46"
+    },
+    {
+        "city": "Oshogbo",
+        "area_code": "35",
+        "dialing_code": "+234 35"
+    },
+    {
+        "city": "Owerri",
+        "area_code": "83",
+        "dialing_code": "+234 83"
+    },
+    {
+        "city": "Owo",
+        "area_code": "51",
+        "dialing_code": "+234 51"
+    },
+    {
+        "city": "Oyo",
+        "area_code": "38",
+        "dialing_code": "+234 38"
+    },
+    {
+        "city": "Pank Shin",
+        "area_code": "70",
+        "dialing_code": "+234 70"
+    },
+    {
+        "city": "Port Harcourt",
+        "area_code": "84",
+        "dialing_code": "+234 84"
+    },
+    {
+        "city": "Sapele",
+        "area_code": "54",
+        "dialing_code": "+234 54"
+    },
+    {
+        "city": "Sokobo",
+        "area_code": "60",
+        "dialing_code": "+234 60"
+    },
+    {
+        "city": "Umuahia",
+        "area_code": "88",
+        "dialing_code": "+234 88"
+    },
+    {
+        "city": "Uyo",
+        "area_code": "85",
+        "dialing_code": "+234 85"
+    },
+    {
+        "city": "Warri",
+        "area_code": "53",
+        "dialing_code": "+234 53"
+    },
+    {
+        "city": "Wukari",
+        "area_code": "41",
+        "dialing_code": "+234 41"
+    },
+    {
+        "city": "Yenegoa",
+        "area_code": "89",
+        "dialing_code": "+234 89"
+    },
+    {
+        "city": "Yola",
+        "area_code": "75",
+        "dialing_code": "+234 75"
+    },
+    {
+        "city": "Zaria",
+        "area_code": "69",
+        "dialing_code": "+234 69"
+    }
+]

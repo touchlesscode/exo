@@ -1,0 +1,127 @@
+[
+    {
+        "city": "Akmola",
+        "area_code": "317",
+        "dialing_code": "+7 317"
+    },
+    {
+        "city": "Aktau",
+        "area_code": "329",
+        "dialing_code": "+7 329"
+    },
+    {
+        "city": "Aktjubinsk",
+        "area_code": "313",
+        "dialing_code": "+7 313"
+    },
+    {
+        "city": "Aktubinsk",
+        "area_code": "313",
+        "dialing_code": "+7 313"
+    },
+    {
+        "city": "Alma Ata",
+        "area_code": "327",
+        "dialing_code": "+7 327"
+    },
+    {
+        "city": "Almaty",
+        "area_code": "327",
+        "dialing_code": "+7 327"
+    },
+    {
+        "city": "Arkalyk",
+        "area_code": "330",
+        "dialing_code": "+7 330"
+    },
+    {
+        "city": "Astana",
+        "area_code": "717",
+        "dialing_code": "+7 717"
+    },
+    {
+        "city": "Atyrau",
+        "area_code": "312",
+        "dialing_code": "+7 312"
+    },
+    {
+        "city": "Baikonur",
+        "area_code": "73622",
+        "dialing_code": "+7 73622"
+    },
+    {
+        "city": "Karaganda",
+        "area_code": "321",
+        "dialing_code": "+7 321"
+    },
+    {
+        "city": "Kostanai",
+        "area_code": "314",
+        "dialing_code": "+7 314"
+    },
+    {
+        "city": "Kzyl Orda",
+        "area_code": "324",
+        "dialing_code": "+7 324"
+    },
+    {
+        "city": "Kzyl-Orda",
+        "area_code": "324",
+        "dialing_code": "+7 324"
+    },
+    {
+        "city": "Leninogorsk",
+        "area_code": "336",
+        "dialing_code": "+7 336"
+    },
+    {
+        "city": "Leninsk",
+        "area_code": "336",
+        "dialing_code": "+7 336"
+    },
+    {
+        "city": "Pavlodar",
+        "area_code": "318",
+        "dialing_code": "+7 318"
+    },
+    {
+        "city": "Petropavlovsk",
+        "area_code": "315",
+        "dialing_code": "+7 315"
+    },
+    {
+        "city": "Semipalatinsk",
+        "area_code": "322",
+        "dialing_code": "+7 322"
+    },
+    {
+        "city": "Shymkent",
+        "area_code": "325",
+        "dialing_code": "+7 325"
+    },
+    {
+        "city": "Taldykorgan",
+        "area_code": "328",
+        "dialing_code": "+7 328"
+    },
+    {
+        "city": "Uralsk",
+        "area_code": "311",
+        "dialing_code": "+7 311"
+    },
+    {
+        "city": "Ust-Kamenogorsk",
+        "area_code": "323",
+        "dialing_code": "+7 323"
+    },
+    {
+        "city": "Zhambyl",
+        "area_code": "326",
+        "dialing_code": "+7 326"
+    },
+    {
+        "city": "Zhezkazgan",
+        "area_code": "310",
+        "dialing_code": "+7 310"
+    }
+]

@@ -1,0 +1,407 @@
+[
+    {
+        "city": "\tAbrantes",
+        "area_code": "241",
+        "dialing_code": "+351 241"
+    },
+    {
+        "city": "Amadora",
+        "area_code": "21",
+        "dialing_code": "+351 21"
+    },
+    {
+        "city": "Angra do Heroysmo",
+        "area_code": "295",
+        "dialing_code": "+351 295"
+    },
+    {
+        "city": "Angra do Heroýsmo",
+        "area_code": "295",
+        "dialing_code": "+351 295"
+    },
+    {
+        "city": "Arganil",
+        "area_code": "235",
+        "dialing_code": "+351 235"
+    },
+    {
+        "city": "Aveiro",
+        "area_code": "234",
+        "dialing_code": "+351 234"
+    },
+    {
+        "city": "Beja",
+        "area_code": "284",
+        "dialing_code": "+351 284"
+    },
+    {
+        "city": "Braga",
+        "area_code": "253",
+        "dialing_code": "+351 253"
+    },
+    {
+        "city": "Braganca",
+        "area_code": "273",
+        "dialing_code": "+351 273"
+    },
+    {
+        "city": "Braganya",
+        "area_code": "273",
+        "dialing_code": "+351 273"
+    },
+    {
+        "city": "Braganýa",
+        "area_code": "273",
+        "dialing_code": "+351 273"
+    },
+    {
+        "city": "Caldar Da Rainha",
+        "area_code": "262",
+        "dialing_code": "+351 262"
+    },
+    {
+        "city": "Caldas da Raynha",
+        "area_code": "262",
+        "dialing_code": "+351 262"
+    },
+    {
+        "city": "Caldas da Raýnha",
+        "area_code": "262",
+        "dialing_code": "+351 262"
+    },
+    {
+        "city": "Cascais",
+        "area_code": "21",
+        "dialing_code": "+351 21"
+    },
+    {
+        "city": "Castelo Branco",
+        "area_code": "272",
+        "dialing_code": "+351 272"
+    },
+    {
+        "city": "Castro Verd",
+        "area_code": "286",
+        "dialing_code": "+351 286"
+    },
+    {
+        "city": "Castro Verde",
+        "area_code": "286",
+        "dialing_code": "+351 286"
+    },
+    {
+        "city": "Chaves",
+        "area_code": "276",
+        "dialing_code": "+351 276"
+    },
+    {
+        "city": "Coimbra",
+        "area_code": "239",
+        "dialing_code": "+351 239"
+    },
+    {
+        "city": "Covilha",
+        "area_code": "275",
+        "dialing_code": "+351 275"
+    },
+    {
+        "city": "Covilhy",
+        "area_code": "275",
+        "dialing_code": "+351 275"
+    },
+    {
+        "city": "Covilhý",
+        "area_code": "275",
+        "dialing_code": "+351 275"
+    },
+    {
+        "city": "Estremoz",
+        "area_code": "268",
+        "dialing_code": "+351 268"
+    },
+    {
+        "city": "Evora",
+        "area_code": "266",
+        "dialing_code": "+351 266"
+    },
+    {
+        "city": "Faro",
+        "area_code": "289",
+        "dialing_code": "+351 289"
+    },
+    {
+        "city": "Figueira da Foz",
+        "area_code": "233",
+        "dialing_code": "+351 233"
+    },
+    {
+        "city": "Funchal",
+        "area_code": "291",
+        "dialing_code": "+351 291"
+    },
+    {
+        "city": "Guarda",
+        "area_code": "271",
+        "dialing_code": "+351 271"
+    },
+    {
+        "city": "Horta",
+        "area_code": "292",
+        "dialing_code": "+351 292"
+    },
+    {
+        "city": "Idanha-a-Nova",
+        "area_code": "277",
+        "dialing_code": "+351 277"
+    },
+    {
+        "city": "Leiria",
+        "area_code": "244",
+        "dialing_code": "+351 244"
+    },
+    {
+        "city": "Lisboa",
+        "area_code": "21",
+        "dialing_code": "+351 21"
+    },
+    {
+        "city": "Lisbon",
+        "area_code": "21",
+        "dialing_code": "+351 21"
+    },
+    {
+        "city": "Mealhada",
+        "area_code": "231",
+        "dialing_code": "+351 231"
+    },
+    {
+        "city": "Mirandela",
+        "area_code": "278",
+        "dialing_code": "+351 278"
+    },
+    {
+        "city": "Moncorvo",
+        "area_code": "279",
+        "dialing_code": "+351 279"
+    },
+    {
+        "city": "Moura",
+        "area_code": "285",
+        "dialing_code": "+351 285"
+    },
+    {
+        "city": "Odemira",
+        "area_code": "283",
+        "dialing_code": "+351 283"
+    },
+    {
+        "city": "Penafiel",
+        "area_code": "255",
+        "dialing_code": "+351 255"
+    },
+    {
+        "city": "Peso da Rygua",
+        "area_code": "254",
+        "dialing_code": "+351 254"
+    },
+    {
+        "city": "Peso da Rýgua",
+        "area_code": "254",
+        "dialing_code": "+351 254"
+    },
+    {
+        "city": "Pombal",
+        "area_code": "236",
+        "dialing_code": "+351 236"
+    },
+    {
+        "city": "Ponta Delgada",
+        "area_code": "296",
+        "dialing_code": "+351 296"
+    },
+    {
+        "city": "Ponte de Syr",
+        "area_code": "242",
+        "dialing_code": "+351 242"
+    },
+    {
+        "city": "Ponte de Sýr",
+        "area_code": "242",
+        "dialing_code": "+351 242"
+    },
+    {
+        "city": "Portalegre",
+        "area_code": "245",
+        "dialing_code": "+351 245"
+    },
+    {
+        "city": "Portimao",
+        "area_code": "282",
+        "dialing_code": "+351 282"
+    },
+    {
+        "city": "Portimyo",
+        "area_code": "282",
+        "dialing_code": "+351 282"
+    },
+    {
+        "city": "Portimão",
+        "area_code": "282",
+        "dialing_code": "+351 282"
+    },
+    {
+        "city": "Portimýo",
+        "area_code": "282",
+        "dialing_code": "+351 282"
+    },
+    {
+        "city": "Porto",
+        "area_code": "22",
+        "dialing_code": "+351 22"
+    },
+    {
+        "city": "Proenya-a-Nova",
+        "area_code": "274",
+        "dialing_code": "+351 274"
+    },
+    {
+        "city": "Proenýa-a-Nova",
+        "area_code": "274",
+        "dialing_code": "+351 274"
+    },
+    {
+        "city": "S. Joyo da Madeira",
+        "area_code": "256",
+        "dialing_code": "+351 256"
+    },
+    {
+        "city": "S. Joýo da Madeira",
+        "area_code": "256",
+        "dialing_code": "+351 256"
+    },
+    {
+        "city": "Santarem",
+        "area_code": "243",
+        "dialing_code": "+351 243"
+    },
+    {
+        "city": "Santarym",
+        "area_code": "243",
+        "dialing_code": "+351 243"
+    },
+    {
+        "city": "Santarým",
+        "area_code": "243",
+        "dialing_code": "+351 243"
+    },
+    {
+        "city": "Santiago do Cacym",
+        "area_code": "269",
+        "dialing_code": "+351 269"
+    },
+    {
+        "city": "Santiago do Cacým",
+        "area_code": "269",
+        "dialing_code": "+351 269"
+    },
+    {
+        "city": "Seia",
+        "area_code": "238",
+        "dialing_code": "+351 238"
+    },
+    {
+        "city": "Setubal",
+        "area_code": "265",
+        "dialing_code": "+351 265"
+    },
+    {
+        "city": "Setybal",
+        "area_code": "265",
+        "dialing_code": "+351 265"
+    },
+    {
+        "city": "Setúbal",
+        "area_code": "265",
+        "dialing_code": "+351 265"
+    },
+    {
+        "city": "Setýbal",
+        "area_code": "265",
+        "dialing_code": "+351 265"
+    },
+    {
+        "city": "Tavira",
+        "area_code": "281",
+        "dialing_code": "+351 281"
+    },
+    {
+        "city": "Torres Novas",
+        "area_code": "249",
+        "dialing_code": "+351 249"
+    },
+    {
+        "city": "Torres Vedras",
+        "area_code": "261",
+        "dialing_code": "+351 261"
+    },
+    {
+        "city": "V. Franca de Xira",
+        "area_code": "263",
+        "dialing_code": "+351 263"
+    },
+    {
+        "city": "V. N. de Famalicyo",
+        "area_code": "252",
+        "dialing_code": "+351 252"
+    },
+    {
+        "city": "V. N. de Famalicýo",
+        "area_code": "252",
+        "dialing_code": "+351 252"
+    },
+    {
+        "city": "Valenya",
+        "area_code": "251",
+        "dialing_code": "+351 251"
+    },
+    {
+        "city": "Valenýa",
+        "area_code": "251",
+        "dialing_code": "+351 251"
+    },
+    {
+        "city": "Viana do Castelo",
+        "area_code": "258",
+        "dialing_code": "+351 258"
+    },
+    {
+        "city": "Vila Nova de Gaia",
+        "area_code": "22",
+        "dialing_code": "+351 22"
+    },
+    {
+        "city": "Vila Real",
+        "area_code": "259",
+        "dialing_code": "+351 259"
+    },
+    {
+        "city": "Viseu",
+        "area_code": "232",
+        "dialing_code": "+351 232"
+    },
+    {
+        "city": "yvora",
+        "area_code": "266",
+        "dialing_code": "+351 266"
+    },
+    {
+        "city": "Évora",
+        "area_code": "266",
+        "dialing_code": "+351 266"
+    },
+    {
+        "city": "ývora",
+        "area_code": "266",
+        "dialing_code": "+351 266"
+    }
+]

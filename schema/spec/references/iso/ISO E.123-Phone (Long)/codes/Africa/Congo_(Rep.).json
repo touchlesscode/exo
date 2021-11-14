@@ -1,0 +1,67 @@
+[
+    {
+        "city": "Bouenza",
+        "area_code": "25",
+        "dialing_code": "+242 25"
+    },
+    {
+        "city": "Brazzaville",
+        "area_code": "28",
+        "dialing_code": "+242 28"
+    },
+    {
+        "city": "Cuvette",
+        "area_code": "21",
+        "dialing_code": "+242 21"
+    },
+    {
+        "city": "Lekoumou",
+        "area_code": "25",
+        "dialing_code": "+242 25"
+    },
+    {
+        "city": "Likouala",
+        "area_code": "22",
+        "dialing_code": "+242 22"
+    },
+    {
+        "city": "Mobile Phones - CYRUS",
+        "area_code": "442",
+        "dialing_code": "+242 442"
+    },
+    {
+        "city": "Mobile Phones - Celtel Congo",
+        "area_code": "55",
+        "dialing_code": "+242 55"
+    },
+    {
+        "city": "Mobile Phones - Libertis Telecom",
+        "area_code": "67",
+        "dialing_code": "+242 67"
+    },
+    {
+        "city": "Niari",
+        "area_code": "25",
+        "dialing_code": "+242 25"
+    },
+    {
+        "city": "Plateaux",
+        "area_code": "24",
+        "dialing_code": "+242 24"
+    },
+    {
+        "city": "Pointe-Noire",
+        "area_code": "29",
+        "dialing_code": "+242 29"
+    },
+    {
+        "city": "Pool",
+        "area_code": "23",
+        "dialing_code": "+242 23"
+    },
+    {
+        "city": "Sangha",
+        "area_code": "22",
+        "dialing_code": "+242 22"
+    }
+]

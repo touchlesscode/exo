@@ -1,0 +1,197 @@
+[
+    {
+        "city": "Apex",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Asheville",
+        "area_code": "828",
+        "dialing_code": "+1 828"
+    },
+    {
+        "city": "Burlington",
+        "area_code": "905",
+        "dialing_code": "+1 905"
+    },
+    {
+        "city": "Cary",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Chapel Hill",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Charlotte",
+        "area_code": "704",
+        "dialing_code": "+1 704"
+    },
+    {
+        "city": "Concord",
+        "area_code": "603",
+        "dialing_code": "+1 603"
+    },
+    {
+        "city": "Durham",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Fayetteville",
+        "area_code": "910",
+        "dialing_code": "+1 910"
+    },
+    {
+        "city": "Garner",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Gastonia",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Goldsboro",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Greensboro",
+        "area_code": "336",
+        "dialing_code": "+1 336"
+    },
+    {
+        "city": "Greenville",
+        "area_code": "864",
+        "dialing_code": "+1 864"
+    },
+    {
+        "city": "Havelock",
+        "area_code": "252",
+        "dialing_code": "+1 252"
+    },
+    {
+        "city": "Hickory",
+        "area_code": "828",
+        "dialing_code": "+1 828"
+    },
+    {
+        "city": "High Point",
+        "area_code": "336",
+        "dialing_code": "+1 336"
+    },
+    {
+        "city": "Holly Springs",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Huntersville",
+        "area_code": "704",
+        "dialing_code": "+1 704"
+    },
+    {
+        "city": "Jacksonville",
+        "area_code": "904",
+        "dialing_code": "+1 904"
+    },
+    {
+        "city": "Kannapolis",
+        "area_code": "704",
+        "dialing_code": "+1 704"
+    },
+    {
+        "city": "Kernersville",
+        "area_code": "336",
+        "dialing_code": "+1 336"
+    },
+    {
+        "city": "Kinston",
+        "area_code": "252",
+        "dialing_code": "+1 252"
+    },
+    {
+        "city": "Lexington",
+        "area_code": "336",
+        "dialing_code": "+1 336"
+    },
+    {
+        "city": "Lumberton",
+        "area_code": "910",
+        "dialing_code": "+1 910"
+    },
+    {
+        "city": "Matthews",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Monroe",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Mooresville",
+        "area_code": "704",
+        "dialing_code": "+1 704"
+    },
+    {
+        "city": "New Bern",
+        "area_code": "252",
+        "dialing_code": "+1 252"
+    },
+    {
+        "city": "Raleigh",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Rocky Mount",
+        "area_code": "252",
+        "dialing_code": "+1 252"
+    },
+    {
+        "city": "Salisbury",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Sanford",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Shelby",
+        "area_code": "980",
+        "dialing_code": "+1 980"
+    },
+    {
+        "city": "Statesville",
+        "area_code": "704",
+        "dialing_code": "+1 704"
+    },
+    {
+        "city": "Thomasville",
+        "area_code": "336",
+        "dialing_code": "+1 336"
+    },
+    {
+        "city": "Wake Forest",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    },
+    {
+        "city": "Wilmington",
+        "area_code": "910",
+        "dialing_code": "+1 910"
+    },
+    {
+        "city": "Wilson",
+        "area_code": "919",
+        "dialing_code": "+1 919"
+    }
+]
