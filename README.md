@@ -4,9 +4,9 @@
 
 ## :hear_no_evil:  What's this about?
 EXO is the scaffolding required to make a more accessible world. It's comprised of a few key pieces:
-1. A lightweight smart loader
-2. A universal data schema
-3. A bottomless ReactJS web shell which connects to headless systems and APIs. 
+1. A universal data schema
+2. A lightweight smart loader to enable those with autism to use the web without frustration
+3. A bottomless ReactJS web shell which connects to headless systems and APIs 
 
 ## :zap: Roadmap
 ### Now:
