@@ -1,0 +1,27 @@
+```json
+{
+    "layout":"homePageLayout",
+    "regions":[
+        {
+            "id":"headerRegionHomePage"
+        },
+        {
+            "id":"megaMenuRegionHomePage"
+        },
+        {
+            "id":"footerRegionHomePage"
+        },
+        {
+            "id":"globalWidgetsRegion0"
+        }
+    ],
+    "route":"/home",
+    "isPreview":true,
+    "keywords":"",
+    "viewports":"",
+    "metaTags":[
+    ],
+    "description":"",
+    "title":"Commerce Cloud Site"
+}
+```

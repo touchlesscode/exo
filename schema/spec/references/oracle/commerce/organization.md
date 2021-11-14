@@ -1,0 +1,218 @@
+```json
+{
+    "taxReferenceNumber":"REFNUM123",
+    "organizationLogo":"/general/hero-image1.jpg",
+    "description":null,
+    "secondaryAddresses":[
+        {
+            "address":{
+                "country":"US",
+                "externalAddressId":"EXT_ADDR_1",
+                "types":[
+                    {
+                        "displayName":"Shipping",
+                        "repositoryId":"ss-10001",
+                        "id":"ss-10001"
+                    },
+                    {
+                        "displayName":"Billing",
+                        "repositoryId":"ss-10002",
+                        "id":"ss-10002"
+                    }
+                ],
+                "phoneNumber":"973-974-1234",
+                "address2":"Street 2",
+                "city":"Montgomery",
+                "address1":"600 Dexter Avenue",
+                "postalCode":"36130",
+                "companyName":"Oracle",
+                "repositoryId":"180003",
+                "state":"AL"
+            },
+            "addressType":"Office Address"
+        }
+    ],
+    "type":"none",
+    "derivedBillingAddress":{
+        "country":"US",
+        "types":[
+            {
+                "displayName":"Shipping",
+                "repositoryId":"ss-10001",
+                "id":"ss-10001"
+            },
+            {
+                "displayName":"Billing",
+                "repositoryId":"ss-10002",
+                "id":"ss-10002"
+            }
+        ],
+        "phoneNumber":"973-974-1234",
+        "address2":"Street 2",
+        "city":"Montgomery",
+        "address1":"600 Dexter Avenue",
+        "postalCode":"36130",
+        "companyName":"Oracle",
+        "repositoryId":"180003",
+        "state":"AL"
+    },
+    "customerType":"Standard",
+    "derivedShippingMethods":[
+        {
+            "displayName":"Shipping Method Name",
+            "repositoryId":"shippingMethodId1",
+            "id":"shippingMethodId1"
+        }
+    ],
+    "organizationLogoURL":"http://localhost:9080/file/general/hero-image1.jpg",
+    "members":[
+        {
+            "repositoryId":"110001"
+        }
+    ],
+    "paymentMethods":[
+        "card",
+        "cash"
+    ],
+    "links":[
+        {
+            "rel":"self",
+            "href":"http://localhost:8080/ccstore/v1/organizations/2100003"
+        }
+    ],
+    "id":"2100003",
+    "dunsNumber":"123456789",
+    "relativeRoles":[
+        {
+            "function":"admin",
+            "repositoryId":"100001",
+            "name":"Administrator",
+            "id":"100001"
+        },
+        {
+            "function":"buyer",
+            "repositoryId":"100001",
+            "name":"Administrator",
+            "id":"100001"
+        },
+        {
+            "function":"custom",
+            "repositoryId":"customOrganizationalRole",
+            "name":"Custom Organizational Role",
+            "id":"customOrganizationalRole"
+        }
+    ],
+    "shippingMethods":[
+        {
+            "id":"shippingMethodId1"
+        }
+    ],
+    "derivedUseAllPaymentMethodsFromSite":false,
+    "contract":{
+        "terms":{
+            "terms":"All copyright, trade marks, design rights, patents and other intellectual property rights (registered and unregistered) belong to Us Motor Works Contract",
+            "repositoryId":"100002"
+        },
+        "endDate":"2017-10-10T11:44:26.000Z",
+        "catalog":{
+            "repositoryId":"cloudCatalog"
+        },
+        "displayName":"Us Motor Works Contract",
+        "repositoryId":"100003",
+        "description":"This is a written or spoken agreement, especially one concerning employment, sales, or tenancy, that is intended to be enforceable by law.",
+        "priceListGroup":{
+            "repositoryId":"defaultPriceGroup"
+        },
+        "creationDate":"2016-04-01T09:34:50.000Z",
+        "startDate":"2016-10-10T11:44:26.000Z",
+        "externalContractReference":"UMWCUS001"
+    },
+    "active":true,
+    "vatReferenceNumber":"Vat123123",
+    "orderPriceLimit":"1000",
+    "dynamicProperty":"dynamicProperty value",
+    "derivedShippingAddress":{
+        "country":"US",
+        "externalAddressId":"EXT_ADDR_1",
+        "types":[
+            {
+                "displayName":"Shipping",
+                "repositoryId":"ss-10001",
+                "id":"ss-10001"
+            },
+            {
+                "displayName":"Billing",
+                "repositoryId":"ss-10002",
+                "id":"ss-10002"
+            }
+        ],
+        "phoneNumber":"973-974-1234",
+        "address2":"Street 2",
+        "city":"Montgomery",
+        "address1":"600 Dexter Avenue",
+        "postalCode":"36130",
+        "companyName":"Oracle",
+        "repositoryId":"180003",
+        "state":"AL"
+    },
+    "useAllShippingMethodsFromSite":false,
+    "derivedUseAllShippingMethodsFromSite":false,
+    "approvalRequired":true,
+    "useAllPaymentMethodsFromSite":false,
+    "derivedPaymentMethods":[
+        "card",
+        "cash"
+    ],
+    "repositoryId":"2100003",
+    "name":"Oracle",
+    "shippingAddress":{
+        "country":"US",
+        "externalAddressId":"EXT_ADDR_1",
+        "types":[
+            {
+                "displayName":"Shipping",
+                "repositoryId":"ss-10001",
+                "id":"ss-10001"
+            },
+            {
+                "displayName":"Billing",
+                "repositoryId":"ss-10002",
+                "id":"ss-10002"
+            }
+        ],
+        "phoneNumber":"973-974-1234",
+        "address2":"Street 2",
+        "city":"Montgomery",
+        "address1":"600 Dexter Avenue",
+        "postalCode":"36130",
+        "companyName":"Oracle",
+        "repositoryId":"180003",
+        "state":"AL"
+    },
+    "useExternalApprovalWebhook":false,
+    "billingAddress":{
+        "country":"US",
+        "types":[
+            {
+                "displayName":"Shipping",
+                "repositoryId":"ss-10001",
+                "id":"ss-10001"
+            },
+            {
+                "displayName":"Billing",
+                "repositoryId":"ss-10002",
+                "id":"ss-10002"
+            }
+        ],
+        "phoneNumber":"973-974-1234",
+        "address2":"Street 2",
+        "city":"Montgomery",
+        "address1":"600 Dexter Avenue",
+        "postalCode":"36130",
+        "companyName":"Oracle",
+        "repositoryId":"180003",
+        "state":"AL"
+    },
+    "uniqueId":"TestIDNumber"
+}
+```

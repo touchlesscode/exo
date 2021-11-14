@@ -1,0 +1,9 @@
+```json
+{
+    "pageView":{
+        "catalogId":"cloudLakeCatalog",
+        "id":"Product_35Fxy",
+        "type":"PRODUCT"
+    }
+}
+```

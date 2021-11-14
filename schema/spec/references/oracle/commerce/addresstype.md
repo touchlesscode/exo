@@ -1,0 +1,25 @@
+```json
+{
+    "total":3,
+    "totalResults":3,
+    "offset":0,
+    "limit":250,
+    "items":[
+        {
+            "displayName":"Home",
+            "repositoryId":"at300001",
+            "id":"at300001"
+        },
+        {
+            "displayName":"Shipping",
+            "repositoryId":"ss-10002",
+            "id":"ss-10002"
+        },
+        {
+            "displayName":"Billing",
+            "repositoryId":"ss-10002",
+            "id":"ss-10002"
+        }
+    ]
+}
+```
