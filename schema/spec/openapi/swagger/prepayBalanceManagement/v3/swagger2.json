@@ -1,0 +1,683 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Prepay Balance Management", 
+        "description": "This is Swagger UI environment generated for the TMF Enhancement to Prepay Balance Management API specification", 
+        "version": "3.0"
+    }, 
+    "host": "www.example.com", 
+    "basePath": "/tmf-api/PrepayBalanceManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+    		"/BalanceReserve":{
+	    		"post": {
+	                "operationId": "BalanceReserve",
+	                "summary": "creat BalanceReserve",
+	                "tags": [
+	                    "BalanceReserve"
+	                ],
+	                "parameters": [
+	                    {
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceReserve"
+	                        }, 
+	                        "required": true, 
+	                        "in": "body", 
+	                        "name": "thePost_BalanceReserve", 
+	                        "description": "The BalanceReserve to be created"
+	                    },
+	                ],
+	                "responses": {
+	                    "201": {
+	                        "description": "Created", 
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceReserve"
+	                       }
+	                    },
+	                    "400": {
+	                        "description": "Bad Request", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    },
+	                    "500": {
+	                        "description": "Internal Server Error", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    }
+	                },
+	            },
+    		 },
+    		"/BalanceUnreserve":{
+	    		"post": {
+	                "operationId": "BalanceUnreserve",
+	                "summary": "creat BalanceUnreserve",
+	                "tags": [
+	                    "BalanceUnreserve"
+	                ],
+	                "parameters": [
+	                    {
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceUnreserve"
+	                        }, 
+	                        "required": true, 
+	                        "in": "body", 
+	                        "name": "thePost_BalanceUnreserve", 
+	                        "description": "The BalanceUnreserve to be created"
+	                    },
+	                ],
+	                "responses": {
+	                    "201": {
+	                        "description": "Created", 
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceUnreserve"
+	                       }
+	                    },
+	                    "400": {
+	                        "description": "Bad Request", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    },
+	                    "500": {
+	                        "description": "Internal Server Error", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    }
+	                },
+	            },
+    		 },
+    		 "/BalanceDeduct":{
+	    		"post": {
+	                "operationId": "BalanceDeduct",
+	                "summary": "creat BalanceDeduct",
+	                "tags": [
+	                    "BalanceDeduct"
+	                ],
+	                "parameters": [
+	                    {
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceDeduct"
+	                        }, 
+	                        "required": true, 
+	                        "in": "body", 
+	                        "name": "thePost_BalanceDeduct", 
+	                        "description": "The BalanceDeduct to be created"
+	                    },
+	                ],
+	                "responses": {
+	                    "201": {
+	                        "description": "Created", 
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceDeduct"
+	                       }
+	                    },
+	                    "400": {
+	                        "description": "Bad Request", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    },
+	                    "500": {
+	                        "description": "Internal Server Error", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    }
+	                },
+	            },
+    		 },
+    		 "/BalanceDeductRollback":{
+	    		"post": {
+	                "operationId": "BalanceDeductRollback",
+	                "summary": "creat BalanceDeductRollback",
+	                "tags": [
+	                    "BalanceDeductRollback"
+	                ],
+	                "parameters": [
+	                    {
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceDeductRollback"
+	                        }, 
+	                        "required": true, 
+	                        "in": "body", 
+	                        "name": "thePost_BalanceDeductRollback", 
+	                        "description": "The BalanceDeductRollback to be created"
+	                    },
+	                ],
+	                "responses": {
+	                    "201": {
+	                        "description": "Created", 
+	                        "schema": {
+	                            "$ref": "#/definitions/BalanceDeductRollback"
+	                       }
+	                    },
+	                    "400": {
+	                        "description": "Bad Request", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    },
+	                    "500": {
+	                        "description": "Internal Server Error", 
+	                        "schema": {
+	                            "$ref": "#/definitions/Error"
+	                        }
+	                    }
+	                },
+	            },
+    		 },  
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+    },
+    "definitions": {
+    		 "BalanceDeductRollback": {
+            "type": "object",
+            "description": "The Rollback Balance Deduct task resource is a detailed description of rollback deduction operation. ",
+            "properties": {
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef",
+                    },
+                    "description": "Used to provide information about any other entity with relation to the operation",
+                },
+                "product": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductRef",
+                    },
+                    "description": "A reference to the product related to the bucket that is impacted by the balance related operation ",
+                },
+                "balanceDeduct": {
+                    "$ref": "#/definitions/BalanceDeductRef",
+                    "description": "A reference to the balanceDeduct that identifies the rollback balance deduct operation",
+                },
+                "partyAccount": {
+                    "$ref": "#/definitions/PartyAccountRef",
+                    "description": "A reference to the account that owns the bucket impacted by the balance related operation ",
+                },
+                "requestor": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Identifier for the user/customer/entity that performs the rollback deduct action ",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the rollback deduction  operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a rollback deduction",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the rollback deduct operation",
+                },
+                "requestedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the rollback deduction request was received in the server",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the rollback deduction operation ",
+                },
+            },
+            "required": [
+               "id",
+               "href" 
+            ],
+        },
+        "BalanceDeduct": {
+            "type": "object",
+            "description": "The Balance Deduct task resource is a detailed description of deduction operation. If balanceReserve Resource ID is contained in the deduct request message, the reserved balance will be performed deduct operation (if part of the reserved balance is deducted, the remain amount will be released); if balanceReserve Resource ID is not contained in the deduct request message, the balance will be deducted directly.",
+            "properties": {
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef",
+                    },
+                    "description": "Used to provide information about any other entity with relation to the operation",
+                },
+                "balanceReserve": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BalanceReserveRef",
+                    },
+                    "description": "A reference to the balanceReserve that identifies the balance reserve operation",
+                },
+                "partyAccount": {
+                    "$ref": "#/definitions/PartyAccountRef",
+                    "description": "A reference to the account that owns the bucket impacted by the balance related operation ",
+                },
+                "product": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductRef",
+                    },
+                    "description": "A reference to the product related to the bucket that is impacted by the balance related operation ",
+                },
+                "requestor": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Identifier for the user/customer/entity that performs the deduct action",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the deduction  operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a deduction",
+                },
+                "type": {
+                    "type": "string",
+                    "description": "A preconfigured value that describes a deduct type which determines the prepay balance bucket in which the deduct is done ",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the deduct  operation",
+                },
+                "requestedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the deduction request was received in the server",
+                },
+                "confirmationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the deduction was confirmed in the server",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the deduction operation",
+                },                
+            },
+        "required": [
+        	"id",
+        	"href",
+        	"balanceReserve"
+        	],
+        },
+        "BalanceReserve": {
+            "type": "object",
+            "description": "The Balance Reserve Operation resource is a detailed description of a balance reserve operation requested over a subscription",
+            "properties": {
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef",
+                    },
+                    "description": "Used to provide information about any other entity with relation to the operation",
+                },
+                "partyAccount": {
+                    "$ref": "#/definitions/PartyAccountRef",
+                    "description": "A reference to the account that owns the bucket impacted by the balance related operation",
+                },
+                "product": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductRef",
+                    },
+                    "description": "A reference to the product related to the bucket that is impacted by the balance related operation ",
+                },
+                "requestor": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Identifier for the user/customer/entity that performs the reserve action",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the reserve operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a reserve",
+                },
+                "type": {
+                    "type": "string",
+                    "description": "A preconfigured value that describes a reserve type which determines the prepay balance bucket in which the reserve is done (national-voice, roaming-voice, promotional-voice, data, ....)",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the reserve operation",
+                },
+                "reservedAmount": {
+                    "type": "string",
+                    "format": "QuantityType",
+                    "description": "Amount (can be monetary or non-monetary) to be reserved in the bucket",
+                },
+                "remainedAmount": {
+                    "type": "string",
+                    "format": "QuantityType",
+                    "description": "Amount (can be monetary or non-monetary) to be remained in the bucket",
+                },
+                "validFor": {
+                    "type": "string",
+                    "format": "TimePeriodType",
+                    "description": "The period defined for the reserved amount.",
+                },
+                "requestedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the reserve request was received in the server",
+                },
+                "confirmationDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the reserve was confirmed in the server",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the reserve operation. The value includes operation result code and result description.",
+                },
+                "isAutoDeduct": {
+                    "type": "boolean",
+                    "description": "Indicates if the reserved balance is auto deducted after a time period ",
+                },
+            },
+            "required": [
+               "id",
+               "href",
+               "reservedAmount" 
+            ],
+        },
+        "BalanceUnreserve": {
+            "type": "object",
+            "description": "The Balance Unreserve Operation resource is a detailed description of a balance unreserve operation requested over a subscription",
+            "properties": {
+                "balanceReserve": {
+                    "$ref": "#/definitions/BalanceReserveRef",
+                    "description": "A reference to the balancereserve that identifies the balance reserve operation",
+                },
+                "product": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductRef",
+                    },
+                    "description": "A reference to the product related to the bucket that is impacted by the balance related operation",
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef",
+                    },
+                    "description": "Used to provide information about any other entity with relation to the operation",
+                },
+                "requestor": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Identifier for the user/customer/entity that performs the unreserve action",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the unreserve operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a unreserve",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the unreserve operation",
+                },
+                "requestedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the unreserve request was received in the server",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the unreserve operation .The value includes operation result code and result description. ",
+                },
+            },
+            "required": [
+              "id",
+              "balanceReserve"  
+            ],
+        },
+        "BalanceDeductRef": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the deduction  operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a deduction",
+                },
+            },
+            "required": [
+             "id",
+             "href"   
+            ],
+        },
+        "BalanceReserveRef": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique Identifier within the server for the reserve operation request",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the detailed information about a reserve",
+                },
+            },
+            "required": [
+             "id",
+             "href"   
+            ],
+        },
+        "PartyAccountRef": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for the account entity ",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the account information",
+                },
+                "type": {
+                    "type": "string",
+                    "description": "",
+                },
+            },
+            "required": [
+             "id",
+             "href"   
+            ],
+        },
+        "ProductRef": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for the product entity ",
+                },
+                "href": {
+                    "type": "string",
+                    "description": " resource URI pointing to the resource in the OB that stores the product information",
+                },
+            },
+            "required": [
+             "id",
+             "href"   
+            ],
+        },
+        "RelatedPartyRef": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier for the account entity",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A resource URI pointing to the resource in the OB that stores the account information",
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role describing the relationship with the related element ",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the account",
+                },
+            },
+            "required": [
+             "id",
+             "href"   
+            ],
+        },
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        },
+    }
+}

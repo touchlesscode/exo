@@ -1,0 +1,3631 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Product Catalog Management", 
+        "description": "This is Swagger UI environment generated for the TMF Product Catalog Management specification", 
+        "version": "3.0"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/productCatalogManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/catalog": {
+            "get": {
+                "operationId": "listCatalog", 
+                "summary": "List or find 'Catalog' objects", 
+                "tags": [
+                    "catalog"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the catalog"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Indicates the (class) type of catalog. For entity catalogs, this will be 'EntityCatalog'."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: Indicates<b> </b>the base (class) type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Catalog version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Catalog"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/catalog/{id}": {
+            "get": {
+                "operationId": "retrieveCatalog", 
+                "summary": "Retrieves a 'Catalog' by Id", 
+                "tags": [
+                    "catalog"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Catalog"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Catalog"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/category": {
+            "get": {
+                "operationId": "listCategory", 
+                "summary": "List or find 'Category' objects", 
+                "tags": [
+                    "category"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "parentId", 
+                        "description": "For filtering: Unique identifier of the parent category"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isRoot", 
+                        "description": "For filtering: If true, this Boolean indicates that the category is a root of categories"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: the class type of the Category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: the base class type of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: link to the schema describing this category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "categories.version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "categories.name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "categories.@type", 
+                        "description": "For filtering: the class type of the Category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferings.name", 
+                        "description": "For filtering: Name of the product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferings.@type", 
+                        "description": "For filtering: the class type of the product offering"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Category"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/category/{id}": {
+            "get": {
+                "operationId": "retrieveCategory", 
+                "summary": "Retrieves a 'Category' by Id", 
+                "tags": [
+                    "category"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Category"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Category"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productOffering": {
+            "get": {
+                "operationId": "listProductOffering", 
+                "summary": "List or find 'ProductOffering' objects", 
+                "tags": [
+                    "productOffering"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the productOffering"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: isBundle determines whether a productOffering represents a single productOffering (false), or a bundle of productOfferings (true)."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: ProductOffering version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Class type of the product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: Immediate base (class) type of the product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this product offerring"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.name", 
+                        "description": "For filtering: A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.address", 
+                        "description": "For filtering: A string characterizing an address (for instance a formatted address or an identifier taken from an address database or an address API)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.@type", 
+                        "description": "For filtering: class type of the Place object"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.role", 
+                        "description": "For filtering: Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelAgreement.name", 
+                        "description": "For filtering: Name of the service level agreement"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelAgreement.@type", 
+                        "description": "For filtering: class type of Service Level Agreement"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecification.version", 
+                        "description": "For filtering: Version of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecification.name", 
+                        "description": "For filtering: Name of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecification.@type", 
+                        "description": "For filtering: class type of Product Specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "channel.name", 
+                        "description": "For filtering: Name of the channel"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "channel.@type", 
+                        "description": "For filtering: (Class) type of the channel like DistributionChannel, SalesChannel and so on"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceCandidate.version", 
+                        "description": "For filtering: Version of the service candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceCandidate.name", 
+                        "description": "For filtering: Name of the service candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceCandidate.@type", 
+                        "description": "For filtering: The Class type of Service Candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.type", 
+                        "description": "For filtering: Attachment type such as video, picture"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.url", 
+                        "description": "For filtering: Uniform Resource Locator, is a web page address (a subset of URI)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: Attachment mime type such as extension file for video, picture and document"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@type", 
+                        "description": "For filtering: the class type of the Attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@baseType", 
+                        "description": "For filtering: The immediate base class type of the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this attachment entity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.@type", 
+                        "description": "For filtering: the class type of the Category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.version", 
+                        "description": "For filtering: Version of the resource candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.name", 
+                        "description": "For filtering: Name of the resource candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.@type", 
+                        "description": "For filtering: The Class type of Resource Candidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.name", 
+                        "description": "For filtering: Name of the productOfferingTerm"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.@type", 
+                        "description": "For filtering: The class type of ProductOfferingTerm"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this product offering term"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "marketSegment.name", 
+                        "description": "For filtering: Name of the market segment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "marketSegment.@type", 
+                        "description": "For filtering: (Class) type of the market segment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.name", 
+                        "description": "For filtering: Name of the productOfferingPrice"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.priceType", 
+                        "description": "For filtering: Indicates the price type: recurring, one time, usage"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.unitOfMeasure", 
+                        "description": "For filtering: Could be minutes, GB..."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.recurringChargePeriod", 
+                        "description": "For filtering: Could be month, week..."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.version", 
+                        "description": "For filtering: ProductOffering version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.@type", 
+                        "description": "For filtering: The class type of the product offering price"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.@baseType", 
+                        "description": "For filtering: the immediate base class of product offering price"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.@schemaLocation", 
+                        "description": "For filtering: hyperlink reference to the product offering price schema"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingPrice.isBundle", 
+                        "description": "For filtering: a flag indicating if this product offering price is bundle (composite) or not"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "agreement.name", 
+                        "description": "For filtering: Name of the agreement"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "agreement.@type", 
+                        "description": "For filtering: class type of the Agreement"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledProductOffering.lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledProductOffering.name", 
+                        "description": "For filtering: Name of the BundledProductOffering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.name", 
+                        "description": "For filtering: Name of the associated productSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.minCardinality", 
+                        "description": "For filtering: The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.maxCardinality", 
+                        "description": "For filtering: The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductOffering"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productOffering/{id}": {
+            "get": {
+                "operationId": "retrieveProductOffering", 
+                "summary": "Retrieves a 'ProductOffering' by Id", 
+                "tags": [
+                    "productOffering"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Product Offering"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductOffering"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productOfferingPrice": {
+            "get": {
+                "operationId": "listProductOfferingPrice", 
+                "summary": "List or find 'ProductOfferingPrice' objects", 
+                "tags": [
+                    "productOfferingPrice"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the productOfferingPrice"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: ProductOffering version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "priceType", 
+                        "description": "For filtering: A category that describes the price, such as recurring, discount, allowance, penalty, and so forth."
+                    }, 
+                    {
+                        "name": "unitOfMeasure.value", 
+                        "format": "float", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "number", 
+                        "description": "For filtering: A positive floating point number"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "unitOfMeasure.unit", 
+                        "description": "For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "recurringChargePeriodType", 
+                        "description": "For filtering: The period to repeat the application of the price\nCould be month, week..."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "recurringChargePeriodLength", 
+                        "description": "For filtering: the period of the recurring charge:  1, 2, ... .It sets to zero if it is not applicable"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: The class type of this Product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: the immediate base class type of this product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: hyperlink reference to the schema describing this resource"
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: the last update time of this POP"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: A flag indicating if this POP is composite (bundle) or not"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: the lifecycle status of this POP"
+                    }, 
+                    {
+                        "name": "price.value", 
+                        "format": "float", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "number", 
+                        "description": "For filtering: A positive floating point number"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "price.unit", 
+                        "description": "For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+                    }, 
+                    {
+                        "name": "percentage", 
+                        "format": "float", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "number", 
+                        "description": "For filtering: Percentage to apply for ProdOfferPriceAlteration (Discount)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledPopRelationships.name", 
+                        "description": "For filtering: Name of  the associated product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledPopRelationships.@type", 
+                        "description": "For filtering: (Class) type of the associated product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "popRelationships.name", 
+                        "description": "For filtering: Name of  the associated product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "popRelationships.@type", 
+                        "description": "For filtering: (Class) type of the associated product offering"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.name", 
+                        "description": "For filtering: Name of the associated productSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.minCardinality", 
+                        "description": "For filtering: The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "prodSpecCharValueUse.maxCardinality", 
+                        "description": "For filtering: The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.name", 
+                        "description": "For filtering: Name of the productOfferingTerm"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.@type", 
+                        "description": "For filtering: The class type of ProductOfferingTerm"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productOfferingTerm.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this product offering term"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.name", 
+                        "description": "For filtering: A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.address", 
+                        "description": "For filtering: A string characterizing an address (for instance a formatted address or an identifier taken from an address database or an address API)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.@type", 
+                        "description": "For filtering: class type of the Place object"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.role", 
+                        "description": "For filtering: Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "constraint.version", 
+                        "description": "For filtering: constraint version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "constraint.name", 
+                        "description": "For filtering: Name given to the constraint"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "constraint.@type", 
+                        "description": "For filtering: The (class) type of the constraint"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "pricingLogicAlgorithm.name", 
+                        "description": "For filtering: Name given to the PLA"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "pricingLogicAlgorithm.plaSpecId", 
+                        "description": "For filtering: id of corresponding PLA specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "pricingLogicAlgorithm.@type", 
+                        "description": "For filtering: The class type of this PLA"
+                    }, 
+                    {
+                        "name": "tax.taxRate", 
+                        "format": "float", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "number", 
+                        "description": "For filtering: Tax rate"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductOfferingPrice"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productOfferingPrice/{id}": {
+            "get": {
+                "operationId": "retrieveProductOfferingPrice", 
+                "summary": "Retrieves a 'ProductOfferingPrice' by Id", 
+                "tags": [
+                    "productOfferingPrice"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Product Offering Price"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductOfferingPrice"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productSpecification": {
+            "get": {
+                "operationId": "listProductSpecification", 
+                "summary": "List or find 'ProductSpecification' objects", 
+                "tags": [
+                    "productSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "brand", 
+                        "description": "For filtering: The manufacturer or trademark of the specification"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: isBundle determines whether a productSpecification represents a single productSpecification (false), or a bundle of productSpecification (true)."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productNumber", 
+                        "description": "For filtering: An identification number assigned to uniquely identity the specification"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Product specification version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: class type of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: base class type  (immediate parent) of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: hyperlink reference to schema describing this object"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecCharacteristic.name", 
+                        "description": "For filtering: Name of the productSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecCharacteristic.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecCharacteristic.configurable", 
+                        "description": "For filtering: If true, the Boolean indicates that the productSpecCharacteristic is configurable"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecCharacteristic.@type", 
+                        "description": "For filtering: the class type of this characteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecCharacteristic.@schemaLocation", 
+                        "description": "For filtering: hyperlink reference to the schema describing this characteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceSpecification.name", 
+                        "description": "For filtering: Name of the requiredServiceSpecification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceSpecification.version", 
+                        "description": "For filtering: Service specification version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceSpecification.@type", 
+                        "description": "For filtering: the class type of associated service specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "productSpecificationRelationship.type", 
+                        "description": "For filtering: Type of relationship such as migration, substitution, dependency, exclusivity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.name", 
+                        "description": "For filtering: Name of the requiredResourceSpecification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.version", 
+                        "description": "For filtering: Resource specification version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.@type", 
+                        "description": "For filtering: the class type of associated resource specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.type", 
+                        "description": "For filtering: Attachment type such as video, picture"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.url", 
+                        "description": "For filtering: Uniform Resource Locator, is a web page address (a subset of URI)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: Attachment mime type such as extension file for video, picture and document"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@type", 
+                        "description": "For filtering: the class type of the Attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@baseType", 
+                        "description": "For filtering: The immediate base class type of the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this attachment entity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledProductSpecification.lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledProductSpecification.name", 
+                        "description": "For filtering: Name of the product specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "bundledProductSpecification.@type", 
+                        "description": "For filtering: the class type of the corresponding product specification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/productSpecification/{id}": {
+            "get": {
+                "operationId": "retrieveProductSpecification", 
+                "summary": "Retrieves a 'ProductSpecification' by Id", 
+                "tags": [
+                    "productSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Product Specification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ProductSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/importJob": {
+            "get": {
+                "operationId": "listImportJob", 
+                "summary": "List or find 'ImportJob' objects", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "contentType", 
+                        "description": "For filtering: Indicates the format of the imported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "path", 
+                        "description": "For filtering: URL of the root resource where the content of the file specified by the import job must be applied"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "status", 
+                        "description": "For filtering: Status of the import job (not started, running, succeeded, failed)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "url", 
+                        "description": "For filtering: URL of the file containing the data to be imported"
+                    }, 
+                    {
+                        "name": "completionDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was completed"
+                    }, 
+                    {
+                        "name": "creationDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was created"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "errorLog", 
+                        "description": "For filtering: Reason for failure if status is failed"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ImportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createImportJob", 
+                "summary": "Creates a 'ImportJob'", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ImportJob_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "importJob", 
+                        "description": "The Import Job to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ImportJob"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/importJob/{id}": {
+            "get": {
+                "operationId": "retrieveImportJob", 
+                "summary": "Retrieves a 'ImportJob' by Id", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Import Job"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ImportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/exportJob": {
+            "get": {
+                "operationId": "listExportJob", 
+                "summary": "List or find 'ExportJob' objects", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "query", 
+                        "description": "For filtering: Used to scope the exported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "path", 
+                        "description": "For filtering: URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "contentType", 
+                        "description": "For filtering: The format of the exported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "status", 
+                        "description": "For filtering: Status of the export job (not started, running, succeeded, failed)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "url", 
+                        "description": "For filtering: URL of the file containing the data to be exported"
+                    }, 
+                    {
+                        "name": "completionDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Data at which the job was completed"
+                    }, 
+                    {
+                        "name": "creationDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was created"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "errorLog", 
+                        "description": "For filtering: Reason for failure"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ExportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createExportJob", 
+                "summary": "Creates a 'ExportJob'", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ExportJob_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "exportJob", 
+                        "description": "The Export Job to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ExportJob"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/exportJob/{id}": {
+            "get": {
+                "operationId": "retrieveExportJob", 
+                "summary": "Retrieves a 'ExportJob' by Id", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Export Job"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ExportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "ProductOffering": {
+            "type": "object", 
+            "description": "Represents entities that are orderable from the provider of the catalog, this resource includes pricing information.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the productOffering"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the ProductOffering"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the productOffering"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the productOffering"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "isBundle determines whether a productOffering represents a single productOffering (false), or a bundle of productOfferings (true)."
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productOffering is valid"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "ProductOffering version"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of the product offering"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "Immediate base (class) type of the product offering"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing this product offerring"
+                }, 
+                "place": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/PlaceRef"
+                    }
+                }, 
+                "serviceLevelAgreement": {
+                    "$ref": "#/definitions/SLARef"
+                }, 
+                "productSpecification": {
+                    "$ref": "#/definitions/ProductSpecificationRef"
+                }, 
+                "channel": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ChannelRef"
+                    }
+                }, 
+                "serviceCandidate": {
+                    "$ref": "#/definitions/ServiceCandidateRef"
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }, 
+                "category": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CategoryRef"
+                    }
+                }, 
+                "resourceCandidate": {
+                    "$ref": "#/definitions/ResourceCandidateRef"
+                }, 
+                "productOfferingTerm": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductOfferingTerm"
+                    }
+                }, 
+                "marketSegment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/MarketSegmentRef"
+                    }
+                }, 
+                "productOfferingPrice": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductOfferingPrice"
+                    }
+                }, 
+                "agreement": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/AgreementRef"
+                    }
+                }, 
+                "bundledProductOffering": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/BundledProductOffering"
+                    }
+                }, 
+                "prodSpecCharValueUse": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProdSpecCharValueUse"
+                    }
+                }
+            }
+        }, 
+        "ImportJob": {
+            "type": "object", 
+            "description": "Represents a task used to import resources from a file", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of the import job"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the import job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "Indicates the format of the imported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource where the content of the file specified by the import job must be applied"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the import job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be imported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure if status is failed"
+                }
+            }
+        }, 
+        "ImportJob_Create": {
+            "type": "object", 
+            "description": "Represents a task used to import resources from a file\nSkipped properties: id,href", 
+            "required": [
+                "url"
+            ], 
+            "properties": {
+                "contentType": {
+                    "type": "string", 
+                    "description": "Indicates the format of the imported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource where the content of the file specified by the import job must be applied"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the import job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be imported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure if status is failed"
+                }
+            }
+        }, 
+        "ProductSpecification": {
+            "type": "object", 
+            "description": "Is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the product specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the product specification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the product specification"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail what the product specification is"
+                }, 
+                "brand": {
+                    "type": "string", 
+                    "description": "The manufacturer or trademark of the specification"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "isBundle determines whether a productSpecification represents a single productSpecification (false), or a bundle of productSpecification (true)."
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "productNumber": {
+                    "type": "string", 
+                    "description": "An identification number assigned to uniquely identity the specification"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the product specification is valid"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Product specification version"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of the product specification"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "base class type  (immediate parent) of the product specification"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "hyperlink reference to schema describing this object"
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }, 
+                "productSpecCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductSpecCharacteristic"
+                    }
+                }, 
+                "serviceSpecification": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceSpecificationRef"
+                    }
+                }, 
+                "productSpecificationRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductSpecificationRelationship"
+                    }
+                }, 
+                "resourceSpecification": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecificationRef"
+                    }
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }, 
+                "bundledProductSpecification": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/BundledProductSpecification"
+                    }
+                }
+            }
+        }, 
+        "Catalog": {
+            "type": "object", 
+            "description": "The root entity for entity catalog management. An entity catalog can be defined as a collection of entity catalog items and arranging them in a particular manner based on the need.\nIn comparison to Product, Service and Resource catalogs, the entity catalog is intended for the purpose of providing any SID entity to consumers via a catalog, with its specification and policy providing governance over its content. Even Entity catalog may have an overlap with Product, Service or Resource catalog, it doesn't replace them. It is primarily intended to address those SID entities which may not be addressed by any of Product, Service or Resource catalog.\nAn entity catalog comprises of a list of RootEntities made available through EntityCatalogItems. This API addresses only RootEntity extended items as EntitySpecification. An entity catalog typically includes name, description and time period that it is valid for.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the Catalog"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the catalog"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the catalog"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this catalog"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Indicates the (class) type of catalog. For entity catalogs, this will be 'EntityCatalog'."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "Indicates<b> </b>the base (class) type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Catalog version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the catalog is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }
+            }
+        }, 
+        "ExportJob": {
+            "type": "object", 
+            "description": "Represents a task used to export resources to a file", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of the export job"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the export job"
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "Used to scope the exported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "The format of the exported data"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the export job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be exported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Data at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure"
+                }
+            }
+        }, 
+        "ExportJob_Create": {
+            "type": "object", 
+            "description": "Represents a task used to export resources to a file\nSkipped properties: id,href", 
+            "required": [
+                "url"
+            ], 
+            "properties": {
+                "query": {
+                    "type": "string", 
+                    "description": "Used to scope the exported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "The format of the exported data"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the export job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be exported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Data at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure"
+                }
+            }
+        }, 
+        "Category": {
+            "type": "object", 
+            "description": "The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the category"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the catalog"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Category version"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the category is valid"
+                }, 
+                "parentId": {
+                    "type": "string", 
+                    "description": "Unique identifier of the parent category"
+                }, 
+                "isRoot": {
+                    "type": "boolean", 
+                    "description": "If true, this Boolean indicates that the category is a root of categories"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the category"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the category"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of the Category"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "the base class type of the category"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "link to the schema describing this category"
+                }, 
+                "categories": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CategoryRef"
+                    }
+                }, 
+                "productOfferings": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductOfferingRef"
+                    }
+                }
+            }
+        }, 
+        "ProductOfferingPrice": {
+            "type": "object", 
+            "description": "An amount, usually of money, that is asked for or allowed when a ProductOffering is bought, rented, or leased. The price is valid for a defined period of time and may not represent the actual price paid by a customer.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "unique id of this resource"
+                }, 
+                "href": {
+                    "type": "string"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the productOfferingPrice"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the productOfferingPrice"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "ProductOffering version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productOfferingPrice is valid"
+                }, 
+                "priceType": {
+                    "type": "string", 
+                    "description": "A category that describes the price, such as recurring, discount, allowance, penalty, and so forth."
+                }, 
+                "unitOfMeasure": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "A number and unit representing how many (for instance 1 dozen) of an ProductOffering is available at the offered price. Its meaning depends on the priceType. It could be a price, a rate, or a discount."
+                }, 
+                "recurringChargePeriodType": {
+                    "type": "string", 
+                    "description": "The period to repeat the application of the price\nCould be month, week..."
+                }, 
+                "recurringChargePeriodLength": {
+                    "type": "integer", 
+                    "description": "the period of the recurring charge:  1, 2, ... .It sets to zero if it is not applicable"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The class type of this Product offering"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "the immediate base class type of this product offering"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "hyperlink reference to the schema describing this resource"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "the last update time of this POP"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "A flag indicating if this POP is composite (bundle) or not"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "the lifecycle status of this POP"
+                }, 
+                "price": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "The amount of money that characterizes the price."
+                }, 
+                "percentage": {
+                    "type": "number", 
+                    "format": "float", 
+                    "description": "Percentage to apply for ProdOfferPriceAlteration (Discount)"
+                }, 
+                "bundledPopRelationships": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/BundledPopRelationship"
+                    }
+                }, 
+                "popRelationships": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/PopRelationship"
+                    }
+                }, 
+                "prodSpecCharValueUse": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProdSpecCharValueUse"
+                    }
+                }, 
+                "productOfferingTerm": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductOfferingTerm"
+                    }
+                }, 
+                "place": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/PlaceRef"
+                    }
+                }, 
+                "constraint": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ConstraintRef"
+                    }
+                }, 
+                "pricingLogicAlgorithm": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/PricingLogicAlgorithm"
+                    }
+                }, 
+                "tax": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Tax"
+                    }
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }
+            }
+        }, 
+        "PlaceRef": {
+            "type": "object", 
+            "description": "Place reference. Place defines the places where the products are sold or delivered.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the place"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the place"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                }, 
+                "geoLocationUrl": {
+                    "type": "string", 
+                    "description": "A url providing a map for localizing the place"
+                }, 
+                "address": {
+                    "type": "string", 
+                    "description": "A string characterizing an address (for instance a formatted address or an identifier taken from an address database or an address API)."
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of the Place object"
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                }
+            }
+        }, 
+        "SLARef": {
+            "type": "object", 
+            "description": "ServiceLevelAgreement reference: A service level agreement (SLA) is a type of agreement that represents a formal negotiated agreement between two parties designed to create a common understanding about products, services, priorities, responsibilities, and so forth. The SLA is a set of appropriate procedures and targets formally or informally agreed between parties in order to achieve and maintain specified Quality of Service.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of service level agreement"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the service level agreement"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the service level agreement"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of Service Level Agreement"
+                }
+            }
+        }, 
+        "ProductSpecificationRef": {
+            "type": "object", 
+            "description": "Product specification reference: A ProductSpecification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the product specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the product specification"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Version of the product specification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the product specification"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of Product Specification"
+                }
+            }
+        }, 
+        "ChannelRef": {
+            "type": "object", 
+            "description": "Channel reference. The channel defines the channel for selling product offerings.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the channel"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the channel"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the channel"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "(Class) type of the channel like DistributionChannel, SalesChannel and so on"
+                }
+            }
+        }, 
+        "ServiceCandidateRef": {
+            "type": "object", 
+            "description": "ServiceCandidate reference. ServiceCandidate is an entity that makes a ServiceSpecification available to a catalog.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the service candidate"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the service candidate"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Version of the service candidate"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the service candidate"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The Class type of Service Candidate"
+                }
+            }
+        }, 
+        "Attachment": {
+            "type": "object", 
+            "description": "Complements the description of an element (for instance a product) through video, pictures...", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative text describing the content of the attachment"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the attachment"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the attachment"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Attachment type such as video, picture"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "Uniform Resource Locator, is a web page address (a subset of URI)"
+                }, 
+                "mimeType": {
+                    "type": "string", 
+                    "description": "Attachment mime type such as extension file for video, picture and document"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of the Attachment"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The immediate base class type of the attachment"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing this attachment entity"
+                }
+            }
+        }, 
+        "CategoryRef": {
+            "type": "object", 
+            "description": "Category reference. The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique reference of the category"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the category"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Category version"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the category"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of the Category"
+                }
+            }
+        }, 
+        "ResourceCandidateRef": {
+            "type": "object", 
+            "description": "ResourceCandidate reference: A resource candidate is an entity that makes a ResourceSpecification available to a catalog.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the resource candidate"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the resource candidate"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Version of the resource candidate"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the resource candidate"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The Class type of Resource Candidate"
+                }
+            }
+        }, 
+        "ProductOfferingTerm": {
+            "type": "object", 
+            "description": "A condition under which a ProductOffering is made available to Customers. For instance, a productOffering can be offered with multiple commitment periods.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the productOfferingTerm"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the productOfferingTerm"
+                }, 
+                "duration": {
+                    "$ref": "#/definitions/Quantity", 
+                    "description": "Duration of the productOfferingTerm"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productOfferingterm is valid"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The class type of ProductOfferingTerm"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing this product offering term"
+                }
+            }
+        }, 
+        "MarketSegmentRef": {
+            "type": "object", 
+            "description": "provides references to the corresponding market segment as target of product offerings. A market segment is grouping of Parties, GeographicAreas, SalesChannels, and so forth.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the market segment"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the market segment"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the market segment"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "(Class) type of the market segment"
+                }
+            }
+        }, 
+        "AgreementRef": {
+            "type": "object", 
+            "description": "Agreement reference. An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the agreement"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of the agreement"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the agreement"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of the Agreement"
+                }
+            }
+        }, 
+        "BundledProductOffering": {
+            "type": "object", 
+            "description": "A type of ProductOffering that belongs to a grouping of ProductOfferings made available to the market. It inherits of all attributes of ProductOffering.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the BundledProductOffering"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the BundledProductOffering"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the BundledProductOffering"
+                }, 
+                "bundledProductOffering": {
+                    "$ref": "#/definitions/BundledProdOfferOption"
+                }
+            }
+        }, 
+        "ProdSpecCharValueUse": {
+            "type": "object", 
+            "description": "A use of the ProdSpecCharacteristicValue by a ProductOffering to which additional properties (attributes) apply or override the properties of similar properties contained in ProdSpecCharacteristicValue. It should be noted that characteristics which their value(s) addressed by this object must exist in corresponding product specification. The available characteristic values for a ProductSpecCharacteristic in a Product specification can be modified at the ProductOffering level. For example, a characteristic 'Color' might have values White, Blue, Green, and Red. But, the list of values can be restricted to e.g. White and Blue in an associated product offering. It should be noted that the list of values in 'ProdSpecCharValueUse' is a strict subset of the list of values as defined in the corresponding product specification characteristics.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the associated productSpecCharacteristic"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail what the productSpecCharacteristic is"
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                }, 
+                "minCardinality": {
+                    "type": "integer", 
+                    "description": "The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                }, 
+                "maxCardinality": {
+                    "type": "integer", 
+                    "description": "The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productSpecCharacteristic is valid"
+                }, 
+                "productSpecCharacteristicValue": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductSpecCharacteristicValue"
+                    }
+                }, 
+                "productSpecification": {
+                    "$ref": "#/definitions/ProductSpecificationRef"
+                }
+            }
+        }, 
+        "Quantity": {
+            "type": "object", 
+            "description": "A base / value and unit  used to represent quantity", 
+            "properties": {
+                "amount": {
+                    "type": "integer",
+                    "format": "int64", 
+                    "description": "A quantity of something, typically the total of a thing or things in number, size, value, extent, or money."
+                }, 
+                "units": {
+                    "type": "string", 
+                    "description": "The unit of measure for the quantity, such as meters, cubic yards, kilograms [ISO 80000], and the currency referring to [ISO 4217]."
+                }
+            }
+        }, 
+        "Price": {
+            "type": "object", 
+            "description": "Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.", 
+            "properties": {
+                "taxIncludedAmount": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "All taxes included amount (expressed in the given currency)"
+                }, 
+                "dutyFreeAmount": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "All taxes excluded amount (expressed in the given currency)"
+                }, 
+                "taxRate": {
+                    "type": "number", 
+                    "format": "float", 
+                    "description": "Tax rate"
+                }, 
+                "percentage": {
+                    "type": "number", 
+                    "format": "float", 
+                    "description": "Percentage to apply for ProdOfferPriceAlteration"
+                }
+            }
+        }, 
+        "PriceAlteration": {
+            "type": "object", 
+            "description": "Is an amount, usually of money, that modifies the price charged for an order item.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "A short descriptive name such as \"Monthly discount\""
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail the semantics of this order item price alteration"
+                }, 
+                "priceType": {
+                    "type": "string", 
+                    "description": "A category that describes the price such as recurring, one time and usage."
+                }, 
+                "unitOfMeasure": {
+                    "type": "string", 
+                    "description": "Could be minutes, GB..."
+                }, 
+                "recurringChargePeriod": {
+                    "type": "string", 
+                    "description": "Could be month, week..."
+                }, 
+                "applicationDuration": {
+                    "type": "integer", 
+                    "description": "Duration during which the alteration applies on the order item price (for instance 2 months free of charge for the recurring charge)"
+                }, 
+                "priority": {
+                    "type": "integer", 
+                    "description": "Priority level for applying this alteration among all the defined alterations on the order item price"
+                }, 
+                "priceCondition": {
+                    "type": "string", 
+                    "description": "Condition that triggers the price application"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the price alteration is valid"
+                }, 
+                "price": {
+                    "$ref": "#/definitions/Price"
+                }
+            }
+        }, 
+        "Money": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent money", 
+            "properties": {
+                "value": {
+                    "type": "number", 
+                    "format": "float", 
+                    "description": "A positive floating point number"
+                }, 
+                "unit": {
+                    "type": "string", 
+                    "description": "Currency (ISO4217 norm uses 3 letters to define the currency)"
+                }
+            }
+        }, 
+        "BundledProdOfferOption": {
+            "type": "object", 
+            "description": "A set of numbers that specifies the lower and upper limits for a ProductOffering that can be procured as part of the related BundledProductOffering. Values can range from 0 to unbounded", 
+            "properties": {
+                "numberRelOfferLowerLimit": {
+                    "type": "integer", 
+                    "description": "lower limit for a product offering that can be procured as part of the related BundledProductOffering"
+                }, 
+                "numberRelOfferUpperLimit": {
+                    "type": "integer", 
+                    "description": "upper limit for a product offering that can be procured as part of the related BundledProductOffering"
+                }, 
+                "numberRelOfferDefault": {
+                    "type": "integer", 
+                    "description": "Default number of produc offereings that should be procured as part of the related BundledProductOffering"
+                }
+            }
+        }, 
+        "ProductSpecCharacteristicValue": {
+            "type": "object", 
+            "description": "A number or text that can be assigned to a ProductSpecCharacteristic.", 
+            "properties": {
+                "default": {
+                    "type": "boolean", 
+                    "description": "Indicates if the value is the default value for a characteristic"
+                }, 
+                "unitOfMeasure": {
+                    "type": "string", 
+                    "description": "Could be minutes, GB..."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period of time for which a value is applicable"
+                }, 
+                "value": {
+                    "type": "string", 
+                    "description": "A discrete value that the characteristic can take on. the value type is defined by 'valueType' characteristic"
+                }, 
+                "valueFrom": {
+                    "type": "string", 
+                    "description": "The low range value that a characteristic can take on"
+                }, 
+                "valueTo": {
+                    "type": "string", 
+                    "description": "The upper range value that a characteristic can take on"
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the characteristic can take on, such as numeric, text, and so forth"
+                }, 
+                "rangeInterval": {
+                    "type": "string", 
+                    "description": "An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes. If applicable, possible values are \"open\", \"closed\", \"closedBottom\" and \"closedTop\"."
+                }, 
+                "regex": {
+                    "type": "string", 
+                    "description": "Regular expression to define constraint on the allowed value"
+                }
+            }
+        }, 
+        "RelatedPartyRef": {
+            "type": "object", 
+            "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of a related party"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the related party, could be a party reference or a party role reference"
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "Role of the related party."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the related party"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "Validity period of the related party"
+                }
+            }
+        }, 
+        "ProductSpecCharacteristic": {
+            "type": "object", 
+            "description": "A characteristic quality or distinctive feature of a ProductSpecification.  The characteristic can be take on a discrete value, such as color, can take on a range of values, (for example, sensitivity of 100-240 mV), or can be derived from a formula (for example, usage time (hrs) = 30 - talk time *3). Certain characteristics, such as color, may be configured during the ordering or some other process.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the productSpecCharacteristic"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail what the productSpecCharacteristic is"
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                }, 
+                "configurable": {
+                    "type": "boolean", 
+                    "description": "If true, the Boolean indicates that the productSpecCharacteristic is configurable"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productSpecCharacteristic is valid"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of this characteristic"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "hyperlink reference to the schema describing this characteristic"
+                }, 
+                "productSpecCharRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductSpecCharRelationship"
+                    }
+                }, 
+                "productSpecCharacteristicValue": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ProductSpecCharacteristicValue"
+                    }
+                }
+            }
+        }, 
+        "ServiceSpecificationRef": {
+            "type": "object", 
+            "description": "Service specification reference: ServiceSpecification(s) required to realize a ProductSpecification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the service specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the serviceSpecification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the requiredServiceSpecification"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Service specification version"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of associated service specification"
+                }
+            }
+        }, 
+        "ProductSpecificationRelationship": {
+            "type": "object", 
+            "description": "A migration, substitution, dependency or exclusivity relationship between/among product specifications.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the productSpecification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the productSpecification"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Type of relationship such as migration, substitution, dependency, exclusivity"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productSpecificationRelationship is valid"
+                }
+            }
+        }, 
+        "ResourceSpecificationRef": {
+            "type": "object", 
+            "description": "Resource Specification reference: The ResourceSpecification is required to realize a ProductSpecification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the resource specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the resource specification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the requiredResourceSpecification"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Resource specification version"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of associated resource specification"
+                }
+            }
+        }, 
+        "BundledProductSpecification": {
+            "type": "object", 
+            "description": "A type of ProductSpecification that belongs to a grouping of ProductSpecifications made available to the market. It inherits of all attributes of ProductSpecification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the product specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the product specification"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the product specification"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of the corresponding product specification"
+                }
+            }
+        }, 
+        "ProductSpecCharRelationship": {
+            "type": "object", 
+            "description": "An aggregation, migration, substitution, dependency or exclusivity relationship between/among productSpecCharacteristics.", 
+            "properties": {
+                "type": {
+                    "type": "string", 
+                    "description": "Type of relationship such as aggregation, migration, substitution, dependency, exclusivity"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the productSpecCharRelationship is valid"
+                }, 
+                "charSpecSeq": {
+                    "type": "integer", 
+                    "description": "The order in which a CharacteristicSpecification appears within another CharacteristicSpecification that defines a grouping of CharacteristicSpecifications.\n\nFor example, a grouping may represent the name of an individual. The given name is first, the middle name is second, and the last name is third."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "the identifier of the associated product specification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the target product specification characteristic"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to the target product specification"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of target product specification"
+                }
+            }
+        }, 
+        "ProductOfferingRef": {
+            "type": "object", 
+            "description": "ProductOffering reference. A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the product offering"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the product offering"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the product offering"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "the class type of the product offering"
+                }
+            }
+        }, 
+        "BundledPopRelationship": {
+            "type": "object", 
+            "description": "this object represents a bundle relationship from a bundle product offering (parent) to a simple product offering (child). A simple product offering may participate in more than one bundle relationships.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the associated product offering"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "hyperlink reference of the associated product offering"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of  the associated product offering"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "(Class) type of the associated product offering"
+                }
+            }
+        }, 
+        "PopRelationship": {
+            "type": "object", 
+            "description": "product offering relationship", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the associated product offering"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "hyperlink reference of the associated product offering"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of  the associated product offering"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "(Class) type of the associated product offering"
+                }
+            }
+        }, 
+        "ConstraintRef": {
+            "type": "object", 
+            "description": "Constraint reference. The Constraint resource represents a policy/rule applied to an entity or entity spec.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "reference id to the target constraint"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to the target constraint"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "constraint version"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to the constraint"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The (class) type of the constraint"
+                }
+            }
+        }, 
+        "PricingLogicAlgorithm": {
+            "type": "object", 
+            "description": "The PricingLogicAlgorithm entity represents an instantiation of an interface specification to external rating function (without a modeled bahavior in SID). Some of the parameters of the interface definiition may be already set (such as price per unit) and some may be gathered during the rating process from the event (such as call duration) or from ProductCharacteristicValues (such as assigned bandwidth)", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "unique id of the PLA"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "hyperlink reference of this PLA"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to the PLA"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the PLA"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the PLA is valid"
+                }, 
+                "plaSpecId": {
+                    "type": "string", 
+                    "description": "id of corresponding PLA specification"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The class type of this PLA"
+                }
+            }
+        }, 
+        "Tax": {
+            "type": "object", 
+            "description": "An amount of money levied on the price of a Product by a legislative body.", 
+            "properties": {
+                "taxAmount": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "tax amount"
+                }, 
+                "taxCategory": {
+                    "$ref": "#/definitions/Money", 
+                    "description": "A categorization of the tax rate."
+                }, 
+                "taxRate": {
+                    "type": "number", 
+                    "format": "float", 
+                    "description": "Tax rate"
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

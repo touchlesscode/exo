@@ -1,0 +1,963 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "This is Swagger UI environment generated for the TMF Entity Provisioning Management API specification",
+    "version" : "2.0",
+    "title" : "Entity Provisioning"
+  },
+  "host" : "env-0693795.jelastic.servint.net",
+  "basePath" : "/DSEntityProvisioning/api/EntityProvisioning/v2",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/networkService" : {
+      "post" : {
+        "tags" : [ "networkService" ],
+        "operationId" : "networkServiceCreate",
+        "summary" : "networkServiceCreate",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "NetworkService",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/NetworkService"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "networkService",
+            "schema" : {
+              "$ref" : "#/definitions/NetworkService"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "networkService" ],
+        "operationId" : "networkServiceFind",
+        "summary" : "networkServiceFind",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "List of Network Service",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/NetworkService"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/networkService/{ServiceId}" : {
+      "delete" : {
+        "tags" : [ "networkService" ],
+        "operationId" : "networkServiceDelete",
+        "summary" : "networkServiceDelete",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ServiceId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "networkService" ],
+        "operationId" : "networkServiceServiceGet",
+        "summary" : "networkServiceServiceGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ServiceId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Service",
+            "schema" : {
+              "$ref" : "#/definitions/NetworkService"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "networkService" ],
+        "operationId" : "ServicePatch",
+        "summary" : "ServicePatch",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ServiceId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "Service",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/NetworkService"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success Service",
+            "schema" : {
+              "$ref" : "#/definitions/NetworkService"
+            }
+          }
+        }
+      }
+    },
+    "/VNF" : {
+      "post" : {
+        "tags" : [ "VNF" ],
+        "operationId" : "VNFCreate",
+        "summary" : "VNFCreate",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "VNF",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/VNF"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "VNF",
+            "schema" : {
+              "$ref" : "#/definitions/VNF"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "VNF" ],
+        "operationId" : "VNFFind",
+        "summary" : "VNFFind",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "List of Network VNF",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/VNF"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/VNF/{VNFId}" : {
+      "delete" : {
+        "tags" : [ "VNF" ],
+        "operationId" : "VNFDelete",
+        "summary" : "VNFDelete",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "VNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "VNF" ],
+        "operationId" : "VNFVNFGet",
+        "summary" : "VNFVNFGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "VNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "VNF",
+            "schema" : {
+              "$ref" : "#/definitions/VNF"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "VNF" ],
+        "operationId" : "VNFPatch",
+        "summary" : "VNFPatch",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "VNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "VNF",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/VNF"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success VNF",
+            "schema" : {
+              "$ref" : "#/definitions/VNF"
+            }
+          }
+        }
+      }
+    },
+    "/PNF" : {
+      "post" : {
+        "tags" : [ "PNF" ],
+        "operationId" : "PNFCreate",
+        "summary" : "PNFCreate",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "PNF",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/PNF"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "PNF",
+            "schema" : {
+              "$ref" : "#/definitions/PNF"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "PNF" ],
+        "operationId" : "PNFFind",
+        "summary" : "PNFFind",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "List of Network PNF",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/PNF"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/PNF/{PNFId}" : {
+      "delete" : {
+        "tags" : [ "PNF" ],
+        "operationId" : "PNFDelete",
+        "summary" : "PNFDelete",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "PNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "PNF" ],
+        "operationId" : "PNFPNFGet",
+        "summary" : "PNFPNFGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "PNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "PNF",
+            "schema" : {
+              "$ref" : "#/definitions/PNF"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "PNF" ],
+        "operationId" : "PNFPatch",
+        "summary" : "PNFPatch",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "PNFId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "PNF",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/PNF"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Success PNF",
+            "schema" : {
+              "$ref" : "#/definitions/PNF"
+            }
+          }
+        }
+      }
+    },
+    "/hub" : {
+      "post" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubCreate",
+        "summary" : "hubCreate",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hub",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Hub"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Hub",
+            "schema" : {
+              "$ref" : "#/definitions/Hub"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubFind",
+        "summary" : "hubFind",
+        "description" : "",
+        "deprecated" : false,
+        "responses" : {
+          "200" : {
+            "description" : "List of Hub",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Hub"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/hub/{hubId}" : {
+      "delete" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubDelete",
+        "summary" : "hubDelete",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hubId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubGet",
+        "summary" : "hubGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hubId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Hub",
+            "schema" : {
+              "$ref" : "#/definitions/Hub"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "NetworkService" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        },
+        "autoModification" : {
+          "type" : "string",
+          "enum" : [ "scaleStorage", "scaleUpInterface" ]
+        },
+        "priority" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "lockState" : {
+          "type" : "string",
+          "enum" : [ "locked", "unlocked" ]
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "Inactive", "Active", "Terminated" ]
+        },
+        "schedule" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ScheduleRef"
+          }
+        },
+        "serviceSpecification" : {
+          "type" : "object",
+          "$ref" : "#/definitions/ServiceSpecification"
+        },
+        "sap" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/SAPRef"
+          }
+        },
+        "serviceCharacteristic" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ServiceCharacteristic"
+          }
+        },
+        "serviceRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ServiceRelationship"
+          }
+        },
+        "supportingNetworkFunction" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/NetworkFuction"
+          }
+        },
+        "relatedParty" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RelatedParty"
+          }
+        },
+        "supportingService" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/SupportingService"
+          }
+        },
+        "supportingResource" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/SupportingResource"
+          }
+        }
+      }
+    },
+    "VNF" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        },
+        "managementDomain" : {
+          "type" : "string"
+        },
+        "autoModification" : {
+          "type" : "string",
+          "enum" : [ "scaleStorage", "scaleUpInterface" ]
+        },
+        "priority" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "adminState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "locked", "shuttingDown", "unlocked" ]
+        },
+        "operationalState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "disabled", "enabled", "testing" ]
+        },
+        "usageState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "idle", "active", "busy" ]
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "inactive", "active", "terminated" ]
+        },
+        "schedule" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ScheduleRef"
+          }
+        },
+        "resourceSpecification" : {
+          "type" : "object",
+          "$ref" : "#/definitions/ResourceSpecification"
+        },
+        "resourceCharacteristic" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ResourceCharacteristic"
+          }
+        },
+        "resourceRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ResourceRelationship"
+          }
+        },
+        "vnfRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/vnfRelationship"
+          }
+        },
+        "pnfRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/pnfRelationship"
+          }
+        },
+        "relatedParty" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RelatedParty"
+          }
+        }
+      }
+    },
+    "PNF" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "version" : {
+          "type" : "string"
+        },
+        "managementDomain" : {
+          "type" : "string"
+        },
+        "autoModification" : {
+          "type" : "string",
+          "enum" : [ "scaleStorage", "scaleUpInterface" ]
+        },
+        "priority" : {
+          "type" : "integer",
+          "format" : "int64"
+        },
+        "adminState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "locked", "shuttingDown", "unlocked" ]
+        },
+        "operationalState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "disabled", "enabled", "testing" ]
+        },
+        "usageState" : {
+          "type" : "string",
+          "enum" : [ "unknown", "idle", "active", "busy" ]
+        },
+        "state" : {
+          "type" : "string",
+          "enum" : [ "inactive", "active", "terminated" ]
+        },
+        "schedule" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ScheduleRef"
+          }
+        },
+        "resourceSpecification" : {
+          "type" : "object",
+          "$ref" : "#/definitions/ResourceSpecification"
+        },
+        "resourceCharacteristic" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ResourceCharacteristic"
+          }
+        },
+        "resourceRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ResourceRelationship"
+          }
+        },
+        "pnfRelationship" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/pnfRelationship"
+          }
+        },
+        "relatedParty" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RelatedParty"
+          }
+        }
+      }
+    },
+    "ServiceSpecification" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ResourceSpecification" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "SupportingResource" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "SupportingService" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "NetworkFuction" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ServiceRelationship" : {
+      "required" : [ "service" ],
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "service" : {
+          "$ref" : "#/definitions/ServiceRef"
+        }
+      }
+    },
+    "ResourceRelationship" : {
+      "required" : [ "resource" ],
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "resource" : {
+          "$ref" : "#/definitions/ResourceRef"
+        }
+      }
+    },
+    "pnfRelationship" : {
+      "required" : [ "pnf" ],
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "pnf" : {
+          "$ref" : "#/definitions/PNFRef"
+        }
+      }
+    },
+    "vnfRelationship" : {
+      "required" : [ "vnf" ],
+      "type" : "object",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "vnf" : {
+          "$ref" : "#/definitions/VNFRef"
+        }
+      }
+    },
+    "ServiceRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "PNFRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "VNFRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ResourceRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "SAPRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ScheduleRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ServiceCharacteristic" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    },
+    "ResourceCharacteristic" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    },
+    "RelatedParty" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Hub" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "callback" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1278 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Service Test Management", 
+        "description": "This is Swagger UI environment generated for the TMF Service Test Management specification", 
+        "version": "2.0"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/serviceTestManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/serviceTest": {
+            "get": {
+                "operationId": "listServiceTest", 
+                "summary": "List or find 'ServiceTest' objects", 
+                "tags": [
+                    "serviceTest"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "name": "endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: The end date and time of the service test"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "mode", 
+                        "description": "For filtering: An indication of whether the service test is running in \n\"PROACTIVE\" or \"ONDEMAND\" mode"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: The name of the service test"
+                    }, 
+                    {
+                        "name": "startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: The start date and time of the service test."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "state", 
+                        "description": "For filtering: The actual state the service test is in"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedService.name", 
+                        "description": "For filtering: A name to describe a service."
+                    }, 
+                    {
+                        "type": "number", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.accuracy", 
+                        "description": "For filtering: The number of digits of accuracy captured for Metrics associated"
+                    }, 
+                    {
+                        "name": "testMeasure.caputureDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: The date and time that capture the metric."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.caputureMethod", 
+                        "description": "For filtering: \"The method used to capture the Metrics. \nNote: This may be replaced by a set of entities similar to the \nPerformance Monitoring Ref."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricDescription", 
+                        "description": "For filtering: Brief description of the metric"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricHref", 
+                        "description": "For filtering: Hyperlink to access a metric for detail information."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricName", 
+                        "description": "For filtering: The name of metric."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.unitOfMeasure", 
+                        "description": "For filtering: The unit of measure for the metric values, such as meters, \ncubic yards, kilograms [ISO 1000]."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.value", 
+                        "description": "For filtering: The value of Metric in the test. This also could be a documents \nto record all values got during the service test."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.valueType", 
+                        "description": "For filtering: A kind of value that the Metric value associated with a \nmetricValue can take on, such as numeric, text, and so forth."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceTestCharacteristic.name", 
+                        "description": "For filtering: The name of the characteristic."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceTestCharacteristic.value", 
+                        "description": "For filtering: The value of characteristic."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceTest"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createServiceTest", 
+                "summary": "Creates a 'ServiceTest'", 
+                "tags": [
+                    "serviceTest"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTest_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceTest", 
+                        "description": "The Service Test to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTest"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceTest/{id}": {
+            "get": {
+                "operationId": "retrieveServiceTest", 
+                "summary": "Retrieves a 'ServiceTest' by Id", 
+                "tags": [
+                    "serviceTest"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Test"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceTest"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "patch": {
+                "operationId": "updateServiceTest", 
+                "summary": "Updates partially a 'ServiceTest' by Id", 
+                "tags": [
+                    "serviceTest"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Test"
+                    }, 
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTest_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceTest", 
+                        "description": "The Service Test to be updated"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTest"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceTestSpecification": {
+            "get": {
+                "operationId": "listServiceTestSpecification", 
+                "summary": "List or find 'ServiceTestSpecification' objects", 
+                "tags": [
+                    "serviceTestSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of a service test specification."
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.captureFrequency", 
+                        "description": "For filtering: The frequency of capture for the metric. Note: This may be \nreplaced by a set of entities similar to the Performance Monitoring."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.captureMethod", 
+                        "description": "For filtering: The method used to capture the Metric. Note: This may be \nreplaced by a set of entities similar to the Performance Monitoring."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricDescription", 
+                        "description": "For filtering: Brief description of the metric."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricHref", 
+                        "description": "For filtering: Hyperlink to access a metric for detail information."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.metricName", 
+                        "description": "For filtering: The name of a metric that in the test measure."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.name", 
+                        "description": "For filtering: The name of the TestMeasureDefinition."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.unitOfMeasure", 
+                        "description": "For filtering: Name of a service test specification."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "testMeasure.valueType", 
+                        "description": "For filtering: A kind of value that the Metric value can take on, such as \nnumeric, text, and so forth."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceTestSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createServiceTestSpecification", 
+                "summary": "Creates a 'ServiceTestSpecification'", 
+                "tags": [
+                    "serviceTestSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTestSpecification_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceTestSpecification", 
+                        "description": "The Service Test Specification to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTestSpecification"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceTestSpecification/{id}": {
+            "get": {
+                "operationId": "retrieveServiceTestSpecification", 
+                "summary": "Retrieves a 'ServiceTestSpecification' by Id", 
+                "tags": [
+                    "serviceTestSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Test Specification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceTestSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "patch": {
+                "operationId": "updateServiceTestSpecification", 
+                "summary": "Updates partially a 'ServiceTestSpecification' by Id", 
+                "tags": [
+                    "serviceTestSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Test Specification"
+                    }, 
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTestSpecification_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceTestSpecification", 
+                        "description": "The Service Test Specification to be updated"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceTestSpecification"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "ServiceTest": {
+            "type": "object", 
+            "description": "A service test is an entity that exists that exists for a controlled test invocation on a service. The service \ntest is executed according to a schedule and contains service test configuration parameters that are to be \napplied at execution time, and service test measures that result.", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the service test"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The end date and time of the service test"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink to access the service  test"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier of the service test"
+                }, 
+                "mode": {
+                    "type": "string", 
+                    "description": "An indication of whether the service test is running in \n\"PROACTIVE\" or \"ONDEMAND\" mode"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service test"
+                }, 
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The start date and time of the service test."
+                }, 
+                "state": {
+                    "type": "string", 
+                    "description": "The actual state the service test is in"
+                }, 
+                "relatedService": {
+                    "$ref": "#/definitions/RelatedServiceRef"
+                }, 
+                "relatedServiceTestSpecification": {
+                    "$ref": "#/definitions/RelatedServiceTestSpecificationRef"
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasure"
+                    }
+                }, 
+                "serviceTestCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceTestCharacteristic"
+                    }
+                }
+            }
+        }, 
+        "ServiceTest_Create": {
+            "type": "object", 
+            "description": "A service test is an entity that exists that exists for a controlled test invocation on a service. The service \ntest is executed according to a schedule and contains service test configuration parameters that are to be \napplied at execution time, and service test measures that result.\nSkipped properties: id,href", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the service test"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The end date and time of the service test"
+                }, 
+                "mode": {
+                    "type": "string", 
+                    "description": "An indication of whether the service test is running in \n\"PROACTIVE\" or \"ONDEMAND\" mode"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service test"
+                }, 
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The start date and time of the service test."
+                }, 
+                "state": {
+                    "type": "string", 
+                    "description": "The actual state the service test is in"
+                }, 
+                "relatedService": {
+                    "$ref": "#/definitions/RelatedServiceRef"
+                }, 
+                "relatedServiceTestSpecification": {
+                    "$ref": "#/definitions/RelatedServiceTestSpecificationRef"
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasure"
+                    }
+                }, 
+                "serviceTestCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceTestCharacteristic"
+                    }
+                }
+            }
+        }, 
+        "ServiceTest_Update": {
+            "type": "object", 
+            "description": "A service test is an entity that exists that exists for a controlled test invocation on a service. The service \ntest is executed according to a schedule and contains service test configuration parameters that are to be \napplied at execution time, and service test measures that result.\nSkipped properties: id,href,id,href", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the service test"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The end date and time of the service test"
+                }, 
+                "mode": {
+                    "type": "string", 
+                    "description": "An indication of whether the service test is running in \n\"PROACTIVE\" or \"ONDEMAND\" mode"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service test"
+                }, 
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The start date and time of the service test."
+                }, 
+                "state": {
+                    "type": "string", 
+                    "description": "The actual state the service test is in"
+                }, 
+                "relatedService": {
+                    "$ref": "#/definitions/RelatedServiceRef"
+                }, 
+                "relatedServiceTestSpecification": {
+                    "$ref": "#/definitions/RelatedServiceTestSpecificationRef"
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasure"
+                    }
+                }, 
+                "serviceTestCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceTestCharacteristic"
+                    }
+                }
+            }
+        }, 
+        "ServiceTestSpecification": {
+            "type": "object", 
+            "description": "The service test specification describes the service test in terms of parameters to be configured and \nmeasures to be taken.", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of a service test specification."
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink to access a service test specification."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of a service test specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of a service test specification."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasureDefinition"
+                    }
+                }, 
+                "relatedServiceSpecification": {
+                    "$ref": "#/definitions/RelatedServiceSpecificationRef"
+                }
+            }
+        }, 
+        "ServiceTestSpecification_Create": {
+            "type": "object", 
+            "description": "The service test specification describes the service test in terms of parameters to be configured and \nmeasures to be taken.\nSkipped properties: id,href", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of a service test specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of a service test specification."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasureDefinition"
+                    }
+                }, 
+                "relatedServiceSpecification": {
+                    "$ref": "#/definitions/RelatedServiceSpecificationRef"
+                }
+            }
+        }, 
+        "ServiceTestSpecification_Update": {
+            "type": "object", 
+            "description": "The service test specification describes the service test in terms of parameters to be configured and \nmeasures to be taken.\nSkipped properties: id,href,id,href,validFor", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "Description of a service test specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of a service test specification."
+                }, 
+                "testMeasure": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/TestMeasureDefinition"
+                    }
+                }, 
+                "relatedServiceSpecification": {
+                    "$ref": "#/definitions/RelatedServiceSpecificationRef"
+                }
+            }
+        }, 
+        "RelatedServiceRef": {
+            "type": "object", 
+            "description": "The service of the service test", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink to access a service."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of a service."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "A name to describe a service."
+                }
+            }
+        }, 
+        "RelatedServiceTestSpecificationRef": {
+            "type": "object", 
+            "description": "The service test specification used by the service test.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink to access a service test specification."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of a service test specification."
+                }
+            }
+        }, 
+        "TestMeasure": {
+            "type": "object", 
+            "description": "A TestMeasureDefinition specifies a measure of a specific aspect of a product, service, or resource test, \nsuch as lost packets or connectivity status.", 
+            "properties": {
+                "accuracy": {
+                    "type": "number", 
+                    "description": "The number of digits of accuracy captured for Metrics associated"
+                }, 
+                "caputureDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The date and time that capture the metric."
+                }, 
+                "caputureMethod": {
+                    "type": "string", 
+                    "description": "\"The method used to capture the Metrics. \nNote: This may be replaced by a set of entities similar to the \nPerformance Monitoring Ref."
+                }, 
+                "metricDescription": {
+                    "type": "string", 
+                    "description": "Brief description of the metric"
+                }, 
+                "metricHref": {
+                    "type": "string", 
+                    "description": "Hyperlink to access a metric for detail information."
+                }, 
+                "metricName": {
+                    "type": "string", 
+                    "description": "The name of metric."
+                }, 
+                "unitOfMeasure": {
+                    "type": "string", 
+                    "description": "The unit of measure for the metric values, such as meters, \ncubic yards, kilograms [ISO 1000]."
+                }, 
+                "value": {
+                    "type": "string", 
+                    "description": "The value of Metric in the test. This also could be a documents \nto record all values got during the service test."
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the Metric value associated with a \nmetricValue can take on, such as numeric, text, and so forth."
+                }, 
+                "measureThresholdRuleViolation": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/MeasureThresholdRuleViolation"
+                    }
+                }
+            }
+        }, 
+        "ServiceTestCharacteristic": {
+            "type": "object", 
+            "description": "The configuration of the service test is set by the service test characteristic.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the characteristic."
+                }, 
+                "value": {
+                    "type": "string", 
+                    "description": "The value of characteristic."
+                }
+            }
+        }, 
+        "MeasureThresholdRuleViolation": {
+            "type": "object", 
+            "description": "A measureThresholdRuleViolation is a violation of a rule that defines the in the \nMericDefMeasureThresholdRule.", 
+            "properties": {
+                "conformanceTargetLower": {
+                    "type": "string", 
+                    "description": "A value used to determine if the threshold is crossed or ceases \nto be crossed. It represents the lower limit. The value should be less than the conformanceTargetUpper. The conformance comparators should also be logically defined so as to not lead to a logically impossible condition."
+                }, 
+                "conformanceTargetUpper": {
+                    "type": "string", 
+                    "description": "A value used to determine if the threshold is crossed or ceases \nto be crossed. It represents the Upper limit. The value should be greater than the conformanceTargetLower. The conformance comparators should also be logically defined so as to not lead to a logically impossible condition."
+                }, 
+                "conformanComparatorLower": {
+                    "type": "string", 
+                    "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetLower."
+                }, 
+                "conformanComparatorUpper": {
+                    "type": "string", 
+                    "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetUpper."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description for the MetricDefMeasureThresholdRule ."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name for the MetricDefMeasureThresholdRule ."
+                }, 
+                "numberOfAllowedCrossing": {
+                    "type": "integer", 
+                    "description": "The number of allowed crossing occurrences in reference to the \ntolerancePeriod without a consequence being initiated."
+                }, 
+                "thresholdRuleSeverity": {
+                    "type": "string", 
+                    "description": "A threshold can be generated in different severity levels. A \ncrossing for each level may require a different condition and possibly trigger a different consequence."
+                }, 
+                "tolerancePeriod": {
+                    "type": "string", 
+                    "description": "An interval of time of allowed crossing occurrences before a \nconsequence being initiated."
+                }, 
+                "appliedConsequence": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/AppliedConsequence"
+                    }
+                }
+            }
+        }, 
+        "AppliedConsequence": {
+            "type": "object", 
+            "description": "An Applied Consequence defines the action (prescribed action or notification) to take when a \nMeasureThresholdRuleViolation occurs.", 
+            "properties": {
+                "appliedAction": {
+                    "type": "string", 
+                    "description": "The action for a violated threshold. This could be a hyperlink to \nthe action."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail what the consequence is."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "A word, term, or phrase by which Consequence is known and \ndistinguished from other MetricDefMeasureConsequences."
+                }, 
+                "repeatAction": {
+                    "type": "string", 
+                    "description": "An indicator use to specify that a consequence should cease \nbeing applied if a value is in the same range as the previous value or continue being applied if a value is in the same range as the previous value.  \nIf the repeatAcation is True, if the consequence is always applied as soon as the MetricMeasure value is in the range of values and if the repeatAcation is False, the consequence is applied only if the previous MetricMeasure value wasn't in the same range."
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }
+            }
+        }, 
+        "TestMeasureDefinition": {
+            "type": "object", 
+            "description": "A TestMeasureDefinition specifies a measure of a specific aspect of a product, service, or resource test, \nsuch as lost packets or connectivity status.", 
+            "properties": {
+                "captureFrequency": {
+                    "type": "string", 
+                    "description": "The frequency of capture for the metric. Note: This may be \nreplaced by a set of entities similar to the Performance Monitoring."
+                }, 
+                "captureMethod": {
+                    "type": "string", 
+                    "description": "The method used to capture the Metric. Note: This may be \nreplaced by a set of entities similar to the Performance Monitoring."
+                }, 
+                "metricDescription": {
+                    "type": "string", 
+                    "description": "Brief description of the metric."
+                }, 
+                "metricHref": {
+                    "type": "string", 
+                    "description": "Hyperlink to access a metric for detail information."
+                }, 
+                "metricName": {
+                    "type": "string", 
+                    "description": "The name of a metric that in the test measure."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the TestMeasureDefinition."
+                }, 
+                "unitOfMeasure": {
+                    "type": "string", 
+                    "description": "Name of a service test specification."
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the Metric value can take on, such as \nnumeric, text, and so forth."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "caputurePeriod": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A period of the capture."
+                }, 
+                "metircDefMeasureTresholdRule": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/MetricDefMeasureThresholdRule"
+                    }
+                }
+            }
+        }, 
+        "RelatedServiceSpecificationRef": {
+            "type": "object", 
+            "description": "The related service specification.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink to access service specification."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier of a service specification."
+                }
+            }
+        }, 
+        "MetricDefMeasureThresholdRule": {
+            "type": "object", 
+            "description": "A MetricDefMeasureThresholdRule is a rule that defines the condition (raise or clear) to achieve to apply \nconsequences when a threshold is crossed or ceased to be crossed. It also defines the severity of the \nraise or clear of the threshold.", 
+            "properties": {
+                "conformanceTargetLower": {
+                    "type": "string", 
+                    "description": "A value used to determine if the threshold is crossed or ceases \nto be crossed. It represents the lower limit. The value should be less than the conformanceTargetUpper. The conformance comparators should also be logically defined so as to not lead to a logically impossible condition."
+                }, 
+                "conformanceTargetUpper": {
+                    "type": "string", 
+                    "description": "A value used to determine if the threshold is crossed or ceases \nto be crossed. It represents the Upper limit. The value should be greater than the conformanceTargetLower. The conformance comparators should also be logically defined so as to not lead to a logically impossible condition."
+                }, 
+                "conformanComparatorLower": {
+                    "type": "string", 
+                    "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to Service Test Management API REST Specification compare with the conformanceTargetLower."
+                }, 
+                "conformanComparatorUpper": {
+                    "type": "string", 
+                    "description": "An operator that when applied on a value specifies whether a \nthreshold is crossed or ceased to be crossed. This operator is used to compare with the conformanceTargetUpper."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description for the MetricDefMeasureThresholdRule ."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name for the MetricDefMeasureThresholdRule ."
+                }, 
+                "numberOfAllowedCrossing": {
+                    "type": "string", 
+                    "description": "The number of allowed crossing occurrences in reference to the \ntolerancePeriod without a consequence being initiated."
+                }, 
+                "thresholdRuleSeveri ty": {
+                    "type": "string", 
+                    "description": "A threshold can be generated in different severity levels. A \ncrossing for each level may require a different condition and possibly trigger a different consequence."
+                }, 
+                "tolerancePeriod": {
+                    "type": "string", 
+                    "description": "A String. An interval of time of allowed crossing occurrences before a consequence being initiated."
+                }, 
+                "metricDefMeasureConsequence": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/MetricDefMeasureConsequence"
+                    }
+                }
+            }
+        }, 
+        "MetricDefMeasureConsequence": {
+            "type": "object", 
+            "description": "A MetricDefMeasureConsequence defines the action (prescribed action or notification) to take when a \nMetricDefMeasureThresholdRule is crossed.", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains in detail what the consequence is."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "A word, term, or phrase by which a \nMetricDefMeasureConsequence is known and distinguished from other MetricDefMeasureConsequences."
+                }, 
+                "prescribeAction": {
+                    "type": "string", 
+                    "description": "Recommended remedy for a violated threshold. This could be \nthe hyperlink to the action."
+                }, 
+                "repeatAction": {
+                    "type": "string", 
+                    "description": "An indicator use to specify that a consequence should cease \nbeing applied if a value is in the same range as the previous value  or continue being applied if a value is in the same range as the previous value.   \nIf the repeatAcation is True, if the consequence is always applied as soon as the MetricMeasure value is in the range of values and if the repeatAcation is False, the consequence is applied only if the previous MetricMeasure value wasn't in the same range."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

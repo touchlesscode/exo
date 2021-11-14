@@ -1,0 +1,954 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "This is Swagger UI environment generated for the TMF Performance Management Threshold specification",
+        "version": "3.0",
+        "title": "Peformance Management Threshold"
+    },
+    "host": "env-0693795.jelastic.servint.net",
+    "basePath": "/DSPerformanceThreshold/api/performanceThreshold/v1",
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/threshold": {
+            "post": {
+                "tags": ["threshold"],
+                "operationId": "thresholdCreate",
+                "summary": "thresholdCreate",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "threshold",
+                    "in": "body",
+                    "required": true,
+                    "schema": {"$ref": "#/definitions/threshold"}
+                }],
+                "responses": {"201": {
+                    "description": "Threshold",
+                    "schema": {"$ref": "#/definitions/threshold"}
+                }}
+            },
+            "get": {
+                "tags": ["threshold"],
+                "operationId": "thresholdFind",
+                "summary": "thresholdFind",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "fields",
+                    "in": "query",
+                    "required": false,
+                    "description": "",
+                    "type": "string"
+                }],
+                "responses": {"200": {
+                    "description": "List of Thresholds",
+                    "schema": {
+                        "type": "array",
+                        "items": {"$ref": "#/definitions/threshold"}
+                    }
+                }}
+            }
+        },
+        "/threshold/{thresholdId}": {
+            "delete": {
+                "tags": ["threshold"],
+                "operationId": "thresholdDelete",
+                "summary": "thresholdDelete",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "thresholdId",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {"204": {"description": "Success"}}
+            },
+            "get": {
+                "tags": ["threshold"],
+                "operationId": "thresholdGet",
+                "summary": "thresholdGet",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "required": false,
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "responses": {"200": {
+                    "description": "Threshold",
+                    "schema": {"$ref": "#/definitions/threshold"}
+                }}
+            },
+            "patch": {
+                "tags": ["threshold"],
+                "operationId": "thresholdPatch",
+                "summary": "thresholdPatch",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "threshold",
+                        "in": "body",
+                        "required": true,
+                        "schema": {"$ref": "#/definitions/threshold"}
+                    }
+                ],
+                "responses": {"201": {
+                    "description": "Success Threshold",
+                    "schema": {"$ref": "#/definitions/threshold"}
+                }}
+            }
+        },
+        "/threshold/{thresholdId}/suspend": {"post": {
+            "tags": ["thresholdJob"],
+            "operationId": "thresholdJobSuspend",
+            "summary": "thresholdJobSuspend",
+            "description": "",
+            "deprecated": false,
+            "parameters": [ {
+                        "name": "thresholdId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }],
+            "responses": {"201": {
+                "description": "Threshold",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/threshold/{thresholdId}/resume": {"post": {
+            "tags": ["thresholdJob"],
+            "operationId": "thresholdJobResume",
+            "summary": "thresholdJobResume",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                        "name": "thresholdId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    }],
+            "responses": {"201": {
+                "description": "Threshold",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/listener/thresholdCreateNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdCreateNotification",
+            "summary": "thresholdCreateNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "threshold",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/threshold"}
+            }],
+            "responses": {"201": {
+                "description": "Threshold",
+                "schema": {"$ref": "#/definitions/threshold"}
+            }}
+        }},
+       
+        "/listener/thresholdChangeNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdChangeNotification",
+            "summary": "thresholdChangeNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "threshold",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/threshold"}
+            }],
+            "responses": {"201": {
+                "description": "Threshold",
+                "schema": {"$ref": "#/definitions/threshold"}
+            }}
+        }},
+        "/listener/thresholdRuleCreateNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdRuleCreateNotification",
+            "summary": "thresholdRuleCreateNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdRule",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdRule"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdRule",
+                "schema": {"$ref": "#/definitions/thresholdRule"}
+            }}
+        }},
+        
+        "/listener/thresholdRuleChangedNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdRuleChangedNotification",
+            "summary": "thresholdRuleChangedNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdRule",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdRule"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdRule",
+                "schema": {"$ref": "#/definitions/thresholdRule"}
+            }}
+        }},
+        "/listener/thresholdJobCreateNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdJobCreateNotification",
+            "summary": "thresholdJobCreateNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdJob",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdJob",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/thresholdJobChangedNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdJobChangedNotification",
+            "summary": "thresholdJobChangedNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdJob",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdJob",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/thresholdJobSuspendNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdJobSuspendNotification",
+            "summary": "thresholdJobSuspendNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdJob",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdJob",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/thresholdJobResumeNotification": {"post": {
+            "tags": ["notification"],
+            "operationId": "thresholdJobResumeNotification",
+            "summary": "thresholdJobResumeNotification",
+            "description": "",
+            "deprecated": false,
+            "parameters": [{
+                "name": "thresholdJob",
+                "in": "body",
+                "required": true,
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }],
+            "responses": {"201": {
+                "description": "ThresholdJob",
+                "schema": {"$ref": "#/definitions/thresholdJob"}
+            }}
+        }},
+        "/thresholdJob": {
+            "post": {
+                "tags": ["thresholdJob"],
+                "operationId": "thresholdJobCreate",
+                "summary": "thresholdJobCreate",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "thresholdJob",
+                    "in": "body",
+                    "required": true,
+                    "schema": {"$ref": "#/definitions/thresholdJob"}
+                }],
+                "responses": {"201": {
+                    "description": "ThresholdJob",
+                    "schema": {"$ref": "#/definitions/thresholdJob"}
+                }}
+            },
+            "get": {
+                "tags": ["thresholdJob"],
+                "operationId": "thresholdJobFind",
+                "summary": "thresholdJobFind",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "fields",
+                    "in": "query",
+                    "required": false,
+                    "description": "",
+                    "type": "string"
+                }],
+                "responses": {"200": {
+                    "description": "List of ThresholdJobs",
+                    "schema": {
+                        "type": "array",
+                        "items": {"$ref": "#/definitions/thresholdJob"}
+                    }
+                }}
+            }
+        },
+        "/thresholdJob/{thresholdJobId}": {
+            "delete": {
+                "tags": ["thresholdJob"],
+                "operationId": "thresholdJobDelete",
+                "summary": "thresholdJobDelete",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "thresholdJobId",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {"204": {"description": "Success"}}
+            },
+            "get": {
+                "tags": ["thresholdJob"],
+                "operationId": "thresholdJobGet",
+                "summary": "thresholdJobGet",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdJobId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "required": false,
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "responses": {"200": {
+                    "description": "thresholdJob",
+                    "schema": {"$ref": "#/definitions/thresholdJob"}
+                }}
+            },
+            "patch": {
+                "tags": ["thresholdJob"],
+                "operationId": "thresholdJobpatch",
+                "summary": "thresholdJobPatch",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdJobId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "thresholdJob",
+                        "in": "body",
+                        "required": true,
+                        "schema": {"$ref": "#/definitions/thresholdJob"}
+                    }
+                ],
+                "responses": {"201": {
+                    "description": "Success thresholdJob",
+                    "schema": {"$ref": "#/definitions/thresholdJob"}
+                }}
+            }
+        },
+        "/thresholdRule": {
+            "post": {
+                "tags": ["thresholdRule"],
+                "operationId": "thresholdRuleCreate",
+                "summary": "thresholdRuleCreate",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "thresholdRule",
+                    "in": "body",
+                    "required": true,
+                    "schema": {"$ref": "#/definitions/thresholdRule"}
+                }],
+                "responses": {"201": {
+                    "description": "thresholdRule",
+                    "schema": {"$ref": "#/definitions/thresholdRule"}
+                }}
+            },
+            "get": {
+                "tags": ["thresholdRule"],
+                "operationId": "thresholdRuleFind",
+                "summary": "thresholdRuleFind",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "fields",
+                    "in": "query",
+                    "required": false,
+                    "description": "",
+                    "type": "string"
+                }],
+                "responses": {"200": {
+                    "description": "thresholdRule",
+                    "schema": {"$ref": "#/definitions/thresholdRule"}
+                }}
+            }
+        },
+        "/thresholdRule/{thresholdRuleId}": {
+            "delete": {
+                "tags": ["thresholdRule"],
+                "operationId": "thresholdRuleDelete",
+                "summary": "thresholdRuleDelete",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "thresholdRuleId",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {"204": {"description": "Success"}}
+            },
+            "get": {
+                "tags": ["thresholdRule"],
+                "operationId": "thresholdRuleGet",
+                "summary": "thresholdRuleGet",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdRuleId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "fields",
+                        "in": "query",
+                        "required": false,
+                        "description": "",
+                        "type": "string"
+                    }
+                ],
+                "responses": {"200": {
+                    "description": "thresholdRule",
+                    "schema": {"$ref": "#/definitions/thresholdRule"}
+                }}
+            },
+            "patch": {
+                "tags": ["thresholdRule"],
+                "operationId": "thresholdRulePatch",
+                "summary": "thresholdRulePatch",
+                "description": "",
+                "deprecated": false,
+                "parameters": [
+                    {
+                        "name": "thresholdRuleId",
+                        "in": "path",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "thresholdRule",
+                        "in": "body",
+                        "required": true,
+                        "schema": {"$ref": "#/definitions/thresholdRule"}
+                    }
+                ],
+                "responses": {"201": {
+                    "description": "Success thresholdRule",
+                    "schema": {"$ref": "#/definitions/thresholdRule"}
+                }}
+            }
+        },
+        "/hub": {
+            "post": {
+                "tags": ["hub"],
+                "operationId": "hubCreate",
+                "summary": "hubCreate",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "hub",
+                    "in": "body",
+                    "required": true,
+                    "schema": {"$ref": "#/definitions/Hub"}
+                }],
+                "responses": {"201": {
+                    "description": "Hub",
+                    "schema": {"$ref": "#/definitions/Hub"}
+                }}
+            },
+            "get": {
+                "tags": ["hub"],
+                "operationId": "hubFind",
+                "summary": "hubFind",
+                "description": "",
+                "deprecated": false,
+                "responses": {"200": {
+                    "description": "List of Hub",
+                    "schema": {
+                        "type": "array",
+                        "items": {"$ref": "#/definitions/Hub"}
+                    }
+                }}
+            }
+        },
+        "/hub/{hubId}": {
+            "delete": {
+                "tags": ["hub"],
+                "operationId": "hubDelete",
+                "summary": "hubDelete",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "hubId",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {"204": {"description": "Success"}}
+            },
+            "get": {
+                "tags": ["hub"],
+                "operationId": "hubGet",
+                "summary": "hubGet",
+                "description": "",
+                "deprecated": false,
+                "parameters": [{
+                    "name": "hubId",
+                    "in": "path",
+                    "required": true,
+                    "type": "string"
+                }],
+                "responses": {"200": {
+                    "description": "Hub",
+                    "schema": {"$ref": "#/definitions/Hub"}
+                }}
+            }
+        }
+    },
+    "definitions": {
+        "thresholdRule": {
+            "type": "object",
+            "description": "ThresholdRule A base entity for concrete definition of thresholds.This datatype  is  abstract",
+            "properties": {
+                "Id": {
+                    "description": "Unique identifier of the threshold rule",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "thresholdRuleName": {
+                    "description": "A word, term, or phrase by which a Performance threshold rule is known and distinguished from other threshold rules",
+                    "type": "string"
+                },
+                "Href": {
+                    "type": "string",
+                    "description": "A reference to the threshold rule"
+                },
+                "Measurement": {"$ref": "#/definitions/measurement"},
+                "@Type": {"type": "string"},
+                "simpleThresholdRule": {"$ref": "#/definitions/simpleThresholdRule"},
+                "algorithmThresholdRule": {"$ref": "#/definitions/algorithmThresholdRule"},
+                "genericperformanceConsequence": {
+                    "description": "A threshold crossing or a threshold ceased to be crossing results in a Performance consequence.",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/GenericPerformanceConsequence"}
+                },
+                "performanceAlarmSpecification": {"$ref": "#/definitions/PerformanceAlarmSpecification"},
+                "perfAlarmSpecThresholdCrossingDescription": {
+                    "type": "string",
+                    "description": "A specific description of the threshold crossing (intended to be populated e under the alarm under CrossedThreshold structure)."
+                },
+                "thresholdRuleCondition": {
+                    "type": "string",
+                    "description": "A concrete threshold may have two possible values: \\\"Raise\\\" - a threshold was crossed or \\\"Clear\\\" - a threshold ceased crossing"
+                },
+                "thresholdRuleSeverity": {
+                    "type": "string",
+                    "description": "A threshold can be generated in different severity levels. A crossing for each level may require a different condition and possibly trigger a different consequence. The supported severity levels are equivalent to the possible severity level of alarms."
+                }
+            }
+        },
+        "algorithmThresholdRule": {
+            "type": "object",
+            "description": "A threshold rule that is a reference to an algorithm",
+            "properties": {
+                "algorithmRef": {"type": "string"},
+                "algorithmParams": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/algorithmParams"}
+                }
+            }
+        },
+        "simpleThresholdRule": {
+            "type": "object",
+            "description": "A threshold rule that is based on explicit definition of attributes that represent a Boolean expression",
+            "properties": {
+                "conformanceTargetUpper": {
+                    "description": "A value used to determine if the Performance threshold is crossed or ceased to be crossed, serving as an upper value",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "conformanceTargetLower": {
+                    "description": "A value used to determine if the Performance threshold is crossed or ceased to be crossed, serving as an lower value",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "conformanceComparatorUpper": {
+                    "description": "An operator that when applied on a value (of conformanceTargetUpper) specifies whether a Performance threshold rule is crossed or ceased to be crossed.",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "conformanceComparatorLower": {
+                    "description": "An operator that when applied on a value (of conformanceTargetLower) specifies whether a Performance threshold rule is crossed or ceased to be crossed.",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "conformancePeriod": {"$ref": "#/definitions/Duration"},
+                "tolerancePeriod": {"$ref": "#/definitions/Duration"},
+                "thresholdTarget": {
+                    "description": "A percent that is used to specify when a warning should be used that indicates a Performance threshold is in danger of not being met.",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "gracePeriods": {
+                    "description": "The number of times an objective can remain un-updated in reference to the conformancePeriod without a Performance threshold Consequence being initiated",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "measurement": {
+            "type": "object",
+            "description": "A counter/KPI to be used by the threshold rule",
+            "properties": {
+                "Id": {
+                    "description": "Unique identifier of the measurement",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "Name": {
+                    "description": "A word, term, or phrase by which a measurement is known and distinguished from other measurements",
+                    "type": "string"
+                },
+                "Href": {
+                    "type": "string",
+                    "description": "A reference to the measurement"
+                },
+                "Description": {
+                    "type": "string",
+                    "description": "A description of the measurement"
+                },
+                "measurementType": {
+                    "type": "string",
+                    "description": "A category of the measurement (different SDOs may be using different categories)"
+                },
+                "measurementUnit": {
+                    "type": "string",
+                    "description": "The unit of the measurement (e.g. second, bytes, Celsius, etc.)"
+                },
+                "collectionType": {
+                    "type": "string",
+                    "description": "This attribute indicates different forms in which the measurement data can be captured (please see details below)"
+                },
+                "measurementFormula": {
+                    "type": "string",
+                    "description": "A formula that is used to calculate a measurement (a string)"
+                }
+            }
+        },
+        "algorithmParams": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string"},
+                "value": {"type": "string"}
+            }
+        },
+        "threshold": {
+            "type": "object",
+            "description": "A threshold base entity containing threshold rules.This entity  is  mandatoryThis entity  is  extendableThis entity   does not generate Object Creation notifications (NA)This entity   generates Object Deletion notificationsThis entity   does not generate Object Discovery notifications (NA)This entity supports the Common Get Operation.This entity supports the Common Get Multiple Operation.This entity supports the Common Create Operation.This entity supports the Common Delete Operation.",
+            "properties": {
+                "id": {
+                    "description": "Unique identifier of the threshold",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "A reference to the threshold"
+                },
+                "description": {
+                    "description": "A description of the threshold",
+                    "type": "string"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "A word, term, or phrase by which a Performance threshold is known and distinguished from other thresholds."
+                },
+                "thresholdRule": {
+                    "description": "A Performance Threshold contains a set of Performance threshold rules of different conditions (Raise, Clear) and different severities",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ContainedThresholdRules"}
+                }
+            }
+        },
+        "ContainedThresholdRules": {
+            "type": "object",
+            "description": "A set of threshold rules that govern the threshold",
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "The hyperlink to access the thresholdRule object"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "The identifier of a threshold rule"
+                },
+                "name": {"type": "string"}
+            }
+        },
+        "thresholdJob": {
+            "type": "object",
+            "description": "",
+            "properties": {
+                "Id": {
+                    "type": "string",
+                    "description": "The identifier of the threshold job"
+                },
+                "Href": {
+                    "type": "string",
+                    "description": "The identifier of the threshold job"
+                },
+                "Granularity": {
+                    "type": "string",
+                    "description": "The rate of evaluating the threshold (i.e. the execution of the threshold job)"
+                },
+                "creationTime": {
+                    "description": "The threshold job creation time",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "lastModifiedTime": {
+                    "description": "The time when the threshold job was last modified",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "jobPriority": {
+                    "description": "The priority of the management job. The target system is using it to prioritize jobs",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "executionState": {
+                    "description": "The execution state of the threshold job. It is used to indicate a failure in the execution of the job.",
+                    "type": "string"
+                },
+                "performanceThreshold": {
+                    "description": "The Performance threshold to be executed by the job.",
+                    "type": "integer",
+                    "format": "int64"
+                },
+                "scheduleDefinition": {"$ref": "#/definitions/ScheduleDefinition"},
+                "monitoredObjectsCriteria": {
+                    "description": "Monitored objects are specified by the MonitoredObjectsCriteria.",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/MonitoredObjectsCriteria"}
+                }
+            }
+        },
+        "MonitoredObjectsCriteria": {
+            "description": "Monitored objects are specified by the MonitoredObjectsCriteria.",
+            "type": "object",
+            "properties": {
+                "monitoredObjectInstances": {
+                    "description": "A list of object identifiers for specifying what monitored objects need to be referencenced",
+                    "type": "string"
+                },
+                "monitoredObjectClass": {
+                    "description": "A monitored object class for specifying the set of instances that are referenced",
+                    "type": "string"
+                },
+                "monitoredObjectFilter": {
+                    "description": "A filter that can be used in conjunction with the monitored object class for specifying the set of instances that are referenced",
+                    "type": "string"
+                }
+            }
+        },
+        "ScheduleDefinition": {
+            "type": "object",
+            "description": "The schedule definition for running the threshold job",
+            "properties": {
+                "scheduleDefinitionStartTime": {
+                    "description": "The Start time of the Schedule Definition",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "scheduleDefinitionEndTime": {
+                    "description": "The Endtime of the Schedule Definition. If the attribute is empty the Schedule run forever, not having a time constraint.",
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "recurringFrequency": {
+                    "description": "A recurring frequency to run a job within day that is included in schedule definition, for example: every 5 minutes, 15 minute, 30 minutes, 1 hour",
+                    "type": "string"
+                },
+                "scheduleDefinitionHoursRange": {
+                    "description": "A list of time ranges within a specific day that the schedule will be active on, for example 08:00-12:00, 16:00-19:00.",
+                    "type": "string"
+                },
+                "WeeklyScheduledefinition": {
+                    "description": "The weekly schedule is used to define a schedule that is based on the days of the week, e.g. a schedule that will be active only on Monday and Tuesday.",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DaysOfWeekRecurrence"}
+                },
+                "monthlyScheduleDaysOfMonthDefinition": {
+                    "description": "The schedule definition for running the threshold job",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ScheduledDates"}
+                },
+                "MonthlyScheduleDaysOfWeekDefinition": {"$ref": "#/definitions/MonthlyScheduleDaysOfWeekDefinition"},
+                "DateScheduleDefintion": {
+                    "description": "The date schedule is used to define a schedule that is based on specific dates, such as December 31st 2015, Feberaury 28th 2013",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ScheduledDates"}
+                },
+                "excludedDates": {
+                    "description": "A list of specific dates that should be excluded from the Schedule Definition.",
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/ExcludedDate"}
+                }
+            }
+        },
+        "MonthlyScheduleDaysOfWeekDefinition": {
+            "type": "object",
+            "properties": {
+                "daysOfMonthRecurrence": {
+                    "type": "array",
+                    "items": {"$ref": "#/definitions/DaysOfMonthRecurrence"}
+                },
+                "recurringDaySequence": {"type": "string"}
+            }
+        },
+        "DaysOfMonthRecurrence": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "DaysOfWeekRecurrence": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "ScheduledDates": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "ExcludedDate": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "GenericPerformanceConsequence": {
+            "description": "A threshold crossing or a threshold ceased to be crossing results in a Performance consequence.",
+            "type": "object",
+            "properties": {
+                "Name": {
+                    "description": "A word, term, or phrase by which a Consequence is known and distinguished from other measurements",
+                    "type": "string"
+                },
+                "Description": {
+                    "type": "string",
+                    "description": "A description of a Consequence"
+                },
+                "PrescribedAction": {
+                    "description": "The suggested action",
+                    "type": "string"
+                }
+            }
+        },
+        "PerformanceAlarmSpecification": {
+            "description": "The specification of how to populate the alarm fields when generating a threshold crossing alarm",
+            "type": "object",
+            "properties": {
+                "perfAlarmSpecSeverity": {
+                    "description": "A value for the Severity attribute as part of a threshold crossing alarm definition",
+                    "type": "string"
+                },
+                "perfeAlarmProbableCause": {
+                    "description": "A value for the ProbableCause attribute as part of a threshold crossing alarm definition.",
+                    "type": "string"
+                },
+                "perfAlarmSpecAlarmType": {
+                    "type": "string",
+                    "description": "A value for the AlarmType attribute as part of a threshold crossing alarm definition."
+                },
+                "perfAlarmSpecSpecificProblem": {
+                    "type": "string",
+                    "description": "A value for the SpecificProblem attribute as part of a threshold crossing alarm definition"
+                },
+                "perfAlarmSpecAdditionalText": {
+                    "type": "string",
+                    "description": "A value for the AdditionalText attribute as part of a threshold crossing alarm definition."
+                }
+            }
+        },
+        "Hub": {
+            "type": "object",
+            "properties": {
+                "id": {"type": "string"},
+                "callback": {"type": "string"},
+                "query": {"type": "string"}
+            }
+        },
+        "Duration": {
+            "type": "object",
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        }
+    }
+}

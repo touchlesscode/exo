@@ -1,0 +1,1223 @@
+{
+	"basePath": "/paymentManagement/v1",
+	"definitions": {
+		"PaymentMethodType": {
+			"description": "Representation of a payment method",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique id of the payment method in the server"
+				},
+				"href": {
+					"type": "string",
+					"description": "URI where to perform actions on the payment method"
+				},
+				"name": {
+					"type": "string",
+					"description": "Screen name of the payment method"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the payment method"
+				},
+				"validFor": {
+					"$ref": "#/definitions/TimePeriodType",
+					"description": "Validity period of the payment method"
+				},
+				"preferred": {
+					"type": "boolean",
+					"description": "Defines whether this particular method is the preferred one"
+				},
+				"relatedParty": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/RelatedPartyRefType"
+					},
+					"description": "Account that owns the payment method"
+				},
+				"type": {
+					"type": "string",
+					"enum": [
+						"cash",
+						"digitalWallet",
+						"tokenizedCard",
+						"bankAccountTransfer",
+						"bankAccountDebit",
+						"bankCard",
+						"account",
+						"bucket",
+						"voucher",
+						"check",
+						"loyaltyAccount"
+					],
+					"description": "Payment method type. The content of the details field depends on the value of this one"
+				},
+				"authorizationCode": {
+					"type": "string",
+					"description": "Authorization code provided by a financial institution. Typically this would be populated for recurring payments using the method, as payments have an authorization code of their own."
+				},
+				"status": {
+					"type": "string",
+					"description": "Current status of the payment method"
+				},
+				"statusDate": {
+					"format": "date-time",
+					"type": "string",
+					"description": "Last time the status changed"
+				},
+				"details": {
+					"type": "object",
+					"description": "Details of the payment method. This object's type depends on the value of the type field above"
+				}
+			},
+			"required": [
+				"id",
+				"href",
+				"type",
+				"details"
+			]
+		},
+		"AccountRefType": {
+			"description": "Reference to an external entity that can be tipically queried with another API such as a customer account, a ticket, etc.",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the entity"
+				},
+				"href": {
+					"type": "string",
+					"description": "URI where to query or perform actions on the entity"
+				},
+				"name": {
+					"type": "string",
+					"description": "Screen name of the entity"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the entity"
+				}
+			},
+			"required": [
+				"id",
+				"href"
+			]
+		},
+		"RelatedPartyRefType": {
+			"description": "Reference to an external party that can be tipically queried with another API.",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier for the party entity"
+				},
+				"href": {
+					"type": "string",
+					"description": "A resource URI pointing to the resource in the OB that stores the party entity information"
+				},
+				"role": {
+					"type": "string",
+					"description": "Role of the entity (customer, user, agent)"
+				},
+				"name": {
+					"type": "string",
+					"description": "Name of the party"
+				}
+			},
+			"required": [
+				"id",
+				"href"
+			]
+		},
+		"PaymentRefType": {
+			"description": "Reference to a payment that can be queried with an API call.",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the payment"
+				},
+				"href": {
+					"type": "string",
+					"description": "URI where to query or perform actions on the payment"
+				},
+				"name": {
+					"type": "string",
+					"description": "Screen name of the payment"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the payment"
+				}
+			},
+			"required": [
+				"id",
+				"href"
+			]
+		},
+		"ChannelRefType": {
+			"description": "Reference to a channel that can be queried with an API call.",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the channel"
+				},
+				"href": {
+					"type": "string",
+					"description": "URI where to query or perform actions on the channel"
+				},
+				"name": {
+					"type": "string",
+					"description": "Screen name of the channel"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the channel"
+				}
+			},
+			"required": [
+				"id",
+				"href"
+			]
+		},
+		"MoneyType": {
+			"description": "Representation of a monetary value",
+			"properties": {
+				"amount": {
+					"format": "decimal",
+					"type": "number",
+					"description": "Amount of money"
+				},
+				"units": {
+					"type": "string",
+					"description": "Currency"
+				}
+			},
+			"required": [
+				"amount",
+				"units"
+			]
+		},
+		"PaymentRequestType": {
+			"properties": {
+				"correlatorId": {
+					"type": "string"
+				},
+				"paymentDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"authorizationCode": {
+					"type": "string"
+				},
+				"amount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"taxAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"totalAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"channel": {
+					"$ref": "#/definitions/ChannelRefType"
+				},
+				"account": {
+					"$ref": "#/definitions/AccountRefType"
+				},
+				"paymentItem": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentItemType"
+					}
+				},
+				"paymentMethod": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentMethodType"
+					}
+				},
+				"status": {
+					"type": "string"
+				},
+				"statusDate": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"payer": {
+					"$ref": "#/definitions/RelatedPartyRefType"
+				}
+			},
+			"required": [
+				"totalAmount"
+			]
+		},
+		"PaymentItemType": {
+			"properties": {
+				"amount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"taxAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"totalAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"item": {
+					"$ref": "#/definitions/EntityRefType"
+				}
+			}
+		},
+		"PaymentType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"correlatorId": {
+					"type": "string"
+				},
+				"paymentDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"name": {
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"authorizationCode": {
+					"type": "string"
+				},
+				"amount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"taxAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"totalAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"channel": {
+					"$ref": "#/definitions/ChannelRefType"
+				},
+				"account": {
+					"$ref": "#/definitions/AccountRefType"
+				},
+				"paymentItem": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentItemType"
+					}
+				},
+				"paymentMethod": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentMethodType"
+					}
+				},
+				"status": {
+					"type": "string"
+				},
+				"statusDate": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"payer": {
+					"$ref": "#/definitions/RelatedPartyRefType"
+				}
+			},
+			"required": [
+				"id",
+				"href",
+				"paymentDate",
+				"totalAmount"
+			]
+		},
+		"RefundType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"correlatorId": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"refundDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"description": {
+					"type": "string"
+				},
+				"authorizationCode": {
+					"type": "string"
+				},
+				"amount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"taxAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"totalAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"channel": {
+					"$ref": "#/definitions/ChannelRefType"
+				},
+				"account": {
+					"$ref": "#/definitions/AccountRefType"
+				},
+				"paymentMethod": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentMethodType"
+					}
+				},
+				"relatedPayment": {
+					"$ref": "#/definitions/PaymentRefType"
+				},
+				"reason": {
+					"type": "string"
+				},
+				"status": {
+					"enum": [
+						"pendingAuthorization",
+						"authorized",
+						"processing",
+						"charged",
+						"unAuthorized",
+						"deniedByUser",
+						"denied",
+						"failed"
+					],
+					"type": "string"
+				},
+				"statusDate": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"requestor": {
+					"$ref": "#/definitions/RelatedPartyRefType"
+				}
+			},
+			"required": [
+				"id",
+				"href",
+				"refundDate",
+				"totalAmount",
+				"paymentMethod"				
+			]
+		},
+		"RefundRequestType": {
+			"properties": {
+				"correlatorId": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				},
+				"refundDate": {
+					"type": "string",
+					"format": "date-time"
+				},
+				"description": {
+					"type": "string"
+				},
+				"authorizationCode": {
+					"type": "string"
+				},
+				"amount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"taxAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"totalAmount": {
+					"$ref": "#/definitions/MoneyType"
+				},
+				"channel": {
+					"$ref": "#/definitions/ChannelRefType"
+				},
+				"account": {
+					"$ref": "#/definitions/AccountRefType"
+				},
+				"paymentMethod": {
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/PaymentMethodType"
+					}
+				},
+				"relatedPayment": {
+					"$ref": "#/definitions/PaymentRefType"
+				},
+				"reason": {
+					"type": "string"
+				},
+				"status": {
+					"enum": [
+						"pendingAuthorization",
+						"authorized",
+						"processing",
+						"charged",
+						"unAuthorized",
+						"deniedByUser",
+						"denied",
+						"failed"
+					],
+					"type": "string"
+				},
+				"statusDate": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"requestor": {
+					"$ref": "#/definitions/RelatedPartyRefType"
+				}
+			},
+			"required": [
+				"totalAmount",
+				"paymentMethod"
+			]
+		},
+		"EntityRefType": {
+			"description": "Reference to an external entity that can be tipically queried with another API such as a customer account, a ticket, etc.",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the entity"
+				},
+				"href": {
+					"type": "string",
+					"description": "URI where to query or perform actions on the entity"
+				},
+				"type": {
+					"type": "string",
+					"description": "Type of entity (e.g.: account, customer, ticket, etc.)"
+				},
+				"name": {
+					"type": "string",
+					"description": "Screen name of the entity"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the entity"
+				}
+			},
+			"required": [
+				"id",
+				"href",
+				"type"
+			]
+		},
+		"TimePeriodType": {
+			"description": "Representation of a time period",
+			"properties": {
+				"startDateTime": {
+					"format": "date-time",
+					"type": "string",
+					"description": "Start date of the period"
+				},
+				"endDateTime": {
+					"format": "date-time",
+					"type": "string",
+					"description": "End date of the period"
+				}
+			},
+			"required": [
+				"startDateTime"
+			]
+		},
+		"BankCardType": {
+			"description": "Details of a bank card",
+			"properties": {
+				"brand": {
+					"type": "string",
+					"description": "Credit card brand. E.g.: Visa, MasterCard, AmericanExpress..."
+				},
+				"type": {
+					"type": "string",
+					"enum": [
+						"Debit",
+						"Credit"
+					],
+					"description": "Debit or credit"
+				},
+				"cardNumber": {
+					"type": "string",
+					"description": "Credit card number"
+				},
+				"expirationDate": {
+					"type": "string",
+					"format": "date-time",
+					"description": "the card's expiration date"
+				},
+				"cvv": {
+					"type": "string",
+					"description": "the CVV or CVV2 code of the card"
+				},
+				"lastFourDigits": {
+					"type": "string",
+					"description": "Last four digits of the card"
+				},
+				"nameOnCard": {
+					"type": "string",
+					"description": "Name writen on the card"
+				},
+				"bank": {
+					"type": "string",
+					"description": "Bank that issued the card"
+				}
+			},
+			"required": [
+				"brand",
+				"cardNumber",
+				"expirationDate"
+			]
+		},
+		"TokenizedCardType": {
+			"description": "Details of a bank card",
+			"properties": {
+				"brand": {
+					"type": "string",
+					"description": "Credit card brand. E.g.: Visa, MasterCard, AmericanExpress... Might be used for display purposes"
+				},
+				"type": {
+					"type": "string",
+					"enum": [
+						"Debit",
+						"Credit"
+					],
+					"description": "Card type. Might be used for display purposes"
+				},
+				"lastFourDigits": {
+					"type": "string",
+					"description": "Last four digits of the credit card. Might be used for display purposes"
+				},
+				"cvv": {
+					"type": "string",
+					"description": "security code (e.g.:cvv, cvv2) of the card. Even when the card is tokenized, in some countries it is still necessary to send the cvv to perform payments"
+				},
+				"tokenType": {
+					"type": "string",
+					"description": "Token type (e.g.: emv)"
+				},
+				"token": {
+					"type": "string",
+					"description": "The token itself"
+				},
+				"issuer": {
+					"type": "string",
+					"description": "Whoever issued the token"
+				}
+			},
+			"required": [
+				"tokenType",
+				"token"
+			]
+		},
+		"BankAccountTransferType": {
+			"description": "Details of a bank account",
+			"properties": {
+				"accountNumber": {
+					"type": "string",
+					"description": "Bank Account Number (this could refer to the IBAN or SWIFT number)"
+				},
+				"accountNumberType": {
+					"type": "string",
+					"description": "Type of account number (e.g.: IBAN, SWIFT, ...)"
+				},
+				"BIC": {
+					"type": "string",
+					"description": "Business Identifier Code/Swift code of the financial institution where the account is located"
+				},
+				"owner": {
+					"type": "string",
+					"description": "Owner of the bank account"
+				},
+				"bank": {
+					"type": "string",
+					"description": "Screen name of the bank"
+				}
+			},
+			"required": [
+				"accountNumber",
+				"accountNumberType"
+			]
+		},
+		"BankAccountDebitType": {
+			"description": "Details of a bank account",
+			"properties": {
+				"accountNumber": {
+					"type": "string",
+					"description": "Bank Account Number (this could refer to the IBAN or SWIFT number)"
+				},
+				"accountNumberType": {
+					"type": "string",
+					"description": "Type of account number (e.g.: IBAN, SWIFT, ...)"
+				},
+				"BIC": {
+					"type": "string",
+					"description": "Business Identifier Code/Swift code of the financial institution where the account is located"
+				},
+				"owner": {
+					"type": "string",
+					"description": "Owner of the bank account"
+				},
+				"bank": {
+					"type": "string",
+					"description": "Screen name of the bank"
+				}
+			},
+			"required": [
+				"accountNumber",
+				"accountNumberType"
+			]
+		},
+		"CashType": {
+			"description": "Details of cash payer",
+			"properties": {
+				"cashierInfo": {
+					"type": "string",
+					"description": "Information about who performed the payment"
+				}
+			}
+		},
+		"CheckType": {
+			"description": "Details of a check",
+			"properties": {
+				"checkId": {
+					"description": "Unique identifier of the check in the bank that issues them. Typically writen on them and comprises bank, account and serial number.",
+					"type": "string"
+				},
+				"drawer": {
+					"description": "Person or entity writing the check",
+					"type": "string"
+				},
+				"payee": {
+					"description": "Person or entity the check is addressed to",
+					"type": "string"
+				},
+				"bank": {
+					"description": "Entity, typically a bank, performing the payment of the check",
+					"type": "string"
+				},
+				"date": {
+					"description": "Date when the check was signed",
+					"type": "string",
+					"format": "date-time"
+				}
+			},
+			"required": [
+				"drawer",
+				"payee",
+				"bank"
+			]
+		},
+		"DigitalWalletType": {
+			"description": "Details of a digital wallet",
+			"properties": {
+				"service": {
+					"type": "string",
+					"description": "Wallet service (e.g.: PayPal)"
+				},
+				"walletId": {
+					"type": "string",
+					"description": "Unique Id of the account in the service"
+				},
+				"walletUrl": {
+					"type": "string",
+					"description": "URI pointing at the digital wallet (e.g.: https://paypal.me/johndoe)"
+				}
+			},
+			"required": [
+				"service",
+				"walletId"
+			]
+		},
+		"VoucherType": {
+			"description": "Details of a voucher",
+			"properties": {
+				"code": {
+					"type": "string",
+					"description": "Code that identifies the voucher or provides the discount"
+				},
+				"description": {
+					"type": "string",
+					"description": "Description of the voucher (e.g.: get one and receive one free)"
+				},
+				"value": {
+					"description": "Discount that the voucher applies when it's a discount voucher",
+					"type": "array",
+					"items": {
+						"$ref": "#/definitions/QuantityType"
+					}
+				},
+				"expirationDate": {
+					"type": "string",
+					"format": "date-time",
+					"description": "the voucher's expiration date"
+				},
+				"campaign": {
+					"type": "string",
+					"description": "Campaign this voucher belongs to"
+				}
+			},
+			"required": ["code"]
+		},
+		"QuantityType": {
+			"description": "Representation of a quantity of something. I can also be used to represent a quantity range",
+			"properties": {
+				"amount": {
+					"format": "decimal",
+					"type": "number",
+					"description": "Measured amount"
+				},
+				"maximum": {
+					"format": "decimal",
+					"type": "number",
+					"description": "Maximum amount allowed"
+				},
+				"minimum": {
+					"format": "decimal",
+					"type": "number",
+					"description": "Minimum amount allowed"
+				},
+				"units": {
+					"type": "string",
+					"description": "Units the quantity is measured in"
+				}
+			},
+			"required": [
+				"units",
+				"amount"
+			]
+		}
+	},
+	"host": "tmforum.org",
+	"info": {
+		"description": "This is a sample representation of the TMForum Payments Management API using Swagger",
+		"title": "Payments Management",
+		"version": "0.1.6"
+	},
+	"paths": {
+		"/payment": {
+			"get": {
+				"operationId": "retrievePayments",
+				"parameters": [
+					{
+						"description": "To retrieve the payments from a specific customer",
+						"in": "query",
+						"name": "customerId",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the payments from a specific account",
+						"in": "query",
+						"name": "accountId",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the payments performed with a specific method",
+						"enum": [
+							"directToBill",
+							"digitalWallet",
+							"bankAccount",
+							"bankCard",
+							"prepaidCard",
+							"voucher",
+							"check",
+							"loyalty"
+						],
+						"in": "query",
+						"name": "paymentMethod.type",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the payments performed after this date",
+						"in": "query",
+						"name": "startDate",
+						"required": false,
+						"type": "string",
+						"format": "date-time"
+					},
+					{
+						"description": "To retrieve the payments performed before this date",
+						"in": "query",
+						"name": "endDate",
+						"required": false,
+						"type": "string",
+						"format": "date-time"
+					},
+					{
+						"in": "query",
+						"name": "limit",
+						"required": false,
+						"type": "integer"
+					},
+					{
+						"in": "query",
+						"name": "offset",
+						"required": false,
+						"type": "integer"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Payments retrieved successfully",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/PaymentType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve a list of payments",
+				"tags": [
+					"payments"
+				]
+			},
+			"post": {
+				"consumes": [
+					"application/json"
+				],
+				"operationId": "createPayment",
+				"parameters": [
+					{
+						"description": "Payment that is created",
+						"in": "body",
+						"name": "paymentRequest",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/PaymentRequestType"
+						}
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"201": {
+						"description": "Payment created successfully",
+						"headers": {
+							"Location": {
+								"description": "Location where to query the created payment",
+								"type": "string"
+							}
+						}
+					}
+				},
+				"summary": "Create a new payment",
+				"tags": [
+					"payments"
+				]
+			}
+		},
+		"/payment/{paymentId}": {
+			"get": {
+				"operationId": "retrievePayment",
+				"parameters": [
+					{
+						"description": "ID of the payment that needs to be fetched",
+						"in": "path",
+						"name": "paymentId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Payment retrieved successfully",
+						"schema": {
+							"$ref": "#/definitions/PaymentType"
+						}
+					}
+				},
+				"summary": "Retrieve a payment",
+				"tags": [
+					"payments"
+				]
+			}
+		},
+		"/account/{accountId}/payment": {
+			"get": {
+				"operationId": "retrieveAccountPayments",
+				"parameters": [
+					{
+						"description": "ID of the account whose payment needs to be fetched",
+						"in": "path",
+						"name": "accountId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Payments retrieved successfully",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/PaymentType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve a payment of an account",
+				"tags": [
+					"payments of an account"
+				]
+			}
+		},
+		"/refund": {
+			"get": {
+				"operationId": "retrieveRefunds",
+				"parameters": [
+					{
+						"description": "To retrieve the refunds from a specific customer",
+						"in": "query",
+						"name": "customerId",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the refunds from a specific account",
+						"in": "query",
+						"name": "accountId",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"enum": [
+							"directToBill",
+							"eMoney",
+							"bankAccount",
+							"debitCard",
+							"creditCard",
+							"prepaidCard"
+						],
+						"description": "To retrieve the refunds performed with a specific method",
+						"in": "query",
+						"name": "paymentMethod_type",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the refunds with a specific reference code",
+						"in": "query",
+						"name": "referenceCode",
+						"required": false,
+						"type": "string"
+					},
+					{
+						"description": "To retrieve the refunds performed after this date",
+						"in": "query",
+						"name": "startDate",
+						"required": false,
+						"type": "string",
+						"format": "date-time"
+					},
+					{
+						"description": "To retrieve the refunds performed before this date",
+						"in": "query",
+						"name": "endDate",
+						"required": false,
+						"type": "string",
+						"format": "date-time"
+					},
+					{
+						"in": "query",
+						"name": "limit",
+						"required": false,
+						"type": "integer"
+					},
+					{
+						"in": "query",
+						"name": "offset",
+						"required": false,
+						"type": "integer"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Refunds retrieved successfully",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/RefundType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve a list of refunds",
+				"tags": [
+					"refunds"
+				]
+			},
+			"post": {
+				"consumes": [
+					"application/json"
+				],
+				"operationId": "createRefund",
+				"parameters": [
+					{
+						"description": "Data necessary to request a refund",
+						"in": "body",
+						"name": "refundRequest",
+						"required": true,
+						"schema": {
+							"$ref": "#/definitions/RefundRequestType"
+						}
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"201": {
+						"description": "Refund created successfully",
+						"headers": {
+							"Location": {
+								"description": "Location where to query the created refund",
+								"type": "string"
+							}
+						}
+					}
+				},
+				"summary": "Create a new refund",
+				"tags": [
+					"refunds"
+				]
+			}
+		},
+		"/refund/{refundId}": {
+			"get": {
+				"operationId": "retrieveRefund",
+				"parameters": [
+					{
+						"description": "ID of the refund that needs to be fetched",
+						"in": "path",
+						"name": "refundId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Refund retrieved successfully",
+						"schema": {
+							"$ref": "#/definitions/RefundType"
+						}
+					}
+				},
+				"summary": "Retrieve a refund",
+				"tags": [
+					"refunds"
+				]
+			}
+		},
+		"/account/{accountId}/refund": {
+			"get": {
+				"operationId": "retrieveAccountRefunds",
+				"parameters": [
+					{
+						"description": "ID of the account whose refund needs to be fetched",
+						"in": "path",
+						"name": "accountId",
+						"required": true,
+						"type": "string"
+					}
+				],
+				"produces": [
+					"application/json"
+				],
+				"responses": {
+					"200": {
+						"description": "Refunds retrieved successfully",
+						"schema": {
+							"type": "array",
+							"items": {
+								"$ref": "#/definitions/RefundType"
+							}
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve refunds of an account",
+				"tags": [
+					"refunds of an account"
+				]
+			}
+		}
+	},
+	"schemes": [
+		"https"
+	],
+	"swagger": "2.0",
+	"tags": [
+		{
+			"name": "payments"
+		},
+		{
+			"name": "refunds"
+		},
+		{
+			"name": "payments of an account"
+		},
+		{
+			"name": "refunds of an account"
+		}
+	]
+}

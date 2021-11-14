@@ -47,3 +47,18 @@
     "metadata": [{}] 
 }
 ```
+
+# OpenAPI Expects:
+```json
+{
+  "ein": "04-343243243",
+  "businessName": "Business LLC",
+  "businessAddress": {
+    "city": "Bourne",
+    "state": "Massachusetts",
+    "country": "US",
+    "zipCode": "3442",
+    "address1": "St. Road"
+  }
+}
+```

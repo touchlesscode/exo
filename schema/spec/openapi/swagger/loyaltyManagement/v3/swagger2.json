@@ -1,0 +1,3837 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0",
+    "title": "LoyaltySwagger",
+    "description": "The TMForum Loyalty API Specification as developed by Globetom"
+  },
+  "host": "196.192.189.2:8811",
+  "basePath": "/loyaltyManagement",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/loyaltyProgramProductSpec": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty program product specifications. A loyalty program product specification contains loyalty rules.",
+        "tags": [
+          "Loyalty Program Product Spec"
+        ],
+        "operationId": "List Product Specs",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ProgramProductSpec"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loyaltyProgramProductSpec"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "List Product Specs",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty program product specification.",
+        "tags": [
+          "Loyalty Program Product Spec"
+        ],
+        "operationId": "Create Product Spec",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProgramProductSpec"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ProgramProductSpec"
+              }
+            }
+          },
+          "409": {
+            "description": "Conflict - Resource already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyProgramProductSpec",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"id\" : \"121\",\r\n    \"name\":\"UpComingProfessionalsProgram\",\r\n    \"productNumber\":\"121\",\r\n    \"description\": \"Loyalty Program to ensure that prepaid youth market is retained\",\r\n    \"needsLoyaltyAccount\": true,\r\n    \"lifeCycleStatus\": \"active\",\r\n    \"brand\" : \"Globetom\",\r\n    \"validFor\" : {\r\n        \"startDateTime\" : \"2016-01-01T00:00:00Z\",\r\n        \"endDateTime\" : \"2016-12-31T23:59:59Z\"\r\n    }\r\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Product Spec",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}": {
+      "get": {
+        "description": "This operation is used to retrieve a single loyalty program product specification. A loyalty program product specification contains loyalty rules.",
+        "tags": [
+          "Loyalty Program Product Spec"
+        ],
+        "operationId": "Get Product Spec",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProgramProductSpec"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "Deletes a program product spec.",
+        "tags": [
+          "Loyalty Program Product Spec"
+        ],
+        "operationId": "Delete Product Spec",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "Updates a loyalty program product spec.",
+        "tags": [
+          "Loyalty Program Product Spec"
+        ],
+        "operationId": "Update Product Spec",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateProductSpec"
+            }
+          },
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProgramProductSpec"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAction": {
+      "get": {
+        "description": "This operation is used to retrieve all the loyalty actions. A loyalty action contains a loyalty execution point.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "List Actions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyAction"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loyaltyAction"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "List Actions",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty action.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "Create Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          "409": {
+            "description": "Conflict - Resource already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyAction",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"id\": \"111\",\r\n    \"type\": \"LoyaltyEarn\",\r\n    \"actionAttributes\": {\r\n        \"quantity\": 50\r\n    },\r\n    \"loyaltyExecutionPoint\": {\r\n        \"commonName\": \"LoyaltyEarn\",\r\n        \"description\": \"\",\r\n        \"action\": \"POST\",\r\n        \"endpoint\": \"http://server:port/loyaltyManagement/loyaltyProgramMember/{memberId}/loyaltyBalance/{balanceId}/loyaltyEarn\",\r\n        \"version\": \"2.0\"\r\n    }\r\n}\r\n"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Action",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAction/{actionId}": {
+      "get": {
+        "description": "This operation is used to retrieve a loyalty action.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "Get Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "actionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation is used to delete a loyalty action.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "Delete Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "actionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "put": {
+        "description": "Update the complete loyalty action.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "Update Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          {
+            "name": "actionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation partially updates a loyalty action.",
+        "tags": [
+          "Loyalty Action"
+        ],
+        "operationId": "Patch Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          {
+            "name": "actionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyCondition": {
+      "get": {
+        "description": "This operation is used to retrieve all the loyalty conditions.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "List Conditions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyCondition"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loyaltyCondition"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "List Conditions",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty condition.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "Create Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          "409": {
+            "description": "Conflict - Resource already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyCondition",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"id\" : \"1\",\r\n    \"attribute\":\"age\",\r\n    \"operator\":\"<=\",\r\n    \"value\": \"23\"\r\n}\r\n"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Condition",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyCondition/{conditionId}": {
+      "get": {
+        "description": "•  This operation is used to retrieve a loyalty condition.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "Get Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "conditionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "put": {
+        "description": "Update the complete loyalty condition.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "Update Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          {
+            "name": "conditionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation is used to delete a loyalty condition.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "Delete Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "conditionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation partially updates a loyalty condition.",
+        "tags": [
+          "Loyalty Condition"
+        ],
+        "operationId": "Patch Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          {
+            "name": "conditionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyEventType": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty event types.",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "List Event Types",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyEventType"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loyaltyEventType"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "List Event Types",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty event type.",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "Create Event Types",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyEventType",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"id\": \"111\",\r\n    \"eventType\": \"orderCreationNotification\"\r\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Event Types",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyEventType/{eventTypeId}": {
+      "get": {
+        "description": "This operation is used to retrieve a loyalty event type.",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "Get Event Type",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "eventTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "put": {
+        "description": "",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "Update Event Types",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          },
+          {
+            "name": "eventTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation is used to delete a loyalty event type.",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "Delete Event Types",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "eventTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "",
+        "tags": [
+          "Loyalty Event Type"
+        ],
+        "operationId": "Update Event Types1",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateEventTypesrequest"
+            }
+          },
+          {
+            "name": "eventTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty program product specification’s loyalty rule(s).",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "List Rules",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyRule"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Create Rule",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateLoyaltyRule"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyRule"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}": {
+      "get": {
+        "description": "This operation is used to retrieve a loyalty program product specification loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Get Rule",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyRule"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "put": {
+        "description": "Update the complete loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Update Rule",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateLoyaltyRule"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyRule"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation is used to delete a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Delete Rule",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation partially updates a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Patch Rule",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateLoyaltyRule"
+            }
+          },
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyRule"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyCondition": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty rule’s loyalty conditions.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "List Rule Conditions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyCondition"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Add Rule Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AddRuleCondition"
+            }
+          },
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyCondition"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyCondition/{conditionId}": {
+      "delete": {
+        "description": "This operation is used to remove a loyalty condition from a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Delete Rule Condition",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "conditionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyAction": {
+      "get": {
+        "description": "his operation is used to retrieve the loyalty rule’s loyalty actions.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Get Rule Actions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyAction"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to add a loyalty action to a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Add Rule Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AddRuleAction"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyAction"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyAction/{actionId}": {
+      "delete": {
+        "description": "This operation is used to remove a loyalty action from a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Delete Rule Action",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "actionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyEventType": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty rule’s supported loyalty events. ",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Get Rule Event Types",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyEventType"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to add a loyalty event type to a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Add Rule Event Type",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AddRuleEventType"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEventType"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramProductSpec/{productSpecId}/loyaltyRule/{ruleId}/loyaltyEventType/{eventTypeId}": {
+      "delete": {
+        "description": "This operation is used to remove a loyalty event type from a loyalty rule.",
+        "tags": [
+          "Loyalty Rule"
+        ],
+        "operationId": "Delete Rule Event Type",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productSpecId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ruleId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "eventTypeId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember": {
+      "get": {
+        "description": "This operation retrieves loyalty program members. The loyalty program member contains accounts and balances in logical containers.",
+        "tags": [
+          "Loyalty Member"
+        ],
+        "operationId": "Get Members",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyMember"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "GET",
+              "uri": "/loyaltyProgramMember"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Get Members",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation creates a new loyalty program member.",
+        "tags": [
+          "Loyalty Member"
+        ],
+        "operationId": "Create Member",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyMember"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyMember"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyProgramMember",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"status\":\"suspended\",\r\n    \"name\":\"James Joe\",\r\n    \"validFor\": {\r\n        \"startDateTime\":\"2015-04-19T16:42:23.0Z \",\r\n        \"endDateTime\":\"2016-04-19T16:42:23.0Z\"\r\n    }\r\n}"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Create Member",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember/{memberId}": {
+      "get": {
+        "description": "This operation retrieves a loyalty program member by ID. The loyalty program member contains accounts and balances in logical containers.",
+        "tags": [
+          "Loyalty Member"
+        ],
+        "operationId": "Get Member",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyMember"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation updates the attributes of a loyalty program member present in the request body.",
+        "tags": [
+          "Loyalty Member"
+        ],
+        "operationId": "Update Member",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/UpdateLoyaltyMember"
+            }
+          },
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyMember"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation deletes a loyalty program member.",
+        "tags": [
+          "Loyalty Member"
+        ],
+        "operationId": "Delete Member",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance": {
+      "get": {
+        "description": "This operation retrieves loyalty program member accounts. The account resource is also returned within each balance entity.",
+        "tags": [
+          "Loyalty Account Balance"
+        ],
+        "operationId": "List Member Balances",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyBalance"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation creates a new loyalty program member account balance.",
+        "tags": [
+          "Loyalty Account Balance"
+        ],
+        "operationId": "Create Member Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CreateLoyaltyBalance"
+            }
+          },
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyBalance"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance/{balanceId}": {
+      "get": {
+        "description": "This operation retrieves a loyalty program member account. The account resource is also returned within each balance entity.",
+        "tags": [
+          "Loyalty Account Balance"
+        ],
+        "operationId": "Get Member Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyBalance"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation deletes a loyalty program member account.",
+        "tags": [
+          "Loyalty Account Balance"
+        ],
+        "operationId": "Update Member Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation updates the attributes of a loyalty program member loyalty balance present in the request body.",
+        "tags": [
+          "Loyalty Account Balance"
+        ],
+        "operationId": "Delete Member Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyBalanceUpdate"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyBalance"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember/{memberId}/loyaltyAccount": {
+      "get": {
+        "description": "This operation retrieves loyalty program member accounts.",
+        "tags": [
+          "Loyalty Member Account"
+        ],
+        "operationId": "List Member Accounts",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyAccount"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember/{memberId}/loyaltyProgramProduct": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty program member’s loyalty program products.",
+        "tags": [
+          "Loyalty Program Product"
+        ],
+        "operationId": "List Products",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ProductProgramRef"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation is used to create a new loyalty program product.",
+        "tags": [
+          "Loyalty Program Product"
+        ],
+        "operationId": "Create Product",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductProgramRef"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/ProductProgramRef"
+            }
+          },
+          "409": {
+            "description": "Conflict - Resource already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember/{memberId}/loyaltyProgramProduct/{programProductId}": {
+      "get": {
+        "description": "This operation is used to retrieve the loyalty program member’s loyalty program product.",
+        "tags": [
+          "Loyalty Program Product"
+        ],
+        "operationId": "Get Product",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "programProductId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductProgramRef"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "delete": {
+        "description": "This operation is used to delete a loyalty program product.",
+        "tags": [
+          "Loyalty Program Product"
+        ],
+        "operationId": "Delete Product",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "programProductId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "patch": {
+        "description": "This operation partially updates a loyalty program member’s loyalty program product.",
+        "tags": [
+          "Loyalty Program Product"
+        ],
+        "operationId": "Update Product",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "programProductId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ProductProgramUpdateRef"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductProgramRef"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyProgramMember/{memberId}/loyaltyProgramProduct/{programProductId}/loyaltyExecutionPoint": {
+      "get": {
+        "description": "This operation is used to retrieve all the loyalty execution points on a loyalty product. These execution points are records of loyalty actions executed.",
+        "tags": [
+          "Loyalty Execution Point"
+        ],
+        "operationId": "Get Execution Points",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "memberId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "programProductId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyExecutionPoint"
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance/{balanceId}/loyaltyEarn/{transactionId}": {
+      "get": {
+        "description": "This operation retrieves a loyalty account loyalty earn transaction on a spesific account balance.",
+        "tags": [
+          "Loyalty Earn"
+        ],
+        "operationId": "Get Earn Transaction",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyTransactionRef"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance/{balanceId}/loyaltyEarn": {
+      "get": {
+        "description": "This operation retrieves a loyalty account loyalty earn transactions on a spesific account balance.",
+        "tags": [
+          "Loyalty Earn"
+        ],
+        "operationId": "List Earn Transactions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyTransactionRef"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation creates a new loyalty earn transaction.",
+        "tags": [
+          "Loyalty Earn"
+        ],
+        "operationId": "Earn Loyalty Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyTransactionRef"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance/{balanceId}/loyaltyBurn/{transactionId}": {
+      "get": {
+        "description": "This operation retrieves a single loyalty account loyalty burn transaction on a spesific account balance.",
+        "tags": [
+          "Loyalty Burn"
+        ],
+        "operationId": "Get Burn Transaction",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "transactionId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyTransactionRef"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyAccount/{accountId}/loyaltyBalance/{balanceId}/loyaltyBurn": {
+      "get": {
+        "description": "This operation retrieves a loyalty account loyalty burn transactions on a spesific account balance.",
+        "tags": [
+          "Loyalty Burn"
+        ],
+        "operationId": "List Burn Transactions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/LoyaltyTransactionRef"
+              }
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      },
+      "post": {
+        "description": "This operation creates a new loyalty burn transaction.",
+        "tags": [
+          "Loyalty Burn"
+        ],
+        "operationId": "Burn Loyalty Balance",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "accountId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "balanceId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created",
+            "schema": {
+              "$ref": "#/definitions/LoyaltyTransactionRef"
+            }
+          },
+          "409": {
+            "description": "Conflict - A loyalty transaction with the same identifier already exists.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    },
+    "/loyaltyEvent": {
+      "post": {
+        "description": "This operation specifies a loyalty event that has occurred.",
+        "tags": [
+          "Loyalty Event"
+        ],
+        "operationId": "Notify Loyalty Event",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "Body",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/LoyaltyEvent"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "422": {
+            "description": "Unprocessable Entity - Field rule violation or missing required attribute.",
+            "schema": {
+              "$ref": "#/definitions/Error"
+            }
+          }
+        },
+        "security": [],
+        "x-unitTests": [
+          {
+            "request": {
+              "method": "POST",
+              "uri": "/loyaltyEvent",
+              "headers": {
+                "Content-Type": "application/json"
+              },
+              "body": "{\r\n    \"eventId\":\"00001\",\r\n    \"eventTime\":\"2013-04-19T16:42:25-04:00\",\r\n    \"eventType\":\"orderCreationNotification\",\r\n    \"event\":{\r\n        \"productOrder\":{\r\n            \"id\":\"42\",\r\n             \"href\":\"http://serverlocation:port/orderManagement/productOrder/42\",\r\n             \"externalId\":\"NiceNameForTheConsumer_42\"\r\n        }\r\n    }\r\n}\r\n"
+            },
+            "expectedResponse": {
+              "x-allowExtraHeaders": true,
+              "x-bodyMatchMode": "NONE",
+              "x-arrayOrderedMatching": false,
+              "x-arrayCheckCount": false,
+              "x-matchResponseSchema": true,
+              "headers": {}
+            },
+            "x-testShouldPass": true,
+            "x-testEnabled": true,
+            "x-testName": "Notify Loyalty Event",
+            "x-testDescription": ""
+          }
+        ],
+        "x-operation-settings": {
+          "CollectParameters": false,
+          "AllowDynamicQueryParameters": false,
+          "AllowDynamicFormParameters": false,
+          "IsMultiContentStreaming": false
+        }
+      }
+    }
+  },
+  "definitions": {
+    "ProgramProductSpec": {
+      "title": "ProgramProductSpec",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "productNumber": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "needsLoyaltyAccount": {
+          "type": "boolean"
+        },
+        "lifeCycleStatus": {
+          "type": "string"
+        },
+        "brand": {
+          "type": "string"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "productNumber",
+        "description",
+        "needsLoyaltyAccount",
+        "lifeCycleStatus",
+        "brand",
+        "validFor"
+      ]
+    },
+    "UpdateProductSpec": {
+      "title": "UpdateProductSpec",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "productNumber": {
+          "type": "string"
+        },
+        "brand": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "description",
+        "productNumber",
+        "brand"
+      ]
+    },
+    "LoyaltyAction": {
+      "title": "LoyaltyAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "actionAttributes": {
+          "type": "object"
+        },
+        "body": {
+          "type": "object"
+        },
+        "headers": {
+          "type": "object"
+        },
+        "commonName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        },
+        "endpoint": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "type",
+        "action",
+        "endpoint"
+      ]
+    },
+    "LoyaltyActionLinkRef": {
+      "title": "LoyaltyActionLinkRef",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
+    "LoyaltyCondition": {
+      "title": "LoyaltyCondition",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "attribute": {
+          "type": "string"
+        },
+        "operator": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "attribute",
+        "operator",
+        "value"
+      ]
+    },
+    "LoyaltyConditionLinkRef": {
+      "title": "LoyaltyConditionLinkRef",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
+    "LoyaltyEventType": {
+      "title": "LoyaltyEventType",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "eventType"
+      ]
+    },
+    "LoyaltyEventTypeLinkRef": {
+      "title": "LoyaltyEventTypeLinkRef",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
+    "LoyaltyRule": {
+      "title": "LoyaltyRule",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "commonName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isCNF": {
+          "type": "boolean"
+        },
+        "hasSubRules": {
+          "type": "boolean"
+        },
+        "isMandatoryEvaluation": {
+          "type": "boolean"
+        },
+        "usage": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "policyName": {
+          "type": "string"
+        },
+        "loyaltyEventType": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LoyaltyEventTypeLinkRef"
+          }
+        },
+        "loyaltyCondition": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LoyaltyConditionLinkRef"
+          }
+        },
+        "loyaltyAction": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/LoyaltyActionLinkRef"
+          }
+        }
+      }
+    },
+    "CreateLoyaltyRule": {
+      "title": "LoyaltyRule",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "commonName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "isCNF": {
+          "type": "boolean"
+        },
+        "hasSubRules": {
+          "type": "boolean"
+        },
+        "isMandatoryEvaluation": {
+          "type": "boolean"
+        },
+        "usage": {
+          "type": "string"
+        },
+        "keywords": {
+          "type": "string"
+        },
+        "policyName": {
+          "type": "string"
+        }
+      }
+    },
+    "AddRuleCondition": {
+      "title": "RuleCondition",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "AddRuleAction": {
+      "title": "RuleAction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "AddRuleEventType": {
+      "title": "RuleEventType",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id"
+      ]
+    },
+    "LoyaltyExecutionPoint": {
+      "title": "LoyaltyExecutionPoint",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        },
+        "actionAttributes": {
+          "type": "object"
+        },
+        "body": {
+          "type": "object"
+        },
+        "headers": {
+          "type": "object"
+        },
+        "commonName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        },
+        "endpoint": {
+          "type": "string"
+        },
+        "dateTime": {
+          "type": "string"
+        }
+      }
+    },
+    "ValidFor": {
+      "title": "ValidFor",
+      "type": "object",
+      "properties": {
+        "startDateTime": {
+          "type": "string"
+        },
+        "endDateTime": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "startDateTime",
+        "endDateTime"
+      ]
+    },
+    "LoyaltyMember": {
+      "title": "CreateLoyaltyMember",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      }
+    },
+    "UpdateEventTypesrequest": {
+      "title": "Update Event TypesRequest",
+      "type": "object",
+      "properties": {
+        "eventType": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "eventType"
+      ]
+    },
+    "CreateLoyaltyBalance": {
+      "title": "CreateLoyaltyBalance",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      },
+      "required": [
+        "quantity"
+      ]
+    },
+    "LoyaltyBalance": {
+      "title": "LoyaltyBalance",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "quantity": {
+          "$ref": "#/definitions/Quantity"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        },
+        "loyaltyProgramMember": {
+          "$ref": "#/definitions/LoyaltyMemberLinkRef"
+        }
+      }
+    },
+    "LoyaltyBalanceUpdate": {
+      "title": "LoyaltyBalanceUpdate",
+      "type": "object",
+      "properties": {
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      }
+    },
+    "LoyaltyAccount": {
+      "title": "LoyaltyAccount",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "loyaltyProgramProduct": {
+          "$ref": "#/definitions/ProductLinkRef"
+        }
+      }
+    },
+    "LoyaltyAccountCreate": {
+      "title": "LoyaltyAccountCreate",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "loyaltyBalance": {
+          "$ref": "#/definitions/CreateLoyaltyBalance"
+        }
+      }
+    },
+    "UpdateLoyaltyMember": {
+      "title": "UpdateLoyaltyMember",
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      }
+    },
+    "LoyaltyMemberLinkRef": {
+      "title": "LoyaltyMemberLinkRef",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
+    "ProductProgramUpdateRef": {
+      "title": "ProductProgramUpdate",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "productStatus": {
+          "type": "string"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        }
+      }
+    },
+    "ProductProgramRef": {
+      "title": "ProductProgram",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "productStatus": {
+          "type": "string"
+        },
+        "validFor": {
+          "$ref": "#/definitions/ValidFor"
+        },
+        "productSpecId": {
+          "type": "string"
+        },
+        "accountId": {
+          "type": "string"
+        },
+        "loyaltyAccount": {
+          "$ref": "#/definitions/LoyaltyAccountCreate"
+        },
+        "characteristics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductCharacteristics"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "productSpecId"
+      ]
+    },
+    "ProductCharacteristics": {
+      "title": "ProductLinkRef",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
+      }
+    },
+    "ProductLinkRef": {
+      "title": "ProductLinkRef",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        }
+      }
+    },
+    "LoyaltyTransactionRef": {
+      "title": "LoyaltyTransaction",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "href": {
+          "type": "string"
+        },
+        "quantity": {
+          "type": "integer",
+          "format": "int32"
+        },
+        "openingBalance": {
+          "type": "number",
+          "format": "double"
+        },
+        "closingBalance": {
+          "type": "number",
+          "format": "double"
+        },
+        "dateTime": {
+          "type": "string",
+          "format": "dateTime"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "href",
+        "quantity",
+        "description",
+        "openingBalance",
+        "closingBalance",
+        "dateTime"
+      ]
+    },
+    "LoyaltyEvent": {
+      "title": "LoyaltyEvent",
+      "type": "object",
+      "properties": {
+        "eventId": {
+          "type": "string"
+        },
+        "eventTime": {
+          "type": "string"
+        },
+        "eventType": {
+          "type": "string"
+        },
+        "memberId": {
+          "type": "string"
+        },
+        "event": {
+          "$ref": "#/definitions/Event"
+        }
+      },
+      "required": [
+        "memberId",
+        "eventType",
+        "event"
+      ]
+    },
+    "Quantity": {
+      "title": "Quantity",
+      "type": "object",
+      "properties": {
+        "unit": {
+          "type": "string"
+        },
+        "balance": {
+          "type": "number",
+          "format": "double"
+        }
+      },
+      "required": [
+        "unit",
+        "balance"
+      ]
+    },
+    "Event": {
+      "title": "Event",
+      "type": "object"
+    },
+    "Error": {
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "description": "An integer coding the error type. This is given to caller so he can translate them if required.",
+          "type": "integer"
+        },
+        "message": {
+          "description": "A short localized string that describes the error.",
+          "type": "string"
+        },
+        "description": {
+          "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values.",
+          "type": "string"
+        },
+        "infoURL": {
+          "description": "(optional) A URL to online documentation that provides more information about the error.",
+          "type": "string"
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ErrorDetail"
+          }
+        }
+      }
+    },
+    "ErrorDetail": {
+      "required": [
+        "code",
+        "message"
+      ],
+      "properties": {
+        "code": {
+          "description": "An integer coding the error type. This is given to caller so he can translate them if required.",
+          "type": "integer"
+        },
+        "message": {
+          "description": "A short localized string that describes the error.",
+          "type": "string"
+        },
+        "description": {
+          "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values.",
+          "type": "string"
+        },
+        "infoURL": {
+          "description": "(optional) A URL to online documentation that provides more information about the error.",
+          "type": "string"
+        }
+      }
+    }
+  }
+}

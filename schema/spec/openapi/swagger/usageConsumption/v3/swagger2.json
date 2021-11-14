@@ -1,0 +1,706 @@
+
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "##TMF API Reference: TMF XXX - Usage Consumption\n\n##Release: pre-release 17.0\n\nThis API covers the consumption follow up function providing ongoing information about usages related to any subscribed communication products (voice, data, TV,…) without having to wait the invoice production. These information may concern usages charged on a bucket supervised or not and so the remaining credits on the bucket. It allows customers or users to be informed on usages done and remaining credits on the buckets that they consume under their purchased offers and options.\n\nThe usage consumption API allow to view at a given point the balance and the consumption counters of the various buckets (SMS, Voice, Data for example) that one or more user(s) consume with each of his devices, according to the purchased offers and options.\n\n### Resources \n- **usageConsumptionReport** : an usage consumption report retrieves the data related to these balances and various consumption counters and calculated at the time of the request by the server.\n- **usageConsumptionReportRequest** : used to manage the calculation request of an usage consumption report.\n\n### Operations\nThe use of the both resources described in this document is conditioned by the capability of the server:\n- If the server could perform the calculation and so give the usage consumption report in synchronous mode according to the criteria given by the API requester, a GET operation with filter criteria on usageConsumptionReport resource could be used. We could accept to use a GET operation in this context because the server calculates the data given in the usage consumption report without necessarily store it.\n- We must also anticipate the use case where the server could only give an asynchronous response to the calculation of an usage consumption report requested by the API requester. In this case, a POST operation on usageConsumptionReportRequest could be sent by the API Requester asking the server that a usage consumption report calculation has to be performed. Then, the API requester could follow the process with a GET operation on this same resource retrieving the status of the request. The server could also use the notification pattern to inform the API requester that the usage consumption report is available\n\nCopyright © TM Forum 2017. All Rights Reserved.",    
+    "version": "1.0.0",
+    "title": "Usage Consumption"
+  },
+  
+  "host": "api.orange.com",
+  "basePath":	"/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json;charset=utf-8"
+  ],
+  "produces": [
+    "application/json;charset=utf-8"
+  ],  
+  "paths": { 
+      "/usageConsumptionReport": {
+      "get": {
+        "tags": [
+           "usageConsumptionReport"
+        ],    
+        "operationId": "usageConsumptionReportFind",
+        "summary": "Query the calculation of an usage consumption report in synchronous mode",
+        "description": "This operation is used to request the calculation of a new usage consumption report for a specific product identified by a msisdn number for example. \nAttribute selection is enabled for all first level attributes.\nFiltering may be available depending on the compliance level supported by an implementation.\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/UsageConsumptionReport"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/usageConsumptionReport/{id}": {
+      "get": {
+        "tags": [
+           "usageConsumptionReport"
+        ],    
+        "operationId": "usageConsumptionReportGet",
+        "summary": "Retrieve an existing usage consumption report",
+        "description": "This operation retrieves an usage report entity. This operation could be used only if the server has saved the usage consumption report on its database after calculation.\nAttribute selection is enabled for all first level attributes.\nFiltering on sub-resources may be available depending on the compliance level supported by an implementation.\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": "Unique identifier of the usage consumption report"
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/UsageConsumptionReport"
+            }                                                  
+
+          }
+        }        
+      },
+      "delete": {
+        "tags": [
+           "usageConsumptionReport"
+        ],    
+        "operationId": "usageConsumptionReportDelete",
+        "summary": "Delete an existing usage consumption report",
+        "description": "This operation deletes a usage report entity.\nNote: this operation is not available only to ADMIN API users\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": "Unique identifier of the usage consumption report"
+          }
+        ],     
+        "responses": {
+          "204": {
+            "description": "Success"                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/usageConsumptionReportRequest": {
+      "post": {
+        "tags": [
+           "usageConsumptionReportRequest"
+        ],    
+        "operationId": "usageConsumptionReportRequestCreate",
+        "summary": "Create an usage consumption report request",
+        "description": "This operation creates an usage consumption report request entity. This operation is used by the requester when the server couldn’t calculate and generate the report in synchronous mode. \nAfter, the API requester could follow the process with a GET operation on this same resource retrieving the status of the request. The server could also use the notification pattern to inform the API requester that the usage consumption report is available.\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "UsageConsumptionReportRequest",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/UsageConsumptionReportRequestIn"
+            }                     
+          }
+        ],     
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/UsageConsumptionReportRequest"
+            }                                                  
+
+          }
+        }        
+      },
+      "get": {
+        "tags": [
+           "usageConsumptionReportRequest"
+        ],    
+        "operationId": "usageConsumptionReportRequestFind",
+        "summary": "List usage consumption report requests",
+        "description": "This operation is used to retrieve usage consumption report requests corresponding to search criteria like a specific product identified by a msisdn number for example. \nAttribute selection is enabled for all attributes.\nFiltering may be available depending on the compliance level supported by an implementation.\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/UsageConsumptionReportRequest"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/usageConsumptionReportRequest/{id}": {
+      "get": {
+        "tags": [
+           "usageConsumptionReportRequest"
+        ],    
+        "operationId": "usageConsumptionReportRequestGet",
+        "summary": "Retrieve an usage consumption report request",
+        "description": "This operation retrieves an usage consumption report request entity using its unique id.\nAttribute selection is enabled for all attributes.\nFiltering may be available depending on the compliance level supported by an implementation.\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/UsageConsumptionReportRequest"
+            }                                                  
+
+          }
+        }        
+      },
+      "delete": {
+        "tags": [
+           "usageConsumptionReportRequest"
+        ],    
+        "operationId": "usageConsumptionReportRequestDelete",
+        "summary": "Delete an usage consumption report request",
+        "description": "This operation deletes an usage consumption report request entity. \nNote: this operation is not available only to ADMIN API users\n\nSpecific business errors for current operation will be encapsulated in\n\nHTTP Response 422 Unprocessable entity\n",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }
+        ],     
+        "responses": {
+          "204": {
+            "description": "Success"                                                  
+
+          }
+        }        
+      }
+    }
+  },
+"definitions": {
+  
+    
+    "ZErrorDetail": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ZError": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        },
+        "details": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ZErrorDetail"
+          }
+        }     
+      }
+            
+    },
+    
+    "UsageConsumptionReport": {
+      "description": "An usage consumption report enables to know at a given point the balances and the consumption counters related to various buckets (SMS, Voice, Data for example). It could be calculated for a device identified by a public key (msisdn number for a mobile device for example or PSTN or VOIP number for a fix device), for a subscribed offer or option or for an user.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the usage consumption report given by the server",
+              "type": "string"
+        },
+        "href": {
+          "description": "Hyperlink to access the usage consumption report",
+              "type": "string"
+        },
+        "name": {
+          "description": "Usage consumption report name",
+              "type": "string"
+        },
+        "description": {
+          "description": "Free short text describing the usage consumption report content",
+              "type": "string"
+        },
+        "effectiveDate": {
+          "description": "Date and time when the usage consumption report was calculated and generated",
+              "type": "string",
+              "format": "date-time"
+        },
+        "relatedParty": {
+          "description": "Reference of the party for which the usage consumption report is produced",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        },
+        "bucket": {
+          "description": "List of buckets included in the offer or option subscribed",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/Bucket"
+          }
+        }     
+      }
+            
+    },
+    
+    "Bucket": {
+      "description": "A bucket represents a quantity of usage, as 2 hours national calls or 50 sms for example. It could be either a quantity or an amount in a currency (i.e. It could represent a fixed number of SMS, MMS, minutes of calls, quantity of data, number of events as well as a specific amount in a given currency). It requires one or more network products from which usages will debit the bucket.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the bucket",
+              "type": "string"
+        },
+        "name": {
+          "description": "Bucket name",
+              "type": "string"
+        },
+        "usageType": {
+          "description": "Type of usage concerned by the bucket (voice, sms, data,…)",
+              "type": "string"
+        },
+        "isShared": {
+          "description": "True if the bucket is shared between several devices or users",
+              "type": "boolean"
+        },
+        "product": {
+          "description": "Offer or option through the bucker is subscribed",          
+              "$ref": "#/definitions/Product"
+        },
+        "bucketBalance": {
+          "description": "List of balances of the bucket that can be given in various units",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/Balance"
+          }
+        },
+        "bucketCounter": {
+          "description": "List of counters detailing usage consumption on the bucket.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ConsumptionCounter"
+          }
+        }     
+      }
+            
+    },
+    
+    "RelatedPartyRef": {
+      "description": "Related party reference",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the related party",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the related party, could be a party reference or a party role reference",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the related party",
+              "type": "string"
+        },
+        "role": {
+          "description": "Role played by the related party",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "TimePeriod": {
+      "description": "A date time period between a start date and an end date",
+      
+      "type": "object",
+      "properties": {
+        "startDateTime": {
+          "description": "Start date time of the period",
+              "type": "string",
+              "format": "date-time"
+        },
+        "endDateTime": {
+          "description": "End date time of the period",
+              "type": "string",
+              "format": "date-time"
+        }     
+      }
+            
+    },
+    
+    "Product": {
+      "description": "An instantiated product corresponding to a simple product offering subscribed by a customer",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the product",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the product",
+              "type": "string"
+        },
+        "name": {
+          "description": "Product Name",
+              "type": "string"
+        },
+        "publicIdentifier": {
+          "description": "Public number associated to the product (msisdn number for mobile line for example)",
+              "type": "string"
+        },
+        "user": {
+          "description": "Reference of the user of the product",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        }     
+      }
+            
+    },
+    
+    "Balance": {
+      "description": "The balance defines the remaining allowed product usage quantity in terms of volume, time, currency or events. It corresponds to the initial allowed usage quantity minus the usage consumed on the bucket.",
+      
+      "type": "object",
+      "properties": {
+        "unit": {
+          "description": "Code of the unit used to specify the given value of the balance. It could be different from the bucket unit",
+              "type": "string"
+        },
+        "remainingValue": {
+          "description": "Numeric remaining value for the bucket given in the balance unit (for example 1.9). This numeric value could be used for calculation for example",
+              "type": "integer",
+              "format": "int64"
+        },
+        "remainingValueLabel": {
+          "description": "Remaining value in a formatted string for the bucket given in the balance unit (for example 1.9 Gb). This formatted string could be used for display needs for example",
+              "type": "string"
+        },
+        "validFor": {
+          "description": "Balance period between a start date time and an end date time. For prepaid bucket, the period of the balance is between the  effective date of the usage consumption report generation and the end date of the bucket. For postpaid bucket, the period of the balance is between the effective date of the usage consumption report generation and the next bill date.",          
+              "$ref": "#/definitions/TimePeriod"
+        }     
+      }
+            
+    },
+    
+    "ConsumptionCounter": {
+      "description": "The consumption counters detail for example the different kind of consumption done on the bucket",
+      
+      "type": "object",
+      "properties": {
+        "counterType": {
+          "description": "Type of the consumption counter. We can give for example a counter of the used value",
+              "type": "string"
+        },
+        "level": {
+          "description": "Counter level. The given counter can be given globally for the bucket or detailed by user or by product for example in case of shared bucket",
+              "type": "string"
+        },
+        "unit": {
+          "description": "Unit of the counter",
+              "type": "string"
+        },
+        "value": {
+          "description": "Numeric value of the bucket counter in the given unit",
+              "type": "integer",
+              "format": "int64"
+        },
+        "valueLabel": {
+          "description": "Value of the counter in a formatted string used for display needs for example",
+              "type": "string"
+        },
+        "validFor": {
+          "description": "Consumption counter period between a start date time and an end date time. For prepaid bucket, the period of counters is between the start date of the bucket and the effective date of the usage consumption report generation. For postpaid bucket, the period of counters is between the last bill date and the effective date of the usage consumption report generation.",          
+              "$ref": "#/definitions/TimePeriod"
+        },
+        "product": {
+          "description": "Public number associated to the product for which the consumption counter is detailed",          
+              "$ref": "#/definitions/ProductRef"
+        },
+        "user": {
+          "description": "Reference of the user for which the consumption counter is detailed",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        }     
+      }
+            
+    },
+    
+    "UsageConsumptionReportRequest": {
+      "description": "This resource is used to manage the calculation request of an usage consumption report.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the usage consumption report request given by the server",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the usage consumption report request",
+              "type": "string"
+        },
+        "creationDate": {
+          "description": "Date and time of the request creation",
+              "type": "string",
+              "format": "date-time"
+        },
+        "status": {
+          "description": "Status of the usage consumption report request (InProgress or done)",
+              "type": "string"
+        },
+        "lastUpdate": {
+          "description": "Date when the status was last changed",
+              "type": "string",
+              "format": "date-time"
+        },
+        "callbackUrl": {
+          "description": "An url where the result could be notified",
+              "type": "string"
+        },
+        "validPeriod": {
+          "description": "Valid period",          
+              "$ref": "#/definitions/TimePeriod"
+        },
+        "product": {
+          "description": "Offer or option or which the usage consumption report is requested",          
+              "$ref": "#/definitions/ProductRef"
+        },
+        "bucket": {
+          "description": "Buckets for which the usage consumption report is requested",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/BucketRef"
+          }
+        },
+        "relatedParty": {
+          "description": "Reference and role of the related party for which the usage consumption report is requested",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        },
+        "usageConsumptionReport": {
+          "description": "Reference of the usage consumption report (given when it has been calculated and the status is done)",          
+              "$ref": "#/definitions/UsageConsumptionReportRef"
+        }     
+      }
+            
+    },
+    
+    "UsageConsumptionReportRequestIn": {
+      "description": "",
+      
+      "type": "object",
+      "properties": {
+        "product": {
+          "description": "Offer or option or which the usage consumption report is requested",          
+              "$ref": "#/definitions/ProductRef"
+        },
+        "bucket": {
+          "description": "Buckets for which the usage consumption report is requested",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/BucketRef"
+          }
+        },
+        "relatedParty": {
+          "description": "Reference and role of the related party for which the usage consumption report is requested",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        },
+        "validPeriod": {
+          "description": "Valid period",          
+              "$ref": "#/definitions/TimePeriod"
+        },
+        "callbackUrl": {
+          "description": "An url where the result could be notified",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "BucketRef": {
+      "description": "Reference of a bucket",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the bucket",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductRef": {
+      "description": "Reference of a product",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the product",
+              "type": "string"
+        },
+        "publicIdentifier": {
+          "description": "Public number associated to the product (msisdn number for mobile line for example)",
+              "type": "string"
+        },
+        "user": {
+          "description": "Reference of the user of the product",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        }     
+      }
+            
+    },
+    
+    "UsageConsumptionReportRef": {
+      "description": "Reference of an usage consumption report",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the usage consumption report given by the server",
+              "type": "string"
+        },
+        "href": {
+          "description": "Hyperlink to access the usage consumption report",
+              "type": "string"
+        },
+        "name": {
+          "description": "Usage consumption report name",
+              "type": "string"
+        },
+        "description": {
+          "description": "Free short text describing the usage consumption report content",
+              "type": "string"
+        },
+        "effectiveDate": {
+          "description": "Date and time when the usage consumption report was calculated and generated",
+              "type": "string",
+              "format": "date-time"
+        }     
+      }
+            
+    }  
+  }
+}
+	

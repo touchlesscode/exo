@@ -1,0 +1,996 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Service Quality Management", 
+        "description": "This is Swagger UI environment generated for the TMF Service Quality Management specification", 
+        "version": "2.0"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/serviceQualityManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/serviceLevelObjective": {
+            "get": {
+                "operationId": "listServiceLevelObjective", 
+                "summary": "List or find 'ServiceLevelObjective' objects", 
+                "tags": [
+                    "serviceLevelObjective"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "conformanceComparator", 
+                        "description": "For filtering: An operator that specifies whether a Service Level Objective is \nviolated above or below the conformanceTarget."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "conformanceTarget", 
+                        "description": "For filtering: A value used to determine if Service Level Objective is met. \nThe data type should be adjusted case by case."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "graceTimes", 
+                        "description": "For filtering: The number of times an objective can remain un-updated without \na violation of a Service Level Agreement in reference to a measurement period and/or Service Level Agreement reporting period."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: The name of the service level objectives."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "thresholdTarget", 
+                        "description": "For filtering: A value that used to specify when a warning should be used \nthat indicates an objective is danger of not being met. Notice, the data type should be adjusted case by case."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "toleranceTarget", 
+                        "description": "For filtering: A value that specifies the allowable variation of a conformance \nTarget. The data type should be adjusted case by case."
+                    }, 
+                    {
+                        "name": "tolerancePeriod.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "tolerancePeriod.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "conformancePeriod.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "conformancePeriod.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecParameter.name", 
+                        "description": "For filtering: The name of parameter."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecParameter.serviceParmCategory", 
+                        "description": "For filtering: A string that specifies whether the Service Level Specification Parameter is technology specific, service specific, or technology/service independent"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecParameter.serviceParmPerspective", 
+                        "description": "For filtering: A string that specifies whether the Service Level Specification \nParameter represents a single user instance parameter or a parameter that represents an aggregation."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecParameter.transformationAlgorithmOfKQI", 
+                        "description": "For filtering: The description of a logical step-by-step procedure used to \ncalculate the value of a KQI."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecParameter.type", 
+                        "description": "For filtering: Types of Service Level Specification parameters are KQI or KPI."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "serviceLevelSpecConsquence.prescribedAction", 
+                        "description": "For filtering: Recommended remedy for a violated Service Level Objective. \nThis could be a hyperlink to the recommended action."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceLevelObjective"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createServiceLevelObjective", 
+                "summary": "Creates a 'ServiceLevelObjective'", 
+                "tags": [
+                    "serviceLevelObjective"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelObjective_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceLevelObjective", 
+                        "description": "The Service Level Objective to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelObjective"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceLevelObjective/{id}": {
+            "get": {
+                "operationId": "retrieveServiceLevelObjective", 
+                "summary": "Retrieves a 'ServiceLevelObjective' by Id", 
+                "tags": [
+                    "serviceLevelObjective"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Level Objective"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceLevelObjective"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "patch": {
+                "operationId": "updateServiceLevelObjective", 
+                "summary": "Updates partially a 'ServiceLevelObjective' by Id", 
+                "tags": [
+                    "serviceLevelObjective"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Level Objective"
+                    }, 
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelObjective_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceLevelObjective", 
+                        "description": "The Service Level Objective to be updated"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelObjective"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceLevelSpecification": {
+            "get": {
+                "operationId": "listServiceLevelSpecification", 
+                "summary": "List or find 'ServiceLevelSpecification' objects", 
+                "tags": [
+                    "serviceLevelSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: The name of Service Level Specification"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceLevelSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createServiceLevelSpecification", 
+                "summary": "Creates a 'ServiceLevelSpecification'", 
+                "tags": [
+                    "serviceLevelSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelSpecification_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceLevelSpecification", 
+                        "description": "The Service Level Specification to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelSpecification"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/serviceLevelSpecification/{id}": {
+            "get": {
+                "operationId": "retrieveServiceLevelSpecification", 
+                "summary": "Retrieves a 'ServiceLevelSpecification' by Id", 
+                "tags": [
+                    "serviceLevelSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Level Specification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ServiceLevelSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "patch": {
+                "operationId": "updateServiceLevelSpecification", 
+                "summary": "Updates partially a 'ServiceLevelSpecification' by Id", 
+                "tags": [
+                    "serviceLevelSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Service Level Specification"
+                    }, 
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelSpecification_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "serviceLevelSpecification", 
+                        "description": "The Service Level Specification to be updated"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/ServiceLevelSpecification"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "ServiceLevelObjective": {
+            "type": "object", 
+            "description": "Service level objectives are defined in terms of parameters and metrics, thresholds, and tolerances \nassociated with the parameters.", 
+            "properties": {
+                "conformanceComparator": {
+                    "type": "string", 
+                    "description": "An operator that specifies whether a Service Level Objective is \nviolated above or below the conformanceTarget."
+                }, 
+                "conformanceTarget": {
+                    "type": "string", 
+                    "description": "A value used to determine if Service Level Objective is met. \nThe data type should be adjusted case by case."
+                }, 
+                "graceTimes": {
+                    "type": "string", 
+                    "description": "The number of times an objective can remain un-updated without \na violation of a Service Level Agreement in reference to a measurement period and/or Service Level Agreement reporting period."
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "The hyperlink to access a service level objective."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier of a service level objectives."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service level objectives."
+                }, 
+                "thresholdTarget": {
+                    "type": "string", 
+                    "description": "A value that used to specify when a warning should be used \nthat indicates an objective is danger of not being met. Notice, the data type should be adjusted case by case."
+                }, 
+                "toleranceTarget": {
+                    "type": "string", 
+                    "description": "A value that specifies the allowable variation of a conformance \nTarget. The data type should be adjusted case by case."
+                }, 
+                "tolerancePeriod": {
+                    "$ref": "#/definitions/TimePeriod"
+                }, 
+                "conformancePeriod": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "An interval of time during which the Conformance Target must be measured."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "serviceLevelSpecParameter": {
+                    "$ref": "#/definitions/ServiceLevelSpecParameter"
+                }, 
+                "serviceLevelSpecConsquence": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceLevelSpecConsquence"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelObjective_Create": {
+            "type": "object", 
+            "description": "Service level objectives are defined in terms of parameters and metrics, thresholds, and tolerances \nassociated with the parameters.\nSkipped properties: id,href", 
+            "properties": {
+                "conformanceComparator": {
+                    "type": "string", 
+                    "description": "An operator that specifies whether a Service Level Objective is \nviolated above or below the conformanceTarget."
+                }, 
+                "conformanceTarget": {
+                    "type": "string", 
+                    "description": "A value used to determine if Service Level Objective is met. \nThe data type should be adjusted case by case."
+                }, 
+                "graceTimes": {
+                    "type": "string", 
+                    "description": "The number of times an objective can remain un-updated without \na violation of a Service Level Agreement in reference to a measurement period and/or Service Level Agreement reporting period."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service level objectives."
+                }, 
+                "thresholdTarget": {
+                    "type": "string", 
+                    "description": "A value that used to specify when a warning should be used \nthat indicates an objective is danger of not being met. Notice, the data type should be adjusted case by case."
+                }, 
+                "toleranceTarget": {
+                    "type": "string", 
+                    "description": "A value that specifies the allowable variation of a conformance \nTarget. The data type should be adjusted case by case."
+                }, 
+                "tolerancePeriod": {
+                    "$ref": "#/definitions/TimePeriod"
+                }, 
+                "conformancePeriod": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "An interval of time during which the Conformance Target must be measured."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "serviceLevelSpecParameter": {
+                    "$ref": "#/definitions/ServiceLevelSpecParameter"
+                }, 
+                "serviceLevelSpecConsquence": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceLevelSpecConsquence"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelObjective_Update": {
+            "type": "object", 
+            "description": "Service level objectives are defined in terms of parameters and metrics, thresholds, and tolerances \nassociated with the parameters.\nSkipped properties: id,href,id,href,validFor", 
+            "properties": {
+                "conformanceComparator": {
+                    "type": "string", 
+                    "description": "An operator that specifies whether a Service Level Objective is \nviolated above or below the conformanceTarget."
+                }, 
+                "conformanceTarget": {
+                    "type": "string", 
+                    "description": "A value used to determine if Service Level Objective is met. \nThe data type should be adjusted case by case."
+                }, 
+                "graceTimes": {
+                    "type": "string", 
+                    "description": "The number of times an objective can remain un-updated without \na violation of a Service Level Agreement in reference to a measurement period and/or Service Level Agreement reporting period."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of the service level objectives."
+                }, 
+                "thresholdTarget": {
+                    "type": "string", 
+                    "description": "A value that used to specify when a warning should be used \nthat indicates an objective is danger of not being met. Notice, the data type should be adjusted case by case."
+                }, 
+                "toleranceTarget": {
+                    "type": "string", 
+                    "description": "A value that specifies the allowable variation of a conformance \nTarget. The data type should be adjusted case by case."
+                }, 
+                "tolerancePeriod": {
+                    "$ref": "#/definitions/TimePeriod"
+                }, 
+                "conformancePeriod": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "An interval of time during which the Conformance Target must be measured."
+                }, 
+                "serviceLevelSpecParameter": {
+                    "$ref": "#/definitions/ServiceLevelSpecParameter"
+                }, 
+                "serviceLevelSpecConsquence": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ServiceLevelSpecConsquence"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelSpecification": {
+            "type": "object", 
+            "description": "A Service Level Specification represents a pre-defined or negotiated set of Service Level \nObjectives. In addition, certain consequences are associated with not meeting the Service Level \nObjectives. Service Level Agreements are expressed in terms of Service Level Specifications.", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A brief introduction of a service level specification."
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "The hyperlink to access a service level specification."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier to a service level specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of Service Level Specification"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "relatedServiceLevelObjective": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedServiceLevelObjectiveRef"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelSpecification_Create": {
+            "type": "object", 
+            "description": "A Service Level Specification represents a pre-defined or negotiated set of Service Level \nObjectives. In addition, certain consequences are associated with not meeting the Service Level \nObjectives. Service Level Agreements are expressed in terms of Service Level Specifications.\nSkipped properties: id,href", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A brief introduction of a service level specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of Service Level Specification"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "relatedServiceLevelObjective": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedServiceLevelObjectiveRef"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelSpecification_Update": {
+            "type": "object", 
+            "description": "A Service Level Specification represents a pre-defined or negotiated set of Service Level \nObjectives. In addition, certain consequences are associated with not meeting the Service Level \nObjectives. Service Level Agreements are expressed in terms of Service Level Specifications.\nSkipped properties: id,href,id,href,validFor", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A brief introduction of a service level specification."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of Service Level Specification"
+                }, 
+                "relatedServiceLevelObjective": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedServiceLevelObjectiveRef"
+                    }
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }
+            }
+        }, 
+        "ServiceLevelSpecParameter": {
+            "type": "object", 
+            "description": "Service Level Specification parameters can be one of two types. A Key Quality Indicator (KQI) \nprovides a measurement of a specific aspect of the performance of a Product (i.e., Product \nSpecification, Product Offering, or Product) or a Service (i.e., Service Specification or Service).", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "The name of parameter."
+                }, 
+                "serviceParmCategory": {
+                    "type": "string", 
+                    "description": "A string that specifies whether the Service Level Specification Parameter is technology specific, service specific, or technology/service independent"
+                }, 
+                "serviceParmPerspective": {
+                    "type": "string", 
+                    "description": "A string that specifies whether the Service Level Specification \nParameter represents a single user instance parameter or a parameter that represents an aggregation."
+                }, 
+                "transformationAlgorithmOfKQI": {
+                    "type": "string", 
+                    "description": "The description of a logical step-by-step procedure used to \ncalculate the value of a KQI."
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Types of Service Level Specification parameters are KQI or KPI."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }, 
+                "relatedEntity": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedEntityRef"
+                    }
+                }
+            }
+        }, 
+        "ServiceLevelSpecConsquence": {
+            "type": "object", 
+            "description": "Some consequences for the provider of the Service are resulted when the service level objective\ndoes not meet.", 
+            "properties": {
+                "prescribedAction": {
+                    "type": "string", 
+                    "description": "Recommended remedy for a violated Service Level Objective. \nThis could be a hyperlink to the recommended action."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "A valid duration of a thing."
+                }
+            }
+        }, 
+        "RelatedEntityRef": {
+            "type": "object", 
+            "description": "The related entity source of a KQI or KPI. A KQI draws its data from a number of sources, \nincluding Key Performance Indicators (KPIs).  A KPI provides a measurement of a specific aspect \nof the performance of a Service (whether it is a network- or a non-network-based Service) or a \ngroup of Services of the same type.", 
+            "properties": {
+                "herf": {
+                    "type": "string", 
+                    "description": "The hyperlink to access an entity."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier of an entity."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name of an entity."
+                }
+            }
+        }, 
+        "RelatedServiceLevelObjectiveRef": {
+            "type": "object", 
+            "description": "A set of Service Level Objectives that are contained in the Service Level Specification.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "The hyperlink to access a service level object."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "The identifier of a service level object."
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

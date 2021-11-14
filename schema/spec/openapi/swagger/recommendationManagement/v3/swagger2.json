@@ -1,0 +1,567 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Recommendation Management", 
+        "description": "This is Swagger UI environment generated for the TMF Recommendation Management specification", 
+        "version": "2.1"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/recommendationManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/recommendation": {
+            "get": {
+                "operationId": "listRecommendation", 
+                "summary": "List or find 'Recommendation' objects", 
+                "tags": [
+                    "recommendation"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: It indicates the base type of REST resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: It provides the link to the schema describing REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: It indicates the class type of the catalog."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of recommendation"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "type", 
+                        "description": "For filtering: Type of recommendation.\nThe basic type is :\n'AD': it means the recommendation is the advertisement for display\n'OFFER': it means the recommended content is the offer entry page. By clicking it, the user can be forwarded to the details of the offering"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "location.name", 
+                        "description": "For filtering: Name of the geographic location."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "location.type", 
+                        "description": "For filtering: Type of the geographic location."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "item.priority", 
+                        "description": "For filtering: The rank of the list of recommended offering."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "party.name", 
+                        "description": "For filtering: Name of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "party.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.name", 
+                        "description": "For filtering: Name of the category."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "channel.name", 
+                        "description": "For filtering: Name of the channel."
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Recommendation"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/recommendation/{id}": {
+            "get": {
+                "operationId": "retrieveRecommendation", 
+                "summary": "Retrieves a 'Recommendation' by Id", 
+                "tags": [
+                    "recommendation"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Recommendation"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Recommendation"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "Recommendation": {
+            "type": "object", 
+            "description": "Recommendation API is used to recommend offering quickly based on the history and real-time context of customer. It is a real-time and personalized recommendation API. It is usually provided by e-commerce or BSS, CRM system in omni-channel.", 
+            "properties": {
+                "@baseType": {
+                    "type": "string", 
+                    "description": "It indicates the base type of REST resource."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "It provides the link to the schema describing REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "It indicates the class type of the catalog."
+                }, 
+                "description": {
+                    "type": "string"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the recommendation."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of recommendation"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of recommendation"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Type of recommendation.\nThe basic type is :\n'AD': it means the recommendation is the advertisement for display\n'OFFER': it means the recommended content is the offer entry page. By clicking it, the user can be forwarded to the details of the offering"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period in which the recommendation is valid."
+                }, 
+                "order": {
+                    "$ref": "#/definitions/ProductOrderRef"
+                }, 
+                "shoppingcart": {
+                    "$ref": "#/definitions/ShoppingCartRef"
+                }, 
+                "location": {
+                    "$ref": "#/definitions/GeographicLocationRef"
+                }, 
+                "item": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RecommendationItem"
+                    }
+                }, 
+                "party": {
+                    "$ref": "#/definitions/RelatedPartyRef"
+                }, 
+                "category": {
+                    "$ref": "#/definitions/CategoryRef"
+                }, 
+                "channel": {
+                    "$ref": "#/definitions/ChannelRef"
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }, 
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }
+            }
+        }, 
+        "ProductOrderRef": {
+            "type": "object", 
+            "description": "ProductOrder (ProductOrder) .The product order which the recommendation is related with.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the product order."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of product order"
+                }
+            }
+        }, 
+        "ShoppingCartRef": {
+            "type": "object", 
+            "description": "ShoppingCart (ShoppingCartRef) . The shopping cart which the recommendation is related with.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the shopping cart."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of shopping cart"
+                }
+            }
+        }, 
+        "GeographicLocationRef": {
+            "type": "object", 
+            "description": "GeographicLocation (GeographicLocationRef) The geographic location which the recommendation is related with", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the geographic location."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of geographic location"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the geographic location."
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Type of the geographic location."
+                }
+            }
+        }, 
+        "RecommendationItem": {
+            "type": "object", 
+            "description": "A list of recommendation items. Every item is a product offering and its rank.", 
+            "properties": {
+                "priority": {
+                    "type": "integer", 
+                    "description": "The rank of the list of recommended offering."
+                }, 
+                "offering": {
+                    "$ref": "#/definitions/ProductOfferingRef"
+                }
+            }
+        }, 
+        "RelatedPartyRef": {
+            "type": "object", 
+            "description": "relatedParty (RelatedPartyRef). The party which the recommendation is related with.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the related party."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of related party"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the related party."
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "Role of the related party."
+                }
+            }
+        }, 
+        "CategoryRef": {
+            "type": "object", 
+            "description": "Channel(ChannelRef)The channel where the recommendation is used. May be online web, mobile app, social ,etc.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the category"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of category"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the category."
+                }
+            }
+        }, 
+        "ChannelRef": {
+            "type": "object", 
+            "description": "Channel(ChannelRef)The channel where the recommendation is used. May be online web, mobile app, social ,etc.", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the channel."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of channel"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the channel."
+                }
+            }
+        }, 
+        "ProductOfferingRef": {
+            "type": "object", 
+            "description": "ProductOfferingRef (ProductOfferingRef)Recommended Product offering", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the product offering."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of product offering"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the product offering."
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

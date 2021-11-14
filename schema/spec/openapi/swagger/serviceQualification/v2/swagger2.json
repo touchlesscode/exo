@@ -1,0 +1,295 @@
+swagger: '2.0'
+info:
+  description: ''
+  version: '2.0'
+  title: API ProductOrdering
+host: env-0693795.jelastic.servint.net
+basePath: /DSServiceQualification/api/serviceQualification/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /serviceQualification:
+    get:
+      tags:
+        - serviceQualification
+      operationId: serviceQualificationFind
+      summary: serviceQualificationFind
+      description: ''
+      deprecated: false
+      parameters:
+        - name: fields
+          in: query
+          required: false
+          description: ''
+          type: string
+      responses:
+        '200':
+          description: List of ServiceQualification
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ServiceQualificationRsp'
+    post:
+      tags:
+        - serviceQualification
+      operationId: serviceQualificationCreate
+      summary: serviceQualificationCreate
+      description: ''
+      deprecated: false
+      parameters:
+        - name: serviceQualification
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ServiceQualificationReq'
+      responses:
+        '201':
+          description: serviceQualification
+          schema:
+            $ref: '#/definitions/ServiceQualificationRsp'
+  '/serviceQualification/{serviceQualificationId}':
+    get:
+      tags:
+        - serviceQualification
+      operationId: serviceQualificationGet
+      summary: serviceQualificationGet
+      description: ''
+      deprecated: false
+      parameters:
+        - name: serviceQualificationId
+          in: path
+          required: true
+          type: string
+        - name: fields
+          in: query
+          required: false
+          description: ''
+          type: string
+      responses:
+        '200':
+          description: serviceQualification
+          schema:
+            $ref: '#/definitions/ServiceQualificationRsp'
+
+definitions:
+  ServiceQualificationReq:
+    type: object
+    properties:
+      interactionDate:
+        type: string
+        format: date-time
+      provideAlternative:
+        type: string
+      provideOnlyEligible:
+        type: string
+      description:
+        type: string
+      eligibilityDate:
+        type: string
+        format: date-time
+      address:
+        $ref: '#/definitions/AddressReq'
+      addressDescription:
+        $ref: '#/definitions/AddressDescriptionReq'
+      geoCode:
+        $ref: '#/definitions/GeoCodeReq'
+      publicKey:
+        type: string
+      serviceQualificationItem:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceQualificationItemReq'
+
+  ServiceQualificationItemReq: 
+    type: object
+    properties:
+      service:
+        $ref: '#/definitions/ServiceReq'
+  ServiceReq:
+    type: object
+    properties:
+      serviceCharacteristic:
+        type: array
+        items: 
+          $ref: '#/definitions/ServiceReqCharacteristic'
+      serviceSpecification:
+        $ref: '#/definitions/ServiceSpecificationReq'
+  ServiceReqCharacteristic:
+    type: object
+    properties:
+      name:
+        type: string
+      value:
+        type: string
+  ServiceSpecificationReq:
+    type: object
+    properties:
+      id:
+        type: string
+      href:
+        type: string
+      serviceCategoryId:
+        type: string
+      serviceSpecificationCharacteristic:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceSpecificationReqCharacteristic'
+  ServiceSpecificationReqCharacteristic:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      valuefrom:
+        type: string
+      valueto:
+        type: string
+  ServiceQualificationRsp:
+    type: object
+    properties:
+      id:
+        type: integer
+        format: int64
+      href:
+        type: string
+      interactionDate:
+        type: string
+        format: date-time
+      provideAlternative:
+        type: string
+      provideOnlyEligible:
+        type: string
+      description:
+        type: string
+      eligibilityDate:
+        type: string
+        format: date-time
+      qualificationState:
+        type: string
+        enum:
+          - InProgress
+          - Done
+          - TerminatedWithError
+      address:
+        $ref: '#/definitions/AddressReq'
+      addressDescription:
+        $ref: '#/definitions/AddressDescriptionReq'
+      geoCode:
+        $ref: '#/definitions/GeoCodeReq'
+      publicKey:
+        type: string
+      physicalTerminationPoint:
+        type: array
+        items:
+          $ref: '#/definitions/AccessTypeRsp'
+      serviceQualificationItem:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceQualificationItemRsp'
+  ServiceQualificationItemRsp:
+    type: object
+    properties:
+      service:
+        $ref: '#/definitions/ServiceRsp'
+      alternativeService:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceRsp'
+      availability:
+        type: string
+      serviceabilityDate:
+        type: string
+        format: date-time
+  ServiceRsp:
+    type: object
+    properties:
+      serviceCharacteristic:
+        type: array
+        items: 
+          $ref: '#/definitions/ServiceRspCharacteristic'
+      serviceSpecification:
+        $ref: '#/definitions/ServiceSpecification'
+  ServiceRspCharacteristic:
+    type: object
+    properties:
+      name:
+        type: string
+      value:
+        type: string
+  ServiceSpecification:
+    type: object
+    properties:
+      id:
+        type: string
+      href:
+        type: string
+      serviceCategoryId:
+        type: string
+      serviceSpecificationCharacteristic:
+        type: array
+        items:
+          $ref: '#/definitions/ServiceSpecificationCharacteristic'
+  ServiceSpecificationCharacteristic:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      valuefrom:
+        type: string
+      valueto:
+        type: string
+  AccessTypeRsp:
+    type: object
+    properties:
+      accessType:
+        type: string
+  AddressReq:
+    type: object
+    properties:
+      id:
+        type: string
+      href:
+        type: string
+  AddressDescriptionReq:
+    type: object
+    properties:
+      streetNr:
+        type: string
+      streetNrSuffix:
+        type: string
+      streetNrLast:
+        type: string
+      streetNrLastSuffix:
+        type: string
+      streetName:
+        type: string
+      streetType:
+        type: string
+      streetSuffix:
+        type: string
+      postcode:
+        type: string
+      locality:
+        type: string
+      city:
+        type: string
+      stateOrProvince:
+        type: string
+      country:
+        type: string
+  GeoCodeReq:
+    type: object
+    properties:
+      latitude:
+        type: string
+      longitude:
+        type: string
+      geographicDatum:
+        type: string

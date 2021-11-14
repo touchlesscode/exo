@@ -1,0 +1,189 @@
+﻿swagger: '2.0'
+info:
+  description: 'This is Swagger UI environment generated for the TMF Enhancement to Product Offering Qualification API specification'
+  version: '2.0'
+  title: Product Offering Qualification
+host: env-0693795.jelastic.servint.net
+basePath: /DSServiceQualification/api/productOfferingQualification/v1
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  /productOfferingQualification:
+    post:
+      tags:
+        - productOfferingQualification
+      operationId: productOfferingQualificationCreate
+      summary: productOfferingQualificationCreate
+      description: ''
+      deprecated: false
+      parameters:
+        - name: productOfferingQualification
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/ProductOfferingQualificationReq'
+      responses:
+        '201':
+          description: serviceQualification
+          schema:
+            $ref: '#/definitions/ProductOfferingQualificationReq'
+  '/productOfferingQualification/{productOfferingQualificationId}':
+    get:
+      tags:
+        - productOfferingQualification
+      operationId: productOfferingQualificationGet
+      summary: productOfferingQualificationGet
+      description: ''
+      deprecated: false
+      parameters:
+        - name: productOfferingQualificationId
+          in: path
+          required: true
+          type: string
+        - name: fields
+          in: query
+          required: false
+          description: ''
+          type: string
+      responses:
+        '200':
+          description: serviceQualification
+          schema:
+            $ref: '#/definitions/ProductOfferingQualificationReq'
+definitions:
+  ProductOfferingQualificationReq:
+    type: object
+    properties:
+      id:
+        type: string
+      eligibilityDate:
+        type: string
+        format: date-time
+      RelatedParty:
+        type: array
+        items:
+          $ref: '#/definitions/RelatedParty'
+      channel:
+        type: string
+      productInventoryId:
+        type: string
+      address:
+        $ref: '#/definitions/AddressReq'
+      addressDescription:
+        $ref: '#/definitions/AddressDescriptionReq'
+      geoCode:
+        $ref: '#/definitions/GeoCodeReq'
+      publicKey:
+        type: string
+      productOfferingQualificationItem:
+        type: array
+        items:
+          $ref: '#/definitions/ProductOfferingQualificationReqItem'
+  ProductOfferingQualificationReqItem:
+    type: object
+    properties:
+      productOffering:
+        $ref: '#/definitions/ProductOfferingReq'
+  ProductOfferingReq:
+    type: object
+    properties:
+      id:
+        type: string
+      href:
+        type: string
+      productOfferingCategory:
+        $ref: '#/definitions/ProductOfferingCategoryReq'
+      product:
+        $ref: '#/definitions/ProductReq'
+  ProductOfferingCategoryReq:
+    type: object
+    properties:
+      id:
+        type: string
+  ProductReq:
+    type: object
+    properties:
+      productSpecification:
+        $ref: '#/definitions/ProductSpecificationReq'
+      productCharacteristic:
+        type: array
+        items:
+          $ref: '#/definitions/ProductCharacteristicReq'
+  ProductSpecificationReq:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      version:
+        type: string
+      value:
+        type: string
+  ProductCharacteristicReq:
+    type: object
+    properties:
+      id:
+        type: string
+      name:
+        type: string
+      value:
+        type: string
+  AddressReq:
+    type: object
+    properties:
+      id:
+        type: string
+      href:
+        type: string
+  AddressDescriptionReq:
+    type: object
+    properties:
+      streetNr:
+        type: string
+      streetNrSuffix:
+        type: string
+      streetNrLast:
+        type: string
+      streetNrLastSuffix:
+        type: string
+      streetName:
+        type: string
+      streetType:
+        type: string
+      streetSuffix:
+        type: string
+      postcode:
+        type: string
+      locality:
+        type: string
+      city:
+        type: string
+      stateOrProvince:
+        type: string
+      country:
+        type: string
+  GeoCodeReq:
+    type: object
+    properties:
+      latitude:
+        type: string
+      longitude:
+        type: string
+      geographicDatum:
+        type: string
+  RelatedParty:
+    type: object
+    properties:
+      id:
+        type: string
+      role:
+        type: string
+      href:
+        type: string
+      name:
+        type: string

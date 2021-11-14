@@ -1,0 +1,1589 @@
+{
+
+    "swagger": "2.0",
+    "info": {
+        "title": "Quote Management",
+        "description": "This is Swagger UI environment generated for the TMF Quote Management specification",
+        "version": "2.0"
+    },
+    "host": "biologeek.orange-labs.fr",
+    "basePath": "/tmf-api/quoteManagement",
+    "schemes": [
+        "https"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/quote": {
+            "get": {
+                "operationId": "listQuote",
+                "summary": "List or find 'Quote' objects",
+                "tags": [
+                    "quote"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "fields",
+                        "description": "Comma separated properties to display in response"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "externalId",
+                        "description": "For filtering: ID given by the consumer and only understandable by him (to facilitate his searches afterwards)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "version",
+                        "description": "For filtering: Quote version - if the customer rejected the quote but  negotiations still open a new version of the quote is managed"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "category",
+                        "description": "For filtering: Used to categorize the quote from a business perspective that can be useful for the CRM system (e.g. \"enterprise\", \"residential\", ...)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "state",
+                        "description": "For filtering: State of the quote : described in the state-machine diagram above"
+                    },
+                    {
+                        "name": "quoteDate",
+                        "format": "date-time",
+                        "required": false,
+                        "in": "query",
+                        "type": "string",
+                        "description": "For filtering: Date and time when the quote was created"
+                    },
+                    {
+                        "name": "effectiveQuoteCompletionDate",
+                        "format": "date-time",
+                        "required": false,
+                        "in": "query",
+                        "type": "string",
+                        "description": "For filtering: Date when the quote has been completed"
+                    },
+                    {
+                        "name": "validFor.startDateTime",
+                        "format": "date-time",
+                        "required": false,
+                        "in": "query",
+                        "type": "string",
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    },
+                    {
+                        "name": "validFor.endDateTime",
+                        "format": "date-time",
+                        "required": false,
+                        "in": "query",
+                        "type": "string",
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "@baseType",
+                        "description": "For filtering: Indicates the base (class) type of the quote."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "@base",
+                        "description": "For filtering: Indicates the (class) type of the quote."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "@schemaLocation",
+                        "description": "For filtering: Link to the schema describing the REST resource"
+                    },
+                    {
+                        "name": "note.date",
+                        "format": "date-time",
+                        "required": false,
+                        "in": "query",
+                        "type": "string",
+                        "description": "For filtering: Date of the note"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "note.author",
+                        "description": "For filtering: Author of the note"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "note.text",
+                        "description": "For filtering: Text of the note"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "billingAccount.name",
+                        "description": "For filtering: Name of the billing account"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "billingAccount.@type",
+                        "description": "For filtering: Indicates the (class) type of the billing account."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "agreement.name",
+                        "description": "For filtering: Name of the agreement"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "agreement.@type",
+                        "description": "For filtering: Indicates the (class) type of the agreement."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteAuthorization.authorizationName",
+                        "description": "For filtering: Name of the required authorization"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteAuthorization.authorizationState",
+                        "description": "For filtering: State of the authorization - could be approved or declined"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteAuthorization.authorizationSignatureRepresentation",
+                        "description": "For filtering: To described a digital or manual signature"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteAuthorization.@type",
+                        "description": "For filtering: Indicates the (class) type of the authorization."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteAuthorization.@schemaLocation",
+                        "description": "For filtering: Link to the schema describing the REST resource"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "relatedParty.role",
+                        "description": "For filtering: Role of the related party."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "relatedParty.name",
+                        "description": "For filtering: Name of the related party"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "relatedParty.@type",
+                        "description": "For filtering: Indicates the base (class) type of the party."
+                    },
+                    {
+                        "type": "boolean",
+                        "required": false,
+                        "in": "query",
+                        "name": "contactMedium.preferred",
+                        "description": "For filtering: If true, indicates that is the preferred contact medium"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "contactMedium.type",
+                        "description": "For filtering: Type of the contact medium, such as: email address, telephone number, postal address"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteItem.state",
+                        "description": "For filtering: State of the quote item : described in the state machine diagram"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteItem.action",
+                        "description": "For filtering: Action to be perfomed on this quote item (add, modify, remove, etc.)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteItem.@type",
+                        "description": "For filtering: Indicates the base (class) type of the quote Item."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteItem.@schemaLocation",
+                        "description": "For filtering: Link to the schema describing this REST resource"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.priceType",
+                        "description": "For filtering: indicate if the price is for recurrent or no-recurrent charge"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.recurringChargePeriod",
+                        "description": "For filtering: Used for recurring charge to indicate period (month, week, etc..)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.unitOfMeasure",
+                        "description": "For filtering: Unit of Measure if price depending on it (Gb, SMS volume, etc..)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.name",
+                        "description": "For filtering: Name of the quote /quote item price"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.@type",
+                        "description": "For filtering: Indicates the base (class) type of the quote price."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "quoteTotalPrice.@schemaLocation",
+                        "description": "For filtering: link to the schema describing this REST resource"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Quote"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "post": {
+                "operationId": "createQuote",
+                "summary": "Creates a 'Quote'",
+                "tags": [
+                    "quote"
+                ],
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/Quote_Create"
+                        },
+                        "required": true,
+                        "in": "body",
+                        "name": "quote",
+                        "description": "The Quote to be created"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created",
+                        "schema": {
+                            "$ref": "#/definitions/Quote"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/quote/{id}": {
+            "get": {
+                "operationId": "retrieveQuote",
+                "summary": "Retrieves a 'Quote' by Id",
+                "tags": [
+                    "quote"
+                ],
+                "parameters": [
+                    {
+                        "required": true,
+                        "type": "string",
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identifier of the Quote"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok",
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/Quote"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "operationId": "patchQuote",
+                "summary": "Updates partially a 'Quote' by Id",
+                "tags": [
+                    "quote"
+                ],
+                "parameters": [
+                    {
+                        "required": true,
+                        "type": "string",
+                        "name": "id",
+                        "in": "path",
+                        "description": "Identifier of the Quote"
+                    },
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/Quote_Update"
+                        },
+                        "required": true,
+                        "in": "body",
+                        "name": "quote",
+                        "description": "The Quote to be updated"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Updated",
+                        "schema": {
+                            "$ref": "#/definitions/Quote"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/hub": {
+            "post": {
+                "operationId": "registerListener",
+                "summary": "Register a listener",
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+                "tags": [
+                    "events subscription"
+                ],
+                "parameters": [
+                    {
+                        "name": "data",
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        },
+                        "required": true,
+                        "in": "body",
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Subscribed",
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener",
+                "summary": "Unregister a listener",
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+                "tags": [
+                    "events subscription"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "type": "string",
+                        "required": true,
+                        "in": "path",
+                        "description": "The id of the registered listener"
+                    }
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    },
+                    "404": {
+                        "description": "Not Found",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Quote": {
+            "type": "object",
+            "description": "Quote can be used to negotiate service and product acquisition or modification between a customer and a service provider. Quote contain list of quote items, a reference to customer (partyRole), a list of productOffering and attached prices and conditions.",
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access the quote"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier - attributed by quoting system"
+                },
+                "externalId": {
+                    "type": "string",
+                    "description": "ID given by the consumer and only understandable by him (to facilitate his searches afterwards)"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Quote version - if the customer rejected the quote but  negotiations still open a new version of the quote is managed"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the quote"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "Used to categorize the quote from a business perspective that can be useful for the CRM system (e.g. \"enterprise\", \"residential\", ...)"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the quote : described in the state-machine diagram above"
+                },
+                "quoteDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the quote was created"
+                },
+                "expectedQuoteCompletionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "This is expected date - from quote requester - to have a response for this quote"
+                },
+                "expectedFulfillmentStartDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "this is the date wished by the requester to have the requested quote item delivered"
+                },
+                "effectiveQuoteCompletionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the quote has been completed"
+                },
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod",
+                    "description": "Quote validity period"
+                },
+                "@baseType": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the quote."
+                },
+                "@base": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the quote."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing the REST resource"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Note"
+                    }
+                },
+                "billingAccount": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BillingAccountRef"
+                    }
+                },
+                "agreement": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AgreementRef"
+                    }
+                },
+                "quoteAuthorization": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Authorization"
+                    }
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                },
+                "contactMedium": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContactMedium"
+                    }
+                },
+                "quoteItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuoteItem"
+                    }
+                },
+                "quoteTotalPrice": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuotePrice"
+                    }
+                }
+            }
+        },
+        "Quote_Create": {
+            "type": "object",
+            "description": "Quote can be used to negotiate service and product acquisition or modification between a customer and a service provider. Quote contain list of quote items, a reference to customer (partyRole), a list of productOffering and attached prices and conditions.\nSkipped properties: id,href,quoteItem.productOffering.bundledProductOffering",
+            "required": [
+                "quoteItem"
+            ],
+            "properties": {
+                "externalId": {
+                    "type": "string",
+                    "description": "ID given by the consumer and only understandable by him (to facilitate his searches afterwards)"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Quote version - if the customer rejected the quote but  negotiations still open a new version of the quote is managed"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the quote"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "Used to categorize the quote from a business perspective that can be useful for the CRM system (e.g. \"enterprise\", \"residential\", ...)"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the quote : described in the state-machine diagram above"
+                },
+                "quoteDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the quote was created"
+                },
+                "expectedQuoteCompletionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "This is expected date - from quote requester - to have a response for this quote"
+                },
+                "expectedFulfillmentStartDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "this is the date wished by the requester to have the requested quote item delivered"
+                },
+                "effectiveQuoteCompletionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the quote has been completed"
+                },
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod",
+                    "description": "Quote validity period"
+                },
+                "@baseType": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the quote."
+                },
+                "@base": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the quote."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing the REST resource"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Note"
+                    }
+                },
+                "billingAccount": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BillingAccountRef"
+                    }
+                },
+                "agreement": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AgreementRef"
+                    }
+                },
+                "quoteAuthorization": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Authorization"
+                    }
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                },
+                "contactMedium": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContactMedium"
+                    }
+                },
+                "quoteItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuoteItem"
+                    }
+                },
+                "quoteTotalPrice": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuotePrice"
+                    }
+                }
+            }
+        },
+        "Quote_Update": {
+            "type": "object",
+            "description": "Quote can be used to negotiate service and product acquisition or modification between a customer and a service provider. Quote contain list of quote items, a reference to customer (partyRole), a list of productOffering and attached prices and conditions.\nSkipped properties: id,href,id,href,externalId,version,quoteDate,effectiveQuoteCompletionDate,quoteTotalPrice,quoteItem.productOffering.bundledProductOffering",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "Description of the quote"
+                },
+                "category": {
+                    "type": "string",
+                    "description": "Used to categorize the quote from a business perspective that can be useful for the CRM system (e.g. \"enterprise\", \"residential\", ...)"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the quote : described in the state-machine diagram above"
+                },
+                "expectedQuoteCompletionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "This is expected date - from quote requester - to have a response for this quote"
+                },
+                "expectedFulfillmentStartDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "this is the date wished by the requester to have the requested quote item delivered"
+                },
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod",
+                    "description": "Quote validity period"
+                },
+                "@baseType": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the quote."
+                },
+                "@base": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the quote."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing the REST resource"
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Note"
+                    }
+                },
+                "billingAccount": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/BillingAccountRef"
+                    }
+                },
+                "agreement": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AgreementRef"
+                    }
+                },
+                "quoteAuthorization": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Authorization"
+                    }
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                },
+                "contactMedium": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ContactMedium"
+                    }
+                },
+                "quoteItem": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuoteItem"
+                    }
+                }
+            }
+        },
+        "TimePeriod": {
+            "type": "object",
+            "description": "A base / value business entity used to represent a period of time between two timepoints.",
+            "properties": {
+                "startDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "An instant of time, starting at the TimePeriod"
+                },
+                "endDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "An instant of time, ending at the TimePeriod."
+                }
+            }
+        },
+        "Note": {
+            "type": "object",
+            "description": "Extra information about a given entity",
+            "properties": {
+                "date": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date of the note"
+                },
+                "author": {
+                    "type": "string",
+                    "description": "Author of the note"
+                },
+                "text": {
+                    "type": "string",
+                    "description": "Text of the note"
+                }
+            }
+        },
+        "BillingAccountRef": {
+            "type": "object",
+            "description": "BillingAccount reference. A BillingAccount is a detailed description of a bill structure.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the billing account"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the billing account"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the billing account"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the billing account."
+                }
+            }
+        },
+        "AgreementRef": {
+            "type": "object",
+            "description": "Agreement reference. An agreement represents a contract or arrangement, either written or verbal and sometimes enforceable by law, such as a service level agreement or a customer price agreement. An agreement involves a number of other business entities, such as products, services, and resources and/or their specifications.",
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the agreement"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the agreement"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the agreement"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the agreement."
+                }
+            }
+        },
+        "Authorization": {
+            "type": "object",
+            "description": "If special discount or special product offering price or specific condition need an approval for ISP sale representative it is described here.",
+            "properties": {
+                "authorizationName": {
+                    "type": "string",
+                    "description": "Name of the required authorization"
+                },
+                "authorizationState": {
+                    "type": "string",
+                    "description": "State of the authorization - could be approved or declined"
+                },
+                "authorizationRequestedDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the authorization is requested for"
+                },
+                "authorizationGivenDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date when the authorization (approved or declined) has been done"
+                },
+                "authorizationSignatureRepresentation": {
+                    "type": "string",
+                    "description": "To described a digital or manual signature"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the authorization."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing the REST resource"
+                },
+                "approver": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }
+            }
+        },
+        "RelatedPartyRef": {
+            "type": "object",
+            "description": "A related party defines party or party role linked to a specific entity.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of a related party."
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the related party, could be a party reference or a party role reference."
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role of the related party."
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the related party"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the party."
+                }
+            }
+        },
+        "ContactMedium": {
+            "type": "object",
+            "description": "Indicates the contact medium that could be used to contact the party.",
+            "properties": {
+                "preferred": {
+                    "type": "boolean",
+                    "description": "If true, indicates that is the preferred contact medium"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of the contact medium, such as: email address, telephone number, postal address"
+                },
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod",
+                    "description": "The time period that the contact medium is valid for"
+                },
+                "characteristic": {
+                    "$ref": "#/definitions/MediumCharacteristic"
+                }
+            }
+        },
+        "QuoteItem": {
+            "type": "object",
+            "description": "A quote items describe an action to be performed on a productOffering or a product in order to get pricing elements and condition.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the quote item (generally it is a sequence number 01, 02, 03, ...)"
+                },
+                "state": {
+                    "type": "string",
+                    "description": "State of the quote item : described in the state machine diagram"
+                },
+                "quantity": {
+                    "type": "number",
+                    "format": "integer",
+                    "description": "Quantity asked for this quote item"
+                },
+                "action": {
+                    "type": "string",
+                    "description": "Action to be perfomed on this quote item (add, modify, remove, etc.)"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the quote Item."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing this REST resource"
+                },
+                "quoteItemRelationship": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuoteItemRelationship"
+                    }
+                },
+                "attachment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                },
+                "quoteItemAuthorization": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Authorization"
+                    }
+                },
+                "note": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Note"
+                    }
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                },
+                "appointment": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/AppointmentRef"
+                    }
+                },
+                "productOffering": {
+                    "$ref": "#/definitions/ProductOfferingRef"
+                },
+                "quoteItemPrice": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/QuotePrice"
+                    }
+                },
+                "product": {
+                    "$ref": "#/definitions/ProductRefOrValue"
+                }
+            }
+        },
+        "QuotePrice": {
+            "type": "object",
+            "description": "Description of price and discount awarded",
+            "properties": {
+                "priceType": {
+                    "type": "string",
+                    "description": "indicate if the price is for recurrent or no-recurrent charge"
+                },
+                "recurringChargePeriod": {
+                    "type": "string",
+                    "description": "Used for recurring charge to indicate period (month, week, etc..)"
+                },
+                "unitOfMeasure": {
+                    "type": "string",
+                    "description": "Unit of Measure if price depending on it (Gb, SMS volume, etc..)"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the quote /quote item price"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the quote/quote item price"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the quote price."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "link to the schema describing this REST resource"
+                },
+                "priceAlteration": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PriceAlteration"
+                    }
+                },
+                "price": {
+                    "$ref": "#/definitions/Price"
+                }
+            }
+        },
+        "MediumCharacteristic": {
+            "type": "object",
+            "description": "Describes the contact medium characteristics that could be used to contact a party (an individual or an organization)",
+            "properties": {
+                "city": {
+                    "type": "string",
+                    "description": "The city"
+                },
+                "country": {
+                    "type": "string",
+                    "description": "The country"
+                },
+                "emailAddress": {
+                    "type": "string",
+                    "description": "Full email address in standard format"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Type of medium (fax, mobile phone...)"
+                },
+                "postCode": {
+                    "type": "string",
+                    "description": "Postcode"
+                },
+                "stateOrProvince": {
+                    "type": "string",
+                    "description": "State or province"
+                },
+                "street1": {
+                    "type": "string",
+                    "description": "Describes the street"
+                },
+                "street2": {
+                    "type": "string",
+                    "description": "Complementary street description"
+                },
+                "faxNumber": {
+                    "type": "string",
+                    "description": "The fax number of the contact"
+                },
+                "phoneNumber": {
+                    "type": "string",
+                    "description": "The primary phone number of the contact"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the medium characteristic."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing this REST resource"
+                }
+            }
+        },
+        "QuoteItemRelationship": {
+            "type": "object",
+            "description": "Used to describe relationship between quote item. These relationship could have an impact on pricing and conditions",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "ID of the related order item (must be in the same quote)"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Relationship type as relies on, bundles, etc..."
+                }
+            }
+        },
+        "Attachment": {
+            "type": "object",
+            "description": "Complements the description of an element (for instance a product) through video, pictures...",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "A narrative text describing the content of the attachment"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the attachment"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the attachment"
+                },
+                "type": {
+                    "type": "string",
+                    "description": "Attachment type such as video, picture"
+                },
+                "url": {
+                    "type": "string",
+                    "description": "Uniform Resource Locator, is a web page address (a subset of URI)"
+                },
+                "@baseType": {
+                    "type": "string",
+                    "description": "Indicates the base (class) type of the attachment."
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the attachment."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to schema describing this REST resource."
+                }
+            }
+        },
+        "AppointmentRef": {
+            "type": "object",
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access the appointment"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the appointment (generally it is a sequence number 01, 02, 03, ...)"
+                },
+                "description": {
+                    "type": "string",
+                    "description": "An explanatory text regarding the appointment made with a party"
+                }
+            }
+        },
+        "ProductOfferingRef": {
+            "type": "object",
+            "description": "ProductOffering reference. A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the product offering"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the product offering"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the product offering"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicate the class (type) of product offering"
+                }
+            }
+        },
+        "ProductRefOrValue": {
+            "type": "object",
+            "description": "Product reference. Configure the product characteristics (only configurable characteristics and necessary only if a non default value is selected) and/or identify the product that needs to be modified/deleted.",
+            "properties": {
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the product"
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the product"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the product"
+                },
+                "productRelationship": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductRefOrValueRelationship"
+                    }
+                },
+                "place": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/PlaceRef"
+                    }
+                },
+                "characteristic": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ProductCharacteristic"
+                    }
+                },
+                "relatedParty": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                },
+                "productSpecification": {
+                    "$ref": "#/definitions/ProductSpecificationRef"
+                }
+            }
+        },
+        "ProductRefOrValueRelationship": {
+            "type": "object",
+            "description": "Represents a relationship between products - which potentially holds an entire product object or a product reference (with partial content)",
+            "properties": {
+                "type": {
+                    "type": "string",
+                    "description": "Type of the product relationship. It can be :\n<ul>\n <li>\"bundled\" if the product is a bundle and you want to describe the \"bundled\" products inside this bundle</li>\n <li>\"reliesOn\" if the product needs another already owned product to rely on (e.g. an option on an already owned mobile access product)</li>\n</ul>\n\"targets\" or \"isTargeted\" (depending on the way of expressing the link) for any other kind of links that may be useful"
+                },
+                "product": {
+                    "$ref": "#/definitions/ProductRefOrValue"
+                }
+            }
+        },
+        "PlaceRef": {
+            "type": "object",
+            "description": "Place reference. Place defines the places where the products are sold or delivered.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the place"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Unique reference of the place"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                }
+            }
+        },
+        "ProductCharacteristic": {
+            "type": "object",
+            "description": "Characteristics of the product to instantiate or to modify",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the characteristic"
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Value of the characteristic"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of resource"
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "This field provided a link to the schema describing this REST resource"
+                }
+            }
+        },
+        "ProductSpecificationRef": {
+            "type": "object",
+            "description": "Product specification reference: A ProductSpecification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.",
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Unique identifier of the product specification"
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the product specification"
+                },
+                "version": {
+                    "type": "string",
+                    "description": "Version of the product specification"
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the product specification"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of resource (here product specification)"
+                }
+            }
+        },
+        "PriceAlteration": {
+            "type": "object",
+            "description": "Is an amount, usually of money, that modifies the price charged for an order item.",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "A short descriptive name such as \"Monthly discount\""
+                },
+                "description": {
+                    "type": "string",
+                    "description": "A narrative that explains in detail the semantics of this order item price alteration"
+                },
+                "priceType": {
+                    "type": "string",
+                    "description": "A category that describes the price such as recurring, one time and usage."
+                },
+                "unitOfMeasure": {
+                    "type": "string",
+                    "description": "Could be minutes, GB..."
+                },
+                "recurringChargePeriod": {
+                    "type": "string",
+                    "description": "Could be month, week..."
+                },
+                "applicationDuration": {
+                    "type": "integer",
+                    "description": "Duration during which the alteration applies on the order item price (for instance 2 months free of charge for the recurring charge)"
+                },
+                "priority": {
+                    "type": "integer",
+                    "description": "Priority level for applying this alteration among all the defined alterations on the order item price"
+                },
+                "priceCondition": {
+                    "type": "string",
+                    "description": "Condition that triggers the price application"
+                },
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod",
+                    "description": "The period for which the price alteration is valid"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the price alteration."
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing this REST resource"
+                },
+                "price": {
+                    "$ref": "#/definitions/Price"
+                }
+            }
+        },
+        "Price": {
+            "type": "object",
+            "description": "Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.",
+            "properties": {
+                "taxIncludedAmount": {
+                    "$ref": "#/definitions/Money",
+                    "description": "All taxes included amount (expressed in the given currency)"
+                },
+                "dutyFreeAmount": {
+                    "$ref": "#/definitions/Money",
+                    "description": "All taxes excluded amount (expressed in the given currency)"
+                },
+                "taxRate": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Tax rate"
+                },
+                "@type": {
+                    "type": "string",
+                    "description": "Indicates the (class) type of the price."
+                },
+                "percentage": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "Percentage to apply for ProdOfferPriceAlteration"
+                },
+                "@schemaLocation": {
+                    "type": "string",
+                    "description": "Link to the schema describing this REST resource."
+                }
+            }
+        },
+        "Money": {
+            "type": "object",
+            "description": "A base / value business entity used to represent money",
+            "properties": {
+                "value": {
+                    "type": "number",
+                    "format": "float",
+                    "description": "A positive floating point number"
+                },
+                "unit": {
+                    "type": "string",
+                    "description": "Currency (ISO4217 norm uses 3 letters to define the currency)"
+                }
+            }
+        },
+        "EventSubscription": {
+            "required": [
+                "id",
+                "callback"
+            ],
+            "properties": {
+                "id": {
+                    "type": "string",
+                    "description": "Id of the listener"
+                },
+                "callback": {
+                    "type": "string",
+                    "description": "The callback being registered."
+                },
+                "query": {
+                    "type": "string",
+                    "description": "additional data to be passed"
+                }
+            }
+        },
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ],
+            "properties": {
+                "callback": {
+                    "type": "string",
+                    "description": "The callback being registered."
+                },
+                "query": {
+                    "type": "string",
+                    "description": "additional data to be passed"
+                }
+            }
+        },
+        "Error": {
+            "required": [
+                "code",
+                "message"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                },
+                "message": {
+                    "type": "string",
+                    "description": "A short localized string that describes the error."
+                },
+                "description": {
+                    "type": "string",
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                },
+                "infoURL": {
+                    "type": "string",
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+
+}

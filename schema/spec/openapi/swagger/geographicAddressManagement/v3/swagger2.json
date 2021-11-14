@@ -1,0 +1,962 @@
+
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "The Geographic Address API provides a standardized client interface to an Address management system.\nIt allows looking for worldwide addresses.\nIt can also be used to validate geographic address data, to be sure that it corresponds to a real address.\nFinally, it can be used to look for an address by: searching an area as a start (city, town …), then zooming on the streets of this area, and finally listing all the street segments (numbers) in a street.",    
+    "version": "2.0.1",
+    "title": "Geographic Address Management"
+  },
+  
+  "host": "api.orange.com",
+  "basePath":	"/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],  
+  "paths": { 
+      "/geographicAddress": {
+      "get": {
+        "tags": [
+           "geographicAddress"
+        ],    
+        "operationId": "geographicAddressFind",
+        "summary": "find geographicAddress",
+        "description": "This operation is used to retrieve geographic addresses corresponding to search criteria.",
+        "deprecated": false,        
+             
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/GeographicAddress"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/geographicAddress/{geographicAddressId}": {
+      "get": {
+        "tags": [
+           "geographicAddress"
+        ],    
+        "operationId": "geographicAddressGet",
+        "summary": "get geographicAddress",
+        "description": "Retrieves a geographic address using its unique ID. This ID should be retrieve either using the address completion process (cf. completion), or in another API of the ecosystem (party, appointment, etc.)",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "geographicAddressId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddress"
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/geographicAddressValidation": {
+      "post": {
+        "tags": [
+           "geographicAddressValidation"
+        ],    
+        "operationId": "geographicAddressValidationCreate",
+        "summary": "create geographicAddressValidation",
+        "description": "This operation creates a geographic address validation request.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "addressValidationRequest",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddressValidationRequest"
+            }                     
+          }
+        ],     
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddressValidation"
+            }                                                  
+          }          
+        }        
+      },
+      "get": {
+        "tags": [
+           "geographicAddressValidation"
+        ],    
+        "operationId": "geographicAddressValidationFind",
+        "summary": "find geographicAddressValidation",
+        "description": "This operation retrieves geographic address validation entities.",
+        "deprecated": false,        
+             
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/GeographicAddressValidation"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/geographicAddressValidation/{geographicAddressValidationId}": {
+      "get": {
+        "tags": [
+           "geographicAddressValidation"
+        ],    
+        "operationId": "geographicAddressValidationGet",
+        "summary": "get geographicAddressValidation",
+        "description": "This operation allows to retrieve an existing geographic address validation using its Id.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "geographicAddressValidationId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddressValidation"
+            }                                                  
+          }          
+        }        
+      },
+      "patch": {
+        "tags": [
+           "geographicAddressValidation"
+        ],    
+        "operationId": "geographicAddressValidationPatch",
+        "summary": "patch geographicAddressValidation",
+        "description": "This operation allows to modify an existing address validation request.\nOnly available for Admin users.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "geographicAddressValidationId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "AddressValidation",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddressValidation"
+            }                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/GeographicAddressValidation"
+            }                                                  
+          }          
+        }        
+      },
+      "delete": {
+        "tags": [
+           "geographicAddressValidation"
+        ],    
+        "operationId": "geographicAddressValidationDelete",
+        "summary": "delete geographicAddressValidation",
+        "description": "This operation allows to delete an existing address validation request.\nOnly available for Admin users.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "geographicAddressValidationId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }
+        ],     
+        "responses": {
+          "204": {
+            "description": "Success"                                                  
+          }          
+        }        
+      }
+    }, 
+      "/geographicAddress/{geographicAddressId}/geographicSubAddress": {
+      "get": {
+        "tags": [
+           "geographicSubAddress"
+        ],    
+        "operationId": "geographicSubAddressFind",
+        "summary": "find geographicSubAddress",
+        "description": "",
+        "deprecated": false,        
+          
+        "parameters": [
+           
+          {
+            "name": "geographicAddressId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }          
+  
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/GeographicSubAddress"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/geographicAddress/{geographicAddressId}/geographicSubAddress/{geographicSubAddressId}": {
+      "get": {
+        "tags": [
+           "geographicSubAddress"
+        ],    
+        "operationId": "geographicSubAddressGet",
+        "summary": "get geographicSubAddress",
+        "description": "",
+        "deprecated": false,        
+          
+        "parameters": [
+           
+          {
+            "name": "geographicAddressId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }          
+  ,
+          {
+            "name": "geographicSubAddressId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/GeographicSubAddress"
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/area": {
+      "get": {
+        "tags": [
+           "area"
+        ],    
+        "operationId": "areaFind",
+        "summary": "find area",
+        "description": "This operation is the first step of an address completion process, allowing to retrieve geographic areas Step 1: I look for a geographic area (city, locality, district, etc.) using its name.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "fuzzy",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "name",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "type",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/Area"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/street": {
+      "get": {
+        "tags": [
+           "street"
+        ],    
+        "operationId": "streetFind",
+        "summary": "find street",
+        "description": "This operation is the second step of an address completion process, allowing to retrieve streets Step 2: I look for the streets inside this geographic area.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "area.id",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "fuzzy",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "header",
+            "description": "",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/Street"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }, 
+      "/streetSegment": {
+      "get": {
+        "tags": [
+           "streetSegment"
+        ],    
+        "operationId": "streetSegmentFind",
+        "summary": "find streetSegment",
+        "description": "This operation is the last step of an address completion process, allowing to retrieve numbers in a street Step 3: I get all the street segments (numbers) existing in the street",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "streetId",
+            "required": true,
+            "in": "query",
+            "description": "",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/StreetSegment"
+              }
+            }                                                  
+          }          
+        }        
+      }
+    }
+  },
+"definitions": {
+  
+    
+    "ZErrorDetail": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ZError": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        },
+        "details": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ZErrorDetail"
+          }
+        }     
+      }
+            
+    },
+    
+    "GeographicPoint": {
+      "description": "A GeographicPoint defines a geographic point through coordinates.",
+      
+      "type": "object",
+      "properties": {
+        "accuracy": {
+          "description": "Accuracy of the coordinate specified",
+              "type": "string"
+        },
+        "spatialRef": {
+          "description": "Geocoding referential",
+              "type": "string"
+        },
+        "x": {
+          "description": "x coordinate (usually latitude)",
+              "type": "string"
+        },
+        "y": {
+          "description": "y coordinate (usually longitude)",
+              "type": "string"
+        },
+        "z": {
+          "description": "z coordinate (usually elevation)",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "GeographicLocation": {
+      "description": "A GeographicLocation allows describing through coordinate(s) a point, a line or a space",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique Identifier of a GeoLocation",
+              "type": "string"
+        },
+        "href": {
+          "description": "href of the GeoLocation",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of a GeoLocation",
+              "type": "string"
+        },
+        "type": {
+          "description": "Type allows describing Geolocation form: it could be a point, a line, a polygon, a cylinder, etc....",
+              "type": "string"
+        },
+        "geographicPoint": {
+          "description": "A GeoPoint defines a geographic point through coordinates.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/GeographicPoint"
+          }
+        }     
+      }
+            
+    },
+    
+    "GeographicSubAddress": {
+      "description": "It is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique Identifier of the subAddress",
+              "type": "string"
+        },
+        "href": {
+          "description": "Href of the subAddress",
+              "type": "string"
+        },
+        "type": {
+          "description": "Type of subAddress : it can be a subunit or a private street",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the subAddress to identify it with a meaningful identification",
+              "type": "string"
+        },
+        "subUnitType": {
+          "description": "The type of subunit\ne.g.BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF.",
+              "type": "string"
+        },
+        "subUnitNumber": {
+          "description": "The discriminator used for the subunit\noften just a simple number e.g. FLAT 5, may also be a range",
+              "type": "string"
+        },
+        "levelType": {
+          "description": "Describes level types within a building",
+              "type": "string"
+        },
+        "levelNumber": {
+          "description": "Used where a level type may be repeated e.g. BASEMENT 1, BASEMENT 2",
+              "type": "string"
+        },
+        "buildingName": {
+          "description": "Allows for buildings that have well-known names",
+              "type": "string"
+        },
+        "privateStreetNumber": {
+          "description": "Private streets numbers internal to a private street",
+              "type": "string"
+        },
+        "privateStreetName": {
+          "description": "Private streets internal to a property (e.g. a university) may have internal names that are not recorded by the land title office",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "GeographicAddress": {
+      "description": "A geographic address is a structured textual way of describing how to find a Property in an urban area (country properties are often defined differently)",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the address",
+              "type": "string"
+        },
+        "href": {
+          "description": "An URI used to access to the address resource",
+              "type": "string"
+        },
+        "streetNr": {
+          "description": "Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses",
+              "type": "string"
+        },
+        "streetNrSuffix": {
+          "description": "The first street number suffix",
+              "type": "string"
+        },
+        "streetNrLast": {
+          "description": "Last number in a range of street numbers allocated to a property",
+              "type": "string"
+        },
+        "streetNrLastSuffix": {
+          "description": "Last street number suffix for a ranged address",
+              "type": "string"
+        },
+        "streetName": {
+          "description": "Name of the street or other street type",
+              "type": "string"
+        },
+        "streetType": {
+          "description": "Alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf",
+              "type": "string"
+        },
+        "streetSuffix": {
+          "description": "A modifier denoting a relative direction",
+              "type": "string"
+        },
+        "postcode": {
+          "description": "Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as zipcode)",
+              "type": "string"
+        },
+        "locality": {
+          "description": "\"An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi-rural in nature.\" [ANZLIC-STREET], or a suburb \"a bounded locality within a city, town or shire principally of urban character \" [ANZLICSTREET].",
+              "type": "string"
+        },
+        "city": {
+          "description": "City that the address is in",
+              "type": "string"
+        },
+        "stateOrProvince": {
+          "description": "The State or Province that the address is in",
+              "type": "string"
+        },
+        "country": {
+          "description": "Country that the address is in",
+              "type": "string"
+        },
+        "geoLocationRefOrValue": {
+          "description": "A GeoLocation allows describing through coordinate(s) a point, a line or a space",          
+              "$ref": "#/definitions/GeographicLocation"
+        },
+        "geographicSubAddress": {
+          "description": "Representation of a SubAddress \nIt is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/GeographicSubAddress"
+          }
+        }     
+      }
+            
+    },
+    
+    "GeographicAddressValidation": {
+      "description": "Resource used to support a request for a validation address : check if a geographic address described by values attributes exists)\nIf exist, id and href are provided\nif not, alternate address(es) could be provided",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the Address Validation",
+              "type": "string"
+        },
+        "href": {
+          "description": "An URI used to access to the address validation resource",
+              "type": "string"
+        },
+        "status": {
+          "description": "Status of the address validation (inProgress, terminatedWithErrror, done).",
+              "type": "string"
+        },
+        "validationDate": {
+          "description": "Date when the address validation is performed",
+              "type": "string",
+              "format": "date-time"
+        },
+        "validationResult": {
+          "description": "Result of the address validation (success, partial, fail)",
+              "type": "string"
+        },
+        "provideaAlternative": {
+          "description": "Indicator provided by the requester to specify if alternate addresses must be provided in case of partial or fail result",
+              "type": "boolean"
+        },
+        "validAddress": {
+          "description": "structure used to describe the address to be validated in the request and the address validated in the response",          
+              "$ref": "#/definitions/GeographicAddress"
+        },
+        "alternateGeographicAddress": {
+          "description": "Structure used to describe alternate address(es) if requested address did not exist (close addresses are described there) or if several addresses match.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/GeographicAddress"
+          }
+        }     
+      }
+            
+    },
+    
+    "LocationCharacteristic": {
+      "description": "Name/value pairs, used to extra characterized the Area",
+      
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the characteristic",
+              "type": "string"
+        },
+        "value": {
+          "description": "Value of the characteristic",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "Area": {
+      "description": "Area corresponds to a geographic area as a city, a locality, a district, etc",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of an Area",
+              "type": "string"
+        },
+        "name": {
+          "description": "The defined name of the municipality",
+              "type": "string"
+        },
+        "type": {
+          "description": "SUBURB, LOCALITY, CITY, TOWN, BOROUGH, ....",
+              "type": "string"
+        },
+        "characteristic": {
+          "description": "A list of location characteristics",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/LocationCharacteristic"
+          }
+        }     
+      }
+            
+    },
+    
+    "Street": {
+      "description": "A street is a road in a city or locality that has buildings that are usually close together along one or both sides",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the Street",
+              "type": "string"
+        },
+        "name": {
+          "description": "The defined name of the street",
+              "type": "string"
+        },
+        "type": {
+          "description": "Alley, street, impasse, avenue, etc..",
+              "type": "string"
+        },
+        "address": {
+          "description": "Address reference",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/GeographicAddressRef"
+          }
+        },
+        "characteristic": {
+          "description": "Name/value pairs, used to extra characterized the Street",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/LocationCharacteristic"
+          }
+        }     
+      }
+            
+    },
+    
+    "GeographicAddressRef": {
+      "description": "Reference to a geographic address with id & href",
+      
+      "required": [       
+          
+            "id"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "unique identifier of an address",
+              "type": "string"
+        },
+        "href": {
+          "description": "URI to point to the address",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "StreetSegment": {
+      "description": "StreetSegment corresponds to a part of a given street referenced by a number (22) or a set of number (22-24). Sometimes a suffix is added",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the Street Segment",
+              "type": "string"
+        },
+        "number": {
+          "description": "Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses",
+              "type": "string"
+        },
+        "numberSuffix": {
+          "description": "The first street number suffix",
+              "type": "string"
+        },
+        "numberLast": {
+          "description": "The last number in a range of street numbers allocated to a property",
+              "type": "string"
+        },
+        "numberLastSuffix": {
+          "description": "The last street number suffix for a ranged address",
+              "type": "string"
+        },
+        "geographicAddress": {
+          "description": "An address reference",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/GeographicAddressRef"
+          }
+        }     
+      }
+            
+    },
+    
+    "GeographicAddressValidationRequest": {
+      "description": "Structure used to describe an address validation request",
+      
+      "type": "object",
+      "properties": {
+        "provideaAlternative": {
+          "description": "Indicator provided by the requester to specify if alternate addresses must be provided in case of partial or fail result",
+              "type": "boolean"
+        },
+        "validAddress": {
+          "description": "structure used to describe the address to be validated in the request and the address validated in the response",          
+              "$ref": "#/definitions/GeographicAddressRequestValidation"
+        }     
+      }
+            
+    },
+    
+    "GeographicAddressRequestValidation": {
+      "description": "",
+      
+      "type": "object",
+      "properties": {
+        "streetNr": {
+          "description": "Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses",
+              "type": "string"
+        },
+        "streetNrSuffix": {
+          "description": "The first street number suffix",
+              "type": "string"
+        },
+        "streetNrLast": {
+          "description": "Last number in a range of street numbers allocated to a property",
+              "type": "string"
+        },
+        "streetNrLastSuffix": {
+          "description": "Last street number suffix for a ranged address",
+              "type": "string"
+        },
+        "streetName": {
+          "description": "Name of the street or other street type",
+              "type": "string"
+        },
+        "streetType": {
+          "description": "Alley, avenue, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf",
+              "type": "string"
+        },
+        "streetSuffix": {
+          "description": "A modifier denoting a relative direction",
+              "type": "string"
+        },
+        "postcode": {
+          "description": "Descriptor for a postal delivery area, used to speed and simplify the delivery of mail (also known as zipcode)",
+              "type": "string"
+        },
+        "locality": {
+          "description": "\"An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi-rural in nature.\" [ANZLIC-STREET], or a suburb \"a bounded locality within a city, town or shire principally of urban character \" [ANZLICSTREET].",
+              "type": "string"
+        },
+        "city": {
+          "description": "City that the address is in",
+              "type": "string"
+        },
+        "stateOrProvince": {
+          "description": "The State or Province that the address is in",
+              "type": "string"
+        },
+        "country": {
+          "description": "Country that the address is in",
+              "type": "string"
+        },
+        "geoLocationRefOrValue": {
+          "description": "A GeoLocation allows describing through coordinate(s) a point, a line or a space",          
+              "$ref": "#/definitions/GeographicLocation"
+        },
+        "geographicSubAddress": {
+          "description": "Representation of a SubAddress \nIt is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building",          
+              "$ref": "#/definitions/GeographicSubAddress"
+        }     
+      }
+            
+    }  
+  }
+}
+	

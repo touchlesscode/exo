@@ -1,0 +1,1071 @@
+
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "##TMF API Reference: TMF 678 - Customer bill Management\n\n##Release: pre-release 17.5\n\nThe Customer Bill Management API allows to find and retrieve one or several customer bills (also called invoices) produced for a customer. A customer bill is an electronic or paper document produced at the end of the billing process. The customer bill gathers and displays different items (applied customer billing rates generated during the rating and billing processes) to be charged to a customer. It represents a total amount due for all the products during the billing period and all significant information like dates, bill reference...\nThis API provides also operations to find and retrieve the details of applied customer billing rates presented on a customer bill. \nFinally, this API allows to request in real-time a customer bill creation and to manage this request.\n\n### Resources \n- **customerBill** :  an electronic or paper document produced at the end of the billing process that  gathers and displays different items (applied customer billing rates generated during the rating and billing processes) to be charged to a customer.\n- **appliedCustomerBillingRate** : applied billing rates created before or during the billing process and displayed on a customer bill.\n- **customerBillOnDemand** : used to manage the creation request of a customer bill in real-time (on demand).\n\n###Customer Bill Management API performs the following operations :\n- Retrieve a customer bill or a collection of customer bills depending on filter criteria.\n- Partial update of  a customer bill (for administration purposes).\n-  Retrieve an applied customer billing rate or a collection of applied customerbilling rates depending on filter criteria.\n-  Create a customer bill on demand request, retrieve one or a collection of  customer bill on demand request(s) depending on filter criteria.\n\n- Manage notification of events on customer bill and customer bill on demand.\n\nCopyright © TM Forum 2017. All Rights Reserved.",    
+    "version": "2.1.2_release",
+    "title": "API CustomerBill"
+  },
+  
+  "host": "api.orange.com",
+  "basePath":	"/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json;charset=utf-8"
+  ],
+  "produces": [
+    "application/json;charset=utf-8"
+  ],
+  "tags": [
+  
+    {
+      "name": "customerBill",
+      "description": ""
+    },
+    {
+      "name": "appliedCustomerBillingRate",
+      "description": ""
+    },
+    {
+      "name": "CustomerBillOnDemand",
+      "description": ""
+    }
+  ],    
+  "paths": { 
+      "/customerBill": {
+      "get": {
+        "tags": [
+           "customerBill"
+        ],    
+        "operationId": "customerBillFind",
+        "summary": "List customer bills",
+        "description": "This operation list customer bill entities.\nAttribute selection is enabled for all first level attributes.\nFiltering may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes separated by comma",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "billingAccount.id",
+            "required": false,
+            "in": "query",
+            "description": "Example of filter criteria that can be used to find customer bills",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/CustomerBill"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/customerBill/{id}": {
+      "get": {
+        "tags": [
+           "customerBill"
+        ],    
+        "operationId": "customerBillGet",
+        "summary": "Retrieve a customer bill",
+        "description": "This operation retrieves a customer bill entity.\nAttribute selection is enabled for all first level attributes.\nFiltering on sub-resources may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes separated by comma",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBill"
+            }                                                  
+
+          }
+        }        
+      },
+      "patch": {
+        "tags": [
+           "customerBill"
+        ],    
+        "operationId": "customerBillPatch",
+        "summary": "Partially update a customer bill",
+        "description": "Note: this operation is available only to ADMIN API users. The PATCH Bill operation is optional. An implementation is not required to support PATCH to be compliant with the standard.\nThis operation allows partial updates of a customer bill entity.\nOnly state attribute is patchable.\nThis operation allows partial updates of a customer bill entity. Support of json/merge (https://tools.ietf.org/html/rfc7386) is mandatory, support of json/patch (http://tools.ietf.org/html/rfc5789) is optional.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "customerBill",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBillUpdate"
+            }                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBill"
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/appliedCustomerBillingRate": {
+      "get": {
+        "tags": [
+           "appliedCustomerBillingRate"
+        ],    
+        "operationId": "appliedCustomerBillingRateFind",
+        "summary": "List applied customer billing rates",
+        "description": "This operation list applied customer billing rate entities.\nAttribute selection is enabled for all first level attributes.\nFiltering may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes separated by comma",
+            
+              "type": "string"                     
+          },
+          {
+            "name": "bill.id",
+            "required": false,
+            "in": "query",
+            "description": "Example of a filter criteria that can be used to find applied customer billing rates",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/AppliedCustomerBillingRate"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/appliedCustomerBillingRate/{id}": {
+      "get": {
+        "tags": [
+           "appliedCustomerBillingRate"
+        ],    
+        "operationId": "appliedCustomerBillingRateGet",
+        "summary": "Retrieve an applied customer billing rate",
+        "description": "This operation retrieves an applied customer billing rate entity.\nAttribute selection is enabled for all first level attributes.\nFiltering on sub-resources may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Selection of attributes separated by comma",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/AppliedCustomerBillingRate"
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/customerBillOnDemand": {
+      "post": {
+        "tags": [
+           "CustomerBillOnDemand"
+        ],    
+        "operationId": "customerBillOnDemandCreate",
+        "summary": "Create a customer bill on demand",
+        "description": "This operation creates a customer bill on demand entity.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "CustomerBillOnDemand",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBillOnDemandRequest"
+            }                     
+          }
+        ],     
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBillOnDemand"
+            }                                                  
+
+          }
+        }        
+      },
+      "get": {
+        "tags": [
+           "CustomerBillOnDemand"
+        ],    
+        "operationId": "customerBillOnDemandFind",
+        "summary": "Retrieve customer bill on demand with filter criteria",
+        "description": "This operation list customer bill on demand entities.\nAttribute selection is enabled for all first level attributes.\nFiltering may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/CustomerBillOnDemand"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/customerBillOnDemand/{id}": {
+      "get": {
+        "tags": [
+           "CustomerBillOnDemand"
+        ],    
+        "operationId": "customerBillOnDemandGet",
+        "summary": "Retrieve a customer bill on demand with its id",
+        "description": "This operation retrieves a customer bill on demand entity.\nAttribute selection is enabled for all first level attributes.\nFiltering on sub-resources may be available depending on the compliance level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/CustomerBillOnDemand"
+            }                                                  
+
+          }
+        }        
+      }
+    }
+  },
+"definitions": {
+      
+    "stateValue": {
+      "description": "",
+      
+      "type": "string",   
+      "enum": [
+        "new",
+        "onHold",
+        "validated",
+        "sent",
+        "partiallyPaid",
+        "settled"
+      ]	
+	    
+    },    
+    "StateValues": {
+      "description": "",
+        
+      "type": "string",   
+      "enum": [
+  	          "inProgress",
+  	          "rejected",
+  	          "done",
+  	          "terminatedWithError"]
+        
+    },
+    
+    "ZErrorDetail": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ZError": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        },
+        "details": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ZErrorDetail"
+          }
+        }     
+      }
+            
+    },
+    
+    "CustomerBill": {
+      "description": "The billing account receives all charges (recurring, one time and usage) of the offers and products assigned to it during order process. Periodically according to billing cycle specifications attached to the billing account or as a result of an event, a customer bill (aka invoice) is produced. This customer bill concerns different related parties which play a role on it : for example, a customer bill is produced by an operator, is sent to a bill receiver and has to be paid by a payer.\nA payment method could be assigned to the customer bill to build the call of payment. Lettering process enables to assign automatically or manually incoming amount from payments to customer bills (payment items).\nA tax item is created for each tax rate used in the customer bill.\nThe financial account represents a financial entity which records all customer’s accounting events : payment amount are recorded as credit and invoices amount are recorded as debit. It gives the customer overall balance (account balance).\nThe customer bill is linked to one or more documents that can be downloaded via a provided url.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of he bill",
+              "type": "string"
+        },
+        "href": {
+          "description": "Bill unique reference",
+              "type": "string"
+        },
+        "billNo": {
+          "description": "Bill reference known by the customer or the party and displayed on the bill. Could be different from the id",
+              "type": "string"
+        },
+        "runType": {
+          "description": "onCycle (a bill can be created as a result of a cycle run) or offCycle (a bill can be created as a result of other events such as customer request or account close)",
+              "type": "string"
+        },
+        "category": {
+          "description": "Category of the bill produced : normal, duplicate, interim, last, trial customer or credit note for example",
+              "type": "string"
+        },
+        "state": {
+          "description": "",          
+           "$ref": "#/definitions/stateValue"
+        },
+        "lastUpdate": {
+          "description": "Date of bill last update",
+              "type": "string",
+              "format": "date-time"
+        },
+        "billDate": {
+          "description": "Bill date",
+              "type": "string",
+              "format": "date-time"
+        },
+        "nextBillDate": {
+          "description": "). Approximate date of  the next bill production given for information (only used for onCycle bill)",
+              "type": "string",
+              "format": "date-time"
+        },
+        "billingPeriod": {
+          "description": "Billing period of the bill (used for onCycle bill only)",          
+              "$ref": "#/definitions/TimePeriod"
+        },
+        "amountDue": {
+          "description": "Amount due for this bill expressed in the given currency",          
+              "$ref": "#/definitions/Money"
+        },
+        "paymentDueDate": {
+          "description": "Date at which the amount due should have been paid",
+              "type": "string",
+              "format": "date-time"
+        },
+        "remainingAmount": {
+          "description": "Remaining amount to be paid for this bill expressed in the given currency",          
+              "$ref": "#/definitions/Money"
+        },
+        "taxExcludedAmount": {
+          "description": "Total tax excluded amount expressed in the given currency",          
+              "$ref": "#/definitions/Money"
+        },
+        "taxIncludedAmount": {
+          "description": "Total tax included amount expressed in the given",          
+              "$ref": "#/definitions/Money"
+        },
+        "@baseType": {
+          "description": "Indicates the base (class) type of the customer bill",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the customer bill",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing the REST resource",
+              "type": "string"
+        },
+        "billDocument": {
+          "description": "A list of documents accompanying an entity",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/Attachment"
+          }
+        },
+        "appliedPayment": {
+          "description": "A list of payment items already assigned to this bill",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/AppliedPayment"
+          }
+        },
+        "billingAccount": {
+          "description": "Reference of the BillingAccount that produced this bill",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "taxItem": {
+          "description": "A list of  tax items created for each tax rate and tax type used in the bill. The tax item summarize the total of the various tax types.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/TaxItem"
+          }
+        },
+        "paymentMethod": {
+          "description": "A payment method reference. A payment method defines a specific mean of payment (e.g direct debit) used to build the call of payment",          
+              "$ref": "#/definitions/PaymentMethodRef"
+        },
+        "relatedParty": {
+          "description": "A list of related party references. A related party defines party or party role linked to the bill",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/RelatedPartyRef"
+          }
+        },
+        "financialAccount": {
+          "description": "A financial account reference. An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. An account receivable aggregates the amounts of one or more billing accounts owned by a given party.",          
+              "$ref": "#/definitions/FinancialAccountRef"
+        }     
+      }
+            
+    },
+    
+    "TimePeriod": {
+      "description": "A business entity used to represent a period between a start and an end date and time",
+      
+      "type": "object",
+      "properties": {
+        "startDateTime": {
+          "description": "Start date and time of the period",
+              "type": "string",
+              "format": "date-time"
+        },
+        "endDateTime": {
+          "description": "End date and time of the period",
+              "type": "string",
+              "format": "date-time"
+        }     
+      }
+            
+    },
+    
+    "Money": {
+      "description": "A base / value business entity used to represent money",
+      
+      "type": "object",
+      "properties": {
+        "unit": {
+          "description": "Currency code (ISO4217 norm uses 3 letters to define the currency).",
+              "type": "string"
+        },
+        "value": {
+          "description": "A positive floating point number",
+              "type": "number",
+              "format": "float"
+        }     
+      }
+            
+    },
+    
+    "Attachment": {
+      "description": "Attachment refers to extensions or additional parts that is or may be attached to something (agreements, contracts, appointments) to perform a particular function. They can be communication attachments, documents and other.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the attachment",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the attachment",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the attachment",
+              "type": "string"
+        },
+        "description": {
+          "description": "Free short description of the attachment",
+              "type": "string"
+        },
+        "mimeType": {
+          "description": "Mime type of the attachment",
+              "type": "string"
+        },
+        "sizeUnit": {
+          "description": "Size unit (in bytes by default)",
+              "type": "string"
+        },
+        "size": {
+          "description": "The size  in Bytes of the document or attachment",
+              "type": "number",
+              "format": "float"
+        },
+        "url": {
+          "description": "URL of the attachment",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of attachment",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing the REST resource",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "AppliedPayment": {
+      "description": "The applied payment is the result of lettering process. It enables to assign automatically or manually part of incoming payment amount to a bill.",
+      
+      "type": "object",
+      "properties": {
+        "appliedAmount": {
+          "description": "Part of a payment amount lettered to the bill",          
+              "$ref": "#/definitions/Money"
+        },
+        "payment": {
+          "description": "A payment reference",          
+              "$ref": "#/definitions/PaymentRef"
+        }     
+      }
+            
+    },
+    
+    "BillingAccountRef": {
+      "description": "BillingAccount reference. A BillingAccount is a detailed description of a bill structure.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the billing account",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the billing account",
+              "type": "string"
+        },
+        "name": {
+          "description": "Billing account name",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of the billing account",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "TaxItem": {
+      "description": "A tax item is created for each tax rate and tax type used in the bill. The tax item specifies the applied tax rate and the total resulting amount.",
+      
+      "type": "object",
+      "properties": {
+        "taxCategory": {
+          "description": "A tax category",
+              "type": "string"
+        },
+        "taxRate": {
+          "description": "Applied rate of the tax",
+              "type": "number",
+              "format": "float"
+        },
+        "taxAmount": {
+          "description": "Amount of tax expressed in the given currency",          
+              "$ref": "#/definitions/Money"
+        }     
+      }
+            
+    },
+    
+    "PaymentMethodRef": {
+      "description": "PaymentMethod reference. A payment method defines a specific mean of payment (e.g direct debit).",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the payment method",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the payment method",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the payment method",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of payment method",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "RelatedPartyRef": {
+      "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of a related party",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the related party",
+              "type": "string"
+        },
+        "name": {
+          "description": "Related party name",
+              "type": "string"
+        },
+        "role": {
+          "description": "Role played by the related party",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of related party",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "FinancialAccountRef": {
+      "description": "Financial account reference. An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. A finacial account aggregates the amounts of one or more party accounts (billing or settlement) owned by a given party.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the account",
+              "type": "string"
+        },
+        "href": {
+          "description": "Unique reference of the account",
+              "type": "string"
+        },
+        "name": {
+          "description": "Account name",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of the financial account",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "PaymentRef": {
+      "description": "A payment reference",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the payment",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the payment",
+              "type": "string"
+        },
+        "paymentDate": {
+          "description": "Payment date",
+              "type": "string",
+              "format": "date-time"
+        },
+        "amount": {
+          "description": "Payment amount done",          
+              "$ref": "#/definitions/Money"
+        },
+        "@type": {
+          "description": "Indicates the type of payment",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "CustomerBillUpdate": {
+      "description": "",
+      
+      "required": [       
+          
+            "state"
+      ],
+      "type": "object",
+      "properties": {
+        "state": {
+          "description": "",          
+           "$ref": "#/definitions/stateValue"
+        }     
+      }
+            
+    },
+    
+    "AppliedCustomerBillingRate": {
+      "description": "A customer bill displays applied billing rates created before or during the billing process.",
+      
+      "required": [       
+          
+            "id"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the customer applied billing rate",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the customer applied billing rate",
+              "type": "string"
+        },
+        "type": {
+          "description": "Type of the applied billing rate : appliedBillingCharge (any kind of charge except taxation charges : recurringCharge, oneTimeCharge, usageCharge),  appliedBillingCredit (any kind of credit : rebate or productAlteration) or appliedPenaltyCharge (penalty charges such as late fees, payment rejection fees,...)",
+              "type": "string"
+        },
+        "date": {
+          "description": "Creation date of the applied billing rate",
+              "type": "string",
+              "format": "date-time"
+        },
+        "name": {
+          "description": "Name of the customer applied billing rate",
+              "type": "string"
+        },
+        "description": {
+          "description": "Additional data to be displayed on the bill for this customer applied billing rate",
+              "type": "string"
+        },
+        "taxExcludedAmount": {
+          "description": "Tax excluded amount to be charged on the bill (expressed in the given currency) for this applied billing rate",          
+              "$ref": "#/definitions/Money"
+        },
+        "taxIncludedAmount": {
+          "description": "Tax included amount to be charged on the bill (expressed in the given currency) for this applied billing rate",          
+              "$ref": "#/definitions/Money"
+        },
+        "@baseType": {
+          "description": "Indicates the base (class) type of the applied customer billing rate",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the applied customer billing rate",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing the REST resource",
+              "type": "string"
+        },
+        "appliedTax": {
+          "description": "A list of applied billing tax rates. The applied billing tax rate represents taxes applied to billing rate it refers to. It is calculated during the billing process",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/AppliedBillingTaxRate"
+          }
+        },
+        "bill": {
+          "description": "Reference of the bill on which the applied billing rate  is presented",          
+              "$ref": "#/definitions/BillRef"
+        },
+        "characteristic": {
+          "description": "A list of applied billing rate characteristics. An applied billing rate has dynamic characteristics according to the its type (characteristics are based on the service type, line of business or on others parameters for example)",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/AppliedBillingRateCharacteristic"
+          }
+        }     
+      }
+            
+    },
+    
+    "AppliedBillingTaxRate": {
+      "description": "The applied billing tax rate represents taxes applied billing rate it refers to. It is calculated during the billing process.",
+      
+      "required": [       
+          
+            "taxAmount"
+      ],
+      "type": "object",
+      "properties": {
+        "taxCategory": {
+          "description": "A categorization of the tax rate",
+              "type": "string"
+        },
+        "taxRate": {
+          "description": "Applied rate",
+              "type": "number",
+              "format": "float"
+        },
+        "taxAmount": {
+          "description": "Tax amount expressed in the given currency",          
+              "$ref": "#/definitions/Money"
+        }     
+      }
+            
+    },
+    
+    "BillRef": {
+      "description": "Bill reference",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the bill",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the bill",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the bill",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "AppliedBillingRateCharacteristic": {
+      "description": "An applied billing rate has dynamic characteristics according to the its type (characteristics are based on the service type, line of business or on others parameters)",
+      
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Characteristic name",
+              "type": "string"
+        },
+        "value": {
+          "description": "Value affected to the characteristic",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the characteristic",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing the REST resource",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "CustomerBillOnDemand": {
+      "description": "This resource is used to manage the creation request of a customer bill in real-time (on demand).",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the customer bill on demand request given by the server",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the customer bill on demand request",
+              "type": "string"
+        },
+        "name": {
+          "description": "Friendly name to identify the customer bill on demand request",
+              "type": "string"
+        },
+        "description": {
+          "description": "Additional data describing the customer bill on demand request",
+              "type": "string"
+        },
+        "state": {
+          "description": "State of the customer bill on demand request : rejected, inProgress, done or terminatedWithError",          
+           "$ref": "#/definitions/StateValues"
+        },
+        "lastUpdate": {
+          "description": "The last date time when the customer bill on demand has been updated",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the customer bill on demand request",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing the REST resource",
+              "type": "string"
+        },
+        "billingAccount": {
+          "description": "Reference of the billing account that produces the customer bill on demand",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "relatedParty": {
+          "description": "A related party for which the customer bill on demand is requested",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        },
+        "customerBill": {
+          "description": "Reference of the bill generated by the customer bill on demand request",          
+              "$ref": "#/definitions/BillRef"
+        }     
+      }
+            
+    },
+    
+    "CustomerBillOnDemandRequest": {
+      "description": "",
+      
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Friendly name to identify the customer bill on demand request",
+              "type": "string"
+        },
+        "description": {
+          "description": "Additional data describing the customer bill on demand request",
+              "type": "string"
+        },
+        "billingAccount": {
+          "description": "Reference of the billing account that produces the customer bill on demand",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "relatedParty": {
+          "description": "A related party for which the customer bill on demand is requested",          
+              "$ref": "#/definitions/RelatedPartyRef"
+        }     
+      }
+            
+    }  
+  }
+}
+	
