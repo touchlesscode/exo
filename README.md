@@ -1,6 +1,6 @@
 <p align="center"><a href="https://github.com/nastyox/Rando.js#nastyox"><img src="http://randojs.com/images/shapeShifterGrayAlphaBackground.gif" alt="Gray shape shifter" height="60"/></a></p>
 <h1 align="center">EXO</h1>
-<p align="center">A data-first framework for building accessible, future-proof apps</p>
+<p align="center">A blueprint for a more open, accessible, future-proof world.</p>
 
 ## :hear_no_evil:  What's this about?
 EXO is the scaffolding required to make a more accessible world. It's comprised of a few key pieces:
