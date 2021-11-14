@@ -12,7 +12,7 @@ EXO is the scaffolding required to make a more accessible world. It's comprised 
 ### Now:
  - <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
  - EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
- - 
+ 
 ### Next:
  - EXO for NextJS
  - EXO for Svelte
