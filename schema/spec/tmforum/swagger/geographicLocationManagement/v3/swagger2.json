@@ -1,0 +1,794 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "Geographic Location Management",
+    "description" : "This is Swagger UI environment generated for the TMF Geographic Location Management specification",
+    "version" : "2.0"
+  },
+  "host" : "biologeek.orange-labs.fr",
+  "basePath" : "/tmf-api/geographicLocationManagement",
+  "schemes" : [ "https" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/geographicLocation" : {
+      "get" : {
+        "operationId" : "listGeographicLocation",
+        "summary" : "List or find 'GeographicLocation' objects",
+        "tags" : [ "geographicLocation" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: A string. Name of the geo location."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "type",
+          "description" : "For filtering: A string. Type of the geographic location - one of: point, line, graph, ring polygon"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicPoint.accuracy",
+          "description" : "For filtering: A string. Accuracy of the coordinate specified."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicPoint.spatialRef",
+          "description" : "For filtering: A string. Geocoding referential."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicPoint.x",
+          "description" : "For filtering: A string. x coordinate (usually latitude)."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicPoint.y",
+          "description" : "For filtering: A string. y coordinate (usually longitude)."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicPoint.z",
+          "description" : "For filtering: A string. z coordinate (usually elevation)."
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/GeographicLocation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/geographicLocation/{id}" : {
+      "get" : {
+        "operationId" : "retrieveGeographicLocation",
+        "summary" : "Retrieves a 'GeographicLocation' by Id",
+        "tags" : [ "geographicLocation" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Geographic Location"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/GeographicLocation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/retrieveGeographicLocation" : {
+      "get" : {
+        "operationId" : "listRetrieveGeographicLocation",
+        "summary" : "List or find 'RetrieveGeographicLocation' objects",
+        "tags" : [ "retrieveGeographicLocation" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "status",
+          "description" : "For filtering: A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        }, {
+          "type" : "number",
+          "format" : "float",
+          "required" : false,
+          "in" : "query",
+          "name" : "requestedAccuracy",
+          "description" : "For filtering: Requested accuracy of the retrieval"
+        }, {
+          "name" : "time",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Timestamp of end of task execution"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicLocation.name",
+          "description" : "For filtering: A string. Name of the geo location."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "geographicLocation.type",
+          "description" : "For filtering: A string. Type of the geographic location - one of: point, line, graph, ring polygon"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "thing.type",
+          "description" : "For filtering: "
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "thing.uri",
+          "description" : "For filtering: "
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/RetrieveGeographicLocation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post" : {
+        "operationId" : "createRetrieveGeographicLocation",
+        "summary" : "Creates a 'RetrieveGeographicLocation'",
+        "tags" : [ "retrieveGeographicLocation" ],
+        "parameters" : [ {
+          "schema" : {
+            "$ref" : "#/definitions/RetrieveGeographicLocation_Create"
+          },
+          "required" : true,
+          "in" : "body",
+          "name" : "retrieveGeographicLocation",
+          "description" : "The Retrieve Geographic Location to be created"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/RetrieveGeographicLocation"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/retrieveGeographicLocation/{id}" : {
+      "get" : {
+        "operationId" : "retrieveRetrieveGeographicLocation",
+        "summary" : "Retrieves a 'RetrieveGeographicLocation' by Id",
+        "tags" : [ "retrieveGeographicLocation" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Retrieve Geographic Location"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/RetrieveGeographicLocation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/retrieveLocationRelation" : {
+      "get" : {
+        "operationId" : "listRetrieveLocationRelation",
+        "summary" : "List or find 'RetrieveLocationRelation' objects",
+        "tags" : [ "retrieveLocationRelation" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "status",
+          "description" : "For filtering: A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "locationA",
+          "description" : "For filtering: Reference to a location"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "locationB",
+          "description" : "For filtering: Reference to a location"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "distance",
+          "description" : "For filtering: Calculated distance between location A and location B"
+        }, {
+          "name" : "time",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Timestamp of end of task execution"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "intersection.name",
+          "description" : "For filtering: A string. Name of the geo location."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "intersection.type",
+          "description" : "For filtering: A string. Type of the geographic location - one of: point, line, graph, ring polygon"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/RetrieveLocationRelation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      },
+      "post" : {
+        "operationId" : "createRetrieveLocationRelation",
+        "summary" : "Creates a 'RetrieveLocationRelation'",
+        "tags" : [ "retrieveLocationRelation" ],
+        "parameters" : [ {
+          "schema" : {
+            "$ref" : "#/definitions/RetrieveLocationRelation_Create"
+          },
+          "required" : true,
+          "in" : "body",
+          "name" : "retrieveLocationRelation",
+          "description" : "The Retrieve Location Relation to be created"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Created",
+            "schema" : {
+              "$ref" : "#/definitions/RetrieveLocationRelation"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/retrieveLocationRelation/{id}" : {
+      "get" : {
+        "operationId" : "retrieveRetrieveLocationRelation",
+        "summary" : "Retrieves a 'RetrieveLocationRelation' by Id",
+        "tags" : [ "retrieveLocationRelation" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Retrieve Location Relation"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/RetrieveLocationRelation"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/hub" : {
+      "post" : {
+        "operationId" : "registerListener",
+        "summary" : "Register a listener",
+        "description" : "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+        "tags" : [ "events subscription" ],
+        "parameters" : [ {
+          "name" : "data",
+          "schema" : {
+            "$ref" : "#/definitions/EventSubscriptionInput"
+          },
+          "required" : true,
+          "in" : "body",
+          "description" : "Data containing the callback endpoint to deliver the information"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Subscribed",
+            "schema" : {
+              "$ref" : "#/definitions/EventSubscription"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/hub/{id}" : {
+      "delete" : {
+        "operationId" : "unregisterListener",
+        "summary" : "Unregister a listener",
+        "description" : "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+        "tags" : [ "events subscription" ],
+        "parameters" : [ {
+          "name" : "id",
+          "type" : "string",
+          "required" : true,
+          "in" : "path",
+          "description" : "The id of the registered listener"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Unsubscribed"
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "GeographicLocation" : {
+      "type" : "object",
+      "description" : "Structured textual way of describing a geographic location. A geographic location allows describing through coordinate(s), a point, a line or a space.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "A string. Unique identifier of the geographic location."
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "A string. An URI used to access to the geographic location resource."
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "A string. Name of the geo location."
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "A string. Type of the geographic location - one of: point, line, graph, ring polygon"
+        },
+        "geographicPoint" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/GeographicPoint"
+          }
+        }
+      }
+    },
+    "RetrieveGeographicLocation" : {
+      "type" : "object",
+      "description" : "RetrieveLocation fields",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "A string. Unique identifier of the task."
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "A string. An URI used to access to the task resource."
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        },
+        "requestedAccuracy" : {
+          "type" : "number",
+          "format" : "float",
+          "description" : "Requested accuracy of the retrieval"
+        },
+        "time" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Timestamp of end of task execution"
+        },
+        "geographicLocation" : {
+          "$ref" : "#/definitions/GeographicLocation"
+        },
+        "thing" : {
+          "$ref" : "#/definitions/Object"
+        }
+      }
+    },
+    "RetrieveGeographicLocation_Create" : {
+      "type" : "object",
+      "description" : "RetrieveLocation fields\nSkipped properties: id,href",
+      "properties" : {
+        "status" : {
+          "type" : "string",
+          "description" : "A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        },
+        "requestedAccuracy" : {
+          "type" : "number",
+          "format" : "float",
+          "description" : "Requested accuracy of the retrieval"
+        },
+        "time" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Timestamp of end of task execution"
+        },
+        "geographicLocation" : {
+          "$ref" : "#/definitions/GeographicLocation"
+        },
+        "thing" : {
+          "$ref" : "#/definitions/Object"
+        }
+      }
+    },
+    "RetrieveLocationRelation" : {
+      "type" : "object",
+      "description" : "This resource is used to manage the request and response to retrieve the relation between two geographic locations.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "A string. Unique identifier of the task."
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "A string. An URI used to access to the task resource."
+        },
+        "status" : {
+          "type" : "string",
+          "description" : "A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        },
+        "locationA" : {
+          "type" : "string",
+          "description" : "Reference to a location"
+        },
+        "locationB" : {
+          "type" : "string",
+          "description" : "Reference to a location"
+        },
+        "distance" : {
+          "type" : "string",
+          "description" : "Calculated distance between location A and location B"
+        },
+        "time" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Timestamp of end of task execution"
+        },
+        "intersection" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/GeographicLocation"
+          }
+        },
+        "geographicLocation" : {
+          "$ref" : "#/definitions/GeographicLocationRef"
+        }
+      }
+    },
+    "RetrieveLocationRelation_Create" : {
+      "type" : "object",
+      "description" : "This resource is used to manage the request and response to retrieve the relation between two geographic locations.\nSkipped properties: id,href",
+      "properties" : {
+        "status" : {
+          "type" : "string",
+          "description" : "A string. Status of the task (inProgress, terminatedWithErrror, done)."
+        },
+        "locationA" : {
+          "type" : "string",
+          "description" : "Reference to a location"
+        },
+        "locationB" : {
+          "type" : "string",
+          "description" : "Reference to a location"
+        },
+        "distance" : {
+          "type" : "string",
+          "description" : "Calculated distance between location A and location B"
+        },
+        "time" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Timestamp of end of task execution"
+        },
+        "intersection" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/GeographicLocation"
+          }
+        },
+        "geographicLocation" : {
+          "$ref" : "#/definitions/GeographicLocationRef"
+        }
+      }
+    },
+    "GeographicPoint" : {
+      "type" : "object",
+      "description" : "A GeoPoint defines a geographic point through coordinates.",
+      "properties" : {
+        "accuracy" : {
+          "type" : "string",
+          "description" : "A string. Accuracy of the coordinate specified."
+        },
+        "spatialRef" : {
+          "type" : "string",
+          "description" : "A string. Geocoding referential."
+        },
+        "x" : {
+          "type" : "string",
+          "description" : "A string. x coordinate (usually latitude)."
+        },
+        "y" : {
+          "type" : "string",
+          "description" : "A string. y coordinate (usually longitude)."
+        },
+        "z" : {
+          "type" : "string",
+          "description" : "A string. z coordinate (usually elevation)."
+        }
+      }
+    },
+    "Object" : {
+      "type" : "object",
+      "description" : "Object, the location is retrieved for",
+      "properties" : {
+        "type" : {
+          "type" : "string"
+        },
+        "uri" : {
+          "type" : "string"
+        }
+      }
+    },
+    "GeographicLocationRef" : {
+      "type" : "object",
+      "description" : "Defines a geographic location and/or identifies an existing geographic location entity\nA geographic Location allows describing through coordinate(s) a point, a line or a space.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "A String"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "A String"
+        }
+      }
+    },
+    "EventSubscription" : {
+      "required" : [ "id", "callback" ],
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Id of the listener"
+        },
+        "callback" : {
+          "type" : "string",
+          "description" : "The callback being registered."
+        },
+        "query" : {
+          "type" : "string",
+          "description" : "additional data to be passed"
+        }
+      }
+    },
+    "EventSubscriptionInput" : {
+      "required" : [ "callback" ],
+      "properties" : {
+        "callback" : {
+          "type" : "string",
+          "description" : "The callback being registered."
+        },
+        "query" : {
+          "type" : "string",
+          "description" : "additional data to be passed"
+        }
+      }
+    },
+    "Error" : {
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "integer",
+          "description" : "An integer coding the error type. This is given to caller so he can translate them if required."
+        },
+        "message" : {
+          "type" : "string",
+          "description" : "A short localized string that describes the error."
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+        },
+        "infoURL" : {
+          "type" : "string",
+          "description" : "(optional) A URL to online documentation that provides more information about the error."
+        }
+      }
+    }
+  }
+}

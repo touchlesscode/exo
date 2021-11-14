@@ -1,0 +1,205 @@
+{
+	"id": "b0294beb-2229-65b4-7eba-b6d57d0a59c4",
+	"name": "TMForum",
+	"values": [
+		{
+			"key": "Host",
+			"value": "http://env-0693795.jelastic.servint.net",
+			"type": "text",
+			"name": "Host",
+			"enabled": true
+		},
+		{
+			"key": "billingManagementApi",
+			"value": "{{Host}}/DSBillingManagement/api/billingManagement/v2",
+			"type": "text",
+			"name": "billingManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "billingManagementAdminApi",
+			"value": "{{Host}}/DSBillingManagement/api/admin",
+			"type": "text",
+			"name": "billingManagementAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "billingManagementSubscriberApi",
+			"value": "{{Host}}/DSBillingManagement/subscriber/api",
+			"type": "text",
+			"name": "billingManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "partyManagementApi",
+			"value": "{{Host}}/DSPartyManagement/api/partyManagement/v2",
+			"type": "text",
+			"name": "partyManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "partyManagementAdminApi",
+			"value": "{{Host}}/DSPartyManagement/api/admin",
+			"type": "text",
+			"name": "partyManagementAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "partyManagementSubscriberApi",
+			"value": "{{Host}}/DSPartyManagement/subscriber/api",
+			"type": "text",
+			"name": "partyManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "customerManagementApi",
+			"value": "{{Host}}/DSCustomerManagement/api/customerManagement/v2",
+			"type": "text",
+			"name": "customerManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "customerManagementAdminApi",
+			"value": "{{Host}}/DSCustomerManagement/api/admin",
+			"type": "text",
+			"name": "customerManagementAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "customerManagementSubscriberApi",
+			"value": "{{Host}}/DSCustomerManagement/subscriber/api",
+			"type": "text",
+			"name": "customerManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "productOrderingApi",
+			"value": "{{Host}}/DSProductOrdering/api/productOrdering/v2",
+			"type": "text",
+			"name": "productOrderingApi",
+			"enabled": true
+		},
+		{
+			"key": "productOrderingAdminApi",
+			"value": "{{Host}}/DSProductOrdering/api/admin",
+			"type": "text",
+			"name": "productOrderingAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "productOrderingSubscriberApi",
+			"value": "{{Host}}/DSProductOrdering/subscriber/api",
+			"type": "text",
+			"name": "productOrderingSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "troubleTicketingApi",
+			"value": "{{Host}}/DSTroubleTicket/api/troubleTicketManagement/v2",
+			"type": "text",
+			"name": "troubleTicketingApi",
+			"enabled": true
+		},
+		{
+			"key": "troubleTicketingAdminApi",
+			"value": "{{Host}}/DSTroubleTicket/api/admin/troubleTicket",
+			"type": "text",
+			"name": "troubleTicketingAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "troubleTicketingSubscriberApi",
+			"value": "{{Host}}/DSTroubleTicket/subscriber/api",
+			"type": "text",
+			"name": "troubleTicketingSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "productInventoryApi",
+			"value": "{{Host}}/DSProductInventory/api/productInventory/v2",
+			"type": "text",
+			"name": "productInventoryApi",
+			"enabled": true
+		},
+		{
+			"key": "productInventoryAdminApi",
+			"value": "{{Host}}/DSProductInventory/api/admin",
+			"type": "text",
+			"name": "productInventoryAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "productInventorySubscriberApi",
+			"value": "{{Host}}/DSProductInventory/subscriber/api",
+			"type": "text",
+			"name": "productInventorySubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "catalogManagementApi",
+			"value": "{{Host}}/DSProductCatalog/api/catalogManagement/v2",
+			"type": "text",
+			"name": "catalogManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "catalogManagementAdminApi",
+			"value": "{{Host}}/DSProductCatalog/api/admin",
+			"type": "text",
+			"name": "catalogManagementAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "catalogManagementSubscriberApi",
+			"value": "{{Host}}/DSProductCatalog/subscriber/eventApi",
+			"type": "text",
+			"name": "catalogManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "slaManagementApi",
+			"value": "{{Host}}/DSLAManagement/api/slaManagement/v2",
+			"type": "text",
+			"name": "slaManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "slaManagementSubscriberApi",
+			"value": "{{Host}}/DSLAManagement/subscriber/api",
+			"type": "text",
+			"name": "slaManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "slaManagementAdminApi",
+			"value": "{{Host}}/DSLAManagement/api/admin",
+			"type": "text",
+			"name": "slaManagementAdminApi",
+			"enabled": true
+		},
+		{
+			"key": "usageManagementApi",
+			"value": "{{Host}}/DSUsageManagement/api/usageManagement/v2",
+			"type": "text",
+			"name": "usageManagementApi",
+			"enabled": true
+		},
+		{
+			"key": "usageManagementSubscriberApi",
+			"value": "{{Host}}/DSUsageManagement/subscriber/api",
+			"type": "text",
+			"name": "usageManagementSubscriberApi",
+			"enabled": true
+		},
+		{
+			"key": "usageManagementAdminApi",
+			"value": "{{Host}}/DSUsageManagement/api/admin/usage",
+			"type": "text",
+			"name": "usageManagementAdminApi",
+			"enabled": true
+		}
+	],
+	"timestamp": 1432767028962,
+	"synced": false,
+	"syncedFilename": ""
+}

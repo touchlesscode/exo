@@ -1,0 +1,45 @@
+{
+	"@context":
+	{
+		"Code":"http://www.w3.org/2004/02/skos/core#Concept",
+		"Identifier":"http://www.w3.org/ns/adms#Identifier",
+		"Legal Entity":"http://www.w3.org/ns/legal#LegalEntity",
+
+		"alternativeName":{
+			"@id":"http://purl.org/dc/terms/alternative",
+			"@type":"http://www.w3.org/2001/XMLSchema#string"
+		},
+		"companyActivity":{
+			"@id":"http://www.w3.org/ns/legal#companyActivity",
+			"@type":"http://www.w3.org/2004/02/skos/core#Concept"
+		},
+		"companyStatus":{
+			"@id":"http://www.w3.org/ns/legal#companyStatus",
+			"@type":"http://www.w3.org/2004/02/skos/core#Concept"
+		},
+		"companyType":{
+			"@id":"http://www.w3.org/ns/legal#companyType",
+			"@type":"http://www.w3.org/2004/02/skos/core#Concept"
+		},
+        "identifier":{
+			"@id":"http://purl.org/dc/terms/identifier",
+			"@type":"http://www.w3.org/ns/adms#Identifier"
+		},
+        "legalEntity":{
+			"@id":"http://www.w3.org/ns/legal#legalEntity",
+			"@type":"http://www.w3.org/ns/legal#LegalEntity"
+		},
+        "legalIdentifier":{
+			"@id":"http://www.w3.org/ns/legal#legalIdentifier",
+			"@type":"http://www.w3.org/ns/adms#Identifier"
+		},
+		"legalName":{
+			"@id":"http://www.w3.org/ns/legal#legalName",
+			"@type":"http://www.w3.org/2000/01/rdf-schema#Literal"
+		},
+		"registeredAddress":{
+			"@id":"http://www.w3.org/ns/legal#registeredAddress",
+			"@type":"http://www.w3.org/ns/locn#Address"
+		}
+	}
+}

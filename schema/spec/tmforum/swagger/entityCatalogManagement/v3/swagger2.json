@@ -1,0 +1,1783 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "EntityCatalog Management",
+    "description" : "This is Swagger UI environment generated for the TMF EntityCatalog Management specification",
+    "version" : "2.0"
+  },
+  "host" : "biologeek.orange-labs.fr",
+  "basePath" : "/tmf-api/entityCatalogManagement",
+  "schemes" : [ "https" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/catalog" : {
+      "get" : {
+        "operationId" : "listCatalog",
+        "summary" : "List or find 'Catalog' objects",
+        "tags" : [ "catalog" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name of the catalog"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@type",
+          "description" : "For filtering: Indicates the (class) type of catalog. For entity catalogs, this will be 'EntityCatalog'."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@baseType",
+          "description" : "For filtering: Indicates<b> </b>the base (class) type of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: Catalog version"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Date and time of the last update"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Used to indicate the current lifecycle status"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Catalog"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/catalog/{id}" : {
+      "get" : {
+        "operationId" : "retrieveCatalog",
+        "summary" : "Retrieves a 'Catalog' by Id",
+        "tags" : [ "catalog" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Catalog"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Catalog"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/category" : {
+      "get" : {
+        "operationId" : "listCategory",
+        "summary" : "List or find 'Category' objects",
+        "tags" : [ "category" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Date and time of the last update"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: Category version"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Used to indicate the current lifecycle status"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "parentId",
+          "description" : "For filtering: Unique identifier of the parent category"
+        }, {
+          "type" : "boolean",
+          "required" : false,
+          "in" : "query",
+          "name" : "isRoot",
+          "description" : "For filtering: If true, this Boolean indicates that the category is a root of categories"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name of the category"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Category"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/category/{id}" : {
+      "get" : {
+        "operationId" : "retrieveCategory",
+        "summary" : "Retrieves a 'Category' by Id",
+        "tags" : [ "category" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Category"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Category"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/entityCatalogItem" : {
+      "get" : {
+        "operationId" : "listEntityCatalogItem",
+        "summary" : "List or find 'EntityCatalogItem' objects",
+        "tags" : [ "entityCatalogItem" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name given to this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@type",
+          "description" : "For filtering: Class type of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@baseType",
+          "description" : "For filtering: The (immediate) base class type of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: EntityCatalogItem version"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Date and time of the last update of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Used to indicate the current lifecycle status of this catalog item"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/EntityCatalogItem"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/entityCatalogItem/{id}" : {
+      "get" : {
+        "operationId" : "retrieveEntityCatalogItem",
+        "summary" : "Retrieves a 'EntityCatalogItem' by Id",
+        "tags" : [ "entityCatalogItem" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Entity Catalog Item"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/EntityCatalogItem"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/entitySpecification" : {
+      "get" : {
+        "operationId" : "listEntitySpecification",
+        "summary" : "List or find 'EntitySpecification' objects",
+        "tags" : [ "entitySpecification" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name given to this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@type",
+          "description" : "For filtering: Class type of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@baseType",
+          "description" : "For filtering: The (immediate) base class type of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: Entity specification version"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: Date and time of the last update of this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Used to indicate the current lifecycle status of this catalog item"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "attachment.name",
+          "description" : "For filtering: name given to the attachment"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "attachment.@type",
+          "description" : "For filtering: Attachment class  type"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "attachment.uri",
+          "description" : "For filtering: Uniform Resource Identifier (URI) of the attachment"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "attachment.mimeType",
+          "description" : "For filtering: Attachment mime type such as extension file for video, picture and document"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "entitySchema.@type",
+          "description" : "For filtering: Class type of the target entity"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "entitySchema.@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing the target entity"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "specCharacteristic.name",
+          "description" : "For filtering: Name of the SpecCharacteristic"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "specCharacteristic.valueType",
+          "description" : "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+        }, {
+          "type" : "boolean",
+          "required" : false,
+          "in" : "query",
+          "name" : "specCharacteristic.configurable",
+          "description" : "For filtering: If true, the Boolean indicates that the SpecCharacteristic is configurable"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "specCharacteristic.@type",
+          "description" : "For filtering: (Class) type of the characteristic"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "specCharacteristic.@schemaLocation",
+          "description" : "For filtering: A link to the schema describing this characteristic"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "relatedParty.role",
+          "description" : "For filtering: Role of the related party."
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "relatedParty.name",
+          "description" : "For filtering: Name of the related party"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/EntitySpecification"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/entitySpecification/{id}" : {
+      "get" : {
+        "operationId" : "retrieveEntitySpecification",
+        "summary" : "Retrieves a 'EntitySpecification' by Id",
+        "tags" : [ "entitySpecification" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Entity Specification"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/EntitySpecification"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/associationSpecification" : {
+      "get" : {
+        "operationId" : "listAssociationSpecification",
+        "summary" : "List or find 'AssociationSpecification' objects",
+        "tags" : [ "associationSpecification" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name given to this association specification"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@type",
+          "description" : "For filtering: The (class) type of this association specification"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@baseType",
+          "description" : "For filtering: Immediate base class type of this association specification"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: Version of this association"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: The last modified date of this specification"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Indicates the current lifecycle status"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.version",
+          "description" : "For filtering: constraint version"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.name",
+          "description" : "For filtering: Name given to the constraint"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.@type",
+          "description" : "For filtering: The (class) type of the constraint"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.role",
+          "description" : "For filtering: "
+        }, {
+          "type" : "boolean",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.isSource",
+          "description" : "For filtering: "
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.aggregation",
+          "description" : "For filtering: "
+        }, {
+          "type" : "integer",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.minQuantity",
+          "description" : "For filtering: "
+        }, {
+          "type" : "integer",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.maxQuantity",
+          "description" : "For filtering: "
+        }, {
+          "type" : "integer",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.defaulQuantity",
+          "description" : "For filtering: "
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRoleSpec.entityType",
+          "description" : "For filtering: "
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/AssociationSpecification"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/associationSpecification/{id}" : {
+      "get" : {
+        "operationId" : "retrieveAssociationSpecification",
+        "summary" : "Retrieves a 'AssociationSpecification' by Id",
+        "tags" : [ "associationSpecification" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Association Specification"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/AssociationSpecification"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/association" : {
+      "get" : {
+        "operationId" : "listAssociation",
+        "summary" : "List or find 'Association' objects",
+        "tags" : [ "association" ],
+        "parameters" : [ {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "fields",
+          "description" : "Comma separated properties to display in response"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "name",
+          "description" : "For filtering: Name given to this association"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@type",
+          "description" : "For filtering: The (class) type of this association"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@schemaLocation",
+          "description" : "For filtering: This field provides a link to the schema describing this REST resource"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "@baseType",
+          "description" : "For filtering: Immediate base class type of this association"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "version",
+          "description" : "For filtering: Version of this REST resource"
+        }, {
+          "name" : "validFor.startDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, starting at the TimePeriod"
+        }, {
+          "name" : "validFor.endDateTime",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: An instant of time, ending at the TimePeriod."
+        }, {
+          "name" : "lastUpdate",
+          "format" : "date-time",
+          "required" : false,
+          "in" : "query",
+          "type" : "string",
+          "description" : "For filtering: The last modified date of this association object"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "lifecycleStatus",
+          "description" : "For filtering: Indicates the current lifecycle status"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationSpec.@type",
+          "description" : "For filtering: The (class) type of the AssociationSpecification"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRole.role",
+          "description" : "For filtering: The association role of this relationship participant as defined in the associationRoleSpec"
+        }, {
+          "type" : "boolean",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRole.isSource",
+          "description" : "For filtering: A flag indicating if the participant involved in a uni-directional relationship is the source or not. this flag is true If the association is bi-directional (both end points are navigable)"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRole.name",
+          "description" : "For filtering: Name of the endpoint which plays this association role"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "associationRole.@type",
+          "description" : "For filtering: (class) type of the endpoint which plays this association role"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.version",
+          "description" : "For filtering: constraint version"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.name",
+          "description" : "For filtering: Name given to the constraint"
+        }, {
+          "type" : "string",
+          "required" : false,
+          "in" : "query",
+          "name" : "constraint.@type",
+          "description" : "For filtering: The (class) type of the constraint"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Association"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/association/{id}" : {
+      "get" : {
+        "operationId" : "retrieveAssociation",
+        "summary" : "Retrieves a 'Association' by Id",
+        "tags" : [ "association" ],
+        "parameters" : [ {
+          "required" : true,
+          "type" : "string",
+          "name" : "id",
+          "in" : "path",
+          "description" : "Identifier of the Association"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Ok",
+            "schema" : {
+              "items" : {
+                "$ref" : "#/definitions/Association"
+              },
+              "type" : "array"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/hub" : {
+      "post" : {
+        "operationId" : "registerListener",
+        "summary" : "Register a listener",
+        "description" : "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+        "tags" : [ "events subscription" ],
+        "parameters" : [ {
+          "name" : "data",
+          "schema" : {
+            "$ref" : "#/definitions/EventSubscriptionInput"
+          },
+          "required" : true,
+          "in" : "body",
+          "description" : "Data containing the callback endpoint to deliver the information"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Subscribed",
+            "schema" : {
+              "$ref" : "#/definitions/EventSubscription"
+            }
+          },
+          "400" : {
+            "description" : "Bad Request",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    },
+    "/hub/{id}" : {
+      "delete" : {
+        "operationId" : "unregisterListener",
+        "summary" : "Unregister a listener",
+        "description" : "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+        "tags" : [ "events subscription" ],
+        "parameters" : [ {
+          "name" : "id",
+          "type" : "string",
+          "required" : true,
+          "in" : "path",
+          "description" : "The id of the registered listener"
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Unsubscribed"
+          },
+          "404" : {
+            "description" : "Not Found",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          },
+          "500" : {
+            "description" : "Internal Server Error",
+            "schema" : {
+              "$ref" : "#/definitions/Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "EntitySpecification" : {
+      "type" : "object",
+      "description" : "EntitySpecification is a class that offers characteristics to describe a type of entity. Entities are generic constructs that may be used to describe bespoke business entities that are not effectively covered by the existing SID model.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of this REST resource"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to this REST resource"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name given to this REST resource"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of this REST resource"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "Class type of this REST resource"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing this REST resource"
+        },
+        "@baseType" : {
+          "type" : "string",
+          "description" : "The (immediate) base class type of this REST resource"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "Entity specification version"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which this REST resource is valid"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Date and time of the last update of this REST resource"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Used to indicate the current lifecycle status of this catalog item"
+        },
+        "attachment" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/Attachment"
+          }
+        },
+        "entitySchema" : {
+          "$ref" : "#/definitions/EntitySchemaRef"
+        },
+        "specCharacteristic" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/SpecCharacteristic"
+          }
+        },
+        "relatedParty" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/RelatedPartyRef"
+          }
+        }
+      }
+    },
+    "AssociationSpecification" : {
+      "type" : "object",
+      "description" : "AssociationSpecification is an association class that describes a type of relationship between two entities. This is a generic construct that may be used to describe relationship types and roles. The role and type of each entity in the relationship is given by an association role specification. Two role specifications are embedded in the association specification.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "unique identifier of the association specification"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to this specification"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name given to this association specification"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of the specification"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "The (class) type of this association specification"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing this REST resource"
+        },
+        "@baseType" : {
+          "type" : "string",
+          "description" : "Immediate base class type of this association specification"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "Version of this association"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which this specification is valid"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The last modified date of this specification"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Indicates the current lifecycle status"
+        },
+        "constraint" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConstraintRef"
+          }
+        },
+        "associationRoleSpec" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AssociationRoleSpec"
+          }
+        }
+      }
+    },
+    "Category" : {
+      "type" : "object",
+      "description" : "The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of the category"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference of the catalog"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Date and time of the last update"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "Category version"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Used to indicate the current lifecycle status"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which the category is valid"
+        },
+        "parentId" : {
+          "type" : "string",
+          "description" : "Unique identifier of the parent category"
+        },
+        "isRoot" : {
+          "type" : "boolean",
+          "description" : "If true, this Boolean indicates that the category is a root of categories"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the category"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of the category"
+        }
+      }
+    },
+    "EntityCatalogItem" : {
+      "type" : "object",
+      "description" : "An EntityCatalogItem is an entity that allows any ProductOffering, ServiceCandidate, ResourceCandidate, or even any object inheriting from RootEntity, to be available to a catalog. The CatalogSpecification and Policy of the catalog governs the content of the EntityCatalogItem. This API addresses only EntitySpecification items extended from RootEntity as EntityCatalogItem.\nThe EntityCatalogItem resource (JSON format) represents a set of characteristics that define the values given by the EntityCatalogItem.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of this REST resource"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to this REST resource"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name given to this REST resource"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of this REST resource"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "Class type of this REST resource"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing this REST resource"
+        },
+        "@baseType" : {
+          "type" : "string",
+          "description" : "The (immediate) base class type of this REST resource"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "EntityCatalogItem version"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which this REST resource is valid"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Date and time of the last update of this REST resource"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Used to indicate the current lifecycle status of this catalog item"
+        }
+      }
+    },
+    "Association" : {
+      "type" : "object",
+      "description" : "Association is the class that describe a relationship between two or more entity specifications based on a given association specification. The role and type of each endpoint in the relationship is given by an association role. The type of endpoints in the relationship should match the ones as defined in the corresponding association role specification. A relationship between entity specifications may be governed by conditions and rules which are addressed by constraint references in this resource. Constraints for a relationship may include new rules and conditions in addition to those defined for the corresponding association specification",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "unique identifier of the association"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to this association"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name given to this association"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of the association"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "The (class) type of this association"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing this REST resource"
+        },
+        "@baseType" : {
+          "type" : "string",
+          "description" : "Immediate base class type of this association"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "Version of this REST resource"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which this association is valid"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "The last modified date of this association object"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Indicates the current lifecycle status"
+        },
+        "associationSpec" : {
+          "$ref" : "#/definitions/AssociationSpecRef"
+        },
+        "associationRole" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/AssociationRole"
+          }
+        },
+        "constraint" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/ConstraintRef"
+          }
+        }
+      }
+    },
+    "Catalog" : {
+      "type" : "object",
+      "description" : "The root entity for entity catalog management. An entity catalog can be defined as a collection of entity catalog items and arranging them in a particular manner based on the need.\nIn comparison to Product, Service and Resource catalogs, the entity catalog is intended for the purpose of providing any SID entity to consumers via a catalog, with its specification and policy providing governance over its content. Even Entity catalog may have an overlap with Product, Service or Resource catalog, it doesn't replace them. It is primarily intended to address those SID entities which may not be addressed by any of Product, Service or Resource catalog.\nAn entity catalog comprises of a list of RootEntities made available through EntityCatalogItems. This API addresses only RootEntity extended items as EntitySpecification. An entity catalog typically includes name, description and time period that it is valid for.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of the Catalog"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Unique reference of the catalog"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the catalog"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "Description of this catalog"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "Indicates the (class) type of catalog. For entity catalogs, this will be 'EntityCatalog'."
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing this REST resource"
+        },
+        "@baseType" : {
+          "type" : "string",
+          "description" : "Indicates<b> </b>the base (class) type of this REST resource"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "Catalog version"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which the catalog is valid"
+        },
+        "lastUpdate" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "Date and time of the last update"
+        },
+        "lifecycleStatus" : {
+          "type" : "string",
+          "description" : "Used to indicate the current lifecycle status"
+        }
+      }
+    },
+    "TimePeriod" : {
+      "type" : "object",
+      "description" : "A base / value business entity used to represent a period of time between two timepoints.",
+      "properties" : {
+        "startDateTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "An instant of time, starting at the TimePeriod"
+        },
+        "endDateTime" : {
+          "type" : "string",
+          "format" : "date-time",
+          "description" : "An instant of time, ending at the TimePeriod."
+        }
+      }
+    },
+    "Attachment" : {
+      "type" : "object",
+      "description" : "Complements the description of an element (for instance a product) through video, pictures...",
+      "properties" : {
+        "description" : {
+          "type" : "string",
+          "description" : "A narrative text describing the content of the attachment"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference of the attachment"
+        },
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of the attachment"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Attachment type such as video, picture"
+        },
+        "url" : {
+          "type" : "string",
+          "description" : "Uniform Resource Locator, is a web page address (a subset of URI)"
+        }
+      }
+    },
+    "EntitySchemaRef" : {
+      "type" : "object",
+      "description" : "The reference object to the schema and type of target entity which is described by an entity specification",
+      "properties" : {
+        "@type" : {
+          "type" : "string",
+          "description" : "Class type of the target entity"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "This field provides a link to the schema describing the target entity"
+        }
+      }
+    },
+    "SpecCharacteristic" : {
+      "type" : "object",
+      "description" : "A characteristic quality or distinctive feature of a Specification.  The characteristic can be take on a discrete value, such as color, can take on a range of values, (for example, sensitivity of 100-240 mV), or can be derived from a formula (for example, usage time (hrs) = 30 - talk time *3). Certain characteristics, such as color, may be configured during the ordering or some other process.",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the SpecCharacteristic"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "A narrative that explains in detail what the SpecCharacteristic is"
+        },
+        "valueType" : {
+          "type" : "string",
+          "description" : "A kind of value that the characteristic can take on, such as numeric, text and so forth"
+        },
+        "configurable" : {
+          "type" : "boolean",
+          "description" : "If true, the Boolean indicates that the SpecCharacteristic is configurable"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which the productSpecCharacteristic is valid"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "(Class) type of the characteristic"
+        },
+        "@schemaLocation" : {
+          "type" : "string",
+          "description" : "A link to the schema describing this characteristic"
+        },
+        "specCharacteristicValue" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/SpecCharacteristicValue"
+          }
+        }
+      }
+    },
+    "RelatedPartyRef" : {
+      "type" : "object",
+      "description" : "RelatedParty reference. A related party defines party or party role linked to a specific entity.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Unique identifier of a related party"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference of the related party, could be a party reference or a party role reference"
+        },
+        "role" : {
+          "type" : "string",
+          "description" : "Role of the related party."
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the related party"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "Validity period of the related party"
+        }
+      }
+    },
+    "SpecCharacteristicValue" : {
+      "type" : "object",
+      "discriminator" : "valueType",
+      "description" : "A number or text that can be assigned to a SpecCharacteristic",
+      "properties" : {
+        "valueType" : {
+          "type" : "string",
+          "description" : "A kind of value that the characteristic value can take on, such as numeric, text and so forth"
+        },
+        "isDefault" : {
+          "type" : "boolean",
+          "description" : "If true, the Boolean Indicates if the value is the default value for a characteristic"
+        },
+        "unitOfMeasure" : {
+          "type" : "string",
+          "description" : "unit of measure for the valueCould be minutes, GB, etc"
+        },
+        "validFor" : {
+          "$ref" : "#/definitions/TimePeriod",
+          "description" : "The period for which this object is valid"
+        },
+        "valueFrom" : {
+          "type" : "integer",
+          "description" : "The low range value that a characteristic can take on"
+        },
+        "valueTo" : {
+          "type" : "integer",
+          "description" : "The upper range value that a characteristic can take on"
+        },
+        "rangeInterval" : {
+          "type" : "string",
+          "description" : "An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes. If applicable, possible values are \"open\", \"closed\", \"closedBottom\" and \"closedTop\"."
+        },
+        "regex" : {
+          "type" : "string",
+          "description" : "A regular expression constraint for given value"
+        }
+      },
+      "required" : [ "valueType" ]
+    },
+    "Object" : {
+      "allOf" : [ {
+        "$ref" : "#/definitions/SpecCharacteristicValue"
+      }, {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "object",
+            "description" : "the  value that the characteristic can take on as object"
+          }
+        },
+        "required" : [ "value" ]
+      } ]
+    },
+    "String" : {
+      "allOf" : [ {
+        "$ref" : "#/definitions/SpecCharacteristicValue"
+      }, {
+        "type" : "object",
+        "properties" : {
+          "value" : {
+            "type" : "string",
+            "description" : "the  value that the characteristic can take on as string"
+          }
+        },
+        "required" : [ "value" ]
+      } ]
+    },
+    "ConstraintRef" : {
+      "type" : "object",
+      "description" : "Constraint reference. The Constraint resource represents a policy/rule applied to an entity or entity spec.",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "reference id to the target constraint"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to the target constraint"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "constraint version"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name given to the constraint"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "The (class) type of the constraint"
+        }
+      }
+    },
+    "AssociationRoleSpec" : {
+      "type" : "object",
+      "description" : "This embedded object represents the role and type of each entity involved in a relationship.",
+      "properties" : {
+        "role" : {
+          "type" : "string"
+        },
+        "isSource" : {
+          "type" : "boolean"
+        },
+        "aggregation" : {
+          "type" : "string"
+        },
+        "minQuantity" : {
+          "type" : "integer"
+        },
+        "maxQuantity" : {
+          "type" : "integer"
+        },
+        "defaulQuantity" : {
+          "type" : "integer"
+        },
+        "isNavigable" : {
+          "type" : "boolean"
+        },
+        "entityType" : {
+          "type" : "string"
+        }
+      }
+    },
+    "AssociationSpecRef" : {
+      "type" : "object",
+      "description" : "reference to an AssociationSpecification object",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "reference id to the target AssociationSpecification"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to the target AssociationSpecification"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "The (class) type of the AssociationSpecification"
+        }
+      }
+    },
+    "AssociationRole" : {
+      "type" : "object",
+      "description" : "This embedded object represents the role and type of each entity involved in a relationship.",
+      "properties" : {
+        "role" : {
+          "type" : "string",
+          "description" : "The association role of this relationship participant as defined in the associationRoleSpec"
+        },
+        "isSource" : {
+          "type" : "boolean",
+          "description" : "A flag indicating if the participant involved in a uni-directional relationship is the source or not. this flag is true If the association is bi-directional (both end points are navigable)"
+        },
+        "id" : {
+          "type" : "string",
+          "description" : "The identifier of the endpoint plays this role"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Hyperlink reference to the endpoint plays this association role"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "Name of the endpoint which plays this association role"
+        },
+        "@type" : {
+          "type" : "string",
+          "description" : "(class) type of the endpoint which plays this association role"
+        }
+      }
+    },
+    "EventSubscription" : {
+      "required" : [ "id", "callback" ],
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Id of the listener"
+        },
+        "callback" : {
+          "type" : "string",
+          "description" : "The callback being registered."
+        },
+        "query" : {
+          "type" : "string",
+          "description" : "additional data to be passed"
+        }
+      }
+    },
+    "EventSubscriptionInput" : {
+      "required" : [ "callback" ],
+      "properties" : {
+        "callback" : {
+          "type" : "string",
+          "description" : "The callback being registered."
+        },
+        "query" : {
+          "type" : "string",
+          "description" : "additional data to be passed"
+        }
+      }
+    },
+    "Error" : {
+      "required" : [ "code", "message" ],
+      "properties" : {
+        "code" : {
+          "type" : "integer",
+          "description" : "An integer coding the error type. This is given to caller so he can translate them if required."
+        },
+        "message" : {
+          "type" : "string",
+          "description" : "A short localized string that describes the error."
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+        },
+        "infoURL" : {
+          "type" : "string",
+          "description" : "(optional) A URL to online documentation that provides more information about the error."
+        }
+      }
+    }
+  }
+}

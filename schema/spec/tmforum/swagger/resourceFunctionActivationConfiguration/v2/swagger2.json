@@ -1,0 +1,1296 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "API to provision,manage lifecyle of, configure and activate Resource Functions (Network Services in ETSI terminology that could be composed from physical or virtual network functions)",
+    "version" : "1.3.0",
+    "title" : "Resource Function Provisioning and Lifecycle Management"
+  },
+  "host" : "env-0693795.jelastic.servint.net",
+  "basePath" : "/DSResourceFunctionCA/api/ResourceFunctionCA/v1",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "paths" : {
+    "/resourceFunction" : {
+      "post" : {
+        "tags" : [ "ResourceFunction" ],
+        "operationId" : "ResourceFunctionCreate",
+        "summary" : "ResourceFunctionCreate",
+        "description" : "Create a new Resource Function. A resource function could be composite or atomic",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ResourceFunction",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "ResourceFunction",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "ResourceFunction" ],
+        "operationId" : "ResourceFunctionFind",
+        "summary" : "ResourceFunctionFind",
+        "description" : "Find a particular Resource Function by providing query parameters",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "Input fields used to find a particular resource function",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "List of Resource Functions",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/ResourceFunction"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/{id}" : {
+      "delete" : {
+        "tags" : [ "ResourceFunction" ],
+        "operationId" : "ResourceFunctionDelete",
+        "summary" : "ResourceFunctionDelete",
+        "description" : "Delete a resource function",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "ResourceFunction" ],
+        "operationId" : "ResourceFunctionServiceGet",
+        "summary" : "ResourceFunctionServiceGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Resource Function",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "ResourceFunction" ],
+        "operationId" : "ResourceFunctionPatch",
+        "summary" : "ResourceFunctionPatch",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "Resource Function",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Resource Function Patch Success",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/heal" : {
+      "post" : {
+        "tags" : [ "ResourceFunction/Heal" ],
+        "operationId" : "ResourceFunctionHeal",
+        "summary" : "Heal Resource Function",
+        "description" : "Operation to heal the resource function. This returns the heal task resource that can be queried to get the latest status of the heal operation ",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "Heal",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Heal"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "ResourceFunctionHeal",
+            "schema" : {
+              "$ref" : "#/definitions/Heal"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/heal/{id}" : {
+      "delete" : {
+        "tags" : [ "ResourceFunction/Heal" ],
+        "operationId" : "ResourceFunctionHealDelete",
+        "summary" : "ResourceFunctionHealDelete",
+        "description" : "Cancel the request to heal the network service. This operation is performed on a best effort basis.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the heal operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "ResourceFunction/Heal" ],
+        "operationId" : "ResourceFunctionHealGet",
+        "summary" : "ResourceFunctionHealGet",
+        "description" : "Get the current status of the heal operation.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the heal operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ServiceHeal",
+            "schema" : {
+              "$ref" : "#/definitions/Heal"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "ResourceFunction/Heal" ],
+        "operationId" : "ResourceFunctionHealPatch",
+        "summary" : "ResourceFunctionHealPatch",
+        "description" : "Patch the Network Service heal request. For e.g. provide additional parameters when the request has failed.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the heal request that was returned as part of the post operation",
+          "type" : "string"
+        }, {
+          "name" : "ServiceHeal",
+          "in" : "body",
+          "required" : true,
+          "description" : "Attributes of the heal request to be patched.",
+          "schema" : {
+            "$ref" : "#/definitions/Heal"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ServiceHealPatchSuccess",
+            "schema" : {
+              "$ref" : "#/definitions/Heal"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/scale" : {
+      "post" : {
+        "tags" : [ "ResourceFunction/Scale" ],
+        "operationId" : "ResourceFunctionScale",
+        "summary" : "Scale Network Service",
+        "description" : "Operation to scale the network service. This returns the scale task resource that can be queried to get the latest status of the scale operation ",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "Scale",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Scale"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "ResourceFunctionScale",
+            "schema" : {
+              "$ref" : "#/definitions/Scale"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/scale/{id}" : {
+      "delete" : {
+        "tags" : [ "ResourceFunction/Scale" ],
+        "operationId" : "ResourceFunctionScaleDelete",
+        "summary" : "ResourceFunctionScaleDelete",
+        "description" : "Cancel the request to scale the network service. This operation is performed on a best effort basis.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the scale operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "ResourceFunction/Scale" ],
+        "operationId" : "ResourceFunctionScaleGet",
+        "summary" : "ResourceFunctionScaleGet",
+        "description" : "Get the current status of the scale operation.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the scale operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ServiceScale",
+            "schema" : {
+              "$ref" : "#/definitions/Scale"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "ResourceFunction/Scale" ],
+        "operationId" : "ResourceFunctionScalePatch",
+        "summary" : "ResourceFunctionScalePatch",
+        "description" : "Patch the Network Service heal request. For e.g. provide additional parameters when the request has failed.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ServiceScale",
+          "in" : "body",
+          "required" : true,
+          "description" : "Attributes of the request to be patched.",
+          "schema" : {
+            "$ref" : "#/definitions/Scale"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ScaleRequestPatchSuccess",
+            "schema" : {
+              "$ref" : "#/definitions/Scale"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/migrate" : {
+      "post" : {
+        "tags" : [ "ResourceFunction/Migrate" ],
+        "operationId" : "ResourceFunctionMigrate",
+        "summary" : "Migrate Network Service",
+        "description" : "Operation to Migrate the network service. This returns the Migrate task resource that can be queried to get the latest status of the Migrate operation ",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "Migrate",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Migrate"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "ResourceFunctionMigrate",
+            "schema" : {
+              "$ref" : "#/definitions/Migrate"
+            }
+          }
+        }
+      }
+    },
+    "/resourceFunction/migrate/{id}" : {
+      "delete" : {
+        "tags" : [ "ResourceFunction/Migrate" ],
+        "operationId" : "ResourceFunctionMigrateDelete",
+        "summary" : "ResourceFunctionMigrateDelete",
+        "description" : "Cancel the request to Migrate the network service. This operation is performed on a best effort basis.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the Migrate operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "ResourceFunction/Migrate" ],
+        "operationId" : "ResourceFunctionMigrateGet",
+        "summary" : "ResourceFunctionMigrateGet",
+        "description" : "Get the current status of the Migrate operation.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the Migrate operation that is returned as a response to the post.",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "ServiceMigrate",
+            "schema" : {
+              "$ref" : "#/definitions/Migrate"
+            }
+          }
+        }
+      },
+      "patch" : {
+        "tags" : [ "ResourceFunction/Migrate" ],
+        "operationId" : "ResourceFunctionMigratePatch",
+        "summary" : "ResourceFunctionMigratePatch",
+        "description" : "Patch the Network Service heal request. For e.g. provide additional parameters when the request has failed.",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "id",
+          "in" : "path",
+          "required" : true,
+          "description" : "Id of the Migrate request that was returned as part of the post operation",
+          "type" : "string"
+        }, {
+          "name" : "ServiceMigrate",
+          "in" : "body",
+          "required" : true,
+          "description" : "Attributes of the request to be patched.",
+          "schema" : {
+            "$ref" : "#/definitions/Migrate"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "MigrateRequestPatchSuccess",
+            "schema" : {
+              "$ref" : "#/definitions/Migrate"
+            }
+          }
+        }
+      }
+    },
+    "/monitor" : {
+      "get" : {
+        "tags" : [ "monitor" ],
+        "operationId" : "monitorFind",
+        "summary" : "monitorFind",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "List of monitor",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/monitor"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/monitor/{monitorId}" : {
+      "get" : {
+        "tags" : [ "monitor" ],
+        "operationId" : "monitorGet",
+        "summary" : "monitorGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "monitorId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "monitor",
+            "schema" : {
+              "$ref" : "#/definitions/monitor"
+            }
+          }
+        }
+      },
+      "head" : {
+        "tags" : [ "monitor" ],
+        "operationId" : "monitorHead",
+        "summary" : "monitorGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "monitorId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "fields",
+          "in" : "query",
+          "required" : false,
+          "description" : "",
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "monitor",
+            "schema" : {
+              "$ref" : "#/definitions/monitor"
+            }
+          }
+        }
+      }
+    },
+    "/hub" : {
+      "post" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubCreate",
+        "summary" : "hubCreate",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hub",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/Hub"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Hub",
+            "schema" : {
+              "$ref" : "#/definitions/Hub"
+            }
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubFind",
+        "summary" : "hubFind",
+        "description" : "",
+        "deprecated" : false,
+        "responses" : {
+          "200" : {
+            "description" : "List of Hub",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Hub"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/hub/{hubId}" : {
+      "delete" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubDelete",
+        "summary" : "hubDelete",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hubId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "204" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "tags" : [ "hub" ],
+        "operationId" : "hubGet",
+        "summary" : "hubGet",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "hubId",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Hub",
+            "schema" : {
+              "$ref" : "#/definitions/Hub"
+            }
+          }
+        }
+      }
+    },
+    "/hub/resourceFunctionCreateNotification" : {
+      "post" : {
+        "tags" : [ "notification" ],
+        "operationId" : "resourceFunctionCreateNotification",
+        "summary" : "Notification when a Resource Function is created",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ResourceFunction ",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "ResourceFunction ",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      }
+    },
+    "/hub/resourceFunctionModificationNotification" : {
+      "post" : {
+        "tags" : [ "notification" ],
+        "operationId" : "resourceFunctionModificationNotification",
+        "summary" : "Notification of modification of Resource Function",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ResourceFunction ",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Modified Resource Function ",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      }
+    },
+    "/hub/resourceFunctionDeleteNotification" : {
+      "post" : {
+        "tags" : [ "notification" ],
+        "operationId" : "resourceFunctionDeleteNotification",
+        "summary" : "Notification when a resource function is deleted",
+        "description" : "",
+        "deprecated" : false,
+        "parameters" : [ {
+          "name" : "ResourceFunction",
+          "in" : "body",
+          "required" : true,
+          "schema" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        } ],
+        "responses" : {
+          "201" : {
+            "description" : "Resource Function",
+            "schema" : {
+              "$ref" : "#/definitions/ResourceFunction"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "ResourceFunction" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Identifier of the network service instance. Required to be unique. Used in URIs as the identifier of the service (for modify or delete use cases)",
+          "example" : "17898"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "URI for the Resource Function. This is set by the provider of the API",
+          "example" : "http://serverlocation:port/resourceFunction/17898"
+        },
+        "name" : {
+          "type" : "string",
+          "description" : "User friendly moniker for the Resource Function",
+          "example" : "CDN Cluster"
+        },
+        "description" : {
+          "type" : "string",
+          "description" : "A description of the Resource Function (What does it provide)",
+          "example" : "CDN capability spread across multiple geographies"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "A type of the Resource Function as specified by the provider of the API",
+          "example" : "Content Delivery"
+        },
+        "version" : {
+          "type" : "string",
+          "description" : "A version of the Resource Function as specified by the provider of the API",
+          "example" : "1.2"
+        },
+        "role" : {
+          "type" : "string",
+          "description" : "Role of the Resource Function. Used when Resource Function is a component of a composite Resource Function and the exact role of the service within the composite is not clear from descriptor/location.",
+          "example" : "Backup Media Store"
+        },
+        "location" : {
+          "type" : "object",
+          "description" : "Location at which Resource Function is required",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "description" : "A unique id for location"
+            },
+            "href" : {
+              "type" : "string",
+              "description" : "URI for the location"
+            }
+          },
+          "required" : [ "href" ],
+          "example" : {
+            "href" : "http://serverlocation:port/location/4980",
+            "id" : "4980"
+          }
+        },
+        "autoModification" : {
+          "type" : "string",
+          "description" : "List of the kinds of auto-modifications that are applied to a given network service e.g what can be scaled",
+          "enum" : [ "scaleStorage", "scaleUpInterface" ]
+        },
+        "priority" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Priority of the Resource Function. Decides what happens in a contention scenario",
+          "example" : "2"
+        },
+        "state" : {
+          "type" : "string",
+          "description" : "Provides the stage at which the resource function has been instantiated. This is a compound state defined in TR255",
+          "enum" : [ "planning", "installing", "operating", "retiring" ]
+        },
+        "subState" : {
+          "type" : "string",
+          "description" : "Provides the usage sub-state information for the resource function. The value is dependent on the value of State. Please refer to section 3.2.7 of TR255 for details."
+        },
+        "schedule" : {
+          "type" : "array",
+          "description" : " This is a reference to a schedule. Allows consumers to schedule modifications to the service at certain times",
+          "items" : {
+            "$ref" : "#/definitions/ScheduleRef"
+          }
+        },
+        "sap" : {
+          "type" : "array",
+          "description" : " The service access points available on the resource function ",
+          "items" : {
+            "$ref" : "#/definitions/SAPRef"
+          }
+        },
+        "resourceFunctionSpecification" : {
+          "type" : "object",
+          "description" : " Pointer to the resource specification that will be used to create this resource function ",
+          "$ref" : "#/definitions/ResourceFunctionSpecification"
+        },
+        "characteristic" : {
+          "type" : "array",
+          "description" : " List of resource characteristics. This is based on the resource specification ",
+          "items" : {
+            "$ref" : "#/definitions/Characteristic"
+          }
+        },
+        "feature" : {
+          "type" : "array",
+          "description" : " List of features requested. This is based on the resource specification ",
+          "items" : {
+            "$ref" : "#/definitions/Feature"
+          }
+        },
+        "featureGroup" : {
+          "type" : "array",
+          "description" : " List of feature groups. This is based on the resource specification ",
+          "items" : {
+            "$ref" : "#/definitions/FeatureGroup"
+          }
+        },
+        "supportingResourceFunction" : {
+          "type" : "array",
+          "description" : " This is a list of composite and atomic resource functions from which this resource function is composed. These are all the vertices of the graph. ",
+          "items" : {
+            "$ref" : "#/definitions/ResourceFunction"
+          }
+        },
+        "connectivity" : {
+          "type" : "array",
+          "description" : " These are the edges of the graph and provide details of how the resource functions listed in supportingResourceFunction are connected together ",
+          "items" : {
+            "$ref" : "#/definitions/Connectivity"
+          }
+        },
+        "relatedParty" : {
+          "type" : "array",
+          "description" : " List of party objects related to this resource function. This can be used to (for example) indicate the consumer that owns the RF or a management entity responsible the RF. ",
+          "items" : {
+            "$ref" : "#/definitions/RelatedParty"
+          }
+        }
+      },
+      "required" : [ "resourceFunctionSpecification" ]
+    },
+    "ResourceFunctionSpecification" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "href" ],
+      "example" : {
+        "id" : "RS-6789",
+        "href" : "http://serverlocation:port/resourceSpecification/RS-6789"
+      }
+    },
+    "SAPRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "href" ],
+      "example" : {
+        "id" : "SAP-49876",
+        "href" : "http://serverlocation:port/resourceFunction/SAP-49876"
+      }
+    },
+    "ResourceFunctionRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "href" ],
+      "example" : {
+        "id" : "RF-6789",
+        "href" : "http://serverlocation:port/resourceSpecification/RF-6789"
+      }
+    },
+    "ScheduleRef" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "ResourceFunctionConfig" : {
+          "$ref" : "#/definitions/ResourceFunction"
+        }
+      },
+      "required" : [ "href", "ResourceFunctionConfig" ],
+      "example" : {
+        "id" : "SCH-78906",
+        "href" : "http://serverlocation:port/resourceSpecification/SCH-78906"
+      }
+    },
+    "Characteristic" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "name", "value" ],
+      "example" : {
+        "name" : "bandwidth",
+        "value" : "100MB"
+      }
+    },
+    "Feature" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : " This is the name for the feature"
+        },
+        "listOfCharacteristics" : {
+          "type" : "array",
+          "description" : " This is a list of  Resource Characteristics for a particular feature ",
+          "items" : {
+            "$ref" : "#/definitions/Characteristic"
+          }
+        }
+      },
+      "required" : [ "name", "listOfCharacteristics" ],
+      "example" : {
+        "name" : "Tarpit"
+      }
+    },
+    "FeatureGroup" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string",
+          "description" : " This is the name for the feature group"
+        },
+        "listOfCharacteristics" : {
+          "type" : "array",
+          "description" : " This is a list of  Resource Characteristics for a particular feature ",
+          "items" : {
+            "$ref" : "#/definitions/Characteristic"
+          }
+        },
+        "listOfFeatures" : {
+          "type" : "array",
+          "description" : " This is a list of  features for a particular feature group ",
+          "items" : {
+            "$ref" : "#/definitions/Feature"
+          }
+        }
+      },
+      "required" : [ "name", "listOfCharacteristics", "listOfFeatures" ],
+      "example" : {
+        "name" : "Filtering"
+      }
+    },
+    "RelatedParty" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "role" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "href", "role" ],
+      "example" : {
+        "id" : "1234",
+        "href" : "http://serverlocation:port/partyManagement/partyRole/1234",
+        "role" : "Admin"
+      }
+    },
+    "Hub" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string"
+        },
+        "callback" : {
+          "type" : "string"
+        },
+        "query" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Heal" : {
+      "type" : "object",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Identifier of the Heal task resource. Required to be unique. Used in URIs as the identifier of the Heal task resource",
+          "example" : "490987"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference to the Resource Function that needs to be healed",
+          "example" : "http://serverlocation:port/resourceFunction/17898"
+        },
+        "cause" : {
+          "type" : "string",
+          "description" : "Reason why the heal is being requested.",
+          "example" : "SLA violation"
+        },
+        "degreeOfHealing" : {
+          "type" : "string",
+          "description" : "Indicates the degree of healing required",
+          "enum" : [ "Complete - Restore to state before failure", "Complete - Heal based on latest QOS values", "Complete - Restore to instatiation state", "Partial" ]
+        },
+        "healAction" : {
+          "type" : "string",
+          "description" : "Exact action to be taken as part of the heal process or a pointer to a script to be run",
+          "example" : "/conf/lab/healfast.sh"
+        },
+        "healPolicy" : {
+          "type" : "object",
+          "description" : "Reference to the policy being applied",
+          "properties" : {
+            "id" : {
+              "type" : "string"
+            },
+            "href" : {
+              "type" : "string"
+            }
+          },
+          "required" : [ "href" ],
+          "example" : {
+            "id" : "Pol-3490",
+            "href" : "http://serverlocation:port/policy/Pol-3490"
+          }
+        },
+        "startTime" : {
+          "type" : "string",
+          "description" : "The time when the heal action needs to commence. This allows a delay to be added",
+          "example" : "2017:11:7:15:53:10Z"
+        },
+        "additionalParms" : {
+          "type" : "array",
+          "description" : "Additional parameters to be sent to the heal action as name value pairs",
+          "items" : {
+            "$ref" : "#/definitions/NameValuePair"
+          }
+        },
+        "healStatus" : {
+          "type" : "string",
+          "description" : "Status of the heal operation",
+          "enum" : [ "In Progress", "Paused - Consumer Input Required", "Paused - Manual Intervention Required" ]
+        }
+      },
+      "required" : [ "href", "cause", "degreeOfHealing" ]
+    },
+    "Scale" : {
+      "type" : "object",
+      "description" : "Task Resource used to request scaling of a Resource Function",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Identifier of the Scale task resource. Required to be unique. Used in URIs as the identifier of the Scale task resource",
+          "example" : "180987"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference to the Resource Function that needs to be scaled",
+          "example" : "http://serverlocation:port/resourceFunction/17898"
+        },
+        "type" : {
+          "type" : "string",
+          "description" : "Type of scaling requested",
+          "enum" : [ "Scale Out", "Scale Up", "Scale In", "Scale Down" ]
+        },
+        "aspectId" : {
+          "type" : "string",
+          "description" : "Scaling aspect is the dimension along which the Resource Function needs to be scaled. The id of the aspect is provided here",
+          "example" : "Quick Access Memory"
+        },
+        "numberOfSteps" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Number of scaling steps in the direction indicated by type of scale",
+          "example" : "2"
+        },
+        "schedule" : {
+          "type" : "array",
+          "description" : "Schedule for the scale. If not provided then needs to be actioned immediately",
+          "items" : {
+            "$ref" : "#/definitions/ScheduleRef"
+          }
+        },
+        "scaleStatus" : {
+          "type" : "string",
+          "description" : "Status of the scale operation",
+          "enum" : [ "In Progress", "Paused - Consumer Input Required", "Paused - Manual Intervention Required" ]
+        }
+      },
+      "required" : [ "href", "type", "aspectId", "numberOfSteps" ]
+    },
+    "Migrate" : {
+      "type" : "object",
+      "description" : "Task resource used to request migration of the Resource Function",
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "description" : "Identifier of the Migrate task resource. Required to be unique. Used in URIs as the identifier of the Migrate task resource",
+          "example" : "80987"
+        },
+        "href" : {
+          "type" : "string",
+          "description" : "Reference to the Resource Function that needs to be migrated",
+          "example" : "http://serverlocation:port/resourceFunction/17898"
+        },
+        "adminStateModification" : {
+          "type" : "string",
+          "description" : "Sub-state required before migrate is carried out",
+          "enum" : [ "locked", "unlocked", "shuttingDown" ]
+        },
+        "sapsToRemove" : {
+          "type" : "array",
+          "description" : "Service Access Points that need to be removed when service is migrated",
+          "items" : {
+            "$ref" : "#/definitions/SAPRef"
+          }
+        },
+        "sapsToAdd" : {
+          "type" : "array",
+          "description" : "Service Access Points that need to be added when service is migrated",
+          "items" : {
+            "$ref" : "#/definitions/SAPRef"
+          }
+        },
+        "priority" : {
+          "type" : "integer",
+          "format" : "int64",
+          "description" : "Priority of the migrate operation",
+          "example" : "1"
+        },
+        "startTime" : {
+          "type" : "string",
+          "description" : "The time when the Migrate action needs to commence. This allows a delay to be added",
+          "example" : "2017:11:7:15:53:10Z"
+        },
+        "completionMode" : {
+          "type" : "string",
+          "description" : "In what mode is the migrate operation to be performed",
+          "enum" : [ "bestEffort", "atomic" ]
+        },
+        "location" : {
+          "type" : "object",
+          "description" : "Target Location at which Resource Function is to be migrated",
+          "properties" : {
+            "id" : {
+              "type" : "string",
+              "description" : "A unique id for location"
+            },
+            "href" : {
+              "type" : "string",
+              "description" : "URI for the location"
+            }
+          },
+          "required" : [ "href" ],
+          "example" : {
+            "href" : "http://serverlocation:port/location/4980",
+            "id" : "4980"
+          }
+        },
+        "characteristics" : {
+          "type" : "array",
+          "description" : "Additional attributes to pass to the migrate operation",
+          "items" : {
+            "$ref" : "#/definitions/NameValuePair"
+          }
+        },
+        "migrateStatus" : {
+          "type" : "string",
+          "enum" : [ "In Progress", "Paused - Consumer Input Required", "Paused - Manual Intervention Required" ]
+        }
+      },
+      "required" : [ "href", "location" ]
+    },
+    "Connectivity" : {
+      "type" : "object",
+      "properties" : {
+        "source" : {
+          "$ref" : "#/definitions/ResourceFunctionRef"
+        },
+        "target" : {
+          "$ref" : "#/definitions/ResourceFunctionRef"
+        },
+        "relationship" : {
+          "type" : "string"
+        }
+      },
+      "required" : [ "source", "target", "relationship" ],
+      "example" : {
+        "source" : "http://serverlocation:port/resourceFunction/6789",
+        "target" : "http://serverlocation:port/resourceFunction/1234",
+        "relationship" : "ConnectsTo"
+      }
+    },
+    "request" : {
+      "type" : "object",
+      "required" : [ "body", "header" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "method" : {
+          "type" : "string"
+        },
+        "to" : {
+          "type" : "string"
+        },
+        "body" : {
+          "type" : "string"
+        },
+        "header" : {
+          "type" : "array",
+          "title" : "header",
+          "items" : {
+            "type" : "object",
+            "required" : [ "name", "value" ],
+            "additionalProperties" : false,
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "value" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "response" : {
+      "type" : "object",
+      "required" : [ "body", "header" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "statusCode" : {
+          "type" : "string"
+        },
+        "body" : {
+          "type" : "string"
+        },
+        "header" : {
+          "type" : "array",
+          "title" : "header",
+          "items" : {
+            "type" : "object",
+            "required" : [ "name", "value" ],
+            "additionalProperties" : false,
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "value" : {
+                "type" : "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "monitor" : {
+      "description" : "Monitor Object used to monitor long running transaction operations",
+      "type" : "object",
+      "required" : [ "id", "state", "request", "response", "href", "sourceHref" ],
+      "additionalProperties" : false,
+      "properties" : {
+        "id" : {
+          "type" : "string",
+          "example" : "1234"
+        },
+        "type" : {
+          "type" : "string",
+          "example" : "Monitor"
+        },
+        "state" : {
+          "type" : "string",
+          "example" : "MonitorState"
+        },
+        "request" : {
+          "$ref" : "#/definitions/request"
+        },
+        "response" : {
+          "$ref" : "#/definitions/response"
+        },
+        "href" : {
+          "type" : "string"
+        },
+        "sourceHref" : {
+          "type" : "string"
+        }
+      }
+    },
+    "NameValuePair" : {
+      "type" : "object",
+      "properties" : {
+        "name" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

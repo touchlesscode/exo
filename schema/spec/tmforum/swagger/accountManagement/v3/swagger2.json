@@ -1,0 +1,3063 @@
+{
+   "swagger":"2.0",
+   "info":{
+      "title":"Account Management",
+      "description":"This is Swagger UI environment generated for the TMF Account Management specification",
+      "version":"3.0"
+   },
+   "host":"biologeek.orange-labs.fr",
+   "basePath":"/tmf-api/accountManagement",
+   "schemes":[
+      "https"
+   ],
+   "consumes":[
+      "application/json"
+   ],
+   "produces":[
+      "application/json"
+   ],
+   "paths":{
+      "/partyAccount":{
+         "get":{
+            "operationId":"listPartyAccount",
+            "summary":"List or find 'PartyAccount' objects",
+            "tags":[
+               "partyAccount"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.unit",
+                  "description":"For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+               },
+               {
+                  "type":"number",
+				  "format": "float",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.value",
+                  "description":"For filtering: A positive floating point number"
+               },
+               {
+                  "name":"lastModified",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: Date of last modification of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"state",
+                  "description":"For filtering: Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"type",
+                  "description":"For filtering: A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.numberOfPayments",
+                  "description":"For filtering: Number of payments used to spread the global payment"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.paymentFrequency",
+                  "description":"For filtering: Frequency of the payments, such as monthly and bimonthly"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.priority",
+                  "description":"For filtering: Priority of the payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.status",
+                  "description":"For filtering: Status of the payment plan (effective, ineffective)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.type",
+                  "description":"For filtering: Type of payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"financialAccount.name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"defaultPaymentMethod.name",
+                  "description":"For filtering: Name of the payment mean"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.name",
+                  "description":"For filtering: Name of the related party"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.role",
+                  "description":"For filtering: Role of the related party."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.certificateNumber",
+                  "description":"For filtering: Identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.issuingJurisdiction",
+                  "description":"For filtering: Name of the taxing jurisdiction for which taxes are exempt"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.reason",
+                  "description":"For filtering: Reason of the tax exemption"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactName",
+                  "description":"For filtering: A displayable name for that contact"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactType",
+                  "description":"For filtering: Type of contact (primary, secondary...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.partyRoleType",
+                  "description":"For filtering: Identifies what kind of party role type is linked to the contact (a account manager...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountBalance.type",
+                  "description":"For filtering: Type of the balance : deposit balance, disputed balance, loyalty balance, receivable balance..."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountRelationship.relationshipType",
+                  "description":"For filtering: Type of relationship"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/PartyAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "post":{
+            "operationId":"createPartyAccount",
+            "summary":"Creates a 'PartyAccount'",
+            "tags":[
+               "partyAccount"
+            ],
+            "parameters":[
+               {
+                  "schema":{
+                     "$ref":"#/definitions/PartyAccount_Create"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"partyAccount",
+                  "description":"The Party Account to be created"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Created",
+                  "schema":{
+                     "$ref":"#/definitions/PartyAccount"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/partyAccount/{id}":{
+         "get":{
+            "operationId":"retrievePartyAccount",
+            "summary":"Retrieves a 'PartyAccount' by Id",
+            "tags":[
+               "partyAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Party Account"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/PartyAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "patch":{
+            "operationId":"updatePartyAccount",
+            "summary":"Updates partially a 'PartyAccount' by Id",
+            "tags":[
+               "partyAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Party Account"
+               },
+               {
+                  "schema":{
+                     "$ref":"#/definitions/PartyAccount_Update"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"partyAccount",
+                  "description":"The Party Account to be updated"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Updated",
+                  "schema":{
+                     "$ref":"#/definitions/PartyAccount"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billingAccount":{
+         "get":{
+            "operationId":"listBillingAccount",
+            "summary":"List or find 'BillingAccount' objects",
+            "tags":[
+               "billingAccount"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.unit",
+                  "description":"For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+               },
+               {
+                  "type":"number",
+				  "format": "float",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.value",
+                  "description":"For filtering: A positive floating point number"
+               },
+               {
+                  "name":"lastModified",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: Date of last modification of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"state",
+                  "description":"For filtering: Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"type",
+                  "description":"For filtering: A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.numberOfPayments",
+                  "description":"For filtering: Number of payments used to spread the global payment"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.paymentFrequency",
+                  "description":"For filtering: Frequency of the payments, such as monthly and bimonthly"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.priority",
+                  "description":"For filtering: Priority of the payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.status",
+                  "description":"For filtering: Status of the payment plan (effective, ineffective)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.type",
+                  "description":"For filtering: Type of payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"financialAccount.name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"defaultPaymentMethod.name",
+                  "description":"For filtering: Name of the payment mean"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.name",
+                  "description":"For filtering: Name of the related party"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.role",
+                  "description":"For filtering: Role of the related party."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.certificateNumber",
+                  "description":"For filtering: Identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.issuingJurisdiction",
+                  "description":"For filtering: Name of the taxing jurisdiction for which taxes are exempt"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.reason",
+                  "description":"For filtering: Reason of the tax exemption"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactName",
+                  "description":"For filtering: A displayable name for that contact"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactType",
+                  "description":"For filtering: Type of contact (primary, secondary...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.partyRoleType",
+                  "description":"For filtering: Identifies what kind of party role type is linked to the contact (a account manager...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountBalance.type",
+                  "description":"For filtering: Type of the balance : deposit balance, disputed balance, loyalty balance, receivable balance..."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountRelationship.relationshipType",
+                  "description":"For filtering: Type of relationship"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillingAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billingAccount/{id}":{
+         "get":{
+            "operationId":"retrieveBillingAccount",
+            "summary":"Retrieves a 'BillingAccount' by Id",
+            "tags":[
+               "billingAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Billing Account"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillingAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "patch":{
+            "operationId":"updateBillingAccount",
+            "summary":"Updates partially a 'BillingAccount' by Id",
+            "tags":[
+               "billingAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Billing Account"
+               },
+               {
+                  "schema":{
+                     "$ref":"#/definitions/BillingAccount_Update"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"billingAccount",
+                  "description":"The Billing Account to be updated"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Updated",
+                  "schema":{
+                     "$ref":"#/definitions/BillingAccount"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/settlementAccount":{
+         "get":{
+            "operationId":"listSettlementAccount",
+            "summary":"List or find 'SettlementAccount' objects",
+            "tags":[
+               "settlementAccount"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.unit",
+                  "description":"For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+               },
+               {
+                  "type":"number",
+				  "format": "float",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.value",
+                  "description":"For filtering: A positive floating point number"
+               },
+               {
+                  "name":"lastModified",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: Date of last modification of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"state",
+                  "description":"For filtering: Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"type",
+                  "description":"For filtering: A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.numberOfPayments",
+                  "description":"For filtering: Number of payments used to spread the global payment"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.paymentFrequency",
+                  "description":"For filtering: Frequency of the payments, such as monthly and bimonthly"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.priority",
+                  "description":"For filtering: Priority of the payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.status",
+                  "description":"For filtering: Status of the payment plan (effective, ineffective)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentPlan.type",
+                  "description":"For filtering: Type of payment plan"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"financialAccount.name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"defaultPaymentMethod.name",
+                  "description":"For filtering: Name of the payment mean"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.name",
+                  "description":"For filtering: Name of the related party"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.role",
+                  "description":"For filtering: Role of the related party."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.certificateNumber",
+                  "description":"For filtering: Identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.issuingJurisdiction",
+                  "description":"For filtering: Name of the taxing jurisdiction for which taxes are exempt"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.reason",
+                  "description":"For filtering: Reason of the tax exemption"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactName",
+                  "description":"For filtering: A displayable name for that contact"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactType",
+                  "description":"For filtering: Type of contact (primary, secondary...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.partyRoleType",
+                  "description":"For filtering: Identifies what kind of party role type is linked to the contact (a account manager...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountBalance.type",
+                  "description":"For filtering: Type of the balance : deposit balance, disputed balance, loyalty balance, receivable balance..."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountRelationship.relationshipType",
+                  "description":"For filtering: Type of relationship"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/SettlementAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/settlementAccount/{id}":{
+         "get":{
+            "operationId":"retrieveSettlementAccount",
+            "summary":"Retrieves a 'SettlementAccount' by Id",
+            "tags":[
+               "settlementAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Settlement Account"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/SettlementAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "patch":{
+            "operationId":"updateSettlementAccount",
+            "summary":"Updates partially a 'SettlementAccount' by Id",
+            "tags":[
+               "settlementAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Settlement Account"
+               },
+               {
+                  "schema":{
+                     "$ref":"#/definitions/SettlementAccount_Update"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"settlementAccount",
+                  "description":"The Settlement Account to be updated"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Updated",
+                  "schema":{
+                     "$ref":"#/definitions/SettlementAccount"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/financialAccount":{
+         "get":{
+            "operationId":"listFinancialAccount",
+            "summary":"List or find 'FinancialAccount' objects",
+            "tags":[
+               "financialAccount"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.unit",
+                  "description":"For filtering: Currency (ISO4217 norm uses 3 letters to define the currency)"
+               },
+               {
+                  "type":"number",
+				  "format": "float",
+                  "required":false,
+                  "in":"query",
+                  "name":"creditLimit.value",
+                  "description":"For filtering: A positive floating point number"
+               },
+               {
+                  "name":"lastModified",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: Date of last modification of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: Name of the account"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"state",
+                  "description":"For filtering: Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"type",
+                  "description":"For filtering: A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.name",
+                  "description":"For filtering: Name of the related party"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"relatedParty.role",
+                  "description":"For filtering: Role of the related party."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.certificateNumber",
+                  "description":"For filtering: Identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.issuingJurisdiction",
+                  "description":"For filtering: Name of the taxing jurisdiction for which taxes are exempt"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"taxExemption.reason",
+                  "description":"For filtering: Reason of the tax exemption"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactName",
+                  "description":"For filtering: A displayable name for that contact"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.contactType",
+                  "description":"For filtering: Type of contact (primary, secondary...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"contact.partyRoleType",
+                  "description":"For filtering: Identifies what kind of party role type is linked to the contact (a account manager...)"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountBalance.type",
+                  "description":"For filtering: Type of the balance : deposit balance, disputed balance, loyalty balance, receivable balance..."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"accountRelationship.relationshipType",
+                  "description":"For filtering: Type of relationship"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/FinancialAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/financialAccount/{id}":{
+         "get":{
+            "operationId":"retrieveFinancialAccount",
+            "summary":"Retrieves a 'FinancialAccount' by Id",
+            "tags":[
+               "financialAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Financial Account"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/FinancialAccount"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "patch":{
+            "operationId":"updateFinancialAccount",
+            "summary":"Updates partially a 'FinancialAccount' by Id",
+            "tags":[
+               "financialAccount"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Financial Account"
+               },
+               {
+                  "schema":{
+                     "$ref":"#/definitions/FinancialAccount_Update"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"financialAccount",
+                  "description":"The Financial Account to be updated"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Updated",
+                  "schema":{
+                     "$ref":"#/definitions/FinancialAccount"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billingCycleSpecification":{
+         "get":{
+            "operationId":"listBillingCycleSpecification",
+            "summary":"List or find 'BillingCycleSpecification' objects",
+            "tags":[
+               "billingCycleSpecification"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"billingDateShift",
+                  "description":"For filtering: An offset of a billing/settlement date. The offset is expressed as number of days with regard to the start of the billing/settlement period."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"billingPeriod",
+                  "description":"For filtering: A billing time period. It can be recurring, for example: week, month, quarter of year, year ."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"frequency",
+                  "description":"For filtering: Frequency of the billing cycle (monthly for instance)"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"mailingDateOffset",
+                  "description":"For filtering: An offset of a customer bill mailing date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: A short descriptive name"
+               },
+               {
+                  "type":"integer",
+                  "required":false,
+                  "in":"query",
+                  "name":"paymentDueDateOffset",
+                  "description":"For filtering: An offset of a payment due date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+               },
+               {
+                  "name":"validFor.endDateTime",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: An instant of time, ending at the TimePeriod."
+               },
+               {
+                  "name":"validFor.startDateTime",
+                  "format":"date-time",
+                  "required":false,
+                  "in":"query",
+                  "type":"string",
+                  "description":"For filtering: An instant of time, starting at the TimePeriod"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillingCycleSpecification"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billingCycleSpecification/{id}":{
+         "get":{
+            "operationId":"retrieveBillingCycleSpecification",
+            "summary":"Retrieves a 'BillingCycleSpecification' by Id",
+            "tags":[
+               "billingCycleSpecification"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Billing Cycle Specification"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillingCycleSpecification"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         },
+         "patch":{
+            "operationId":"updateBillingCycleSpecification",
+            "summary":"Updates partially a 'BillingCycleSpecification' by Id",
+            "tags":[
+               "billingCycleSpecification"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Billing Cycle Specification"
+               },
+               {
+                  "schema":{
+                     "$ref":"#/definitions/BillingCycleSpecification_Update"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "name":"billingCycleSpecification",
+                  "description":"The Billing Cycle Specification to be updated"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Updated",
+                  "schema":{
+                     "$ref":"#/definitions/BillingCycleSpecification"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billFormat":{
+         "get":{
+            "operationId":"listBillFormat",
+            "summary":"List or find 'BillFormat' objects",
+            "tags":[
+               "billFormat"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: A short descriptive name"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillFormat"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billFormat/{id}":{
+         "get":{
+            "operationId":"retrieveBillFormat",
+            "summary":"Retrieves a 'BillFormat' by Id",
+            "tags":[
+               "billFormat"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Bill Format"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillFormat"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billPresentationMedia":{
+         "get":{
+            "operationId":"listBillPresentationMedia",
+            "summary":"List or find 'BillPresentationMedia' objects",
+            "tags":[
+               "billPresentationMedia"
+            ],
+            "parameters":[
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"fields",
+                  "description":"Comma separated properties to display in response"
+               },
+               {
+                  "type":"string",
+                  "required":false,
+                  "in":"query",
+                  "name":"name",
+                  "description":"For filtering: A short descriptive name"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillPresentationMedia"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/billPresentationMedia/{id}":{
+         "get":{
+            "operationId":"retrieveBillPresentationMedia",
+            "summary":"Retrieves a 'BillPresentationMedia' by Id",
+            "tags":[
+               "billPresentationMedia"
+            ],
+            "parameters":[
+               {
+                  "required":true,
+                  "type":"string",
+                  "name":"id",
+                  "in":"path",
+                  "description":"Identifier of the Bill Presentation Media"
+               }
+            ],
+            "responses":{
+               "200":{
+                  "description":"Ok",
+                  "schema":{
+                     "items":{
+                        "$ref":"#/definitions/BillPresentationMedia"
+                     },
+                     "type":"array"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/hub":{
+         "post":{
+            "operationId":"registerListener",
+            "summary":"Register a listener",
+            "description":"Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+            "tags":[
+               "events subscription"
+            ],
+            "parameters":[
+               {
+                  "name":"data",
+                  "schema":{
+                     "$ref":"#/definitions/EventSubscriptionInput"
+                  },
+                  "required":true,
+                  "in":"body",
+                  "description":"Data containing the callback endpoint to deliver the information"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Subscribed",
+                  "schema":{
+                     "$ref":"#/definitions/EventSubscription"
+                  }
+               },
+               "400":{
+                  "description":"Bad Request",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      },
+      "/hub/{id}":{
+         "delete":{
+            "operationId":"unregisterListener",
+            "summary":"Unregister a listener",
+            "description":"Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.",
+            "tags":[
+               "events subscription"
+            ],
+            "parameters":[
+               {
+                  "name":"id",
+                  "type":"string",
+                  "required":true,
+                  "in":"path",
+                  "description":"The id of the registered listener"
+               }
+            ],
+            "responses":{
+               "201":{
+                  "description":"Unsubscribed"
+               },
+               "404":{
+                  "description":"Not Found",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               },
+               "500":{
+                  "description":"Internal Server Error",
+                  "schema":{
+                     "$ref":"#/definitions/Error"
+                  }
+               }
+            }
+         }
+      }
+   },
+   "definitions":{
+      "FinancialAccount":{
+         "type":"object",
+         "description":"An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. A financial (account receivable account/account payable) aggregates the amounts of one or more party accounts (billing or settlement) owned by a given party.",
+         "properties":{
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "FinancialAccount_Update":{
+         "type":"object",
+         "description":"An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. A financial (account receivable account/account payable) aggregates the amounts of one or more party accounts (billing or settlement) owned by a given party.\nSkipped properties: id,href,id,href,lastModified",
+         "properties":{
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "PaymentMethod":{
+         "type":"object",
+         "description":"Defines a specific method of payment (e.g. direct debit with all details associated)",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the payment mean"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the payment mean"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the payment mean"
+            },
+            "type":{
+               "type":"string",
+               "description":"Type of the payment mean"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Validity period of the payment mean"
+            },
+            "relatedParty":{
+               "$ref":"#/definitions/RelatedPartyRef"
+            },
+            "creditCard":{
+               "$ref":"#/definitions/CreditCard"
+            },
+            "bankAccount":{
+               "$ref":"#/definitions/BankAccount"
+            }
+         }
+      },
+      "BillingCycleSpecification":{
+         "type":"object",
+         "description":"A detailed description of when to initiate a billing cycle and the various sub steps of a billing cycle.",
+         "properties":{
+            "billingDateShift":{
+               "type":"integer",
+               "description":"An offset of a billing/settlement date. The offset is expressed as number of days with regard to the start of the billing/settlement period."
+            },
+            "billingPeriod":{
+               "type":"string",
+               "description":"A billing time period. It can be recurring, for example: week, month, quarter of year, year ."
+            },
+            "chargeDateOffset":{
+               "type":"integer",
+               "description":"An offset of a date through which charges previously received by the billing system will appear on the bill. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "creditDateOffset":{
+               "type":"integer",
+               "description":"An offset of a date through which credits previously received by the billing system will appear on the bill. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "description":{
+               "type":"string",
+               "description":"An explanation regarding this billing cycle specification"
+            },
+            "frequency":{
+               "type":"string",
+               "description":"Frequency of the billing cycle (monthly for instance)"
+            },
+            "href":{
+               "type":"string",
+               "description":"Reference of the billing cycle specification"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the billing cycle specification"
+            },
+            "mailingDateOffset":{
+               "type":"integer",
+               "description":"An offset of a customer bill mailing date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            },
+            "paymentDueDateOffset":{
+               "type":"integer",
+               "description":"An offset of a payment due date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"The period for which the billing specification cycle is valid"
+            }
+         }
+      },
+      "BillingCycleSpecification_Update":{
+         "type":"object",
+         "description":"A detailed description of when to initiate a billing cycle and the various sub steps of a billing cycle.\nSkipped properties: id,href,id,href",
+         "properties":{
+            "billingDateShift":{
+               "type":"integer",
+               "description":"An offset of a billing/settlement date. The offset is expressed as number of days with regard to the start of the billing/settlement period."
+            },
+            "billingPeriod":{
+               "type":"string",
+               "description":"A billing time period. It can be recurring, for example: week, month, quarter of year, year ."
+            },
+            "chargeDateOffset":{
+               "type":"integer",
+               "description":"An offset of a date through which charges previously received by the billing system will appear on the bill. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "creditDateOffset":{
+               "type":"integer",
+               "description":"An offset of a date through which credits previously received by the billing system will appear on the bill. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "description":{
+               "type":"string",
+               "description":"An explanation regarding this billing cycle specification"
+            },
+            "frequency":{
+               "type":"string",
+               "description":"Frequency of the billing cycle (monthly for instance)"
+            },
+            "mailingDateOffset":{
+               "type":"integer",
+               "description":"An offset of a customer bill mailing date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            },
+            "paymentDueDateOffset":{
+               "type":"integer",
+               "description":"An offset of a payment due date. The offset is expressed as number of days with regard to the start of the BillingPeriod."
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"The period for which the billing specification cycle is valid"
+            }
+         }
+      },
+      "BillFormat":{
+         "type":"object",
+         "description":"A detailed description of the way in which a bill is presented.",
+         "properties":{
+            "description":{
+               "type":"string",
+               "description":"An explanatory text for this bill format"
+            },
+            "href":{
+               "type":"string",
+               "description":"Reference of the bill format"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the bill format"
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            }
+         }
+      },
+      "BillPresentationMedia":{
+         "type":"object",
+         "description":"A mean of communicating a bill, supported by the associated bill format. For example, post mail, email, web page.",
+         "properties":{
+            "description":{
+               "type":"string",
+               "description":"An explanatory text describing this bill presentation media"
+            },
+            "href":{
+               "type":"string",
+               "description":"Reference of the bill presentation media"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the bill presentation media"
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            }
+         }
+      },
+      "PartyAccount":{
+         "type":"object",
+         "description":"Account used for billing or for settlement purposes concerning a given party (an organization or an individual).",
+         "properties":{
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "PartyAccount_Create":{
+         "type":"object",
+         "description":"Account used for billing or for settlement purposes concerning a given party (an organization or an individual).\nSkipped properties: id,href",
+         "required":[
+            "name"
+         ],
+         "properties":{
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "PartyAccount_Update":{
+         "type":"object",
+         "description":"Account used for billing or for settlement purposes concerning a given party (an organization or an individual).\nSkipped properties: id,href,id,href,accountBalance",
+         "properties":{
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "BillingAccount":{
+         "type":"object",
+         "description":"A party account used for billing purposes. It includes a description of the bill structure (frequency, presentation media, format and so on).",
+         "properties":{
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "BillingAccount_Update":{
+         "type":"object",
+         "description":"A party account used for billing purposes. It includes a description of the bill structure (frequency, presentation media, format and so on).\nSkipped properties: id,href",
+         "properties":{
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "SettlementAccount":{
+         "type":"object",
+         "description":"A party account used for settlement purposes. It includes a description of the structure used for the settlement (frequency, presentation media, format and so on).",
+         "properties":{
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "SettlementAccount_Update":{
+         "type":"object",
+         "description":"A party account used for settlement purposes. It includes a description of the structure used for the settlement (frequency, presentation media, format and so on).\nSkipped properties: id,href",
+         "properties":{
+            "paymentStatus":{
+               "type":"string",
+               "description":"The condition of the account, such as due, paid, in arrears."
+            },
+            "creditLimit":{
+               "$ref":"#/definitions/Money",
+               "description":"The maximum amount of money that may be charged on an account"
+            },
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the party account"
+            },
+            "lastModified":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Date of last modification of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "state":{
+               "type":"string",
+               "description":"Contains the lifecycle state such as: Active, Closed, Suspended and so on."
+            },
+            "type":{
+               "type":"string",
+               "description":"A categorization of an account, such as individual, joint, and so forth, whose instances share some of the same characteristics. Note: for flexibility we use a String here but an implementation may use an enumeration with a limited list of valid values."
+            },
+            "billStructure":{
+               "$ref":"#/definitions/BillStructure"
+            },
+            "paymentPlan":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/PaymentPlan"
+               }
+            },
+            "financialAccount":{
+               "$ref":"#/definitions/FinancialAccountRef"
+            },
+            "defaultPaymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            },
+            "relatedParty":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/RelatedPartyRef"
+               }
+            },
+            "taxExemption":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountTaxExemption"
+               }
+            },
+            "contact":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/Contact"
+               }
+            },
+            "accountBalance":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountBalance"
+               }
+            },
+            "accountRelationship":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/AccountRelationship"
+               }
+            }
+         }
+      },
+      "Money":{
+         "type":"object",
+         "description":"A base / value business entity used to represent money",
+         "properties":{
+            "unit":{
+               "type":"string",
+               "description":"Currency (ISO4217 norm uses 3 letters to define the currency)"
+            },
+            "value":{
+               "type":"number",
+			   "format": "float",
+               "description":"A positive floating point number"
+            }
+         }
+      },
+      "RelatedPartyRef":{
+         "type":"object",
+         "description":"RelatedParty reference. A related party defines party or party role linked to a specific entity.",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Reference of the related party, could be a party reference or a party role reference"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of a related party"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the related party"
+            },
+            "role":{
+               "type":"string",
+               "description":"Role of the related party."
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Validity period of the related party"
+            }
+         }
+      },
+      "AccountTaxExemption":{
+         "type":"object",
+         "description":"Proof of freedom from taxes imposed by a taxing jurisdiction",
+         "properties":{
+            "certificateNumber":{
+               "type":"string",
+               "description":"Identifier of a document that shows proof of exemption from taxes for the taxing jurisdiction"
+            },
+            "issuingJurisdiction":{
+               "type":"string",
+               "description":"Name of the taxing jurisdiction for which taxes are exempt"
+            },
+            "reason":{
+               "type":"string",
+               "description":"Reason of the tax exemption"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Period for which the exemption is valid"
+            }
+         }
+      },
+      "Contact":{
+         "type":"object",
+         "description":"An individual or an organization used as a contact point for a given account and accessed via some contact medium.",
+         "properties":{
+            "contactName":{
+               "type":"string",
+               "description":"A displayable name for that contact"
+            },
+            "contactType":{
+               "type":"string",
+               "description":"Type of contact (primary, secondary...)"
+            },
+            "partyRoleType":{
+               "type":"string",
+               "description":"Identifies what kind of party role type is linked to the contact (a account manager...)"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Validity period of that contact"
+            },
+            "contactMedium":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/ContactMedium"
+               }
+            },
+            "relatedParty":{
+               "$ref":"#/definitions/RelatedPartyRef"
+            }
+         }
+      },
+      "AccountBalance":{
+         "type":"object",
+         "description":"Balances linked to the account",
+         "properties":{
+            "amount":{
+               "$ref":"#/definitions/Money",
+               "description":"Balance amount"
+            },
+            "type":{
+               "type":"string",
+               "description":"Type of the balance : deposit balance, disputed balance, loyalty balance, receivable balance..."
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Balance validity period"
+            }
+         }
+      },
+      "AccountRelationship":{
+         "type":"object",
+         "description":"Significant connection between accounts. For instance an aggregating account for a list of shop branches each having its own billing account.",
+         "properties":{
+            "relationshipType":{
+               "type":"string",
+               "description":"Type of relationship"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Validity period of that relationship"
+            },
+            "account":{
+               "$ref":"#/definitions/AccountRef"
+            }
+         }
+      },
+      "TimePeriod":{
+         "type":"object",
+         "description":"A base / value business entity used to represent a period of time between two timepoints.",
+         "properties":{
+            "endDateTime":{
+               "type":"string",
+               "format":"date-time",
+               "description":"An instant of time, ending at the TimePeriod."
+            },
+            "startDateTime":{
+               "type":"string",
+               "format":"date-time",
+               "description":"An instant of time, starting at the TimePeriod"
+            }
+         }
+      },
+      "ContactMedium":{
+         "type":"object",
+         "description":"Indicates the contact medium that could be used to contact the party.",
+         "properties":{
+            "preferred":{
+               "type":"boolean",
+               "description":"If true, indicates that is the preferred contact medium"
+            },
+            "type":{
+               "type":"string",
+               "description":"Type of the contact medium, such as: email address, telephone number, postal address"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"The time period that the contact medium is valid for"
+            },
+            "characteristic":{
+               "$ref":"#/definitions/MediumCharacteristic"
+            }
+         }
+      },
+      "MediumCharacteristic":{
+         "type":"object",
+         "description":"Describes the contact medium characteristics that could be used to contact a party (an individual or an organization)",
+         "properties":{
+            "city":{
+               "type":"string",
+               "description":"The city"
+            },
+            "country":{
+               "type":"string",
+               "description":"The country"
+            },
+            "emailAddress":{
+               "type":"string",
+               "description":"Full email address in standard format"
+            },
+            "faxNumber":{
+               "type":"string",
+               "description":"The fax number of the contact"
+            },
+            "phoneNumber":{
+               "type":"string",
+               "description":"The primary phone number of the contact"
+            },
+            "postCode":{
+               "type":"string",
+               "description":"Postcode"
+            },
+            "stateOrProvince":{
+               "type":"string",
+               "description":"State or province"
+            },
+            "street1":{
+               "type":"string",
+               "description":"Describes the street"
+            },
+            "street2":{
+               "type":"string",
+               "description":"Complementary street description"
+            },
+            "type":{
+               "type":"string",
+               "description":"Type of medium (fax, mobile phone...)"
+            }
+         }
+      },
+      "AccountRef":{
+         "type":"object",
+         "description":"Account reference. A account may be a party account or a financial account.",
+         "properties":{
+            "description":{
+               "type":"string",
+               "description":"Detailed description of the account"
+            },
+            "href":{
+               "type":"string",
+               "description":"Reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            }
+         }
+      },
+      "CreditCard":{
+         "type":"object",
+         "description":"Describes the credit card information",
+         "properties":{
+            "creditCardHolder":{
+               "type":"string",
+               "description":"Name of the credit card holder"
+            },
+            "expirationDate":{
+               "type":"string",
+               "format":"date-time",
+               "description":"Expiration date of the card"
+            },
+            "number":{
+               "type":"string",
+               "description":"Card number"
+            },
+            "type":{
+               "type":"string",
+               "description":"Credit card type (Mastercard, Visa,...)"
+            }
+         }
+      },
+      "BankAccount":{
+         "type":"object",
+         "description":"Describes the information of a bank account",
+         "properties":{
+            "accountHolder":{
+               "type":"string",
+               "description":"Name of the holder of the bank account"
+            },
+            "BIC":{
+               "type":"string",
+               "description":"Identifier of the bank according to its international code"
+            },
+            "domiciliation":{
+               "type":"string",
+               "description":"Address of the bank agency which manages the bank account"
+            },
+            "IBAN":{
+               "type":"string",
+               "description":"International format to describe a bank account"
+            }
+         }
+      },
+      "BillStructure":{
+         "type":"object",
+         "description":"The structure of the bill for party accounts (billling or settlement).",
+         "properties":{
+            "presentationMedia":{
+               "type":"array",
+               "items":{
+                  "$ref":"#/definitions/BillPresentationMediaRef"
+               }
+            },
+            "format":{
+               "$ref":"#/definitions/BillFormatRef"
+            },
+            "cycleSpecification":{
+               "$ref":"#/definitions/BillingCycleSpecificationRef"
+            }
+         }
+      },
+      "PaymentPlan":{
+         "type":"object",
+         "description":"Defines a plan for payment (when a party wants to spread his payments)",
+         "properties":{
+            "numberOfPayments":{
+               "type":"integer",
+               "description":"Number of payments used to spread the global payment"
+            },
+            "paymentFrequency":{
+               "type":"string",
+               "description":"Frequency of the payments, such as monthly and bimonthly"
+            },
+            "priority":{
+               "type":"integer",
+               "description":"Priority of the payment plan"
+            },
+            "status":{
+               "type":"string",
+               "description":"Status of the payment plan (effective, ineffective)"
+            },
+            "totalAmount":{
+               "$ref":"#/definitions/Money",
+               "description":"Amount paid"
+            },
+            "type":{
+               "type":"string",
+               "description":"Type of payment plan"
+            },
+            "validFor":{
+               "$ref":"#/definitions/TimePeriod",
+               "description":"Validity period of the payment plan"
+            },
+            "paymentMethod":{
+               "$ref":"#/definitions/PaymentMethodRef"
+            }
+         }
+      },
+      "FinancialAccountRef":{
+         "type":"object",
+         "description":"AccountReceivable reference. An account of money owed by a party to another entity in exchange for goods or services that have been delivered or used. An account receivable aggregates the amounts of one or more party accounts (billing or settlement) owned by a given party.",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Unique reference of the account"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the account"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the account"
+            },
+            "accountBalance":{
+               "$ref":"#/definitions/AccountBalance"
+            }
+         }
+      },
+      "PaymentMethodRef":{
+         "type":"object",
+         "description":"PaymentMethod reference. A payment method defines a specific mean of payment (e.g direct debit).",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Reference of the payment mean"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the payment mean"
+            },
+            "name":{
+               "type":"string",
+               "description":"Name of the payment mean"
+            }
+         }
+      },
+      "BillPresentationMediaRef":{
+         "type":"object",
+         "description":"PresentationMedia reference. A mean of communicating a bill, supported by the associated bill format. For example, post mail, email, web page.",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Reference of the bill presentation media"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the bill presentation media"
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            }
+         }
+      },
+      "BillFormatRef":{
+         "type":"object",
+         "description":"BillFormat reference. A bill format is a description of the way in which a bill is presented.",
+         "properties":{
+            "href":{
+               "type":"string",
+               "description":"Reference of the bill format"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the bill format"
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            }
+         }
+      },
+      "BillingCycleSpecificationRef":{
+         "type":"object",
+         "description":"BillingCycleSpecification reference. A description of when to initiate a billing cycle and the various sub steps of a billing cycle.",
+         "properties":{
+            "dateShift":{
+               "type":"integer",
+               "description":"An offset of a billing/settlement date. The offset is expressed as number of days with regard to the start of the billing/settlement period."
+            },
+            "frequency":{
+               "type":"string",
+               "description":"Frequency of the billing cycle (monthly for instance)"
+            },
+            "href":{
+               "type":"string",
+               "description":"Reference of the billing cycle specification"
+            },
+            "id":{
+               "type":"string",
+               "description":"Unique identifier of the billing cycle specification"
+            },
+            "name":{
+               "type":"string",
+               "description":"A short descriptive name"
+            }
+         }
+      },
+      "EventSubscription":{
+         "required":[
+            "id",
+            "callback"
+         ],
+         "properties":{
+            "id":{
+               "type":"string",
+               "description":"Id of the listener"
+            },
+            "callback":{
+               "type":"string",
+               "description":"The callback being registered."
+            },
+            "query":{
+               "type":"string",
+               "description":"additional data to be passed"
+            }
+         }
+      },
+      "EventSubscriptionInput":{
+         "required":[
+            "callback"
+         ],
+         "properties":{
+            "callback":{
+               "type":"string",
+               "description":"The callback being registered."
+            },
+            "query":{
+               "type":"string",
+               "description":"additional data to be passed"
+            }
+         }
+      },
+      "Error":{
+         "required":[
+            "code",
+            "message"
+         ],
+         "properties":{
+            "code":{
+               "type":"integer",
+               "description":"An integer coding the error type. This is given to caller so he can translate them if required."
+            },
+            "message":{
+               "type":"string",
+               "description":"A short localized string that describes the error."
+            },
+            "description":{
+               "type":"string",
+               "description":"(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+            },
+            "infoURL":{
+               "type":"string",
+               "description":"(optional) A URL to online documentation that provides more information about the error."
+            }
+         }
+      }
+   }
+}

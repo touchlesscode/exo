@@ -1,0 +1,3299 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Resource Catalog Management", 
+        "description": "This is Swagger UI environment generated for the TMF Resource Catalog Management specification", 
+        "version": "3.1"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/resourceCatalogManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/resourceCatalog": {
+            "get": {
+                "operationId": "listResourceCatalog", 
+                "summary": "List or find 'ResourceCatalog' objects", 
+                "tags": [
+                    "resourceCatalog"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the catalog"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Indicates the (class) type of catalog. For resource catalogs, this will be 'ResourceCatalog'."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: Indicates<b> </b>the base (class) type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Catalog version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.@type", 
+                        "description": "For filtering: the class type of the category"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCatalog"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceCatalog/{id}": {
+            "get": {
+                "operationId": "retrieveResourceCatalog", 
+                "summary": "Retrieves a 'ResourceCatalog' by Id", 
+                "tags": [
+                    "resourceCatalog"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Resource Catalog"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCatalog"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceCategory": {
+            "get": {
+                "operationId": "listResourceCategory", 
+                "summary": "List or find 'ResourceCategory' objects", 
+                "tags": [
+                    "resourceCategory"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: The (class) type of this category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemalLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: Immediate base class type of this category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status"
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "parentId", 
+                        "description": "For filtering: Unique identifier of the parent category"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isRoot", 
+                        "description": "For filtering: If true, this Boolean indicates that the category is a root of categories"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.@type", 
+                        "description": "For filtering: the class type of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.version", 
+                        "description": "For filtering: ResourceCandidate version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.name", 
+                        "description": "For filtering: Name given to the ResourceCandidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceCandidate.@type", 
+                        "description": "For filtering: The (class) type of the ResourceCandidate"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCategory"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceCategory/{id}": {
+            "get": {
+                "operationId": "retrieveResourceCategory", 
+                "summary": "Retrieves a 'ResourceCategory' by Id", 
+                "tags": [
+                    "resourceCategory"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Resource Category"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCategory"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceCandidate": {
+            "get": {
+                "operationId": "listResourceCandidate", 
+                "summary": "List or find 'ResourceCandidate' objects", 
+                "tags": [
+                    "resourceCandidate"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name given to this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: The (immediate) base class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: the version of resource candidate"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status of the resource candidate."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.version", 
+                        "description": "For filtering: Category version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.name", 
+                        "description": "For filtering: Name of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category.@type", 
+                        "description": "For filtering: the class type of the category"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.version", 
+                        "description": "For filtering: ResourceSpecification version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.name", 
+                        "description": "For filtering: Name given to the ResourceSpecification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecification.@type", 
+                        "description": "For filtering: The (class) type of the ResourceSpecification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCandidate"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceCandidate/{id}": {
+            "get": {
+                "operationId": "retrieveResourceCandidate", 
+                "summary": "Retrieves a 'ResourceCandidate' by Id", 
+                "tags": [
+                    "resourceCandidate"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Resource Candidate"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceCandidate"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceSpecification": {
+            "get": {
+                "operationId": "listResourceSpecification", 
+                "summary": "List or find 'ResourceSpecification' objects", 
+                "tags": [
+                    "resourceSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name given to this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: The (immediate) base class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Resource Specification version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status of the resource specification"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category", 
+                        "description": "For filtering: Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@type", 
+                        "description": "For filtering: Class type of the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.version", 
+                        "description": "For filtering: feature version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.name", 
+                        "description": "For filtering: Unique name given to the feature. it is Required if the feature is not introduced as a separate REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.@type", 
+                        "description": "For filtering: The optional (class) type of the feature"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isBundle", 
+                        "description": "For filtering: A flag indicating if the feature is bundle (true) or not (false)."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isEnabled", 
+                        "description": "For filtering: A flag indicating if the feature is enabled (true) or not (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.name", 
+                        "description": "For filtering: name given to the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@type", 
+                        "description": "For filtering: Attachment class  type"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.uri", 
+                        "description": "For filtering: Uniform Resource Identifier (URI) of the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: Attachment mime type such as extension file for video, picture and document"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.name", 
+                        "description": "For filtering: A word, term, or phrase by which this characteristic specification is known and distinguished from other characteristic specifications."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.configurable", 
+                        "description": "For filtering: If true, the Boolean indicates that the ResourceSpecCharacteristic is configurable"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@type", 
+                        "description": "For filtering: (Class) type of the ResourceSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this characteristic specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@valueSchemaLocation", 
+                        "description": "For filtering: This (optional) field provides a link to the schema describing the value type"
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.minCardinality", 
+                        "description": "For filtering: The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.maxCardinality", 
+                        "description": "For filtering: The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.isUnique", 
+                        "description": "For filtering: An indicator that specifies if a value is unique for the specification. Possible values are; \"unique while value is in effect\" and \"unique whether value is in effect or not\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.regex", 
+                        "description": "For filtering: A rule or principle represented in regular expression used to derive the value of a characteristic value."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.extensible", 
+                        "description": "For filtering: An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for a resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.type", 
+                        "description": "For filtering: Type of relationship such as migration, substitution, dependency, exclusivity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.role", 
+                        "description": "For filtering: The association role for this resource specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.name", 
+                        "description": "For filtering: The name given to the target resource specification instance"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/resourceSpecification/{id}": {
+            "get": {
+                "operationId": "retrieveResourceSpecification", 
+                "summary": "Retrieves a 'ResourceSpecification' by Id", 
+                "tags": [
+                    "resourceSpecification"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Resource Specification"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ResourceSpecification"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/logicalResourceSpec": {
+            "get": {
+                "operationId": "listLogicalResourceSpec", 
+                "summary": "List or find 'LogicalResourceSpec' objects", 
+                "tags": [
+                    "logicalResourceSpec"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name given to this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: The (immediate) base class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Resource Specification version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status of the resource specification"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category", 
+                        "description": "For filtering: Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@type", 
+                        "description": "For filtering: Class type of the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.version", 
+                        "description": "For filtering: feature version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.name", 
+                        "description": "For filtering: Unique name given to the feature. it is Required if the feature is not introduced as a separate REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.@type", 
+                        "description": "For filtering: The optional (class) type of the feature"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isBundle", 
+                        "description": "For filtering: A flag indicating if the feature is bundle (true) or not (false)."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isEnabled", 
+                        "description": "For filtering: A flag indicating if the feature is enabled (true) or not (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.name", 
+                        "description": "For filtering: name given to the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@type", 
+                        "description": "For filtering: Attachment class  type"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.uri", 
+                        "description": "For filtering: Uniform Resource Identifier (URI) of the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: Attachment mime type such as extension file for video, picture and document"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.name", 
+                        "description": "For filtering: A word, term, or phrase by which this characteristic specification is known and distinguished from other characteristic specifications."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.configurable", 
+                        "description": "For filtering: If true, the Boolean indicates that the ResourceSpecCharacteristic is configurable"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@type", 
+                        "description": "For filtering: (Class) type of the ResourceSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this characteristic specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@valueSchemaLocation", 
+                        "description": "For filtering: This (optional) field provides a link to the schema describing the value type"
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.minCardinality", 
+                        "description": "For filtering: The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.maxCardinality", 
+                        "description": "For filtering: The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.isUnique", 
+                        "description": "For filtering: An indicator that specifies if a value is unique for the specification. Possible values are; \"unique while value is in effect\" and \"unique whether value is in effect or not\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.regex", 
+                        "description": "For filtering: A rule or principle represented in regular expression used to derive the value of a characteristic value."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.extensible", 
+                        "description": "For filtering: An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for a resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.type", 
+                        "description": "For filtering: Type of relationship such as migration, substitution, dependency, exclusivity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.role", 
+                        "description": "For filtering: The association role for this resource specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.name", 
+                        "description": "For filtering: The name given to the target resource specification instance"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/LogicalResourceSpec"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/logicalResourceSpec/{id}": {
+            "get": {
+                "operationId": "retrieveLogicalResourceSpec", 
+                "summary": "Retrieves a 'LogicalResourceSpec' by Id", 
+                "tags": [
+                    "logicalResourceSpec"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Logical Resource Spec"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/LogicalResourceSpec"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/physicalResourceSpec": {
+            "get": {
+                "operationId": "listPhysicalResourceSpec", 
+                "summary": "List or find 'PhysicalResourceSpec' objects", 
+                "tags": [
+                    "physicalResourceSpec"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "name", 
+                        "description": "For filtering: Name given to this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: Class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: The (immediate) base class type of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "version", 
+                        "description": "For filtering: Resource Specification version"
+                    }, 
+                    {
+                        "name": "validFor.startDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, starting at the TimePeriod"
+                    }, 
+                    {
+                        "name": "validFor.endDateTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: An instant of time, ending at the TimePeriod."
+                    }, 
+                    {
+                        "name": "lastUpdate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date and time of the last update of this REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "lifecycleStatus", 
+                        "description": "For filtering: Used to indicate the current lifecycle status of the resource specification"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "isBundle", 
+                        "description": "For filtering: A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "category", 
+                        "description": "For filtering: Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "model", 
+                        "description": "For filtering: This is a string that represents a manufacturer-allocated number used to identify the general type and/or category of the hardware item. This, in combination with the Part and the Vendor, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is an optional attribute."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "part", 
+                        "description": "For filtering: This is a string that defines a manufacturer-allocated part number assigned by the organization that manufactures the hardware item. This, in combination with the Model and the Vendor, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "sku", 
+                        "description": "For filtering: This is a string that defines the manufacturer-allocated Stock Keeping Unit (SKU) number of the hardware item. This is an optional attribute."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "vendor", 
+                        "description": "For filtering: This is a string that defines the name of the manufacturer. This, in combination with the Model and the Part, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute for a physical resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.name", 
+                        "description": "For filtering: A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "place.role", 
+                        "description": "For filtering: Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@type", 
+                        "description": "For filtering: Class type of the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "targetResourceSchema.@schemaLocation", 
+                        "description": "For filtering: This field provides a link to the schema describing the target resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.version", 
+                        "description": "For filtering: feature version"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.name", 
+                        "description": "For filtering: Unique name given to the feature. it is Required if the feature is not introduced as a separate REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.@type", 
+                        "description": "For filtering: The optional (class) type of the feature"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isBundle", 
+                        "description": "For filtering: A flag indicating if the feature is bundle (true) or not (false)."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "feature.isEnabled", 
+                        "description": "For filtering: A flag indicating if the feature is enabled (true) or not (false)."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.name", 
+                        "description": "For filtering: name given to the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.@type", 
+                        "description": "For filtering: Attachment class  type"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.uri", 
+                        "description": "For filtering: Uniform Resource Identifier (URI) of the attachment"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: Attachment mime type such as extension file for video, picture and document"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.role", 
+                        "description": "For filtering: Role of the related party."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "relatedParty.name", 
+                        "description": "For filtering: Name of the related party"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.name", 
+                        "description": "For filtering: A word, term, or phrase by which this characteristic specification is known and distinguished from other characteristic specifications."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.valueType", 
+                        "description": "For filtering: A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.configurable", 
+                        "description": "For filtering: If true, the Boolean indicates that the ResourceSpecCharacteristic is configurable"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@type", 
+                        "description": "For filtering: (Class) type of the ResourceSpecCharacteristic"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@schemaLocation", 
+                        "description": "For filtering: A link to the schema describing this characteristic specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.@valueSchemaLocation", 
+                        "description": "For filtering: This (optional) field provides a link to the schema describing the value type"
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.minCardinality", 
+                        "description": "For filtering: The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.maxCardinality", 
+                        "description": "For filtering: The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.isUnique", 
+                        "description": "For filtering: An indicator that specifies if a value is unique for the specification. Possible values are; \"unique while value is in effect\" and \"unique whether value is in effect or not\""
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.regex", 
+                        "description": "For filtering: A rule or principle represented in regular expression used to derive the value of a characteristic value."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecCharacteristic.extensible", 
+                        "description": "For filtering: An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for a resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.type", 
+                        "description": "For filtering: Type of relationship such as migration, substitution, dependency, exclusivity"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.role", 
+                        "description": "For filtering: The association role for this resource specification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "resourceSpecRelationship.name", 
+                        "description": "For filtering: The name given to the target resource specification instance"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/PhysicalResourceSpec"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/physicalResourceSpec/{id}": {
+            "get": {
+                "operationId": "retrievePhysicalResourceSpec", 
+                "summary": "Retrieves a 'PhysicalResourceSpec' by Id", 
+                "tags": [
+                    "physicalResourceSpec"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Physical Resource Spec"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/PhysicalResourceSpec"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/importJob": {
+            "get": {
+                "operationId": "listImportJob", 
+                "summary": "List or find 'ImportJob' objects", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "contentType", 
+                        "description": "For filtering: Indicates the format of the imported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "path", 
+                        "description": "For filtering: URL of the root resource where the content of the file specified by the import job must be applied"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "status", 
+                        "description": "For filtering: Status of the import job (not started, running, succeeded, failed)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "url", 
+                        "description": "For filtering: URL of the file containing the data to be imported"
+                    }, 
+                    {
+                        "name": "completionDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was completed"
+                    }, 
+                    {
+                        "name": "creationDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was created"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "errorLog", 
+                        "description": "For filtering: Reason for failure if status is failed"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ImportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createImportJob", 
+                "summary": "Creates a 'ImportJob'", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ImportJob_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "importJob", 
+                        "description": "The Import Job to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ImportJob"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/importJob/{id}": {
+            "get": {
+                "operationId": "retrieveImportJob", 
+                "summary": "Retrieves a 'ImportJob' by Id", 
+                "tags": [
+                    "importJob"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Import Job"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ImportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/exportJob": {
+            "get": {
+                "operationId": "listExportJob", 
+                "summary": "List or find 'ExportJob' objects", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "query", 
+                        "description": "For filtering: Used to scope the exported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "path", 
+                        "description": "For filtering: URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "contentType", 
+                        "description": "For filtering: The format of the exported data"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "status", 
+                        "description": "For filtering: Status of the export job (not started, running, succeeded, failed)"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "url", 
+                        "description": "For filtering: URL of the file containing the data to be exported"
+                    }, 
+                    {
+                        "name": "completionDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Data at which the job was completed"
+                    }, 
+                    {
+                        "name": "creationDate", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: Date at which the job was created"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "errorLog", 
+                        "description": "For filtering: Reason for failure"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ExportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createExportJob", 
+                "summary": "Creates a 'ExportJob'", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ExportJob_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "exportJob", 
+                        "description": "The Export Job to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ExportJob"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/exportJob/{id}": {
+            "get": {
+                "operationId": "retrieveExportJob", 
+                "summary": "Retrieves a 'ExportJob' by Id", 
+                "tags": [
+                    "exportJob"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Export Job"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ExportJob"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "ResourceCatalog": {
+            "type": "object", 
+            "description": "The root entity for resource catalog management.\nA resource catalog is a group of resource specifications made available through resource candidates that an organization provides to the consumers (internal consumers like its employees or B2B customers or B2C customers).", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the Catalog"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the catalog"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the catalog"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this catalog"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Indicates the (class) type of catalog. For resource catalogs, this will be 'ResourceCatalog'."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "Indicates<b> </b>the base (class) type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Catalog version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the catalog is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }, 
+                "category": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CategoryRef"
+                    }
+                }
+            }
+        }, 
+        "ResourceCategory": {
+            "type": "object", 
+            "description": "The (resource) category resource is used to group resource candidates in logical containers. Categories can contain other categories.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the category"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to the category"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the category"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of the category"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The (class) type of this category"
+                }, 
+                "@schemalLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "Immediate base class type of this category"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Category version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the category is valid"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update"
+                }, 
+                "parentId": {
+                    "type": "string", 
+                    "description": "Unique identifier of the parent category"
+                }, 
+                "isRoot": {
+                    "type": "boolean", 
+                    "description": "If true, this Boolean indicates that the category is a root of categories"
+                }, 
+                "category": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CategoryRef"
+                    }
+                }, 
+                "resourceCandidate": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceCandidateRef"
+                    }
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }
+            }
+        }, 
+        "ResourceCandidate": {
+            "type": "object", 
+            "description": "ResourceCandidate is an entity that makes a resource specification available to a catalog. A ResourceCandidate and its associated resource specification may be published - made visible - in any number of resource catalogs, or in none.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of this REST resource"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to this REST resource"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to this REST resource"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of this REST resource"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The (immediate) base class type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "the version of resource candidate"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which this REST resource is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update of this REST resource"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status of the resource candidate."
+                }, 
+                "category": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CategoryRef"
+                    }
+                }, 
+                "resourceSpecification": {
+                    "$ref": "#/definitions/ResourceSpecificationRef"
+                }
+            }
+        }, 
+        "ResourceSpecification": {
+            "type": "object", 
+            "description": "Resources are physical or non-physical components (or some combination of these) within an enterprise's infrastructure or inventory. They are typically consumed or used by services (for example a physical port assigned to a service) or contribute to the realization of a Product (for example, a SIM card). They can be drawn from the Application, Computing and Network domains, and include, for example, Network Elements, software, IT systems, content and information, and technology components.\nA ResourceSpecification is an abstract base class for representing a generic means for implementing a particular type of Resource. In essence, a ResourceSpecification defines the common attributes and relationships of a set of related Resources, while Resource defines a specific instance that is based on a particular ResourceSpecification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of this REST resource"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to this REST resource"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to this REST resource"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of this REST resource"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The (immediate) base class type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Resource Specification version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which this REST resource is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update of this REST resource"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status of the resource specification"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                }, 
+                "category": {
+                    "type": "string", 
+                    "description": "Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                }, 
+                "targetResourceSchema": {
+                    "$ref": "#/definitions/TargetResourceSchemaRef"
+                }, 
+                "feature": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }, 
+                "resourceSpecCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecCharacteristic"
+                    }
+                }, 
+                "resourceSpecRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecRelationship"
+                    }
+                }
+            }
+        }, 
+        "PhysicalResourceSpec": {
+            "type": "object", 
+            "description": "This is a concrete class that is used to define the invariant characteristics and behavior (attributes, methods, constraints, and relationships) of a PhysicalResource.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of this REST resource"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to this REST resource"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to this REST resource"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of this REST resource"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The (immediate) base class type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Resource Specification version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which this REST resource is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update of this REST resource"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status of the resource specification"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                }, 
+                "category": {
+                    "type": "string", 
+                    "description": "Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                }, 
+                "model": {
+                    "type": "string", 
+                    "description": "This is a string that represents a manufacturer-allocated number used to identify the general type and/or category of the hardware item. This, in combination with the Part and the Vendor, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is an optional attribute."
+                }, 
+                "part": {
+                    "type": "string", 
+                    "description": "This is a string that defines a manufacturer-allocated part number assigned by the organization that manufactures the hardware item. This, in combination with the Model and the Vendor, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute."
+                }, 
+                "sku": {
+                    "type": "string", 
+                    "description": "This is a string that defines the manufacturer-allocated Stock Keeping Unit (SKU) number of the hardware item. This is an optional attribute."
+                }, 
+                "vendor": {
+                    "type": "string", 
+                    "description": "This is a string that defines the name of the manufacturer. This, in combination with the Model and the Part, identify different types of hardware items. The SerialNumber can then be used to differentiate between different instances of the same type of hardware item. This is a REQUIRED attribute for a physical resource."
+                }, 
+                "place": {
+                    "$ref": "#/definitions/PlaceRef"
+                }, 
+                "targetResourceSchema": {
+                    "$ref": "#/definitions/TargetResourceSchemaRef"
+                }, 
+                "feature": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }, 
+                "resourceSpecCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecCharacteristic"
+                    }
+                }, 
+                "resourceSpecRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecRelationship"
+                    }
+                }
+            }
+        }, 
+        "LogicalResourceSpec": {
+            "type": "object", 
+            "description": "This is a base class that is used to define the invariant characteristics and behavior (attributes, methods, constraints, and relationships) of a LogicalResource.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of this REST resource"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to this REST resource"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name given to this REST resource"
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description of this REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of this REST resource"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing this REST resource"
+                }, 
+                "@baseType": {
+                    "type": "string", 
+                    "description": "The (immediate) base class type of this REST resource"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Resource Specification version"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which this REST resource is valid"
+                }, 
+                "lastUpdate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date and time of the last update of this REST resource"
+                }, 
+                "lifecycleStatus": {
+                    "type": "string", 
+                    "description": "Used to indicate the current lifecycle status of the resource specification"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "A flag indicates that if this resource specification is a bundled specification (true) or single (false)."
+                }, 
+                "category": {
+                    "type": "string", 
+                    "description": "Category of the target resource like NetworkConnectivity, PhysicalLinks, Generic, L2Network and so on."
+                }, 
+                "targetResourceSchema": {
+                    "$ref": "#/definitions/TargetResourceSchemaRef"
+                }, 
+                "feature": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Feature"
+                    }
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }, 
+                "relatedParty": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/RelatedPartyRef"
+                    }
+                }, 
+                "resourceSpecCharacteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecCharacteristic"
+                    }
+                }, 
+                "resourceSpecRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecRelationship"
+                    }
+                }
+            }
+        }, 
+        "ImportJob": {
+            "type": "object", 
+            "description": "Represents a task used to import resources from a file", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of the import job"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the import job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "Indicates the format of the imported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource where the content of the file specified by the import job must be applied"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the import job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be imported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure if status is failed"
+                }
+            }
+        }, 
+        "ImportJob_Create": {
+            "type": "object", 
+            "description": "Represents a task used to import resources from a file\nSkipped properties: id,href", 
+            "required": [
+                "url"
+            ], 
+            "properties": {
+                "contentType": {
+                    "type": "string", 
+                    "description": "Indicates the format of the imported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource where the content of the file specified by the import job must be applied"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the import job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be imported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure if status is failed"
+                }
+            }
+        }, 
+        "ExportJob": {
+            "type": "object", 
+            "description": "Represents a task used to export resources to a file", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Identifier of the export job"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the export job"
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "Used to scope the exported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "The format of the exported data"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the export job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be exported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Data at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure"
+                }
+            }
+        }, 
+        "ExportJob_Create": {
+            "type": "object", 
+            "description": "Represents a task used to export resources to a file\nSkipped properties: id,href", 
+            "required": [
+                "url"
+            ], 
+            "properties": {
+                "query": {
+                    "type": "string", 
+                    "description": "Used to scope the exported data"
+                }, 
+                "path": {
+                    "type": "string", 
+                    "description": "URL of the root resource acting as the source for streaming content to the file specified by the export job"
+                }, 
+                "contentType": {
+                    "type": "string", 
+                    "description": "The format of the exported data"
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of the export job (not started, running, succeeded, failed)"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "URL of the file containing the data to be exported"
+                }, 
+                "completionDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Data at which the job was completed"
+                }, 
+                "creationDate": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "Date at which the job was created"
+                }, 
+                "errorLog": {
+                    "type": "string", 
+                    "description": "Reason for failure"
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }, 
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }
+            }
+        }, 
+        "RelatedPartyRef": {
+            "type": "object", 
+            "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of a related party"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the related party, could be a party reference or a party role reference"
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "Role of the related party."
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the related party"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "Validity period of the related party"
+                }
+            }
+        }, 
+        "CategoryRef": {
+            "type": "object", 
+            "description": "Category reference. The category resource is used to group product offerings, service and resource candidates in logical containers. Categories can contain other categories and/or product offerings, resource or service candidates.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique reference of the category"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the category"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Category version"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the category"
+                }
+            }
+        }, 
+        "ResourceCandidateRef": {
+            "type": "object", 
+            "description": "ResourceCandidate reference: A resource candidate is an entity that makes a ResourceSpecification available to a catalog.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the resource candidate"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the resource candidate"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Version of the resource candidate"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the resource candidate"
+                }
+            }
+        }, 
+        "ResourceSpecificationRef": {
+            "type": "object", 
+            "description": "Resource Specification reference: The ResourceSpecification is required to realize a ProductSpecification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the resource specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the resource specification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the requiredResourceSpecification"
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "Resource specification version"
+                }
+            }
+        }, 
+        "TargetResourceSchemaRef": {
+            "type": "object", 
+            "description": "The reference object to the schema and type of target resource which is described by resource specification", 
+            "properties": {
+                "@type": {
+                    "type": "string", 
+                    "description": "Class type of the target resource"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This field provides a link to the schema describing the target resource"
+                }
+            }
+        }, 
+        "Feature": {
+            "type": "object", 
+            "description": "applicable feature(s) for this resource specification.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "reference id to the feature. It is optional if the feature is not defined as a stand-alone object."
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to the target feature. It is optional if the feature is not defined as a separate REST resource."
+                }, 
+                "version": {
+                    "type": "string", 
+                    "description": "feature version"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Unique name given to the feature. it is Required if the feature is not introduced as a separate REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The optional (class) type of the feature"
+                }, 
+                "isBundle": {
+                    "type": "boolean", 
+                    "description": "A flag indicating if the feature is bundle (true) or not (false)."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which this relationship is valid"
+                }, 
+                "isEnabled": {
+                    "type": "boolean", 
+                    "description": "A flag indicating if the feature is enabled (true) or not (false)."
+                }
+            }
+        }, 
+        "Attachment": {
+            "type": "object", 
+            "description": "Complements the description of an element (for instance a product) through video, pictures...", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative text describing the content of the attachment"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the attachment"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the attachment"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Attachment type such as video, picture"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "Uniform Resource Locator, is a web page address (a subset of URI)"
+                }
+            }
+        }, 
+        "ResourceSpecCharacteristic": {
+            "type": "object", 
+            "description": "This class defines the characteristic features of a resource specification. Every ResourceSpecification has a variety of important attributes, methods, constraints, and\nrelationships, which distinguish a resource specification from other resource specifications.", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "A word, term, or phrase by which this characteristic specification is known and distinguished from other characteristic specifications."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative that explains the CharacteristicSpecification."
+                }, 
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the characteristic can take on, such as numeric, text and so forth"
+                }, 
+                "configurable": {
+                    "type": "boolean", 
+                    "description": "If true, the Boolean indicates that the ResourceSpecCharacteristic is configurable"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period of time for which a characteristic is applicable."
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "(Class) type of the ResourceSpecCharacteristic"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "A link to the schema describing this characteristic specification"
+                }, 
+                "@valueSchemaLocation": {
+                    "type": "string", 
+                    "description": "This (optional) field provides a link to the schema describing the value type"
+                }, 
+                "minCardinality": {
+                    "type": "integer", 
+                    "description": "The minimum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where zero is the value for the minCardinality."
+                }, 
+                "maxCardinality": {
+                    "type": "integer", 
+                    "description": "The maximum number of instances a CharacteristicValue can take on. For example, zero to five phone numbers in a group calling plan, where five is the value for the maxCardinality."
+                }, 
+                "isUnique": {
+                    "type": "boolean", 
+                    "description": "An indicator that specifies if a value is unique for the specification. Possible values are; \"unique while value is in effect\" and \"unique whether value is in effect or not\""
+                }, 
+                "regex": {
+                    "type": "string", 
+                    "description": "A rule or principle represented in regular expression used to derive the value of a characteristic value."
+                }, 
+                "extensible": {
+                    "type": "boolean", 
+                    "description": "An indicator that specifies that the values for the characteristic can be extended by adding new values when instantiating a characteristic for a resource."
+                }, 
+                "resourceSpecCharRelationship": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecCharRelationship"
+                    }
+                }, 
+                "resourceSpecCharacteristicValue": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/ResourceSpecCharacteristicValue"
+                    }
+                }
+            }
+        }, 
+        "ResourceSpecRelationship": {
+            "type": "object", 
+            "description": "A migration, substitution, dependency or exclusivity relationship between/among resource specifications.", 
+            "properties": {
+                "type": {
+                    "type": "string", 
+                    "description": "Type of relationship such as migration, substitution, dependency, exclusivity"
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "The association role for this resource specification"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of target ResourceSpecification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the target ResourceSpecification"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "The name given to the target resource specification instance"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the ResourceSpecRelationship is valid"
+                }
+            }
+        }, 
+        "ResourceSpecCharRelationship": {
+            "type": "object", 
+            "description": "An aggregation, migration, substitution, dependency or exclusivity relationship between/among Specification Characteristics.", 
+            "properties": {
+                "type": {
+                    "type": "string", 
+                    "description": "Type of relationship such as aggregation, migration, substitution, dependency, exclusivity"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the target characteristic"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the target specification"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hyperlink reference to the target specification"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "class type of target specification"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period for which the object is valid"
+                }
+            }
+        }, 
+        "ResourceSpecCharacteristicValue": {
+            "type": "object", 
+            "description": "A number or text that can be assigned to a ResourceSpecCharacteristic.", 
+            "properties": {
+                "valueType": {
+                    "type": "string", 
+                    "description": "A kind of value that the characteristic value can take on, such as numeric, text and so forth"
+                }, 
+                "isDefault": {
+                    "type": "boolean", 
+                    "description": "If true, the Boolean Indicates if the value is the default value for a characteristic"
+                }, 
+                "value": {
+                    "$ref": "#/definitions/ResourceSpecCharacteristic", 
+                    "description": "The value that the characteristic can take on. If the value is a complex type, the definition of the type should be found by the link as defined in @schemaLocation"
+                }, 
+                "unitOfMeasure": {
+                    "type": "string", 
+                    "description": "A length, surface, volume, dry measure, liquid measure, money, weight, time, and the like. In general, a determinate quantity or magnitude of the kind designated, taken as a standard of comparison for others of the same kind, in assigning to them numerical values, as 1 foot, 1 yard, 1 mile, 1 square foot."
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "The period of time for which a value is applicable."
+                }, 
+                "valueFrom": {
+                    "type": "integer", 
+                    "description": "The low range value that a characteristic can take on"
+                }, 
+                "valueTo": {
+                    "type": "integer", 
+                    "description": "The upper range value that a characteristic can take on"
+                }, 
+                "rangeInterval": {
+                    "type": "string", 
+                    "description": "An indicator that specifies the inclusion or exclusion of the valueFrom and valueTo attributes. If applicable, possible values are \"open\", \"closed\", \"closedBottom\" and \"closedTop\"."
+                }, 
+                "regex": {
+                    "type": "string", 
+                    "description": "A regular expression constraint for given value"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "The class type of a complex value type"
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "This (optional) field provides a link to the schema describing the value type"
+                }
+            }
+        }, 
+        "PlaceRef": {
+            "type": "object", 
+            "description": "Place reference. Place defines the places where the products are sold or delivered.", 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the place"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Unique reference of the place"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\""
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "Role of the place (for instance: 'home delivery', 'shop retrieval')"
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

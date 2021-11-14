@@ -1,0 +1,1999 @@
+{
+	"id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+	"name": "TMF Product Catalog API",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "07586f44-693d-04d2-9b30-cff3f71bc8cf",
+			"name": "catalog api",
+			"description": "",
+			"write": true,
+			"order": [
+				"26edbf15-e3bb-30eb-85a1-7ea320cd48ed",
+				"08babb54-787e-6dad-8f7c-ad746751ba86",
+				"e6000750-43a7-bdc5-7b42-36913a371ca5",
+				"2cd04c5e-90b8-9412-b38c-96e45f5d9179",
+				"8e925ca8-e769-3e9b-8844-3671700b35b4"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		},
+		{
+			"id": "60dba6c8-7495-03e8-3dc3-dcdd65f37d2d",
+			"name": "category api",
+			"description": "",
+			"write": true,
+			"order": [
+				"3362028c-6e4b-e6ed-262d-f4def5e44355",
+				"7ea9e26a-6864-7142-d314-49c06a92cb06",
+				"fde5ee40-2559-a3ca-a712-e2cb23307d05",
+				"7eac8edc-ad61-2cfb-258d-bcf68008676c",
+				"3a0159fe-2f19-2b80-bdf5-a93d9a785e1f"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		},
+		{
+			"id": "1c0994ff-c748-79ed-68a9-5029c469312b",
+			"name": "event subscriber test api",
+			"description": "",
+			"write": true,
+			"order": [
+				"3cefc583-c10d-b7ec-c484-bb51d8de16ec",
+				"9d12700a-0b82-9caf-305c-1aa311588b24",
+				"a63d427d-ed72-4546-2967-07515632b77f"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		},
+		{
+			"id": "188367d1-c88c-90b7-6fce-8654cedaa2a0",
+			"name": "hub api",
+			"description": "",
+			"write": true,
+			"order": [
+				"4e522c34-4be4-0021-290f-be7b8625f64d",
+				"07fde079-8c30-9a61-023f-5b8b58581eff",
+				"b5541ff3-5e4d-9be0-5431-bdf05449619f",
+				"838228b7-acd0-2c93-88b5-48098f7a163d"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		},
+		{
+			"id": "cd3a193b-31d0-4e51-da82-8567b85f5785",
+			"name": "productOffering api",
+			"description": "",
+			"write": true,
+			"order": [
+				"2bdfebe6-4ce5-e94c-1bcf-cd2131d49987",
+				"f6885caf-f105-07a5-a935-34e026cdc8a2",
+				"8c482e22-4534-0109-fae8-3ff89197ea7b",
+				"c4ce0e2f-2857-2349-2a77-d2d76e10e4e1",
+				"a69c5aa7-cb98-2440-4b83-4e430790b568"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		},
+		{
+			"id": "08c5ce97-114b-2910-09a2-7ae8425626c4",
+			"name": "productSpecification api",
+			"description": "",
+			"write": true,
+			"order": [
+				"0c5b7221-1394-00fe-e687-f84757edda24",
+				"db742d97-1d42-aae7-a14e-d288d2d0af4b",
+				"ff709a91-5694-d61e-4cb5-aeaeb7dee572",
+				"6211de10-e5da-9cc3-ed06-a7b4888d68b9",
+				"578c10d0-3176-8954-07b3-66b2ce9afe6c"
+			],
+			"collection_name": "TMF Product Catalog API",
+			"collection_owner": 0,
+			"collection_id": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"owner": 0
+		}
+	],
+	"timestamp": 1430346783940,
+	"synced": false,
+	"owner": 0,
+	"sharedWithTeam": false,
+	"subscribed": false,
+	"remoteLink": "",
+	"public": false,
+	"write": true,
+	"requests": [
+		{
+			"id": "07fde079-8c30-9a61-023f-5b8b58581eff",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementApi}}/hub",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430351375759,
+			"name": "/hub",
+			"description": "select all hubs",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "08babb54-787e-6dad-8f7c-ad746751ba86",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/catalog/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430412271795,
+			"name": "/catalog/:id",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 73,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:04:54 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"CATL-002\",\"version\":\"1.5\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-002:(1.5)\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:04:36.849+0000\",\"lifecycleStatus\":\"In Study\",\"validFor\":{\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Service Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "84cd336e-23b5-c8ec-9f60-3b65b0b53824",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-002",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "0c5b7221-1394-00fe-e687-f84757edda24",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productSpecification",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430344281369,
+			"name": "/productSpecification",
+			"description": "Auto generated ID.",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 227,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:00:55 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"2\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/2:(2.0)\",\"name\":\"iPhone 42\",\"description\":\"Siri works on this iPhone\",\"lastUpdate\":\"2014-12-30T17:00:55.588+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"productNumber\":\"I42-340-DX\",\"isBundle\":true,\"brand\":\"Apple\",\"attachment\":[{\"id\":\"22\",\"href\":\"http://serverlocation:port/documentManagement/attachment/22\",\"type\":\"Picture\",\"url\":\"http://xxxxx\"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"}],\"bundledProductSpecification\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/15\",\"name\":\"Product specification 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/64\",\"name\":\"Product specification 64\",\"lifecycleStatus\":\"Active\"}],\"productSpecificationRelationship\":[{\"id\":\"23\",\"href\":\" http://serverlocation:port/catalogManagement/productSpecification/23\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"serviceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\"name\":\"specification 1\"}],\"resourceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/resourceSpecification/13\",\"name\":\"specification 1\"}],\"productSpecCharacteristic\":[{\"id\":\"42\",\"name\":\"Screen Size\",\"description\":\"Screen size\",\"valueType\":\"number\",\"configurable\":false,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharRelationship\":[{\"id\":\"43\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"productSpecCharacteristicValue\":[{\"valueType\":\"number\",\"value\":\"4.2\",\"unitOfMeasure\":\"inches\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true}]},{\"id\":\"34\",\"name\":\"Colour\",\"description\":\"Colour\",\"valueType\":\"string\",\"configurable\":true,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharacteristicValue\":[{\"valueType\":\"string\",\"value\":\"Black\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true},{\"valueType\":\"string\",\"value\":\"White\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":false}]}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "d0718708-9c26-da0c-1e15-75c12d84fbd9",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification",
+						"pathVariables": {},
+						"data": "{\n\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/22\",\n\t\"productNumber\": \"I42-340-DX\",\n\t\"version\": \"2.0\",\n\t\"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n\t\"name\": \"iPhone 42\",\n\t\"description\": \"Siri works on this iPhone\",\n\t\"isBundle\": true,\n\t\"brand\": \"Apple\",\n\t\"lifecycleStatus\": \"Active\",\n\t\"validFor\": {\n\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n\t},\n\t\"relatedParty\": [\n\t\t{\n\t\t\t\"role\": \"Owner\",\n\t\t\t\"id\": \"1234\",\n\t\t\t\"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\"\n\t\t}\n\t],\n\t\"attachment\": [\n\t\t{\n\t\t\t\"id\": \"22\",\n\t\t\t\"href\": \"http://serverlocation:port/documentManagement/attachment/22\",\n\t\t\t\"type\": \"Picture\",\n\t\t\t\"url\": \"http://xxxxx\"\n\t\t}\n\t],\n\t\"bundledProductSpecification\": [\n\t\t{\n\t\t\t\"id\": \"15\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/15\",\n\t\t\t\"lifecycleStatus\": \"Active\",\n\t\t\t\"name\": \"Product specification 15\"\n\t\t}, {\n\t\t\t\"id\": \"64\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/64\",\n\t\t\t\"lifecycleStatus\": \"Active\",\n\t\t\t\"name\": \"Product specification 64\"\n\t\t}\n\t],\n\t\"productSpecificationRelationship\": [\n\t\t{\n\t\t\t\"type\": \"dependency\",\n\t\t\t\"id\": \"23\",\n\t\t\t\"href\": \" http://serverlocation:port/catalogManagement/productSpecification/23\",\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t}\n\t\t}\n\t],\n\t\"serviceSpecification\": [\n\t\t{\n\t\t\t\"id\": \"13\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\n\t\t\t\"name\": \"specification 1\",\n\t\t\t\"version\": \"1.1\"\n\t\t}\n\t],\n\t\"resourceSpecification\": [\n\t\t{\n\t\t\t\"id\": \"13\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/resourceSpecification/13\",\n\t\t\t\"name\": \"specification 1\",\n\t\t\t\"version\": \"1.1\"\n\t\t}\n\t],\n\t\"productSpecCharacteristic\": [\n\t\t{\n\t\t\t\"id\": \"42\",\n\t\t\t\"name\": \"Screen Size\",\n\t\t\t\"description\": \"Screen size\",\n\t\t\t\"valueType\": \"number\",\n\t\t\t\"configurable\": false,\n\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t},\n\t\t\t\"productSpecCharRelationship\": [\n\t\t\t\t{\n\t\t\t\t\t\"type\": \"dependency\",\n\t\t\t\t\t\"id\": \"43\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"productSpecCharacteristicValue\": [\n\t\t\t\t{\n\t\t\t\t\t\"valueType\": \"number\",\n\t\t\t\t\t\"default\": true,\n\t\t\t\t\t\"value\": \"4.2\",\n\t\t\t\t\t\"unitOfMeasure\": \"inches\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}, {\n\t\t\t\"id\": \"34\",\n\t\t\t\"name\": \"Colour\",\n\t\t\t\"description\": \"Colour\",\n\t\t\t\"valueType\": \"string\",\n\t\t\t\"configurable\": true,\n\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t},\n\t\t\t\"productSpecCharacteristicValue\": [\n\t\t\t\t{\n\t\t\t\t\t\"valueType\": \"string\",\n\t\t\t\t\t\"default\": true,\n\t\t\t\t\t\"value\": \"Black\",\n\t\t\t\t\t\"unitOfMeasure\": \"\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}, {\n\t\t\t\t\t\"valueType\": \"string\",\n\t\t\t\t\t\"default\": false,\n\t\t\t\t\t\"value\": \"White\",\n\t\t\t\t\t\"unitOfMeasure\": \"\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}\n",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "POST",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "08c5ce97-114b-2910-09a2-7ae8425626c4",
+			"owner": 0,
+			"rawModeData": "{\n\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/22\",\n\t\"productNumber\": \"I42-340-DX\",\n\t\"version\": \"2.0\",\n\t\"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n\t\"name\": \"iPhone 42\",\n\t\"description\": \"Siri works on this iPhone\",\n\t\"isBundle\": true,\n\t\"brand\": \"Apple\",\n\t\"lifecycleStatus\": \"Active\",\n\t\"validFor\": {\n\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n\t},\n\t\"relatedParty\": [\n\t\t{\n\t\t\t\"role\": \"Owner\",\n\t\t\t\"id\": \"1234\",\n\t\t\t\"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\"\n\t\t}\n\t],\n\t\"attachment\": [\n\t\t{\n\t\t\t\"id\": \"22\",\n\t\t\t\"href\": \"http://serverlocation:port/documentManagement/attachment/22\",\n\t\t\t\"type\": \"Picture\",\n\t\t\t\"url\": \"http://xxxxx\"\n\t\t}\n\t],\n\t\"bundledProductSpecification\": [\n\t\t{\n\t\t\t\"id\": \"15\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/15\",\n\t\t\t\"lifecycleStatus\": \"Active\",\n\t\t\t\"name\": \"Product specification 15\"\n\t\t}, {\n\t\t\t\"id\": \"64\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/productSpecification/64\",\n\t\t\t\"lifecycleStatus\": \"Active\",\n\t\t\t\"name\": \"Product specification 64\"\n\t\t}\n\t],\n\t\"productSpecificationRelationship\": [\n\t\t{\n\t\t\t\"type\": \"dependency\",\n\t\t\t\"id\": \"23\",\n\t\t\t\"href\": \" http://serverlocation:port/catalogManagement/productSpecification/23\",\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t}\n\t\t}\n\t],\n\t\"serviceSpecification\": [\n\t\t{\n\t\t\t\"id\": \"13\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\n\t\t\t\"name\": \"specification 1\",\n\t\t\t\"version\": \"1.1\"\n\t\t}\n\t],\n\t\"resourceSpecification\": [\n\t\t{\n\t\t\t\"id\": \"13\",\n\t\t\t\"href\": \"http://serverlocation:port/catalogManagement/resourceSpecification/13\",\n\t\t\t\"name\": \"specification 1\",\n\t\t\t\"version\": \"1.1\"\n\t\t}\n\t],\n\t\"productSpecCharacteristic\": [\n\t\t{\n\t\t\t\"id\": \"42\",\n\t\t\t\"name\": \"Screen Size\",\n\t\t\t\"description\": \"Screen size\",\n\t\t\t\"valueType\": \"number\",\n\t\t\t\"configurable\": false,\n\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t},\n\t\t\t\"productSpecCharRelationship\": [\n\t\t\t\t{\n\t\t\t\t\t\"type\": \"dependency\",\n\t\t\t\t\t\"id\": \"43\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t],\n\t\t\t\"productSpecCharacteristicValue\": [\n\t\t\t\t{\n\t\t\t\t\t\"valueType\": \"number\",\n\t\t\t\t\t\"default\": true,\n\t\t\t\t\t\"value\": \"4.2\",\n\t\t\t\t\t\"unitOfMeasure\": \"inches\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}, {\n\t\t\t\"id\": \"34\",\n\t\t\t\"name\": \"Colour\",\n\t\t\t\"description\": \"Colour\",\n\t\t\t\"valueType\": \"string\",\n\t\t\t\"configurable\": true,\n\t\t\t\"validFor\": {\n\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\"endDateTime\": \"\"\n\t\t\t},\n\t\t\t\"productSpecCharacteristicValue\": [\n\t\t\t\t{\n\t\t\t\t\t\"valueType\": \"string\",\n\t\t\t\t\t\"default\": true,\n\t\t\t\t\t\"value\": \"Black\",\n\t\t\t\t\t\"unitOfMeasure\": \"\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}, {\n\t\t\t\t\t\"valueType\": \"string\",\n\t\t\t\t\t\"default\": false,\n\t\t\t\t\t\"value\": \"White\",\n\t\t\t\t\t\"unitOfMeasure\": \"\",\n\t\t\t\t\t\"valueFrom\": \"\",\n\t\t\t\t\t\"valueTo\": \"\",\n\t\t\t\t\t\"validFor\": {\n\t\t\t\t\t\t\"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n\t\t\t\t\t\t\"endDateTime\": \"\"\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t]\n\t\t}\n\t]\n}\n"
+		},
+		{
+			"id": "26edbf15-e3bb-30eb-85a1-7ea320cd48ed",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/catalog",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1432764528963,
+			"name": "/catalog",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 1505,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:02:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"1\",\"version\":\"\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/1\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:02:20.416+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Product Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "ac417707-3aae-9f1e-acba-34d7d6a0c15b",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog",
+						"pathVariables": {},
+						"data": "{\n  \"href\": \"http://serverlocation:port/catalogManagement/catalog/10\",\n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"type\": \"Product Catalog\",\n    \"category\": [\n        {\n            \"id\": \"CATGR-001\",\n          \"href\": \"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\n            \"version\": \"2.0\",\n            \"name\": \"Cloud offerings\",\n            \"description\": \" A category to hold all available cloud service offers \"\n        }\n    ],\n    \"name\": \"Catalog Wholesale Business\",\n    \"description\": \"Contains Wholesale products, services, and resources for Businesses\",\n    \"lifecycleStatus\": \"Active\",\n    \"validFor\": {\n        \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n        \"endDateTime\": \"2014-04-19T16:42:23-04:00\"\n    },\n    \"relatedParty\": [\n        {\n            \"role\": \"Owner\",\n            \"id\": \"1234\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\"\n        },\n        {\n            \"role\": \"Reviser\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\",\n            \"id\": \"128\"\n        }\n    ]\n}",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "POST",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"rawModeData": "{\n  \n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"type\": \"Product Catalog\",\n    \"category\": [\n        {\n            \"id\": \"CATGR-001\",\n          \"href\": \"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\n            \"version\": \"2.0\",\n            \"name\": \"Cloud offerings\",\n            \"description\": \" A category to hold all available cloud service offers \"\n        }\n    ],\n    \"name\": \"Catalog Wholesale Business\",\n    \"description\": \"Contains Wholesale products, services, and resources for Businesses\",\n    \"lifecycleStatus\": \"Active\",\n    \"validFor\": {\n        \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n        \"endDateTime\": \"2014-04-19T16:42:23-04:00\"\n    },\n    \"relatedParty\": [\n        {\n            \"role\": \"Owner\",\n            \"id\": \"1234\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\"\n        },\n        {\n            \"role\": \"Reviser\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\",\n            \"id\": \"128\"\n        }\n    ]\n}"
+		},
+		{
+			"id": "2bdfebe6-4ce5-e94c-1bcf-cd2131d49987",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productOffering",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430342864143,
+			"name": "/productOffering",
+			"description": "Auto generated ID.",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 1838,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 16:41:05 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"1\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productOffering/1:(2.0)\",\"name\":\"Virtual Storage Medium\",\"description\":\"Virtual Storage Medium\",\"lastUpdate\":\"2014-12-30T16:41:05.746+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"isBundle\":true,\"category\":[{\"id\":\"12\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/category/12\",\"name\":\"Cloud offerings\"}],\"channel\":[{\"id\":\"13\",\"href\":\"http://serverlocation:port/marketSales/channel/13\",\"name\":\"Online Channel\"}],\"place\":[{\"id\":\"12\",\"href\":\"http://serverlocation:port/marketSales/place/12\",\"name\":\"France\"}],\"bundledProductOffering\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/15\",\"name\":\"Offering 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/64\",\"name\":\"Offering 64\",\"lifecycleStatus\":\"Active\"}],\"serviceLevelAgreement\":{\"id\":\"28\",\"href\":\"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\"name\":\"Standard SLA\"},\"productSpecification\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/13\",\"name\":\"specification product 1\"},\"serviceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\"name\":\"specification service 1\"},\"resourceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\"name\":\"specification resource 1\"},\"productOfferingTerm\":[{\"name\":\"12 Month\",\"description\":\"12 month contract\",\"duration\":\"12\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}],\"productOfferingPrice\":[{\"priceType\":\"recurring\",\"unitOfMeasure\":\"\",\"price\":{\"taxIncludedAmount\":\"12.00\",\"dutyFreeAmount\":\"10.00\",\"taxRate\":\"20.00\",\"currencyCode\":\"EUR\",\"percentage\":0},\"recurringChargePeriod\":\"monthly\",\"name\":\"Monthly Price\",\"description\":\"monthlyprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}},{\"priceType\":\"usage\",\"unitOfMeasure\":\"second\",\"price\":{\"taxIncludedAmount\":\"12.00\",\"dutyFreeAmount\":\"10.00\",\"taxRate\":\"20.00\",\"currencyCode\":\"EUR\",\"percentage\":0},\"recurringChargePeriod\":\"\",\"productOfferPriceAlteration\":{\"name\":\"Shipping Discount\",\"description\":\"One time shipping discount\",\"validFor\":{\"startDateTime\":\"2013-04-19T16:42:23.000+0000\"},\"priceType\":\"one time\",\"unitOfMeasure\":\"\",\"price\":{\"percentage\":\"100\"},\"recurringChargePeriod\":\"\",\"priceCondition\":\"apply if total amount of the  order is greater than 300.00\"},\"name\":\"Usage Price\",\"description\":\"usageprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "8b2fbb73-23b4-c2ea-c65e-26035dddcd6b",
+					"name": "Response",
+					"request": "41513987-b3fa-c13f-7495-0b300eb345fe",
+					"write": true,
+					"owner": 0,
+					"collectionId": "f79c4d38-c22f-5f70-d78c-00691e6b5417"
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "cd3a193b-31d0-4e51-da82-8567b85f5785",
+			"owner": 0,
+			"rawModeData": "{\n    \"href\": \"http://serverlocation:port/catalogManagement/productOffering/42\",\n    \"version\": \"2.0\",\n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"name\": \"Virtual Storage Medium\",\n    \"description\": \"Virtual Storage Medium\",\n    \"isBundle\": true,\n    \"lifecycleStatus\": \"Active\",\n    \"validFor\": {\n        \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n        \"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n    },\n    \"category\": [\n        {\n            \"id\": \"12\",\n            \"href\": \"http://serverlocation:port/catalogManagement/category/12\",\n            \"version\": \"2.0\",\n            \"name\": \"Cloud offerings\"\n        }\n    ],\n    \"channel\": [\n        {\n            \"id\": \"13\",\n            \"href\": \"http://serverlocation:port/marketSales/channel/13\",\n            \"name\": \"Online Channel\"\n        }\n    ],\n    \"place\": [\n        {\n            \"id\": \"12\",\n            \"href\": \"http://serverlocation:port/marketSales/place/12\",\n            \"name\": \"France\"\n        }\n    ],\n    \"bundledProductOffering\": [\n        {\n            \"id\": \"15\",\n            \"href\": \"http://serverlocation:port/catalogManagement/productOffering/15\",\n            \"lifecycleStatus\": \"Active\",\n            \"name\": \"Offering 15\"\n        },\n        {\n            \"id\": \"64\",\n            \"href\": \"http://serverlocation:port/catalogManagement/productOffering/64\",\n            \"lifecycleStatus\": \"Active\",\n            \"name\": \"Offering 64\"\n        }\n    ],\n    \"serviceLevelAgreement\": {\n        \"id\": \"28\",\n        \"href\": \"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\n        \"name\": \"Standard SLA\"\n    },\n    \"productSpecification\": {\n            \"id\": \"13\",\n            \"href\": \"http://serverlocation:port/catalogManagement/productSpecification/13\",\n            \"version\": \"2.0\",\n            \"name\": \"specification product 1\"\n        },\n    \"serviceCandidate\": {\n            \"id\": \"13\",\n            \"href\": \"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\n            \"version\": \"2.0\",\n            \"name\": \"specification service 1\"\n        },\n    \"resourceCandidate\": {\n            \"id\": \"13\",\n            \"href\": \"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\n            \"version\": \"2.0\",\n            \"name\": \"specification resource 1\"\n        },\n    \"productOfferingTerm\": [\n        {\n            \"name\": \"12 Month\",\n            \"description\": \"12 month contract\",\n            \"duration\": \"12\",\n            \"validFor\": {\n                \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n                \"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n            }\n        }\n    ],\n    \"productOfferingPrice\": [\n        {\n            \"name\": \"Monthly Price\",\n            \"description\": \"monthlyprice\",\n            \"validFor\": {\n                \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n                \"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n            },\n            \"priceType\": \"recurring\",\n            \"unitOfMeasure\": \"\",\n            \"price\": {\n                \"taxIncludedAmount\": \"12.00\",\n                \"dutyFreeAmount\": \"10.00\",\n                \"taxRate\": \"20.00\",\n                \"currencyCode\": \"EUR\",\n                \"percentage\": 0\n            },\n            \"recurringChargePeriod\": \"monthly\"\n        },\n        {\n            \"name\": \"Usage Price\",\n            \"description\": \"usageprice\",\n            \"validFor\": {\n                \"startDateTime\": \"2013-04-19T16:42:23-04:00\",\n                \"endDateTime\": \"2013-06-19T00:00:00-04:00\"\n            },\n            \"priceType\": \"usage\",\n            \"unitOfMeasure\": \"second\",\n            \"price\": {\n                \"taxIncludedAmount\": \"12.00\",\n                \"dutyFreeAmount\": \"10.00\",\n                \"taxRate\": \"20.00\",\n                \"currencyCode\": \"EUR\",\n                \"percentage\": 0\n            },\n            \"recurringChargePeriod\": \"\",\n            \"productOfferPriceAlteration\": {\n                \"name\": \"Shipping Discount\",\n                \"description\": \"One time shipping discount\",\n                \"validFor\": {\n                    \"startDateTime\": \"2013-04-19T16:42:23.0Z\"\n                },\n                \"priceType\": \"one time\",\n                \"unitOfMeasure\": \"\",\n                \"price\": {\n                    \"percentage\": 100\n                },\n                \"recurringChargePeriod\": \"\",\n                \"priceCondition\": \"apply if total amount of the  order is greater than 300.00\"\n            }\n\n        }\n    ]\n}"
+		},
+		{
+			"id": "2cd04c5e-90b8-9412-b38c-96e45f5d9179",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/catalog/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430412991223,
+			"name": "/catalog/:id",
+			"description": "Bad URL; Missing close paran at end.",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 404,
+						"name": "Not Found",
+						"detail": "The requested resource could not be found but may be available again in the future. Subsequent requests by the client are permissible."
+					},
+					"time": 19,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "1098",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:08:28 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>GlassFish Server Open Source Edition 3.1.2.2 - Error report</title><style type=\"text/css\"><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 404 - Not Found</h1><hr/><p><b>type</b> Status report</p><p><b>message</b>Not Found</p><p><b>description</b>The requested resource (Not Found) is not available.</p><hr/><h3>GlassFish Server Open Source Edition 3.1.2.2</h3></body></html>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "43487971-6d93-6b8f-88bc-11397bb934e6",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-002:(1.9",
+						"pathVariables": {},
+						"data": "{\n  \"id\": \"CATL-002\",\n  \"version\":\"1.5\",\n    \"href\": \"http://serverlocation:port/catalogManagement/catalog/10\",\n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"type\": \"Service Catalog\",\n      \"validFor\": {\n        \"endDateTime\": \"2014-04-19T16:42:23-04:00\"\n    },\n    \"category\": [\n        {\n            \"id\": \"CATGR-001\",\n          \"href\": \"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\n            \"version\": 2.0,\n            \"name\": \"Cloud offerings\",\n            \"description\": \" A category to hold all available cloud service offers \"\n        }\n    ],\n    \"name\": \"Catalog Wholesale Business\",\n    \"description\": \"Contains Wholesale products, services, and resources for Businesses\",\n    \"relatedParty\": [\n        {\n            \"role\": \"Owner\",\n            \"id\": \"1234\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\"\n        },\n        {\n            \"role\": \"Reviser\",\n            \"href\": \"http ://serverLocation:port/partyManagement/partyRole/1234\",\n            \"id\": \"128\"\n        }\n    ]\n}",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "PATCH",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"rawModeData": "{\n  \"lifecycleStatus\": \"Launched\"\n}"
+		},
+		{
+			"id": "3362028c-6e4b-e6ed-262d-f4def5e44355",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430346055922,
+			"name": "/category",
+			"description": "ID: auto gen\nchild category\nlifecyclestatus: In Design\n",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 383,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:44:12 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"1\",\"version\":\"1.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/1:(1.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:44:11.987+0000\",\"lifecycleStatus\":\"In Design\",\"parentId\":\"41\",\"isRoot\":false}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "ee125b5c-643d-ff96-8dc8-780bb0b3ba4b",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category",
+						"pathVariables": {},
+						"data": "{\n  \"href\": \"http://serverlocation:port/catalogManagement/category/42\",\n  \"version\": \"1.0\",\n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"version\": \"1.0\",\n    \"parentId\": \"41\",\n    \"isRoot\": false,\n    \"name\": \"Cloud Services\",\n    \"description\": \"A category to hold all available cloud service offers\",\n  \"lifecycleStatus\": \"In Design\"\n}",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "POST",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "60dba6c8-7495-03e8-3dc3-dcdd65f37d2d",
+			"owner": 0,
+			"rawModeData": "{\n  \"href\": \"http://serverlocation:port/catalogManagement/category/42\",\n  \"version\": \"1.0\",\n    \"lastUpdate\": \"2013-04-19T16:42:23-04:00\",\n    \"version\": \"1.0\",\n    \"parentId\": \"41\",\n    \"isRoot\": false,\n    \"name\": \"Cloud Services\",\n    \"description\": \"A category to hold all available cloud service offers\",\n  \"lifecycleStatus\": \"In Design\"\n}"
+		},
+		{
+			"id": "3a0159fe-2f19-2b80-bdf5-a93d9a785e1f",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430412062309,
+			"name": "/category/:id",
+			"description": "\n",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 405,
+						"name": "Method Not Allowed",
+						"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+					},
+					"time": 16,
+					"headers": [
+						{
+							"name": "Allow",
+							"key": "Allow",
+							"value": "POST,GET,OPTIONS,HEAD",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "1153",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:55:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>GlassFish Server Open Source Edition 3.1.2.2 - Error report</title><style type=\"text/css\"><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 405 - Method Not Allowed</h1><hr/><p><b>type</b> Status report</p><p><b>message</b>Method Not Allowed</p><p><b>description</b>The specified HTTP method is not allowed for the requested resource (Method Not Allowed).</p><hr/><h3>GlassFish Server Open Source Edition 3.1.2.2</h3></body></html>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "cad5340e-d3dc-58df-c091-46b80969c381",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "DELETE",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "3cefc583-c10d-b7ec-c484-bb51d8de16ec",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementSubscriberApi}}/current",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430351487823,
+			"name": "/current",
+			"description": "get last event",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "4e522c34-4be4-0021-290f-be7b8625f64d",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementApi}}/hub",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430406438294,
+			"name": "/hub",
+			"description": "create a hub",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false,
+			"rawModeData": "{\n  \"callback\":\"{{catalogManagementSubscriberApi}}/event\"\n}"
+		},
+		{
+			"id": "578c10d0-3176-8954-07b3-66b2ce9afe6c",
+			"headers": "",
+			"url": "{{catalogManagementApi}}/productSpecification/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430411378010,
+			"name": "/productSpecification/:id",
+			"description": "latest & only version.",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 59,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "0",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:11:01 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "8de275c2-9411-f246-5fce-b29bc471f79d",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-800",
+						"pathVariables": {},
+						"data": [],
+						"headers": "",
+						"dataMode": "params",
+						"method": "DELETE",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "6211de10-e5da-9cc3-ed06-a7b4888d68b9",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productSpecification/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430411263717,
+			"name": "/productSpecification/:id",
+			"description": "update life cycle of latest version (should be 12.17) to valid value.\n\n----\n\nupdated version is 12.17",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 104,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:08:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"PSPEC-900\",\"version\":\"12.17\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900:(12.17)\",\"name\":\"iPhone 42\",\"description\":\"Siri works on this iPhone\",\"lastUpdate\":\"2014-12-30T17:08:10.928+0000\",\"lifecycleStatus\":\"Launched\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"productNumber\":\"I42-340-DX\",\"isBundle\":true,\"brand\":\"Apple\",\"attachment\":[{\"id\":\"22\",\"href\":\"http://serverlocation:port/documentManagement/attachment/22\",\"type\":\"Picture\",\"url\":\"http://xxxxx\"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"}],\"bundledProductSpecification\":[{\"id\":\"PSPECK-03-N\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPECK-03-N:(0.4)\",\"name\":\"Product specification 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"PSPECK-04-B\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPECK-04-B:(0.4)\",\"name\":\"Product specification 64\",\"lifecycleStatus\":\"In Study\"}],\"productSpecificationRelationship\":[{\"id\":\"23\",\"href\":\" http://serverlocation:port/catalogManagement/productSpecification/23\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"serviceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\"name\":\"specification 1\"}],\"resourceSpecification\":[{\"id\":\"RSPECK-02\",\"version\":\"1.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/resourceSpecification/RSPECK-02:(1.0),\",\"name\":\"specification 1\"}],\"productSpecCharacteristic\":[{\"id\":\"42\",\"name\":\"Screen Size\",\"description\":\"Screen size\",\"valueType\":\"number\",\"configurable\":false,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharRelationship\":[{\"id\":\"43\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"productSpecCharacteristicValue\":[{\"valueType\":\"number\",\"value\":\"4.2\",\"unitOfMeasure\":\"inches\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true}]},{\"id\":\"34\",\"name\":\"Colour\",\"description\":\"Colour\",\"valueType\":\"string\",\"configurable\":true,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharacteristicValue\":[{\"valueType\":\"string\",\"value\":\"Black\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true},{\"valueType\":\"string\",\"value\":\"White\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":false}]}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "2da4dabd-5956-f093-059b-5fcfb7ff8b55",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900",
+						"pathVariables": {},
+						"data": "{\n  \"lifecycleStatus\": \"Launched\"\n}",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "PATCH",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"rawModeData": "{\n  \"lifecycleStatus\": \"Launched\"\n}"
+		},
+		{
+			"id": "7ea9e26a-6864-7142-d314-49c06a92cb06",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "6"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430354552088,
+			"name": "/category/:id",
+			"description": "ID: CATG-001\n\nReturns version 11.0 (latest).",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 84,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:47:32 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"CATG-001\",\"version\":\"11.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(11.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:46:38.348+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"isRoot\":true}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "89d98522-0651-00d0-0093-fced90f5265a",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "7eac8edc-ad61-2cfb-258d-bcf68008676c",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category/CATG-052:(2.1)",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430346236918,
+			"name": "/category/:id",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 500,
+						"name": "Internal Server Error",
+						"detail": "A generic error message, given when no more specific message is suitable."
+					},
+					"time": 23,
+					"headers": [
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "close",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "1737",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:51:25 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>GlassFish Server Open Source Edition 3.1.2.2 - Error report</title><style type=\"text/css\"><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 500 - </h1><hr/><p><b>type</b> Exception report</p><p><b>message</b></p><p><b>description</b>The server encountered an internal error () that prevented it from fulfilling this request.</p><p><b>exception</b> <pre>javax.servlet.ServletException: org.tmf.dsmapi.catalog.exception.IllegalLifecycleStatusException: LifecycleStatus can only transition to one of [In Design, Active, Rejected] from the current status of 'In Test'</pre></p><p><b>root cause</b> <pre>org.tmf.dsmapi.catalog.exception.IllegalLifecycleStatusException: LifecycleStatus can only transition to one of [In Design, Active, Rejected] from the current status of 'In Test'</pre></p><p><b>note</b> <u>The full stack traces of the exception and its root causes are available in the GlassFish Server Open Source Edition 3.1.2.2 logs.</u></p><hr/><h3>GlassFish Server Open Source Edition 3.1.2.2</h3></body></html>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "50b35314-1d14-a7be-4919-d03e2ddf748f",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-052:(2.1)",
+						"pathVariables": {},
+						"data": "{\n\n    \"lifecycleStatus\": \"In Study\",\n    \"description\": \"A category to hold all available cloud service offers new\"\n}",
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "raw",
+						"method": "PATCH",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "60dba6c8-7495-03e8-3dc3-dcdd65f37d2d",
+			"owner": 0,
+			"rawModeData": "{\n\n    \"lifecycleStatus\": \"In Study\",\n    \"description\": \"A category to hold all available cloud service offers new\"\n}"
+		},
+		{
+			"id": "838228b7-acd0-2c93-88b5-48098f7a163d",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementApi}}/hub/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430351356555,
+			"name": "/hub/:id",
+			"description": "get hub by id",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "8c482e22-4534-0109-fae8-3ff89197ea7b",
+			"headers": "Accept: application/json\n",
+			"url": "{{catalogManagementApi}}/productOffering",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1432735044132,
+			"name": "/productOffering",
+			"description": "Get by ID with extraneous criteria selection parameters.\n\n\n----\n\nreturns version 0.12;\nignores the criteria selection parameters.\nProcesses the field selection request.",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 24,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 16:42:49 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"POFER-640\",\"version\":\"0.12\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productOffering/POFER-640:(0.12)\",\"name\":\"Virtual Storage Medium\",\"description\":\"Virtual Storage Medium\",\"lastUpdate\":\"2014-12-30T16:41:49.428+0000\",\"lifecycleStatus\":\"In Design\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2019-01-01T04:00:02.000+0000\"},\"isBundle\":true,\"category\":[{\"id\":\"12\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/category/12\",\"name\":\"Cloud offerings\"}],\"channel\":[{\"id\":\"13\",\"href\":\"http://serverlocation:port/marketSales/channel/13\",\"name\":\"Online Channel\"}],\"place\":[{\"id\":\"12\",\"href\":\"http://serverlocation:port/marketSales/place/12\",\"name\":\"France\"}],\"bundledProductOffering\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/15\",\"name\":\"Offering 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/64\",\"name\":\"Offering 64\",\"lifecycleStatus\":\"Active\"}],\"serviceLevelAgreement\":{\"id\":\"28\",\"href\":\"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\"name\":\"Standard SLA\"},\"productSpecification\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/13\",\"name\":\"specification product 1\"},\"serviceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\"name\":\"specification service 1\"},\"resourceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\"name\":\"specification resource 1\"},\"productOfferingTerm\":[{\"name\":\"12 Month\",\"description\":\"12 month contract\",\"duration\":\"12\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}],\"productOfferingPrice\":[{\"priceType\":\"recurring\",\"unitOfMeasure\":\"\",\"price\":{\"taxIncludedAmount\":\"12.02\",\"dutyFreeAmount\":\"10.02\",\"taxRate\":\"20.02\",\"currencyCode\":\"USD\",\"percentage\":0},\"recurringChargePeriod\":\"monthly\",\"name\":\"Monthly Price\",\"description\":\"monthlyprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}},{\"priceType\":\"usage\",\"unitOfMeasure\":\"second\",\"price\":{\"taxIncludedAmount\":\"12.02\",\"dutyFreeAmount\":\"10.02\",\"taxRate\":\"20.02\",\"currencyCode\":\"EUR\",\"percentage\":0},\"recurringChargePeriod\":\"\",\"productOfferPriceAlteration\":{\"name\":\"Shipping Discount\",\"description\":\"One time shipping discount\",\"validFor\":{\"startDateTime\":\"2013-04-19T16:42:23.000+0000\"},\"priceType\":\"one time\",\"unitOfMeasure\":\"\",\"price\":{\"percentage\":\"100\"},\"recurringChargePeriod\":\"\",\"priceCondition\":\"apply if total amount of the  order is greater than 300.00\"},\"name\":\"Usage Price\",\"description\":\"usageprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "312f29bc-6450-05db-81b3-ae86c542fe5f",
+					"name": "Response",
+					"request": "a5817d0b-ea42-d6c2-93ce-11998e68a587",
+					"write": true,
+					"owner": 0,
+					"collectionId": "f79c4d38-c22f-5f70-d78c-00691e6b5417"
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "8e925ca8-e769-3e9b-8844-3671700b35b4",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430412062309,
+			"name": "/catalog/:id",
+			"description": "\n",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 405,
+						"name": "Method Not Allowed",
+						"detail": "A request was made of a resource using a request method not supported by that resource; for example, using GET on a form which requires data to be presented via POST, or using PUT on a read-only resource."
+					},
+					"time": 16,
+					"headers": [
+						{
+							"name": "Allow",
+							"key": "Allow",
+							"value": "POST,GET,OPTIONS,HEAD",
+							"description": "Valid actions for a specified resource. To be used for a 405 Method not allowed"
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "1153",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "text/html",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:55:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\"><head><title>GlassFish Server Open Source Edition 3.1.2.2 - Error report</title><style type=\"text/css\"><!--H1 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:22px;} H2 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:16px;} H3 {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;font-size:14px;} BODY {font-family:Tahoma,Arial,sans-serif;color:black;background-color:white;} B {font-family:Tahoma,Arial,sans-serif;color:white;background-color:#525D76;} P {font-family:Tahoma,Arial,sans-serif;background:white;color:black;font-size:12px;}A {color : black;}HR {color : #525D76;}--></style> </head><body><h1>HTTP Status 405 - Method Not Allowed</h1><hr/><p><b>type</b> Status report</p><p><b>message</b>Method Not Allowed</p><p><b>description</b>The specified HTTP method is not allowed for the requested resource (Method Not Allowed).</p><hr/><h3>GlassFish Server Open Source Edition 3.1.2.2</h3></body></html>",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "2caee27c-4592-0f0b-8bde-d187187ca6ed",
+					"name": "Response",
+					"request": "8e925ca8-e769-3e9b-8844-3671700b35b4",
+					"write": true,
+					"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b"
+				}
+			],
+			"synced": false,
+			"folder": "07586f44-693d-04d2-9b30-cff3f71bc8cf",
+			"isFromCollection": true,
+			"collectionRequestId": "8e925ca8-e769-3e9b-8844-3671700b35b4"
+		},
+		{
+			"id": "9d12700a-0b82-9caf-305c-1aa311588b24",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementSubscriberApi}}/history",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430351493017,
+			"name": "/history",
+			"description": "List all",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a63d427d-ed72-4546-2967-07515632b77f",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementSubscriberApi}}/history",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430351498073,
+			"name": "/history",
+			"description": "delete all",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "a69c5aa7-cb98-2440-4b83-4e430790b568",
+			"headers": "",
+			"url": "{{catalogManagementApi}}/productSpecification/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430411378010,
+			"name": "/productOffering/:id",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 59,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "0",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:11:01 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "",
+					"language": "html",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "fcf5ee3d-51cd-75a1-a7af-078e41266468",
+					"name": "Response",
+					"request": "a69c5aa7-cb98-2440-4b83-4e430790b568",
+					"write": true,
+					"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b"
+				}
+			],
+			"synced": false,
+			"folder": "cd3a193b-31d0-4e51-da82-8567b85f5785",
+			"isFromCollection": true,
+			"collectionRequestId": "a69c5aa7-cb98-2440-4b83-4e430790b568"
+		},
+		{
+			"id": "b5541ff3-5e4d-9be0-5431-bdf05449619f",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"url": "{{catalogManagementApi}}/hub/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430353339285,
+			"name": "/hub/:id ",
+			"description": "delete hub",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [],
+			"synced": false
+		},
+		{
+			"id": "c4ce0e2f-2857-2349-2a77-d2d76e10e4e1",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productOffering/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": ""
+			},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430411656952,
+			"name": "/productOffering/:id",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 201,
+						"name": "Created",
+						"detail": "The request has been fulfilled and resulted in a new resource being created."
+					},
+					"time": 104,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:08:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"PSPEC-900\",\"version\":\"12.17\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900:(12.17)\",\"name\":\"iPhone 42\",\"description\":\"Siri works on this iPhone\",\"lastUpdate\":\"2014-12-30T17:08:10.928+0000\",\"lifecycleStatus\":\"Launched\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"productNumber\":\"I42-340-DX\",\"isBundle\":true,\"brand\":\"Apple\",\"attachment\":[{\"id\":\"22\",\"href\":\"http://serverlocation:port/documentManagement/attachment/22\",\"type\":\"Picture\",\"url\":\"http://xxxxx\"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"}],\"bundledProductSpecification\":[{\"id\":\"PSPECK-03-N\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPECK-03-N:(0.4)\",\"name\":\"Product specification 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"PSPECK-04-B\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPECK-04-B:(0.4)\",\"name\":\"Product specification 64\",\"lifecycleStatus\":\"In Study\"}],\"productSpecificationRelationship\":[{\"id\":\"23\",\"href\":\" http://serverlocation:port/catalogManagement/productSpecification/23\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"serviceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\"name\":\"specification 1\"}],\"resourceSpecification\":[{\"id\":\"RSPECK-02\",\"version\":\"1.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/resourceSpecification/RSPECK-02:(1.0),\",\"name\":\"specification 1\"}],\"productSpecCharacteristic\":[{\"id\":\"42\",\"name\":\"Screen Size\",\"description\":\"Screen size\",\"valueType\":\"number\",\"configurable\":false,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharRelationship\":[{\"id\":\"43\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"productSpecCharacteristicValue\":[{\"valueType\":\"number\",\"value\":\"4.2\",\"unitOfMeasure\":\"inches\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true}]},{\"id\":\"34\",\"name\":\"Colour\",\"description\":\"Colour\",\"valueType\":\"string\",\"configurable\":true,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharacteristicValue\":[{\"valueType\":\"string\",\"value\":\"Black\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true},{\"valueType\":\"string\",\"value\":\"White\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":false}]}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "5194c169-e78f-cea7-b576-758e88f09777",
+					"name": "Response",
+					"request": "c4ce0e2f-2857-2349-2a77-d2d76e10e4e1",
+					"write": true,
+					"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b"
+				}
+			],
+			"synced": false,
+			"rawModeData": "{\n  \"lifecycleStatus\": \"Launched\"\n}"
+		},
+		{
+			"id": "db742d97-1d42-aae7-a14e-d288d2d0af4b",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productSpecification/PSPEC-900",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430344389506,
+			"name": "/productSpecification/:id",
+			"description": "latest version is still 12.15",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 24,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:01:34 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"PSPEC-900\",\"version\":\"12.15\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900:(12.15)\",\"name\":\"iPhone 42\",\"description\":\"Siri works on this iPhone\",\"lastUpdate\":\"2014-12-30T17:01:20.464+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"productNumber\":\"I42-340-DX\",\"isBundle\":true,\"brand\":\"Apple\",\"attachment\":[{\"id\":\"22\",\"href\":\"http://serverlocation:port/documentManagement/attachment/22\",\"type\":\"Picture\",\"url\":\"http://xxxxx\"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"}],\"bundledProductSpecification\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/15\",\"name\":\"Product specification 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/64\",\"name\":\"Product specification 64\",\"lifecycleStatus\":\"Active\"}],\"productSpecificationRelationship\":[{\"id\":\"23\",\"href\":\" http://serverlocation:port/catalogManagement/productSpecification/23\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"serviceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\"name\":\"specification 1\"}],\"resourceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/resourceSpecification/13\",\"name\":\"specification 1\"}],\"productSpecCharacteristic\":[{\"id\":\"42\",\"name\":\"Screen Size\",\"description\":\"Screen size\",\"valueType\":\"number\",\"configurable\":false,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharRelationship\":[{\"id\":\"43\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"productSpecCharacteristicValue\":[{\"valueType\":\"number\",\"value\":\"4.2\",\"unitOfMeasure\":\"inches\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true}]},{\"id\":\"34\",\"name\":\"Colour\",\"description\":\"Colour\",\"valueType\":\"string\",\"configurable\":true,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharacteristicValue\":[{\"valueType\":\"string\",\"value\":\"Black\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true},{\"valueType\":\"string\",\"value\":\"White\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":false}]}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "7aa962b4-7467-c78c-9080-7823628d93ec",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "08c5ce97-114b-2910-09a2-7ae8425626c4",
+			"owner": 0
+		},
+		{
+			"id": "e6000750-43a7-bdc5-7b42-36913a371ca5",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/catalog",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430412303851,
+			"name": "/catalog",
+			"description": "",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 30,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:05:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":\"1\",\"version\":\"\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/1\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:02:20.416+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Product Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]},{\"id\":\"2\",\"version\":\"\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/2\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:02:48.802+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Product Catalog\"},{\"id\":\"3\",\"version\":\"\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/3\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:03:09.334+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Product Catalog\"},{\"id\":\"CATL-001\",\"version\":\"\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-001\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:03:31.607+0000\",\"lifecycleStatus\":\"In Study\",\"type\":\"Product Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]},{\"id\":\"CATL-002\",\"version\":\"1.2\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-002:(1.2)\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:03:55.772+0000\",\"lifecycleStatus\":\"In Study\",\"type\":\"Service Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]},{\"id\":\"CATL-002\",\"version\":\"1.5\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog/CATL-002:(1.5)\",\"name\":\"Catalog Wholesale Business\",\"description\":\"Contains Wholesale products, services, and resources for Businesses\",\"lastUpdate\":\"2014-12-29T17:04:36.849+0000\",\"lifecycleStatus\":\"In Study\",\"validFor\":{\"endDateTime\":\"2014-04-19T20:42:23.000+0000\"},\"type\":\"Service Catalog\",\"category\":[{\"id\":\"CATGR-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATGR-001:(2.0)\",\"name\":\"Cloud offerings\",\"description\":\" A category to hold all available cloud service offers \"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"},{\"id\":\"128\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Reviser\"}]}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "88a88e88-dfa2-d21f-7519-880fd7555024",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/catalog",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		},
+		{
+			"id": "f6885caf-f105-07a5-a935-34e026cdc8a2",
+			"headers": "Accept: application/json\n",
+			"url": "{{catalogManagementApi}}/productOffering/:id",
+			"preRequestScript": "",
+			"pathVariables": {
+				"id": "51"
+			},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430343028672,
+			"name": "/productOffering/:id",
+			"description": "Get latest version (internal version processing test).\n\nshould return latest version (0.12) NOT the version with the highest numerical value (0.9).",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 28,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 16:42:42 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"POFER-640\",\"version\":\"0.12\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productOffering/POFER-640:(0.12)\",\"name\":\"Virtual Storage Medium\",\"description\":\"Virtual Storage Medium\",\"lastUpdate\":\"2014-12-30T16:41:49.428+0000\",\"lifecycleStatus\":\"In Design\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2019-01-01T04:00:02.000+0000\"},\"isBundle\":true,\"category\":[{\"id\":\"12\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/category/12\",\"name\":\"Cloud offerings\"}],\"channel\":[{\"id\":\"13\",\"href\":\"http://serverlocation:port/marketSales/channel/13\",\"name\":\"Online Channel\"}],\"place\":[{\"id\":\"12\",\"href\":\"http://serverlocation:port/marketSales/place/12\",\"name\":\"France\"}],\"bundledProductOffering\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/15\",\"name\":\"Offering 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productOffering/64\",\"name\":\"Offering 64\",\"lifecycleStatus\":\"Active\"}],\"serviceLevelAgreement\":{\"id\":\"28\",\"href\":\"http://serverlocation:port/slaManagement/serviceLevelAgreement/28\",\"name\":\"Standard SLA\"},\"productSpecification\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/13\",\"name\":\"specification product 1\"},\"serviceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/serviceCandidate/13\",\"name\":\"specification service 1\"},\"resourceCandidate\":{\"id\":\"13\",\"version\":\"2.0\",\"href\":\"http://serverlocation:port/catalogManagement/resourceCandidate/13\",\"name\":\"specification resource 1\"},\"productOfferingTerm\":[{\"name\":\"12 Month\",\"description\":\"12 month contract\",\"duration\":\"12\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}],\"productOfferingPrice\":[{\"priceType\":\"recurring\",\"unitOfMeasure\":\"\",\"price\":{\"taxIncludedAmount\":\"12.02\",\"dutyFreeAmount\":\"10.02\",\"taxRate\":\"20.02\",\"currencyCode\":\"USD\",\"percentage\":0},\"recurringChargePeriod\":\"monthly\",\"name\":\"Monthly Price\",\"description\":\"monthlyprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}},{\"priceType\":\"usage\",\"unitOfMeasure\":\"second\",\"price\":{\"taxIncludedAmount\":\"12.02\",\"dutyFreeAmount\":\"10.02\",\"taxRate\":\"20.02\",\"currencyCode\":\"EUR\",\"percentage\":0},\"recurringChargePeriod\":\"\",\"productOfferPriceAlteration\":{\"name\":\"Shipping Discount\",\"description\":\"One time shipping discount\",\"validFor\":{\"startDateTime\":\"2013-04-19T16:42:23.000+0000\"},\"priceType\":\"one time\",\"unitOfMeasure\":\"\",\"price\":{\"percentage\":\"100\"},\"recurringChargePeriod\":\"\",\"priceCondition\":\"apply if total amount of the  order is greater than 300.00\"},\"name\":\"Usage Price\",\"description\":\"usageprice\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"}}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "ccff13a4-80de-18cb-4cae-8d96ef8c5d1b",
+					"name": "Response",
+					"request": "c0e9deb0-04b2-edc0-a9ca-7234790ef76f",
+					"write": true,
+					"owner": 0,
+					"collectionId": "f79c4d38-c22f-5f70-d78c-00691e6b5417"
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "cd3a193b-31d0-4e51-da82-8567b85f5785",
+			"owner": 0
+		},
+		{
+			"id": "fde5ee40-2559-a3ca-a712-e2cb23307d05",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/category",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1430346170571,
+			"name": "/category",
+			"description": "returns 5 CATG-001 (1.0, 1.1, 1.10, 11.0, and 2.0)",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 35,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Mon, 29 Dec 2014 17:47:43 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"id\":\"1\",\"version\":\"1.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/1:(1.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:44:11.987+0000\",\"lifecycleStatus\":\"In Design\",\"parentId\":\"41\",\"isRoot\":false},{\"id\":\"CATG-052\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-052:(2.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:44:20.682+0000\",\"lifecycleStatus\":\"In Design\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"parentId\":\"41\",\"isRoot\":false},{\"id\":\"CATG-001\",\"version\":\"1.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(1.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:44:29.046+0000\",\"lifecycleStatus\":\"In Design\",\"parentId\":\"41\",\"isRoot\":false},{\"id\":\"CATG-001\",\"version\":\"1.1\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(1.1)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:44:37.861+0000\",\"lifecycleStatus\":\"In Test\",\"validFor\":{\"endDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"isRoot\":true},{\"id\":\"CATG-001\",\"version\":\"11.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(11.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:46:38.348+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"isRoot\":true},{\"id\":\"CATG-001\",\"version\":\"2.0\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(2.0)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:46:48.164+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-04-19T20:42:24.000+0000\"},\"parentId\":\"R72\",\"isRoot\":false},{\"id\":\"CATG-001\",\"version\":\"1.10\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category/CATG-001:(1.10)\",\"name\":\"Cloud Services\",\"description\":\"A category to hold all available cloud service offers\",\"lastUpdate\":\"2014-12-29T17:47:01.677+0000\",\"lifecycleStatus\":\"Active\",\"isRoot\":true}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "513a1183-0e49-ad8b-52a6-8b491cb4f30a",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/category",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false,
+			"write": true,
+			"collection": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"folder": "60dba6c8-7495-03e8-3dc3-dcdd65f37d2d",
+			"owner": 0
+		},
+		{
+			"id": "ff709a91-5694-d61e-4cb5-aeaeb7dee572",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"url": "{{catalogManagementApi}}/productSpecification",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1432734873727,
+			"name": "/productSpecification",
+			"description": "latest version is now 12.16",
+			"collectionId": "74d5739b-2ebe-2972-07d8-7a378fca266b",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 30,
+					"headers": [
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Tue, 30 Dec 2014 17:01:48 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "Server",
+							"key": "Server",
+							"value": "GlassFish Server Open Source Edition 3.1.2.2",
+							"description": "A name for the server"
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": "The form of encoding used to safely transfer the entity to the user. Currently defined methods are: chunked, compress, deflate, gzip, identity."
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Servlet/3.0 JSP/2.2 (GlassFish Server Open Source Edition 3.1.2.2 Java/Oracle Corporation/1.7)",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"PSPEC-900\",\"version\":\"12.16\",\"href\":\"http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900:(12.16)\",\"name\":\"iPhone 42\",\"description\":\"Siri works on this iPhone\",\"lastUpdate\":\"2014-12-30T17:01:41.763+0000\",\"lifecycleStatus\":\"Active\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\",\"endDateTime\":\"2013-06-19T04:00:00.000+0000\"},\"productNumber\":\"I42-340-DX\",\"isBundle\":true,\"brand\":\"Apple\",\"attachment\":[{\"id\":\"22\",\"href\":\"http://serverlocation:port/documentManagement/attachment/22\",\"type\":\"Picture\",\"url\":\"http://xxxxx\"}],\"relatedParty\":[{\"id\":\"1234\",\"href\":\"http ://serverLocation:port/partyManagement/partyRole/1234\",\"role\":\"Owner\"}],\"bundledProductSpecification\":[{\"id\":\"15\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/15\",\"name\":\"Product specification 15\",\"lifecycleStatus\":\"Active\"},{\"id\":\"64\",\"href\":\"http://serverlocation:port/catalogManagement/productSpecification/64\",\"name\":\"Product specification 64\",\"lifecycleStatus\":\"Active\"}],\"productSpecificationRelationship\":[{\"id\":\"23\",\"href\":\" http://serverlocation:port/catalogManagement/productSpecification/23\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"serviceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/serviceSpecification/13\",\"name\":\"specification 1\"}],\"resourceSpecification\":[{\"id\":\"13\",\"version\":\"1.1\",\"href\":\"http://serverlocation:port/catalogManagement/resourceSpecification/13\",\"name\":\"specification 1\"}],\"productSpecCharacteristic\":[{\"id\":\"42\",\"name\":\"Screen Size\",\"description\":\"Screen size\",\"valueType\":\"number\",\"configurable\":false,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharRelationship\":[{\"id\":\"43\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"type\":\"dependency\"}],\"productSpecCharacteristicValue\":[{\"valueType\":\"number\",\"value\":\"4.2\",\"unitOfMeasure\":\"inches\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true}]},{\"id\":\"34\",\"name\":\"Colour\",\"description\":\"Colour\",\"valueType\":\"string\",\"configurable\":true,\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"productSpecCharacteristicValue\":[{\"valueType\":\"string\",\"value\":\"Black\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":true},{\"valueType\":\"string\",\"value\":\"White\",\"unitOfMeasure\":\"\",\"valueFrom\":\"\",\"valueTo\":\"\",\"validFor\":{\"startDateTime\":\"2013-04-19T20:42:23.000+0000\"},\"default\":false}]}]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": -1,
+					"forceRaw": false,
+					"id": "07b8fa39-a0bf-2723-b615-dbde13e273f0",
+					"name": "Response",
+					"request": {
+						"url": "http://localhost:8080/DSPRODUCTCATALOG2/catalogManagement/productSpecification/PSPEC-900",
+						"pathVariables": {},
+						"data": [],
+						"headers": "Accept: application/json\nContent-Type: application/json\n",
+						"dataMode": "params",
+						"method": "GET",
+						"tests": "",
+						"version": 2
+					},
+					"write": true
+				}
+			],
+			"synced": false
+		}
+	]
+}

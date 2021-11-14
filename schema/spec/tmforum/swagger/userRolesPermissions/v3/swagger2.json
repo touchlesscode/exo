@@ -1,0 +1,474 @@
+{
+	"swagger": "2.0",
+	"host": "put.your.endpoint.here",
+	"info": {
+		"description": "This is Swagger UI environment generated for the TMF UserRoles and Permissions specification",
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+		},
+		"title": "UserRoles and Permissions",
+		"version": "3.0"
+	},
+	"basePath": "/usersandroles/v1",
+	"schemes": ["http"],
+	"definitions": {
+		"TimePeriodType": {
+			"properties": {
+				"startDateTime": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"endDateTime": {
+					"format": "date-time",
+					"type": "string"
+				}
+			},
+			"required": ["startDateTime"]
+		},
+		"InvolvementIdentificationRefReqType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"required": ["id"]
+		},
+		"InvolvementIdentificationRefRspType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"name": {
+					"type": "string"
+				}
+			},
+			"required": ["id","href"]
+		},
+		"ManagedEntityRefType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"entityType": {
+					"type": "string"
+				}
+			},
+			"required": ["id","entityType"]
+		},
+		"PrivilegeType": {
+			"properties": {
+				"manageableAsset": {
+					"$ref": "#/definitions/ManagedEntityRefType"
+				},
+				"function": {
+					"type": "string"
+				},
+				"action": {
+					"type": "string"
+				}
+			},
+			"required": ["manageableAsset","action"]
+		},
+		"EntitlementType": {
+			"properties": {
+				"function": {
+					"type": "string"
+				},
+				"action": {
+					"type": "string"
+				}
+			},
+			"required": ["action"]
+		},
+		"UserRoleRefReqType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"role": {
+					"type": "string"
+				}
+			},
+			"required": ["id"]
+		},
+		"UserRoleRefRspType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"role": {
+					"type": "string"
+				}
+			},
+			"required": ["id","href"]
+		},
+		"AssetInvolvementRoleReqType": {
+			"properties": {
+				"manageableAsset": {
+					"$ref": "#/definitions/ManagedEntityRefType"
+				},
+				"userRole": {
+					"$ref": "#/definitions/UserRoleRefReqType"
+				}
+			},
+			"required": ["manageableAsset","userRole"]
+		},
+		"AssetInvolvementRoleRspType": {
+			"properties": {
+				"manageableAsset": {
+					"$ref": "#/definitions/ManagedEntityRefType"
+				},
+				"userRole": {
+					"$ref": "#/definitions/UserRoleRefRspType"
+				}
+			},
+			"required": ["manageableAsset","userRole"]
+		},
+		"PermissionCreateType": {
+			"properties": {
+				"description": {
+					"type": "string"
+				},
+				"period": {
+					"$ref": "#/definitions/TimePeriodType"
+				},
+				"user": {
+					"$ref": "#/definitions/InvolvementIdentificationRefReqType"
+				},
+				"granter": {
+					"$ref": "#/definitions/InvolvementIdentificationRefReqType"
+				},
+				"privilege": {
+					"items": {
+						"$ref": "#/definitions/PrivilegeType"
+					},
+					"type": "array"
+				},
+				"assetUserRole": {
+					"items": {
+						"$ref": "#/definitions/AssetInvolvementRoleReqType"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["period","user"]
+		},
+		"PermissionType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"date": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"description": {
+					"type": "string"
+				},
+				"period": {
+					"$ref": "#/definitions/TimePeriodType"
+				},
+				"user": {
+					"$ref": "#/definitions/InvolvementIdentificationRefRspType"
+				},
+				"granter": {
+					"$ref": "#/definitions/InvolvementIdentificationRefRspType"
+				},
+				"privilege": {
+					"items": {
+						"$ref": "#/definitions/PrivilegeType"
+					},
+					"type": "array"
+				},
+				"assetUserRole": {
+					"items": {
+						"$ref": "#/definitions/AssetInvolvementRoleRspType"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["id","href","date","period","user"]
+		},
+		"UserRoleCreateType": {
+			"properties": {
+				"involvementRole": {
+					"type": "string"
+				},
+				"entitlement": {
+					"items": {
+						"$ref": "#/definitions/PrivilegeType"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["involvementRole","entitlement"]
+		},
+		"UserRoleType": {
+			"properties": {
+				"id": {
+					"type": "string"
+				},
+				"href": {
+					"type": "string"
+				},
+				"involvementRole": {
+					"type": "string"
+				},
+				"entitlement": {
+					"items": {
+						"$ref": "#/definitions/EntitlementType"
+					},
+					"type": "array"
+				}
+			},
+			"required": ["id","href","involvementRole","entitlement"]
+		}
+	},
+	"paths": {
+		"/permission": {
+			"get": {
+				"operationId": "retrievePermissions",
+				"parameters": [{
+					"description": "To obtain the list of permissions granted to a given user",
+					"in": "query",
+					"name": "user.id",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of permissions given by a given granter",
+					"in": "query",
+					"name": "granter.id",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of permissions associated to an specific asset",
+					"in": "query",
+					"name": "privileges.manageableAsset.id",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of permissions associated to an specific asset type",
+					"in": "query",
+					"name": "privileges.manageableAsset.entityTyped",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain a subset of the resource data in the response",
+					"in": "query",
+					"name": "fields",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "List of permissions provided",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/PermissionType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve list of permissions",
+				"tags": ["permissions"]
+			},
+			"post": {
+				"consumes": ["application/json"],
+				"operationId": "createPermission",
+				"parameters": [{
+					"description": "The information required to create a permission resource",
+					"in": "body",
+					"name": "permissionCreate",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/PermissionCreateType"
+					}
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"201": {
+						"description": "Permission registered in server",
+						"headers": {
+							"Location": {
+								"description": "Location where to query the created permission resource",
+								"type": "string"
+							}
+						},
+						"schema": {
+							"$ref": "#/definitions/PermissionType"
+						}
+					}
+				},
+				"summary": "Create new permission",
+				"tags": ["permissions"]
+			}
+		},
+		"/permission/{permissionId}": {
+			"get": {
+				"operationId": "retrievePermission",
+				"parameters": [{
+					"description": "The id of the permission to retrieve",
+					"in": "path",
+					"name": "permissionId",
+					"required": true,
+					"type": "string"
+				}, {
+					"description": "To obtain a subset of the resource data in the response",
+					"in": "query",
+					"name": "fields",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "Permission information provided",
+						"schema": {
+							"$ref": "#/definitions/PermissionType"
+						}
+					}
+				},
+				"summary": "Retrieve permission resource",
+				"tags": ["permissions"]
+			}
+		},
+		"/role": {
+			"get": {
+				"operationId": "retrieveRoles",
+				"parameters": [{
+					"description": "To obtain the list of roles with an specific definition",
+					"in": "query",
+					"name": "involvementRole",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of roles involved with an specific function",
+					"in": "query",
+					"name": "function",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of roles defined with an specific action",
+					"in": "query",
+					"name": "action",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "List of roles provided",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/UserRoleType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve list of user roles",
+				"tags": ["userroles"]
+			},
+			"post": {
+				"consumes": ["application/json"],
+				"operationId": "createUserRole",
+				"parameters": [{
+					"description": "The information required to create a user role resource",
+					"in": "body",
+					"name": "userroleCreate",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/UserRoleCreateType"
+					}
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"201": {
+						"description": "User Role registered in server",
+						"headers": {
+							"Location": {
+								"description": "Location where to query the created user role resource",
+								"type": "string"
+							}
+						},
+						"schema": {
+							"$ref": "#/definitions/UserRoleType"
+						}
+					}
+				},
+				"summary": "Create new user role",
+				"tags": ["userroles"]
+			}
+		},
+		"/role/{roleId}": {
+			"get": {
+				"operationId": "retrieveUserRole",
+				"parameters": [{
+					"description": "The id of the user role to retrieve",
+					"in": "path",
+					"name": "roleId",
+					"required": true,
+					"type": "string"
+				}, {
+					"description": "To obtain a subset of the resource data in the response",
+					"in": "query",
+					"name": "fields",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "User role information provided",
+						"schema": {
+							"$ref": "#/definitions/UserRoleType"
+						}
+					}
+				},
+				"summary": "Retrieve user role resource",
+				"tags": ["userroles"]
+			}
+		}
+	},
+	"tags": [{
+		"name": "permissions"
+	}, {
+		"name": "userroles"
+	}]
+}

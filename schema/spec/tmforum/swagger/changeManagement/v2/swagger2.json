@@ -1,0 +1,1560 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "changeManagement", 
+        "description": "This is Swagger UI environment generated for the TMF changeManagement specification", 
+        "version": "2.0"
+    }, 
+    "host": "www.example.com", 
+    "basePath": "/tmf-api/changeManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/changeRequest": {
+            "get": {
+                "operationId": "controllers.operations.listChangeRequest",
+                "summary": "list or find ChangeRequest",
+                "tags": [
+                    "ChangeRequest"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "fields",
+                        "description":  "Comma separated properties to display in response"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "actualEndTime",
+                        "description":  "Date and time when the change implementation is finished actually."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "actualStartTime",
+                        "description":  "Date and time when the change implementation is started actually."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "budget",
+                        "description":  "The budget reserved for the change."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "category",
+                        "description":  "The Category of chang request"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "channel",
+                        "description":  "A channel represents the way the Change Request was created"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "completionDate",
+                        "description":  "Date and time when the change request is confirmed to be completed"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "currency",
+                        "description":  "The used currency related with cost"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "description",
+                        "description":  "Description of the change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "externalId",
+                        "description":  "ID given by the requestor to facilitate the relationship set up and searches afterwards)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "href",
+                        "description":  "Hyperlink to access a change request"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "id",
+                        "description":  "Identifier of a Change Request, it is created on repository side (Change Management system)."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "impact",
+                        "description":  "Indicates how about the impact by this change"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "plannedEndTime",
+                        "description":  "Date and time when the change implementation is planned to be finished."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "plannedStartTime",
+                        "description":  "Date and time when the change implementation is planned to be started."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "priority",
+                        "description":  "A way that can be used by consumers to prioritize change request in Change Management system "
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "requestDate",
+                        "description":  "Date and time when the change request is raised"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "requestType",
+                        "description":  "Indicates the type of the change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "risk",
+                        "description":  "The risk to implement this change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "riskMitigationPlan",
+                        "description":  "The risk mitigation plan."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "riskValue",
+                        "description":  "The additional cost if the risk will happen."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "scheduledDate",
+                        "description":  "Date and time that the schedule is made."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "status",
+                        "description":  "Status of the change request and it’s a sub-state."
+                    },
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ChangeRequest"
+                            },
+                            "type": "array"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+            },
+            "post": {
+                "operationId": "controllers.operations.creatChangeRequest",
+                "summary": "creat ChangeRequest",
+                "tags": [
+                    "ChangeRequest"
+                ],
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ChangeRequest_Creat"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "thePost_ChangeRequest", 
+                        "description": "The ChangeRequest Type to be created"
+                    },
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/ChangeRequest"
+                       }
+                    },
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+            },
+        },
+        "/changeRequest/{changeRequest_id}": {
+            "get": {
+                "operationId": "controllers.retrieve.retrieveChangeRequest",
+                "summary": "Retrieves aChangeRequestby id",
+                "tags": [
+                    "ChangeRequest"
+                ],
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "changeRequest_id", 
+                        "in": "path", 
+                        "description": "Identifier of the changeRequest"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "fields",
+                        "description":  "Comma separated properties to display in response"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "actualEndTime",
+                        "description":  "Date and time when the change implementation is finished actually."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "actualStartTime",
+                        "description":  "Date and time when the change implementation is started actually."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "budget",
+                        "description":  "The budget reserved for the change."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "category",
+                        "description":  "The Category of chang request"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "channel",
+                        "description":  "A channel represents the way the Change Request was created"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "completionDate",
+                        "description":  "Date and time when the change request is confirmed to be completed"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "currency",
+                        "description":  "The used currency related with cost"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "description",
+                        "description":  "Description of the change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "externalId",
+                        "description":  "ID given by the requestor to facilitate the relationship set up and searches afterwards)"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "href",
+                        "description":  "Hyperlink to access a change request"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "id",
+                        "description":  "Identifier of a Change Request, it is created on repository side (Change Management system)."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "impact",
+                        "description":  "Indicates how about the impact by this change"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "plannedEndTime",
+                        "description":  "Date and time when the change implementation is planned to be finished."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "plannedStartTime",
+                        "description":  "Date and time when the change implementation is planned to be started."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "priority",
+                        "description":  "A way that can be used by consumers to prioritize change request in Change Management system "
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "requestDate",
+                        "description":  "Date and time when the change request is raised"
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "requestType",
+                        "description":  "Indicates the type of the change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "risk",
+                        "description":  "The risk to implement this change request."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "riskMitigationPlan",
+                        "description":  "The risk mitigation plan."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "riskValue",
+                        "description":  "The additional cost if the risk will happen."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "scheduledDate",
+                        "description":  "Date and time that the schedule is made."
+                    },
+                    {
+                        "type": "string",
+                        "required": false,
+                        "in": "query",
+                        "name": "status",
+                        "description":  "Status of the change request and it’s a sub-state."
+                    },
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/ChangeRequest"
+                            }, 
+                            "type": "array"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+            },
+            "patch": {
+                "operationId": "controllers.retrieve.updateChangeRequest",
+                "summary": "update aChangeRequest",
+                "tags": [
+                    "ChangeRequest"
+                ],
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "changeRequest_id", 
+                        "in": "path", 
+                        "description": "Identifier of the changeRequest"
+                    },
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/ChangeRequest_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "thePatch_ChangeRequest", 
+                        "description": "The ChangeRequest to be updated"
+                    },
+                ],
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/ChangeRequest"
+                        }
+                    },
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+            },
+            "delete": {
+                "operationId": "controllers.retrieve.deleteChangeRequest",
+                "summary": "delete aChangeRequestby id",
+                "tags": [
+                    "ChangeRequest"
+                ],
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "changeRequest_id", 
+                        "in": "path", 
+                        "description": "Identifier of the changeRequest"
+                    },
+                ],
+                "responses": {
+                    "204": {
+                        "description": "Deleted"
+                    },
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    },
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                },
+            },
+        },
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+    },
+    "definitions": {
+        "Attachment": {
+            "type": "object",
+            "description": "A document or other file attached to the information about a Change Request to help explain the change being implemented as part of this Change Request.",
+            "properties": {
+                "relatedPartyRef": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Defines parties which are involved in the change request and the role they are playing. It may be the customer, operator or 3rd party.",
+                },
+                "dateTime": {
+                    "type": "string",
+                    "description": "Date and time of the attachment generated.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The description of the attachment.",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Reference of the attachment.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the attachment.",
+                },
+            },
+            "required": [
+                "href",
+                "id"
+            ],
+        },
+        "ChangeRequest": {
+            "type": "object",
+            "description": "Change Request is a type of request which can be used for the management and control of Change Management process between a customer and a service provider or between a service provider and a partner and vice versa.",
+            "properties": {
+                "sLARef": {
+                    "$ref": "#/definitions/SLARef",
+                    "description": "A component that holds details of the SLA being applied to the change request.",
+                },
+                "changeRequestCharacteristic": {
+                    "$ref": "#/definitions/ChangeRequestCharacteristic",
+                    "description": "Characteristics of the change request to instantiate or to modify",
+                },
+                "changeRequestSpecification": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChangeRequestSpecification",
+                    },
+                    "description": "Defines a set of attributes related to Change Request.",
+                },
+                "workLog": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/WorkLog",
+                    },
+                    "description": "A record of the work performed on the change request during the investigation and resolution process.",
+                },
+                "targetEntityRef": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TargetEntityRef",
+                    },
+                    "description": "The entity which will be changed or configured while the change request is executed.",
+                },
+                "impactEntityRef": {
+                    "$ref": "#/definitions/ImpactEntityRef",
+                    "description": "Defines the entities (product, service , resource,  and other related objects) which will be impacted while the change request is executed.",
+                },
+                "relatedChangeRequestRef": {
+                    "$ref": "#/definitions/RelatedChangeRequestRef",
+                    "description": "An existing Change Request that has some form of correlation with the given Change Request.",
+                },
+                "location": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Location",
+                    },
+                    "description": "The place at whcih the change request occurred.",
+                },
+                "note": {
+                    "$ref": "#/definitions/Note",
+                    "description": "Defines the additional information of the change request.",
+                },
+                "resolution": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Resolution",
+                    },
+                    "description": "The way one or more change request has been implementation through a direct remedy or task.",
+                },
+                "relatedPartyRef": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Defines parties which are involved in the change request and the role they are playing. It may be the customer, operator or 3rd party.",
+                },
+                "attachment": {
+                    "$ref": "#/definitions/Attachment",
+                    "description": "A document or other file attached to the information about a Change Request to help explain the change being implemented as part of this Change Request.",
+                },
+                "incident": {
+                    "$ref": "#/definitions/Incident",
+                    "description": "An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customer's Product).",
+                },
+                "actualEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is finished actually.",
+                },
+                "actualStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is started actually.",
+                },
+                "budget": {
+                    "type": "string",
+                    "description": "The budget reserved for the change.",
+                },
+                "category": {
+                    "type": "string",
+                    "description": "The Category of chang request",
+                },
+                "channel": {
+                    "type": "string",
+                    "description": "A channel represents the way the Change Request was created",
+                },
+                "completionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is confirmed to be completed",
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "The used currency related with cost",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the change request.",
+                },
+                "externalId": {
+                    "type": "string",
+                    "description": "ID given by the requestor to facilitate the relationship set up and searches afterwards)",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access a change request",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of a Change Request, it is created on repository side (Change Management system).",
+                },
+                "impact": {
+                    "type": "string",
+                    "description": "Indicates how about the impact by this change",
+                },
+                "plannedEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be finished.",
+                },
+                "plannedStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be started.",
+                },
+                "priority": {
+                    "type": "string",
+                    "description": "A way that can be used by consumers to prioritize change request in Change Management system ",
+                },
+                "requestDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is raised",
+                },
+                "requestType": {
+                    "type": "string",
+                    "description": "Indicates the type of the change request.",
+                },
+                "risk": {
+                    "type": "string",
+                    "description": "The risk to implement this change request.",
+                },
+                "riskMitigationPlan": {
+                    "type": "string",
+                    "description": "The risk mitigation plan.",
+                },
+                "riskValue": {
+                    "type": "string",
+                    "description": "The additional cost if the risk will happen.",
+                },
+                "scheduledDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time that the schedule is made.",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change request and it’s a sub-state.",
+                },
+            },
+            "required": [
+                "status",
+                "priority",
+                "targetEntityRef",
+                "changeRequestSpecification"
+            ],
+        },
+        "ChangeRequest_Creat": {
+            "type": "object",
+            "description": "Change Request is a type of request which can be used for the management and control of Change Management process between a customer and a service provider or between a service provider and a partner and vice versa.",
+            "properties": {
+                "sLARef": {
+                    "$ref": "#/definitions/SLARef",
+                    "description": "A component that holds details of the SLA being applied to the change request.",
+                },
+                "changeRequestCharacteristic": {
+                    "$ref": "#/definitions/ChangeRequestCharacteristic",
+                    "description": "Characteristics of the change request to instantiate or to modify",
+                },
+                "changeRequestSpecification": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChangeRequestSpecification",
+                    },
+                    "description": "Defines a set of attributes related to Change Request.",
+                },
+                "workLog": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/WorkLog",
+                    },
+                    "description": "A record of the work performed on the change request during the investigation and resolution process.",
+                },
+                "targetEntityRef": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TargetEntityRef",
+                    },
+                    "description": "The entity which will be changed or configured while the change request is executed.",
+                },
+                "impactEntityRef": {
+                    "$ref": "#/definitions/ImpactEntityRef",
+                    "description": "Defines the entities (product, service , resource,  and other related objects) which will be impacted while the change request is executed.",
+                },
+                "relatedChangeRequestRef": {
+                    "$ref": "#/definitions/RelatedChangeRequestRef",
+                    "description": "An existing Change Request that has some form of correlation with the given Change Request.",
+                },
+                "location": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Location",
+                    },
+                    "description": "The place at whcih the change request occurred.",
+                },
+                "note": {
+                    "$ref": "#/definitions/Note",
+                    "description": "Defines the additional information of the change request.",
+                },
+                "resolution": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Resolution",
+                    },
+                    "description": "The way one or more change request has been implementation through a direct remedy or task.",
+                },
+                "relatedPartyRef": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Defines parties which are involved in the change request and the role they are playing. It may be the customer, operator or 3rd party.",
+                },
+                "attachment": {
+                    "$ref": "#/definitions/Attachment",
+                    "description": "A document or other file attached to the information about a Change Request to help explain the change being implemented as part of this Change Request.",
+                },
+                "incident": {
+                    "$ref": "#/definitions/Incident",
+                    "description": "An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customer's Product).",
+                },
+                "actualEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is finished actually.",
+                },
+                "actualStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is started actually.",
+                },
+                "budget": {
+                    "type": "string",
+                    "description": "The budget reserved for the change.",
+                },
+                "category": {
+                    "type": "string",
+                    "description": "The Category of chang request",
+                },
+                "channel": {
+                    "type": "string",
+                    "description": "A channel represents the way the Change Request was created",
+                },
+                "completionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is confirmed to be completed",
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "The used currency related with cost",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the change request.",
+                },
+                "externalId": {
+                    "type": "string",
+                    "description": "ID given by the requestor to facilitate the relationship set up and searches afterwards)",
+                },
+                "impact": {
+                    "type": "string",
+                    "description": "Indicates how about the impact by this change",
+                },
+                "plannedEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be finished.",
+                },
+                "plannedStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be started.",
+                },
+                "priority": {
+                    "type": "string",
+                    "description": "A way that can be used by consumers to prioritize change request in Change Management system ",
+                },
+                "requestDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is raised",
+                },
+                "requestType": {
+                    "type": "string",
+                    "description": "Indicates the type of the change request.",
+                },
+                "risk": {
+                    "type": "string",
+                    "description": "The risk to implement this change request.",
+                },
+                "riskMitigationPlan": {
+                    "type": "string",
+                    "description": "The risk mitigation plan.",
+                },
+                "riskValue": {
+                    "type": "string",
+                    "description": "The additional cost if the risk will happen.",
+                },
+                "scheduledDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time that the schedule is made.",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change request and it’s a sub-state.",
+                },
+            },
+            "required": [
+                "status",
+                "priority",
+                "targetEntityRef",
+                "changeRequestSpecification"
+            ],
+        },
+        "ChangeRequest_Update": {
+            "type": "object",
+            "description": "Change Request is a type of request which can be used for the management and control of Change Management process between a customer and a service provider or between a service provider and a partner and vice versa.",
+            "properties": {
+                "sLARef": {
+                    "$ref": "#/definitions/SLARef",
+                    "description": "A component that holds details of the SLA being applied to the change request.",
+                },
+                "changeRequestCharacteristic": {
+                    "$ref": "#/definitions/ChangeRequestCharacteristic",
+                    "description": "Characteristics of the change request to instantiate or to modify",
+                },
+                "changeRequestSpecification": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ChangeRequestSpecification",
+                    },
+                    "description": "Defines a set of attributes related to Change Request.",
+                },
+                "workLog": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/WorkLog",
+                    },
+                    "description": "A record of the work performed on the change request during the investigation and resolution process.",
+                },
+                "targetEntityRef": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/TargetEntityRef",
+                    },
+                    "description": "The entity which will be changed or configured while the change request is executed.",
+                },
+                "impactEntityRef": {
+                    "$ref": "#/definitions/ImpactEntityRef",
+                    "description": "Defines the entities (product, service , resource,  and other related objects) which will be impacted while the change request is executed.",
+                },
+                "relatedChangeRequestRef": {
+                    "$ref": "#/definitions/RelatedChangeRequestRef",
+                    "description": "An existing Change Request that has some form of correlation with the given Change Request.",
+                },
+                "location": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Location",
+                    },
+                    "description": "The place at whcih the change request occurred.",
+                },
+                "note": {
+                    "$ref": "#/definitions/Note",
+                    "description": "Defines the additional information of the change request.",
+                },
+                "resolution": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Resolution",
+                    },
+                    "description": "The way one or more change request has been implementation through a direct remedy or task.",
+                },
+                "relatedPartyRef": {
+                    "$ref": "#/definitions/RelatedPartyRef",
+                    "description": "Defines parties which are involved in the change request and the role they are playing. It may be the customer, operator or 3rd party.",
+                },
+                "attachment": {
+                    "$ref": "#/definitions/Attachment",
+                    "description": "A document or other file attached to the information about a Change Request to help explain the change being implemented as part of this Change Request.",
+                },
+                "incident": {
+                    "$ref": "#/definitions/Incident",
+                    "description": "An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customer's Product).",
+                },
+                "actualEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is finished actually.",
+                },
+                "actualStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is started actually.",
+                },
+                "budget": {
+                    "type": "string",
+                    "description": "The budget reserved for the change.",
+                },
+                "category": {
+                    "type": "string",
+                    "description": "The Category of chang request",
+                },
+                "channel": {
+                    "type": "string",
+                    "description": "A channel represents the way the Change Request was created",
+                },
+                "completionDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is confirmed to be completed",
+                },
+                "currency": {
+                    "type": "string",
+                    "description": "The used currency related with cost",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the change request.",
+                },
+                "externalId": {
+                    "type": "string",
+                    "description": "ID given by the requestor to facilitate the relationship set up and searches afterwards)",
+                },
+                "impact": {
+                    "type": "string",
+                    "description": "Indicates how about the impact by this change",
+                },
+                "plannedEndTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be finished.",
+                },
+                "plannedStartTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change implementation is planned to be started.",
+                },
+                "priority": {
+                    "type": "string",
+                    "description": "A way that can be used by consumers to prioritize change request in Change Management system ",
+                },
+                "requestDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the change request is raised",
+                },
+                "requestType": {
+                    "type": "string",
+                    "description": "Indicates the type of the change request.",
+                },
+                "risk": {
+                    "type": "string",
+                    "description": "The risk to implement this change request.",
+                },
+                "riskMitigationPlan": {
+                    "type": "string",
+                    "description": "The risk mitigation plan.",
+                },
+                "riskValue": {
+                    "type": "string",
+                    "description": "The additional cost if the risk will happen.",
+                },
+                "scheduledDate": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time that the schedule is made.",
+                },
+                "status": {
+                    "type": "string",
+                    "description": "Status of the change request and it’s a sub-state.",
+                },
+            },
+        },
+        "ChangeRequestCharacteristic": {
+            "type": "object",
+            "description": "Characteristics of the change request to instantiate or to modify",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": "Name of the characteristic.",
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Value of the characteristic.",
+                },
+            },
+            "required": [
+                "name",
+                "value"
+            ],
+        },
+        "ChangeRequestSpecification": {
+            "type": "object",
+            "description": "Defines a set of attributes related to Change Request.",
+            "properties": {
+                "validFor": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/ValidFor",
+                    },
+                    "description": "A valid duration of a thing.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of the specification",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access the specification.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of the specification.",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of the specification.",
+                },
+            },
+            "required": [
+                "href",
+                "id"
+            ],
+        },
+        "ImpactEntityRef": {
+            "type": "object",
+            "description": "Defines the entities (product, service , resource,  and other related objects) which will be impacted while the change request is executed.",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "a description and analysis of the impact of the change request on the Product, Service or Resource.",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access the impacted party, it could be a party reference or a party role reference.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of impacted entity.",
+                },
+            },
+            "required": [
+                "href",
+                "id"
+            ],
+        },
+        "Incident": {
+            "type": "object",
+            "description": "An Incident is a record of an event that has altered the operational state of a entity (Resource, Service or Customer's Product).",
+            "properties": {
+                "impactEntityRef": {
+                    "$ref": "#/definitions/ImpactEntityRef",
+                    "description": "Defines the entities (product, service , resource,  and other related objects) which will be impacted while the change request is executed.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The description of the incident.",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the incident.",
+                },
+            },
+        },
+        "Location": {
+            "type": "object",
+            "description": "The place at whcih the change request occurred.",
+            "properties": {
+                "address": {
+                    "type": "string",
+                    "description": "The detail address of the location.",
+                },
+                "postCode": {
+                    "type": "string",
+                    "description": "The post code of an address.",
+                },
+            },
+        },
+        "Note": {
+            "type": "object",
+            "description": "Defines the additional information of the change request.",
+            "properties": {
+                "author": {
+                    "type": "string",
+                    "description": "Indicates who provides the description.",
+                },
+                "dateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the description was inputted. ",
+                },
+                "text": {
+                    "type": "string",
+                    "description": "The additional description.",
+                },
+            },
+        },
+        "Record": {
+            "type": "object",
+            "description": "A record in a worklog.",
+            "properties": {
+                "dateTime": {
+                    "type": "string",
+                    "description": "The date time that a record is generated.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The detail description in a record.",
+                },
+                "supportPerson": {
+                    "type": "string",
+                    "description": "The person who logged that record.",
+                },
+            },
+            "required": [
+                "dateTime"
+            ],
+        },
+        "RelatedChangeRequestRef": {
+            "type": "object",
+            "description": "An existing Change Request that has some form of correlation with the given Change Request.",
+            "properties": {
+                "correlation": {
+                    "type": "string",
+                    "description": "The correlation between two change requests",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "Description of a change request.",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyper link to access a change request.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of an Change Request",
+                },
+            },
+            "required": [
+                "id",
+                "href"
+            ],
+        },
+        "RelatedPartyRef": {
+            "type": "object",
+            "description": "Defines parties which are involved in the change request and the role they are playing. It may be the customer, operator or 3rd party.",
+            "properties": {
+                "contactInfo": {
+                    "type": "string",
+                    "description": "Contact information of the party.",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access a related party.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of a related party.",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "Name of related party.",
+                },
+                "role": {
+                    "type": "string",
+                    "description": "Role of related Party.",
+                },
+            },
+            "required": [
+                "href",
+                 "id"
+            ],
+        },
+        "Resolution": {
+            "type": "object",
+            "description": "The way one or more change request has been implementation through a direct remedy or task.",
+            "properties": {
+                "task": {
+                    "$ref": "#/definitions/Task",
+                    "description": "A step or task along in the process of  implementation a Change Request.",
+                },
+                "code": {
+                    "type": "string",
+                    "description": "The resolution's code, it can be configured as a multiple level hierarchy.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The description of the resolution.",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the resoultion",
+                },
+            },
+            "required": [
+                "name",
+                "description"
+            ],
+        },
+        "SLARef": {
+            "type": "object",
+            "description": "A component that holds details of the SLA being applied to the change request.",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "Description of a SLA",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyper link to a SLA",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of a SLA",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of a SLA",
+                },
+            },
+            "required": [
+                "id",
+                "href"
+            ],
+        },
+        "TargetEntityRef": {
+            "type": "object",
+            "description": "The entity which will be changed or configured while the change request is executed.",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "The description to the related party.",
+                },
+                "href": {
+                    "type": "string",
+                    "description": "Hyperlink to access the target entity.",
+                },
+                "id": {
+                    "type": "string",
+                    "description": "Identifier of target entity",
+                },
+            },
+            "required": [
+                "href",
+                "id"
+            ],
+        },
+        "Task": {
+            "type": "object",
+            "description": "A step or task along in the process of  implementation a Change Request.",
+            "properties": {
+                "description": {
+                    "type": "string",
+                    "description": "The description of the task.",
+                },
+                "name": {
+                    "type": "string",
+                    "description": "The name of the task.",
+                },
+                "state": {
+                    "type": "string",
+                    "description": "The state of the task.",
+                },
+            },
+        },
+        "ValidFor": {
+            "type": "object",
+            "description": "A valid duration of a thing.",
+            "properties": {
+                "endDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The end date and time.",
+                },
+                "startDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The start date and time.",
+                },
+            },
+            "required": [
+                "startDateTime",
+                "endDateTime"
+            ],
+        },
+        "WorkLog": {
+            "type": "object",
+            "description": "A record of the work performed on the change request during the investigation and resolution process.",
+            "properties": {
+                "record": {
+                    "$ref": "#/definitions/Record",
+                    "description": "A record in a worklog.",
+                },
+                "creatDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time of worklog generated.",
+                },
+                "description": {
+                    "type": "string",
+                    "description": "The description of the worklog.",
+                },
+                "lastUpdateDateTime": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "Date and time when the worklog updated.",
+                },
+            },
+            "required": [
+                "creatDateTime"
+            ],
+        },
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        },
+    }
+}

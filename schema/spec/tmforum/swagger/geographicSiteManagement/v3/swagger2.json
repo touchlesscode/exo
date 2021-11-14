@@ -1,0 +1,572 @@
+{
+	"swagger": "2.0",
+	"host": "put.your.endpoint.here",
+	"info": {
+		"description": "This is Swagger UI environment generated for the TMF Geographic Site Management specification",
+		"license": {
+			"name": "Apache 2.0",
+			"url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+		},
+		"title": "GeographicSite Management",
+		"version": "2.0"
+	},
+	"basePath": "/geographicSiteManagement/v1",
+	"schemes": ["http"],
+	"definitions": {
+		"GeographicSiteCreateType": {
+			"properties": {
+				"name": {
+					"type": "string",
+					"description": "The name that the site is known by"					
+				},
+				"description": {
+					"type": "string",
+					"description": "Text describing additional information  regarding the site"					
+				},
+				"code": {
+					"type": "string",
+					"description": "A code that may be used for some addressing schemes e.g. [ANSI T1.253-1999]"					
+				},
+				"status": {
+					"type": "string",
+					"description": "The condition of the GeographicSite, such as active, inactive, planned"					
+				},
+				"address": {
+					"$ref": "#/definitions/AddressRefOrValueType",
+					"description": "Used to identify the physical place over the surface of the Earth that is associated to the site based on an entity uniquely identified in the server or providing the geographic address (textual description)  and the geographic location (geometry description) of the physical place. Required if geographicLocation not included"					
+				},
+				"geographicLocation": {
+					"$ref": "#/definitions/GeographicLocationRefOrValueType",
+					"description": "A geo location reference, allows describing through coordinate(s) a point, a line or a space. Required if address not included"					
+				},								
+				"calendar": {
+					"$ref": "#/definitions/CalendarPeriodType",
+					"description": "A list of calendar period entries indicating the time availability of the site for different periods"					
+				},
+				"relatedParty": {
+					"$ref": "#/definitions/RelatedPartyRefType",
+					"description": "A list of related party references. A related party defines party or party role linked to a specific entity"					
+				},
+				"siteRelationship": {
+					"$ref": "#/definitions/SiteRelationshipType",
+					"description": "Linked sites"					
+				},
+				"@baseType": {
+					"type": "string",
+					"description": "Indicates the base type of the resource for extensibility and polymorphism purposes to differentiate the definition of different type of sites (enterprise, residential, ...)"
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the resource for extensibility purposes"
+				},
+				"@schemaLocation": {
+					"type": "string",
+					"description": "A Link to the schema describing this REST Resource"						
+				}
+			},
+			"required": ["name"]
+		},
+		"GeographicSiteResponseType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the site within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "An URI used to access to the site resource"					
+				},
+				"name": {
+					"type": "string",
+					"description": "The name that the site is known by"					
+				},
+				"description": {
+					"type": "string",
+					"description": "Text describing additional information  regarding the site"					
+				},
+				"code": {
+					"type": "string",
+					"description": "A code that may be used for some addressing schemes e.g. [ANSI T1.253-1999]"					
+				},
+				"status": {
+					"type": "string",
+					"description": "The condition of the GeographicSite, such as active, inactive, planned"					
+				},
+				"address": {
+					"$ref": "#/definitions/AddressRefOrValueType",
+					"description": "Used to identify the physical place over the surface of the Earth that is associated to the site based on an entity uniquely identified in the server or providing the geographic address (textual description)  and the geographic location (geometry description) of the physical place. Required if geographicLocation not included"					
+				},
+				"geographicLocation": {
+					"$ref": "#/definitions/GeographicLocationRefOrValueType",
+					"description": "A geo location reference, allows describing through coordinate(s) a point, a line or a space. Required if address not included"					
+				},				
+				"calendar": {
+					"$ref": "#/definitions/CalendarPeriodType",
+					"description": "A list of calendar period entries indicating the time availability of the site for different periods"					
+				},
+				"relatedParty": {
+					"$ref": "#/definitions/RelatedPartyRefType",
+					"description": "A list of related party references. A related party defines party or party role linked to a specific entity"					
+				},
+				"siteRelationship": {
+					"$ref": "#/definitions/SiteRelationshipType",
+					"description": "Linked sites"					
+				},
+				"@baseType": {
+					"type": "string",
+					"description": "Indicates the base type of the resource for extensibility and polymorphism purposes to differentiate the definition of different type of sites (enterprise, residential, ...)"
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the resource for extensibility purposes"
+				},
+				"@schemaLocation": {
+					"type": "string",
+					"description": "A Link to the schema describing this REST Resource"											
+				}
+			},
+			"required": ["id","href","name","status"]
+		},
+		"AddressRefOrValueType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the address entity within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "Reference of the address entity. An URI used to query the entity resource"					
+				},
+				"streetNr": {
+					"type": "string",
+					"description": "Required if href not included. Number identifying a specific property on a public street. It may be combined with streetNrLast for ranged addresses"					
+				},
+				"streetNrSuffix": {
+					"type": "string",
+					"description": "The street number suffix (or suffix of first number for  aranged address)"					
+				},
+				"streetNrLast": {
+					"type": "string",
+					"description": "Last number in a range of street numbers allocated to a property"					
+				},
+				"streetNrLastSuffix": {
+					"type": "string",
+					"description": "Last street number suffix for a ranged address"					
+				},
+				"streetName": {
+					"type": "string",
+					"description": "Required if href not included. Name of the street or other street type"					
+				},
+				"streetType": {
+					"type": "string",
+					"description": "Required if href not included. Alley, avenue, street, boulevard, brae, crescent, drive, highway, lane, terrace, parade, place, tarn, way, wharf"					
+				},
+				"streetSuffix": {
+					"type": "string",
+					"description": "A modifier denoting a relative direction (E, W, S, N)"					
+				},
+				"postcode": {
+					"type": "string",
+					"description": "Required if href not included. Descriptor for a postal delivery area (also known as zipcode)"					
+				},
+				"locality": {
+					"type": "string",
+					"description": "Required if href not included. An area of defined or undefined boundaries within a local authority or other legislatively defined area, usually rural or semi-rural in nature, or a suburb, a bounded locality within a city, town or shire principally of urban character "					
+				},
+				"city": {
+					"type": "string",
+					"description": "City that the address is in"					
+				},
+				"stateOrProvince": {
+					"type": "string",
+					"description": "Required if href not included. the State or Province that the address is in"					
+				},
+				"country": {
+					"type": "string",
+					"description": "Required if href not included. Country that the address is in"					
+				},
+				"geographicLocation": {
+					"$ref": "#/definitions/GeographicLocationRefOrValueType",
+					"description": "A geo location reference, allows describing through coordinate(s) a point, a line or a space"					
+				},
+				"geographicSubAddress": {
+					"$ref": "#/definitions/SubAddressType",
+					"description": "A list of sub addresses. It is used for addressing within a property in an urban area (country properties are often defined differently). It may refer to a building, a building cluster, or a floor of a multistory building."
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the resource for extensibility purposes. Here can be UrbanPropertyAddress, FormattedAddress, JapanesePropertyAddress , AustralianPropertyAddress, etc"
+				},
+				"@schemaLocation": {
+					"type": "string",
+					"description": "A Link to the schema describing this REST Resource. The basic resource describes UrbanPropertyAddress but a schema could be used for other property address description"																
+				}
+			},
+			"required": ["id"]
+		},
+		"GeographicLocationRefOrValueType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the location entity within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "Reference of the location entity. An URI used to query the entity resource"					
+				},
+				"name": {
+					"type": "string",
+					"description": "Name of a GeoLocation"					
+				},
+				"type": {
+					"type": "string",
+					"description": "allows describing Geolocation form: it could be a point, a line, a polygon, a cylinder, etc...."					
+				},
+				"geographicPoint": {
+					"$ref": "#/definitions/GeographicPointType",
+					"description": "A list of geo points. A GeoPoint defines a geographic point through coordinates"
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the resource for extensibility purposes"
+				},
+				"@schemaLocation": {
+					"type": "string",
+					"description": "A Link to the schema describing this REST Resource"											
+				}					
+			}
+		},
+		"GeographicPointType": {
+			"properties": {
+				"accuracy": {
+					"type": "string",
+					"description": "Accuracy of the coordinate specified"					
+				},
+				"spatialRef": {
+					"type": "string",
+					"description": "Geocoding referential"					
+				},
+				"x": {
+					"type": "string",
+					"description": ". x coordinate (usually latitude)"					
+				},
+				"y": {
+					"type": "string",
+					"description": "y coordinate (usually longitude)"					
+				},
+				"z": {
+					"type": "string",
+					"description": "z coordinate (usually elevation)"					
+				}
+			},
+			"required": ["accuracy","spatialRef","x","y"]
+		},
+		"SubAddressType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the sub-address entity within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "Reference of the sub-address entity. An URI used to query the entity resource"					
+				},
+				"type": {
+					"type": "string",
+					"description": "type of subAddress. It can be a subunit or a private street."					
+				},
+				"name": {
+					"type": "string",
+					"description": "Name of the subAddress to identify it with a meaningful identification"					
+				},
+				"subUnitType": {
+					"type": "string",
+					"description": "the type of subunit (e.g.: BERTH, FLAT, PIER, SUITE, SHOP, TOWER, UNIT, WHARF)"					
+				},
+				"subUnitNumber": {
+					"type": "string",
+					"description": "the discriminator used for the subunit often just a simple number (e.g.: 5 for FLAT 5), may also be a range"					
+				},
+				"levelType": {
+					"type": "string",
+					"description": "Describes level types within a building (e.g.: BASEMENT) "					
+				},
+				"levelNumber": {
+					"type": "string",
+					"description": "used where a level type may be repeated (e.g.: BASEMENT 1, BASEMENT 2)"					
+				},
+				"buildingName": {
+					"type": "string",
+					"description": "Allows for buildings that have well-known names"					
+				},
+				"privateStreetName": {
+					"type": "string",
+					"description": "private streets internal to a property (e.g. a university) may have internal names that are not recorded by the land title office"					
+				},
+				"privateStreetNumber": {
+					"type": "string",
+					"description": "Private streets numbers internal to a private street"					
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the subresource for extensibility purposes"
+				},
+				"@schemaLocation": {
+					"type": "string",
+					"description": "A Link to the schema describing this REST subResource to allow for extensions"											
+				}
+			}
+		},
+		"RelatedPartyRefType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the related entity within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "Reference of the entity. An URI used to query the entity"					
+				},
+				"name": {
+					"type": "string",
+					"description": "Name of the related party"					
+				},
+				"role": {
+					"type": "string",
+					"description": "Role of the related party"					
+				},
+				"validFor": {
+					"$ref": "#/definitions/TimePeriodType",
+					"description": "Validity for the relationship with the related party"			
+				},
+				"@type": {
+					"type": "string",
+					"description": "Indicates the type of the subresource for extensibility/polymorphic purposes. Here can be Individual, Organization, etc"					
+				}
+			},
+			"required": ["id"]
+		},
+		"SiteRelationshipType": {
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": "Unique identifier of the related site entity within the server"					
+				},
+				"href": {
+					"type": "string",
+					"description": "Reference of the related site entity. An URI used to query the related entity"					
+				},
+				"type": {
+					"type": "string",
+					"description": "Type of relationship"					
+				},
+				"role": {
+					"type": "string",
+					"description": "Role of the related site in the relationship"					
+				},
+				"validFor": {
+					"$ref": "#/definitions/TimePeriodType",
+					"description": "Validity for the relationship with the related party"					
+				}
+			},
+			"required": ["id"]
+		},
+		"CalendarPeriodType": {
+			"properties": {
+				"status": {
+					"type": "string",
+					"description": "Indication of the availability of the site (e.g.: open)"					
+				},
+				"day": {
+					"type": "string",
+					"description": "Day where the calendar status applies (e.g.: monday, mon-to-fri, weekdays, weekend, all week, ...)"					
+				},
+				"timeZone": {
+					"type": "string",
+					"description": "Indication of the timezone applicable to the calendar information (e.g.: Paris, GMT+1)"					
+				},
+				"hourPeriod": {
+					"$ref": "#/definitions/HourPeriodType",
+					"description": "Role of the related site in the relationship"					
+				}
+			},
+			"required": ["status","day","hourPeriod"]
+		},	
+		"HourPeriodType": {
+			"properties": {
+				"startHour": {
+					"type": "string",
+					"description": "The time when the status starts applying"					
+				},
+				"endHour": {
+					"type": "string",
+					"description": "The time when the status ends applying"				
+				}
+			},
+			"required": ["startHour","endHour"]
+		},		
+		"TimePeriodType": {
+			"properties": {
+				"startDateTime": {
+					"format": "date-time",
+					"type": "string"
+				},
+				"endDateTime": {
+					"format": "date-time",
+					"type": "string"
+				}
+			},
+			"required": ["startDateTime"]
+		}
+	},
+	"paths": {
+		"/geographicSite": {
+			"get": {
+				"operationId": "retrieveSites",
+				"parameters": [{
+					"description": "To obtain the list of sites with a given name",
+					"in": "query",
+					"name": "name",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of sites with a given code",
+					"in": "query",
+					"name": "code",
+					"required": false,
+					"type": "string"
+				}, {
+					"description": "To obtain the list of sites with a given status",
+					"in": "query",
+					"name": "status",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "List of sites provided",
+						"schema": {
+							"items": {
+								"$ref": "#/definitions/GeographicSiteResponseType"
+							},
+							"type": "array"
+						},
+						"headers": {
+							"X-Total-Count": {
+								"description": "Total results",
+								"type": "integer"
+							}
+						}
+					}
+				},
+				"summary": "Retrieve list of sites",
+				"tags": ["sites"]
+			},
+			"post": {
+				"consumes": ["application/json"],
+				"operationId": "createSite",
+				"parameters": [{
+					"description": "The information required to create a site resource",
+					"in": "body",
+					"name": "siteCreate",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/GeographicSiteCreateType"
+					}
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"201": {
+						"description": "Permission registered in server",
+						"headers": {
+							"Location": {
+								"description": "Location where to query the created permission resource",
+								"type": "string"
+							}
+						}
+					}
+				},
+				"summary": "Create new permission",
+				"tags": ["sites"]
+			}
+		},
+		"/geographicSite/{siteId}": {
+			"get": {
+				"operationId": "retrieveSite",
+				"parameters": [{
+					"description": "The id of the site to retrieve",
+					"in": "path",
+					"name": "siteId",
+					"required": true,
+					"type": "string"
+				}, {
+					"description": "To obtain a subset of the resource data in the response",
+					"in": "query",
+					"name": "fields",
+					"required": false,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "Site information provided",
+						"schema": {
+							"$ref": "#/definitions/GeographicSiteResponseType"
+						}
+					}
+				},
+				"summary": "Retrieve site resource",
+				"tags": ["sites"]
+			},
+			"put": {
+				"operationId": "updateSite",
+				"parameters": [{
+					"description": "The id of the site to retrieve",
+					"in": "path",
+					"name": "siteId",
+					"required": true,
+					"type": "string"
+					},
+					{
+					"description": "The information required to update completely a site resource",
+					"in": "body",
+					"name": "siteModify",
+					"required": true,
+					"schema": {
+						"$ref": "#/definitions/GeographicSiteCreateType"	
+					}
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"200": {
+						"description": "Site updated"
+					}
+				},
+				"summary": "Retrieve site resource",
+				"tags": ["sites"]
+			},
+			"delete": {
+				"operationId": "removeSite",
+				"parameters": [{
+					"description": "The id of the site to retrieve",
+					"in": "path",
+					"name": "siteId",
+					"required": true,
+					"type": "string"
+				}],
+				"produces": ["application/json"],
+				"responses": {
+					"204": {
+						"description": "Site resource removed"
+					}
+				},
+				"summary": "Retrieve site resource",
+				"tags": ["sites"]
+			}			
+		}
+	},
+	"tags": [{
+		"name": "sites"
+	}]
+}

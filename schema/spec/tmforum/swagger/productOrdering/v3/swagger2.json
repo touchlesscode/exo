@@ -1,0 +1,1437 @@
+
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "##TMF API Reference : TMF 622 - Product Ordering Management\n\n##Release : 17.5 - November 2017\n\nThe Product Ordering API provides a standardized mechanism for placing a product order with all of the necessary order parameters. The API consists of a simple set of operations that interact with CRM/Order Negotiation systems in a consistent manner. A product order is created based on a product offer that is defined in a catalog. The product offer identifies the product or set of products that are available to a customer, and includes characteristics such as pricing, product options and market.\n\nThe product order references the product offer and identifies any specific requests made by the customer.\n\n###Product Order resource\nA Product Order is a type of order which  can  be used to place an order  between a customer and a service provider or between a service provider and a partner and vice versa. Main Product  Order  attributes  are  its  identifier,  state,  priority  category  (mass  market,  Enterprise,  etc.) related dates (start, completion, etc.), related billing account, related parties and order items. Main Order Items (aka order lines) attributes are the ordered offering and product characteristics with the  related  action  to  be performed  (e.g.  add  or  delete  the  products),  state,  location  information  for delivery, order item price and price alteration.\n\n###Product Order API performs the following operations on product order :\n- Retrieval of a product order or a collection of product orders depending on filter criteria\n- Partial update of a product order (including updating rules)\n- Creation of a product order (including default values and creation rules)\n- Deletion of product order (for administration purposes)\n- Notification of events on product order.\n\nCopyright © TM Forum 2017. All Rights Reserved\n\n[Read more](http://api-docs.cf.ns.nd-paas.itn.ftgroup/tmf_productOrdering_3.0/TMF622_Product_Ordering_Management_API_REST_Specification_R16.5.1.pdf)",    
+    "version": "4.0.0_inProgress",
+    "title": "API ProductOrdering"
+  },
+  
+  "host": "api.orange.com",
+  "basePath":	"/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json;charset=utf-8"
+  ],
+  "produces": [
+    "application/json;charset=utf-8"
+  ],
+  "tags": [
+  
+    {
+      "name": "ProductOrder",
+      "description": ""
+    }
+  ],    
+  "paths": { 
+      "/productOrder": {
+      "post": {
+        "tags": [
+           "ProductOrder"
+        ],    
+        "operationId": "productOrderCreate",
+        "summary": "Create a product order",
+        "description": "This operation creates a product order entity. Mandatory and non mandatory attributes, additional rules and default values are provided in the specifications document.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "ProductOrder",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/POST_REQ_ProductOrder"
+            }                     
+          }
+        ],     
+        "responses": {
+          "201": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/ProductOrder"
+            }                                                  
+
+          }
+        }        
+      },
+      "get": {
+        "tags": [
+           "ProductOrder"
+        ],    
+        "operationId": "productOrderFind",
+        "summary": "List product orders",
+        "description": "This operation list product order entities. Attribute  selection  is enabled for all first level attributes. Filtering may  be available  depending  on the compliance  level supported  by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "type": "array",
+              "items": {          
+              "$ref": "#/definitions/ProductOrder"
+              }
+            }                                                  
+
+          }
+        }        
+      }
+    }, 
+      "/productOrder/{productOrderId}": {
+      "get": {
+        "tags": [
+           "ProductOrder"
+        ],    
+        "operationId": "productOrderGet",
+        "summary": "Retrieve a product order",
+        "description": "This operation retrieves  a product order entity. Attribute  selection  is enabled for all first level attributes. Filtering on sub-resources  may  be available  depending on the compliance  level supported by an implementation.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "productOrderId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "fields",
+            "required": false,
+            "in": "query",
+            "description": "Attributes selection",
+            
+              "type": "string"                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/ProductOrder"
+            }                                                  
+
+          }
+        }        
+      },
+      "patch": {
+        "tags": [
+           "ProductOrder"
+        ],    
+        "operationId": "productOrderPatch",
+        "summary": "Patch a product order",
+        "description": "This    operation    allows    partial    updates    of    a    product    order    entity.    Support    of    json/merge (https://tools.ietf.org/html/rfc7386)  is  mandatory,  support  of  json/patch  (http://tools.ietf.org/html/rfc5789)  is optional.\nPatchable and not patchable attributes are provided in the specifications document.",
+        "deprecated": false,        
+          
+        "parameters": [
+          
+          {
+            "name": "productOrderId",
+            "in": "path",
+            "required": true,            
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "ProductOrder",
+            "required": true,
+            "in": "body",
+            "description": "",
+            "schema": {          
+              "$ref": "#/definitions/ProductOrder"
+            }                     
+          }
+        ],     
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {          
+              "$ref": "#/definitions/ProductOrder"
+            }                                                  
+
+          }
+        }        
+      }
+    }
+  },
+"definitions": {
+      
+    "PriorityType": {
+      "description": "",
+      
+      "type": "string",   
+      "enum": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4"
+      ]	
+	    
+    },    
+    "ActionType": {
+      "description": "",
+      
+      "type": "string",   
+      "enum": [
+        "add",
+        "modify",
+        "noChange",
+        "delete"
+      ]	
+	    
+    },    
+    "StateType": {
+      "description": "",
+        
+      "type": "string",   
+      "enum": [
+  	          "acknowledged",
+  	          "inProgress",
+  	          "cancelled",
+  	          "completed",
+  	          "rejected",
+  	          "pending",
+  	          "held",
+  	          "failed",
+  	          "partial"]
+        
+    },    
+    "RelationShipType": {
+      "description": "",
+      
+      "type": "string",   
+      "enum": [
+        "reliesOn",
+        "brings",
+        "hasParent",
+        "hasChild"
+      ]	
+	    
+    },    
+    "PriceType": {
+      "description": "",
+        
+      "type": "string",   
+      "enum": [
+  	          "recuring",
+  	          "oneTime",
+  	          "usage"]
+        
+    },
+    
+    "ZErrorDetail": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ZError": {
+      "description": "",
+      
+      "required": [       
+          
+            "code",
+            "message"
+      ],
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "message": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "infoURL": {
+          "description": "",
+              "type": "string"
+        },
+        "details": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ZErrorDetail"
+          }
+        }     
+      }
+            
+    },
+    
+    "BillingAccountRef": {
+      "description": "A BillingAccount is a detailed description of a bill structure.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the billing account",
+              "type": "string"
+        },
+        "href": {
+          "description": "Unique reference of the billing account",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the billing account",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductOfferingRef": {
+      "description": "A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the product offering.",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the product offering.",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the product offering.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicate the class (type) of product offering.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "Place": {
+      "description": "Place defines the places where the products are sold or delivered.",
+      
+      "required": [       
+          
+            "role"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the place",
+              "type": "string"
+        },
+        "href": {
+          "description": "Unique reference of the place",
+              "type": "string"
+        },
+        "name": {
+          "description": "A user-friendly name for the place, such as \"Paris Store\", \"London Store\", \"Main Home\".",
+              "type": "string"
+        },
+        "role": {
+          "description": "Role of the place",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Type of Place.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing this REST resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "AppointmentRef": {
+      "description": "If the product order item requires an appointment between the service provider and the customer.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "id of the appointment",
+              "type": "string"
+        },
+        "href": {
+          "description": "Hyperlink to access the appointment",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductOrder": {
+      "description": "",
+      
+      "required": [       
+          
+            "id",
+            "orderItem"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "ID created on repository side (OM system)",
+              "type": "string"
+        },
+        "href": {
+          "description": "Hyperlink to access the order",
+              "type": "string"
+        },
+        "externalId": {
+          "description": "ID given by the consumer and only understandable by him (to facilitate his searches afterwards).",
+              "type": "string"
+        },
+        "priority": {
+          "description": "A way that can be used by consumers to prioritize orders in OM system (from 0 to 4 : 0 is the highest priority, and 4 the lowest)",          
+           "$ref": "#/definitions/PriorityType"
+        },
+        "description": {
+          "description": "Description of the product order",
+              "type": "string"
+        },
+        "category": {
+          "description": "Used to categorize the order from a business perspective that can be useful for the OM system (e.g. \"enterprise\", \"residential\", ...).",
+              "type": "string"
+        },
+        "state": {
+          "description": "Tracks the lifecycle status of the product order, such as Acknowledged, Rejected, InProgress, Pending and so on",          
+           "$ref": "#/definitions/StateType"
+        },
+        "orderDate": {
+          "description": "Date when the order was created",
+              "type": "string",
+              "format": "date-time"
+        },
+        "completionDate": {
+          "description": "Date when the order was completed.",
+              "type": "string",
+              "format": "date-time"
+        },
+        "requestedStartDate": {
+          "description": "Order start date wished by the requestor",
+              "type": "string",
+              "format": "date-time"
+        },
+        "requestedCompletionDate": {
+          "description": "Requested delivery date from the requestor perspective",
+              "type": "string",
+              "format": "date-time"
+        },
+        "expectedCompletionDate": {
+          "description": "Expected delivery date amended by the provider",
+              "type": "string",
+              "format": "date-time"
+        },
+        "notificationContact": {
+          "description": "Contact attached to the order to send back information regarding this order",
+              "type": "string"
+        },
+        "@baseType": {
+          "description": "Indicates the base type of the resource. Here can be 'ProductOrder'.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here can be 'ProductOrder'.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "A link to the schema describing this REST resource.",
+              "type": "string"
+        },
+        "Channel": {
+          "description": "Channel used to create the product order",          
+              "$ref": "#/definitions/Channel"
+        },
+        "note": {
+          "description": "Extra information about the product order",          
+              "$ref": "#/definitions/Note"
+        },
+        "relatedParty": {
+          "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/RelatedPartyRef"
+          }
+        },
+        "payment": {
+          "description": "If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/PaymentRef"
+          }
+        },
+        "billingAccount": {
+          "description": "A BillingAccount is a detailed description of a bill structure.",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "orderTotalPrice": {
+          "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item or this order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "orderItem": {
+          "description": "An identified part of the order. A product order is decomposed into one or more order item",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderItem"
+          }
+        }     
+      }
+            
+    },
+    
+    "Note": {
+      "description": "Extra information about a given entity",
+      
+      "required": [       
+          
+            "text"
+      ],
+      "type": "object",
+      "properties": {
+        "text": {
+          "description": "Texte of the note",
+              "type": "string"
+        },
+        "date": {
+          "description": "Date of the note",
+              "type": "string",
+              "format": "date-time"
+        },
+        "author": {
+          "description": "Author of the note",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "RelatedPartyRef": {
+      "description": "A related party defines party or party role linked to a specific entity.",
+      
+      "required": [       
+          
+            "id",
+            "href",
+            "role"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the related party",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the related party, could be a party reference or a party role reference.",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the related party",
+              "type": "string"
+        },
+        "role": {
+          "description": "Role played by the related party",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the base (class) type of the party.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "OrderItem": {
+      "description": "An identified part of the order. A product order is decomposed into one or more order items.",
+      
+      "required": [       
+          
+            "id",
+            "action"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identifier of the line item (generally it is a sequence number 01, 02, 03, ...)",
+              "type": "string"
+        },
+        "action": {
+          "description": "Can be \"add\" / \"modify\" / \"no_change\"/ \"delete\"",          
+           "$ref": "#/definitions/ActionType"
+        },
+        "state": {
+          "description": "State of the order item : described in the state machine diagram",          
+           "$ref": "#/definitions/StateType"
+        },
+        "quantity": {
+          "description": "Quantity ordered",
+              "type": "integer",
+              "format": "int64"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here it can be a type of productOrderItem.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "An URL to the schema describing this REST resource.",
+              "type": "string"
+        },
+        "appointment": {
+          "description": "Used to precise that an appointment was set up with a related party for this order item",          
+              "$ref": "#/definitions/AppointmentRef"
+        },
+        "billingAccount": {
+          "description": "A list of billing accounts",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "itemPrice": {
+          "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "itemTotalPrice": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "productOffering": {
+          "description": "A product offering reference (ProductOfferingRef). A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information",          
+              "$ref": "#/definitions/ProductOffering"
+        },
+        "product": {
+          "description": "A product reference (ProductRef). Configure the product characteristics (only configurable characteristics and necessary only if a non default value is selected) and/or identify the product that needs to be modified/deleted May be a bundle product instantiation, in this case, it will contain the list of bundled product to instantiate Nota : Each product to instantiate corresponds to a purchased productOffering. In case of bundles, the order of the list in the productOffering bundle must match the order of the list in the product instance bundle to deliver.",          
+              "$ref": "#/definitions/Product"
+        },
+        "orderItemRelationship": {
+          "description": "Realtionships between order items",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderItemRelationShip"
+          }
+        },
+        "qualification": {
+          "description": "It could be a serviceQualification or a productOfferingQualification that has been executed previously and captured in the productOrder to provide 'eligibility' information.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/QualificationRef"
+          }
+        },
+        "payment": {
+          "description": "If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/PaymentRef"
+          }
+        },
+        "itemTerm": {
+          "description": "Description of a productTerm linked to this orderItem. This reprsent a commitment with a duration",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderTerm"
+          }
+        },
+        "orderItem": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderItem"
+          }
+        }     
+      }
+            
+    },
+    
+    "OrderPrice": {
+      "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item or this order.",
+      
+      "required": [       
+          
+            "priceType",
+            "price"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "A short descriptive name such as \"Subscription price\".",
+              "type": "string"
+        },
+        "description": {
+          "description": "A narrative that explains in detail the semantics of this order item price",
+              "type": "string"
+        },
+        "priceType": {
+          "description": "A category that describes the price, such as recurring, discount, allowance, penalty and so forth",          
+           "$ref": "#/definitions/PriceType"
+        },
+        "unitOfMeasure": {
+          "description": "Could be minutes, gigaBytes,...",
+              "type": "string"
+        },
+        "recurringChargePeriod": {
+          "description": "Could be month, week,...",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicate the type of orderPrice.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "A link to the schema describing this orderPrice extension.",
+              "type": "string"
+        },
+        "price": {
+          "description": "Provides all amounts (tax included, tax excluded and tax rate), used currency code and percentage to apply for the price",          
+              "$ref": "#/definitions/Price"
+        },
+        "priceAlteration": {
+          "description": "An amount, usually of money, that modifies the price charged for this order item",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/PriceAlteration"
+          }
+        },
+        "billingAccount": {
+          "description": "",          
+              "$ref": "#/definitions/BillingAccountRef"
+        }     
+      }
+            
+    },
+    
+    "ProductOffering": {
+      "description": "A product offering represents entities that are order-able from the provider of the catalog, this resource includes pricing information.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the product offering.",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the product offering.",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the product offering.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicate the class (type) of product offering.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "Product": {
+      "description": "Configure the product characteristics (only configurable characteristics and necessary only if a non default value is selected) and/or identify the product that needs to be modified/deleted.",
+      
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "",
+              "type": "string"
+        },
+        "href": {
+          "description": "",
+              "type": "string"
+        },
+        "name": {
+          "description": "",
+              "type": "string"
+        },
+        "place": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/Place"
+          }
+        },
+        "characteristic": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ProductCharacteristic"
+          }
+        },
+        "relatedParty": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/RelatedPartyRef"
+          }
+        },
+        "productRelationship": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/ProductRelationship"
+          }
+        },
+        "productSpecification": {
+          "description": "",          
+              "$ref": "#/definitions/ProductSpecificationRef"
+        }     
+      }
+            
+    },
+    
+    "OrderItemRelationShip": {
+      "description": "",
+      
+      "required": [       
+          
+            "id",
+            "type"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "",
+              "type": "string"
+        },
+        "type": {
+          "description": "",          
+           "$ref": "#/definitions/RelationShipType"
+        }     
+      }
+            
+    },
+    
+    "ProductCharacteristic": {
+      "description": "Characteristics of the product to instantiate or to modify.",
+      
+      "required": [       
+          
+            "name",
+            "value"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the characteristic.",
+              "type": "string"
+        },
+        "value": {
+          "description": "Value of the characteristic.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of resource",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "This field provided a link to the schema describing this REST resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductRelationship": {
+      "description": "",
+      
+      "required": [       
+          
+            "type",
+            "product"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "description": "",          
+           "$ref": "#/definitions/RelationShipType"
+        },
+        "product": {
+          "description": "",          
+              "$ref": "#/definitions/Product"
+        }     
+      }
+            
+    },
+    
+    "Channel": {
+      "description": "The channel defines the channel for selling product offerings where order has been submitted.",
+      
+      "required": [       
+          
+            "id"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of  the channel",
+              "type": "string"
+        },
+        "href": {
+          "description": "Unique reference of the channel",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the channel",
+              "type": "string"
+        },
+        "role": {
+          "description": "Role of the channel - could be 'initChannel', 'submitChannel' for example.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "PriceAlteration": {
+      "description": "Is an amount, usually of money, that modifies the price charged for an order item.",
+      
+      "required": [       
+          
+            "priceType"
+      ],
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "",
+              "type": "string"
+        },
+        "description": {
+          "description": "",
+              "type": "string"
+        },
+        "priceType": {
+          "description": "",          
+           "$ref": "#/definitions/PriceType"
+        },
+        "unitOfMeasure": {
+          "description": "",
+              "type": "string"
+        },
+        "recurringChargePeriod": {
+          "description": "",
+              "type": "string"
+        },
+        "applicationDuration": {
+          "description": "",
+              "type": "string"
+        },
+        "priority": {
+          "description": "",
+              "type": "integer",
+              "format": "int32"
+        },
+        "price": {
+          "description": "",          
+              "$ref": "#/definitions/Price"
+        },
+        "@type": {
+          "description": "",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "Price": {
+      "description": "Provides all amounts (tax included, duty free, tax rate), used currency and percentage to apply for Price Alteration.",
+      
+      "type": "object",
+      "properties": {
+        "taxIncludedAmount": {
+          "description": "All taxes included amount (expressed in the given currency).",          
+              "$ref": "#/definitions/Money"
+        },
+        "dutyFreeAmount": {
+          "description": "All taxes excluded amount (expressed in the given currency).",          
+              "$ref": "#/definitions/Money"
+        },
+        "taxRate": {
+          "description": "Tax rate.",
+              "type": "number",
+              "format": "float"
+        },
+        "percentage": {
+          "description": "Percentage to apply for ProdOfferPriceAlteration.",
+              "type": "number",
+              "format": "float"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of the price.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "Link to the schema describing this REST resource.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "QualificationRef": {
+      "description": "It could be a serviceQualification or a productOfferingQualification that has been executed previously and captured in the productOrder to provide 'eligibility' information.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identifier of a pre-existing qualification.",
+              "type": "string"
+        },
+        "href": {
+          "description": "href of the qualification.",
+              "type": "string"
+        },
+        "qualificationItemId": {
+          "description": "Id of an item of a qualification.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here it can be a type of qualification. (could a service qualification or a product offering qualification).",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "PaymentRef": {
+      "description": "If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identifier of a payment.",
+              "type": "string"
+        },
+        "href": {
+          "description": "Hyperlink to access to a payment.",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of a payment.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here can be 'cash', 'BankCard', ‘Check’, etc...",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "OrderTerm": {
+      "description": "Description of a productTerm linked to this orderItem. This represent a commitment with a duration.\nDuration or name must be provided.",
+      
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "Name of the productOrderTerm.",
+              "type": "string"
+        },
+        "description": {
+          "description": "Description of the productOrderTerm.",
+              "type": "string"
+        },
+        "duration": {
+          "description": "Duration of the productOrderTerm.",          
+              "$ref": "#/definitions/Quantity"
+        },
+        "@type": {
+          "description": "Indicated the type of Term.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "Quantity": {
+      "description": "",
+      
+      "required": [       
+          
+            "value",
+            "unit"
+      ],
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "",
+              "type": "number",
+              "format": "float"
+        },
+        "unit": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductSpecificationSchemaRef": {
+      "description": "ProductSpecification description could be done with schema use. This information allows to retrieve schema type and location.",
+      
+      "required": [       
+          
+            "@type",
+            "@schemaLocation"
+      ],
+      "type": "object",
+      "properties": {
+        "@type": {
+          "description": "Indicates the type of resource. Here it will be a product specification.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "URL to get to the schema description file.",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "ProductSpecificationRef": {
+      "description": "A ProductSpecification is a detailed description of a tangible or intangible object made available externally in the form of a ProductOffering to customers or other parties playing a party role.",
+      
+      "required": [       
+          
+            "id",
+            "href"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Unique identifier of the product specification.",
+              "type": "string"
+        },
+        "href": {
+          "description": "Reference of the product specification.",
+              "type": "string"
+        },
+        "version": {
+          "description": "Version of the product specification.",
+              "type": "string"
+        },
+        "name": {
+          "description": "Name of the product specification.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the (class) type of resource (here product specification).",
+              "type": "string"
+        },
+        "describing": {
+          "description": "ProductSpecification description could be done with schema use. This information allows to retrieve schema type and location.",          
+              "$ref": "#/definitions/ProductSpecificationSchemaRef"
+        }     
+      }
+            
+    },
+    
+    "Money": {
+      "description": "",
+      
+      "required": [       
+          
+            "value",
+            "unit"
+      ],
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "",
+              "type": "number",
+              "format": "float"
+        },
+        "unit": {
+          "description": "",
+              "type": "string"
+        }     
+      }
+            
+    },
+    
+    "POST_REQ_OrderItem": {
+      "description": "",
+      
+      "required": [       
+          
+            "id",
+            "action"
+      ],
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "Identifier of the line item (generally it is a sequence number 01, 02, 03, ...)",
+              "type": "string"
+        },
+        "action": {
+          "description": "Can be \"add\" / \"modify\" / \"no_change\"/ \"delete\"",          
+           "$ref": "#/definitions/ActionType"
+        },
+        "quantity": {
+          "description": "Quantity ordered",
+              "type": "integer",
+              "format": "int64"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here it can be a type of productOrderItem.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "An URL to the schema describing this REST resource.",
+              "type": "string"
+        },
+        "appointment": {
+          "description": "Used to precise that an appointment was set up with a related party for this order item",          
+              "$ref": "#/definitions/AppointmentRef"
+        },
+        "billingAccount": {
+          "description": "A list of billing accounts",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "itemPrice": {
+          "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "itemTotalPrice": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "productOffering": {
+          "description": "A product offering reference (ProductOfferingRef). A product offering represents entities that are orderable from the provider of the catalog, this resource includes pricing information",          
+              "$ref": "#/definitions/ProductOffering"
+        },
+        "product": {
+          "description": "A product reference (ProductRef). Configure the product characteristics (only configurable characteristics and necessary only if a non default value is selected) and/or identify the product that needs to be modified/deleted May be a bundle product instantiation, in this case, it will contain the list of bundled product to instantiate Nota : Each product to instantiate corresponds to a purchased productOffering. In case of bundles, the order of the list in the productOffering bundle must match the order of the list in the product instance bundle to deliver.",          
+              "$ref": "#/definitions/Product"
+        },
+        "orderItemRelationship": {
+          "description": "Realtionships between order items",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderItemRelationShip"
+          }
+        },
+        "qualification": {
+          "description": "It could be a serviceQualification or a productOfferingQualification that has been executed previously and captured in the productOrder to provide 'eligibility' information.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/QualificationRef"
+          }
+        },
+        "payment": {
+          "description": "If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/PaymentRef"
+          }
+        },
+        "itemTerm": {
+          "description": "Description of a productTerm linked to this orderItem. This reprsent a commitment with a duration",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderTerm"
+          }
+        },
+        "orderItem": {
+          "description": "",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderItem"
+          }
+        }     
+      }
+            
+    },
+    
+    "POST_REQ_ProductOrder": {
+      "description": "",
+      
+      "required": [       
+          
+            "orderItem"
+      ],
+      "type": "object",
+      "properties": {
+        "externalId": {
+          "description": "ID given by the consumer and only understandable by him (to facilitate his searches afterwards).",
+              "type": "string"
+        },
+        "priority": {
+          "description": "A way that can be used by consumers to prioritize orders in OM system (from 0 to 4 : 0 is the highest priority, and 4 the lowest)",          
+           "$ref": "#/definitions/PriorityType"
+        },
+        "description": {
+          "description": "Description of the product order",
+              "type": "string"
+        },
+        "category": {
+          "description": "Used to categorize the order from a business perspective that can be useful for the OM system (e.g. \"enterprise\", \"residential\", ...).",
+              "type": "string"
+        },
+        "requestedStartDate": {
+          "description": "Order start date wished by the requestor",
+              "type": "string",
+              "format": "date-time"
+        },
+        "requestedCompletionDate": {
+          "description": "Requested delivery date from the requestor perspective",
+              "type": "string",
+              "format": "date-time"
+        },
+        "notificationContact": {
+          "description": "Contact attached to the order to send back information regarding this order",
+              "type": "string"
+        },
+        "@baseType": {
+          "description": "Indicates the base type of the resource. Here can be 'ProductOrder'.",
+              "type": "string"
+        },
+        "@type": {
+          "description": "Indicates the type of resource. Here can be 'ProductOrder'.",
+              "type": "string"
+        },
+        "@schemaLocation": {
+          "description": "A link to the schema describing this REST resource.",
+              "type": "string"
+        },
+        "Channel": {
+          "description": "Channel used to create the product order",          
+              "$ref": "#/definitions/Channel"
+        },
+        "note": {
+          "description": "Extra information about the product order",          
+              "$ref": "#/definitions/Note"
+        },
+        "relatedParty": {
+          "description": "RelatedParty reference. A related party defines party or party role linked to a specific entity",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/RelatedPartyRef"
+          }
+        },
+        "payment": {
+          "description": "If an immediate payment has been done at the product order submission, the payment information are captured and stored (as a reference) in the order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/PaymentRef"
+          }
+        },
+        "billingAccount": {
+          "description": "A BillingAccount is a detailed description of a bill structure.",          
+              "$ref": "#/definitions/BillingAccountRef"
+        },
+        "orderTotalPrice": {
+          "description": "An amount, usually of money, that represents the actual price paid by the Customer for this item or this order.",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/OrderPrice"
+          }
+        },
+        "orderItem": {
+          "description": "An identified part of the order. A product order is decomposed into one or more order item",
+          "type": "array",
+          "items": {          
+              "$ref": "#/definitions/POST_REQ_OrderItem"
+          }
+        }     
+      }
+            
+    }  
+  }
+}
+	

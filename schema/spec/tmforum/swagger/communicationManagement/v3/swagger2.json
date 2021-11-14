@@ -1,0 +1,942 @@
+{
+    "swagger": "2.0", 
+    "info": {
+        "title": "Communication Management", 
+        "description": "This is Swagger UI environment generated for the TMF Communication Management specification", 
+        "version": "2.0"
+    }, 
+    "host": "biologeek.orange-labs.fr", 
+    "basePath": "/tmf-api/communicationManagement", 
+    "schemes": [
+        "https"
+    ], 
+    "consumes": [
+        "application/json"
+    ], 
+    "produces": [
+        "application/json"
+    ], 
+    "paths": {
+        "/communicationMessage": {
+            "get": {
+                "operationId": "listCommunicationMessage", 
+                "summary": "List or find 'CommunicationMessage' objects", 
+                "tags": [
+                    "communicationMessage"
+                ], 
+                "parameters": [
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "fields", 
+                        "description": "Comma separated properties to display in response"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@baseType", 
+                        "description": "For filtering: It indicates the base type of REST resource."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@schemaLocation", 
+                        "description": "For filtering: It provides the link to the schema describing REST resource"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "@type", 
+                        "description": "For filtering: It indicates the class type of the catalog"
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "callbackFlag", 
+                        "description": "For filtering: "
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "content", 
+                        "description": "For filtering: The content of the communication message."
+                    }, 
+                    {
+                        "type": "boolean", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "logFlag", 
+                        "description": "For filtering: "
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "priority", 
+                        "description": "For filtering: The priority of the communication message.\nSmall number means higher priority."
+                    }, 
+                    {
+                        "name": "sendTime", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: The time of sending communication message."
+                    }, 
+                    {
+                        "name": "sendTimeComplete", 
+                        "format": "date-time", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "string", 
+                        "description": "For filtering: The time of completion of sending communication message."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "status", 
+                        "description": "For filtering: Status of communication message"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "subject", 
+                        "description": "For filtering: The title of the message. \nIt is necessary for the email and mobile app push."
+                    }, 
+                    {
+                        "type": "integer", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "tryTimes", 
+                        "description": "For filtering: "
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "type", 
+                        "description": "For filtering: 1: SMS\n2: Email\n3: Mobile app push notification"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "characteristic.name", 
+                        "description": "For filtering: Content parameter identifier"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "characteristic.value", 
+                        "description": "For filtering: Content parameter value"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "receiver.appUserId", 
+                        "description": "For filtering: ID of the mobile app user"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "receiver.email", 
+                        "description": "For filtering: Receiver address of email, if the communication type is email"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "receiver.ip", 
+                        "description": "For filtering: IP address of the receiver"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "receiver.name", 
+                        "description": "For filtering: Name of the receiver"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "receiver.phoneNumber", 
+                        "description": "For filtering: Phone number of the receiver, if the communication type is SMS."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "sender.email", 
+                        "description": "For filtering: Sender address of email, if the communication type is email"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "sender.name", 
+                        "description": "For filtering: Name of the sender"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "sender.phoneNumber", 
+                        "description": "For filtering: Phone number of the sender, if the communication type is SMS."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.mimeType", 
+                        "description": "For filtering: "
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.name", 
+                        "description": "For filtering: The path of the attached file in the communication message."
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.path", 
+                        "description": "For filtering: The path of the attached file in the communication message."
+                    }, 
+                    {
+                        "name": "attachment.size", 
+                        "format": "float", 
+                        "required": false, 
+                        "in": "query", 
+                        "type": "number", 
+                        "description": "For filtering: "
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.sizeUnit", 
+                        "description": "For filtering: The name of attached file in the communication message"
+                    }, 
+                    {
+                        "type": "string", 
+                        "required": false, 
+                        "in": "query", 
+                        "name": "attachment.url", 
+                        "description": "For filtering: The name of attached file in the communication message"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/CommunicationMessage"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "post": {
+                "operationId": "createCommunicationMessage", 
+                "summary": "Creates a 'CommunicationMessage'", 
+                "tags": [
+                    "communicationMessage"
+                ], 
+                "parameters": [
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/CommunicationMessage_Create"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "communicationMessage", 
+                        "description": "The Communication Message to be created"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Created", 
+                        "schema": {
+                            "$ref": "#/definitions/CommunicationMessage"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/communicationMessage/{id}": {
+            "get": {
+                "operationId": "retrieveCommunicationMessage", 
+                "summary": "Retrieves a 'CommunicationMessage' by Id", 
+                "tags": [
+                    "communicationMessage"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Communication Message"
+                    }
+                ], 
+                "responses": {
+                    "200": {
+                        "description": "Ok", 
+                        "schema": {
+                            "items": {
+                                "$ref": "#/definitions/CommunicationMessage"
+                            }, 
+                            "type": "array"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }, 
+            "patch": {
+                "operationId": "patchCommunicationMessage", 
+                "summary": "Updates partially a 'CommunicationMessage' by Id", 
+                "tags": [
+                    "communicationMessage"
+                ], 
+                "parameters": [
+                    {
+                        "required": true, 
+                        "type": "string", 
+                        "name": "id", 
+                        "in": "path", 
+                        "description": "Identifier of the Communication Message"
+                    }, 
+                    {
+                        "schema": {
+                            "$ref": "#/definitions/CommunicationMessage_Update"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "name": "communicationMessage", 
+                        "description": "The Communication Message to be updated"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Updated", 
+                        "schema": {
+                            "$ref": "#/definitions/CommunicationMessage"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub": {
+            "post": {
+                "operationId": "registerListener", 
+                "summary": "Register a listener", 
+                "description": "Sets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "data", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscriptionInput"
+                        }, 
+                        "required": true, 
+                        "in": "body", 
+                        "description": "Data containing the callback endpoint to deliver the information"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Subscribed", 
+                        "schema": {
+                            "$ref": "#/definitions/EventSubscription"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "400": {
+                        "description": "Bad Request", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }, 
+        "/hub/{id}": {
+            "delete": {
+                "operationId": "unregisterListener", 
+                "summary": "Unregister a listener", 
+                "description": "Resets the communication endpoint address the service instance must use to deliver information about its health state, execution state, failures and metrics.", 
+                "tags": [
+                    "events subscription"
+                ], 
+                "parameters": [
+                    {
+                        "name": "id", 
+                        "type": "string", 
+                        "required": true, 
+                        "in": "path", 
+                        "description": "The id of the registered listener"
+                    }
+                ], 
+                "responses": {
+                    "201": {
+                        "description": "Unsubscribed"
+                    }, 
+                    "404": {
+                        "description": "Not Found", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }, 
+                    "500": {
+                        "description": "Internal Server Error", 
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    }, 
+    "definitions": {
+        "CommunicationMessage": {
+            "type": "object", 
+            "description": "Communication message means a notification approach in the format of a message which can be dispatched (sent) to the certain user by the system with the content which can be felt and understood by the recipient. The user can be either a final customer or a customer service agent. The message can reach the customer in different interaction channels, including: email, short message, mobile app notification (push).", 
+            "properties": {
+                "@baseType": {
+                    "type": "string", 
+                    "description": "It indicates the base type of REST resource."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "It provides the link to the schema describing REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "It indicates the class type of the catalog"
+                }, 
+                "callbackFlag": {
+                    "type": "boolean"
+                }, 
+                "content": {
+                    "type": "string", 
+                    "description": "The content of the communication message."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description for the whole object"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the Communication Message."
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of Communication Message"
+                }, 
+                "logFlag": {
+                    "type": "boolean"
+                }, 
+                "priority": {
+                    "type": "string", 
+                    "description": "The priority of the communication message.\nSmall number means higher priority."
+                }, 
+                "sendTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of sending communication message."
+                }, 
+                "sendTimeComplete": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of completion of sending communication message."
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of communication message"
+                }, 
+                "subject": {
+                    "type": "string", 
+                    "description": "The title of the message. \nIt is necessary for the email and mobile app push."
+                }, 
+                "tryTimes": {
+                    "type": "integer"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "1: SMS\n2: Email\n3: Mobile app push notification"
+                }, 
+                "characteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CommunicationRequestCharacteristic"
+                    }
+                }, 
+                "receiver": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Receiver"
+                    }
+                }, 
+                "sender": {
+                    "$ref": "#/definitions/Sender"
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }
+            }
+        }, 
+        "CommunicationMessage_Create": {
+            "type": "object", 
+            "description": "Communication message means a notification approach in the format of a message which can be dispatched (sent) to the certain user by the system with the content which can be felt and understood by the recipient. The user can be either a final customer or a customer service agent. The message can reach the customer in different interaction channels, including: email, short message, mobile app notification (push).\nSkipped properties: id,href", 
+            "required": [
+                "type", 
+                "content", 
+                "sender", 
+                "receiver"
+            ], 
+            "properties": {
+                "@baseType": {
+                    "type": "string", 
+                    "description": "It indicates the base type of REST resource."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "It provides the link to the schema describing REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "It indicates the class type of the catalog"
+                }, 
+                "callbackFlag": {
+                    "type": "boolean"
+                }, 
+                "content": {
+                    "type": "string", 
+                    "description": "The content of the communication message."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description for the whole object"
+                }, 
+                "logFlag": {
+                    "type": "boolean"
+                }, 
+                "priority": {
+                    "type": "string", 
+                    "description": "The priority of the communication message.\nSmall number means higher priority."
+                }, 
+                "sendTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of sending communication message."
+                }, 
+                "sendTimeComplete": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of completion of sending communication message."
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of communication message"
+                }, 
+                "subject": {
+                    "type": "string", 
+                    "description": "The title of the message. \nIt is necessary for the email and mobile app push."
+                }, 
+                "tryTimes": {
+                    "type": "integer"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "1: SMS\n2: Email\n3: Mobile app push notification"
+                }, 
+                "characteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CommunicationRequestCharacteristic"
+                    }
+                }, 
+                "receiver": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Receiver"
+                    }
+                }, 
+                "sender": {
+                    "$ref": "#/definitions/Sender"
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }
+            }
+        }, 
+        "CommunicationMessage_Update": {
+            "type": "object", 
+            "description": "Communication message means a notification approach in the format of a message which can be dispatched (sent) to the certain user by the system with the content which can be felt and understood by the recipient. The user can be either a final customer or a customer service agent. The message can reach the customer in different interaction channels, including: email, short message, mobile app notification (push).\nSkipped properties: id,href,id,href", 
+            "properties": {
+                "@baseType": {
+                    "type": "string", 
+                    "description": "It indicates the base type of REST resource."
+                }, 
+                "@schemaLocation": {
+                    "type": "string", 
+                    "description": "It provides the link to the schema describing REST resource"
+                }, 
+                "@type": {
+                    "type": "string", 
+                    "description": "It indicates the class type of the catalog"
+                }, 
+                "callbackFlag": {
+                    "type": "boolean"
+                }, 
+                "content": {
+                    "type": "string", 
+                    "description": "The content of the communication message."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "Description for the whole object"
+                }, 
+                "logFlag": {
+                    "type": "boolean"
+                }, 
+                "priority": {
+                    "type": "string", 
+                    "description": "The priority of the communication message.\nSmall number means higher priority."
+                }, 
+                "sendTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of sending communication message."
+                }, 
+                "sendTimeComplete": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "The time of completion of sending communication message."
+                }, 
+                "status": {
+                    "type": "string", 
+                    "description": "Status of communication message"
+                }, 
+                "subject": {
+                    "type": "string", 
+                    "description": "The title of the message. \nIt is necessary for the email and mobile app push."
+                }, 
+                "tryTimes": {
+                    "type": "integer"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "1: SMS\n2: Email\n3: Mobile app push notification"
+                }, 
+                "characteristic": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/CommunicationRequestCharacteristic"
+                    }
+                }, 
+                "receiver": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Receiver"
+                    }
+                }, 
+                "sender": {
+                    "$ref": "#/definitions/Sender"
+                }, 
+                "attachment": {
+                    "type": "array", 
+                    "items": {
+                        "$ref": "#/definitions/Attachment"
+                    }
+                }
+            }
+        }, 
+        "CommunicationRequestCharacteristic": {
+            "type": "object", 
+            "description": "<b><i>The values of parameters which are used in the content if the content contains them.</i></b>", 
+            "properties": {
+                "name": {
+                    "type": "string", 
+                    "description": "Content parameter identifier"
+                }, 
+                "value": {
+                    "type": "string", 
+                    "description": "Content parameter value"
+                }
+            }
+        }, 
+        "Receiver": {
+            "type": "object", 
+            "description": "<b><i>Receivers of the communication message.</i></b>", 
+            "properties": {
+                "appUserId": {
+                    "type": "string", 
+                    "description": "ID of the mobile app user"
+                }, 
+                "email": {
+                    "type": "string", 
+                    "description": "Receiver address of email, if the communication type is email"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "ID of the receiver"
+                }, 
+                "ip": {
+                    "type": "string", 
+                    "description": "IP address of the receiver"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the receiver"
+                }, 
+                "phoneNumber": {
+                    "type": "string", 
+                    "description": "Phone number of the receiver, if the communication type is SMS."
+                }, 
+                "party": {
+                    "$ref": "#/definitions/RelateParty"
+                }
+            }
+        }, 
+        "Sender": {
+            "type": "object", 
+            "description": "<b><i>Sender of the communication message.</i></b>", 
+            "properties": {
+                "email": {
+                    "type": "string", 
+                    "description": "Sender address of email, if the communication type is email"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "ID of the sender"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "Name of the sender"
+                }, 
+                "phoneNumber": {
+                    "type": "string", 
+                    "description": "Phone number of the sender, if the communication type is SMS."
+                }, 
+                "party": {
+                    "$ref": "#/definitions/RelateParty"
+                }
+            }
+        }, 
+        "Attachment": {
+            "type": "object", 
+            "description": "Complements the description of an element (for instance a product) through video, pictures...", 
+            "properties": {
+                "description": {
+                    "type": "string", 
+                    "description": "A narrative text describing the content of the attachment"
+                }, 
+                "href": {
+                    "type": "string", 
+                    "description": "Reference of the attachment"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of the attachment"
+                }, 
+                "type": {
+                    "type": "string", 
+                    "description": "Attachment type such as video, picture"
+                }, 
+                "url": {
+                    "type": "string", 
+                    "description": "Uniform Resource Locator, is a web page address (a subset of URI)"
+                }
+            }
+        }, 
+        "RelateParty": {
+            "type": "object", 
+            "description": "<b><i>The party entity of the receiver (user)</i></b>", 
+            "properties": {
+                "href": {
+                    "type": "string", 
+                    "description": "Hypertext Reference of the party"
+                }, 
+                "id": {
+                    "type": "string", 
+                    "description": "Unique identifier of party"
+                }, 
+                "name": {
+                    "type": "string", 
+                    "description": "name of the party"
+                }, 
+                "role": {
+                    "type": "string", 
+                    "description": "role of the party (customer, partner, etc)"
+                }, 
+                "validFor": {
+                    "$ref": "#/definitions/TimePeriod", 
+                    "description": "Validity period of the party"
+                }
+            }
+        }, 
+        "TimePeriod": {
+            "type": "object", 
+            "description": "A base / value business entity used to represent a period of time between two timepoints.", 
+            "properties": {
+                "endDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, ending at the TimePeriod."
+                }, 
+                "startDateTime": {
+                    "type": "string", 
+                    "format": "date-time", 
+                    "description": "An instant of time, starting at the TimePeriod"
+                }
+            }
+        }, 
+        "EventSubscription": {
+            "required": [
+                "id", 
+                "callback"
+            ], 
+            "properties": {
+                "id": {
+                    "type": "string", 
+                    "description": "Id of the listener"
+                }, 
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "EventSubscriptionInput": {
+            "required": [
+                "callback"
+            ], 
+            "properties": {
+                "callback": {
+                    "type": "string", 
+                    "description": "The callback being registered."
+                }, 
+                "query": {
+                    "type": "string", 
+                    "description": "additional data to be passed"
+                }
+            }
+        }, 
+        "Error": {
+            "required": [
+                "code", 
+                "message"
+            ], 
+            "properties": {
+                "code": {
+                    "type": "integer", 
+                    "description": "An integer coding the error type. This is given to caller so he can translate them if required."
+                }, 
+                "message": {
+                    "type": "string", 
+                    "description": "A short localized string that describes the error."
+                }, 
+                "description": {
+                    "type": "string", 
+                    "description": "(optional) A long localized error description if needed. It can contain precise information about which parameter is missing, or what are the identifier acceptable values."
+                }, 
+                "infoURL": {
+                    "type": "string", 
+                    "description": "(optional) A URL to online documentation that provides more information about the error."
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="rdf2html0.8.2.xsl"?>
+<!DOCTYPE rdf:RDF [
+  <!ENTITY xsd     "http://www.w3.org/2001/XMLSchema#">
+  <!ENTITY rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <!ENTITY rdfs    "http://www.w3.org/2000/01/rdf-schema#">
+  <!ENTITY owl     "http://www.w3.org/2002/07/owl#">
+  <!ENTITY dcterms "http://purl.org/dc/terms/">
+  <!ENTITY dcDoc   "dublincore.org/documents/dcmi-terms/">
+  <!ENTITY foaf    "http://xmlns.com/foaf/0.1/">
+  <!ENTITY foafSpec "http://xmlns.com/foaf/spec/">
+  <!ENTITY sioc    "http://rdfs.org/sioc/ns#">
+  <!ENTITY schema  "http://schema.org/">
+  <!ENTITY cc      "http://creativecommons.org/ns#">
+  <!ENTITY org     "http://www.w3.org/ns/org#">
+  <!ENTITY skos    "http://www.w3.org/2004/02/skos/core#">
+  <!ENTITY skosDoc "http://www.w3.org/TR/skos-primer/">
+  <!ENTITY xhv     "http://www.w3.org/1999/xhtml/vocab#">
+  <!ENTITY wdrs    "http://www.w3.org/2007/05/powder-s#">
+  <!ENTITY vann    "http://purl.org/vocab/vann/">
+  <!ENTITY person  "http://www.w3.org/ns/person#">
+  <!ENTITY legal   "http://www.w3.org/ns/legal#">
+  <!ENTITY locn    "http://www.w3.org/ns/locn#">
+  <!ENTITY adms    "http://www.w3.org/ns/adms#">
+  <!ENTITY title   "Business Core Vocabulary">
+  <!ENTITY documentation "https://joinup.ec.europa.eu/system/files/project/Core_Vocabularies-Business_Location_Person-Specification-v0.3_0.zip">
+  <!ENTITY documentationTitle "Business Core Vocabulary">
+  <!ENTITY methodology "https://joinup.ec.europa.eu/elibrary/document/isa-deliverable-process-and-methodology-developing-core-vocabularies">
+  <!ENTITY methodologyTitle "Process and Methodology for Developing Core Vocabularies">
+  <!ENTITY forum "https://joinup.ec.europa.eu/asset/core_business/topic/public-comments-core-business-vocabulary-v02">
+  <!ENTITY forumTitle "Public comments on the Business Core Vocabulary v0.2">
+]>
+
+
+<rdf:RDF xmlns:xsd     = "&xsd;"
+         xmlns:rdf     = "&rdf;"
+         xmlns:rdfs    = "&rdfs;"
+         xmlns:owl     = "&owl;"
+         xmlns:dcterms = "&dcterms;"
+         xmlns:foaf    = "&foaf;"
+         xmlns:sioc    = "&sioc;"
+         xmlns:schema  = "&schema;"
+         xmlns:cc      = "&cc;"
+         xmlns:org     = "&org;"
+         xmlns:skos    = "&skos;"
+         xmlns:xhv     = "&xhv;"
+         xmlns:wdrs    = "&wdrs;"
+         xmlns:vann    = "&vann;"
+         xmlns:person  = "&person;"
+         xmlns:legal   = "&legal;"
+         xmlns:locn    = "&locn;"
+         xmlns:adms    = "&adms;"
+         xmlns         = "&legal;"
+         xml:base      = "&legal;"
+         xml:lang = "en">
+
+<!-- Document metadata -->
+
+  <owl:Ontology rdf:about="&legal;">
+    <rdfs:label xml:lang="en">&documentationTitle;</rdfs:label>
+    <rdfs:comment xml:lang="en">This file specifies the set of RDF classes and properties used in the &title;</rdfs:comment>
+    <owl:versionInfo xml:lang="en">Version 1.00 07 May 2012</owl:versionInfo>
+    <dcterms:modified rdf:datatype="&xsd;date">2012-07-03</dcterms:modified>
+    <xhv:last rdf:resource=""/>
+<!--    
+    <xhv:prev rdf:resource=""/>
+    <xhv:next rdf:resource=""/>
+-->    
+    <vann:preferredNamespaceUri>&legal;</vann:preferredNamespaceUri>
+    <vann:preferredNamespacePrefix>legal</vann:preferredNamespacePrefix>
+    <dcterms:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://philarcher.org/foaf.rdf#me"/>
+      <foaf:name>Phil Archer</foaf:name>
+      <foaf:homepage rdf:resource="http://philarcher.org/"/>
+      <schema:affiliation rdf:parseType="Resource">
+        <foaf:name>W3C/ERCIM</foaf:name>
+      </schema:affiliation>
+    </dcterms:creator>
+    <dcterms:creator rdf:parseType="Resource">
+      <rdfs:seeAlso rdf:resource="http://andrea-perego.name/foaf/#me"/>
+      <foaf:name>Andrea Perego</foaf:name>
+      <foaf:homepage rdf:resource="http://andrea-perego.name/"/>
+      <schema:affiliation rdf:parseType="Resource">
+        <foaf:name>European Commission, Joint Research Centre (JRC)</foaf:name>
+      </schema:affiliation>
+    </dcterms:creator>
+    <foaf:maker rdf:parseType="Resource">
+      <foaf:name>Core Vocabularies Working Group (Business Task Force)</foaf:name>
+      <foaf:page rdf:resource="http://joinup.ec.europa.eu/asset/core_business/home"/>
+    </foaf:maker>
+    <dcterms:abstract>The Business Core Vocabulary provides a minimum set of classes and properties for
+    describing a registered legal entity (business). Its limited scope does not include sole traders, or
+    relationships between registered legal entities. This vocabulary is closely integrated with the
+    Location and Person Core Vocabularies.</dcterms:abstract>
+    <dcterms:description>This is the RDF encoding of the Business Core Vocabulary developed under the European Commission's ISA Programme, specifically under SEMIC Phase II, directed by Vassilios Peristeras of DG DIGIT.
+    </dcterms:description>
+    <foaf:depiction>
+      <rdf:Description rdf:about="Core_Vocabularies_1.0.png">
+        <rdfs:label>Core Vocabularies (CVs) Combined UML Class Diagram</rdfs:label>
+      </rdf:Description>
+    </foaf:depiction>
+    <wdrs:describedby>
+      <rdf:Description rdf:about="&documentation;">
+        <dcterms:title>&documentationTitle;</dcterms:title>
+      </rdf:Description>
+    </wdrs:describedby>
+    <dcterms:conformsTo>
+      <rdf:Description rdf:about="&methodology;">
+        <dcterms:title>&methodologyTitle;</dcterms:title>
+      </rdf:Description>
+    </dcterms:conformsTo>
+    <dcterms:relation>
+      <sioc:Forum rdf:about="&forum;">
+        <dcterms:title>&forumTitle;</dcterms:title>
+      </sioc:Forum>
+    </dcterms:relation>
+    <dcterms:rights>Copyright &#169; 2012 European Commission.</dcterms:rights>
+    <dcterms:license>
+      <rdf:Description rdf:about="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11">
+        <dcterms:title>ISA Open Metadata Licence v1.1</dcterms:title>
+        <cc:attributionName>European Commission</cc:attributionName>
+        <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+      </rdf:Description>
+    </dcterms:license>
+    <cc:attributionName>European Commission</cc:attributionName>
+    <cc:attributionURL rdf:resource="http://ec.europa.eu/"/>
+  </owl:Ontology>  
+
+<!-- This vocabulary just one class of its own-->
+
+  <rdfs:Class rdf:about="&legal;LegalEntity">
+    <rdfs:label xml:lang="en">Legal Entity</rdfs:label>
+    <rdfs:comment xml:lang="en">This is the key class for the Business Core Vocabulary and represents a 
+    business that is legally registered. In many countries there is a single registry although in others, 
+    such as Spain and Germany, multiple registries exist. A Legal Entity is able to trade, is 
+    legally liable for its actions, accounts, tax affairs etc. It is a sub class of org:FormalOrganization
+    which covers a wider range of entities, such as charities.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:subClassOf rdf:resource="&org;FormalOrganization" />
+    <dcterms:identifier>legal:LegalEntity</dcterms:identifier>
+  </rdfs:Class>
+
+  <rdf:Description rdf:about="&adms;Identifier">
+    <rdfs:label xml:lang="en">Identifier</rdfs:label>
+    <rdfs:comment xml:lang="en">The ADMS class of Identifier fully represents the Business Core Vocabulary term of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en" rdf:parseType="Literal"><p>The Identifier class represents any identifier issued by any authority, whether a 
+    government agency or not. It captures the identifier itself and details of the issuing authority, 
+    the date on which the identifier was issued and so on.</p>
+    <p>This class is based on the UN/CEFACT Identifier complex type defined in See Section 5.8 of 
+       <a href="http://www.unece.org/fileadmin/DAM/cefact/codesfortrade/CCTS/CCTS-DTCatalogueVersion3p1.pdf">Core Components Data Type Catalogue Version 3.1</a></p>
+    <p>The various conceptual properties can be fulfilled as follows:</p><ul>
+    <li>use <a href="&skos;#notation">skos:notation</a> to provide the actual identifier (the 
+    Identifier class is effectively meaningless without this property and conceptually it is mandatory);</li>
+    <li>use <a href="&dcterms;type">dcterms:type</a> to provide an identifier for the type of identifier issued;</li>
+    <li>use <a href="&dcterms;created">dcterms:created</a> to provide the date on which the identifier was issued.</li>
+    <li>use <a href="#schemeagency">adms:schemeAgency</a> to provide the name of the agency that created the identifier (as an rdfs:Literal).</li>
+    <li>use <a href="&dcterms;creator">dcterms:creator</a> to link to a URI of an Agent class describing the issuing Agency;</li></ul></vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <dcterms:identifier>adms:Identifier</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&skos;Concept"> 
+    <rdfs:label xml:lang="en">Code</rdfs:label>
+    <rdfs:comment rdf:parseType="Literal"><p>The Conceptual Model includes a 'Code' datatype that 
+      is used by several classes. This is expressed using the <a href="&skosDoc;">SKOS vocabulary</a> with
+      a particular 'code' usually being a skos:Concept that is part of a scheme. 
+      The intention is that the skos:Concept class be used as follows;</p><ul>
+      <li>for the content property, use skos:notation</li>
+      <li>the 'list' property will be taken care of by means of the skos:inScheme property;</li>
+      <li>the list agency property is likely to be applied to the scheme as a whole for which dcterms:creator is appropriate;</li>
+      <li>the list version property can be fulfilled using schema:version (see <a href="http://schema.org/CreativeWork">http://schema.org/CreativeWork</a>)</li></ul>
+    </rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&skosDoc;" />
+    <dcterms:identifier>skos:Concept</dcterms:identifier>
+  </rdf:Description>
+
+
+<!-- Legal Identity properties -->
+
+  <rdf:Description rdf:about="&legal;legalName">
+    <rdfs:label xml:lang="en">legal name</rdfs:label>
+    <rdfs:comment xml:lang="en">The legal name of the business. A business might have more than one 
+    legal name, particularly in countries with more than one official language. In such cases the 
+    language of the string should be identified.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <dcterms:identifier>legal:legalName</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&dcterms;alternative">
+    <rdfs:label xml:lang="en">alternative name</rdfs:label>
+    <rdfs:comment xml:lang="en">The dcterms:alternative property fully represents the Business Core Vocabulary property of alternative name.</rdfs:comment>
+    <vann:usageNote xml:lang="en">Some jurisdictions recognise concepts such as a trading name or alternative forms of a legal entity's name. The Alternative Name property can be used to record such names but should not be used to record translations of the primary legal name. Where more than one legal name exists and where they have equal standing but are expressed in different languages, identify the language used in each of the multiple legal names.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&dcDoc;" />
+    <dcterms:identifier>dcterms:alternative</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Property rdf:about="&legal;companyType">
+    <rdfs:label xml:lang="en">company type</rdfs:label>
+    <rdfs:comment xml:lang="en" rdf:parseType="Literal">This property records the type of company. Familiar types are SA, PLC, LLC, GmbH etc. Each 
+    jurisdiction will have a limited set of recognised company types and these should be used in a consistent manner
+    using a skos:Concept as described in the <a href="#skos:Concept">Code</a> Class.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:range rdf:resource="&skos;Concept"/>
+    <rdfs:subPropertyOf rdf:resource="&org;classification" />
+    <dcterms:identifier>legal:companyType</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&legal;companyStatus">
+    <rdfs:label xml:lang="en">company status</rdfs:label>
+    <rdfs:comment xml:lang="en" rdf:parseType="Literal">Terms like insolvent, bankrupt and in receivership are likely to have 
+    different legal implications in different jurisdictions. Best Practice for recording various 
+    other status levels is to use the relevant jurisdiction&apos;s terms and to do so in a 
+    consistent manner using a skos:Concept as described in the <a href="#skos:Concept">Code</a> Class. 
+    The term &quot;Normal Activity&quot; appears to have cross-border usefulness 
+    and this should be used in preference to terms like trading or operating.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:subPropertyOf rdf:resource="&org;classification" />
+    <dcterms:identifier>legal:companyStatus</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&legal;companyActivity">
+    <rdfs:label xml:lang="en">company activity</rdfs:label>
+    <rdfs:comment xml:lang="en" rdf:parseType="Literal">The activity of a company should be recorded using a controlled vocabulary expressed
+    as a SKOS concept scheme (see <a href="#skos:Concept">Code</a>. Several such 
+    vocabularies exist, many of which map to the UN's ISIC codes. Where a particular controlled vocabulary is in use 
+    within a given context, such as SIC codes in the UK, it is acceptable to use these, however, the preferred 
+    choice for European interoperability is NACE.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:subPropertyOf rdf:resource="&org;classification" />
+    <dcterms:identifier>legal:companyActivity</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&legal;legalIdentifier">
+    <rdfs:label xml:lang="en">legal identifer</rdfs:label>
+    <rdfs:comment xml:lang="en">The legal identifier is a fundamental relationship between a legal entity and the 
+    authority with which it is registered and that confers legal status upon it. legal:legalIdentifier is 
+    a sub property of dcterms:identifier. legal:legalIdentifier has a
+    defined domain of legal:LegalEntity and a range of adms:Identifier</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;" />
+    <rdfs:domain rdf:resource="&legal;LegalEntity" />
+    <rdfs:range rdf:resource="&adms;Identifier" />
+    <rdfs:subPropertyOf rdf:resource="&dcterms;identifier" />
+    <dcterms:identifier>legal:legalIdentifier</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Description rdf:about="&dcterms;identifier">
+    <rdfs:label xml:lang="en">identifer</rdfs:label>
+    <rdfs:comment xml:lang="en">dcterms:identifier fully represents the Core Vocabulary property of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en">The identifier relation links a resource to any formally issued identifier for that resource other than one that confers legal status upon it. The range is adms:Identifier.</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&dcDoc;"/>
+    <dcterms:identifier>dcterms:identifier</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="&adms;identifies">
+    <rdfs:label xml:lang="en">identifies</rdfs:label>
+    <rdfs:comment xml:lang="en">adms:identifies fully represents the Core Vocabulary property of the same name</rdfs:comment>
+    <vann:usageNote xml:lang="en">The identifies relation is used to link an adms:Identifier class to whatever resource it identifies (such as a business or a person).</vann:usageNote>
+    <rdfs:isDefinedBy rdf:resource="&adms;"/>
+    <dcterms:identifier>adms:identifies</dcterms:identifier>
+  </rdf:Description>
+
+  <rdf:Property rdf:about="&legal;registeredAddress">
+    <rdfs:label xml:lang="en">registered address</rdfs:label>
+    <rdfs:comment xml:lang="en">Links a Legal Entity to its registered address. This may or may not be the actual address at which the legal entity does its business, it is commonly the address of their lawyer or accountant, but it is the address to which formal communications can be sent. legal:registeredAddress is a sub property of locn:address that has a domain of legal:LegalEntity and a range of locn:Address.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:domain rdf:resource="&legal;LegalEntity" />
+    <rdfs:range rdf:resource="&locn;Address" />
+    <rdfs:subPropertyOf rdf:resource="&locn;address" />
+    <dcterms:identifier>legal:registeredAddress</dcterms:identifier>
+  </rdf:Property>
+
+  <rdf:Property rdf:about="&legal;legalEntity">
+    <rdfs:label xml:lang="en">legal entity</rdfs:label>
+    <rdfs:comment xml:lang="en">The legal entity relationship can be used to link any resource to a Legal Entity Class. This is useful, for example, where an organisation includes one or more legal entities. The Dublin Core term isPartOf is a suitable inverse of this relationship. legal:legalEntity has a range of legal:LegalEntity.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="&legal;"/>
+    <rdfs:range rdf:resource="&legal;LegalEntity" />
+    <dcterms:identifier>legal:legalEntity</dcterms:identifier>
+  </rdf:Property>
+
+
+</rdf:RDF>
