@@ -1,0 +1,44 @@
+{
+    "name": "gatsby-plugin-exo",
+    "version": "0.1.0",
+    "private": false,
+    "author": "Kevin Gervais",
+    "description": "The GatsbyJS plugin for EXO",
+    "keywords": [
+       "headless",
+       "jamstack",
+       "framework",
+       "components",
+       "gatsby"
+    ],
+    "bugs": {
+       "url": "https://github.com/touchlesscode/exo/issues"
+     },
+    "repository": {
+       "type": "git",
+       "url": "git+https://github.com/touchlesscode/exo.git",
+       "directory": "packages/gatsby-plugin-exo"
+     },
+    "scripts": {
+       "develop": "gatsby develop",
+       "start": "gatsby develop -p 3000",
+       "build": "gatsby build",
+       "serve": "gatsby serve",
+       "clean": "gatsby clean"
+    },
+    "dependencies": {
+       "@touchless/ui": "^next"
+    },
+    "devDependencies": {
+       "@types/styled-components": "^5.1.15"
+    },
+    "peerDependencies": {
+       "gatsby": "^4.1.0-next",
+       "react": "^17.0.1",
+       "postcss": "^8.0.5"
+     },
+     "engines": {
+       "node": ">=14.15.0"
+     }
+ }
+ 
