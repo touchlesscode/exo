@@ -9,7 +9,9 @@
        "jamstack",
        "framework",
        "components",
-       "gatsby"
+       "gatsby",
+       "exo",
+       "touchless"
     ],
     "bugs": {
        "url": "https://github.com/touchlesscode/exo/issues"
