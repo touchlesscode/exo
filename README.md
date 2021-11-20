@@ -1,12 +1,12 @@
 <p align="center"><a href="https://github.com/nastyox/Rando.js#nastyox"><img src="http://randojs.com/images/shapeShifterGrayAlphaBackground.gif" alt="Gray shape shifter" height="60"/></a></p>
 <h1 align="center">EXO</h1>
-<p align="center">A data-first framework for building accessible, future-proof apps</p>
+<p align="center">A blueprint for a more open, accessible, future-proof world.</p>
 
 ## :hear_no_evil:  What's this about?
 EXO is the scaffolding required to make a more accessible world. It's comprised of a few key pieces:
-1. A lightweight smart loader
-2. A universal data schema
-3. A bottomless ReactJS web shell which connects to headless systems and APIs. 
+1. A universal data schema
+2. A lightweight smart loader to enable those with autism to use the web without frustration
+3. A bottomless ReactJS web shell which connects to headless systems and APIs 
 
 ## :zap: Roadmap
 ### Now:
