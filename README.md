@@ -2,19 +2,23 @@
 <h1 align="center">EXO</h1>
 <p align="center">A blueprint for a more open, accessible, future-proof world.</p>
 
-## :hear_no_evil:  What's this about?
+## :hear_no_evil: What's this about?
+
 EXO is the scaffolding required to make a more accessible world. It's comprised of a few key pieces:
+
 1. A universal data schema
 2. A lightweight smart loader to enable those with autism to use the web without frustration
-3. A bottomless ReactJS web shell which connects to headless systems and APIs 
+3. A bottomless ReactJS web shell which connects to headless systems and APIs
 
 ## :zap: Roadmap
-### Now:
- - <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
- - EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
- 
-### Next:
- - EXO for NextJS
- - EXO for Svelte
- - Schema for Organization, Relationship, Address
 
+### Now:
+
+- <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
+- EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
+
+### Next:
+
+- EXO for NextJS
+- EXO for Svelte
+- Schema for Organization, Relationship, Address
