@@ -11,12 +11,7 @@ module.exports = {
     title: 'gatsby-theme-exo'
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-theme-ui',
-      options: {
-        preset: require('./src/theme.ts')
-      }
-    },
+    'gatsby-plugin-theme-ui',
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
