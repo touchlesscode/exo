@@ -24,7 +24,16 @@
        "start": "gatsby develop -p 3000",
        "build": "gatsby build",
        "serve": "gatsby serve",
-       "clean": "gatsby clean"
+       "clean": "gatsby clean",
+       "test": "echo \"Error: no test specified\" && exit 1",
+       "type:check": "tsc --noEmit",
+       "lint:check": "eslint . --ext ts --ext tsx --ext js --ext jsx",
+       "prettier:check": "prettier --config .prettierrc --check '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
+       "lint:fix": "yarn lint:check --fix",
+       "prettier:fix": "prettier --config .prettierrc --write '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
+       "type:staged": "tsc-files --noEmit",
+       "lint:staged": "eslint",
+       "prettier:staged": "prettier --config .prettierrc --write"
     },
     "dependencies": {
        "@apollo/client": "^3.4.15",
@@ -84,4 +93,3 @@
        "node": ">=14.15.0"
      }
  }
- 
