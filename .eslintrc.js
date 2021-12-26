@@ -31,9 +31,18 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 2,
     'unused-imports/no-unused-imports-ts': 'error',
     'unused-imports/no-unused-vars': 'error',
+    'no-console': 1,
+    'no-eval': 2,
     'max-len': [
       'error',
-      { code: 80, tabWidth: 2, ignoreComments: true, ignoreUrls: true }
+      {
+        code: 80,
+        tabWidth: 2,
+        ignoreComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true
+      }
     ],
     'prefer-template': 2,
     'no-template-curly-in-string': 2,

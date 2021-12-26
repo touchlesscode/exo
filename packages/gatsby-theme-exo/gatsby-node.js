@@ -9,17 +9,17 @@ exports.onCreateWebpackConfig = function (props) {
   props.actions.setWebpackConfig({
     resolve: {
       alias: {
-        '@components': path.resolve(__dirname, 'src/components'),
-        '@assets': path.resolve(__dirname, 'src/assets'),
-        '@images': path.resolve(__dirname, 'src/images'),
-        '@css': path.resolve(__dirname, 'src/css'),
-        '@hooks': path.resolve(__dirname, 'src/hooks/'),
-        '@constants': path.resolve(__dirname, 'src/constants/'),
-        '@utils': path.resolve(__dirname, 'src/utils/'),
-        '@theme': path.resolve(__dirname, 'src/theme/'),
-        '@types': path.resolve(__dirname, 'src/types/'),
-        '@widgets': path.resolve(__dirname, 'src/widgets/'),
-        '@legacy': path.resolve(__dirname, 'src/modules/legacy/')
+        '@exoTheme/components': path.resolve(__dirname, 'src/components'),
+        '@exoTheme/assets': path.resolve(__dirname, 'src/assets'),
+        '@exoTheme/images': path.resolve(__dirname, 'src/images'),
+        '@exoTheme/css': path.resolve(__dirname, 'src/css'),
+        '@exoTheme/hooks': path.resolve(__dirname, 'src/hooks/'),
+        '@exoTheme/constants': path.resolve(__dirname, 'src/constants/'),
+        '@exoTheme/utils': path.resolve(__dirname, 'src/utils/'),
+        '@exoTheme/theme': path.resolve(__dirname, 'src/theme/'),
+        '@exoTheme/customTypes': path.resolve(__dirname, 'src/customTypes/'),
+        '@exoTheme/widgets': path.resolve(__dirname, 'src/widgets/'),
+        '@exoTheme/legacy': path.resolve(__dirname, 'src/modules/legacy/')
       }
     }
   });
