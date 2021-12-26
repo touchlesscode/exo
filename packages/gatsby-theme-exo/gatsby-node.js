@@ -17,7 +17,7 @@ exports.onCreateWebpackConfig = function (props) {
         '@exoTheme/constants': path.resolve(__dirname, 'src/constants/'),
         '@exoTheme/utils': path.resolve(__dirname, 'src/utils/'),
         '@exoTheme/theme': path.resolve(__dirname, 'src/theme/'),
-        '@exoTheme/customTypes': path.resolve(__dirname, 'src/customTypes/'),
+        '@exoTheme/types': path.resolve(__dirname, 'src/types/'),
         '@exoTheme/widgets': path.resolve(__dirname, 'src/widgets/'),
         '@exoTheme/legacy': path.resolve(__dirname, 'src/modules/legacy/')
       }
