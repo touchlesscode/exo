@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "jsx": "preserve",
+    "allowJs": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "baseUrl": "./",
+    "paths": {
+      "@exoTheme/components/*": ["packages/gatsby-theme-exo/src/components/*"],
+      "@exoTheme/assets/*": ["packages/gatsby-theme-exo/src/assets/*"],
+      "@exoTheme/images/*": ["packages/gatsby-theme-exo/src/images/*"],
+      "@exoTheme/css/*": ["packages/gatsby-theme-exo/src/css/*"],
+      "@exoTheme/hooks/*": ["packages/gatsby-theme-exo/src/hooks/*"],
+      "@exoTheme/constants/*": ["packages/gatsby-theme-exo/src/constants/*"],
+      "@exoTheme/utils/*": ["packages/gatsby-theme-exo/src/utils/*"],
+      "@exoTheme/theme/*": ["packages/gatsby-theme-exo/src/theme/*"],
+      "@exoTheme/customTypes/*": [
+        "packages/gatsby-theme-exo/src/customTypes/*"
+      ],
+      "@exoTheme/widgets/*": ["packages/gatsby-theme-exo/src/widgets/*"],
+      "@exoTheme/legacy/*": ["packages/gatsby-theme-exo/src/legacy/*"]
+    }
+  },
+  "include": ["packages"],
+  "exclude": ["node_modules", "public", ".cache"]
+}

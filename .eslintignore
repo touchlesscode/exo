@@ -1,0 +1,15 @@
+node_modules/
+.cache/
+public
+.env
+.env.development
+.env.production
+docs/
+e2e-tests/
+rfcs/
+schema/
+scripts/
+starters/
+types/
+ui/
+yarn-error.log
