@@ -1,7 +1,7 @@
 import { Theme, get, ThemeUIStyleObject } from 'theme-ui';
 
 // Types
-import { BoundingClientRecType } from '@exoTheme/customTypes/index';
+import { BoundingClientRecType } from '@exoTheme/types/index';
 import { ExpendToType, TransitionType } from '@exoTheme/components/Card/types';
 
 export const getBaseStyles = (

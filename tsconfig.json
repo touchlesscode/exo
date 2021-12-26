@@ -24,9 +24,7 @@
       "@exoTheme/constants/*": ["packages/gatsby-theme-exo/src/constants/*"],
       "@exoTheme/utils/*": ["packages/gatsby-theme-exo/src/utils/*"],
       "@exoTheme/theme/*": ["packages/gatsby-theme-exo/src/theme/*"],
-      "@exoTheme/customTypes/*": [
-        "packages/gatsby-theme-exo/src/customTypes/*"
-      ],
+      "@exoTheme/types/*": ["packages/gatsby-theme-exo/src/types/*"],
       "@exoTheme/widgets/*": ["packages/gatsby-theme-exo/src/widgets/*"],
       "@exoTheme/legacy/*": ["packages/gatsby-theme-exo/src/legacy/*"]
     }
