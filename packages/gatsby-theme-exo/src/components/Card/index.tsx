@@ -5,7 +5,7 @@ import Overlay from '@exoTheme/components/Overlay';
 
 // types
 import { CardProps } from '@exoTheme/components/Card/types';
-import { BoundingClientRecType } from '@exoTheme/customTypes/index';
+import { BoundingClientRecType } from 'packages/gatsby-theme-exo/src/types/index';
 
 // Helpers
 import getCardStyles from '@exoTheme/components/Card/helpers';

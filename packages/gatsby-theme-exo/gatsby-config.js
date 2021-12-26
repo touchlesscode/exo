@@ -13,9 +13,6 @@ module.exports = {
   plugins: [
     {
       resolve: 'gatsby-plugin-theme-ui',
-      options: {
-        preset: require('./src/theme.ts')
-      }
     },
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',

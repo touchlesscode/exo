@@ -1,95 +1,96 @@
 {
-    "name": "gatsby-theme-exo",
-    "version": "0.1.0",
-    "private": false,
-    "author": "Kevin Gervais",
-    "description": "The GatsbyJS shell for building agile, accessible, data-first applications.",
-    "keywords": [
-       "headless",
-       "jamstack",
-       "framework",
-       "components",
-       "gatsby"
-    ],
-    "bugs": {
-       "url": "https://github.com/touchlesscode/exo/issues"
-     },
-    "repository": {
-       "type": "git",
-       "url": "git+https://github.com/touchlesscode/exo.git",
-       "directory": "packages/gatsby-theme-exo"
-     },
-    "scripts": {
-       "develop": "gatsby develop",
-       "start": "gatsby develop -p 3000",
-       "build": "gatsby build",
-       "serve": "gatsby serve",
-       "clean": "gatsby clean",
-       "test": "echo \"Error: no test specified\" && exit 1",
-       "type:check": "tsc --noEmit",
-       "lint:check": "eslint . --ext ts --ext tsx --ext js --ext jsx",
-       "prettier:check": "prettier --config .prettierrc --check '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
-       "lint:fix": "yarn lint:check --fix",
-       "prettier:fix": "prettier --config .prettierrc --write '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
-       "type:staged": "tsc-files --noEmit",
-       "lint:staged": "eslint",
-       "prettier:staged": "prettier --config .prettierrc --write"
-    },
-    "dependencies": {
-       "@apollo/client": "^3.4.15",
-       "@loadable/component": "^5.15.0",
-       "@types/react-instantsearch-dom": "^6.12.0",
-       "axios": "^0.24.0",
-       "cross-fetch": "^3.1.4",
-       "date-fns": "^2.25.0",
-       "dotenv": "^10.0.0",
-       "form-data": "^4.0.0",
-       "gatsby": "4.4.0",
-       "gatsby-omni-font-loader": "^1.3.3",
-       "gatsby-plugin-html-attributes": "^1.0.5",
-       "gatsby-plugin-image": "^2.1.1",
-       "gatsby-plugin-manifest": "^4.2.0-next.0",
-       "gatsby-plugin-minify": "^0.4.0",
-       "gatsby-plugin-offline": "^5.4.0",
-       "gatsby-plugin-perf-budgets": "^0.0.18",
-       "gatsby-plugin-postcss": "^5.1.0",
-       "gatsby-plugin-sharp": "^4.1.0",
-       "gatsby-plugin-theme-ui": "^0.12.1",
-       "gatsby-plugin-zopfli": "^2.0.0",
-       "gatsby-source-filesystem": "^4.1.0",
-       "gatsby-source-graphql": "^4.2.0-next.0",
-       "gatsby-source-sanity": "^7.3.2",
-       "gatsby-source-sanity-transform-images": "^0.0.7",
-       "gatsby-transformer-sharp": "^4.1.0",
-       "iframe-resizer-react": "^1.1.0",
-       "jimp": "^0.16.1",
-       "react": "^17.0.1",
-       "react-custom-scrollbars": "^4.2.1",
-       "react-dom": "^17.0.1",
-       "react-helmet": "^6.1.0",
-       "react-instantsearch-dom": "^6.13.0",
-       "react-redux": "^7.2.5",
-       "reakit": "^1.3.10",
-       "redux": "^4.1.1",
-       "redux-persist": "^6.0.0",
-       "redux-saga": "^1.1.3",
-       "reduxsauce": "^1.2.1",
-       "reselect": "^4.0.0",
-       "sharp": "^0.29.2",
-       "styled-components": "^5.3.1",
-       "theme-ui": "^0.12.1",
-       "typesense-instantsearch-adapter": "^2.2.0"
-    },
-    "devDependencies": {
-       "@types/styled-components": "^5.1.15",
-       "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.25",
-       "s3-deploy": "^1.4.0"
-    },
-    "peerDependencies": {
-       "gatsby": "^4.1.0-next",
-       "postcss": "^8.0.5"
-     },
-     "engines": {
-       "node": ">=14.15.0"
-     }
- }
+   "name": "gatsby-theme-exo",
+   "version": "0.1.0",
+   "private": false,
+   "author": "Kevin Gervais",
+   "description": "The GatsbyJS shell for building agile, accessible, data-first applications.",
+   "keywords": [
+      "headless",
+      "jamstack",
+      "framework",
+      "components",
+      "gatsby"
+   ],
+   "bugs": {
+      "url": "https://github.com/touchlesscode/exo/issues"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/touchlesscode/exo.git",
+      "directory": "packages/gatsby-theme-exo"
+   },
+   "scripts": {
+      "develop": "gatsby develop",
+      "start": "gatsby develop -p 3000",
+      "build": "gatsby build",
+      "serve": "gatsby serve",
+      "clean": "gatsby clean",
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "type:check": "tsc --noEmit",
+      "lint:check": "eslint . --ext ts --ext tsx --ext js --ext jsx",
+      "prettier:check": "prettier --config .prettierrc --check '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
+      "lint:fix": "yarn lint:check --fix",
+      "prettier:fix": "prettier --config .prettierrc --write '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
+      "type:staged": "tsc-files --noEmit",
+      "lint:staged": "eslint",
+      "prettier:staged": "prettier --config .prettierrc --write"
+   },
+   "dependencies": {
+      "@apollo/client": "^3.4.15",
+      "@loadable/component": "^5.15.0",
+      "@types/react-instantsearch-dom": "^6.12.0",
+      "axios": "^0.24.0",
+      "cross-fetch": "^3.1.4",
+      "date-fns": "^2.25.0",
+      "dotenv": "^10.0.0",
+      "form-data": "^4.0.0",
+      "gatsby": "4.4.0",
+      "gatsby-omni-font-loader": "^1.3.3",
+      "gatsby-plugin-html-attributes": "^1.0.5",
+      "gatsby-plugin-image": "^2.1.1",
+      "gatsby-plugin-manifest": "^4.2.0-next.0",
+      "gatsby-plugin-minify": "^0.4.0",
+      "gatsby-plugin-offline": "^5.4.0",
+      "gatsby-plugin-perf-budgets": "^0.0.18",
+      "gatsby-plugin-postcss": "^5.1.0",
+      "gatsby-plugin-react-svg": "^3.1.0",
+      "gatsby-plugin-sharp": "^4.1.0",
+      "gatsby-plugin-theme-ui": "^0.12.1",
+      "gatsby-plugin-zopfli": "^2.0.0",
+      "gatsby-source-filesystem": "^4.1.0",
+      "gatsby-source-graphql": "^4.2.0-next.0",
+      "gatsby-source-sanity": "^7.3.2",
+      "gatsby-source-sanity-transform-images": "^0.0.7",
+      "gatsby-transformer-sharp": "^4.1.0",
+      "iframe-resizer-react": "^1.1.0",
+      "jimp": "^0.16.1",
+      "react": "^17.0.1",
+      "react-custom-scrollbars": "^4.2.1",
+      "react-dom": "^17.0.1",
+      "react-helmet": "^6.1.0",
+      "react-instantsearch-dom": "^6.13.0",
+      "react-redux": "^7.2.5",
+      "reakit": "^1.3.10",
+      "redux": "^4.1.1",
+      "redux-persist": "^6.0.0",
+      "redux-saga": "^1.1.3",
+      "reduxsauce": "^1.2.1",
+      "reselect": "^4.0.0",
+      "sharp": "^0.29.2",
+      "styled-components": "^5.3.1",
+      "theme-ui": "^0.12.1",
+      "typesense-instantsearch-adapter": "^2.2.0"
+   },
+   "devDependencies": {
+      "@types/styled-components": "^5.1.15",
+      "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.25",
+      "s3-deploy": "^1.4.0"
+   },
+   "peerDependencies": {
+      "gatsby": "^4.1.0-next",
+      "postcss": "^8.0.5"
+   },
+   "engines": {
+      "node": ">=14.15.0"
+   }
+}
