@@ -1,0 +1,44 @@
+{
+  "name": "sanity-plugin-disabled-field",
+  "version": "1.1.2",
+  "description": "Disabled field in your schemas.",
+  "keywords": [
+    "sanity",
+    "plugin",
+    "disabled",
+    "read only",
+    "sanity field"
+  ],
+  "author": "Kevin Gervais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/touchlesscode/exo/tree/main/packages/sanity-plugin-disabled-field/issues"
+  },
+  "homepage": "https://github.com/touchlesscode/exo/tree/main/packages/sanity-plugin-disabled-field",
+  "main": "dist/disabled.js",
+  "scripts": {
+    "build": "babel -D -d dist/ src/",
+    "prepublishOnly": "yarn build"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@sanity/ui": "^0.36.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10"
+  },
+  "peerDependencies": {
+    "react": "^16.14.0 || ^17 || ^18",
+    "react-dom": "^16.14.0 || ^17 || ^18"
+  },
+  "sanityTemplate": {
+    "suggestedName": "disabled-field",
+    "requiresConfig": false,
+    "minimumBaseVersion": "2.1.0"
+  }
+}
