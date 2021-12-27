@@ -26,32 +26,20 @@ type events =
       expended?: never;
       onClick?: never;
       onClose?: never;
-      durations?: never;
-      timingFuncs?: never;
+      duration?: never;
+      timingFunc?: never;
     }
   | {
-      expendable: boolean;
+      expendable?: boolean;
       expended: boolean;
       onClick: React.MouseEventHandler<HTMLDivElement>;
       onClose: React.MouseEventHandler<HTMLButtonElement>;
-      durations?: {
-        expend: number;
-        collapse: number;
-      };
-      timingFuncs?: {
-        expend: string;
-        collapse: string;
-      };
+      duration?: number;
+      timingFunc?: string;
     };
 
 export type CardProps = CardCommonProps & events;
 export type TransitionType = {
-  durations?: {
-    expend: number;
-    collapse: number;
-  };
-  timingFuncs?: {
-    expend: string;
-    collapse: string;
-  };
+  duration?: number;
+  timingFunc?: string;
 };

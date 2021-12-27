@@ -69,7 +69,7 @@ const getCardStyles = (
   expended?: boolean,
   expendTo?: ExpendToType
 ): ThemeUIStyleObject => {
-  const { durations, timingFuncs } = transitionProps;
+  const { duration, timingFunc } = transitionProps;
   let styles = {};
   if (expended || isFullScreen)
     styles = {
@@ -89,12 +89,12 @@ const getCardStyles = (
   if (expended && isFullScreen)
     styles = {
       ...styles,
-      ...getTransition(durations?.expend, timingFuncs?.expend)
+      ...getTransition(duration, timingFunc)
     };
   if (!expended && isFullScreen)
     styles = {
       ...styles,
-      ...getTransition(durations?.collapse, timingFuncs?.collapse)
+      ...getTransition(duration, timingFunc)
     };
   if ((expended && !isFullScreen) || (!expended && isFullScreen))
     styles = {

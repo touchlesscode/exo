@@ -26,8 +26,8 @@ const Card: React.FC<CardProps> = (props) => {
     bgColor,
     bgImage,
     bgOverlay,
-    durations,
-    timingFuncs,
+    duration,
+    timingFunc,
     boxShadow,
     expendTo
   } = props;
@@ -98,7 +98,7 @@ const Card: React.FC<CardProps> = (props) => {
           ...getCardStyles(
             position,
             isFullScreen,
-            { durations, timingFuncs },
+            { duration, timingFunc },
             bgImage,
             expendable,
             expended,
