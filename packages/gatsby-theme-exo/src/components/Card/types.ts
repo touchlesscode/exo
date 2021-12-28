@@ -18,6 +18,7 @@ interface CardCommonProps {
   bgImage?: string | undefined;
   bgOverlay?: string;
   expendTo?: ExpendToType;
+  Close?: React.ReactNode;
 }
 
 type events =
@@ -33,7 +34,7 @@ type events =
       expendable?: boolean;
       expended: boolean;
       onClick: React.MouseEventHandler<HTMLDivElement>;
-      onClose: React.MouseEventHandler<HTMLButtonElement>;
+      onClose?: React.MouseEventHandler<HTMLButtonElement>;
       duration?: number;
       timingFunc?: string;
     };

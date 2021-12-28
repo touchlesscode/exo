@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Card as ThemeCard, Close, Box } from 'theme-ui';
+import { jsx, Card as ThemeCard, Close as ThemeClose, Box } from 'theme-ui';
 import * as React from 'react';
 import Overlay from '@exoTheme/components/Overlay';
 
@@ -20,6 +20,7 @@ const Card: React.FC<CardProps> = (props) => {
     expended,
     onClick,
     onClose,
+    Close,
     color,
     as,
     sx,
@@ -118,20 +119,24 @@ const Card: React.FC<CardProps> = (props) => {
           >
             {children}
           </div>
-          {expended ? (
-            <Close
-              onClick={onClose}
-              sx={{
-                borderRadius: '100%',
-                position: 'absolute',
-                top: '20px',
-                right: '20px',
-                zIndex: 2,
-                svg: {
-                  color: 'black'
-                }
-              }}
-            />
+          {expended && onClose ? (
+            Close ? (
+              Close
+            ) : (
+              <ThemeClose
+                onClick={onClose}
+                sx={{
+                  borderRadius: '100%',
+                  position: 'absolute',
+                  top: '20px',
+                  right: '20px',
+                  zIndex: 2,
+                  svg: {
+                    color: 'black'
+                  }
+                }}
+              />
+            )
           ) : null}
         </>
       </ThemeCard>
