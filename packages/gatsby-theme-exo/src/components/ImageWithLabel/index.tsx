@@ -13,7 +13,6 @@ interface ImageWithLabelProps extends GatsbyImagePropsType {
 
 const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
   sx,
-  as,
   label,
   imageWidth = '100px',
   imageVariant,
@@ -21,7 +20,6 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
 }) => {
   return (
     <Flex
-      as={as}
       sx={{
         height: '72px',
         justifyContent: 'start',

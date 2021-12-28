@@ -5,7 +5,8 @@ const styles = {
     fontWeight: 'body',
     WebkitTapHighlightColor: 'transparent',
     a: {
-      textDecoration: 'none'
+      textDecoration: 'none',
+      color: 'inherit'
     },
     h1: {
       fontFamily: 'body',
