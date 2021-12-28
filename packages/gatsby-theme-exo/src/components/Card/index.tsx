@@ -21,16 +21,15 @@ const Card: React.FC<CardProps> = (props) => {
     onClick,
     onClose,
     Close,
-    color,
+    closeBtnSx,
     as,
-    sx,
-    bgColor,
     bgImage,
     bgOverlay,
     duration,
     timingFunc,
-    boxShadow,
-    expendTo
+    shadow,
+    expendTo,
+    ...rest
   } = props;
 
   const [, setLocked] = useLockedBody();
@@ -73,52 +72,44 @@ const Card: React.FC<CardProps> = (props) => {
   return (
     <Box
       ref={parentRef}
-      sx={{
-        width: '100%',
-        height:
-          position.height && (isFullScreen || expended)
-            ? `${position.height}px`
-            : '100%'
-      }}
+      sx={
+        isFullScreen || expended
+          ? {
+              height: position.height && `${position.height}px`,
+              position: 'relative'
+            }
+          : { width: '100%', height: '100%' }
+      }
     >
       <Overlay
-        visible={!!(isFullScreen && expendTo)}
+        onClick={isFullScreen || expended ? onClose : undefined}
+        visible={!!(isFullScreen && expended)}
         color={bgOverlay}
         image={bgOverlay}
         position="fixed"
       />
       <ThemeCard
-        as={as}
-        color={color}
-        ref={ref}
-        variant={variant}
-        bg={bgColor}
-        onClick={handleOnClick}
-        onTransitionEnd={isAnimationEnded}
+        {...rest}
         sx={{
-          ...getCardStyles(
+          ...getCardStyles({
             position,
             isFullScreen,
-            { duration, timingFunc },
-            bgImage,
+            transitionProps: { duration, timingFunc },
             expendable,
             expended,
-            expendTo
-          ),
-          boxShadow,
-          ...sx
+            expendTo,
+            bgImage
+          }),
+          boxShadow: shadow
         }}
+        as={as}
+        ref={ref}
+        variant={variant}
+        onClick={handleOnClick}
+        onTransitionEnd={isAnimationEnded}
       >
         <>
-          <div
-            sx={{
-              position: 'relative',
-              width: '100%',
-              height: '100%'
-            }}
-          >
-            {children}
-          </div>
+          {children}
           {expended && onClose ? (
             Close ? (
               Close
@@ -133,7 +124,8 @@ const Card: React.FC<CardProps> = (props) => {
                   zIndex: 2,
                   svg: {
                     color: 'black'
-                  }
+                  },
+                  ...closeBtnSx
                 }}
               />
             )
@@ -148,5 +140,5 @@ export default Card;
 
 Card.defaultProps = {
   as: 'div',
-  bgColor: 'white'
+  bg: 'white'
 };

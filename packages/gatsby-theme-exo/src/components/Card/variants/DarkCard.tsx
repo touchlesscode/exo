@@ -18,15 +18,15 @@ interface DarkCardProps {
 const DarkCard: React.FC<CardProps & DarkCardProps> = ({
   expendable,
   expended,
+  expendTo,
   onClick,
   onClose,
   title,
   image,
-  boxShadow,
+  shadow,
   color,
   variant,
   overlay,
-  bgColor,
   badges,
   children,
   ...props
@@ -36,16 +36,16 @@ const DarkCard: React.FC<CardProps & DarkCardProps> = ({
     <Card
       {...props}
       expendable={expendable || false}
+      expendTo={expendTo}
       expended={expended || false}
-      onClick={(e) => {
+      onClick={(e: React.MouseEvent<HTMLElement>) => {
         onClick && onClick(e);
         setHeight(window.innerHeight);
       }}
-      onClose={(e) => onClose && onClose(e)}
-      boxShadow={boxShadow || 'full-md'}
+      onClose={onClose}
+      shadow={shadow || 'full-md'}
       color={color || 'white'}
       variant={variant || 'rounded'}
-      bgColor={bgColor || 'white'}
     >
       <Box
         sx={
@@ -53,7 +53,7 @@ const DarkCard: React.FC<CardProps & DarkCardProps> = ({
             ? {
                 display: 'flex',
                 flexDirection: 'column',
-                height
+                height: `calc(${height}px - ${expendTo?.top || '0px'})`
               }
             : {
                 height: '100%'
