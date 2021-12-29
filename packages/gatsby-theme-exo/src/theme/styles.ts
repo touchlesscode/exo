@@ -52,9 +52,6 @@ const styles = {
       fontFamily: 'body',
       fontWeight: 'medium',
       fontSize: 16
-    },
-    '*:focus': {
-      border: '1px solid red'
     }
   }
 };
