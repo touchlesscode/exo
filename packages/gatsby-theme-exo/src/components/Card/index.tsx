@@ -3,7 +3,7 @@ import { jsx, Card as ThemeCard, Box } from 'theme-ui';
 import * as React from 'react';
 import Overlay from '@exoTheme/components/Overlay';
 import Button from '../Button';
-import DefaultCloseIcon from '@exoTheme/images/development/close.inline.svg';
+import DefaultCloseIcon from '@exoTheme/images/icons/close.inline.svg';
 
 // types
 import { CardProps } from '@exoTheme/components/Card/types';
