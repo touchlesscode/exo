@@ -38,8 +38,8 @@ const DarkCard: React.FC<CardProps & DarkCardProps> = ({
       expendable={expendable || false}
       expendTo={expendTo}
       expended={expended || false}
-      onClick={(e: React.MouseEvent<HTMLElement>) => {
-        onClick && onClick(e);
+      onClick={() => {
+        onClick && onClick();
         setHeight(window.innerHeight);
       }}
       onClose={onClose}
@@ -61,6 +61,7 @@ const DarkCard: React.FC<CardProps & DarkCardProps> = ({
         }
       >
         <Overlay
+          animated
           visible={true}
           image={
             overlay ||

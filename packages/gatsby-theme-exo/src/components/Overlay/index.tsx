@@ -12,7 +12,7 @@ const Overlay: React.FC<OverlayProps> = ({
   image,
   color,
   transitionDuration,
-  animated = true,
+  animated,
   ...props
 }) => {
   return visible ? (
@@ -21,8 +21,9 @@ const Overlay: React.FC<OverlayProps> = ({
       aria-hidden="true"
       sx={{
         animation: animated
-          ? `${fadeIn} ${transitionDuration || '500'}ms`
+          ? `${fadeIn} ${transitionDuration || '1000'}ms`
           : 'none',
+        transition: animated ? `all ${transitionDuration || '1000'}ms` : 'none',
         backgroundColor: !image && (color || 'grey'),
         backgroundImage: image,
         position: position,
@@ -38,5 +39,6 @@ export default Overlay;
 Overlay.defaultProps = {
   visible: true,
   zIndex: 'infinity',
-  position: 'absolute'
+  position: 'absolute',
+  animated: false
 };

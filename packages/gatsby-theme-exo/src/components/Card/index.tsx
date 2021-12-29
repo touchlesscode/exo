@@ -1,7 +1,9 @@
 /** @jsx jsx */
-import { jsx, Card as ThemeCard, Close as ThemeClose, Box } from 'theme-ui';
+import { jsx, Card as ThemeCard, Box } from 'theme-ui';
 import * as React from 'react';
 import Overlay from '@exoTheme/components/Overlay';
+import Button from '../Button';
+import DefaultCloseIcon from '@exoTheme/images/development/close.inline.svg';
 
 // types
 import { CardProps } from '@exoTheme/components/Card/types';
@@ -11,6 +13,8 @@ import { BoundingClientRecType } from '@exoTheme/types/index';
 import getCardStyles from '@exoTheme/components/Card/helpers';
 import useLockedBody from '@exoTheme/hooks/useLockedBody';
 import { initialBoundingClientRect } from '@exoTheme/hooks/useBoundingClientRectRef';
+import useKeyPress from '@exoTheme/hooks/useKeyPress';
+import useTrapFocusInsideRef from '@exoTheme/hooks/useTrapFocusInsideRef';
 
 const Card: React.FC<CardProps> = (props) => {
   const {
@@ -20,15 +24,16 @@ const Card: React.FC<CardProps> = (props) => {
     expended,
     onClick,
     onClose,
-    Close,
     closeBtnSx,
-    as,
     bgImage,
     bgOverlay,
     duration,
     timingFunc,
     shadow,
     expendTo,
+    ariaLabelledBy,
+    ariaDescribedBy,
+    CloseIcon,
     ...rest
   } = props;
 
@@ -36,6 +41,7 @@ const Card: React.FC<CardProps> = (props) => {
   const parentRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
   const ref = React.useRef() as React.MutableRefObject<HTMLDivElement>;
   const [isFullScreen, setIsFullScreen] = React.useState(false);
+  const escPressed = useKeyPress(['Escape', 'Esc'], ref);
   const [position, setPosition] = React.useState<BoundingClientRecType>(
     initialBoundingClientRect
   );
@@ -49,7 +55,7 @@ const Card: React.FC<CardProps> = (props) => {
     setLocked(false);
   };
 
-  const handleOnClick = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+  const handleOnClick = () => {
     if (expended || !expendable || isFullScreen) return;
     if (ref.current) {
       // store the latest BoundingClientRect before going fullScreen
@@ -58,7 +64,7 @@ const Card: React.FC<CardProps> = (props) => {
     }
 
     /* expended === true, will apply getWillExpendStyles styles */
-    onClick ? onClick(e) : null;
+    onClick ? onClick() : null;
 
     /* Lock scrolling until expended is false */
     setLocked(true);
@@ -69,8 +75,35 @@ const Card: React.FC<CardProps> = (props) => {
     }, 10);
   };
 
+  // Trap focus inside card when expended
+  useTrapFocusInsideRef(ref, isFullScreen);
+
+  // Close card when esc key pressed
+  React.useEffect(() => {
+    onClose && onClose();
+  }, [escPressed]);
+
+  const accessibilityAttrs = {
+    ...(isFullScreen
+      ? {
+          'aria-modal': true,
+          role: 'button',
+          'aria-pressed': true,
+          'aria-expanded': true,
+          'aria-labelledby': ariaLabelledBy,
+          'aria-describedby': ariaDescribedBy
+        }
+      : {
+          'data-toggle': 'modal',
+          'aria-pressed': false,
+          'aria-expanded': false,
+          role: 'button'
+        })
+  };
+
   return (
     <Box
+      tabIndex={-1}
       ref={parentRef}
       sx={
         isFullScreen || expended
@@ -82,6 +115,8 @@ const Card: React.FC<CardProps> = (props) => {
       }
     >
       <Overlay
+        tabIndex={-1}
+        animated
         onClick={isFullScreen || expended ? onClose : undefined}
         visible={!!(isFullScreen && expended)}
         color={bgOverlay}
@@ -89,6 +124,7 @@ const Card: React.FC<CardProps> = (props) => {
         position="fixed"
       />
       <ThemeCard
+        {...accessibilityAttrs}
         {...rest}
         sx={{
           ...getCardStyles({
@@ -102,33 +138,34 @@ const Card: React.FC<CardProps> = (props) => {
           }),
           boxShadow: shadow
         }}
-        as={as}
         ref={ref}
         variant={variant}
+        onKeyPress={handleOnClick}
         onClick={handleOnClick}
         onTransitionEnd={isAnimationEnded}
       >
         <>
           {children}
           {expended && onClose ? (
-            Close ? (
-              Close
-            ) : (
-              <ThemeClose
-                onClick={onClose}
-                sx={{
-                  borderRadius: '100%',
-                  position: 'absolute',
-                  top: '20px',
-                  right: '20px',
-                  zIndex: 2,
-                  svg: {
-                    color: 'black'
-                  },
-                  ...closeBtnSx
-                }}
-              />
-            )
+            <Button
+              Icon={CloseIcon || DefaultCloseIcon}
+              onClick={onClose}
+              data-dismiss="modal"
+              aria-label="Close"
+              sx={{
+                borderRadius: '100%',
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                zIndex: 2,
+                bg: 'white',
+                p: 1,
+                svg: {
+                  color: 'black'
+                },
+                ...closeBtnSx
+              }}
+            />
           ) : null}
         </>
       </ThemeCard>

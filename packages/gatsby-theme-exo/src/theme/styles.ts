@@ -8,6 +8,10 @@ const styles = {
       textDecoration: 'none',
       color: 'inherit'
     },
+    button: {
+      border: 'none',
+      background: 'none'
+    },
     h1: {
       fontFamily: 'body',
       fontWeight: 'heading',
@@ -48,6 +52,9 @@ const styles = {
       fontFamily: 'body',
       fontWeight: 'medium',
       fontSize: 16
+    },
+    '*:focus': {
+      border: '1px solid red'
     }
   }
 };

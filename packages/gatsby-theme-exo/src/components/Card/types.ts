@@ -15,7 +15,7 @@ interface CardCommonProps extends ThemeCardProps {
   shadow?: string;
   bgOverlay?: string;
   expendTo?: ExpendToType;
-  Close?: React.ReactNode;
+  CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   closeBtnSx?: ThemeUIStyleObject;
 }
 
@@ -27,14 +27,18 @@ type events =
       onClose?: never;
       duration?: never;
       timingFunc?: never;
+      ariaLabelledBy: never;
+      ariaDescribedBy: never;
     }
   | {
       expendable?: boolean;
       expended: boolean;
-      onClick: React.MouseEventHandler<HTMLElement>;
-      onClose?: React.MouseEventHandler<HTMLElement>;
+      onClick: () => void;
+      onClose?: () => void;
       duration?: number;
       timingFunc?: string;
+      ariaLabelledBy: string;
+      ariaDescribedBy: string;
     };
 
 export type CardProps = CardCommonProps & events;
