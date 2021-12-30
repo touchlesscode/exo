@@ -1,9 +1,9 @@
 const buttons = {
   primary: {
     cursor: 'pointer',
-    fontWeight: 'semiBold',
+    fontWeight: 'medium',
     fontFamily: 'body',
-    fontSize: 18,
+    fontSize: 16,
     backgroundColor: 'transparent',
     borderColor: 'primaryNavy',
     borderRadius: '10px',
