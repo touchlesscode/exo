@@ -25,8 +25,10 @@ const Divider: React.FC<DividerProps> = ({
         sx={{
           my: 0,
           backgroundColor: color,
-          width: width,
-          height: height,
+          minWidth: width,
+          width,
+          maxWidth: width,
+          height,
           border: 'none',
           ...sx
         }}
