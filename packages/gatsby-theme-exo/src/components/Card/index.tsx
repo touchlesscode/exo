@@ -31,9 +31,8 @@ const Card: React.FC<CardProps> = (props) => {
     timingFunc,
     shadow,
     expendTo,
-    ariaLabelledBy,
-    ariaDescribedBy,
     CloseIcon,
+    sx,
     ...rest
   } = props;
 
@@ -80,26 +79,27 @@ const Card: React.FC<CardProps> = (props) => {
 
   // Close card when esc key pressed
   React.useEffect(() => {
+    if (!escPressed) return;
     onClose && onClose();
   }, [escPressed]);
 
-  const accessibilityAttrs = {
-    ...(isFullScreen
-      ? {
-          'aria-modal': true,
-          role: 'button',
-          'aria-pressed': true,
-          'aria-expanded': true,
-          'aria-labelledby': ariaLabelledBy,
-          'aria-describedby': ariaDescribedBy
-        }
-      : {
-          'data-toggle': 'modal',
-          'aria-pressed': false,
-          'aria-expanded': false,
-          role: 'button'
-        })
-  };
+  const accessibilityAttrs = expendable
+    ? {
+        ...(isFullScreen
+          ? {
+              'aria-modal': true,
+              role: 'button',
+              'aria-pressed': true,
+              'aria-expanded': true
+            }
+          : {
+              'data-toggle': 'modal',
+              'aria-pressed': false,
+              'aria-expanded': false,
+              role: 'button'
+            })
+      }
+    : {};
 
   return (
     <Box
@@ -134,7 +134,8 @@ const Card: React.FC<CardProps> = (props) => {
             expendable,
             expended,
             expendTo,
-            bgImage
+            bgImage,
+            sx
           }),
           boxShadow: shadow
         }}
