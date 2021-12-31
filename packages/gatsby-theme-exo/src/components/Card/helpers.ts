@@ -21,10 +21,10 @@ export const getExpendedStyles = (
   position: 'fixed',
   overflow: 'hidden',
   borderRadius: '0',
-  height: expendTo?.height || '100vh',
-  width: expendTo?.width || '100vw',
-  left: expendTo?.left || '0',
-  top: expendTo?.top || '0'
+  height: `${expendTo?.height || '100vh'} !important`,
+  width: `${expendTo?.width || '100vw'} !important`,
+  left: `${expendTo?.left || '0'} !important`,
+  top: `${expendTo?.top || '0'} !important`
 });
 
 export const getTransition = (duration?: number, timingFunc?: string) => {
@@ -67,11 +67,13 @@ const getCardStyles = ({
   expendable,
   expended,
   expendTo,
-  bgImage
+  bgImage,
+  sx
 }: GetCardStyles): ThemeUIStyleObject => {
   const { duration, timingFunc } = transitionProps;
   let styles: ThemeUIStyleObject = {
-    position: 'relative'
+    position: 'relative',
+    ...sx
   };
   if (expended || isFullScreen)
     styles = {
@@ -81,7 +83,7 @@ const getCardStyles = ({
   if (!expended && !isFullScreen)
     styles = {
       ...styles,
-      ...(bgImage && { background: `url(${bgImage})` })
+      ...(bgImage && { backgroundImage: `url(${bgImage})` })
     };
   if (expendable && !expended)
     styles = {
