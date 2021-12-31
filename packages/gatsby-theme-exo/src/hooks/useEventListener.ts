@@ -3,12 +3,14 @@ import { RefObject, useEffect, useRef } from 'react';
 function useEventListener<T extends HTMLElement = HTMLDivElement>(
   eventName: keyof WindowEventMap | string, // string to allow custom event
   handler: (event: Event) => void,
-  element?: RefObject<T>
+  element?: RefObject<T>,
+  addListener?: boolean
 ) {
   // Create a ref that stores handler
   const savedHandler = useRef<(event: Event) => void>();
 
   useEffect(() => {
+    if (addListener === false) return;
     // Define the listening target
     const targetElement: T | Window = element?.current || window;
     if (!(targetElement && targetElement.addEventListener)) {

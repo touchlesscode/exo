@@ -11,6 +11,7 @@ import radii from '@exoTheme/theme/borderRadius';
 import zIndices from '@exoTheme/theme/zIndices';
 import styles from '@exoTheme/theme/styles';
 import transitions from '@exoTheme/theme/transitions';
+import variants from '@exoTheme/theme/variants';
 
 const makeTheme = <T extends Theme>(t: T) => t;
 
@@ -26,7 +27,8 @@ const theme = makeTheme({
   buttons,
   cards,
   badges,
-  transitions
+  transitions,
+  ...variants
 });
 
 export default theme;

@@ -6,7 +6,7 @@ interface ButtonCommonProps extends BtnProps {
 
 type ButtonDependentProps =
   | {
-      Icon?: React.FC<React.HTMLAttributes<HTMLElement>>;
+      Icon?: never;
       iconYPosition?: never;
       iconXPosition?: never;
       iconWidth?: never;
@@ -14,7 +14,7 @@ type ButtonDependentProps =
       space?: never;
     }
   | {
-      Icon: React.FC<React.HTMLAttributes<HTMLDivElement>>;
+      Icon: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
       iconYPosition?: 'start' | 'center' | 'end';
       iconXPosition?: 'left' | 'right';
       iconWidth?: string;

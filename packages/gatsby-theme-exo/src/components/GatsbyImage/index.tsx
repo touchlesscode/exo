@@ -12,13 +12,19 @@ import GatsbyImagePropsType from '@exoTheme/components/GatsbyImage/types';
 const GatsbyImage: React.FC<GatsbyImagePropsType> = ({
   sx,
   image,
+  variant,
   ...props
 }) => {
   const imageData = image ? getImage(image) : null;
   return imageData ? (
     <NativeGatsbyImage
       {...props}
-      sx={{ width: '100%', height: '100%', ...sx }}
+      sx={{
+        width: '100%',
+        height: '100%',
+        variant: `images.${variant}`,
+        ...sx
+      }}
       image={imageData}
     />
   ) : null;

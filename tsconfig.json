@@ -29,6 +29,6 @@
       "@exoTheme/legacy/*": ["packages/gatsby-theme-exo/src/legacy/*"]
     }
   },
-  "include": ["packages"],
+  "include": ["packages", "types"],
   "exclude": ["node_modules", "public", ".cache"]
 }

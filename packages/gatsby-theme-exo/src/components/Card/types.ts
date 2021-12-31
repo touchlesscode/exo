@@ -1,23 +1,22 @@
-import { ThemeUIStyleObject } from 'theme-ui';
+import { BoundingClientRecType } from '@exoTheme/types/index';
+import { ThemeUIStyleObject, CardProps as ThemeCardProps } from 'theme-ui';
 
 export type ExpendToType = {
-  width: string;
-  height: string;
-  left: string;
-  top: string;
-  transform: never;
+  width?: string;
+  height?: string;
+  left?: string;
+  top?: string;
+  transform?: never;
 };
 
-interface CardCommonProps {
+interface CardCommonProps extends ThemeCardProps {
   variant?: string;
-  bgColor?: string;
-  color?: string;
-  as?: keyof JSX.IntrinsicElements;
-  sx?: ThemeUIStyleObject;
-  boxShadow?: string;
-  bgImage?: string | undefined;
+  bgImage?: string;
+  shadow?: string;
   bgOverlay?: string;
   expendTo?: ExpendToType;
+  CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+  closeBtnSx?: ThemeUIStyleObject;
 }
 
 type events =
@@ -26,32 +25,34 @@ type events =
       expended?: never;
       onClick?: never;
       onClose?: never;
-      durations?: never;
-      timingFuncs?: never;
+      duration?: never;
+      timingFunc?: never;
+      ariaLabelledBy: never;
+      ariaDescribedBy: never;
     }
   | {
-      expendable: boolean;
+      expendable?: boolean;
       expended: boolean;
-      onClick: React.MouseEventHandler<HTMLDivElement>;
-      onClose: React.MouseEventHandler<HTMLButtonElement>;
-      durations?: {
-        expend: number;
-        collapse: number;
-      };
-      timingFuncs?: {
-        expend: string;
-        collapse: string;
-      };
+      onClick: () => void;
+      onClose?: () => void;
+      duration?: number;
+      timingFunc?: string;
+      ariaLabelledBy: string;
+      ariaDescribedBy: string;
     };
 
 export type CardProps = CardCommonProps & events;
 export type TransitionType = {
-  durations?: {
-    expend: number;
-    collapse: number;
-  };
-  timingFuncs?: {
-    expend: string;
-    collapse: string;
-  };
+  duration?: number;
+  timingFunc?: string;
 };
+
+export interface GetCardStyles {
+  position: BoundingClientRecType;
+  isFullScreen: boolean;
+  transitionProps: TransitionType;
+  expendable?: boolean;
+  expended?: boolean;
+  expendTo?: ExpendToType;
+  bgImage?: string;
+}

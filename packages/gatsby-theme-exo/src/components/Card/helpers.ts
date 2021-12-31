@@ -2,7 +2,7 @@ import { Theme, get, ThemeUIStyleObject } from 'theme-ui';
 
 // Types
 import { BoundingClientRecType } from '@exoTheme/types/index';
-import { ExpendToType, TransitionType } from '@exoTheme/components/Card/types';
+import { ExpendToType, GetCardStyles } from '@exoTheme/components/Card/types';
 
 export const getBaseStyles = (
   rect: BoundingClientRecType
@@ -60,17 +60,19 @@ export const getTransition = (duration?: number, timingFunc?: string) => {
   };
 };
 
-const getCardStyles = (
-  position: BoundingClientRecType,
-  isFullScreen: boolean,
-  transitionProps: TransitionType,
-  bgImage?: string,
-  expendable?: boolean,
-  expended?: boolean,
-  expendTo?: ExpendToType
-): ThemeUIStyleObject => {
-  const { durations, timingFuncs } = transitionProps;
-  let styles = {};
+const getCardStyles = ({
+  position,
+  isFullScreen,
+  transitionProps,
+  expendable,
+  expended,
+  expendTo,
+  bgImage
+}: GetCardStyles): ThemeUIStyleObject => {
+  const { duration, timingFunc } = transitionProps;
+  let styles: ThemeUIStyleObject = {
+    position: 'relative'
+  };
   if (expended || isFullScreen)
     styles = {
       ...styles,
@@ -79,7 +81,7 @@ const getCardStyles = (
   if (!expended && !isFullScreen)
     styles = {
       ...styles,
-      ...(bgImage && { backgroundImage: bgImage })
+      ...(bgImage && { background: `url(${bgImage})` })
     };
   if (expendable && !expended)
     styles = {
@@ -89,12 +91,12 @@ const getCardStyles = (
   if (expended && isFullScreen)
     styles = {
       ...styles,
-      ...getTransition(durations?.expend, timingFuncs?.expend)
+      ...getTransition(duration, timingFunc)
     };
   if (!expended && isFullScreen)
     styles = {
       ...styles,
-      ...getTransition(durations?.collapse, timingFuncs?.collapse)
+      ...getTransition(duration, timingFunc)
     };
   if ((expended && !isFullScreen) || (!expended && isFullScreen))
     styles = {
