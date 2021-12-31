@@ -27,8 +27,6 @@ type events =
       onClose?: never;
       duration?: never;
       timingFunc?: never;
-      ariaLabelledBy: never;
-      ariaDescribedBy: never;
     }
   | {
       expendable?: boolean;
@@ -37,8 +35,6 @@ type events =
       onClose?: () => void;
       duration?: number;
       timingFunc?: string;
-      ariaLabelledBy: string;
-      ariaDescribedBy: string;
     };
 
 export type CardProps = CardCommonProps & events;
@@ -55,4 +51,5 @@ export interface GetCardStyles {
   expended?: boolean;
   expendTo?: ExpendToType;
   bgImage?: string;
+  sx?: ThemeUIStyleObject;
 }
