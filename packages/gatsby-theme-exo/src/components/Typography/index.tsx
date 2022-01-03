@@ -4,7 +4,15 @@ import Divider from '@exoTheme/components/Divider';
 import TypographyPropsTypes from '@exoTheme/components/Typography/types';
 
 const Typography: React.FC<TypographyPropsTypes> = (props) => {
-  const { children, withLine, line, sx, as = 'p', ...rest } = props;
+  const {
+    children,
+    withLine,
+    line,
+    sx,
+    as = 'p',
+    color: textColor,
+    ...rest
+  } = props;
   const { variant, color, align, justify, width, height, space } = line || {};
 
   return (
@@ -13,7 +21,9 @@ const Typography: React.FC<TypographyPropsTypes> = (props) => {
         width: withLine ? 'fit-content' : '100%',
         display: withLine ? 'flex' : 'inline-block',
         gap: space,
-        flexDirection: withLine && align === 'top' ? 'column' : 'column-reverse'
+        flexDirection:
+          withLine && align === 'top' ? 'column' : 'column-reverse',
+        color: textColor
       }}
     >
       <Divider
@@ -26,6 +36,7 @@ const Typography: React.FC<TypographyPropsTypes> = (props) => {
       />
       <Text
         {...rest}
+        color="inherit"
         as={as}
         sx={{
           m: 0,
@@ -43,6 +54,7 @@ export default Typography;
 Typography.defaultProps = {
   withLine: false,
   line: {
+    color: 'inherit',
     align: 'bottom',
     justify: 'left',
     width: '70%',
