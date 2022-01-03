@@ -1,19 +1,13 @@
 import * as React from 'react';
-import { Flex, ThemeUIStyleObject } from 'theme-ui';
+import { Flex } from 'theme-ui';
 import GatsbyImage from '../GatsbyImage';
-import GatsbyImagePropsType from '../GatsbyImage/types';
 import Typography from '../Typography';
-
-interface ImageWithLabelProps extends GatsbyImagePropsType {
-  sx?: ThemeUIStyleObject;
-  label: string;
-  imageWidth?: string;
-  imageVariant?: string;
-}
+import { ImageWithLabelProps } from '@exoTheme/components/ImageWithLabel/types';
 
 const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
   sx,
   label,
+  height = '72px',
   imageWidth = '100px',
   imageVariant,
   ...props
@@ -21,7 +15,7 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
   return (
     <Flex
       sx={{
-        height: '72px',
+        height,
         justifyContent: 'start',
         alignItems: 'center',
         gap: 6,
@@ -31,7 +25,7 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
       <GatsbyImage
         {...props}
         variant={imageVariant}
-        sx={{ width: imageWidth }}
+        sx={{ width: imageWidth, minWidth: imageWidth, maxWidth: imageWidth }}
       />
       <Typography
         sx={{
