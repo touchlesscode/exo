@@ -2,11 +2,14 @@ import { BoxProps } from 'theme-ui';
 
 interface OverlayProps extends BoxProps {
   color?: string;
+  width?: string;
+  height?: string;
   visible?: boolean;
   zIndex?: string | number;
   position?: 'fixed' | 'absolute';
   transitionDuration?: number;
   animated?: boolean;
+  transitioned?: boolean;
   colors?: ColorsProps[];
 }
 
