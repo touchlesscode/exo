@@ -1,55 +1,33 @@
-import { BoundingClientRecType } from '@exoTheme/types/index';
-import { ThemeUIStyleObject, CardProps as ThemeCardProps } from 'theme-ui';
+import OverlayProps from '@exoTheme/components/Overlay/types';
+
+interface BaseProps {
+  bordered?: boolean;
+  padding?: string;
+  elevated?: boolean;
+  loading?: boolean;
+  radius?: string;
+}
+
+type CardOverlayProps =
+  | { overlayed?: false; overlay?: never }
+  | { overlayed: true; overlay?: OverlayProps };
+
+export type CardProps = BaseProps & CardOverlayProps;
+
+export type ExpendableCardProps = CardProps & {
+  expended: boolean;
+  onClick: () => void;
+  onClose: () => void;
+  duration?: number;
+  CloseBtn?: JSX.Element;
+  CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
+  expendTo?: ExpendToType;
+};
 
 export type ExpendToType = {
   width?: string;
-  height?: string;
   left?: string;
   top?: string;
-  transform?: never;
+  right?: string;
+  transform?: string;
 };
-
-interface CardCommonProps extends ThemeCardProps {
-  variant?: string;
-  bgImage?: string;
-  shadow?: string;
-  bgOverlay?: string;
-  expendTo?: ExpendToType;
-  CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  closeBtnSx?: ThemeUIStyleObject;
-}
-
-type events =
-  | {
-      expendable?: never;
-      expended?: never;
-      onClick?: never;
-      onClose?: never;
-      duration?: never;
-      timingFunc?: never;
-    }
-  | {
-      expendable?: boolean;
-      expended: boolean;
-      onClick: () => void;
-      onClose?: () => void;
-      duration?: number;
-      timingFunc?: string;
-    };
-
-export type CardProps = CardCommonProps & events;
-export type TransitionType = {
-  duration?: number;
-  timingFunc?: string;
-};
-
-export interface GetCardStyles {
-  position: BoundingClientRecType;
-  isFullScreen: boolean;
-  transitionProps: TransitionType;
-  expendable?: boolean;
-  expended?: boolean;
-  expendTo?: ExpendToType;
-  bgImage?: string;
-  sx?: ThemeUIStyleObject;
-}
