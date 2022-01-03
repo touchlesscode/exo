@@ -4,7 +4,7 @@ import TypographyProps from '@exoTheme/components/Typography/types';
 interface TextBlockProps {
   heading?: string;
   text?: string;
-  headingProps: TypographyProps;
+  headingProps?: TypographyProps;
   textProps?: TypographyProps;
   sx?: ThemeUIStyleObject;
 }
