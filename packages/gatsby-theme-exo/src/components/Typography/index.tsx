@@ -10,7 +10,7 @@ const Typography: React.FC<TypographyPropsTypes> = (props) => {
   return (
     <Box
       sx={{
-        width: withLine ? 'max-content' : '100%',
+        width: withLine ? 'fit-content' : '100%',
         display: withLine ? 'flex' : 'inline-block',
         gap: space,
         flexDirection: withLine && align === 'top' ? 'column' : 'column-reverse'
