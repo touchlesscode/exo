@@ -475,6 +475,7 @@ const Index = ({ data }) => {
   );
 };
 
+
 export default Index;
 
 export const indexPageQuery = graphql`
