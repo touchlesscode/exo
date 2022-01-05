@@ -482,62 +482,62 @@ export const indexPageQuery = graphql`
   {
     redCar: file(absolutePath: { regex: "/red-car/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image1: file(absolutePath: { regex: "/type-image-1/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image2: file(absolutePath: { regex: "/type-image-2/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image3: file(absolutePath: { regex: "/type-image-3/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image4: file(absolutePath: { regex: "/type-image-4/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image5: file(absolutePath: { regex: "/type-image-5/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     image6: file(absolutePath: { regex: "/type-image-6/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     homePageBg: file(absolutePath: { regex: "/home-hero-bg-toyota/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     homePageBgSm: file(absolutePath: { regex: "/home-hero-bg-sm/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     twoPeople: file(absolutePath: { regex: "/two-people/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     ServicesCar: file(absolutePath: { regex: "/services-cars/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     tradeIn: file(absolutePath: { regex: "/trade-in/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 100, placeholder: BLURRED)
+        gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
     brands: allSanityBrand(
@@ -551,7 +551,7 @@ export const indexPageQuery = graphql`
         logo {
           svg {
             asset {
-              gatsbyImageData
+              gatsbyImageData(placeholder: BLURRED)
               id
             }
           }
