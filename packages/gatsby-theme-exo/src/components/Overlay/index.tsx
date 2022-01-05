@@ -15,6 +15,7 @@ const Overlay: React.FC<OverlayProps> = ({
   transitionDuration,
   animated,
   transitioned,
+  sx,
   ...props
 }) => {
   const bgImage = colors?.map((color: ColorsProps) =>
@@ -44,7 +45,8 @@ const Overlay: React.FC<OverlayProps> = ({
         inset: 0,
         zIndex: zIndex,
         width,
-        maxHeight: height
+        maxHeight: height,
+        ...sx
       }}
     >
       {children}

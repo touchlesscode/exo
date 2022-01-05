@@ -1,13 +1,12 @@
-import { KeenSliderOptions } from 'keen-slider/react';
+import { KeenSliderOptions, KeenSliderPlugin } from 'keen-slider/react';
 import { ThemeUIStyleObject } from 'theme-ui';
 
 export interface SliderProps {
-  itemsToShow?: number;
+  itemsToShow?: number | NonEmptyArray<number>;
   disableTransform?: boolean;
-  disabled?: boolean;
-  spacing?: number;
+  disabled?: boolean | NonEmptyArray<boolean>;
+  spacing?: number | NonEmptyArray<number>;
   sx?: ThemeUIStyleObject;
   options?: KeenSliderOptions;
-  slideOnScrollingY?: boolean;
-  speed?: number;
+  plugins?: KeenSliderPlugin[];
 }

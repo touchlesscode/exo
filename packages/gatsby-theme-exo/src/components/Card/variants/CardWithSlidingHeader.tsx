@@ -1,48 +1,27 @@
 import * as React from 'react';
 import Card from '@exoTheme/components/Card';
-import { Box, Flex, ThemeUIStyleObject } from 'theme-ui';
+import { Box, Flex } from 'theme-ui';
+import TextBlock from '@exoTheme/components/TextBlock';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
-import Typography from '@exoTheme/components/Typography';
-import { IGatsbyImageData } from 'gatsby-plugin-image';
-import Slider from '@exoTheme/components/Slider';
-import { SliderProps } from '@exoTheme/components/Slider/types';
-
-interface CardWithSlidingHeaderProps {
-  images: {
-    image: IGatsbyImageData;
-    id: string;
-  }[];
-  title?: string;
-  description?: string;
-  sx?: ThemeUIStyleObject;
-  sliderOptions?: SliderProps;
-  sliderPosition?: 'top' | 'bottom';
-}
+import { CardWithSlidingHeaderProps } from '@exoTheme/components/Card/types';
+import SliderWheel from '@exoTheme/components/Slider/variants/SliderWheel';
 
 const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
   children,
   images,
-  title,
-  description,
+  content,
   sliderOptions,
   sliderPosition = 'top',
-  sx
+  ...props
 }) => {
   return (
-    <Card
-      shadow="full-md"
-      variant="rounded"
-      sx={{
-        overflow: 'hidden',
-        ...sx
-      }}
-    >
+    <Card {...props}>
       <Flex
         sx={{
           flexDirection: sliderPosition === 'top' ? 'column' : 'column-reverse'
         }}
       >
-        <Slider {...sliderOptions} slideOnScrollingY>
+        <SliderWheel {...sliderOptions} slideOnScrollingY>
           {images.map(({ image, id }) => (
             <GatsbyImage
               key={id}
@@ -50,25 +29,18 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
               alt="test"
               objectFit="contain"
               sx={{
-                height: '65px',
+                height: '100%',
                 minWidth: '20%'
               }}
             />
           ))}
-        </Slider>
+        </SliderWheel>
         <Box
           sx={{
             p: 6
           }}
         >
-          {children ? (
-            children
-          ) : (
-            <>
-              <Typography as="h4">{title}</Typography>
-              <Typography sx={{ mt: 1 }}>{description}</Typography>
-            </>
-          )}
+          {children ? children : <TextBlock {...content} />}
         </Box>
       </Flex>
     </Card>

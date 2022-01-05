@@ -23,6 +23,7 @@ const GatsbyImage: React.FC<GatsbyImagePropsType> = ({
         width: '100%',
         height: '100%',
         variant: `images.${variant}`,
+        zIndex: 0,
         ...sx
       }}
       image={imageData}

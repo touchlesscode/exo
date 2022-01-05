@@ -17,7 +17,7 @@
     "prettier:check": "prettier --config .prettierrc --check '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
     "lint:fix": "yarn lint:check --fix",
     "prettier:fix": "prettier --config .prettierrc --write '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
-    "type:staged": "tsc-files --noEmit",
+    "type:staged": "tsc-files --noEmit ./types/custom.d.ts",
     "lint:staged": "eslint",
     "prettier:staged": "prettier --config .prettierrc --write"
   },

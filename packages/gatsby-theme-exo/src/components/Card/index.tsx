@@ -7,11 +7,24 @@ import Spinner from '@exoTheme/components/Spinner';
 const Card: React.ForwardRefRenderFunction<
   HTMLDivElement,
   React.PropsWithChildren<CardProps>
-> = ({ children, radius, elevated, overlayed, overlay, loading, bordered }) => {
+> = (
+  {
+    children,
+    radius,
+    elevated,
+    overlayed,
+    overlay,
+    loading,
+    bordered,
+    ...restProps
+  },
+  ref
+) => {
   return !loading ? (
     <Box
+      {...restProps}
+      ref={ref}
       sx={{
-        all: 'inherit',
         width: '100%',
         height: '100%',
         overflow: 'hidden',
@@ -21,7 +34,7 @@ const Card: React.ForwardRefRenderFunction<
         border: bordered && '1px solid #C7C7C7'
       }}
     >
-      {overlayed ? <Overlay {...overlay} /> : null}
+      {overlayed ? <Overlay {...overlay} zIndex="1" /> : null}
       {children}
     </Box>
   ) : (

@@ -1,11 +1,16 @@
 import OverlayProps from '@exoTheme/components/Overlay/types';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
+import { SliderProps } from '@exoTheme/components/Slider/types';
+import TextBlockProps from '@exoTheme/components/TextBlock/types';
+import { CardProps as ThemeCardProps } from 'theme-ui';
 
-interface BaseProps {
+interface BaseProps extends Omit<ThemeCardProps, 'sx'> {
   bordered?: boolean;
   padding?: string;
   elevated?: boolean;
   loading?: boolean;
   radius?: string;
+  sx?: never;
 }
 
 type CardOverlayProps =
@@ -30,4 +35,14 @@ export type ExpendToType = {
   top?: string;
   right?: string;
   transform?: string;
+};
+
+export type CardWithSlidingHeaderProps = CardProps & {
+  images: {
+    image: IGatsbyImageData;
+    id: string;
+  }[];
+  content?: TextBlockProps;
+  sliderOptions?: SliderProps;
+  sliderPosition?: 'top' | 'bottom';
 };

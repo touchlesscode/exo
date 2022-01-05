@@ -64,14 +64,6 @@ const ExpendableCard: React.ForwardRefRenderFunction<
       sx={{ height: expended ? initialRect?.height : '100%' }}
       onClick={!expended ? handleOnClick : undefined}
     >
-      {expended && (
-        <Overlay
-          color="rgba(0,0,0,0.4)"
-          position="fixed"
-          onClick={handleOnClose}
-          animated
-        />
-      )}
       <Box
         ref={expendingRef}
         sx={{
@@ -92,8 +84,17 @@ const ExpendableCard: React.ForwardRefRenderFunction<
               )} ${duration}ms forwards` // add animation to collapsing
             : 'none' // when in initial state.
         }}
-        className="expended"
       >
+        {expended && (
+          <Overlay
+            color="rgba(0,0,0,0.4)"
+            position="fixed"
+            onClick={handleOnClose}
+            sx={{
+              cursor: 'pointer'
+            }}
+          />
+        )}
         <Box
           sx={{
             width: '100%',
@@ -101,8 +102,13 @@ const ExpendableCard: React.ForwardRefRenderFunction<
               !expended && !willCollapse
                 ? '100%' // set to 100% when the card is not expended and not collapsing. / initial state.
                 : expended && !willCollapse
-                ? 'inherit' // set to max-content when the card is expended.
-                : !expended && willCollapse && initialRect?.height // set to initial height when the card is collapsing.
+                ? 'fill-available' // set to max-content when the card is expended.
+                : !expended && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
+            maxWidth: (theme) => theme?.breakpoints?.[2],
+            maxHeight: (theme) => theme?.breakpoints?.[3],
+            m: 'auto',
+            position: 'relative',
+            zIndex: 'infinity'
           }}
         >
           <Card {...(expended ? OverlayProps : props)}>
@@ -116,7 +122,9 @@ const ExpendableCard: React.ForwardRefRenderFunction<
                   right: 6,
                   top: 6,
                   zIndex: 3,
-                  p: 2,
+                  p: 1,
+                  width: 6,
+                  height: 6,
                   borderRadius: '100px',
                   bg: 'white'
                 }}
@@ -147,7 +155,8 @@ const expendAnimation = (
       zIndex:
         get(theme, 'zIndices.infinity') ||
         get(theme, 'zIndices.1000') ||
-        '100000000'
+        '100000000',
+      margin: '0 auto'
     },
     to: {
       position: 'fixed',
@@ -161,7 +170,8 @@ const expendAnimation = (
       left: expendTo?.left || 0,
       right: expendTo?.right || 0,
       width: expendTo?.width || '100vw',
-      transform: expendTo?.transform || 'none'
+      transform: expendTo?.transform || 'none',
+      margin: '0 auto'
     }
   });
 const collapseAnimation = (

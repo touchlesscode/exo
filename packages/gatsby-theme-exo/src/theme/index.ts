@@ -12,6 +12,7 @@ import zIndices from '@exoTheme/theme/zIndices';
 import styles from '@exoTheme/theme/styles';
 import transitions from '@exoTheme/theme/transitions';
 import variants from '@exoTheme/theme/variants';
+import breakpoints from '@exoTheme/theme/breakpoints';
 
 const makeTheme = <T extends Theme>(t: T) => t;
 
@@ -28,6 +29,7 @@ const theme = makeTheme({
   cards,
   badges,
   transitions,
+  breakpoints,
   ...variants
 });
 
