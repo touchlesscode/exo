@@ -31,9 +31,10 @@ const ExpendableCard: React.ForwardRefRenderFunction<
 ) => {
   const { theme } = useThemeUI();
 
-  const OverlayProps = props.overlayed
-    ? { overlay: props.overlay, overlayed: props.overlayed }
-    : {};
+  const { elevated, radius } = props;
+  const propsToPass = expended
+    ? { ...props, elevated: false, radius: '0' }
+    : { ...props, elevated, radius };
 
   const parentRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
   const expendingRef = (ref ||
@@ -87,6 +88,7 @@ const ExpendableCard: React.ForwardRefRenderFunction<
       >
         {expended && (
           <Overlay
+            animated
             color="rgba(0,0,0,0.4)"
             position="fixed"
             onClick={handleOnClose}
@@ -102,16 +104,15 @@ const ExpendableCard: React.ForwardRefRenderFunction<
               !expended && !willCollapse
                 ? '100%' // set to 100% when the card is not expended and not collapsing. / initial state.
                 : expended && !willCollapse
-                ? 'fill-available' // set to max-content when the card is expended.
+                ? 'inherit' // set to max-content when the card is expended.
                 : !expended && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
             maxWidth: (theme) => theme?.breakpoints?.[2],
-            maxHeight: (theme) => theme?.breakpoints?.[3],
             m: 'auto',
-            position: 'relative',
+            position: !expended && !willCollapse ? 'static' : 'relative',
             zIndex: 'infinity'
           }}
         >
-          <Card {...(expended ? OverlayProps : props)}>
+          <Card {...propsToPass}>
             {children}
             {expended ? ( // render close button when expended
               <Button

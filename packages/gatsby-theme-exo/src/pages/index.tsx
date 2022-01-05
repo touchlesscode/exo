@@ -11,7 +11,7 @@ import SlimArrow from '@exoTheme/images/development/slim-arrow.inline.svg';
 import { slideUp } from '@exoTheme/theme/animations';
 import { graphql } from 'gatsby';
 import * as React from 'react';
-import { Box, Theme } from 'theme-ui';
+import { Box, Grid, Theme } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
 import Slider from '@exoTheme/components/Slider';
@@ -36,6 +36,8 @@ const benifits = [
 const Index = ({ data }) => {
   const isMobile = (typeof window !== "undefined") ? useWindowSize().type === 'sm' : true;
   const [expended, setExpended] = React.useState(false);
+  const [brandExpended, setBrandExpended] = React.useState(false);
+  const [bodyTypeExpended, setBodyTypeExpended] = React.useState(false);
   const {
     redCar,
     brands,
@@ -138,14 +140,17 @@ const Index = ({ data }) => {
           pb: '100px'
         }}
       >
-        <Flex
-          direction={['column', 'row']}
+        <Grid
+          columns={['1fr', '1fr 1fr']}
           gap={8}
           sx={{
-            width: '90%'
+            width: ['90%', '100%']
           }}
         >
           <CardWithSlidingHeader
+            expended={brandExpended}
+            onClick={() => setBrandExpended(true)}
+            onClose={() => setBrandExpended(false)}
             bg="white"
             elevated
             radius="16px"
@@ -153,6 +158,9 @@ const Index = ({ data }) => {
             sliderOptions={{
               itemsToShow: 4,
               spacing: 20,
+              options: {
+                drag: true
+              },
               sx: {
                 height: '65px',
                 pt: 4
@@ -163,8 +171,21 @@ const Index = ({ data }) => {
               text: 'Review all the numbers and finalize everything without needing to visit us.',
               headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
             }}
-          />
+          >
+            {brandExpended ? (
+              <Box
+                sx={{
+                  height: 'fill-available'
+                }}
+              >
+                Render Content
+              </Box>
+            ) : null}
+          </CardWithSlidingHeader>
           <CardWithSlidingHeader
+            expended={bodyTypeExpended}
+            onClick={() => setBodyTypeExpended(true)}
+            onClose={() => setBodyTypeExpended(false)}
             bg="white"
             elevated
             radius="16px"
@@ -183,7 +204,7 @@ const Index = ({ data }) => {
               headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
             }}
           />
-        </Flex>
+        </Grid>
         <Box
           sx={{
             width: ['90%', '100%'],
@@ -350,7 +371,6 @@ const Index = ({ data }) => {
               <CardWithList
                 key={idx}
                 color="white"
-                elevated
                 radius="16px"
                 overlayed
                 overlay={{

@@ -35,7 +35,7 @@ const CardWithList: React.FC<CardWithListProps> = ({
           backgroundSize: 'cover',
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'end'
+          justifyContent: 'flex-end'
         }}
       >
         <Box

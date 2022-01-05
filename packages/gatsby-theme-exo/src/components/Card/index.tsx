@@ -28,6 +28,7 @@ const Card: React.ForwardRefRenderFunction<
         width: '100%',
         height: '100%',
         overflow: 'hidden',
+        transform: 'translateZ(0)',
         position: 'relative',
         boxShadow: elevated ? 9 : 0,
         borderRadius: radius || 0,

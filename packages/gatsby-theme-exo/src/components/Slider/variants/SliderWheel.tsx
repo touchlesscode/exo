@@ -12,12 +12,17 @@ const SliderWheel: React.FC<SliderWheelProps> = ({
   children,
   plugins = [],
   options = [],
+  sx,
   ...props
 }) => {
   return (
     <Slider
       plugins={[...plugins, WheelControls]}
       options={{ ...options, mode: 'free' }}
+      sx={{
+        pointerEvents: 'none',
+        ...sx
+      }}
       {...props}
     >
       {children}

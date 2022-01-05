@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Card from '@exoTheme/components/Card';
+import ExpendableCard from '@exoTheme/components/Card/variants/expendable';
 import { Box, Flex } from 'theme-ui';
 import TextBlock from '@exoTheme/components/TextBlock';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
@@ -14,14 +14,21 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
   sliderPosition = 'top',
   ...props
 }) => {
+  const sliderNewOptions = {
+    ...sliderOptions,
+    options: {
+      ...sliderOptions?.options,
+      drag: props.expended ? false : true
+    }
+  };
   return (
-    <Card {...props}>
+    <ExpendableCard {...props}>
       <Flex
         sx={{
           flexDirection: sliderPosition === 'top' ? 'column' : 'column-reverse'
         }}
       >
-        <SliderWheel {...sliderOptions} slideOnScrollingY>
+        <SliderWheel {...sliderNewOptions} slideOnScrollingY>
           {images.map(({ image, id }) => (
             <GatsbyImage
               key={id}
@@ -40,10 +47,11 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
             p: 6
           }}
         >
-          {children ? children : <TextBlock {...content} />}
+          <TextBlock {...content} />
+          {children}
         </Box>
       </Flex>
-    </Card>
+    </ExpendableCard>
   );
 };
 

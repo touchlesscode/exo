@@ -37,7 +37,7 @@ export type ExpendToType = {
   transform?: string;
 };
 
-export type CardWithSlidingHeaderProps = CardProps & {
+export type CardWithSlidingHeaderProps = ExpendableCardProps & {
   images: {
     image: IGatsbyImageData;
     id: string;
