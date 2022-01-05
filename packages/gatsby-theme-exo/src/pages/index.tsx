@@ -54,8 +54,8 @@ const Index = ({ data }) => {
 
   // @ts-ignore
   const brandsImages = brands.nodes.map(({ logo }) => ({
-    id: logo.svg.asset.id,
-    image: logo.svg.asset
+    id: logo?.svg?.asset?.id,
+    image: logo?.svg?.asset
   }));
   const bodyTypeImages = [image1, image2, image3, image4, image5, image6].map(
     (type, idx) => ({
@@ -542,7 +542,10 @@ export const indexPageQuery = graphql`
     }
     brands: allSanityBrand(
       limit: 15
-      filter: { tags: { regex: "/vehicle/" } }
+      filter: { 
+        tags: { regex: "/vehicle/" }
+        logo: { svg: {_type: {eq: "image"} } }
+      }
     ) {
       nodes {
         logo {
