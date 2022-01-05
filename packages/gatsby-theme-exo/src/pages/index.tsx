@@ -160,7 +160,7 @@ const Index = ({ data }) => {
             }}
             content={{
               heading: 'Browse by brand',
-              text: 'Review all the numbers and finalize everything without needing to visit our dealership.',
+              text: 'Review all the numbers and finalize everything without needing to visit us.',
               headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
             }}
           />
@@ -179,7 +179,7 @@ const Index = ({ data }) => {
             }}
             content={{
               heading: 'Browse by body type',
-              text: 'Review all the numbers and finalize everything without needing to visit our dealership.',
+              text: 'Review all the numbers and finalize everything without needing to visit us.',
               headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
             }}
           />
@@ -412,7 +412,7 @@ const Index = ({ data }) => {
                 }}
               >
                 <TextBlock
-                  heading="Koons Service"
+                  heading="Our Service"
                   headingProps={{
                     withLine: true,
                     line: {
@@ -424,7 +424,7 @@ const Index = ({ data }) => {
                       mb: 2
                     }
                   }}
-                  text="Review all the numbers and finalize everything without needing to visit our dealership."
+                  text="Review all the numbers and finalize everything without needing to visit."
                 />
                 <GatsbyImage
                   image={ServicesCar}
@@ -459,7 +459,7 @@ const Index = ({ data }) => {
                     mb: 2
                   }
                 }}
-                text="Review all the numbers and finalize everything without needing to visit our dealership."
+                text="Review all the numbers and finalize everything without needing to visit us."
                 sx={{
                   p: 6
                 }}
