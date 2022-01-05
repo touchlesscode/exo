@@ -34,7 +34,7 @@ const benifits = [
 ];
 // @ts-ignore
 const Index = ({ data }) => {
-  const isMobile = useWindowSize().type === 'sm';
+  const isMobile = (typeof window !== "undefined") ? useWindowSize().type === 'sm' : true;
   const [expended, setExpended] = React.useState(false);
   const {
     redCar,
