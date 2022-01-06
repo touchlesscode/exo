@@ -34,7 +34,8 @@ const benifits = [
 ];
 // @ts-ignore
 const Index = ({ data }) => {
-  const isMobile = (typeof window !== "undefined") ? useWindowSize().type === 'sm' : true;
+  const isMobile =
+    typeof window !== 'undefined' ? useWindowSize().type === 'sm' : true;
   const [expended, setExpended] = React.useState(false);
   const {
     redCar,
@@ -146,18 +147,29 @@ const Index = ({ data }) => {
           }}
         >
           <CardWithSlidingHeader
-            bg="white"
-            elevated
-            radius="16px"
-            images={brandsImages}
-            sliderOptions={{
-              itemsToShow: 4,
-              spacing: 20,
-              sx: {
-                height: '65px',
-                pt: 4
+            options={{
+              renderMode: 'performance',
+              rubberband: false,
+              loop: true,
+              disabled: false,
+              slides: {
+                perView: 4,
+                spacing: 20
+              },
+              drag: true,
+              breakpoints: {
+                '(min-width: 768px.02)': {
+                  drag: true
+                }
               }
             }}
+            slideStyles={{
+              height: '69px',
+              width: '100%',
+              mt: 4
+            }}
+            cardStyles={{ bg: 'white', borderRadius: '16px' }}
+            images={brandsImages}
             content={{
               heading: 'Browse by brand',
               text: 'Review all the numbers and finalize everything without needing to visit us.',
@@ -165,18 +177,29 @@ const Index = ({ data }) => {
             }}
           />
           <CardWithSlidingHeader
-            bg="white"
-            elevated
-            radius="16px"
             images={bodyTypeImages}
-            sliderOptions={{
-              itemsToShow: 5,
-              spacing: 20,
-              sx: {
-                height: '65px',
-                pt: 4
+            options={{
+              renderMode: 'performance',
+              rubberband: false,
+              loop: true,
+              disabled: false,
+              slides: {
+                perView: 3,
+                spacing: 20
+              },
+              drag: true,
+              breakpoints: {
+                '(min-width: 768px.02)': {
+                  drag: true
+                }
               }
             }}
+            slideStyles={{
+              height: '65px',
+              width: '100%',
+              mt: 4
+            }}
+            cardStyles={{ bg: 'white', borderRadius: '16px' }}
             content={{
               heading: 'Browse by body type',
               text: 'Review all the numbers and finalize everything without needing to visit us.',
@@ -335,13 +358,33 @@ const Index = ({ data }) => {
           </ExpendableCard>
         </Box>
         <Slider
-          itemsToShow={[1.15, 3]}
-          spacing={16}
           options={{
+            renderMode: 'performance',
+            disabled: false,
             loop: false,
+            initial: 1,
             slides: {
+              perView: 1.15,
+              spacing: 16,
               origin: 'center'
+            },
+            drag: true,
+            breakpoints: {
+              '(min-width: 768.02px)': {
+                initial: 1,
+                slides: {
+                  perView: 3,
+                  spacing: 16,
+                  origin: 'auto'
+                }
+              }
             }
+          }}
+          slideStyles={{
+            height: '100%',
+            width: '100%',
+            borderRadius: '16px',
+            cursor: 'pointer'
           }}
         >
           {Array(4)
@@ -475,7 +518,6 @@ const Index = ({ data }) => {
   );
 };
 
-
 export default Index;
 
 export const indexPageQuery = graphql`
@@ -542,9 +584,9 @@ export const indexPageQuery = graphql`
     }
     brands: allSanityBrand(
       limit: 15
-      filter: { 
+      filter: {
         tags: { regex: "/vehicle/" }
-        logo: { svg: {_type: {eq: "image"} } }
+        logo: { svg: { _type: { eq: "image" } } }
       }
     ) {
       nodes {

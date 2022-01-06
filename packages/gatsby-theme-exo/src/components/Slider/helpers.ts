@@ -1,35 +1,5 @@
 import { KeenSliderPlugin } from 'keen-slider/react';
 
-const getBreakpointSyntax = (width?: string): string => `(min-width: ${width})`;
-export const generateBreakpoints = (
-  breakpoints: string[] = [],
-  disabled: boolean | NonEmptyArray<boolean>,
-  spacing: number | NonEmptyArray<number>,
-  itemsToShow: number | NonEmptyArray<number>
-) => {
-  const data: { [key: string]: Record<string, unknown> } = {};
-  const spacingArr = Array.isArray(spacing) ? spacing : [spacing];
-  const disabledArr = Array.isArray(disabled) ? disabled : [disabled];
-  const itemsToShowArr = Array.isArray(itemsToShow)
-    ? itemsToShow
-    : [itemsToShow];
-
-  for (let i = 0; i < breakpoints.length; i++) {
-    if (spacingArr[i + 1] === undefined) spacingArr.push(spacingArr[i]);
-    if (disabledArr[i + 1] === undefined) disabledArr.push(disabledArr[i]);
-    if (itemsToShowArr[i + 1] === undefined)
-      itemsToShowArr.push(itemsToShowArr[i]);
-    data[getBreakpointSyntax(breakpoints[i])] = {
-      disabled: disabledArr[i + 1],
-      slides: {
-        perView: itemsToShowArr[i + 1],
-        spacing: spacingArr[i + 1]
-      }
-    };
-  }
-  return data;
-};
-
 export const WheelControls: KeenSliderPlugin = (slider) => {
   let touchTimeout: ReturnType<typeof setTimeout>;
   let position: {

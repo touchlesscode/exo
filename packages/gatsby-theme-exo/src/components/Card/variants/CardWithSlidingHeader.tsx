@@ -10,18 +10,24 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
   children,
   images,
   content,
-  sliderOptions,
+  options,
   sliderPosition = 'top',
+  slideStyles,
+  cardStyles,
   ...props
 }) => {
   return (
     <Card {...props}>
       <Flex
         sx={{
-          flexDirection: sliderPosition === 'top' ? 'column' : 'column-reverse'
+          ...{
+            flexDirection:
+              sliderPosition === 'top' ? 'column' : 'column-reverse'
+          },
+          ...cardStyles
         }}
       >
-        <SliderWheel {...sliderOptions} slideOnScrollingY>
+        <SliderWheel options={options} slideStyles={slideStyles}>
           {images.map(({ image, id }) => (
             <GatsbyImage
               key={id}
@@ -30,7 +36,7 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
               objectFit="contain"
               sx={{
                 height: '100%',
-                minWidth: '20%'
+                width: '100%'
               }}
             />
           ))}
