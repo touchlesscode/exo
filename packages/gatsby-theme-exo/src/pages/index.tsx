@@ -31,8 +31,8 @@ const badges = [
 
 // @ts-ignore
 const Index = ({ data }) => {
-  const isMobile = useWindowSize().type === 'sm';
-  const isTablet = useWindowSize().type === 'md';
+  const isMobile = useWindowSize()?.type === 'sm';
+  const isTablet = useWindowSize()?.type === 'md';
   const [expended, setExpended] = React.useState(false);
   const [brandExpended, setBrandExpended] = React.useState(false);
   const [bodyTypeExpended, setBodyTypeExpended] = React.useState(false);
@@ -52,8 +52,8 @@ const Index = ({ data }) => {
     tradeIn
   } = data;
 
-  // @ts-ignore
   const brandsImages = brands.nodes.map(
+    // @ts-ignore
     ({ logo }): { id: string; image: IGatsbyImageData } => ({
       id: logo?.svg?.asset?.id,
       image: logo?.svg?.asset
