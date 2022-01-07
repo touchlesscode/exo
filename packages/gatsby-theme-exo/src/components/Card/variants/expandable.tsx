@@ -83,7 +83,10 @@ const ExpandableCard: React.ForwardRefRenderFunction<
                 initialRect,
                 endRect
               )} ${duration}ms forwards` // add animation to collapsing
-            : 'none' // when in initial state.
+            : 'none', // when in initial state.
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center'
         }}
       >
         {expanded && (
@@ -105,11 +108,13 @@ const ExpandableCard: React.ForwardRefRenderFunction<
                 : expanded && !willCollapse
                 ? 'fill-available' // set to max-content when the card is expanded.
                 : !expanded && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
-            maxWidth: (theme) => theme?.breakpoints?.[2],
-            maxHeight: (theme) => theme?.breakpoints?.[3],
-            m: 'auto',
+            maxWidth: ['100%', `${expanded ? '572px' : '100%'}`],
+            maxHeight: ['100%', `${expanded ? '718px' : '100%'}`],
+            m: ['auto', '20px auto'],
             position: 'relative',
-            zIndex: '999'
+            zIndex: '999',
+            borderRadius: expanded ? [0, '16px'] : '0',
+            overflow: expanded ? 'hidden' : 'visible'
           }}
         >
           <Card {...(expanded ? OverlayProps : props)}>

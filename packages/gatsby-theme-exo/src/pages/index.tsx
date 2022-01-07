@@ -245,23 +245,41 @@ const Index = ({ data }) => {
               setexpanded(false);
             }}
             overlayed
-            overlay={{
-              colors: [
-                {
-                  direction: 'to bottom',
-                  linear: [
-                    'rgba(0,0,0,1)',
-                    `rgba(0,0,0, ${expanded && active === 1 ? '0' : '1'}) 55%`,
-                    'rgba(0,0,0,0)'
-                  ]
-                },
-                {
-                  direction: 'to right',
-                  linear: ['#242952', '#242952 55%', 'rgba(0,0,0,0)']
-                }
-              ],
-              zIndex: 1
-            }}
+            overlay={
+              expanded && active === 1
+                ? {
+                    colors: [
+                      {
+                        direction: 'to bottom',
+                        linear: ['transparent', 'red', 'transparent']
+                      },
+                      {
+                        direction: 'to bottom',
+                        linear: ['transparent', 'transparent', 'transparent']
+                      }
+                    ],
+                    zIndex: 1
+                  }
+                : {
+                    colors: [
+                      {
+                        direction: 'to bottom',
+                        linear: [
+                          'rgba(0,0,0,0)',
+                          `rgba(0,0,0, ${
+                            expanded && active === 1 ? '0' : '1'
+                          }) 55%`,
+                          'rgba(0,0,0,0)'
+                        ]
+                      },
+                      {
+                        direction: 'to right',
+                        linear: ['#242952', '#242952 55%', 'rgba(0,0,0,0)']
+                      }
+                    ],
+                    zIndex: 1
+                  }
+            }
           >
             <Box
               style={{
@@ -271,98 +289,143 @@ const Index = ({ data }) => {
                 justifyContent: 'start'
               }}
             >
-              <Flex
-                sx={{
-                  flexDirection: ['column', 'row'],
-                  width: '100%',
+              <Card
+                elevated
+                radius={expanded && active === 1 ? '0' : '16px'}
+                overlayed
+                cardStyles={{
                   height:
                     expanded && active === 1 ? ['296px', '296px'] : '100%',
-                  justifyContent:
-                    expanded && active === 1 ? 'start' : 'space-between',
-                  bg: 'black'
+                  minHeight:
+                    expanded && active === 1 ? ['296px', '296px'] : '100%'
                 }}
+                overlay={
+                  expanded && active === 1
+                    ? {
+                        zIndex: 1,
+                        colors: [
+                          {
+                            direction: '0.17deg',
+                            linear: [
+                              '#242952 0.14%',
+                              'rgba(29, 33, 67, 0.92) 9.34%',
+                              'rgba(36, 41, 82, 0) 75.94%'
+                            ]
+                          }
+                        ]
+                      }
+                    : {
+                        zIndex: 1,
+                        colors: [
+                          {
+                            direction: '0.17deg',
+                            linear: ['#fff', 'fff', 'fff']
+                          }
+                        ]
+                      }
+                }
               >
-                <Box
+                <Flex
                   sx={{
-                    position: 'relative',
-                    zIndex: 2,
+                    flexDirection: ['column', 'row'],
                     width: '100%',
-                    px: 6,
-                    py: [null, 8]
+                    height:
+                      expanded && active === 1 ? ['296px', '296px'] : '100%',
+                    justifyContent:
+                      expanded && active === 1 ? 'start' : 'space-between',
+                    bg: 'black'
                   }}
                 >
-                  <TextBlock
-                    heading="Borwse by popularity"
-                    headingProps={{
-                      sx: {
-                        fontWeight: 'medium',
-                        fontSize: [24, 28]
-                      },
-                      withLine: true,
-                      line: {
-                        align: 'top',
-                        space: '2'
-                      }
-                    }}
+                  <Box
                     sx={{
-                      color: 'white',
-                      position:
-                        expanded && active === 1 ? 'absolute' : 'static',
-                      pt: expanded && active === 1 ? ['219px', 0] : [8, 0]
+                      position: ['relative', 'absolute'],
+                      zIndex: 2,
+                      width: '100%',
+                      px: 6,
+                      py: [null, 8]
+                    }}
+                  >
+                    <TextBlock
+                      heading="Borwse by popularity"
+                      headingProps={{
+                        sx: {
+                          fontWeight: 'medium',
+                          fontSize: [24, 28]
+                        },
+                        withLine: true,
+                        line: {
+                          align: 'top',
+                          space: '2'
+                        }
+                      }}
+                      sx={{
+                        color: 'white',
+                        position:
+                          expanded && active === 1 ? 'absolute' : 'static',
+                        pt: expanded && active === 1 ? ['219px', 0] : [8, 0]
+                      }}
+                    />
+                    {!expanded && active !== 1 && (
+                      <Flex
+                        sx={{
+                          flexWrap: 'wrap',
+                          gap: 2,
+                          mt: 4,
+                          position: 'absolute',
+                          left: 0,
+                          px: 'inherit'
+                        }}
+                      >
+                        {badges.map((badge, idx) => (
+                          <Badge
+                            key={idx}
+                            bg="rgba(255, 255, 255, 0.12)"
+                            color="white"
+                            variant="rounded"
+                          >
+                            {badge}
+                          </Badge>
+                        ))}
+                      </Flex>
+                    )}
+                  </Box>
+                  <GatsbyImage
+                    image={redCar}
+                    objectFit="cover"
+                    alt="test"
+                    sx={{
+                      position: 'relative',
+                      height: 'auto',
+                      zIndex: '0',
+                      top: 0,
+                      transition: 'all 5000ms'
                     }}
                   />
-                  {!expanded && active !== 1 && (
-                    <Flex
-                      sx={{
-                        flexWrap: 'wrap',
-                        gap: 2,
-                        mt: 4,
-                        position: 'absolute',
-                        left: 0,
-                        px: 'inherit'
-                      }}
-                    >
-                      {badges.map((badge, idx) => (
-                        <Badge
-                          key={idx}
-                          bg="rgba(255, 255, 255, 0.12)"
-                          color="white"
-                          variant="rounded"
-                        >
-                          {badge}
-                        </Badge>
-                      ))}
-                    </Flex>
-                  )}
-                </Box>
-                <GatsbyImage
-                  image={redCar}
-                  objectFit="cover"
-                  alt="test"
-                  sx={{
-                    position: 'relative',
-                    height: 'auto',
-                    zIndex: '0',
-                    top: 0,
-                    transition: 'all 5000ms'
-                  }}
-                />
-              </Flex>
+                </Flex>
+              </Card>
               {expanded && active === 1 ? (
                 <Box
                   sx={{
-                    bg: 'white',
+                    bg: '#242951',
                     position: 'relative',
                     zIndex: 2,
                     overflow: 'auto',
-                    flexGrow: 1
+                    flexGrow: 1,
+                    '&::-webkit-scrollbar': {
+                      width: '0',
+                      backgroundColor: 'transparent'
+                    },
+                    '&::-webkit-scrollbar-thumb': {
+                      backgroundColor: 'transparent',
+                      outline: 'unset'
+                    }
                   }}
                 >
                   <Box
                     sx={{
                       px: 6,
                       py: 8,
-                      background: 'white',
+                      background: '#242951',
                       opacity: 0,
                       animation: `${slideUp} 200ms 200ms forwards`
                     }}
@@ -375,6 +438,7 @@ const Index = ({ data }) => {
                           label={badge}
                           alt="electric"
                           imageVariant="rounded"
+                          labelStyle={{ color: 'white' }}
                         />
                       ))}
                     </ListDivided>
@@ -508,7 +572,11 @@ const Index = ({ data }) => {
                       pb: 8,
                       height: '100%',
                       position: 'relative',
-                      zIndex: 2
+                      zIndex: 2,
+                      backgroundImage:
+                        expanded && active === 2
+                          ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 9.34%, rgba(36, 41, 82, 0) 75.94%)'
+                          : 'unset'
                     }}
                   >
                     <TextBlock
@@ -552,18 +620,26 @@ const Index = ({ data }) => {
                 {expanded && active === 2 ? (
                   <Box
                     sx={{
-                      bg: 'white',
+                      bg: '#242951',
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'auto',
-                      flexGrow: 1
+                      flexGrow: 1,
+                      '&::-webkit-scrollbar': {
+                        width: '0',
+                        backgroundColor: 'transparent'
+                      },
+                      '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'transparent',
+                        outline: 'unset'
+                      }
                     }}
                   >
                     <Box
                       sx={{
                         px: 6,
                         py: 8,
-                        background: 'white',
+                        background: '#242951',
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
@@ -575,6 +651,7 @@ const Index = ({ data }) => {
                             image={redCar}
                             label={badge}
                             alt="electric"
+                            labelStyle={{ color: 'white' }}
                             imageVariant="rounded"
                           />
                         ))}
@@ -636,6 +713,32 @@ const Index = ({ data }) => {
                     minHeight:
                       expanded && active === 3 ? ['296px', '296px'] : '100%'
                   }}
+                  overlayed
+                  overlay={
+                    expanded && active === 3
+                      ? {
+                          zIndex: 1,
+                          colors: [
+                            {
+                              direction: '0.17deg',
+                              linear: [
+                                '#242952 0.14%',
+                                'rgba(29, 33, 67, 0.92) 9.34%',
+                                'rgba(36, 41, 82, 0) 75.94%'
+                              ]
+                            }
+                          ]
+                        }
+                      : {
+                          zIndex: 1,
+                          colors: [
+                            {
+                              direction: '0.17deg',
+                              linear: ['#fff', 'fff', 'fff']
+                            }
+                          ]
+                        }
+                  }
                 >
                   <TextBlock
                     heading="Trade-In Your Car"
@@ -666,18 +769,26 @@ const Index = ({ data }) => {
                 {expanded && active === 3 ? (
                   <Box
                     sx={{
-                      bg: 'white',
+                      bg: '#242951',
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'auto',
-                      flexGrow: 1
+                      flexGrow: 1,
+                      '&::-webkit-scrollbar': {
+                        width: '0',
+                        backgroundColor: 'transparent'
+                      },
+                      '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'transparent',
+                        outline: 'unset'
+                      }
                     }}
                   >
                     <Box
                       sx={{
                         px: 6,
                         py: 8,
-                        background: 'white',
+                        background: '#242951',
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
@@ -689,6 +800,7 @@ const Index = ({ data }) => {
                             image={redCar}
                             label={badge}
                             alt="electric"
+                            labelStyle={{ color: 'white' }}
                             imageVariant="rounded"
                           />
                         ))}

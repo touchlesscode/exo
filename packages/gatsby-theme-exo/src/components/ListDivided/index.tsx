@@ -20,7 +20,7 @@ const ListDivided: React.FC<ListDividedProps> = ({ children, space }) => {
             <Divider
               width="100%"
               height="1px"
-              color="rgba(228, 228, 228, 1)"
+              color="#4B528C"
               sx={{
                 my: space || 3
               }}

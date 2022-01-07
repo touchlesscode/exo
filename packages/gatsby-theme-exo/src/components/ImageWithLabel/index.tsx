@@ -10,6 +10,7 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
   height = '72px',
   imageWidth = '100px',
   imageVariant,
+  labelStyle,
   ...props
 }) => {
   return (
@@ -29,7 +30,10 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
       />
       <Typography
         sx={{
-          fontSize: 20
+          ...{
+            fontSize: 20
+          },
+          ...labelStyle
         }}
       >
         {label}

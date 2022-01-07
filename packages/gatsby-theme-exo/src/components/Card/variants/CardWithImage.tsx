@@ -4,6 +4,7 @@ import { CardProps } from '@exoTheme/components/Card/types';
 import { Flex, Box, ThemeUIStyleObject } from 'theme-ui';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
 import { GatsbyImageProps } from 'gatsby-plugin-image';
+import Overlay from '@exoTheme/components/Overlay';
 
 interface CardWithImageProps extends GatsbyImageProps {
   imagePosition?: 'top' | 'bottom';
@@ -18,6 +19,8 @@ const CardWithImage: React.FC<CardWithImageProps & CardProps> = ({
   alt,
   imageSx,
   cardStyles,
+  overlay,
+  overlayed,
   ...props
 }) => {
   return (
@@ -27,6 +30,7 @@ const CardWithImage: React.FC<CardWithImageProps & CardProps> = ({
           flexDirection: imagePosition === 'top' ? 'column' : 'column-reverse'
         }}
       >
+        {overlayed ? <Overlay {...overlay} zIndex="1" /> : null}
         <Box sx={imageSx}>
           <GatsbyImage image={image} alt={alt} />
         </Box>
