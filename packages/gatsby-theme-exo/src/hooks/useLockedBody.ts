@@ -9,7 +9,7 @@ function useLockedBody(initialLocked = false): ReturnType {
 
   // Do the side effect before render
   useLayoutEffect(() => {
-    if (!locked) {
+    if (!locked || typeof window === 'undefined') {
       setBodyLocked(false);
       return;
     }

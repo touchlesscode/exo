@@ -35,6 +35,7 @@ export const generateBreakpoints = (
 };
 
 export const WheelControls: KeenSliderPlugin = (slider) => {
+  if (typeof window === 'undefined') return;
   let touchTimeout: ReturnType<typeof setTimeout>;
   let position: {
     x: number;
