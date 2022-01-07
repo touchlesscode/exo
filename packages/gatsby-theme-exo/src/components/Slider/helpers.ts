@@ -1,11 +1,13 @@
-import { KeenSliderPlugin } from 'keen-slider/react';
+import { KeenSliderOptions, KeenSliderPlugin } from 'keen-slider/react';
 
 const getBreakpointSyntax = (width?: string): string => `(min-width: ${width})`;
 export const generateBreakpoints = (
   breakpoints: string[] = [],
   disabled: boolean | NonEmptyArray<boolean>,
   spacing: number | NonEmptyArray<number>,
-  itemsToShow: number | NonEmptyArray<number>
+  itemsToShow: number | NonEmptyArray<number>,
+  slides: unknown,
+  restOptions: KeenSliderOptions
 ) => {
   const data: { [key: string]: Record<string, unknown> } = {};
   const spacingArr = Array.isArray(spacing) ? spacing : [spacing];
@@ -23,8 +25,10 @@ export const generateBreakpoints = (
       disabled: disabledArr[i + 1],
       slides: {
         perView: itemsToShowArr[i + 1],
-        spacing: spacingArr[i + 1]
-      }
+        spacing: spacingArr[i + 1],
+        ...(typeof slides === 'object' && slides)
+      },
+      ...restOptions
     };
   }
   return data;
@@ -36,16 +40,25 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
     x: number;
     y: number;
   };
+  const docHeight = Math.max(
+    document.body.scrollHeight,
+    document.body.offsetHeight,
+    document.documentElement.clientHeight,
+    document.documentElement.scrollHeight,
+    document.documentElement.offsetHeight
+  );
   let wheelActive: boolean;
 
   function dispatch(e: WheelEvent, name: string) {
     position.x -= e.deltaX;
     position.y -= e.deltaY;
+    const slide = (window.pageYOffset / 5) * -1;
+
     slider.container.dispatchEvent(
       new CustomEvent(name, {
         detail: {
-          x: position.y || window.pageYOffset,
-          y: position.y || window.pageYOffset
+          x: slide,
+          y: slide
         }
       })
     );
@@ -68,16 +81,10 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
   }
 
   function eventWheel(e: WheelEvent | Event) {
-    const docHeight = Math.max(
-      document.body.scrollHeight,
-      document.body.offsetHeight,
-      document.documentElement.clientHeight,
-      document.documentElement.scrollHeight,
-      document.documentElement.offsetHeight
-    );
     if (
       window.pageYOffset <= 0 ||
-      window.innerHeight + window.pageYOffset >= docHeight
+      window.innerHeight + window.pageYOffset >= docHeight ||
+      window.localStorage.getItem('bodyLocked') === 'true'
     )
       return;
     if (!wheelActive) {

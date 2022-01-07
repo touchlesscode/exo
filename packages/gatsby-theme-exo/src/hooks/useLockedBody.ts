@@ -1,13 +1,16 @@
 import { useEffect, useLayoutEffect, useState } from 'react';
+import useLocalStorage from '@exoTheme/hooks/useLocalStorage';
 
 type ReturnType = [boolean, (locked: boolean) => void];
 
 function useLockedBody(initialLocked = false): ReturnType {
   const [locked, setLocked] = useState(initialLocked);
+  const [, setBodyLocked] = useLocalStorage('bodyLocked', true);
 
   // Do the side effect before render
   useLayoutEffect(() => {
     if (!locked) {
+      setBodyLocked(false);
       return;
     }
 
@@ -29,10 +32,11 @@ function useLockedBody(initialLocked = false): ReturnType {
     if (scrollBarWidth) {
       document.body.style.paddingRight = `${scrollBarWidth}px`;
     }
+    setBodyLocked(true);
 
     return () => {
       document.body.style.overflow = originalOverflow;
-
+      setBodyLocked(false);
       if (scrollBarWidth) {
         document.body.style.paddingRight = originalPaddingRight;
       }
@@ -43,6 +47,7 @@ function useLockedBody(initialLocked = false): ReturnType {
   useEffect(() => {
     if (locked !== initialLocked) {
       setLocked(initialLocked);
+      setBodyLocked(locked);
     }
   }, [initialLocked]);
 

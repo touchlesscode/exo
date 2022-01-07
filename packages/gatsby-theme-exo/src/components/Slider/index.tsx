@@ -5,7 +5,7 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
 import { SliderProps } from '@exoTheme/components/Slider/types';
-import { generateBreakpoints } from './helpers';
+import { generateBreakpoints } from '@exoTheme/components/Slider/helpers';
 
 const Slider: React.FC<SliderProps> = ({
   children,
@@ -23,12 +23,13 @@ const Slider: React.FC<SliderProps> = ({
     theme?.breakpoints,
     disabled,
     spacing,
-    itemsToShow
+    itemsToShow,
+    slides,
+    restOptions
   );
 
-  const [ref] = useKeenSlider<HTMLDivElement>(
+  const [ref, slider] = useKeenSlider<HTMLDivElement>(
     {
-      breakpoints,
       loop: true,
       mode: 'snap',
       disabled: Array.isArray(disabled) ? disabled[0] : disabled,
@@ -42,15 +43,28 @@ const Slider: React.FC<SliderProps> = ({
               ...(typeof slides === 'object' && slides)
             }
           : slides,
-      ...restOptions
+      ...restOptions,
+      breakpoints
     },
     [...plugins]
   );
 
+  // console.log(slider.current?.options?.breakpoints);
+
+  React.useEffect(() => {
+    if (!slider.current) return;
+    // slider.current.destroy()
+  }, [plugins]);
+
   return (
     <Box ref={ref} className="keen-slider" sx={{ cursor: 'grab', ...sx }}>
       {React.Children.map(children, (child) => (
-        <div className={'keen-slider__slide'}>{child}</div>
+        <Box
+          className={'keen-slider__slide'}
+          sx={{ minHeight: '0 !important' }}
+        >
+          {child}
+        </Box>
       ))}
     </Box>
   );

@@ -1,6 +1,6 @@
 import { ThemeUIStyleObject } from 'theme-ui';
 import TypographyProps from '@exoTheme/components/Typography/types';
-import { TypographyLineProps } from '../Typography/variants/TypographyWithLine';
+import { TypographyLineProps } from '@exoTheme/components/Typography/variants/TypographyWithLine';
 
 type TextBlockTypography = TypographyProps & {
   withLine?: boolean;

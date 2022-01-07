@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Flex } from 'theme-ui';
-import Divider from '../Divider';
+import Divider from '@exoTheme/components/Divider';
 
 interface ListDividedProps {
   space?: string;

@@ -1,7 +1,6 @@
 import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
-import CardWithSlidingHeader from '@exoTheme/components/Card/variants/CardWithSlidingHeader';
 import ExpendableCard from '@exoTheme/components/Card/variants/expendable';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
 import ImageWithLabel from '@exoTheme/components/ImageWithLabel';
@@ -9,15 +8,18 @@ import ListDivided from '@exoTheme/components/ListDivided';
 import TextBlock from '@exoTheme/components/TextBlock';
 import SlimArrow from '@exoTheme/images/development/slim-arrow.inline.svg';
 import { slideUp } from '@exoTheme/theme/animations';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import * as React from 'react';
 import { Box, Grid, Theme } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
 import Slider from '@exoTheme/components/Slider';
-import CardWithList from '@exoTheme/components/Card/variants/CardWithList';
 import CardWithImage from '@exoTheme/components/Card/variants/CardWithImage';
 import useWindowSize from '@exoTheme/hooks/useWindowSize';
+import SliderWheel from '@exoTheme/components/Slider/variants/SliderWheel';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
+import Recview from '@exoTheme/components/Review';
+import TypographyWithLine from '@exoTheme/components/Typography/variants/TypographyWithLine';
 
 const badges = [
   'Electric Cars',
@@ -26,15 +28,11 @@ const badges = [
   'City Cars',
   'See All'
 ];
-const benifits = [
-  'Voted best places to work(11 years in a row)',
-  '20 + languages spoken',
-  'Average employee tenure 10 + years',
-  '4.8 - star rating across 100, 000 + reviews'
-];
+
 // @ts-ignore
 const Index = ({ data }) => {
-  const isMobile = (typeof window !== "undefined") ? useWindowSize().type === 'sm' : true;
+  const isMobile = useWindowSize().type === 'sm';
+  const isTablet = useWindowSize().type === 'md';
   const [expended, setExpended] = React.useState(false);
   const [brandExpended, setBrandExpended] = React.useState(false);
   const [bodyTypeExpended, setBodyTypeExpended] = React.useState(false);
@@ -55,16 +53,20 @@ const Index = ({ data }) => {
   } = data;
 
   // @ts-ignore
-  const brandsImages = brands.nodes.map(({ logo }) => ({
-    id: logo?.svg?.asset?.id,
-    image: logo?.svg?.asset
-  }));
+  const brandsImages = brands.nodes.map(
+    ({ logo }): { id: string; image: IGatsbyImageData } => ({
+      id: logo?.svg?.asset?.id,
+      image: logo?.svg?.asset
+    })
+  );
   const bodyTypeImages = [image1, image2, image3, image4, image5, image6].map(
     (type, idx) => ({
       id: idx.toString(),
       image: type
     })
   );
+  const px = 6;
+
   return (
     <>
       <GatsbyImageBg
@@ -80,10 +82,7 @@ const Index = ({ data }) => {
       >
         <Box
           sx={{
-            maxWidth: (theme: Theme) => [
-              theme.breakpoints?.[2],
-              theme.breakpoints?.[0]
-            ],
+            textAlign: 'center',
             mx: 'auto'
           }}
         >
@@ -93,16 +92,26 @@ const Index = ({ data }) => {
               as: 'h1',
               sx: {
                 textAlign: 'center',
-                width: ['50%', '100%'],
+                width: ['100%'],
+                maxWidth: ['290px', '390px', '450px', 'unset'],
                 mx: 'auto',
-                mb: 6
+                mb: 6,
+                fontSize: [null, 55, 65, 75],
+                whiteSpace: [null, null, null, 'nowrap']
               }
             }}
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             textProps={{
               sx: {
                 textAlign: 'center',
-                fontSize: 18
+                fontSize: 18,
+                maxWidth: (theme: Theme) => [
+                  '450px',
+                  theme.breakpoints?.[0],
+                  // theme.breakpoints?.[2],
+                  theme.breakpoints?.[0]
+                ],
+                mx: 'auto'
               }
             }}
           />
@@ -144,72 +153,200 @@ const Index = ({ data }) => {
           columns={['1fr', '1fr 1fr']}
           gap={8}
           sx={{
-            width: ['90%', '100%']
+            px
           }}
         >
-          <CardWithSlidingHeader
+          <ExpendableCard
             expended={brandExpended}
             onClick={() => setBrandExpended(true)}
             onClose={() => setBrandExpended(false)}
             bg="white"
             elevated
             radius="16px"
-            images={brandsImages}
-            sliderOptions={{
-              itemsToShow: 4,
-              spacing: 20,
-              options: {
-                drag: true
-              },
-              sx: {
-                height: '65px',
-                pt: 4
-              }
-            }}
-            content={{
-              heading: 'Browse by brand',
-              text: 'Review all the numbers and finalize everything without needing to visit us.',
-              headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
-            }}
           >
-            {brandExpended ? (
-              <Box
+            <Box
+              sx={{
+                pt: brandExpended ? 10 : 0,
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              <SliderWheel
+                slideOnScrollingY
+                itemsToShow={5}
+                spacing={20}
+                options={{
+                  loop: false
+                }}
                 sx={{
-                  height: 'fill-available'
+                  height: [97, 112],
+                  alignItems: 'center'
                 }}
               >
-                Render Content
+                {brandsImages.map(
+                  ({ image, id }: { id: string; image: IGatsbyImageData }) => (
+                    <GatsbyImage
+                      key={id}
+                      image={image}
+                      alt="test"
+                      objectFit="contain"
+                      sx={{
+                        mx: 'auto',
+                        height: 55,
+                        minWidth: '20%'
+                      }}
+                    />
+                  )
+                )}
+              </SliderWheel>
+              <Box
+                sx={{
+                  p: 6
+                }}
+              >
+                <TextBlock
+                  heading="Browse by brand"
+                  text="Review all the numbers and finalize everything without needing to visit us."
+                  headingProps={{
+                    as: 'p',
+                    sx: { fontWeight: 'bold', fontSize: 20, mb: 2 }
+                  }}
+                />
               </Box>
-            ) : null}
-          </CardWithSlidingHeader>
-          <CardWithSlidingHeader
+              {brandExpended ? (
+                <Box
+                  sx={{
+                    bg: 'white',
+                    position: 'relative',
+                    zIndex: 2,
+                    overflow: 'auto',
+                    flexGrow: 1
+                  }}
+                >
+                  <Box
+                    sx={{
+                      px: 6,
+                      py: 8,
+                      background: 'white',
+                      opacity: 0,
+                      animation: `${slideUp} 200ms 200ms forwards`
+                    }}
+                  >
+                    <ListDivided>
+                      {[...badges, ...badges, ...badges].map((badge, idx) => (
+                        <ImageWithLabel
+                          key={idx}
+                          image={redCar}
+                          label={badge}
+                          alt="electric"
+                          imageVariant="rounded"
+                        />
+                      ))}
+                    </ListDivided>
+                  </Box>
+                </Box>
+              ) : null}
+            </Box>
+          </ExpendableCard>
+          <ExpendableCard
             expended={bodyTypeExpended}
             onClick={() => setBodyTypeExpended(true)}
             onClose={() => setBodyTypeExpended(false)}
             bg="white"
             elevated
             radius="16px"
-            images={bodyTypeImages}
-            sliderOptions={{
-              itemsToShow: 5,
-              spacing: 20,
-              sx: {
-                height: '65px',
-                pt: 4
-              }
-            }}
-            content={{
-              heading: 'Browse by body type',
-              text: 'Review all the numbers and finalize everything without needing to visit us.',
-              headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
-            }}
-          />
+          >
+            <Box
+              sx={{
+                pt: bodyTypeExpended ? 10 : 0,
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              <SliderWheel
+                slideOnScrollingY
+                itemsToShow={3.5}
+                spacing={20}
+                options={{
+                  loop: false
+                }}
+                sx={{
+                  height: [97, 112],
+                  alignItems: 'center'
+                }}
+              >
+                {bodyTypeImages.map(
+                  ({ image, id }: { id: string; image: IGatsbyImageData }) => (
+                    <GatsbyImage
+                      key={id}
+                      image={image}
+                      alt="test"
+                      objectFit="contain"
+                      sx={{
+                        height: [55, 95],
+                        minWidth: '20%'
+                      }}
+                    />
+                  )
+                )}
+              </SliderWheel>
+              <Box
+                sx={{
+                  p: 6
+                }}
+              >
+                <TextBlock
+                  heading="Browse by body type"
+                  text="Review all the numbers and finalize everything without needing to visit us."
+                  headingProps={{
+                    as: 'p',
+                    sx: { fontWeight: 'bold', fontSize: 20, mb: 2 }
+                  }}
+                />
+              </Box>
+              {bodyTypeExpended ? (
+                <Box
+                  sx={{
+                    bg: 'white',
+                    position: 'relative',
+                    zIndex: 2,
+                    overflow: 'auto',
+                    flexGrow: 1
+                  }}
+                >
+                  <Box
+                    sx={{
+                      px: 6,
+                      py: 8,
+                      background: 'white',
+                      opacity: 0,
+                      animation: `${slideUp} 200ms 200ms forwards`
+                    }}
+                  >
+                    <ListDivided>
+                      {[...badges, ...badges, ...badges].map((badge, idx) => (
+                        <ImageWithLabel
+                          key={idx}
+                          image={redCar}
+                          label={badge}
+                          alt="electric"
+                          imageVariant="rounded"
+                        />
+                      ))}
+                    </ListDivided>
+                  </Box>
+                </Box>
+              ) : null}
+            </Box>
+          </ExpendableCard>
         </Grid>
         <Box
           sx={{
-            width: ['90%', '100%'],
             height: ['400px', '200px'],
-            position: 'relative'
+            position: 'relative',
+            px
           }}
         >
           <ExpendableCard
@@ -249,7 +386,7 @@ const Index = ({ data }) => {
                 sx={{
                   flexDirection: ['column', 'row'],
                   width: '100%',
-                  height: expended ? ['fit-content', '200px'] : '100%',
+                  height: expended ? ['20%', '10%'] : '100%',
                   justifyContent: expended ? 'start' : 'space-between',
                   bg: 'black'
                 }}
@@ -355,22 +492,46 @@ const Index = ({ data }) => {
             </Box>
           </ExpendableCard>
         </Box>
-        <Slider
-          itemsToShow={[1.15, 3]}
-          spacing={16}
-          options={{
-            loop: false,
-            slides: {
-              origin: 'center'
-            }
+        <Box
+          sx={{
+            width: '100%'
           }}
         >
-          {Array(4)
-            .fill('')
-            .map((item, idx) => (
-              <CardWithList
+          <Box
+            sx={{
+              px
+            }}
+          >
+            <TypographyWithLine
+              width={['100%', '150%']}
+              sx={{
+                width: ['50%', '100%'],
+                fontWeight: 'semiBold',
+                fontSize: '32',
+                display: ['none', 'none', 'block'],
+                mb: 5
+              }}
+            >
+              Why Us
+            </TypographyWithLine>
+          </Box>
+          <Slider
+            itemsToShow={[1.15, 1.07, 3]}
+            spacing={16}
+            options={{
+              loop: false,
+              slides: {
+                origin: isMobile ? 'center' : 'auto'
+              }
+            }}
+            sx={{
+              maxWidth: [null, null, `calc(100% - ${2 * px * 4}px)`],
+              mx: 'auto'
+            }}
+          >
+            {Array.from({ length: 3 }).map((_, idx) => (
+              <Card
                 key={idx}
-                color="white"
                 radius="16px"
                 overlayed
                 overlay={{
@@ -386,18 +547,38 @@ const Index = ({ data }) => {
                     }
                   ]
                 }}
-                title="Our People"
-                image={twoPeople}
-                alt="test"
-                list={benifits}
-              />
+              >
+                <Link to="#">
+                  <GatsbyImageBg
+                    image={twoPeople}
+                    alt="test"
+                    sx={{
+                      height: ['250px', '238px'],
+                      p: 6,
+                      backgroundSize: 'cover',
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'flex-end'
+                    }}
+                  >
+                    <TypographyWithLine
+                      color="white"
+                      sx={{ fontSize: 20, fontWeight: 'semiBold' }}
+                      width="60%"
+                    >
+                      Shop Your Way, at Us
+                    </TypographyWithLine>
+                  </GatsbyImageBg>
+                </Link>
+              </Card>
             ))}
-        </Slider>
+          </Slider>
+        </Box>
         <Flex
           gap="8"
           sx={{
             flexDirection: ['column', 'row'],
-            width: ['90%', '100%']
+            px
           }}
         >
           <Box
@@ -420,48 +601,51 @@ const Index = ({ data }) => {
                 ]
               }}
             >
-              <Flex
-                direction="column"
-                justify="space-between"
+              <Box
                 sx={{
-                  px: 6,
-                  py: 8,
-                  height: '100%',
                   position: 'relative',
-                  zIndex: 2
+                  zIndex: 2,
+                  height: '100%'
                 }}
               >
-                <TextBlock
-                  heading="Our Service"
-                  headingProps={{
-                    withLine: true,
-                    line: {
-                      align: 'top',
-                      space: '2',
-                      width: '120%'
-                    },
-                    sx: {
-                      mb: 2
-                    }
-                  }}
-                  text="Review all the numbers and finalize everything without needing to visit."
-                />
-                <GatsbyImage
+                <GatsbyImageBg
                   image={ServicesCar}
                   alt="test"
                   objectFit="contain"
                   sx={{
-                    position: 'absolute',
-                    right: 0,
-                    width: ['80%', '95%'],
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 0
+                    height: '100%'
                   }}
-                />
-
-                <Button bg="primaryBlue">Book Service Appointment</Button>
-              </Flex>
+                >
+                  <Flex
+                    direction="column"
+                    justify="space-between"
+                    sx={{
+                      px: 6,
+                      py: 8,
+                      height: '100%'
+                    }}
+                  >
+                    <TextBlock
+                      heading="Our Service"
+                      headingProps={{
+                        withLine: true,
+                        line: {
+                          align: 'top',
+                          space: '2',
+                          width: '120%'
+                        },
+                        sx: {
+                          mb: 2
+                        }
+                      }}
+                      text="Review all the numbers and finalize everything without needing to visit us."
+                    />
+                    <Button bg="primaryNavy" sx={{ px: 0 }}>
+                      Book Service Appointment
+                    </Button>
+                  </Flex>
+                </GatsbyImageBg>
+              </Box>
             </Card>
           </Box>
           <Box
@@ -490,11 +674,88 @@ const Index = ({ data }) => {
             </CardWithImage>
           </Box>
         </Flex>
+        <Box
+          sx={{
+            height: 'max-content',
+            px
+          }}
+        >
+          <Card elevated radius="16px">
+            <Grid
+              columns={['1fr', 'repeat(12, 1fr)']}
+              sx={{
+                px: [3, 6],
+                py: 8,
+                gap: ['2', '40px 8px']
+              }}
+            >
+              <TextBlock
+                heading={
+                  isMobile
+                    ? 'Customers Feedback'
+                    : 'What 100,000+ Folks Say About Us'
+                }
+                headingProps={{
+                  withLine: true,
+                  line: {
+                    width: ['100%', '50%']
+                  },
+                  sx: {
+                    width: ['50%', '100%'],
+                    fontWeight: 'semiBold',
+                    fontSize: '32',
+                    mb: 2
+                  }
+                }}
+                text="Review all the numbers and finalize everything without needing to visit us."
+                sx={{
+                  gridColumn: [null, '1 / span 9'],
+                  gridRow: 1,
+                  px: [0, 2, 0]
+                }}
+              />
+              {Array.from({ length: isMobile || isTablet ? 2 : 3 }).map(
+                (_, idx) => (
+                  <Recview
+                    key={idx}
+                    image={twoPeople}
+                    name="Jhon Jhonson"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    sx={{
+                      gridColumn: [null, 'span 6', 'span 6', 'span 4'],
+                      gridRow: [null, '2'],
+                      bg: ['#F8F7F6', 'transparent'],
+                      py: [4, 0],
+                      px: [2, 4, 0],
+                      borderRadius: 6
+                    }}
+                  />
+                )
+              )}
+              <Button
+                color="primaryNavy"
+                Icon={SlimArrow}
+                space="2"
+                sx={{
+                  gridColumn: [null, '10 / span 3'],
+                  gridRow: [null, 1],
+                  justifySelf: [null, 'end'],
+                  p: 0,
+                  height: 'max-content',
+                  alignSelf: 'top',
+                  mt: [6, 0],
+                  borderRadius: 0
+                }}
+              >
+                Read more reviews
+              </Button>
+            </Grid>
+          </Card>
+        </Box>
       </Box>
     </>
   );
 };
-
 
 export default Index;
 
@@ -537,12 +798,12 @@ export const indexPageQuery = graphql`
     }
     homePageBg: file(absolutePath: { regex: "/home-hero-bg-toyota/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
+        gatsbyImageData(quality: 70, placeholder: NONE)
       }
     }
     homePageBgSm: file(absolutePath: { regex: "/home-hero-bg-sm/" }) {
       childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
+        gatsbyImageData(quality: 70, placeholder: NONE)
       }
     }
     twoPeople: file(absolutePath: { regex: "/two-people/" }) {
@@ -562,9 +823,9 @@ export const indexPageQuery = graphql`
     }
     brands: allSanityBrand(
       limit: 15
-      filter: { 
+      filter: {
         tags: { regex: "/vehicle/" }
-        logo: { svg: {_type: {eq: "image"} } }
+        logo: { svg: { _type: { eq: "image" } } }
       }
     ) {
       nodes {

@@ -3,21 +3,27 @@ import { Box } from 'theme-ui';
 import OverlayProps, { ColorsProps } from '@exoTheme/components/Overlay/types';
 import { fadeIn } from '@exoTheme/theme/animations';
 
-const Overlay: React.FC<OverlayProps> = ({
-  children,
-  visible,
-  zIndex,
-  width,
-  height,
-  position,
-  colors,
-  color,
-  transitionDuration,
-  animated,
-  transitioned,
-  sx,
-  ...props
-}) => {
+const Overlay: React.ForwardRefRenderFunction<
+  HTMLDivElement,
+  React.PropsWithChildren<OverlayProps>
+> = (
+  {
+    visible = true,
+    animated = false,
+    zIndex = 'infinity',
+    position = 'absolute',
+    width = '100%',
+    height = '100%',
+    children,
+    colors,
+    color,
+    transitionDuration,
+    transitioned,
+    sx,
+    ...props
+  },
+  ref
+) => {
   const bgImage = colors?.map((color: ColorsProps) =>
     color.linear
       ? `linear-gradient(${
@@ -31,6 +37,7 @@ const Overlay: React.FC<OverlayProps> = ({
   return visible ? (
     <Box
       {...props}
+      ref={ref}
       aria-hidden="true"
       sx={{
         animation: animated
@@ -54,13 +61,4 @@ const Overlay: React.FC<OverlayProps> = ({
   ) : null;
 };
 
-export default Overlay;
-
-Overlay.defaultProps = {
-  visible: true,
-  zIndex: 'infinity',
-  position: 'absolute',
-  animated: false,
-  width: '100%',
-  height: '100%'
-};
+export default React.forwardRef(Overlay);

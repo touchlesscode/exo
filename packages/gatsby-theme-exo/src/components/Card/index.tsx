@@ -16,6 +16,7 @@ const Card: React.ForwardRefRenderFunction<
     overlay,
     loading,
     bordered,
+    hover,
     ...restProps
   },
   ref
@@ -30,9 +31,14 @@ const Card: React.ForwardRefRenderFunction<
         overflow: 'hidden',
         transform: 'translateZ(0)',
         position: 'relative',
-        boxShadow: elevated ? 9 : 0,
+        boxShadow: elevated ? 4 : 0,
         borderRadius: radius || 0,
-        border: bordered && '1px solid #C7C7C7'
+        border: bordered && '1px solid #C7C7C7',
+        ...(hover && {
+          '&:hover': {
+            boxShadow: elevated && hover ? 9 : 0
+          }
+        })
       }}
     >
       {overlayed ? <Overlay {...overlay} zIndex="1" /> : null}

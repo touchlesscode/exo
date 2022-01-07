@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import useEventListener from './useEventListener';
+import useEventListener from '@exoTheme/hooks/useEventListener';
 import { BoundingClientRecType } from '@exoTheme/types/index';
 
 export const initialBoundingClientRect: BoundingClientRecType = {

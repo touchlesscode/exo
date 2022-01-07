@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Card from '@exoTheme/components/Card';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
-import { CardProps } from '../types';
+import { CardProps } from '@exoTheme/components/Card/types';
 import GatsbyImagePropsType from '@exoTheme/components/GatsbyImage/types';
 import Typography from '@exoTheme/components/Typography';
 import { Box, Text } from 'theme-ui';

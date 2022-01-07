@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Flex } from 'theme-ui';
-import GatsbyImage from '../GatsbyImage';
-import Typography from '../Typography';
+import GatsbyImage from '@exoTheme/components/GatsbyImage';
+import Typography from '@exoTheme/components/Typography';
 import { ImageWithLabelProps } from '@exoTheme/components/ImageWithLabel/types';
 
 const ImageWithLabel: React.FC<ImageWithLabelProps> = ({

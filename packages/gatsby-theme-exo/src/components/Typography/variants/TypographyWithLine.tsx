@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import DividerProps from '@exoTheme/components/Divider/types';
 import { Box } from 'theme-ui';
-import TypographyPropsTypes from '../types';
+import TypographyPropsTypes from '@exoTheme/components/Typography/types';
 import Divider from '@exoTheme/components/Divider';
 import Typography from '@exoTheme/components/Typography';
 

@@ -6,9 +6,9 @@ const Typography: React.FC<TextProps> = (props) => {
 
   return (
     <Text
-      {...rest}
       color="inherit"
       as={as}
+      {...rest}
       sx={{
         m: 0,
         ...sx

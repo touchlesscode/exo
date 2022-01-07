@@ -2,6 +2,10 @@ import { ButtonProps as BtnProps, ThemeUIStyleObject } from 'theme-ui';
 
 interface ButtonCommonProps extends BtnProps {
   sx?: ThemeUIStyleObject;
+  hasActive?: boolean;
+  activeSx?: ThemeUIStyleObject;
+  hasHover?: boolean;
+  hoverSx?: ThemeUIStyleObject;
 }
 
 type ButtonDependentProps =

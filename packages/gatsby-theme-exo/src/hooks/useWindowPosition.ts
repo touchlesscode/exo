@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import useEventListener from './useEventListener';
+import useEventListener from '@exoTheme/hooks/useEventListener';
 
 const useWindowPosition = (track = true) => {
   const [scrollPosition, setPosition] = useState(0);

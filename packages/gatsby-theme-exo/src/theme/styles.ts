@@ -4,6 +4,7 @@ const styles = {
     lineHeight: 'body',
     fontWeight: 'body',
     WebkitTapHighlightColor: 'transparent',
+    scrollBehavior: 'smooth',
     a: {
       textDecoration: 'none',
       color: 'inherit'

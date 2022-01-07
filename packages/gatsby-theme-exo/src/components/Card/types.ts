@@ -10,6 +10,7 @@ interface BaseProps extends Omit<ThemeCardProps, 'sx'> {
   elevated?: boolean;
   loading?: boolean;
   radius?: string;
+  hover?: boolean;
   sx?: never;
 }
 

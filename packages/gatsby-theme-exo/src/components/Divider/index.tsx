@@ -42,6 +42,5 @@ Divider.defaultProps = {
   justify: 'left',
   width: '70%',
   height: '4px',
-  space: '6px',
   color: 'currentColor'
 };

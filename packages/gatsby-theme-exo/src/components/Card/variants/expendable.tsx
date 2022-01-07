@@ -62,14 +62,16 @@ const ExpendableCard: React.ForwardRefRenderFunction<
   return (
     <Box
       ref={parentRef}
-      sx={{ height: expended ? initialRect?.height : '100%' }}
+      sx={{
+        height: expended || willCollapse ? initialRect?.height : 'inherit'
+      }}
       onClick={!expended ? handleOnClick : undefined}
     >
       <Box
         ref={expendingRef}
         sx={{
           width: '100%',
-          height: '100%',
+          height: expended ? '100%' : 'inherit',
           cursor: expended ? 'auto' : 'pointer',
           animation: expended
             ? `${expendAnimation(
@@ -112,7 +114,7 @@ const ExpendableCard: React.ForwardRefRenderFunction<
             zIndex: 'infinity'
           }}
         >
-          <Card {...propsToPass}>
+          <Card {...propsToPass} hover>
             {children}
             {expended ? ( // render close button when expended
               <Button

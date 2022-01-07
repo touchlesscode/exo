@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box, ThemeUIStyleObject } from 'theme-ui';
-import GatsbyImage from '../GatsbyImage';
-import GatsbyImagePropsType from '../GatsbyImage/types';
+import GatsbyImage from '@exoTheme/components/GatsbyImage';
+import GatsbyImagePropsType from '@exoTheme/components/GatsbyImage/types';
 
 interface GatsbyImageBgProps extends GatsbyImagePropsType {
   height?: string;
@@ -38,7 +38,7 @@ const GatsbyImageBg: React.FC<GatsbyImageBgProps> = ({
       <Box
         sx={{
           position: 'relative',
-          zIndex: 0.1,
+          zIndex: 1,
           ...sx
         }}
       >

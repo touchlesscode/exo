@@ -3,10 +3,10 @@ import { BoxProps } from 'theme-ui';
 interface OverlayProps extends BoxProps {
   color?: string;
   width?: string;
-  height?: string;
+  height?: string | number;
   visible?: boolean;
   zIndex?: string | number;
-  position?: 'fixed' | 'absolute';
+  position?: 'fixed' | 'absolute' | 'static';
   transitionDuration?: number;
   animated?: boolean;
   transitioned?: boolean;
