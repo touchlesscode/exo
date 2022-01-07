@@ -2,7 +2,7 @@ import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
 import CardWithSlidingHeader from '@exoTheme/components/Card/variants/CardWithSlidingHeader';
-import ExpandableCard from '@exoTheme/components/Card/variants/Expandable';
+import ExpandableCard from '@exoTheme/components/Card/variants/Expandables';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
 import ImageWithLabel from '@exoTheme/components/ImageWithLabel';
 import ListDivided from '@exoTheme/components/ListDivided';
