@@ -17,14 +17,13 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
   ...props
 }) => {
   return (
-    <Card {...props}>
+    <Card {...props} cardStyles={cardStyles}>
       <Flex
         sx={{
           ...{
             flexDirection:
               sliderPosition === 'top' ? 'column' : 'column-reverse'
-          },
-          ...cardStyles
+          }
         }}
       >
         <SliderWheel options={options} slideStyles={slideStyles}>

@@ -6,25 +6,26 @@ import useTimeout from '@exoTheme/hooks/useTimeout';
 import useLockedBody from '@exoTheme/hooks/useLockedBody';
 import { BoundingClientRecType } from '@exoTheme/types/index';
 import {
-  ExpendableCardProps,
-  ExpendToType
+  ExpandableCardProps,
+  ExpandToType
 } from '@exoTheme/components/Card/types';
 import DefaultCloseIcon from '@exoTheme/images/icons/close.inline.svg';
 import Button from '@exoTheme/components/Button';
 import Overlay from '@exoTheme/components/Overlay';
 
-const ExpendableCard: React.ForwardRefRenderFunction<
+const ExpandableCard: React.ForwardRefRenderFunction<
   HTMLDivElement,
-  React.PropsWithChildren<ExpendableCardProps>
+  React.PropsWithChildren<ExpandableCardProps>
 > = (
   {
     children,
-    expended,
+    parentRef,
+    expanded,
     onClick,
     onClose,
     duration = 250,
     CloseIcon,
-    expendTo,
+    expandTo,
     ...props
   },
   ref
@@ -35,25 +36,25 @@ const ExpendableCard: React.ForwardRefRenderFunction<
     ? { overlay: props.overlay, overlayed: props.overlayed }
     : {};
 
-  const parentRef = React.useRef() as React.MutableRefObject<HTMLDivElement>;
-  const expendingRef = (ref ||
+  const expandingRef = (ref ||
     React.useRef()) as React.MutableRefObject<HTMLDivElement>;
-  const [initialRect, setInitialRect] = React.useState<BoundingClientRecType>(); // The start/initial position of the card before expending
-  const [endRect, setEndBox] = React.useState<BoundingClientRecType>(); // The position of the card after expending, will animate from this onClose
+  const [initialRect, setInitialRect] = React.useState<BoundingClientRecType>(); // The start/initial position of the card before expanding
+  const [endRect, setEndBox] = React.useState<BoundingClientRecType>(); // The position of the card after expanding, will animate from this onClose
   const [willCollapse, setWillCollapse] = React.useState(false); // animate collapsing of the card
 
-  useLockedBody(expended || willCollapse); // lock scrolling when expended
+  useLockedBody(expanded || willCollapse); // lock scrolling when expanded
 
   const handleOnClick = () => {
     onClick();
-    parentRef.current &&
+    parentRef &&
+      parentRef.current &&
       setInitialRect(parentRef.current.getBoundingClientRect()); // set Initial position of the card
   };
   const handleOnClose = () => {
     setWillCollapse(true);
     onClose();
-    expendingRef?.current &&
-      setEndBox(expendingRef.current.getBoundingClientRect()); // Set the end position of the card, to animate closing from it.
+    expandingRef?.current &&
+      setEndBox(expandingRef.current.getBoundingClientRect()); // Set the end position of the card, to animate closing from it.
   };
 
   useTimeout(() => setWillCollapse(false), willCollapse ? duration : 0); // update will collapse after the duration ends.
@@ -61,21 +62,21 @@ const ExpendableCard: React.ForwardRefRenderFunction<
   return (
     <Box
       ref={parentRef}
-      sx={{ height: expended ? initialRect?.height : '100%' }}
-      onClick={!expended ? handleOnClick : undefined}
+      sx={{ height: expanded ? initialRect?.height : '100%' }}
+      onClick={!expanded ? handleOnClick : undefined}
     >
       <Box
-        ref={expendingRef}
+        ref={expandingRef}
         sx={{
           width: '100%',
           height: '100%',
-          cursor: expended ? 'auto' : 'pointer',
-          animation: expended
-            ? `${expendAnimation(
+          cursor: expanded ? 'auto' : 'pointer',
+          animation: expanded
+            ? `${expandAnimation(
                 theme,
-                expendTo,
+                expandTo,
                 initialRect
-              )} ${duration}ms forwards` // add animation to expending
+              )} ${duration}ms forwards` // add animation to expanding
             : willCollapse
             ? `${collapseAnimation(
                 theme,
@@ -85,7 +86,7 @@ const ExpendableCard: React.ForwardRefRenderFunction<
             : 'none' // when in initial state.
         }}
       >
-        {expended && (
+        {expanded && (
           <Overlay
             color="rgba(0,0,0,0.4)"
             position="fixed"
@@ -99,21 +100,21 @@ const ExpendableCard: React.ForwardRefRenderFunction<
           sx={{
             width: '100%',
             height:
-              !expended && !willCollapse
-                ? '100%' // set to 100% when the card is not expended and not collapsing. / initial state.
-                : expended && !willCollapse
-                ? 'fill-available' // set to max-content when the card is expended.
-                : !expended && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
+              !expanded && !willCollapse
+                ? '100%' // set to 100% when the card is not expanded and not collapsing. / initial state.
+                : expanded && !willCollapse
+                ? 'fill-available' // set to max-content when the card is expanded.
+                : !expanded && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
             maxWidth: (theme) => theme?.breakpoints?.[2],
             maxHeight: (theme) => theme?.breakpoints?.[3],
             m: 'auto',
             position: 'relative',
-            zIndex: 'infinity'
+            zIndex: '999'
           }}
         >
-          <Card {...(expended ? OverlayProps : props)}>
+          <Card {...(expanded ? OverlayProps : props)}>
             {children}
-            {expended ? ( // render close button when expended
+            {expanded ? ( // render close button when expanded
               <Button
                 Icon={CloseIcon || DefaultCloseIcon}
                 onClick={handleOnClose}
@@ -137,11 +138,11 @@ const ExpendableCard: React.ForwardRefRenderFunction<
   );
 };
 
-export default React.forwardRef(ExpendableCard);
+export default React.forwardRef(ExpandableCard);
 
-const expendAnimation = (
+const expandAnimation = (
   theme: Theme,
-  expendTo?: ExpendToType,
+  expandTo?: ExpandToType,
   rect?: BoundingClientRecType
 ) =>
   keyframes({
@@ -166,11 +167,11 @@ const expendAnimation = (
         '100000000',
       bottom: 0,
       height: '100vh',
-      top: expendTo?.top || 0,
-      left: expendTo?.left || 0,
-      right: expendTo?.right || 0,
-      width: expendTo?.width || '100vw',
-      transform: expendTo?.transform || 'none',
+      top: expandTo?.top || 0,
+      left: expandTo?.left || 0,
+      right: expandTo?.right || 0,
+      width: expandTo?.width || '100vw',
+      transform: expandTo?.transform || 'none',
       margin: '0 auto'
     }
   });

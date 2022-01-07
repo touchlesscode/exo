@@ -2,7 +2,7 @@ import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
 import CardWithSlidingHeader from '@exoTheme/components/Card/variants/CardWithSlidingHeader';
-import ExpendableCard from '@exoTheme/components/Card/variants/expendable';
+import ExpandableCard from '@exoTheme/components/Card/variants/Expandable';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
 import ImageWithLabel from '@exoTheme/components/ImageWithLabel';
 import ListDivided from '@exoTheme/components/ListDivided';
@@ -10,7 +10,7 @@ import TextBlock from '@exoTheme/components/TextBlock';
 import SlimArrow from '@exoTheme/images/development/slim-arrow.inline.svg';
 import { slideUp } from '@exoTheme/theme/animations';
 import { graphql } from 'gatsby';
-import * as React from 'react';
+import React, { useRef } from 'react';
 import { Box, Theme } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
@@ -34,9 +34,17 @@ const benifits = [
 ];
 // @ts-ignore
 const Index = ({ data }) => {
+  const popularityParentRef =
+    useRef() as React.MutableRefObject<HTMLDivElement>;
+  const servicesParentRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const tradeParentRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const popularityRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const servicesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+  const tradeRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const isMobile =
     typeof window !== 'undefined' ? useWindowSize().type === 'sm' : true;
-  const [expended, setExpended] = React.useState(false);
+  const [expanded, setexpanded] = React.useState(false);
+  const [active, setActive] = React.useState(0);
   const {
     redCar,
     brands,
@@ -168,7 +176,11 @@ const Index = ({ data }) => {
               width: '100%',
               mt: 4
             }}
-            cardStyles={{ bg: 'white', borderRadius: '16px' }}
+            cardStyles={{
+              bg: 'white',
+              borderRadius: '16px',
+              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)'
+            }}
             images={brandsImages}
             content={{
               heading: 'Browse by brand',
@@ -199,7 +211,11 @@ const Index = ({ data }) => {
               width: '100%',
               mt: 4
             }}
-            cardStyles={{ bg: 'white', borderRadius: '16px' }}
+            cardStyles={{
+              bg: ['#FCF7EA', 'white'],
+              borderRadius: '16px',
+              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)'
+            }}
             content={{
               heading: 'Browse by body type',
               text: 'Review all the numbers and finalize everything without needing to visit us.',
@@ -214,12 +230,20 @@ const Index = ({ data }) => {
             position: 'relative'
           }}
         >
-          <ExpendableCard
+          <ExpandableCard
+            parentRef={popularityParentRef}
+            ref={popularityRef}
             elevated
             radius="16px"
-            expended={expended}
-            onClick={() => setExpended(true)}
-            onClose={() => setExpended(false)}
+            expanded={expanded && active === 1}
+            onClick={() => {
+              setActive(1);
+              setexpanded(true);
+            }}
+            onClose={() => {
+              setActive(0);
+              setexpanded(false);
+            }}
             overlayed
             overlay={{
               colors: [
@@ -227,7 +251,7 @@ const Index = ({ data }) => {
                   direction: 'to bottom',
                   linear: [
                     'rgba(0,0,0,1)',
-                    `rgba(0,0,0, ${expended ? '0' : '1'}) 55%`,
+                    `rgba(0,0,0, ${expanded && active === 1 ? '0' : '1'}) 55%`,
                     'rgba(0,0,0,0)'
                   ]
                 },
@@ -251,8 +275,10 @@ const Index = ({ data }) => {
                 sx={{
                   flexDirection: ['column', 'row'],
                   width: '100%',
-                  height: expended ? ['fit-content', '200px'] : '100%',
-                  justifyContent: expended ? 'start' : 'space-between',
+                  height:
+                    expanded && active === 1 ? ['296px', '296px'] : '100%',
+                  justifyContent:
+                    expanded && active === 1 ? 'start' : 'space-between',
                   bg: 'black'
                 }}
               >
@@ -280,11 +306,12 @@ const Index = ({ data }) => {
                     }}
                     sx={{
                       color: 'white',
-                      position: expended ? 'absolute' : 'static',
-                      pt: expended ? [68, 0] : [8, 0]
+                      position:
+                        expanded && active === 1 ? 'absolute' : 'static',
+                      pt: expanded && active === 1 ? ['219px', 0] : [8, 0]
                     }}
                   />
-                  {!expended && (
+                  {!expanded && active !== 1 && (
                     <Flex
                       sx={{
                         flexWrap: 'wrap',
@@ -321,7 +348,7 @@ const Index = ({ data }) => {
                   }}
                 />
               </Flex>
-              {expended ? (
+              {expanded && active === 1 ? (
                 <Box
                   sx={{
                     bg: 'white',
@@ -355,7 +382,7 @@ const Index = ({ data }) => {
                 </Box>
               ) : null}
             </Box>
-          </ExpendableCard>
+          </ExpandableCard>
         </Box>
         <Slider
           options={{
@@ -430,62 +457,133 @@ const Index = ({ data }) => {
               height: ['400px', 'auto']
             }}
           >
-            <Card
+            <ExpandableCard
+              parentRef={servicesParentRef}
+              ref={servicesRef}
               elevated
               radius="16px"
-              overlayed
-              overlay={{
-                colors: [
-                  {
-                    direction: '325deg',
-                    linear: ['#F9D499 0%', '#F9D499 15%', '#D9E6F3 30%']
-                  }
-                ]
+              expanded={expanded && active === 2}
+              onClick={() => {
+                setActive(2);
+                setexpanded(true);
+              }}
+              onClose={() => {
+                setActive(0);
+                setexpanded(false);
               }}
             >
-              <Flex
-                direction="column"
-                justify="space-between"
-                sx={{
-                  px: 6,
-                  py: 8,
+              <Box
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
                   height: '100%',
-                  position: 'relative',
-                  zIndex: 2
+                  justifyContent: 'start'
                 }}
               >
-                <TextBlock
-                  heading="Our Service"
-                  headingProps={{
-                    withLine: true,
-                    line: {
-                      align: 'top',
-                      space: '2',
-                      width: '120%'
-                    },
-                    sx: {
-                      mb: 2
-                    }
+                <Card
+                  elevated
+                  radius={expanded && active === 2 ? '0' : '16px'}
+                  overlayed
+                  cardStyles={{
+                    height:
+                      expanded && active === 2 ? ['296px', '296px'] : '100%',
+                    minHeight:
+                      expanded && active === 2 ? ['296px', '296px'] : '100%'
                   }}
-                  text="Review all the numbers and finalize everything without needing to visit."
-                />
-                <GatsbyImage
-                  image={ServicesCar}
-                  alt="test"
-                  objectFit="contain"
-                  sx={{
-                    position: 'absolute',
-                    right: 0,
-                    width: ['80%', '95%'],
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    zIndex: 0
+                  overlay={{
+                    colors: [
+                      {
+                        direction: '325deg',
+                        linear: ['#F9D499 0%', '#F9D499 15%', '#D9E6F3 30%']
+                      }
+                    ]
                   }}
-                />
+                >
+                  <Flex
+                    direction="column"
+                    justify="space-between"
+                    sx={{
+                      px: 6,
+                      pt: expanded && active === 2 ? ['219px', 6] : [8, 6],
+                      pb: 8,
+                      height: '100%',
+                      position: 'relative',
+                      zIndex: 2
+                    }}
+                  >
+                    <TextBlock
+                      heading="Our Service"
+                      headingProps={{
+                        withLine: true,
+                        line: {
+                          align: 'top',
+                          space: '2',
+                          width: '120%'
+                        },
+                        sx: {
+                          mb: 2
+                        }
+                      }}
+                      text={
+                        !expanded
+                          ? 'Review all the numbers and finalize everything without needing to visit.'
+                          : ''
+                      }
+                    />
+                    <GatsbyImage
+                      image={ServicesCar}
+                      alt="test"
+                      objectFit="contain"
+                      sx={{
+                        position: 'absolute',
+                        right: 0,
+                        width: ['80%', '95%'],
+                        top: expanded && active === 2 ? '30%' : '50%',
+                        transform: 'translateY(-50%)',
+                        zIndex: 0
+                      }}
+                    />
 
-                <Button bg="primaryBlue">Book Service Appointment</Button>
-              </Flex>
-            </Card>
+                    {!expanded && active !== 2 && (
+                      <Button bg="primaryBlue">Book Service Appointment</Button>
+                    )}
+                  </Flex>
+                </Card>
+                {expanded && active === 2 ? (
+                  <Box
+                    sx={{
+                      bg: 'white',
+                      position: 'relative',
+                      zIndex: 2,
+                      overflow: 'auto',
+                      flexGrow: 1
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        px: 6,
+                        py: 8,
+                        background: 'white',
+                        opacity: 0,
+                        animation: `${slideUp} 200ms 200ms forwards`
+                      }}
+                    >
+                      <ListDivided>
+                        {[...badges, ...badges, ...badges].map((badge, idx) => (
+                          <ImageWithLabel
+                            key={idx}
+                            image={redCar}
+                            label={badge}
+                            alt="electric"
+                            imageVariant="rounded"
+                          />
+                        ))}
+                      </ListDivided>
+                    </Box>
+                  </Box>
+                ) : null}
+              </Box>
+            </ExpandableCard>
           </Box>
           <Box
             sx={{
@@ -493,24 +591,113 @@ const Index = ({ data }) => {
               height: 'auto'
             }}
           >
-            <CardWithImage elevated radius="16px" image={tradeIn} alt="hety">
-              <TextBlock
-                heading="Trade-In Your Car"
-                headingProps={{
-                  withLine: true,
-                  sx: {
-                    mb: 2
+            <ExpandableCard
+              parentRef={tradeParentRef}
+              ref={tradeRef}
+              elevated
+              radius="16px"
+              expanded={expanded && active === 3}
+              onClick={() => {
+                setActive(3);
+                setexpanded(true);
+              }}
+              onClose={() => {
+                setActive(0);
+                setexpanded(false);
+              }}
+            >
+              <Box
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  height: '100%',
+                  justifyContent: 'start'
+                }}
+              >
+                <CardWithImage
+                  elevated
+                  radius={expanded && active === 3 ? '0' : '16px'}
+                  image={tradeIn}
+                  alt="hety"
+                  imageSx={
+                    expanded
+                      ? {
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          width: '100%',
+                          height: '100%'
+                        }
+                      : {}
                   }
-                }}
-                text="Review all the numbers and finalize everything without needing to visit us."
-                sx={{
-                  p: 6
-                }}
-              />
-              <Button color="primaryNavy" Icon={SlimArrow} space="2">
-                Learn more
-              </Button>
-            </CardWithImage>
+                  cardStyles={{
+                    height:
+                      expanded && active === 3 ? ['296px', '296px'] : '100%',
+                    minHeight:
+                      expanded && active === 3 ? ['296px', '296px'] : '100%'
+                  }}
+                >
+                  <TextBlock
+                    heading="Trade-In Your Car"
+                    headingProps={{
+                      withLine: true,
+                      sx: {
+                        mb: 2,
+                        zIndex: '1'
+                      }
+                    }}
+                    text={
+                      !expanded
+                        ? 'Review all the numbers and finalize everything without needing to visit us.'
+                        : ''
+                    }
+                    sx={{
+                      p: 6,
+                      pt: expanded && active === 3 ? ['219px', 6] : 6,
+                      zIndex: '1'
+                    }}
+                  />
+                  {!expanded && active !== 3 && (
+                    <Button color="primaryNavy" Icon={SlimArrow} space="2">
+                      Learn more
+                    </Button>
+                  )}
+                </CardWithImage>
+                {expanded && active === 3 ? (
+                  <Box
+                    sx={{
+                      bg: 'white',
+                      position: 'relative',
+                      zIndex: 2,
+                      overflow: 'auto',
+                      flexGrow: 1
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        px: 6,
+                        py: 8,
+                        background: 'white',
+                        opacity: 0,
+                        animation: `${slideUp} 200ms 200ms forwards`
+                      }}
+                    >
+                      <ListDivided>
+                        {[...badges, ...badges, ...badges].map((badge, idx) => (
+                          <ImageWithLabel
+                            key={idx}
+                            image={redCar}
+                            label={badge}
+                            alt="electric"
+                            imageVariant="rounded"
+                          />
+                        ))}
+                      </ListDivided>
+                    </Box>
+                  </Box>
+                ) : null}
+              </Box>
+            </ExpandableCard>
           </Box>
         </Flex>
       </Box>

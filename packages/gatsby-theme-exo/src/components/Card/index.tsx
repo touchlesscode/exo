@@ -16,6 +16,7 @@ const Card: React.ForwardRefRenderFunction<
     overlay,
     loading,
     bordered,
+    cardStyles,
     ...restProps
   },
   ref
@@ -25,13 +26,16 @@ const Card: React.ForwardRefRenderFunction<
       {...restProps}
       ref={ref}
       sx={{
-        width: '100%',
-        height: '100%',
-        overflow: 'hidden',
-        position: 'relative',
-        boxShadow: elevated ? 9 : 0,
-        borderRadius: radius || 0,
-        border: bordered && '1px solid #C7C7C7'
+        ...{
+          width: '100%',
+          height: '100%',
+          overflow: 'hidden',
+          position: 'relative',
+          boxShadow: elevated ? 9 : 0,
+          borderRadius: radius || 0,
+          border: bordered && '1px solid #C7C7C7'
+        },
+        ...cardStyles
       }}
     >
       {overlayed ? <Overlay {...overlay} zIndex="1" /> : null}

@@ -58,7 +58,7 @@ export default Overlay;
 
 Overlay.defaultProps = {
   visible: true,
-  zIndex: 'infinity',
+  zIndex: '99',
   position: 'absolute',
   animated: false,
   width: '100%',

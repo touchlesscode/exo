@@ -11,6 +11,7 @@ interface BaseProps extends Omit<ThemeCardProps, 'sx'> {
   loading?: boolean;
   radius?: string;
   sx?: never;
+  cardStyles?: ThemeUIStyleObject;
 }
 
 type CardOverlayProps =
@@ -19,17 +20,18 @@ type CardOverlayProps =
 
 export type CardProps = BaseProps & CardOverlayProps;
 
-export type ExpendableCardProps = CardProps & {
-  expended: boolean;
+export type ExpandableCardProps = CardProps & {
+  expanded: boolean;
   onClick: () => void;
   onClose: () => void;
   duration?: number;
   CloseBtn?: JSX.Element;
   CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-  expendTo?: ExpendToType;
+  expandTo?: ExpandToType;
+  parentRef?: React.MutableRefObject<HTMLDivElement>;
 };
 
-export type ExpendToType = {
+export type ExpandToType = {
   width?: string;
   left?: string;
   top?: string;

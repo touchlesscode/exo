@@ -8,6 +8,7 @@ import { GatsbyImageProps } from 'gatsby-plugin-image';
 interface CardWithImageProps extends GatsbyImageProps {
   imagePosition?: 'top' | 'bottom';
   imageSx?: ThemeUIStyleObject;
+  cardStyles?: ThemeUIStyleObject;
 }
 
 const CardWithImage: React.FC<CardWithImageProps & CardProps> = ({
@@ -16,10 +17,11 @@ const CardWithImage: React.FC<CardWithImageProps & CardProps> = ({
   image,
   alt,
   imageSx,
+  cardStyles,
   ...props
 }) => {
   return (
-    <Card {...props}>
+    <Card {...props} cardStyles={cardStyles}>
       <Flex
         sx={{
           flexDirection: imagePosition === 'top' ? 'column' : 'column-reverse'
