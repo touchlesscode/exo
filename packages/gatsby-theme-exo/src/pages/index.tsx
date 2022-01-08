@@ -4,6 +4,7 @@ import Card from '@exoTheme/components/Card';
 import CardWithSlidingHeader from '@exoTheme/components/Card/variants/CardWithSlidingHeader';
 import ExpandableCard from '@exoTheme/components/Card/variants/Expandable';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 import ImageWithLabel from '@exoTheme/components/ImageWithLabel';
 import ListDivided from '@exoTheme/components/ListDivided';
 import TextBlock from '@exoTheme/components/TextBlock';
@@ -15,7 +16,6 @@ import { Box, Theme } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
 import Slider from '@exoTheme/components/Slider';
-import CardWithList from '@exoTheme/components/Card/variants/CardWithList';
 import CardWithImage from '@exoTheme/components/Card/variants/CardWithImage';
 import useWindowSize from '@exoTheme/hooks/useWindowSize';
 
@@ -26,12 +26,12 @@ const badges = [
   'City Cars',
   'See All'
 ];
-const benifits = [
-  'Voted best places to work(11 years in a row)',
-  '20 + languages spoken',
-  'Average employee tenure 10 + years',
-  '4.8 - star rating across 100, 000 + reviews'
-];
+// const benifits = [
+//   'Voted best places to work(11 years in a row)',
+//   '20 + languages spoken',
+//   'Average employee tenure 10 + years',
+//   '4.8 - star rating across 100, 000 + reviews'
+// ];
 // @ts-ignore
 const Index = ({ data }) => {
   const popularityParentRef =
@@ -41,6 +41,7 @@ const Index = ({ data }) => {
   const popularityRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const servicesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
   const tradeRef = useRef() as React.MutableRefObject<HTMLDivElement>;
+
   const isMobile =
     typeof window !== 'undefined' ? useWindowSize().type === 'sm' : true;
   const [expanded, setexpanded] = React.useState(false);
@@ -72,6 +73,32 @@ const Index = ({ data }) => {
       image: type
     })
   );
+  const carouselRefs = [
+    {
+      position: 'left',
+      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
+      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      title: 'Shop Your Way',
+      image: twoPeople,
+      list: [...badges, ...badges, ...badges]
+    },
+    {
+      position: 'center',
+      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
+      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      title: 'Peace of Mind',
+      image: twoPeople,
+      list: [...badges, ...badges, ...badges]
+    },
+    {
+      position: 'right',
+      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
+      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      title: 'Our People',
+      image: twoPeople,
+      list: [...badges, ...badges, ...badges]
+    }
+  ];
   return (
     <>
       <GatsbyImageBg
@@ -80,17 +107,15 @@ const Index = ({ data }) => {
         height="100vh"
         objectPosition="bottom"
         sx={{
-          pt: 128,
+          pt: [128, 100],
           width: '95%',
           mx: 'auto'
         }}
       >
         <Box
           sx={{
-            maxWidth: (theme: Theme) => [
-              theme.breakpoints?.[2],
-              theme.breakpoints?.[0]
-            ],
+            width: '100%',
+            maxWidth: ['414px', '535px'],
             mx: 'auto'
           }}
         >
@@ -100,16 +125,24 @@ const Index = ({ data }) => {
               as: 'h1',
               sx: {
                 textAlign: 'center',
-                width: ['50%', '100%'],
+                width: ['289px', '100%'],
                 mx: 'auto',
-                mb: 6
+                mb: 16,
+                fontFamily: 'Poppins',
+                fontStyle: 'normal',
+                fontWeight: 'bold',
+                fontSize: '40px',
+                lineHeight: '48px',
+                letterSpacing: ' -0.02em'
               }
             }}
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             textProps={{
               sx: {
                 textAlign: 'center',
-                fontSize: 18
+                fontSize: [18, 16],
+                fontWeight: ' 500',
+                color: '#151F2A'
               }
             }}
           />
@@ -117,15 +150,56 @@ const Index = ({ data }) => {
             sx={{
               mt: 32,
               gap: 16,
-              justifyContent: 'center'
+              justifyContent: 'center',
+              mb: ['315px', '488px']
             }}
           >
-            <Button bg="primaryNavy">Browse Cars</Button>
+            <Button
+              bg="primaryNavy"
+              sx={{
+                fontFamily: 'Poppins',
+                fontStyle: 'normal',
+                fontWeight: '500',
+                fontSize: '16px',
+                lineHeight: '24px',
+                color: '#D3DBE2',
+                width: ['165px', '149px'],
+                height: ['48px', '40px'],
+                padding: '8px 24px',
+                '&:hover': {
+                  bg: 'primaryBlue'
+                },
+                '&:focus': {
+                  bg: 'primarySkyBlue'
+                }
+              }}
+            >
+              Browse Cars
+            </Button>
             <Button
               color="primaryNavy"
               sx={{
+                fontFamily: 'Poppins',
+                fontStyle: 'normal',
+                fontWeight: '500',
+                fontSize: '16px',
+                lineHeight: '24px',
+                color: 'primaryNavy',
+                width: ['165px', '149px'],
+                height: ['48px', '40px'],
+                padding: '8px 24px',
                 border: (theme: Theme) =>
-                  `1px solid ${theme.colors?.primaryNavy}`
+                  `2px solid ${theme.colors?.primaryNavy}`,
+                '&:hover': {
+                  border: '2px solid',
+                  borderColor: 'primaryBlue',
+                  color: 'primaryBlue'
+                },
+                '&:focus': {
+                  border: '2px solid',
+                  borderColor: 'primarySkyBlue',
+                  color: 'primarySkyBlue'
+                }
               }}
             >
               Sell My Car
@@ -141,19 +215,14 @@ const Index = ({ data }) => {
           alignItems: 'center',
           pt: [8, 0],
           gap: 8,
-          maxWidth: (theme: Theme) => [null, theme.breakpoints?.[2]],
+          width: '100%',
+          maxWidth: ['100%', '971px'],
           mx: 'auto',
           mt: [null, '-100px'],
           pb: '100px'
         }}
       >
-        <Flex
-          direction={['column', 'row']}
-          gap={8}
-          sx={{
-            width: '90%'
-          }}
-        >
+        <Flex direction={['column', 'row']} gap={8}>
           <CardWithSlidingHeader
             options={{
               renderMode: 'performance',
@@ -162,34 +231,72 @@ const Index = ({ data }) => {
               disabled: false,
               slides: {
                 perView: 4,
-                spacing: 20
+                spacing: 0
               },
               drag: true,
               breakpoints: {
-                '(min-width: 768px.02)': {
-                  drag: true
+                '(min-width: 768.02px)': {
+                  slides: {
+                    perView: 4.5,
+                    spacing: 0
+                  }
                 }
               }
             }}
+            sliderParent={{ pl: ['0', '20px'], pointerEvents: 'none' }}
             slideStyles={{
-              height: '69px',
-              width: '100%',
-              mt: 4
+              maxHeight: '53px',
+              height: '100%',
+              width: 'auto',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center'
             }}
             cardStyles={{
               bg: 'white',
               borderRadius: '16px',
-              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)'
+              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+              width: '100%',
+              maxWidth: ['366px', '471px'],
+              height: '100%',
+              minHeight: ['216px', '225px']
             }}
-            images={brandsImages}
             content={{
-              heading: 'Browse by brand',
-              text: 'Review all the numbers and finalize everything without needing to visit us.',
-              headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
+              heading: 'Shop by brand',
+              text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
+              headingProps: {
+                as: 'h4',
+                sx: {
+                  fontFamily: 'Poppins',
+                  fontStyle: 'normal',
+                  fontWeight: 'bold',
+                  fontSize: '20px',
+                  lineHeight: '30px',
+                  letterSpacing: '-0.02em',
+                  color: '#151F2A',
+                  mb: 2
+                }
+              }
             }}
-          />
+          >
+            {brandsImages.map(
+              ({ image, id }: { image: IGatsbyImageData; id: string }) => (
+                <GatsbyImage
+                  key={id}
+                  image={image}
+                  alt="test"
+                  objectFit="contain"
+                  sx={{
+                    height: 'auto',
+                    maxHeight: '100%',
+                    width: '100%',
+                    maxWidth: '73px'
+                  }}
+                />
+              )
+            )}
+          </CardWithSlidingHeader>
           <CardWithSlidingHeader
-            images={bodyTypeImages}
             options={{
               renderMode: 'performance',
               rubberband: false,
@@ -197,31 +304,67 @@ const Index = ({ data }) => {
               disabled: false,
               slides: {
                 perView: 3,
-                spacing: 20
+                spacing: 10
               },
               drag: true,
               breakpoints: {
-                '(min-width: 768px.02)': {
-                  drag: true
+                '(min-width: 768.02px)': {
+                  slides: {
+                    perView: 3.5,
+                    spacing: 10
+                  }
                 }
               }
             }}
+            sliderParent={{ pl: ['0', '10px'], pointerEvents: 'none' }}
             slideStyles={{
               height: '65px',
-              width: '100%',
-              mt: 4
+              width: 'auto',
+              m: 'auto'
             }}
             cardStyles={{
               bg: ['#FCF7EA', 'white'],
               borderRadius: '16px',
-              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)'
+              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+              width: '100%',
+              maxWidth: ['366px', '471px'],
+              height: '100%',
+              minHeight: ['216px', '225px']
             }}
             content={{
-              heading: 'Browse by body type',
-              text: 'Review all the numbers and finalize everything without needing to visit us.',
-              headingProps: { as: 'h4', sx: { fontSize: [24, 28], mb: 2 } }
+              heading: 'Shop by body type',
+              text: 'Some descriptive text about choosing a body type to fit your needs.',
+              headingProps: {
+                as: 'h4',
+                sx: {
+                  fontFamily: 'Poppins',
+                  fontStyle: 'normal',
+                  fontWeight: 'bold',
+                  fontSize: '20px',
+                  lineHeight: '30px',
+                  letterSpacing: '-0.02em',
+                  color: '#151F2A',
+                  mb: 2
+                }
+              }
             }}
-          />
+          >
+            {bodyTypeImages.map(
+              ({ image, id }: { image: IGatsbyImageData; id: string }) => (
+                <GatsbyImage
+                  key={id}
+                  image={image}
+                  alt="test"
+                  objectFit="cover"
+                  sx={{
+                    height: '100%',
+                    maxHeight: '100%',
+                    width: 'auto'
+                  }}
+                />
+              )
+            )}
+          </CardWithSlidingHeader>
         </Flex>
         <Box
           sx={{
@@ -266,9 +409,7 @@ const Index = ({ data }) => {
                         direction: 'to bottom',
                         linear: [
                           'rgba(0,0,0,0)',
-                          `rgba(0,0,0, ${
-                            expanded && active === 1 ? '0' : '1'
-                          }) 55%`,
+                          'rgba(0,0,0, 0) 55%',
                           'rgba(0,0,0,0)'
                         ]
                       },
@@ -308,8 +449,8 @@ const Index = ({ data }) => {
                             direction: '0.17deg',
                             linear: [
                               '#242952 0.14%',
-                              'rgba(29, 33, 67, 0.92) 9.34%',
-                              'rgba(36, 41, 82, 0) 75.94%'
+                              'rgba(29, 33, 67, 0.92) 2.34%',
+                              'rgba(36, 41, 82, 0) 36.94%'
                             ]
                           }
                         ]
@@ -318,8 +459,12 @@ const Index = ({ data }) => {
                         zIndex: 1,
                         colors: [
                           {
-                            direction: '0.17deg',
-                            linear: ['#fff', 'fff', 'fff']
+                            direction: '180.11deg',
+                            linear: [
+                              '#000000 41.39%',
+                              'rgba(0, 0, 0, 0) 99.91%',
+                              'transparent'
+                            ]
                           }
                         ]
                       }
@@ -332,8 +477,8 @@ const Index = ({ data }) => {
                     height:
                       expanded && active === 1 ? ['296px', '296px'] : '100%',
                     justifyContent:
-                      expanded && active === 1 ? 'start' : 'space-between',
-                    bg: 'black'
+                      expanded && active === 1 ? 'start' : 'space-between'
+                    // bg: 'black'
                   }}
                 >
                   <Box
@@ -346,11 +491,15 @@ const Index = ({ data }) => {
                     }}
                   >
                     <TextBlock
-                      heading="Borwse by popularity"
+                      heading="What’s Popular"
                       headingProps={{
                         sx: {
-                          fontWeight: 'medium',
-                          fontSize: [24, 28]
+                          fontSize: 28,
+                          fontWeight: '600',
+                          lineHeight: '38px',
+                          letterSpacing: '-0.02em',
+
+                          color: '#FFFFFF'
                         },
                         withLine: true,
                         line: {
@@ -382,6 +531,14 @@ const Index = ({ data }) => {
                             bg="rgba(255, 255, 255, 0.12)"
                             color="white"
                             variant="rounded"
+                            sx={{
+                              fontFamily: 'Poppins',
+                              fontWeight: '500',
+                              fontSize: '16px',
+                              lineHeight: '23px',
+                              letterSpacing: '-0.02em',
+                              color: '#FFFFFF'
+                            }}
                           >
                             {badge}
                           </Badge>
@@ -448,65 +605,241 @@ const Index = ({ data }) => {
             </Box>
           </ExpandableCard>
         </Box>
-        <Slider
-          options={{
-            renderMode: 'performance',
-            disabled: false,
-            loop: false,
-            initial: 1,
-            slides: {
-              perView: 1.15,
-              spacing: 16,
-              origin: 'center'
-            },
-            drag: true,
-            breakpoints: {
-              '(min-width: 768.02px)': {
-                initial: 1,
-                slides: {
-                  perView: 3,
-                  spacing: 16,
-                  origin: 'auto'
-                }
-              }
-            }
-          }}
-          slideStyles={{
-            height: '100%',
+        <Box
+          sx={{
             width: '100%',
-            borderRadius: '16px',
-            cursor: 'pointer'
+            // height: ['400px', '200px'],
+            position: 'relative'
           }}
         >
-          {Array(4)
-            .fill('')
-            .map((item, idx) => (
-              <CardWithList
-                key={idx}
-                color="white"
-                elevated
-                radius="16px"
-                overlayed
-                overlay={{
-                  zIndex: 1,
-                  colors: [
-                    {
-                      direction: '182.17deg',
-                      linear: [
-                        'rgba(36, 41, 82, 0) 38.4%',
-                        'rgba(36, 41, 82, 0.86) 50%',
-                        '#242952 98.18%'
-                      ]
-                    }
-                  ]
+          <TextBlock
+            heading="Why Koons"
+            headingProps={{
+              sx: {
+                fontSize: 32,
+                fontWeight: '600',
+                lineHeight: '38px',
+                letterSpacing: '-0.02em',
+                color: '#151F2A'
+              },
+              withLine: true,
+
+              line: {
+                align: 'top',
+                space: '2',
+                color: '#151F2A'
+              }
+            }}
+            sx={{
+              mb: 20,
+              display: ['none', 'block']
+            }}
+          />
+          <Slider
+            options={{
+              renderMode: 'performance',
+              disabled: false,
+              loop: false,
+              initial: 1,
+              slides: {
+                perView: 1.15,
+                spacing: 16,
+                origin: 'center'
+              },
+              drag: expanded || !isMobile ? false : true,
+              breakpoints: {
+                '(min-width: 768.02px)': {
+                  initial: 1,
+                  slides: {
+                    perView: 3,
+                    spacing: 16,
+                    origin: 'auto'
+                  }
+                }
+              }
+            }}
+            slideStyles={{
+              height: '100%',
+              width: '100%',
+              borderRadius: '16px',
+              cursor: 'pointer'
+            }}
+            sliderItem={
+              expanded
+                ? { transform: 'unset!important', borderRadius: '0' }
+                : { borderRadius: '16px' }
+            }
+          >
+            {carouselRefs.map((item, index) => (
+              <Box
+                key={index}
+                sx={{
+                  width: '100%',
+                  minHeight: '332px',
+                  height: ['332px', '332px']
                 }}
-                title="Our People"
-                image={twoPeople}
-                alt="test"
-                list={benifits}
-              />
+              >
+                <ExpandableCard
+                  parentRef={item.parentRef}
+                  ref={item.ref}
+                  elevated
+                  radius="16px"
+                  expanded={expanded && active === index + 100}
+                  onClick={() => {
+                    setActive(index + 100);
+                    setexpanded(true);
+                  }}
+                  onClose={() => {
+                    setActive(0);
+                    setexpanded(false);
+                  }}
+                >
+                  <Box
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      height: '100%',
+                      justifyContent: 'start'
+                    }}
+                  >
+                    <Card
+                      elevated
+                      radius={expanded && active === index + 100 ? '0' : '16px'}
+                      overlayed
+                      cardStyles={{
+                        height:
+                          expanded && active === index + 100
+                            ? ['296px', '296px']
+                            : '100%',
+                        minHeight:
+                          expanded && active === index + 100
+                            ? ['296px', '296px']
+                            : '100%'
+                      }}
+                      overlay={{
+                        colors: [
+                          {
+                            direction: '0deg',
+                            linear: [
+                              '#252A53 0%',
+                              'rgba(37, 42, 83, 0) 100%',
+                              'transparent 30%'
+                            ]
+                          }
+                        ],
+                        sx: {
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
+                          backgroundColor: 'transparent',
+                          zIndex: '99',
+                          pointerEvents: 'none'
+                        }
+                      }}
+                    >
+                      <Flex
+                        direction="column"
+                        justify="flex-end"
+                        sx={{
+                          px: 6,
+                          pt:
+                            expanded && active === index + 100
+                              ? ['219px', 6]
+                              : [8, 6],
+                          pb: 8,
+                          height: '100%',
+                          position: 'relative',
+                          zIndex: 2,
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                        }}
+                      >
+                        <TextBlock
+                          heading={item.title}
+                          headingProps={{
+                            withLine: true,
+                            line: {
+                              align: 'top',
+                              space: '2',
+                              width: '120%',
+                              color: '#ffffff'
+                            },
+                            sx: {
+                              mb: 2,
+                              color: '#ffffff',
+                              fontFamily: 'Poppins',
+                              fontStyle: 'normal',
+                              fontWeight: '600',
+                              fontSize: '20px',
+                              lineHeight: '25px',
+                              letterSpacing: '-0.02em',
+                              zIndex: '999'
+                            }
+                          }}
+                        />
+                        <GatsbyImage
+                          image={item.image}
+                          alt="why koons"
+                          objectFit="cover"
+                          sx={{
+                            position: 'absolute',
+                            top: '50%',
+                            left: '50%',
+                            transform: 'translate(-50%,-50%)',
+                            height: '100%',
+                            width: '100%',
+                            zIndex: 0
+                          }}
+                        />
+                      </Flex>
+                    </Card>
+                    {expanded && active === index + 100 ? (
+                      <Box
+                        sx={{
+                          bg: '#242951',
+                          position: 'relative',
+                          zIndex: 2,
+                          overflow: 'auto',
+                          flexGrow: 1,
+                          '&::-webkit-scrollbar': {
+                            width: '0',
+                            backgroundColor: 'transparent'
+                          },
+                          '&::-webkit-scrollbar-thumb': {
+                            backgroundColor: 'transparent',
+                            outline: 'unset'
+                          }
+                        }}
+                      >
+                        <Box
+                          sx={{
+                            px: 6,
+                            py: 8,
+                            background: '#242951',
+                            opacity: 0,
+                            animation: `${slideUp} 200ms 200ms forwards`
+                          }}
+                        >
+                          <ListDivided>
+                            {item.list.map((badge, idx) => (
+                              <ImageWithLabel
+                                key={idx}
+                                image={redCar}
+                                label={badge}
+                                alt="electric"
+                                labelStyle={{ color: 'white' }}
+                                imageVariant="rounded"
+                              />
+                            ))}
+                          </ListDivided>
+                        </Box>
+                      </Box>
+                    ) : null}
+                  </Box>
+                </ExpandableCard>
+              </Box>
             ))}
-        </Slider>
+          </Slider>
+        </Box>
         <Flex
           gap="8"
           sx={{
@@ -550,9 +883,9 @@ const Index = ({ data }) => {
                   overlayed
                   cardStyles={{
                     height:
-                      expanded && active === 2 ? ['296px', '296px'] : '100%',
+                      expanded && active === 2 ? ['296px', '296px'] : '415px',
                     minHeight:
-                      expanded && active === 2 ? ['296px', '296px'] : '100%'
+                      expanded && active === 2 ? ['296px', '296px'] : '415px'
                   }}
                   overlay={{
                     colors: [
@@ -575,7 +908,7 @@ const Index = ({ data }) => {
                       zIndex: 2,
                       backgroundImage:
                         expanded && active === 2
-                          ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 9.34%, rgba(36, 41, 82, 0) 75.94%)'
+                          ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
                           : 'unset'
                     }}
                   >
@@ -594,7 +927,7 @@ const Index = ({ data }) => {
                       }}
                       text={
                         !expanded
-                          ? 'Review all the numbers and finalize everything without needing to visit.'
+                          ? 'Review all the numbers and finalize everything without needing to visit our dealership.'
                           : ''
                       }
                     />
@@ -605,15 +938,28 @@ const Index = ({ data }) => {
                       sx={{
                         position: 'absolute',
                         right: 0,
-                        width: ['80%', '95%'],
+                        width: '80%',
                         top: expanded && active === 2 ? '30%' : '50%',
                         transform: 'translateY(-50%)',
-                        zIndex: 0
+                        zIndex: 0,
+                        pointerEvents: 'none'
                       }}
                     />
 
                     {!expanded && active !== 2 && (
-                      <Button bg="primaryBlue">Book Service Appointment</Button>
+                      <Button
+                        bg="primaryNavy"
+                        sx={{
+                          '&:hover': {
+                            bg: 'primaryBlue'
+                          },
+                          '&:focus': {
+                            bg: 'primarySkyBlue'
+                          }
+                        }}
+                      >
+                        Book Service Appointment
+                      </Button>
                     )}
                   </Flex>
                 </Card>
@@ -705,13 +1051,15 @@ const Index = ({ data }) => {
                           width: '100%',
                           height: '100%'
                         }
-                      : {}
+                      : {
+                          maxHeight: '198px'
+                        }
                   }
                   cardStyles={{
                     height:
-                      expanded && active === 3 ? ['296px', '296px'] : '100%',
+                      expanded && active === 3 ? ['296px', '296px'] : '415px',
                     minHeight:
-                      expanded && active === 3 ? ['296px', '296px'] : '100%'
+                      expanded && active === 3 ? ['296px', '296px'] : '415px'
                   }}
                   overlayed
                   overlay={
@@ -723,11 +1071,14 @@ const Index = ({ data }) => {
                               direction: '0.17deg',
                               linear: [
                                 '#242952 0.14%',
-                                'rgba(29, 33, 67, 0.92) 9.34%',
-                                'rgba(36, 41, 82, 0) 75.94%'
+                                'rgba(29, 33, 67, 0.92) 2.34%',
+                                'rgba(36, 41, 82, 0) 36.94%'
                               ]
                             }
-                          ]
+                          ],
+                          sx: {
+                            pointerEvents: 'none'
+                          }
                         }
                       : {
                           zIndex: 1,
@@ -736,7 +1087,10 @@ const Index = ({ data }) => {
                               direction: '0.17deg',
                               linear: ['#fff', 'fff', 'fff']
                             }
-                          ]
+                          ],
+                          sx: {
+                            pointerEvents: 'none'
+                          }
                         }
                   }
                 >
@@ -751,7 +1105,7 @@ const Index = ({ data }) => {
                     }}
                     text={
                       !expanded
-                        ? 'Review all the numbers and finalize everything without needing to visit us.'
+                        ? 'Review all the numbers and finalize everything without needing to visit our dealership.'
                         : ''
                     }
                     sx={{
@@ -761,8 +1115,22 @@ const Index = ({ data }) => {
                     }}
                   />
                   {!expanded && active !== 3 && (
-                    <Button color="primaryNavy" Icon={SlimArrow} space="2">
-                      Learn more
+                    <Button
+                      color="primaryNavy"
+                      Icon={SlimArrow}
+                      space="2"
+                      sx={{
+                        pt: 0,
+                        pb: '24px',
+                        '&:hover': {
+                          color: 'primaryBlue'
+                        },
+                        '&:focus': {
+                          color: 'primarySkyBlue'
+                        }
+                      }}
+                    >
+                      Why trade with Koons
                     </Button>
                   )}
                 </CardWithImage>

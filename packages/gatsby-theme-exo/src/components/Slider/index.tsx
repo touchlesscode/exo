@@ -12,6 +12,8 @@ const Slider: React.FC<Props> = ({
   options,
   plugins,
   slideStyles,
+  sliderParent,
+  sliderItem,
   children
 }) => {
   const [ref] = useKeenSlider<HTMLDivElement>(
@@ -22,11 +24,11 @@ const Slider: React.FC<Props> = ({
   );
 
   return (
-    <Box ref={ref} className="keen-slider">
+    <Box ref={ref} className="keen-slider" sx={sliderParent}>
       {React.Children.map(children, (child) => (
-        <div className={'keen-slider__slide'}>
+        <Box className={'keen-slider__slide'} sx={sliderItem}>
           <Box sx={slideStyles}>{child}</Box>
-        </div>
+        </Box>
       ))}
     </Box>
   );

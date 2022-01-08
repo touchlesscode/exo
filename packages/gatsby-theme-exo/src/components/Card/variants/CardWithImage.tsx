@@ -31,8 +31,8 @@ const CardWithImage: React.FC<CardWithImageProps & CardProps> = ({
         }}
       >
         {overlayed ? <Overlay {...overlay} zIndex="1" /> : null}
-        <Box sx={imageSx}>
-          <GatsbyImage image={image} alt={alt} />
+        <Box>
+          <GatsbyImage image={image} sx={imageSx} alt={alt} />
         </Box>
         <Box>{children}</Box>
       </Flex>

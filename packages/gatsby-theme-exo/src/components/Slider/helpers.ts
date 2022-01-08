@@ -45,8 +45,9 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
       document.documentElement.scrollHeight,
       document.documentElement.offsetHeight
     );
+
     if (
-      window.pageYOffset <= 0 ||
+      window.pageYOffset <= 50 ||
       window.innerHeight + window.pageYOffset >= docHeight
     )
       return;
@@ -66,4 +67,11 @@ export const WheelControls: KeenSliderPlugin = (slider) => {
     window.addEventListener('wheel', eventWheel);
     window.addEventListener('scroll', eventWheel);
   });
+  // slider.track.details.slides.map((slide, index) =>
+  //   slider.moveToIdx(index, undefined, {
+  //     duration: 1000,
+  //     easing: (t: number) => 1000
+  //   })
+  // );
+  // slider.track.details.progress = 20;
 };

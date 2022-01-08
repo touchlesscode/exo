@@ -5,6 +5,7 @@ import { TypographyLineProps } from '../Typography/variants/TypographyWithLine';
 type TextBlockTypography = TypographyProps & {
   withLine?: boolean;
   line?: TypographyLineProps;
+  lineStyle?: ThemeUIStyleObject;
 };
 
 interface TextBlockProps {

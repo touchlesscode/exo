@@ -41,7 +41,7 @@ export type ExpandToType = {
 
 export type CardWithSlidingHeaderProps = CardProps &
   SliderProps & {
-    images: {
+    images?: {
       image: IGatsbyImageData;
       id: string;
     }[];

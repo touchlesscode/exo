@@ -9,13 +9,17 @@ interface SliderWheelProps extends SliderProps {
 const SliderWheel: React.FC<SliderWheelProps> = ({
   children,
   options,
-  slideStyles
+  slideStyles,
+  sliderParent,
+  sliderItem
 }) => {
   return (
     <Slider
       plugins={[WheelControls]}
       options={options}
       slideStyles={slideStyles}
+      sliderParent={sliderParent}
+      sliderItem={sliderItem}
     >
       {children}
     </Slider>

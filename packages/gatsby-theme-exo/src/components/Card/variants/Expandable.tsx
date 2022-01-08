@@ -110,7 +110,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
                 : !expanded && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
             maxWidth: ['100%', `${expanded ? '572px' : '100%'}`],
             maxHeight: ['100%', `${expanded ? '718px' : '100%'}`],
-            m: ['auto', '20px auto'],
+            m: 'auto',
             position: 'relative',
             zIndex: '999',
             borderRadius: expanded ? [0, '16px'] : '0',
