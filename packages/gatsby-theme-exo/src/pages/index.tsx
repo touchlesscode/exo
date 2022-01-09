@@ -27,6 +27,15 @@ const badges = [
   'City Cars',
   'See All'
 ];
+const brandsNames = [
+  'Kia',
+  'Lexus',
+  'Toyota',
+  'Ford',
+  'Chevy',
+  'Jeep',
+  'Hyundai'
+];
 // const benifits = [
 //   'Voted best places to work(11 years in a row)',
 //   '20 + languages spoken',
@@ -98,6 +107,12 @@ const Index = ({ data }) => {
     image: logo?.svg?.asset,
     name: name
   }));
+  const sortedBrands = brandsNames
+    .map((brandName) =>
+      brandsImages.find(({ name }: { name: string }) => name === brandName)
+    )
+    .filter((item) => item !== undefined);
+
   const bodyTypeImages = [image1, image2, image3, image4, image5, image6].map(
     (type, idx) => ({
       id: idx.toString(),
@@ -366,7 +381,7 @@ const Index = ({ data }) => {
                     }
                   }}
                 >
-                  {brandsImages.map(
+                  {sortedBrands.map(
                     ({
                       image,
                       id
@@ -486,7 +501,7 @@ const Index = ({ data }) => {
                       }}
                     >
                       <ListDivided>
-                        {brandsImages.map(
+                        {sortedBrands.map(
                           ({
                             image,
                             name,
@@ -1771,10 +1786,12 @@ export const indexPageQuery = graphql`
       }
     }
     brands: allSanityBrand(
-      limit: 15
       filter: {
         tags: { regex: "/vehicle/" }
         logo: { svg: { _type: { eq: "image" } } }
+        name: {
+          in: ["Kia", "Lexus", "Toyota", "Ford", "Chevy", "Jeep", "Hyundai"]
+        }
       }
     ) {
       nodes {
