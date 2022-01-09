@@ -118,8 +118,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             m: 'auto',
             position: 'relative',
             zIndex: '999',
-            borderRadius: expanded ? [0, '16px'] : '0',
-            overflow: expanded ? 'hidden' : 'visible'
+            borderRadius: expanded ? [0, '16px'] : '16px',
+            overflow: 'hidden'
           }}
         >
           <Card {...(expanded ? OverlayProps : props)}>

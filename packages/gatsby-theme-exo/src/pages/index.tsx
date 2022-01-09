@@ -1555,19 +1555,11 @@ const Index = ({ data }) => {
               radius="16px"
               image={tradeIn}
               alt="hety"
-              imageSx={
-                expanded
-                  ? {
-                      position: 'absolute',
-                      top: '0',
-                      left: '0',
-                      width: '100%',
-                      height: '100%'
-                    }
-                  : {
-                      maxHeight: '198px'
-                    }
-              }
+              imageSx={{
+                maxHeight: '198px',
+                borderTopRightRadius: '16px',
+                borderTopLeftRadius: '16px'
+              }}
               cardStyles={{
                 height: '415px',
                 minHeight: '415px'
