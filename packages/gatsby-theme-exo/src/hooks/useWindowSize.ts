@@ -12,8 +12,10 @@ const getDeviceType = (
 ): { [key: string]: () => boolean } => {
   return {
     sm: () => windowWidth <= 768,
-    md: () => windowWidth > 768 && windowWidth <= 1112,
-    lg: () => windowWidth > 1112,
+    md: () => windowWidth > 768 && windowWidth <= 1023,
+    lg: () => windowWidth > 1023 && windowWidth <= 1279,
+    xl: () => windowWidth > 1279 && windowWidth <= 1535,
+    xxl: () => windowWidth > 1535,
 
     mobilePortrait: () => windowWidth >= 320 && windowWidth <= 414,
     mobileLandscape: () => windowWidth >= 568 && windowWidth <= 812,

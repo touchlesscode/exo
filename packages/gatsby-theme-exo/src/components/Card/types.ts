@@ -29,6 +29,7 @@ export type ExpandableCardProps = CardProps & {
   CloseIcon?: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
   expandTo?: ExpandToType;
   parentRef?: React.MutableRefObject<HTMLDivElement>;
+  parentStyles?: ThemeUIStyleObject;
 };
 
 export type ExpandToType = {

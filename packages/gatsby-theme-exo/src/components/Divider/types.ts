@@ -1,12 +1,12 @@
 import { DividerProps as ThemeDividerProps } from 'theme-ui';
 
-interface DividerProps extends ThemeDividerProps {
+interface DividerProps extends Omit<ThemeDividerProps, 'color'> {
   visible?: boolean;
   variant?: string;
-  width?: string;
+  width?: string | NonEmptyArray<string>;
   height?: string;
-  color?: string;
+  color?: string | NonEmptyArray<string>;
   justify?: 'left' | 'right';
-  space?: string;
+  space?: string | NonEmptyArray<string>;
 }
 export default DividerProps;

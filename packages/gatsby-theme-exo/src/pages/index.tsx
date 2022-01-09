@@ -1,3 +1,6 @@
+import React, { useRef, useState } from 'react';
+import { graphql, navigate } from 'gatsby';
+import { Box, Grid, Image, Text, Theme } from 'theme-ui';
 import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
@@ -10,15 +13,13 @@ import ListDivided from '@exoTheme/components/ListDivided';
 import TextBlock from '@exoTheme/components/TextBlock';
 import SlimArrow from '@exoTheme/images/development/slim-arrow.inline.svg';
 import { slideUp } from '@exoTheme/theme/animations';
-import { graphql } from 'gatsby';
-import React, { useRef } from 'react';
-import { Box, Theme } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImageBg from '@exoTheme/components/GatsbyImageBg';
 import Slider from '@exoTheme/components/Slider';
 import CardWithImage from '@exoTheme/components/Card/variants/CardWithImage';
 import useWindowSize from '@exoTheme/hooks/useWindowSize';
-
+import Review from '@exoTheme/components/Review';
+import CardWithOptions from '@exoTheme/components/Card/variants/CardWithOptions';
 const badges = [
   'Electric Cars',
   'Family Cars',
@@ -33,19 +34,48 @@ const badges = [
 //   '4.8 - star rating across 100, 000 + reviews'
 // ];
 // @ts-ignore
-const Index = ({ data }) => {
-  const popularityParentRef =
-    useRef() as React.MutableRefObject<HTMLDivElement>;
-  const servicesParentRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const tradeParentRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const popularityRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const servicesRef = useRef() as React.MutableRefObject<HTMLDivElement>;
-  const tradeRef = useRef() as React.MutableRefObject<HTMLDivElement>;
 
-  const isMobile =
-    typeof window !== 'undefined' ? useWindowSize().type === 'sm' : true;
-  const [expanded, setexpanded] = React.useState(false);
-  const [active, setActive] = React.useState(0);
+// Options Icons
+import phone from '@exoTheme/images/icons/phone.svg';
+import mobile from '@exoTheme/images/icons/mobile.svg';
+import walkaround from '@exoTheme/images/icons/walkaround.svg';
+import inHome from '@exoTheme/images/icons/in_home.svg';
+import support from '@exoTheme/images/icons/support.svg';
+import exchange from '@exoTheme/images/icons/exchange.svg';
+import history from '@exoTheme/images/icons/history.svg';
+import insurance from '@exoTheme/images/icons/insurance.svg';
+import financing from '@exoTheme/images/icons/financing.svg';
+import vote from '@exoTheme/images/icons/vote.svg';
+import language from '@exoTheme/images/icons/language.svg';
+import employee from '@exoTheme/images/icons/employee.svg';
+import rating from '@exoTheme/images/icons/rating.svg';
+
+const Index = ({ data }) => {
+  const [
+    brandParentRef,
+    brandRef,
+    bodyPrentRef,
+    bodyRef,
+    popularityParentRef,
+    popularityRef,
+    servicesParentRef,
+    servicesRef,
+    carouselParentRef0,
+    carouselRef0,
+    carouselParentRef1,
+    carouselRef1,
+    carouselParentRef2,
+    carouselRef2
+  ] = Array.from(Array(14)).map(
+    () => useRef() as React.MutableRefObject<HTMLDivElement>
+  );
+  const isMobile = useWindowSize()?.type === 'sm';
+  const isTablet = useWindowSize()?.type === 'md';
+  const [expanded, setexpanded] = useState(false);
+  const [active, setActive] = useState(0);
+  const [showOptions, setShowOptions] = useState(false);
+  const [slideIndex, setSlideIndex] = useState(0);
+
   const {
     redCar,
     brands,
@@ -63,9 +93,10 @@ const Index = ({ data }) => {
   } = data;
 
   // @ts-ignore
-  const brandsImages = brands.nodes.map(({ logo }) => ({
+  const brandsImages = brands.nodes.map(({ logo, name }) => ({
     id: logo?.svg?.asset?.id,
-    image: logo?.svg?.asset
+    image: logo?.svg?.asset,
+    name: name
   }));
   const bodyTypeImages = [image1, image2, image3, image4, image5, image6].map(
     (type, idx) => ({
@@ -73,30 +104,52 @@ const Index = ({ data }) => {
       image: type
     })
   );
-  const carouselRefs = [
+  const carouselData = [
     {
       position: 'left',
-      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
-      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      parentRef: carouselParentRef0,
+      ref: carouselRef0,
       title: 'Shop Your Way',
       image: twoPeople,
-      list: [...badges, ...badges, ...badges]
+      actionText: 'Shop Now',
+      list: [
+        { title: 'Request a callback', icon: phone },
+        { title: 'Buy online or in-store', icon: mobile },
+        { title: 'Virtual walkaround videos/feature tours', icon: walkaround },
+        { title: 'In-home test drives', icon: inHome },
+        { title: '24/7 online support', icon: support }
+      ]
     },
     {
       position: 'center',
-      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
-      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      parentRef: carouselParentRef1,
+      ref: carouselRef1,
       title: 'Peace of Mind',
       image: twoPeople,
-      list: [...badges, ...badges, ...badges]
+      actionText: 'Read More',
+      list: [
+        { title: 'Exchange policy', icon: exchange },
+        { title: 'Free Vehicle History Report with all cars', icon: history },
+        {
+          title: 'Insurance and protection products available',
+          icon: insurance
+        },
+        { title: '0% financing for all services/repairs', icon: financing }
+      ]
     },
     {
       position: 'right',
-      parentRef: useRef() as React.MutableRefObject<HTMLDivElement>,
-      ref: useRef() as React.MutableRefObject<HTMLDivElement>,
+      parentRef: carouselParentRef2,
+      ref: carouselRef2,
       title: 'Our People',
       image: twoPeople,
-      list: [...badges, ...badges, ...badges]
+      actionText: 'Meet Our Team',
+      list: [
+        { title: 'Voted best places to work (11 years in a row)', icon: vote },
+        { title: 'languages spoken', icon: language },
+        { title: 'Average employee tenure 10+ years', icon: employee },
+        { title: 'rating across 100,000+ reviews', icon: rating }
+      ]
     }
   ];
   return (
@@ -214,168 +267,22 @@ const Index = ({ data }) => {
           justifyContent: 'center',
           alignItems: 'center',
           pt: [8, 0],
+          pb: '100px',
           gap: 8,
           width: '100%',
           maxWidth: ['100%', '971px'],
           mx: 'auto',
-          mt: [null, '-100px'],
-          pb: '100px'
+          mt: [null, '-100px']
         }}
       >
-        <Flex direction={['column', 'row']} gap={8}>
-          <CardWithSlidingHeader
-            options={{
-              renderMode: 'performance',
-              rubberband: false,
-              loop: true,
-              disabled: false,
-              slides: {
-                perView: 4,
-                spacing: 0
-              },
-              drag: true,
-              breakpoints: {
-                '(min-width: 768.02px)': {
-                  slides: {
-                    perView: 4.5,
-                    spacing: 0
-                  }
-                }
-              }
-            }}
-            sliderParent={{ pl: ['0', '20px'], pointerEvents: 'none' }}
-            slideStyles={{
-              maxHeight: '53px',
-              height: '100%',
-              width: 'auto',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center'
-            }}
-            cardStyles={{
-              bg: 'white',
-              borderRadius: '16px',
-              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-              width: '100%',
-              maxWidth: ['366px', '471px'],
-              height: '100%',
-              minHeight: ['216px', '225px']
-            }}
-            content={{
-              heading: 'Shop by brand',
-              text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
-              headingProps: {
-                as: 'h4',
-                sx: {
-                  fontFamily: 'Poppins',
-                  fontStyle: 'normal',
-                  fontWeight: 'bold',
-                  fontSize: '20px',
-                  lineHeight: '30px',
-                  letterSpacing: '-0.02em',
-                  color: '#151F2A',
-                  mb: 2
-                }
-              }
-            }}
-          >
-            {brandsImages.map(
-              ({ image, id }: { image: IGatsbyImageData; id: string }) => (
-                <GatsbyImage
-                  key={id}
-                  image={image}
-                  alt="test"
-                  objectFit="contain"
-                  sx={{
-                    height: 'auto',
-                    maxHeight: '100%',
-                    width: '100%',
-                    maxWidth: '73px'
-                  }}
-                />
-              )
-            )}
-          </CardWithSlidingHeader>
-          <CardWithSlidingHeader
-            options={{
-              renderMode: 'performance',
-              rubberband: false,
-              loop: true,
-              disabled: false,
-              slides: {
-                perView: 3,
-                spacing: 10
-              },
-              drag: true,
-              breakpoints: {
-                '(min-width: 768.02px)': {
-                  slides: {
-                    perView: 3.5,
-                    spacing: 10
-                  }
-                }
-              }
-            }}
-            sliderParent={{ pl: ['0', '10px'], pointerEvents: 'none' }}
-            slideStyles={{
-              height: '65px',
-              width: 'auto',
-              m: 'auto'
-            }}
-            cardStyles={{
-              bg: ['#FCF7EA', 'white'],
-              borderRadius: '16px',
-              boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-              width: '100%',
-              maxWidth: ['366px', '471px'],
-              height: '100%',
-              minHeight: ['216px', '225px']
-            }}
-            content={{
-              heading: 'Shop by body type',
-              text: 'Some descriptive text about choosing a body type to fit your needs.',
-              headingProps: {
-                as: 'h4',
-                sx: {
-                  fontFamily: 'Poppins',
-                  fontStyle: 'normal',
-                  fontWeight: 'bold',
-                  fontSize: '20px',
-                  lineHeight: '30px',
-                  letterSpacing: '-0.02em',
-                  color: '#151F2A',
-                  mb: 2
-                }
-              }
-            }}
-          >
-            {bodyTypeImages.map(
-              ({ image, id }: { image: IGatsbyImageData; id: string }) => (
-                <GatsbyImage
-                  key={id}
-                  image={image}
-                  alt="test"
-                  objectFit="cover"
-                  sx={{
-                    height: '100%',
-                    maxHeight: '100%',
-                    width: 'auto'
-                  }}
-                />
-              )
-            )}
-          </CardWithSlidingHeader>
-        </Flex>
-        <Box
-          sx={{
-            width: ['90%', '100%'],
-            height: ['400px', '200px'],
-            position: 'relative'
-          }}
+        <Flex
+          direction={['column', 'row']}
+          gap={8}
+          sx={{ px: ['1.5rem', '1.5rem', 0], width: '100%' }}
         >
           <ExpandableCard
-            parentRef={popularityParentRef}
-            ref={popularityRef}
+            parentRef={brandParentRef}
+            ref={brandRef}
             elevated
             radius="16px"
             expanded={expanded && active === 1}
@@ -387,14 +294,483 @@ const Index = ({ data }) => {
               setActive(0);
               setexpanded(false);
             }}
+            bg="white"
+            parentStyles={{
+              minHeight: ['216px', '225px'],
+              marginRight: [0, 0, 'auto'],
+              marginBottom: ['auto', 'auto', 0]
+            }}
+          >
+            <Box
+              sx={{
+                pt: 0,
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              {!expanded && (
+                <CardWithSlidingHeader
+                  options={{
+                    renderMode: 'performance',
+                    rubberband: false,
+                    loop: true,
+                    disabled: false,
+                    slides: {
+                      perView: 4,
+                      spacing: 0
+                    },
+                    drag: true,
+                    breakpoints: {
+                      '(min-width: 768.02px)': {
+                        slides: {
+                          perView: 4.5,
+                          spacing: 0
+                        }
+                      }
+                    }
+                  }}
+                  sliderParent={{ pl: ['0', '20px'], pointerEvents: 'none' }}
+                  slideStyles={{
+                    maxHeight: '53px',
+                    height: '100%',
+                    width: 'auto',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center'
+                  }}
+                  cardStyles={{
+                    bg: 'white',
+                    borderRadius: '16px',
+                    boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+                    width: '100%',
+                    maxWidth: ['366px', '471px'],
+                    height: '100%',
+                    minHeight: ['216px', '225px']
+                  }}
+                  content={{
+                    heading: 'Shop by brand',
+                    text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
+                    headingProps: {
+                      as: 'h4',
+                      sx: {
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
+                        fontWeight: 'bold',
+                        fontSize: '20px',
+                        lineHeight: '30px',
+                        letterSpacing: '-0.02em',
+                        color: '#151F2A',
+                        mb: 2
+                      }
+                    }
+                  }}
+                >
+                  {brandsImages.map(
+                    ({
+                      image,
+                      id
+                    }: {
+                      image: IGatsbyImageData;
+                      id: string;
+                    }) => (
+                      <GatsbyImage
+                        key={id}
+                        image={image}
+                        alt="test"
+                        objectFit="contain"
+                        sx={{
+                          height: 'auto',
+                          maxHeight: '100%',
+                          width: '100%',
+                          maxWidth: '73px'
+                        }}
+                      />
+                    )
+                  )}
+                </CardWithSlidingHeader>
+              )}
+              {expanded && active === 1 ? (
+                <>
+                  <Flex
+                    direction="column"
+                    justify="flex-end"
+                    sx={{
+                      px: 6,
+                      pt: expanded && active === 1 ? ['219px', 6] : [8, 6],
+                      pb: 8,
+                      position: 'relative',
+                      zIndex: 2,
+                      height: ['296px', '296px'],
+                      minHeight: ['296px', '296px']
+                    }}
+                  >
+                    {expanded ? (
+                      <Box
+                        sx={{
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          height: '100%',
+                          width: '100%',
+                          pointerEvents: 'none',
+                          zIndex: '999999999',
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                        }}
+                      ></Box>
+                    ) : null}
+
+                    <TextBlock
+                      heading={'Shop by brand'}
+                      headingProps={{
+                        withLine: true,
+                        line: {
+                          align: 'top',
+                          space: '2',
+                          width: '120%',
+                          color: '#ffffff'
+                        },
+                        sx: {
+                          mb: 2,
+                          color: '#ffffff',
+                          fontFamily: 'Poppins',
+                          fontStyle: 'normal',
+                          fontWeight: '600',
+                          fontSize: '20px',
+                          lineHeight: '25px',
+                          letterSpacing: '-0.02em',
+                          zIndex: '999'
+                        }
+                      }}
+                    />
+                    <GatsbyImage
+                      image={twoPeople}
+                      alt="Shop by brand"
+                      objectFit="cover"
+                      sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%,-50%)',
+                        height: '100%',
+                        width: '100%',
+                        zIndex: 0
+                      }}
+                    />
+                  </Flex>
+                  <Box
+                    sx={{
+                      bg: '#242951',
+                      position: 'relative',
+                      zIndex: 2,
+                      overflow: 'auto',
+                      flexGrow: 1,
+                      '&::-webkit-scrollbar': {
+                        width: '0',
+                        backgroundColor: 'transparent'
+                      },
+                      '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'transparent',
+                        outline: 'unset'
+                      }
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        px: 6,
+                        py: 8,
+                        background: '#242951',
+                        opacity: 0,
+                        animation: `${slideUp} 200ms 200ms forwards`
+                      }}
+                    >
+                      <ListDivided>
+                        {brandsImages.map(
+                          ({
+                            image,
+                            name,
+                            id
+                          }: {
+                            image: IGatsbyImageData;
+                            name: string;
+                            id: string;
+                          }) => (
+                            <ImageWithLabel
+                              key={id}
+                              image={image}
+                              label={name}
+                              alt="brandsImages"
+                              imageVariant="rounded"
+                            />
+                          )
+                        )}
+                      </ListDivided>
+                    </Box>
+                  </Box>
+                </>
+              ) : null}
+            </Box>
+          </ExpandableCard>
+
+          <ExpandableCard
+            parentRef={bodyPrentRef}
+            ref={bodyRef}
+            elevated
+            radius="16px"
+            expanded={expanded && active === 2}
+            onClick={() => {
+              setActive(2);
+              setexpanded(true);
+            }}
+            onClose={() => {
+              setActive(0);
+              setexpanded(false);
+            }}
+            bg="white"
+            parentStyles={{
+              minHeight: ['216px', '225px'],
+              marginLeft: [0, 0, 'auto'],
+              marginTop: ['auto', 'auto', 0]
+            }}
+          >
+            <Box
+              sx={{
+                pt: 0,
+                height: '100%',
+                display: 'flex',
+                flexDirection: 'column'
+              }}
+            >
+              {!expanded && (
+                <CardWithSlidingHeader
+                  options={{
+                    renderMode: 'performance',
+                    rubberband: false,
+                    loop: true,
+                    disabled: false,
+                    slides: {
+                      perView: 3,
+                      spacing: 10
+                    },
+                    drag: true,
+                    breakpoints: {
+                      '(min-width: 768.02px)': {
+                        slides: {
+                          perView: 3.5,
+                          spacing: 10
+                        }
+                      }
+                    }
+                  }}
+                  sliderParent={{ pl: ['0', '10px'], pointerEvents: 'none' }}
+                  slideStyles={{
+                    height: '65px',
+                    width: 'auto',
+                    m: 'auto'
+                  }}
+                  cardStyles={{
+                    bg: ['#FCF7EA', 'white'],
+                    borderRadius: '16px',
+                    boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+                    width: '100%',
+                    maxWidth: ['366px', '471px'],
+                    height: '100%',
+                    minHeight: ['216px', '225px']
+                  }}
+                  content={{
+                    heading: 'Shop by body type',
+                    text: 'Some descriptive text about choosing a body type to fit your needs.',
+                    headingProps: {
+                      as: 'h4',
+                      sx: {
+                        fontFamily: 'Poppins',
+                        fontStyle: 'normal',
+                        fontWeight: 'bold',
+                        fontSize: '20px',
+                        lineHeight: '30px',
+                        letterSpacing: '-0.02em',
+                        color: '#151F2A',
+                        mb: 2
+                      }
+                    }
+                  }}
+                >
+                  {bodyTypeImages.map(
+                    ({
+                      image,
+                      id
+                    }: {
+                      image: IGatsbyImageData;
+                      id: string;
+                    }) => (
+                      <GatsbyImage
+                        key={id}
+                        image={image}
+                        alt="test"
+                        objectFit="cover"
+                        sx={{
+                          height: '100%',
+                          maxHeight: '100%',
+                          width: 'auto'
+                        }}
+                      />
+                    )
+                  )}
+                </CardWithSlidingHeader>
+              )}
+              {expanded && active === 2 ? (
+                <>
+                  <Flex
+                    direction="column"
+                    justify="flex-end"
+                    sx={{
+                      px: 6,
+                      pt: expanded && active === 2 ? ['219px', 6] : [8, 6],
+                      pb: 8,
+                      position: 'relative',
+                      zIndex: 2,
+                      height: ['296px', '296px'],
+                      minHeight: ['296px', '296px']
+                    }}
+                  >
+                    {expanded ? (
+                      <Box
+                        sx={{
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          height: '100%',
+                          width: '100%',
+                          pointerEvents: 'none',
+                          zIndex: '999999999',
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                        }}
+                      ></Box>
+                    ) : null}
+                    <TextBlock
+                      heading={'Shop by body type'}
+                      headingProps={{
+                        withLine: true,
+                        line: {
+                          align: 'top',
+                          space: '2',
+                          width: '120%',
+                          color: '#ffffff'
+                        },
+                        sx: {
+                          mb: 2,
+                          color: '#ffffff',
+                          fontFamily: 'Poppins',
+                          fontStyle: 'normal',
+                          fontWeight: '600',
+                          fontSize: '20px',
+                          lineHeight: '25px',
+                          letterSpacing: '-0.02em',
+                          zIndex: '999'
+                        }
+                      }}
+                    />
+                    <GatsbyImage
+                      image={twoPeople}
+                      alt="Shop by brand"
+                      objectFit="cover"
+                      sx={{
+                        position: 'absolute',
+                        top: '50%',
+                        left: '50%',
+                        transform: 'translate(-50%,-50%)',
+                        height: '100%',
+                        width: '100%',
+                        zIndex: 0
+                      }}
+                    />
+                  </Flex>
+                  <Box
+                    sx={{
+                      bg: '#242951',
+                      position: 'relative',
+                      zIndex: 2,
+                      overflow: 'auto',
+                      flexGrow: 1,
+                      '&::-webkit-scrollbar': {
+                        width: '0',
+                        backgroundColor: 'transparent'
+                      },
+                      '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'transparent',
+                        outline: 'unset'
+                      }
+                    }}
+                  >
+                    <Box
+                      sx={{
+                        px: 6,
+                        py: 8,
+                        background: '#242951',
+                        opacity: 0,
+                        animation: `${slideUp} 200ms 200ms forwards`
+                      }}
+                    >
+                      <ListDivided>
+                        {bodyTypeImages.map(
+                          ({
+                            image,
+
+                            id
+                          }: {
+                            image: IGatsbyImageData;
+
+                            id: string;
+                          }) => (
+                            <ImageWithLabel
+                              key={id}
+                              image={image}
+                              label={'body type'}
+                              alt="brandsImages"
+                              imageVariant="rounded"
+                            />
+                          )
+                        )}
+                      </ListDivided>
+                    </Box>
+                  </Box>
+                </>
+              ) : null}
+            </Box>
+          </ExpandableCard>
+        </Flex>
+        <Box
+          sx={{
+            width: '100%',
+            px: ['1.5rem', '1.5rem', 0],
+            height: ['400px', '200px'],
+            position: 'relative'
+          }}
+        >
+          <ExpandableCard
+            parentRef={popularityParentRef}
+            ref={popularityRef}
+            elevated
+            radius="16px"
+            expanded={expanded && active === 10}
+            onClick={() => {
+              setActive(10);
+              setexpanded(true);
+            }}
+            onClose={() => {
+              setActive(0);
+              setexpanded(false);
+            }}
             overlayed
             overlay={
-              expanded && active === 1
+              expanded && active === 10
                 ? {
                     colors: [
                       {
                         direction: 'to bottom',
-                        linear: ['transparent', 'red', 'transparent']
+                        linear: ['transparent', 'transparent', 'transparent']
                       },
                       {
                         direction: 'to bottom',
@@ -432,16 +808,16 @@ const Index = ({ data }) => {
             >
               <Card
                 elevated
-                radius={expanded && active === 1 ? '0' : '16px'}
+                radius={expanded && active === 10 ? '0' : '16px'}
                 overlayed
                 cardStyles={{
                   height:
-                    expanded && active === 1 ? ['296px', '296px'] : '100%',
+                    expanded && active === 10 ? ['296px', '296px'] : '100%',
                   minHeight:
-                    expanded && active === 1 ? ['296px', '296px'] : '100%'
+                    expanded && active === 10 ? ['296px', '296px'] : '100%'
                 }}
                 overlay={
-                  expanded && active === 1
+                  expanded && active === 10
                     ? {
                         zIndex: 1,
                         colors: [
@@ -455,7 +831,8 @@ const Index = ({ data }) => {
                           }
                         ]
                       }
-                    : {
+                    : !expanded && isMobile
+                    ? {
                         zIndex: 1,
                         colors: [
                           {
@@ -468,6 +845,15 @@ const Index = ({ data }) => {
                           }
                         ]
                       }
+                    : {
+                        sx: {
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
+                          backgroundColor: 'transparent',
+                          zIndex: '99',
+                          pointerEvents: 'none'
+                        }
+                      }
                 }
               >
                 <Flex
@@ -475,9 +861,9 @@ const Index = ({ data }) => {
                     flexDirection: ['column', 'row'],
                     width: '100%',
                     height:
-                      expanded && active === 1 ? ['296px', '296px'] : '100%',
+                      expanded && active === 10 ? ['296px', '296px'] : '100%',
                     justifyContent:
-                      expanded && active === 1 ? 'start' : 'space-between'
+                      expanded && active === 10 ? 'start' : 'space-between'
                     // bg: 'black'
                   }}
                 >
@@ -510,11 +896,11 @@ const Index = ({ data }) => {
                       sx={{
                         color: 'white',
                         position:
-                          expanded && active === 1 ? 'absolute' : 'static',
-                        pt: expanded && active === 1 ? ['219px', 0] : [8, 0]
+                          expanded && active === 10 ? 'absolute' : 'static',
+                        pt: expanded && active === 10 ? ['219px', 0] : [8, 0]
                       }}
                     />
-                    {!expanded && active !== 1 && (
+                    {!expanded && active !== 10 && (
                       <Flex
                         sx={{
                           flexWrap: 'wrap',
@@ -552,7 +938,7 @@ const Index = ({ data }) => {
                     alt="test"
                     sx={{
                       position: 'relative',
-                      height: 'auto',
+                      height: [`${expanded ? '100%' : '70%'}`, 'auto'],
                       zIndex: '0',
                       top: 0,
                       transition: 'all 5000ms'
@@ -560,7 +946,7 @@ const Index = ({ data }) => {
                   />
                 </Flex>
               </Card>
-              {expanded && active === 1 ? (
+              {expanded && active === 10 ? (
                 <Box
                   sx={{
                     bg: '#242951',
@@ -608,7 +994,7 @@ const Index = ({ data }) => {
         <Box
           sx={{
             width: '100%',
-            // height: ['400px', '200px'],
+            px: ['0', '0', '0'],
             position: 'relative'
           }}
         >
@@ -632,219 +1018,369 @@ const Index = ({ data }) => {
             }}
             sx={{
               mb: 20,
-              display: ['none', 'block']
+              display: ['none', 'block'],
+              pl: ['1.5rem', '1.5rem', '1.5rem']
             }}
           />
-          <Slider
-            options={{
-              renderMode: 'performance',
-              disabled: false,
-              loop: false,
-              initial: 1,
-              slides: {
-                perView: 1.15,
-                spacing: 16,
-                origin: 'center'
-              },
-              drag: expanded || !isMobile ? false : true,
-              breakpoints: {
-                '(min-width: 768.02px)': {
-                  initial: 1,
-                  slides: {
-                    perView: 3,
-                    spacing: 16,
-                    origin: 'auto'
-                  }
-                }
-              }
-            }}
-            slideStyles={{
-              height: '100%',
+          <Box
+            sx={{
+              position: 'relative',
               width: '100%',
-              borderRadius: '16px',
-              cursor: 'pointer'
+              minHeight: '332px',
+              height: ['332px', '332px'],
+              overflow: 'hidden',
+              borderRadius: 16
             }}
-            sliderItem={
-              expanded
-                ? { transform: 'unset!important', borderRadius: '0' }
-                : { borderRadius: '16px' }
-            }
           >
-            {carouselRefs.map((item, index) => (
-              <Box
-                key={index}
-                sx={{
-                  width: '100%',
-                  minHeight: '332px',
-                  height: ['332px', '332px']
-                }}
-              >
-                <ExpandableCard
-                  parentRef={item.parentRef}
-                  ref={item.ref}
-                  elevated
-                  radius="16px"
-                  expanded={expanded && active === index + 100}
-                  onClick={() => {
-                    setActive(index + 100);
-                    setexpanded(true);
-                  }}
-                  onClose={() => {
-                    setActive(0);
-                    setexpanded(false);
-                  }}
-                >
-                  <Box
-                    style={{
-                      display: 'flex',
-                      flexDirection: 'column',
+            <CardWithOptions
+              show={showOptions}
+              onClose={() => {
+                setTimeout(() => setShowOptions(false), 0);
+                setTimeout(() => setSlideIndex(0), 250);
+              }}
+              origin={
+                slideIndex === 1
+                  ? 'left'
+                  : slideIndex === 2
+                  ? 'center'
+                  : slideIndex === 3
+                  ? 'right'
+                  : ''
+              }
+              cardStyles={{
+                padding: '43px'
+              }}
+            >
+              {carouselData.map((item, idx) =>
+                slideIndex === idx + 1 ? (
+                  <Flex
+                    key={idx}
+                    sx={{
                       height: '100%',
-                      justifyContent: 'start'
+                      flexDirection: 'column',
+                      justifyContent: 'center'
                     }}
                   >
-                    <Card
-                      elevated
-                      radius={expanded && active === index + 100 ? '0' : '16px'}
-                      overlayed
-                      cardStyles={{
-                        height:
-                          expanded && active === index + 100
-                            ? ['296px', '296px']
-                            : '100%',
-                        minHeight:
-                          expanded && active === index + 100
-                            ? ['296px', '296px']
-                            : '100%'
-                      }}
-                      overlay={{
-                        colors: [
-                          {
-                            direction: '0deg',
-                            linear: [
-                              '#252A53 0%',
-                              'rgba(37, 42, 83, 0) 100%',
-                              'transparent 30%'
-                            ]
-                          }
-                        ],
-                        sx: {
-                          backgroundImage:
-                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
-                          backgroundColor: 'transparent',
-                          zIndex: '99',
-                          pointerEvents: 'none'
-                        }
+                    <Flex
+                      sx={{
+                        justifyContent: 'space-between'
                       }}
                     >
                       <Flex
-                        direction="column"
-                        justify="flex-end"
+                        key={idx}
                         sx={{
-                          px: 6,
-                          pt:
-                            expanded && active === index + 100
-                              ? ['219px', 6]
-                              : [8, 6],
-                          pb: 8,
-                          height: '100%',
-                          position: 'relative',
-                          zIndex: 2,
-                          backgroundImage:
-                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                          justifyContent: 'space-between',
+                          m: 'auto 0',
+                          width: '100%'
                         }}
                       >
-                        <TextBlock
-                          heading={item.title}
-                          headingProps={{
-                            withLine: true,
-                            line: {
-                              align: 'top',
-                              space: '2',
-                              width: '120%',
-                              color: '#ffffff'
-                            },
-                            sx: {
-                              mb: 2,
-                              color: '#ffffff',
-                              fontFamily: 'Poppins',
-                              fontStyle: 'normal',
-                              fontWeight: '600',
-                              fontSize: '20px',
-                              lineHeight: '25px',
-                              letterSpacing: '-0.02em',
-                              zIndex: '999'
-                            }
-                          }}
-                        />
-                        <GatsbyImage
-                          image={item.image}
-                          alt="why koons"
-                          objectFit="cover"
-                          sx={{
-                            position: 'absolute',
-                            top: '50%',
-                            left: '50%',
-                            transform: 'translate(-50%,-50%)',
-                            height: '100%',
-                            width: '100%',
-                            zIndex: 0
-                          }}
-                        />
+                        {item.list.map((option, index) => (
+                          <Flex
+                            key={index}
+                            sx={{
+                              flexDirection: 'column',
+                              justifyContent: 'flex-start'
+                            }}
+                          >
+                            <Box
+                              sx={{
+                                height: '60px'
+                              }}
+                            >
+                              <Image
+                                src={option.icon}
+                                alt={option.title}
+                                sx={{ m: '0 auto 10px', display: 'block' }}
+                              />
+                              {/* <GatsbyImage
+                            image={item.image}
+                            alt="why koons"
+                            objectFit="cover"
+                            sx={{
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%,-50%)',
+                              height: '100%',
+                              width: '100%',
+                              zIndex: 0
+                            }}
+                          /> */}
+                            </Box>
+                            <Text
+                              sx={{
+                                fontFamily: 'Poppins',
+                                fontStyle: 'normal',
+                                fontWeight: '500',
+                                fontSize: '16px',
+                                lineHeight: '22px',
+                                textAlign: 'center',
+                                letterSpacing: '-0.01em',
+                                color: '#FFFFFF',
+                                minWidth: '80px'
+                              }}
+                            >
+                              {option.title}
+                            </Text>
+                          </Flex>
+                        ))}
                       </Flex>
-                    </Card>
-                    {expanded && active === index + 100 ? (
-                      <Box
+                      <Button
+                        bg="primaryNavy"
                         sx={{
-                          bg: '#242951',
-                          position: 'relative',
-                          zIndex: 2,
-                          overflow: 'auto',
-                          flexGrow: 1,
-                          '&::-webkit-scrollbar': {
-                            width: '0',
-                            backgroundColor: 'transparent'
+                          fontFamily: 'Poppins',
+                          fontStyle: 'normal',
+                          fontWeight: '500',
+                          fontSize: '15px',
+                          lineHeight: '24px',
+                          display: 'flex',
+                          alignItems: 'center',
+                          textAlign: 'center',
+                          color: '#FFFFFF',
+                          width: '126px',
+                          height: '32px',
+                          m: 'auto 0 auto 50px',
+                          background: '#3A5F96',
+                          borderRadius: '10px',
+                          whiteSpace: 'nowrap',
+                          px: '12px',
+                          minWidth: 'max-content',
+                          '&:hover': {
+                            bg: 'primaryBlue'
                           },
-                          '&::-webkit-scrollbar-thumb': {
-                            backgroundColor: 'transparent',
-                            outline: 'unset'
+                          '&:focus': {
+                            bg: 'primarySkyBlue'
                           }
                         }}
                       >
-                        <Box
+                        {item.actionText}
+                      </Button>
+                    </Flex>
+                  </Flex>
+                ) : null
+              )}
+            </CardWithOptions>
+            <Slider
+              options={{
+                renderMode: 'performance',
+                disabled: false,
+                loop: false,
+                initial: 1,
+                slides: {
+                  perView: 1.15,
+                  spacing: 16,
+                  origin: 'center'
+                },
+                drag: expanded || !isMobile ? false : true,
+                breakpoints: {
+                  '(min-width: 768.02px)': {
+                    initial: 1,
+                    slides: {
+                      perView: 3,
+                      spacing: 16,
+                      origin: 'auto'
+                    }
+                  }
+                }
+              }}
+              slideStyles={{
+                height: '100%',
+                width: '100%',
+                borderRadius: '16px',
+                cursor: 'pointer'
+              }}
+              sliderItem={
+                expanded
+                  ? { transform: 'unset!important', borderRadius: '0' }
+                  : { borderRadius: '16px' }
+              }
+            >
+              {carouselData.map((item, index) => (
+                <Box
+                  key={index}
+                  sx={{
+                    width: '100%',
+                    minHeight: '332px',
+                    height: ['332px', '332px']
+                  }}
+                >
+                  <ExpandableCard
+                    parentRef={item.parentRef}
+                    ref={item.ref}
+                    elevated
+                    radius="16px"
+                    expanded={expanded && active === index + 100}
+                    onClick={
+                      isMobile
+                        ? () => {
+                            setActive(index + 100);
+                            setexpanded(true);
+                          }
+                        : () => {
+                            setShowOptions(true);
+                            setSlideIndex(index + 1);
+                          }
+                    }
+                    onClose={() => {
+                      setActive(0);
+                      setexpanded(false);
+                    }}
+                  >
+                    <Box
+                      style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        height: '100%',
+                        justifyContent: 'start'
+                      }}
+                    >
+                      <Card
+                        elevated
+                        radius={
+                          expanded && active === index + 100 ? '0' : '16px'
+                        }
+                        overlayed
+                        cardStyles={{
+                          height:
+                            expanded && active === index + 100
+                              ? ['296px', '296px']
+                              : '100%',
+                          minHeight:
+                            expanded && active === index + 100
+                              ? ['296px', '296px']
+                              : '100%'
+                        }}
+                        overlay={{
+                          colors: [
+                            {
+                              direction: '0deg',
+                              linear: [
+                                '#252A53 0%',
+                                'rgba(37, 42, 83, 0) 100%',
+                                'transparent 30%'
+                              ]
+                            }
+                          ],
+                          sx: {
+                            backgroundImage:
+                              'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
+                            backgroundColor: 'transparent',
+                            zIndex: '99',
+                            pointerEvents: 'none'
+                          }
+                        }}
+                      >
+                        <Flex
+                          direction="column"
+                          justify="flex-end"
                           sx={{
                             px: 6,
-                            py: 8,
-                            background: '#242951',
-                            opacity: 0,
-                            animation: `${slideUp} 200ms 200ms forwards`
+                            pt:
+                              expanded && active === index + 100
+                                ? ['219px', 6]
+                                : [8, 6],
+                            pb: 8,
+                            height: '100%',
+                            position: 'relative',
+                            zIndex: 2,
+                            backgroundImage:
+                              'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
                           }}
                         >
-                          <ListDivided>
-                            {item.list.map((badge, idx) => (
-                              <ImageWithLabel
-                                key={idx}
-                                image={redCar}
-                                label={badge}
-                                alt="electric"
-                                labelStyle={{ color: 'white' }}
-                                imageVariant="rounded"
-                              />
-                            ))}
-                          </ListDivided>
+                          <TextBlock
+                            heading={item.title}
+                            headingProps={{
+                              withLine: true,
+                              line: {
+                                align: 'top',
+                                space: '2',
+                                width: '120%',
+                                color: '#ffffff'
+                              },
+                              sx: {
+                                mb: 2,
+                                color: '#ffffff',
+                                fontFamily: 'Poppins',
+                                fontStyle: 'normal',
+                                fontWeight: '600',
+                                fontSize: '20px',
+                                lineHeight: '25px',
+                                letterSpacing: '-0.02em',
+                                zIndex: '999'
+                              }
+                            }}
+                          />
+                          <GatsbyImage
+                            image={item.image}
+                            alt="why koons"
+                            objectFit="cover"
+                            sx={{
+                              position: 'absolute',
+                              top: '50%',
+                              left: '50%',
+                              transform: 'translate(-50%,-50%)',
+                              height: '100%',
+                              width: '100%',
+                              zIndex: 0
+                            }}
+                          />
+                        </Flex>
+                      </Card>
+                      {expanded && active === index + 100 ? (
+                        <Box
+                          sx={{
+                            bg: '#242951',
+                            position: 'relative',
+                            zIndex: 2,
+                            overflow: 'auto',
+                            flexGrow: 1,
+                            '&::-webkit-scrollbar': {
+                              width: '0',
+                              backgroundColor: 'transparent'
+                            },
+                            '&::-webkit-scrollbar-thumb': {
+                              backgroundColor: 'transparent',
+                              outline: 'unset'
+                            }
+                          }}
+                        >
+                          <Box
+                            sx={{
+                              px: 6,
+                              py: 8,
+                              background: '#242951',
+                              opacity: 0,
+                              animation: `${slideUp} 200ms 200ms forwards`
+                            }}
+                          >
+                            <ListDivided>
+                              {badges.map((badge, idx) => (
+                                <ImageWithLabel
+                                  key={idx}
+                                  image={redCar}
+                                  label={badge}
+                                  alt="electric"
+                                  labelStyle={{ color: 'white' }}
+                                  imageVariant="rounded"
+                                />
+                              ))}
+                            </ListDivided>
+                          </Box>
                         </Box>
-                      </Box>
-                    ) : null}
-                  </Box>
-                </ExpandableCard>
-              </Box>
-            ))}
-          </Slider>
+                      ) : null}
+                    </Box>
+                  </ExpandableCard>
+                </Box>
+              ))}
+            </Slider>
+          </Box>
         </Box>
         <Flex
           gap="8"
           sx={{
             flexDirection: ['column', 'row'],
-            width: ['90%', '100%']
+            width: '100%',
+            px: ['1.5rem', '1.5rem', 0]
           }}
         >
           <Box
@@ -859,9 +1395,9 @@ const Index = ({ data }) => {
               ref={servicesRef}
               elevated
               radius="16px"
-              expanded={expanded && active === 2}
+              expanded={expanded && active === 11}
               onClick={() => {
-                setActive(2);
+                setActive(11);
                 setexpanded(true);
               }}
               onClose={() => {
@@ -879,13 +1415,13 @@ const Index = ({ data }) => {
               >
                 <Card
                   elevated
-                  radius={expanded && active === 2 ? '0' : '16px'}
+                  radius={expanded && active === 11 ? '0' : '16px'}
                   overlayed
                   cardStyles={{
                     height:
-                      expanded && active === 2 ? ['296px', '296px'] : '415px',
+                      expanded && active === 11 ? ['296px', '296px'] : '415px',
                     minHeight:
-                      expanded && active === 2 ? ['296px', '296px'] : '415px'
+                      expanded && active === 11 ? ['296px', '296px'] : '415px'
                   }}
                   overlay={{
                     colors: [
@@ -901,13 +1437,13 @@ const Index = ({ data }) => {
                     justify="space-between"
                     sx={{
                       px: 6,
-                      pt: expanded && active === 2 ? ['219px', 6] : [8, 6],
+                      pt: expanded && active === 11 ? ['219px', 6] : [8, 6],
                       pb: 8,
                       height: '100%',
                       position: 'relative',
                       zIndex: 2,
                       backgroundImage:
-                        expanded && active === 2
+                        expanded && active === 11
                           ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
                           : 'unset'
                     }}
@@ -939,16 +1475,16 @@ const Index = ({ data }) => {
                         position: 'absolute',
                         right: 0,
                         width: '80%',
-                        top: expanded && active === 2 ? '30%' : '50%',
+                        top: expanded && active === 11 ? '30%' : '50%',
                         transform: 'translateY(-50%)',
                         zIndex: 0,
                         pointerEvents: 'none'
                       }}
                     />
 
-                    {!expanded && active !== 2 && (
+                    {!expanded && active !== 11 && (
                       <Button
-                        bg="primaryNavy"
+                        bg="primaryBlue"
                         sx={{
                           '&:hover': {
                             bg: 'primaryBlue'
@@ -963,7 +1499,7 @@ const Index = ({ data }) => {
                     )}
                   </Flex>
                 </Card>
-                {expanded && active === 2 ? (
+                {expanded && active === 11 ? (
                   <Box
                     sx={{
                       bg: '#242951',
@@ -1014,172 +1550,165 @@ const Index = ({ data }) => {
               height: 'auto'
             }}
           >
-            <ExpandableCard
-              parentRef={tradeParentRef}
-              ref={tradeRef}
+            <CardWithImage
               elevated
               radius="16px"
-              expanded={expanded && active === 3}
-              onClick={() => {
-                setActive(3);
-                setexpanded(true);
+              image={tradeIn}
+              alt="hety"
+              imageSx={
+                expanded
+                  ? {
+                      position: 'absolute',
+                      top: '0',
+                      left: '0',
+                      width: '100%',
+                      height: '100%'
+                    }
+                  : {
+                      maxHeight: '198px'
+                    }
+              }
+              cardStyles={{
+                height: '415px',
+                minHeight: '415px'
               }}
-              onClose={() => {
-                setActive(0);
-                setexpanded(false);
+              overlayed
+              overlay={{
+                zIndex: 1,
+                colors: [
+                  {
+                    direction: '0.17deg',
+                    linear: ['#fff', 'fff', 'fff']
+                  }
+                ],
+                sx: {
+                  pointerEvents: 'none'
+                }
               }}
             >
-              <Box
-                style={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  height: '100%',
-                  justifyContent: 'start'
+              <TextBlock
+                heading="Trade-In Your Car"
+                headingProps={{
+                  withLine: true,
+                  sx: {
+                    mb: 2,
+                    zIndex: '1'
+                  }
+                }}
+                text="Review all the numbers and finalize everything without needing to visit our dealership."
+                sx={{
+                  p: 6,
+                  pt: 6,
+                  zIndex: '1'
+                }}
+              />
+
+              <Button
+                onClick={() => navigate('/')}
+                color="primaryNavy"
+                Icon={SlimArrow}
+                space="2"
+                sx={{
+                  pt: 0,
+                  pb: '24px',
+                  '&:hover': {
+                    color: 'primaryBlue'
+                  },
+                  '&:focus': {
+                    color: 'primarySkyBlue'
+                  }
                 }}
               >
-                <CardWithImage
-                  elevated
-                  radius={expanded && active === 3 ? '0' : '16px'}
-                  image={tradeIn}
-                  alt="hety"
-                  imageSx={
-                    expanded
-                      ? {
-                          position: 'absolute',
-                          top: '0',
-                          left: '0',
-                          width: '100%',
-                          height: '100%'
-                        }
-                      : {
-                          maxHeight: '198px'
-                        }
-                  }
-                  cardStyles={{
-                    height:
-                      expanded && active === 3 ? ['296px', '296px'] : '415px',
-                    minHeight:
-                      expanded && active === 3 ? ['296px', '296px'] : '415px'
-                  }}
-                  overlayed
-                  overlay={
-                    expanded && active === 3
-                      ? {
-                          zIndex: 1,
-                          colors: [
-                            {
-                              direction: '0.17deg',
-                              linear: [
-                                '#242952 0.14%',
-                                'rgba(29, 33, 67, 0.92) 2.34%',
-                                'rgba(36, 41, 82, 0) 36.94%'
-                              ]
-                            }
-                          ],
-                          sx: {
-                            pointerEvents: 'none'
-                          }
-                        }
-                      : {
-                          zIndex: 1,
-                          colors: [
-                            {
-                              direction: '0.17deg',
-                              linear: ['#fff', 'fff', 'fff']
-                            }
-                          ],
-                          sx: {
-                            pointerEvents: 'none'
-                          }
-                        }
-                  }
-                >
-                  <TextBlock
-                    heading="Trade-In Your Car"
-                    headingProps={{
-                      withLine: true,
-                      sx: {
-                        mb: 2,
-                        zIndex: '1'
-                      }
-                    }}
-                    text={
-                      !expanded
-                        ? 'Review all the numbers and finalize everything without needing to visit our dealership.'
-                        : ''
-                    }
-                    sx={{
-                      p: 6,
-                      pt: expanded && active === 3 ? ['219px', 6] : 6,
-                      zIndex: '1'
-                    }}
-                  />
-                  {!expanded && active !== 3 && (
-                    <Button
-                      color="primaryNavy"
-                      Icon={SlimArrow}
-                      space="2"
-                      sx={{
-                        pt: 0,
-                        pb: '24px',
-                        '&:hover': {
-                          color: 'primaryBlue'
-                        },
-                        '&:focus': {
-                          color: 'primarySkyBlue'
-                        }
-                      }}
-                    >
-                      Why trade with Koons
-                    </Button>
-                  )}
-                </CardWithImage>
-                {expanded && active === 3 ? (
-                  <Box
-                    sx={{
-                      bg: '#242951',
-                      position: 'relative',
-                      zIndex: 2,
-                      overflow: 'auto',
-                      flexGrow: 1,
-                      '&::-webkit-scrollbar': {
-                        width: '0',
-                        backgroundColor: 'transparent'
-                      },
-                      '&::-webkit-scrollbar-thumb': {
-                        backgroundColor: 'transparent',
-                        outline: 'unset'
-                      }
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        px: 6,
-                        py: 8,
-                        background: '#242951',
-                        opacity: 0,
-                        animation: `${slideUp} 200ms 200ms forwards`
-                      }}
-                    >
-                      <ListDivided>
-                        {[...badges, ...badges, ...badges].map((badge, idx) => (
-                          <ImageWithLabel
-                            key={idx}
-                            image={redCar}
-                            label={badge}
-                            alt="electric"
-                            labelStyle={{ color: 'white' }}
-                            imageVariant="rounded"
-                          />
-                        ))}
-                      </ListDivided>
-                    </Box>
-                  </Box>
-                ) : null}
-              </Box>
-            </ExpandableCard>
+                Why trade with Koons
+              </Button>
+            </CardWithImage>
           </Box>
         </Flex>
+        <Box
+          sx={{
+            height: 'max-content',
+            px: ['1.5rem', '1.5rem', 0]
+          }}
+        >
+          <Card elevated radius="16px">
+            <Grid
+              columns={['1fr', 'repeat(12, 1fr)']}
+              sx={{
+                px: [3, 6],
+                py: 8,
+                gap: ['2', '40px 8px']
+              }}
+            >
+              <TextBlock
+                heading={
+                  isMobile
+                    ? 'Customers Feedback'
+                    : 'What 100,000+ Folks Say About Us'
+                }
+                headingProps={{
+                  withLine: true,
+                  line: {
+                    width: ['100%', '50%']
+                  },
+                  sx: {
+                    width: ['50%', '100%'],
+                    fontWeight: 'semiBold',
+                    fontSize: '32',
+                    mb: 2
+                  }
+                }}
+                text="Review all the numbers and finalize everything without needing to visit us."
+                sx={{
+                  gridColumn: [null, '1 / span 9'],
+                  gridRow: 1,
+                  px: [0, 2, 0]
+                }}
+              />
+              {Array.from({ length: isMobile || isTablet ? 2 : 3 }).map(
+                (_, idx) => (
+                  <Review
+                    key={idx}
+                    image={twoPeople}
+                    name="Jhon Jhonson"
+                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    sx={{
+                      gridColumn: [null, 'span 6', 'span 6', 'span 4'],
+                      gridRow: [null, '2'],
+                      bg: ['#F8F7F6', 'transparent'],
+                      py: [4, 0],
+                      px: [2, 4, 0],
+                      borderRadius: 6
+                    }}
+                  />
+                )
+              )}
+              <Button
+                onClick={() => navigate('/')}
+                color="primaryNavy"
+                Icon={SlimArrow}
+                space="2"
+                sx={{
+                  gridColumn: [null, '10 / span 3'],
+                  gridRow: [null, 1],
+                  justifySelf: [null, 'end'],
+                  p: 0,
+                  height: 'max-content',
+                  alignSelf: 'top',
+                  mt: [6, 0],
+                  borderRadius: 0,
+                  '&:hover': {
+                    color: 'primaryBlue'
+                  },
+                  '&:focus': {
+                    color: 'primarySkyBlue'
+                  }
+                }}
+              >
+                Read more reviews
+              </Button>
+            </Grid>
+          </Card>
+        </Box>
       </Box>
     </>
   );
@@ -1189,62 +1718,62 @@ export default Index;
 
 export const indexPageQuery = graphql`
   {
-    redCar: file(absolutePath: { regex: "/red-car/" }) {
+    redCar: file(name: { eq: "red-car" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image1: file(absolutePath: { regex: "/type-image-1/" }) {
+    image1: file(name: { eq: "type-image-1" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image2: file(absolutePath: { regex: "/type-image-2/" }) {
+    image2: file(name: { eq: "type-image-2" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image3: file(absolutePath: { regex: "/type-image-3/" }) {
+    image3: file(name: { eq: "type-image-3" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image4: file(absolutePath: { regex: "/type-image-4/" }) {
+    image4: file(name: { eq: "type-image-4" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image5: file(absolutePath: { regex: "/type-image-5/" }) {
+    image5: file(name: { eq: "type-image-5" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image6: file(absolutePath: { regex: "/type-image-6/" }) {
+    image6: file(name: { eq: "type-image-6" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    homePageBg: file(absolutePath: { regex: "/home-hero-bg-toyota/" }) {
+    homePageBg: file(name: { eq: "home-hero-bg-toyota" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    homePageBgSm: file(absolutePath: { regex: "/home-hero-bg-sm/" }) {
+    homePageBgSm: file(name: { eq: "home-hero-bg-sm" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    twoPeople: file(absolutePath: { regex: "/two-people/" }) {
+    twoPeople: file(name: { eq: "two-people" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    ServicesCar: file(absolutePath: { regex: "/services-cars/" }) {
+    ServicesCar: file(name: { eq: "services-cars" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    tradeIn: file(absolutePath: { regex: "/trade-in/" }) {
+    tradeIn: file(name: { eq: "trade-in" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
@@ -1257,6 +1786,7 @@ export const indexPageQuery = graphql`
       }
     ) {
       nodes {
+        name
         logo {
           svg {
             asset {

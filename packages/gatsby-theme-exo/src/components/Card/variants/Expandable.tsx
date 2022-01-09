@@ -26,6 +26,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
     duration = 250,
     CloseIcon,
     expandTo,
+    parentStyles,
     ...props
   },
   ref
@@ -62,7 +63,10 @@ const ExpandableCard: React.ForwardRefRenderFunction<
   return (
     <Box
       ref={parentRef}
-      sx={{ height: expanded ? initialRect?.height : '100%' }}
+      sx={{
+        ...{ height: expanded ? initialRect?.height : '100%' },
+        ...parentStyles
+      }}
       onClick={!expanded ? handleOnClick : undefined}
     >
       <Box
@@ -95,7 +99,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             position="fixed"
             onClick={handleOnClose}
             sx={{
-              cursor: 'pointer'
+              cursor: 'pointer',
+              backdropFilter: 'blur(64px)'
             }}
           />
         )}
