@@ -28,6 +28,7 @@ const getDeviceType = (
   };
 };
 const getDeviceData = () => {
+  if (typeof window === 'undefined') return null;
   const windowWidth = window.innerWidth;
   const deviceTypes = getDeviceType(windowWidth);
   const selectedDeviceTypes = Object.keys(deviceTypes).filter((i: string) => {
@@ -44,7 +45,9 @@ const getDeviceData = () => {
 };
 
 export default function useWindowSize() {
-  const [windowSize, setWindowSize] = useState<WindowState>(getDeviceData());
+  const [windowSize, setWindowSize] = useState<WindowState | null>(
+    getDeviceData()
+  );
   useLayoutEffect(() => {
     function handleResize() {
       setWindowSize(getDeviceData());
