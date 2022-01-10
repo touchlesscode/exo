@@ -20,6 +20,16 @@ import CardWithImage from '@exoTheme/components/Card/variants/CardWithImage';
 import useWindowSize from '@exoTheme/hooks/useWindowSize';
 import Review from '@exoTheme/components/Review';
 import CardWithOptions from '@exoTheme/components/Card/variants/CardWithOptions';
+
+type sourceType = {
+  id: number;
+  name: string;
+  image: {
+    asset: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
+};
 const badges = [
   'Electric Cars',
   'Family Cars',
@@ -43,21 +53,6 @@ const brandsNames = [
 //   '4.8 - star rating across 100, 000 + reviews'
 // ];
 // @ts-ignore
-
-// Options Icons
-import phone from '@exoTheme/images/icons/phone.svg';
-import mobile from '@exoTheme/images/icons/mobile.svg';
-import walkaround from '@exoTheme/images/icons/walkaround.svg';
-import inHome from '@exoTheme/images/icons/in_home.svg';
-import support from '@exoTheme/images/icons/support.svg';
-import exchange from '@exoTheme/images/icons/exchange.svg';
-import history from '@exoTheme/images/icons/history.svg';
-import insurance from '@exoTheme/images/icons/insurance.svg';
-import financing from '@exoTheme/images/icons/financing.svg';
-import vote from '@exoTheme/images/icons/vote.svg';
-import language from '@exoTheme/images/icons/language.svg';
-import employee from '@exoTheme/images/icons/employee.svg';
-import rating from '@exoTheme/images/icons/rating.svg';
 
 const Index = ({ data }) => {
   const [
@@ -88,20 +83,30 @@ const Index = ({ data }) => {
   const {
     redCar,
     brands,
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-    image6,
+    body,
+    options,
     homePageBg,
     homePageBgSm,
     twoPeople,
     ServicesCar,
     tradeIn
   } = data;
-
+  let optionsIcons = {} as {
+    [x: string]: {
+      gatsbyImageData: IGatsbyImageData;
+    };
+  };
   // @ts-ignore
+  options.nodes.map((node: sourceType) => {
+    if (node === undefined) return;
+    const {
+      name,
+      image: { asset }
+    } = node;
+    optionsIcons = { ...optionsIcons, [name]: asset };
+    return;
+  });
+
   const brandsImages = brands.nodes.map(({ logo, name }) => ({
     id: logo?.svg?.asset?.id,
     image: logo?.svg?.asset,
@@ -113,12 +118,22 @@ const Index = ({ data }) => {
     )
     .filter((item) => item !== undefined);
 
-  const bodyTypeImages = [image1, image2, image3, image4, image5, image6].map(
-    (type, idx) => ({
-      id: idx.toString(),
-      image: type
+  const bodyTypeImages = body.nodes
+    .map(({ icon }: { icon: sourceType[] }) => {
+      if (icon[0] === undefined) return;
+      const {
+        id,
+        name,
+        image: { asset }
+      } = icon[0];
+      return {
+        id: id,
+        name: name,
+        image: asset
+      };
     })
-  );
+    .filter((item: sourceType) => item !== undefined);
+
   const carouselData = [
     {
       position: 'left',
@@ -128,11 +143,14 @@ const Index = ({ data }) => {
       image: twoPeople,
       actionText: 'Shop Now',
       list: [
-        { title: 'Request a callback', icon: phone },
-        { title: 'Buy online or in-store', icon: mobile },
-        { title: 'Virtual walkaround videos/feature tours', icon: walkaround },
-        { title: 'In-home test drives', icon: inHome },
-        { title: '24/7 online support', icon: support }
+        { title: 'Request a callback', icon: optionsIcons['callback'] },
+        { title: 'Buy online or in-store', icon: optionsIcons['online'] },
+        {
+          title: 'Virtual walkaround videos/feature tours',
+          icon: optionsIcons['virtual']
+        },
+        { title: 'In-home test drives', icon: optionsIcons['inhome'] },
+        { title: '24/7 online support', icon: optionsIcons['support'] }
       ]
     },
     {
@@ -143,13 +161,19 @@ const Index = ({ data }) => {
       image: twoPeople,
       actionText: 'Read More',
       list: [
-        { title: 'Exchange policy', icon: exchange },
-        { title: 'Free Vehicle History Report with all cars', icon: history },
+        { title: 'Exchange policy', icon: optionsIcons['exchange'] },
+        {
+          title: 'Free Vehicle History Report with all cars',
+          icon: optionsIcons['history']
+        },
         {
           title: 'Insurance and protection products available',
-          icon: insurance
+          icon: optionsIcons['insurance']
         },
-        { title: '0% financing for all services/repairs', icon: financing }
+        {
+          title: '0% financing for all services/repairs',
+          icon: optionsIcons['financing']
+        }
       ]
     },
     {
@@ -160,13 +184,23 @@ const Index = ({ data }) => {
       image: twoPeople,
       actionText: 'Meet Our Team',
       list: [
-        { title: 'Voted best places to work (11 years in a row)', icon: vote },
-        { title: 'languages spoken', icon: language },
-        { title: 'Average employee tenure 10+ years', icon: employee },
-        { title: 'rating across 100,000+ reviews', icon: rating }
+        {
+          title: 'Voted best places to work (11 years in a row)',
+          icon: optionsIcons['voted']
+        },
+        { title: 'languages spoken', icon: optionsIcons['language'] },
+        {
+          title: 'Average employee tenure 10+ years',
+          icon: optionsIcons['empolyee']
+        },
+        {
+          title: 'rating across 100,000+ reviews',
+          icon: optionsIcons['rating']
+        }
       ]
     }
   ];
+
   return (
     <>
       <GatsbyImageBg
@@ -420,21 +454,19 @@ const Index = ({ data }) => {
                       minHeight: ['296px', '296px']
                     }}
                   >
-                    {expanded ? (
-                      <Box
-                        sx={{
-                          position: 'absolute',
-                          top: '0',
-                          left: '0',
-                          height: '100%',
-                          width: '100%',
-                          pointerEvents: 'none',
-                          zIndex: '999999999',
-                          backgroundImage:
-                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
-                        }}
-                      ></Box>
-                    ) : null}
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        top: '0',
+                        left: '0',
+                        height: '100%',
+                        width: '100%',
+                        pointerEvents: 'none',
+                        zIndex: '99',
+                        backgroundImage:
+                          'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                      }}
+                    ></Box>
 
                     <TextBlock
                       heading={'Shop by brand'}
@@ -452,8 +484,8 @@ const Index = ({ data }) => {
                           fontFamily: 'Poppins',
                           fontStyle: 'normal',
                           fontWeight: '600',
-                          fontSize: '20px',
-                          lineHeight: '25px',
+                          fontSize: '28px',
+                          lineHeight: '38px',
                           letterSpacing: '-0.02em',
                           zIndex: '999'
                         }
@@ -476,7 +508,7 @@ const Index = ({ data }) => {
                   </Flex>
                   <Box
                     sx={{
-                      bg: '#242951',
+                      bg: '#ffffff',
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'auto',
@@ -495,7 +527,7 @@ const Index = ({ data }) => {
                       sx={{
                         px: 6,
                         py: 8,
-                        background: '#242951',
+                        background: '#ffffff',
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
@@ -517,6 +549,11 @@ const Index = ({ data }) => {
                               label={name}
                               alt="brandsImages"
                               imageVariant="rounded"
+                              imageStyles={{
+                                height: 'auto',
+                                maxHeight: '100%',
+                                my: 'auto'
+                              }}
                             />
                           )
                         )}
@@ -580,7 +617,8 @@ const Index = ({ data }) => {
                   }}
                   sliderParent={{ pl: ['0', '10px'], pointerEvents: 'none' }}
                   slideStyles={{
-                    height: '65px',
+                    height: '95px',
+                    display: 'flex',
                     width: 'auto',
                     m: 'auto'
                   }}
@@ -592,6 +630,9 @@ const Index = ({ data }) => {
                     maxWidth: ['366px', '471px'],
                     height: '100%',
                     minHeight: ['216px', '225px']
+                  }}
+                  contentStyles={{
+                    pt: 0
                   }}
                   content={{
                     heading: 'Shop by body type',
@@ -606,7 +647,7 @@ const Index = ({ data }) => {
                         lineHeight: '30px',
                         letterSpacing: '-0.02em',
                         color: '#151F2A',
-                        mb: 2
+                        mb: 0
                       }
                     }
                   }}
@@ -623,11 +664,12 @@ const Index = ({ data }) => {
                         key={id}
                         image={image}
                         alt="test"
-                        objectFit="cover"
+                        objectFit="contain"
                         sx={{
-                          height: '100%',
-                          maxHeight: '100%',
-                          width: 'auto'
+                          width: 'auto',
+                          height: 'auto',
+                          maxWidth: '100%',
+                          maxHeight: '100%'
                         }}
                       />
                     )
@@ -658,7 +700,7 @@ const Index = ({ data }) => {
                           height: '100%',
                           width: '100%',
                           pointerEvents: 'none',
-                          zIndex: '999999999',
+                          zIndex: '99',
                           backgroundImage:
                             'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
                         }}
@@ -680,8 +722,8 @@ const Index = ({ data }) => {
                           fontFamily: 'Poppins',
                           fontStyle: 'normal',
                           fontWeight: '600',
-                          fontSize: '20px',
-                          lineHeight: '25px',
+                          fontSize: '28px',
+                          lineHeight: '38px',
                           letterSpacing: '-0.02em',
                           zIndex: '999'
                         }
@@ -704,7 +746,7 @@ const Index = ({ data }) => {
                   </Flex>
                   <Box
                     sx={{
-                      bg: '#242951',
+                      bg: '#ffffff',
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'auto',
@@ -723,7 +765,7 @@ const Index = ({ data }) => {
                       sx={{
                         px: 6,
                         py: 8,
-                        background: '#242951',
+                        background: '#ffffff',
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
@@ -732,19 +774,24 @@ const Index = ({ data }) => {
                         {bodyTypeImages.map(
                           ({
                             image,
-
+                            name,
                             id
                           }: {
                             image: IGatsbyImageData;
-
+                            name: string;
                             id: string;
                           }) => (
                             <ImageWithLabel
                               key={id}
                               image={image}
-                              label={'body type'}
+                              label={name}
                               alt="brandsImages"
                               imageVariant="rounded"
+                              imageStyles={{
+                                height: 'auto',
+                                maxHeight: '100%',
+                                my: 'auto'
+                              }}
                             />
                           )
                         )}
@@ -778,40 +825,6 @@ const Index = ({ data }) => {
               setActive(0);
               setexpanded(false);
             }}
-            overlayed
-            overlay={
-              expanded && active === 10
-                ? {
-                    colors: [
-                      {
-                        direction: 'to bottom',
-                        linear: ['transparent', 'transparent', 'transparent']
-                      },
-                      {
-                        direction: 'to bottom',
-                        linear: ['transparent', 'transparent', 'transparent']
-                      }
-                    ],
-                    zIndex: 1
-                  }
-                : {
-                    colors: [
-                      {
-                        direction: 'to bottom',
-                        linear: [
-                          'rgba(0,0,0,0)',
-                          'rgba(0,0,0, 0) 55%',
-                          'rgba(0,0,0,0)'
-                        ]
-                      },
-                      {
-                        direction: 'to right',
-                        linear: ['#242952', '#242952 55%', 'rgba(0,0,0,0)']
-                      }
-                    ],
-                    zIndex: 1
-                  }
-            }
           >
             <Box
               style={{
@@ -846,7 +859,17 @@ const Index = ({ data }) => {
                           }
                         ]
                       }
-                    : !expanded && isMobile
+                    : !isMobile && !expanded
+                    ? {
+                        colors: [
+                          {
+                            direction: 'to right',
+                            linear: ['#242952', '#242952 30%', 'rgba(0,0,0,0)']
+                          }
+                        ],
+                        zIndex: 1
+                      }
+                    : isMobile && !expanded
                     ? {
                         zIndex: 1,
                         colors: [
@@ -860,15 +883,7 @@ const Index = ({ data }) => {
                           }
                         ]
                       }
-                    : {
-                        sx: {
-                          backgroundImage:
-                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
-                          backgroundColor: 'transparent',
-                          zIndex: '99',
-                          pointerEvents: 'none'
-                        }
-                      }
+                    : {}
                 }
               >
                 <Flex
@@ -878,8 +893,8 @@ const Index = ({ data }) => {
                     height:
                       expanded && active === 10 ? ['296px', '296px'] : '100%',
                     justifyContent:
-                      expanded && active === 10 ? 'start' : 'space-between'
-                    // bg: 'black'
+                      expanded && active === 10 ? 'start' : 'space-between',
+                    bg: ['black', 'black', '#242951']
                   }}
                 >
                   <Box
@@ -923,7 +938,8 @@ const Index = ({ data }) => {
                           mt: 4,
                           position: 'absolute',
                           left: 0,
-                          px: 'inherit'
+                          px: 'inherit',
+                          maxWidth: '375px'
                         }}
                       >
                         {badges.map((badge, idx) => (
@@ -948,7 +964,7 @@ const Index = ({ data }) => {
                     )}
                   </Box>
                   <GatsbyImage
-                    image={redCar}
+                    image={twoPeople}
                     objectFit="cover"
                     alt="test"
                     sx={{
@@ -956,7 +972,15 @@ const Index = ({ data }) => {
                       height: [`${expanded ? '100%' : '70%'}`, 'auto'],
                       zIndex: '0',
                       top: 0,
-                      transition: 'all 5000ms'
+                      transition: 'all 5000ms',
+                      maxWidth: [
+                        '100%',
+                        '100%',
+                        `${expanded ? '100%' : '70%'}`
+                      ],
+                      marginLeft: ['0', '0', 'auto'],
+                      borderRadius: '16px',
+                      overflow: 'hidden'
                     }}
                   />
                 </Flex>
@@ -1017,7 +1041,9 @@ const Index = ({ data }) => {
             heading="Why Koons"
             headingProps={{
               sx: {
-                fontSize: 32,
+                fontFamily: 'Poppins',
+                fontStyle: 'normal',
+                fontSize: '32px',
                 fontWeight: '600',
                 lineHeight: '38px',
                 letterSpacing: '-0.02em',
@@ -1027,7 +1053,7 @@ const Index = ({ data }) => {
 
               line: {
                 align: 'top',
-                space: '2',
+                space: '0',
                 color: '#151F2A'
               }
             }}
@@ -1041,8 +1067,8 @@ const Index = ({ data }) => {
             sx={{
               position: 'relative',
               width: '100%',
-              minHeight: '332px',
-              height: ['332px', '332px'],
+              minHeight: ['250px', '250px', '225px'],
+              height: ['250px', '250px', '225px'],
               overflow: 'hidden',
               borderRadius: 16
             }}
@@ -1102,25 +1128,18 @@ const Index = ({ data }) => {
                                 height: '60px'
                               }}
                             >
-                              <Image
-                                src={option.icon}
+                              <GatsbyImage
+                                image={option.icon}
                                 alt={option.title}
-                                sx={{ m: '0 auto 10px', display: 'block' }}
+                                objectFit="contain"
+                                sx={{
+                                  height: 'auto',
+                                  width: '100%',
+                                  zIndex: 0,
+                                  m: '0 auto 10px',
+                                  display: 'block'
+                                }}
                               />
-                              {/* <GatsbyImage
-                            image={item.image}
-                            alt="why koons"
-                            objectFit="cover"
-                            sx={{
-                              position: 'absolute',
-                              top: '50%',
-                              left: '50%',
-                              transform: 'translate(-50%,-50%)',
-                              height: '100%',
-                              width: '100%',
-                              zIndex: 0
-                            }}
-                          /> */}
                             </Box>
                             <Text
                               sx={{
@@ -1192,7 +1211,7 @@ const Index = ({ data }) => {
                     initial: 1,
                     slides: {
                       perView: 3,
-                      spacing: 16,
+                      spacing: 25,
                       origin: 'auto'
                     }
                   }
@@ -1215,8 +1234,8 @@ const Index = ({ data }) => {
                   key={index}
                   sx={{
                     width: '100%',
-                    minHeight: '332px',
-                    height: ['332px', '332px']
+                    minHeight: ['250px', '250px', '225px'],
+                    height: ['250px', '250px', '225px']
                   }}
                 >
                   <ExpandableCard
@@ -1265,25 +1284,35 @@ const Index = ({ data }) => {
                               ? ['296px', '296px']
                               : '100%'
                         }}
-                        overlay={{
-                          colors: [
-                            {
-                              direction: '0deg',
-                              linear: [
-                                '#252A53 0%',
-                                'rgba(37, 42, 83, 0) 100%',
-                                'transparent 30%'
-                              ]
-                            }
-                          ],
-                          sx: {
-                            backgroundImage:
-                              'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)',
-                            backgroundColor: 'transparent',
-                            zIndex: '99',
-                            pointerEvents: 'none'
-                          }
-                        }}
+                        overlay={
+                          expanded && active === index + 100
+                            ? {
+                                zIndex: 1,
+                                colors: [
+                                  {
+                                    direction: '0.17deg',
+                                    linear: [
+                                      '#242952 0.14%',
+                                      'rgba(29, 33, 67, 0.92) 2.34%',
+                                      'rgba(36, 41, 82, 0) 36.94%'
+                                    ]
+                                  }
+                                ]
+                              }
+                            : {
+                                zIndex: 1,
+                                colors: [
+                                  {
+                                    direction: '38.11deg',
+                                    linear: [
+                                      '#242952 22.03%',
+                                      'rgba(36, 41, 82, 0) 72.39%',
+                                      'transparent'
+                                    ]
+                                  }
+                                ]
+                              }
+                        }
                       >
                         <Flex
                           direction="column"
@@ -1296,10 +1325,7 @@ const Index = ({ data }) => {
                                 : [8, 6],
                             pb: 8,
                             height: '100%',
-                            position: 'relative',
-                            zIndex: 2,
-                            backgroundImage:
-                              'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                            zIndex: 1
                           }}
                         >
                           <TextBlock
@@ -1318,10 +1344,10 @@ const Index = ({ data }) => {
                                 fontFamily: 'Poppins',
                                 fontStyle: 'normal',
                                 fontWeight: '600',
-                                fontSize: '20px',
-                                lineHeight: '25px',
+                                fontSize: expanded ? '28px' : '20px',
+                                lineHeight: expanded ? '33px' : '25px',
                                 letterSpacing: '-0.02em',
-                                zIndex: '999'
+                                zIndex: '99'
                               }
                             }}
                           />
@@ -1369,14 +1395,21 @@ const Index = ({ data }) => {
                             }}
                           >
                             <ListDivided>
-                              {badges.map((badge, idx) => (
+                              {item.list.map((option, idx) => (
                                 <ImageWithLabel
                                   key={idx}
-                                  image={redCar}
-                                  label={badge}
+                                  image={option.icon}
+                                  label={option.title}
                                   alt="electric"
                                   labelStyle={{ color: 'white' }}
                                   imageVariant="rounded"
+                                  objectFit="contain"
+                                  imageStyles={{
+                                    maxHeight: '100%',
+                                    width: 'auto',
+                                    height: 'auto',
+                                    my: 'auto'
+                                  }}
                                 />
                               ))}
                             </ListDivided>
@@ -1411,10 +1444,7 @@ const Index = ({ data }) => {
               elevated
               radius="16px"
               expanded={expanded && active === 11}
-              onClick={() => {
-                setActive(11);
-                setexpanded(true);
-              }}
+              onClick={() => {}}
               onClose={() => {
                 setActive(0);
                 setexpanded(false);
@@ -1452,11 +1482,12 @@ const Index = ({ data }) => {
                     justify="space-between"
                     sx={{
                       px: 6,
-                      pt: expanded && active === 11 ? ['219px', 6] : [8, 6],
+                      pt: [8, 6],
                       pb: 8,
                       height: '100%',
                       position: 'relative',
                       zIndex: 2,
+                      justifyContent: expanded ? 'flex-end' : 'space-between',
                       backgroundImage:
                         expanded && active === 11
                           ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
@@ -1470,10 +1501,19 @@ const Index = ({ data }) => {
                         line: {
                           align: 'top',
                           space: '2',
-                          width: '120%'
+                          width: '120%',
+                          color: expanded ? '#ffffff' : '#000000'
                         },
                         sx: {
-                          mb: 2
+                          mb: 2,
+                          color: expanded ? '#ffffff' : '#000000',
+                          fontFamily: 'Poppins',
+                          fontStyle: 'normal',
+                          fontWeight: '600',
+                          fontSize: expanded ? '28px' : '28px',
+                          lineHeight: expanded ? '38px' : '42px',
+                          letterSpacing: '-0.02em',
+                          zIndex: '99'
                         }
                       }}
                       text={
@@ -1499,6 +1539,10 @@ const Index = ({ data }) => {
 
                     {!expanded && active !== 11 && (
                       <Button
+                        onClick={() => {
+                          setActive(11);
+                          setexpanded(true);
+                        }}
                         bg="primaryBlue"
                         sx={{
                           '&:hover': {
@@ -1509,7 +1553,7 @@ const Index = ({ data }) => {
                           }
                         }}
                       >
-                        Book Service Appointment
+                        Book appointment card flow
                       </Button>
                     )}
                   </Flex>
@@ -1541,7 +1585,7 @@ const Index = ({ data }) => {
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
                     >
-                      <ListDivided>
+                      {/* <ListDivided>
                         {[...badges, ...badges, ...badges].map((badge, idx) => (
                           <ImageWithLabel
                             key={idx}
@@ -1552,7 +1596,7 @@ const Index = ({ data }) => {
                             imageVariant="rounded"
                           />
                         ))}
-                      </ListDivided>
+                      </ListDivided> */}
                     </Box>
                   </Box>
                 ) : null}
@@ -1599,7 +1643,10 @@ const Index = ({ data }) => {
                   withLine: true,
                   sx: {
                     mb: 2,
-                    zIndex: '1'
+                    zIndex: '1',
+                    fontWeight: '600',
+                    fontSize: '31px',
+                    lineHeight: '38px'
                   }
                 }}
                 text="Review all the numbers and finalize everything without needing to visit our dealership."
@@ -1730,36 +1777,6 @@ export const indexPageQuery = graphql`
         gatsbyImageData(quality: 70, placeholder: BLURRED)
       }
     }
-    image1: file(name: { eq: "type-image-1" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    image2: file(name: { eq: "type-image-2" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    image3: file(name: { eq: "type-image-3" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    image4: file(name: { eq: "type-image-4" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    image5: file(name: { eq: "type-image-5" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    image6: file(name: { eq: "type-image-6" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
     homePageBg: file(name: { eq: "home-hero-bg-toyota" }) {
       childImageSharp {
         gatsbyImageData(quality: 70, placeholder: BLURRED)
@@ -1802,6 +1819,60 @@ export const indexPageQuery = graphql`
               gatsbyImageData(placeholder: BLURRED)
               id
             }
+          }
+        }
+      }
+    }
+    body: allSanityAttribute {
+      nodes {
+        icon {
+          id
+          name
+          image {
+            asset {
+              gatsbyImageData(
+                placeholder: BLURRED
+                layout: CONSTRAINED
+                formats: [WEBP, AVIF]
+                height: 100
+              )
+            }
+          }
+        }
+      }
+    }
+    options: allSanityIcon(
+      filter: {
+        name: {
+          in: [
+            "callback"
+            "online"
+            "virtual"
+            "inhome"
+            "support"
+            "exchange"
+            "history"
+            "insurance"
+            "financing"
+            "voted"
+            "language"
+            "empolyee"
+            "rating"
+          ]
+        }
+      }
+    ) {
+      nodes {
+        id
+        name
+        image {
+          asset {
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: CONSTRAINED
+              height: 48
+              formats: [WEBP, AVIF]
+            )
           }
         }
       }

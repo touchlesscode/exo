@@ -20,6 +20,7 @@ type ButtonDependentProps =
       iconWidth?: string;
       iconHeight?: string;
       space?: string;
+      iconStyle?: ThemeUIStyleObject;
     };
 
 type ButtonProps = ButtonCommonProps & ButtonDependentProps;

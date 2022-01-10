@@ -13,6 +13,7 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
   slideStyles,
   sliderParent,
   cardStyles,
+  contentStyles,
   ...props
 }) => {
   return (
@@ -34,7 +35,10 @@ const CardWithSlidingHeader: React.FC<CardWithSlidingHeaderProps> = ({
         </SliderWheel>
         <Box
           sx={{
-            p: 6
+            ...{
+              p: 6
+            },
+            ...contentStyles
           }}
         >
           <TextBlock {...content} />

@@ -49,4 +49,5 @@ export type CardWithSlidingHeaderProps = CardProps &
     content?: TextBlockProps;
     sliderPosition?: 'top' | 'bottom';
     cardStyles?: ThemeUIStyleObject;
+    contentStyles?: ThemeUIStyleObject;
   };

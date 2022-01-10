@@ -5,6 +5,7 @@ import { keyframes } from '@emotion/react';
 import useTimeout from '@exoTheme/hooks/useTimeout';
 import useLockedBody from '@exoTheme/hooks/useLockedBody';
 import { BoundingClientRecType } from '@exoTheme/types/index';
+import useWindowVh from '@exoTheme/hooks/useWindowVh';
 import {
   ExpandableCardProps,
   ExpandToType
@@ -31,8 +32,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
   },
   ref
 ) => {
+  useWindowVh();
   const { theme } = useThemeUI();
-
   const OverlayProps = props.overlayed
     ? { overlay: props.overlay, overlayed: props.overlayed }
     : {};
@@ -90,7 +91,9 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             : 'none', // when in initial state.
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          boxShadow: '0px 8px 24px 0px rgb(84 84 84 / 26%)',
+          borderRadius: '16px'
         }}
       >
         {expanded && (
@@ -176,7 +179,7 @@ const expandAnimation = (
         get(theme, 'zIndices.1000') ||
         '100000000',
       bottom: 0,
-      height: '100vh',
+      height: 'calc(var(--vh, 1vh) * 100)',
       top: expandTo?.top || 0,
       left: expandTo?.left || 0,
       right: expandTo?.right || 0,
@@ -196,6 +199,7 @@ const collapseAnimation = (
       top: endRect?.top,
       left: endRect?.left,
       width: endRect?.width,
+      height: 'calc(var(--vh, 1vh) * 100)',
       zIndex:
         get(theme, 'zIndices.infinity') ||
         get(theme, 'zIndices.1000') ||

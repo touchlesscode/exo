@@ -39,7 +39,7 @@ const Overlay: React.FC<OverlayProps> = ({
         transition: transitioned
           ? `all ${transitionDuration || '1000'}ms`
           : 'none',
-        backgroundColor: !colors?.length && (color || 'grey'),
+        backgroundColor: !colors?.length && (color || 'unset'),
         backgroundImage: bgImage,
         position: position,
         inset: 0,

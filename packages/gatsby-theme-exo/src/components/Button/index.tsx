@@ -11,6 +11,7 @@ const Button: React.FC<ButtonProps> = ({
   iconHeight,
   iconYPosition,
   iconXPosition,
+  iconStyle,
   sx,
   ...props
 }) => {
@@ -30,11 +31,14 @@ const Button: React.FC<ButtonProps> = ({
       {Icon ? (
         <Icon
           sx={{
-            my: 0,
-            width: iconWidth || '24px',
-            height: iconHeight || 'auto',
-            border: 'none',
-            alignSelf: iconYPosition
+            ...{
+              my: 0,
+              width: iconWidth || '24px',
+              height: iconHeight || 'auto',
+              border: 'none',
+              alignSelf: iconYPosition
+            },
+            ...iconStyle
           }}
         />
       ) : null}

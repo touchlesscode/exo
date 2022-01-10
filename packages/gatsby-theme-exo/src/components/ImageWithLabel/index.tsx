@@ -11,6 +11,7 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
   imageWidth = '100px',
   imageVariant,
   labelStyle,
+  imageStyles,
   ...props
 }) => {
   return (
@@ -26,7 +27,10 @@ const ImageWithLabel: React.FC<ImageWithLabelProps> = ({
       <GatsbyImage
         {...props}
         variant={imageVariant}
-        sx={{ width: imageWidth, minWidth: imageWidth, maxWidth: imageWidth }}
+        sx={{
+          ...{ width: imageWidth, minWidth: imageWidth, maxWidth: imageWidth },
+          ...imageStyles
+        }}
       />
       <Typography
         sx={{

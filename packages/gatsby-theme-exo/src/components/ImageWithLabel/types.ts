@@ -8,4 +8,5 @@ export interface ImageWithLabelProps extends GatsbyImagePropsType {
   imageVariant?: string;
   height?: string;
   labelStyle?: ThemeUIStyleObject;
+  imageStyles?: ThemeUIStyleObject;
 }
