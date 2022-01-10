@@ -389,6 +389,7 @@ const Index = ({ data }) => {
                     justifyContent: 'center'
                   }}
                   cardStyles={{
+                    position: 'unset',
                     bg: 'white',
                     borderRadius: '16px',
                     boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
@@ -451,7 +452,7 @@ const Index = ({ data }) => {
                       position: 'relative',
                       zIndex: 2,
                       height: ['296px', '296px'],
-                      minHeight: ['296px', '296px']
+                      maxHeight: ['50vh', '50vh', 'unset']
                     }}
                   >
                     <Box
@@ -623,6 +624,7 @@ const Index = ({ data }) => {
                     m: 'auto'
                   }}
                   cardStyles={{
+                    position: 'unset',
                     bg: ['#FCF7EA', 'white'],
                     borderRadius: '16px',
                     boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
@@ -688,7 +690,7 @@ const Index = ({ data }) => {
                       position: 'relative',
                       zIndex: 2,
                       height: ['296px', '296px'],
-                      minHeight: ['296px', '296px']
+                      maxHeight: ['50vh', '50vh', 'unset']
                     }}
                   >
                     {expanded ? (
@@ -807,7 +809,7 @@ const Index = ({ data }) => {
           sx={{
             width: '100%',
             px: ['1.5rem', '1.5rem', 0],
-            height: ['400px', '200px'],
+            height: ['400px', '400px', '200px'],
             position: 'relative'
           }}
         >
@@ -830,7 +832,6 @@ const Index = ({ data }) => {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100%',
                 justifyContent: 'start'
               }}
             >
@@ -841,8 +842,8 @@ const Index = ({ data }) => {
                 cardStyles={{
                   height:
                     expanded && active === 10 ? ['296px', '296px'] : '100%',
-                  minHeight:
-                    expanded && active === 10 ? ['296px', '296px'] : '100%'
+                  maxHeight:
+                    expanded && active === 10 ? ['50vh', '50vh'] : '100%'
                 }}
                 overlay={
                   !isMobile && !expanded
@@ -892,6 +893,8 @@ const Index = ({ data }) => {
                     width: '100%',
                     height:
                       expanded && active === 10 ? ['296px', '296px'] : '100%',
+                    maxHeight:
+                      expanded && active === 10 ? ['50vh', '50vh'] : '100%',
                     justifyContent:
                       expanded && active === 10 ? 'start' : 'space-between',
                     bg: ['black', 'black', '#242951']
@@ -1279,9 +1282,9 @@ const Index = ({ data }) => {
                             expanded && active === index + 100
                               ? ['296px', '296px']
                               : '100%',
-                          minHeight:
+                          maxHeight:
                             expanded && active === index + 100
-                              ? ['296px', '296px']
+                              ? ['50vh', '50vh']
                               : '100%'
                         }}
                         overlay={
@@ -1467,8 +1470,8 @@ const Index = ({ data }) => {
                   cardStyles={{
                     height:
                       expanded && active === 11 ? ['296px', '296px'] : '415px',
-                    minHeight:
-                      expanded && active === 11 ? ['296px', '296px'] : '415px'
+                    maxHeight:
+                      expanded && active === 11 ? ['50vh', '50vh'] : '415px'
                   }}
                   overlay={{
                     colors: [
@@ -1547,6 +1550,7 @@ const Index = ({ data }) => {
                         }}
                         bg="primaryBlue"
                         sx={{
+                          whiteSpace: 'nowrap',
                           '&:hover': {
                             bg: 'primaryBlue'
                           },
