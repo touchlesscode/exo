@@ -1300,7 +1300,7 @@ const Index = ({ data }) => {
                                 ]
                               }
                             : {
-                                zIndex: 1,
+                                zIndex: 99,
                                 colors: [
                                   {
                                     direction: '38.11deg',
