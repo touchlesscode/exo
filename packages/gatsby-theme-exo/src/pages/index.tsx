@@ -845,21 +845,7 @@ const Index = ({ data }) => {
                     expanded && active === 10 ? ['296px', '296px'] : '100%'
                 }}
                 overlay={
-                  expanded && active === 10
-                    ? {
-                        zIndex: 1,
-                        colors: [
-                          {
-                            direction: '0.17deg',
-                            linear: [
-                              '#242952 0.14%',
-                              'rgba(29, 33, 67, 0.92) 2.34%',
-                              'rgba(36, 41, 82, 0) 36.94%'
-                            ]
-                          }
-                        ]
-                      }
-                    : !isMobile && !expanded
+                  !isMobile && !expanded
                     ? {
                         colors: [
                           {
@@ -879,6 +865,20 @@ const Index = ({ data }) => {
                               '#000000 41.39%',
                               'rgba(0, 0, 0, 0) 99.91%',
                               'transparent'
+                            ]
+                          }
+                        ]
+                      }
+                    : expanded && active === 10
+                    ? {
+                        zIndex: 1,
+                        colors: [
+                          {
+                            direction: '0.17deg',
+                            linear: [
+                              '#242952 0.14%',
+                              'rgba(29, 33, 67, 0.92) 2.34%',
+                              'rgba(36, 41, 82, 0) 36.94%'
                             ]
                           }
                         ]
@@ -1285,7 +1285,21 @@ const Index = ({ data }) => {
                               : '100%'
                         }}
                         overlay={
-                          expanded && active === index + 100
+                          !expanded
+                            ? {
+                                zIndex: 99,
+                                colors: [
+                                  {
+                                    direction: '38.11deg',
+                                    linear: [
+                                      '#242952 22.03%',
+                                      'rgba(36, 41, 82, 0) 72.39%',
+                                      'transparent'
+                                    ]
+                                  }
+                                ]
+                              }
+                            : expanded && active === index + 100
                             ? {
                                 zIndex: 1,
                                 colors: [
@@ -1299,19 +1313,7 @@ const Index = ({ data }) => {
                                   }
                                 ]
                               }
-                            : {
-                                zIndex: 99,
-                                colors: [
-                                  {
-                                    direction: '38.11deg',
-                                    linear: [
-                                      '#242952 22.03%',
-                                      'rgba(36, 41, 82, 0) 72.39%',
-                                      'transparent'
-                                    ]
-                                  }
-                                ]
-                              }
+                            : {}
                         }
                       >
                         <Flex
