@@ -912,11 +912,17 @@ const Index = ({ data }) => {
                 cardStyles={{
                   overflow: 'visible',
                   height:
-                    expanded && active === 10 ? ['296px', '296px'] : 'auto',
+                    expanded && active === 10
+                      ? ['296px', '296px']
+                      : ['100%', '100%', '225px'],
                   minHeight:
-                    expanded && active === 10 ? ['unset', 'unset'] : '415px',
+                    expanded && active === 10
+                      ? ['unset', 'unset']
+                      : ['100%', '100%', '225px'],
                   maxHeight:
-                    expanded && active === 10 ? ['50vh', '50vh'] : '415px'
+                    expanded && active === 10
+                      ? ['50vh', '50vh']
+                      : ['100%', '100%', '225px']
                 }}
                 overlay={
                   !isMobile && !expanded
@@ -971,11 +977,11 @@ const Index = ({ data }) => {
                         : ['column', 'column', 'row'],
                     width: '100%',
                     height:
-                      expanded && active === 10 ? ['296px', '296px'] : 'auto',
+                      expanded && active === 10 ? ['296px', '296px'] : '100%',
                     minHeight:
-                      expanded && active === 10 ? ['unset', 'unset'] : '415px',
+                      expanded && active === 10 ? ['unset', 'unset'] : '100%',
                     maxHeight:
-                      expanded && active === 10 ? ['50vh', '50vh'] : '415px',
+                      expanded && active === 10 ? ['50vh', '50vh'] : '100%',
                     justifyContent:
                       expanded && active === 10 ? 'flex-end' : 'space-between',
                     bg: ['black', 'black', '#242951']
@@ -1074,7 +1080,7 @@ const Index = ({ data }) => {
                         left: 0,
                         height: [
                           `${expanded && active === 10 ? '100%' : '70%'}`,
-                          'auto'
+                          '100%'
                         ],
 
                         width: '100%',
@@ -1314,7 +1320,8 @@ const Index = ({ data }) => {
                           maxHeight:
                             expanded && active === index + 100
                               ? ['50vh', '50vh', '296px']
-                              : '100%'
+                              : '100%',
+                          position: 'relative'
                         }}
                         overlay={
                           !expanded
@@ -1329,7 +1336,26 @@ const Index = ({ data }) => {
                                       'transparent'
                                     ]
                                   }
-                                ]
+                                ],
+                                sx: {
+                                  backgroundColor: 'transparent!important',
+                                  '&:hover': {
+                                    backgroundImage: 'unset!important'
+                                  },
+                                  '&:hover::after': {
+                                    content: '""',
+                                    position: 'absolute',
+                                    top: 0,
+                                    left: 0,
+                                    backgroundImage:
+                                      'linear-gradient(0deg, rgba(37, 42, 83, 0.75), rgba(37, 42, 83, 0.75))',
+                                    width: '100%',
+                                    height: '100%',
+                                    display: 'block',
+                                    borderRadius: '16px',
+                                    overflow: 'hidden'
+                                  }
+                                }
                               }
                             : expanded && active === index + 100
                             ? {
