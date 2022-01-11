@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { graphql, navigate } from 'gatsby';
-import { Box, Grid, Text, Theme } from 'theme-ui';
+import { Box, Grid, Theme } from 'theme-ui';
 import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
@@ -18,7 +18,6 @@ import Slider from '@exoTheme/components/Slider';
 import CardWithImage from '@exoTheme/components/Card/variants/CardWithImage';
 import useWindowSize from '@exoTheme/hooks/useWindowSize';
 import Review from '@exoTheme/components/Review';
-import CardWithOptions from '@exoTheme/components/Card/variants/CardWithOptions';
 
 type sourceType = {
   id: number;
@@ -74,8 +73,6 @@ const Index = ({ data }) => {
   const isTablet = useWindowSize()?.type === 'md';
   const [expanded, setexpanded] = useState(false);
   const [active, setActive] = useState(0);
-  const [showOptions, setShowOptions] = useState(false);
-  const [slideIndex, setSlideIndex] = useState(0);
 
   const {
     redCar,
@@ -1118,131 +1115,6 @@ const Index = ({ data }) => {
               borderRadius: 16
             }}
           >
-            <CardWithOptions
-              show={showOptions}
-              onClose={() => {
-                setTimeout(() => setShowOptions(false), 0);
-                setTimeout(() => setSlideIndex(0), 250);
-              }}
-              origin={
-                slideIndex === 1
-                  ? 'left'
-                  : slideIndex === 2
-                  ? 'center'
-                  : slideIndex === 3
-                  ? 'right'
-                  : ''
-              }
-              cardStyles={{
-                padding: '43px',
-                minHeight: ['250px', '250px', '225px'],
-                height: ['250px', '250px', '225px'],
-                overflow: 'hidden',
-                borderRadius: 16
-              }}
-            >
-              {carouselData.map((item, idx) =>
-                slideIndex === idx + 1 ? (
-                  <Flex
-                    key={idx}
-                    sx={{
-                      height: '100%',
-                      flexDirection: 'column',
-                      justifyContent: 'center'
-                    }}
-                  >
-                    <Flex
-                      sx={{
-                        justifyContent: 'space-between'
-                      }}
-                    >
-                      <Flex
-                        key={idx}
-                        sx={{
-                          justifyContent: 'space-between',
-                          m: 'auto 0',
-                          width: '100%'
-                        }}
-                      >
-                        {item.list.map((option, index) => (
-                          <Flex
-                            key={index}
-                            sx={{
-                              flexDirection: 'column',
-                              justifyContent: 'flex-start'
-                            }}
-                          >
-                            <Box
-                              sx={{
-                                height: '60px'
-                              }}
-                            >
-                              <GatsbyImage
-                                image={option.icon}
-                                alt={option.title}
-                                objectFit="contain"
-                                sx={{
-                                  height: 'auto',
-                                  width: '100%',
-                                  zIndex: 0,
-                                  m: '0 auto 10px',
-                                  display: 'block'
-                                }}
-                              />
-                            </Box>
-                            <Text
-                              sx={{
-                                fontFamily: 'Poppins',
-                                fontStyle: 'normal',
-                                fontWeight: '500',
-                                fontSize: '16px',
-                                lineHeight: '22px',
-                                textAlign: 'center',
-                                letterSpacing: '-0.01em',
-                                color: '#FFFFFF',
-                                minWidth: '80px'
-                              }}
-                            >
-                              {option.title}
-                            </Text>
-                          </Flex>
-                        ))}
-                      </Flex>
-                      <Button
-                        bg="primaryNavy"
-                        sx={{
-                          fontFamily: 'Poppins',
-                          fontStyle: 'normal',
-                          fontWeight: '500',
-                          fontSize: '15px',
-                          lineHeight: '24px',
-                          display: 'flex',
-                          alignItems: 'center',
-                          textAlign: 'center',
-                          color: '#FFFFFF',
-                          width: '126px',
-                          height: '32px',
-                          m: 'auto 0 auto 50px',
-                          background: '#3A5F96',
-                          borderRadius: '10px',
-                          whiteSpace: 'nowrap',
-                          px: '12px',
-                          minWidth: 'max-content',
-                          '&:hover': {
-                            bg: 'primaryBlue'
-                          },
-                          '&:focus': {
-                            bg: 'primarySkyBlue'
-                          }
-                        }}
-                      >
-                        {item.actionText}
-                      </Button>
-                    </Flex>
-                  </Flex>
-                ) : null
-              )}
-            </CardWithOptions>
             <Slider
               options={{
                 renderMode: 'performance',
@@ -1293,17 +1165,10 @@ const Index = ({ data }) => {
                     elevated
                     radius="16px"
                     expanded={expanded && active === index + 100}
-                    onClick={
-                      isMobile
-                        ? () => {
-                            setActive(index + 100);
-                            setexpanded(true);
-                          }
-                        : () => {
-                            setShowOptions(true);
-                            setSlideIndex(index + 1);
-                          }
-                    }
+                    onClick={() => {
+                      setActive(index + 100);
+                      setexpanded(true);
+                    }}
                     onClose={() => {
                       setActive(0);
                       setexpanded(false);
