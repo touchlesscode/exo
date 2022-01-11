@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { graphql, navigate } from 'gatsby';
-import { Box, Grid, Image, Text, Theme } from 'theme-ui';
+import { Box, Grid, Text, Theme } from 'theme-ui';
 import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
@@ -25,9 +25,7 @@ type sourceType = {
   id: number;
   name: string;
   image: {
-    asset: {
-      gatsbyImageData: IGatsbyImageData;
-    };
+    asset: IGatsbyImageData;
   };
 };
 const badges = [
@@ -92,9 +90,7 @@ const Index = ({ data }) => {
     tradeIn
   } = data;
   let optionsIcons = {} as {
-    [x: string]: {
-      gatsbyImageData: IGatsbyImageData;
-    };
+    [x: string]: IGatsbyImageData;
   };
   // @ts-ignore
   options.nodes.map((node: sourceType) => {
@@ -107,11 +103,19 @@ const Index = ({ data }) => {
     return;
   });
 
-  const brandsImages = brands.nodes.map(({ logo, name }) => ({
-    id: logo?.svg?.asset?.id,
-    image: logo?.svg?.asset,
-    name: name
-  }));
+  const brandsImages = brands.nodes.map(
+    ({
+      logo,
+      name
+    }: {
+      logo: { svg: { asset: { id: number } } };
+      name: string;
+    }) => ({
+      id: logo?.svg?.asset?.id,
+      image: logo?.svg?.asset,
+      name: name
+    })
+  );
   const sortedBrands = brandsNames
     .map((brandName) =>
       brandsImages.find(({ name }: { name: string }) => name === brandName)
@@ -268,6 +272,7 @@ const Index = ({ data }) => {
                 width: ['165px', '149px'],
                 height: ['48px', '40px'],
                 padding: '8px 24px',
+                whiteSpace: 'nowrap',
                 '&:hover': {
                   bg: 'primaryBlue'
                 },
@@ -290,6 +295,7 @@ const Index = ({ data }) => {
                 width: ['165px', '149px'],
                 height: ['48px', '40px'],
                 padding: '8px 24px',
+                whiteSpace: 'nowrap',
                 border: (theme: Theme) =>
                   `2px solid ${theme.colors?.primaryNavy}`,
                 '&:hover': {
@@ -317,7 +323,6 @@ const Index = ({ data }) => {
           alignItems: 'center',
           pt: [8, 0],
           pb: '100px',
-          gap: 8,
           width: '100%',
           maxWidth: ['100%', '971px'],
           mx: 'auto',
@@ -325,9 +330,12 @@ const Index = ({ data }) => {
         }}
       >
         <Flex
-          direction={['column', 'row']}
-          gap={8}
-          sx={{ px: ['1.5rem', '1.5rem', 0], width: '100%' }}
+          sx={{
+            px: ['1.5rem', '1.5rem', 0],
+            width: '100%',
+            display: 'flex',
+            flexDirection: ['column', 'column', 'column', 'row']
+          }}
         >
           <ExpandableCard
             parentRef={brandParentRef}
@@ -345,9 +353,11 @@ const Index = ({ data }) => {
             }}
             bg="white"
             parentStyles={{
-              minHeight: ['216px', '225px'],
-              marginRight: [0, 0, 'auto'],
-              marginBottom: ['auto', 'auto', 0]
+              minHeight: ['216px', '216px', '216px', '225px'],
+              marginRight: ['auto', 'auto', 'auto', 'auto'],
+              marginLeft: ['auto', 'auto', 'auto', '0'],
+              marginBottom: ['32px', '32px', '32px', '32px'],
+              maxWidth: ['100%', '100%', '366px', '471px']
             }}
           >
             <Box
@@ -358,7 +368,7 @@ const Index = ({ data }) => {
                 flexDirection: 'column'
               }}
             >
-              {!expanded && (
+              {(!expanded || active !== 1) && (
                 <CardWithSlidingHeader
                   options={{
                     renderMode: 'performance',
@@ -394,9 +404,9 @@ const Index = ({ data }) => {
                     borderRadius: '16px',
                     boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
                     width: '100%',
-                    maxWidth: ['366px', '471px'],
+                    maxWidth: ['366px', '366px', '471px'],
                     height: '100%',
-                    minHeight: ['216px', '225px']
+                    minHeight: ['216px', '216px', '225px']
                   }}
                   content={{
                     heading: 'Shop by brand',
@@ -447,12 +457,13 @@ const Index = ({ data }) => {
                     justify="flex-end"
                     sx={{
                       px: 6,
-                      pt: expanded && active === 1 ? ['219px', 6] : [8, 6],
+                      pt: expanded && active === 1 ? 6 : [8, 6],
                       pb: 8,
                       position: 'relative',
                       zIndex: 2,
-                      height: ['296px', '296px'],
-                      maxHeight: ['50vh', '50vh', 'unset']
+                      height: ['296px', '296px', '296px'],
+                      minHeight: ['unset', 'unset', '296px'],
+                      maxHeight: ['50vh', '50vh', '296px']
                     }}
                   >
                     <Box
@@ -512,7 +523,7 @@ const Index = ({ data }) => {
                       bg: '#ffffff',
                       position: 'relative',
                       zIndex: 2,
-                      overflow: 'auto',
+                      overflow: 'scroll',
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -582,9 +593,11 @@ const Index = ({ data }) => {
             }}
             bg="white"
             parentStyles={{
-              minHeight: ['216px', '225px'],
-              marginLeft: [0, 0, 'auto'],
-              marginTop: ['auto', 'auto', 0]
+              minHeight: ['216px', '216px', '216px', '225px'],
+              marginRight: ['auto', 'auto', 'auto', '0'],
+              marginLeft: ['auto', 'auto', 'auto', 'auto'],
+              marginBottom: ['32px', '32px', '32px', '32px'],
+              maxWidth: ['100%', '100%', '366px', '471px']
             }}
           >
             <Box
@@ -595,7 +608,7 @@ const Index = ({ data }) => {
                 flexDirection: 'column'
               }}
             >
-              {!expanded && (
+              {(!expanded || active !== 2) && (
                 <CardWithSlidingHeader
                   options={{
                     renderMode: 'performance',
@@ -629,9 +642,10 @@ const Index = ({ data }) => {
                     borderRadius: '16px',
                     boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
                     width: '100%',
-                    maxWidth: ['366px', '471px'],
+
+                    maxWidth: ['366px', '366px', '471px'],
                     height: '100%',
-                    minHeight: ['216px', '225px']
+                    minHeight: ['216px', '216px', '225px']
                   }}
                   contentStyles={{
                     pt: 0
@@ -685,15 +699,16 @@ const Index = ({ data }) => {
                     justify="flex-end"
                     sx={{
                       px: 6,
-                      pt: expanded && active === 2 ? ['219px', 6] : [8, 6],
+                      pt: expanded && active === 2 ? 6 : [8, 6],
                       pb: 8,
                       position: 'relative',
                       zIndex: 2,
-                      height: ['296px', '296px'],
-                      maxHeight: ['50vh', '50vh', 'unset']
+                      height: ['296px', '296px', '296px'],
+                      minHeight: ['unset', 'unset', '296px'],
+                      maxHeight: ['50vh', '50vh', '296px']
                     }}
                   >
-                    {expanded ? (
+                    {expanded && active === 2 ? (
                       <Box
                         sx={{
                           position: 'absolute',
@@ -751,7 +766,7 @@ const Index = ({ data }) => {
                       bg: '#ffffff',
                       position: 'relative',
                       zIndex: 2,
-                      overflow: 'auto',
+                      overflow: 'scroll',
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -810,7 +825,8 @@ const Index = ({ data }) => {
             width: '100%',
             px: ['1.5rem', '1.5rem', 0],
             height: ['400px', '400px', '200px'],
-            position: 'relative'
+            position: 'relative',
+            mb: '32px'
           }}
         >
           <ExpandableCard
@@ -832,7 +848,8 @@ const Index = ({ data }) => {
               style={{
                 display: 'flex',
                 flexDirection: 'column',
-                justifyContent: 'start'
+                justifyContent: 'flex-start',
+                height: '100%'
               }}
             >
               <Card
@@ -840,10 +857,13 @@ const Index = ({ data }) => {
                 radius={expanded && active === 10 ? '0' : '16px'}
                 overlayed
                 cardStyles={{
+                  overflow: 'visible',
                   height:
-                    expanded && active === 10 ? ['296px', '296px'] : '100%',
+                    expanded && active === 10 ? ['296px', '296px'] : 'auto',
+                  minHeight:
+                    expanded && active === 10 ? ['unset', 'unset'] : '415px',
                   maxHeight:
-                    expanded && active === 10 ? ['50vh', '50vh'] : '100%'
+                    expanded && active === 10 ? ['50vh', '50vh'] : '415px'
                 }}
                 overlay={
                   !isMobile && !expanded
@@ -889,20 +909,25 @@ const Index = ({ data }) => {
               >
                 <Flex
                   sx={{
-                    flexDirection: ['column', 'row'],
+                    flexDirection:
+                      expanded && active === 10
+                        ? 'column'
+                        : ['column', 'column', 'row'],
                     width: '100%',
                     height:
-                      expanded && active === 10 ? ['296px', '296px'] : '100%',
+                      expanded && active === 10 ? ['296px', '296px'] : 'auto',
+                    minHeight:
+                      expanded && active === 10 ? ['unset', 'unset'] : '415px',
                     maxHeight:
-                      expanded && active === 10 ? ['50vh', '50vh'] : '100%',
+                      expanded && active === 10 ? ['50vh', '50vh'] : '415px',
                     justifyContent:
-                      expanded && active === 10 ? 'start' : 'space-between',
+                      expanded && active === 10 ? 'flex-end' : 'space-between',
                     bg: ['black', 'black', '#242951']
                   }}
                 >
                   <Box
                     sx={{
-                      position: ['relative', 'absolute'],
+                      position: ['relative', 'relative', 'absolute'],
                       zIndex: 2,
                       width: '100%',
                       px: 6,
@@ -928,17 +953,15 @@ const Index = ({ data }) => {
                       }}
                       sx={{
                         color: 'white',
-                        position:
-                          expanded && active === 10 ? 'absolute' : 'static',
-                        pt: expanded && active === 10 ? ['219px', 0] : [8, 0]
+                        pt: expanded && active === 10 ? 6 : [8, 0],
+                        pb: 8
                       }}
                     />
-                    {!expanded && active !== 10 && (
+                    {(!expanded || active !== 10) && (
                       <Flex
                         sx={{
                           flexWrap: 'wrap',
                           gap: 2,
-                          mt: 4,
                           position: 'absolute',
                           left: 0,
                           px: 'inherit',
@@ -971,18 +994,22 @@ const Index = ({ data }) => {
                     objectFit="cover"
                     alt="test"
                     sx={{
-                      position: 'relative',
-                      height: [`${expanded ? '100%' : '70%'}`, 'auto'],
+                      position:
+                        expanded && active === 10 ? 'absolute' : 'relative',
+                      height: [
+                        `${expanded && active === 10 ? '100%' : '70%'}`,
+                        'auto'
+                      ],
                       zIndex: '0',
                       top: 0,
                       transition: 'all 5000ms',
                       maxWidth: [
                         '100%',
                         '100%',
-                        `${expanded ? '100%' : '70%'}`
+                        `${expanded && active === 10 ? '100%' : '70%'}`
                       ],
                       marginLeft: ['0', '0', 'auto'],
-                      borderRadius: '16px',
+                      borderRadius: ['0', '0', '16px'],
                       overflow: 'hidden'
                     }}
                   />
@@ -994,7 +1021,7 @@ const Index = ({ data }) => {
                     bg: '#242951',
                     position: 'relative',
                     zIndex: 2,
-                    overflow: 'auto',
+                    overflow: 'scroll',
                     flexGrow: 1,
                     '&::-webkit-scrollbar': {
                       width: '0',
@@ -1037,7 +1064,8 @@ const Index = ({ data }) => {
           sx={{
             width: '100%',
             px: ['0', '0', '0'],
-            position: 'relative'
+            position: 'relative',
+            mb: '32px'
           }}
         >
           <TextBlock
@@ -1063,7 +1091,7 @@ const Index = ({ data }) => {
             sx={{
               mb: 20,
               display: ['none', 'block'],
-              pl: ['1.5rem', '1.5rem', '1.5rem']
+              pl: ['1.5rem', '1.5rem', '0']
             }}
           />
           <Box
@@ -1092,7 +1120,11 @@ const Index = ({ data }) => {
                   : ''
               }
               cardStyles={{
-                padding: '43px'
+                padding: '43px',
+                minHeight: ['250px', '250px', '225px'],
+                height: ['250px', '250px', '225px'],
+                overflow: 'hidden',
+                borderRadius: 16
               }}
             >
               {carouselData.map((item, idx) =>
@@ -1280,11 +1312,15 @@ const Index = ({ data }) => {
                         cardStyles={{
                           height:
                             expanded && active === index + 100
-                              ? ['296px', '296px']
+                              ? ['296px', '296px', '296px']
+                              : '100%',
+                          minHeight:
+                            expanded && active === index + 100
+                              ? ['unset', 'unset', '296px']
                               : '100%',
                           maxHeight:
                             expanded && active === index + 100
-                              ? ['50vh', '50vh']
+                              ? ['50vh', '50vh', '296px']
                               : '100%'
                         }}
                         overlay={
@@ -1324,10 +1360,7 @@ const Index = ({ data }) => {
                           justify="flex-end"
                           sx={{
                             px: 6,
-                            pt:
-                              expanded && active === index + 100
-                                ? ['219px', 6]
-                                : [8, 6],
+                            pt: expanded && active === index + 100 ? 6 : [8, 6],
                             pb: 8,
                             height: '100%',
                             zIndex: 1
@@ -1349,8 +1382,14 @@ const Index = ({ data }) => {
                                 fontFamily: 'Poppins',
                                 fontStyle: 'normal',
                                 fontWeight: '600',
-                                fontSize: expanded ? '28px' : '20px',
-                                lineHeight: expanded ? '33px' : '25px',
+                                fontSize:
+                                  expanded && active === index + 100
+                                    ? '28px'
+                                    : '20px',
+                                lineHeight:
+                                  expanded && active === index + 100
+                                    ? '33px'
+                                    : '25px',
                                 letterSpacing: '-0.02em',
                                 zIndex: '99'
                               }
@@ -1378,7 +1417,7 @@ const Index = ({ data }) => {
                             bg: '#242951',
                             position: 'relative',
                             zIndex: 2,
-                            overflow: 'auto',
+                            overflow: 'scroll',
                             flexGrow: 1,
                             '&::-webkit-scrollbar': {
                               width: '0',
@@ -1433,7 +1472,8 @@ const Index = ({ data }) => {
           sx={{
             flexDirection: ['column', 'row'],
             width: '100%',
-            px: ['1.5rem', '1.5rem', 0]
+            px: ['1.5rem', '1.5rem', 0],
+            mb: '32px'
           }}
         >
           <Box
@@ -1449,10 +1489,15 @@ const Index = ({ data }) => {
               elevated
               radius="16px"
               expanded={expanded && active === 11}
-              onClick={() => {}}
+              onClick={() => {
+                return;
+              }}
               onClose={() => {
                 setActive(0);
                 setexpanded(false);
+              }}
+              expandedStyles={{
+                cursor: 'auto'
               }}
             >
               <Box
@@ -1469,9 +1514,9 @@ const Index = ({ data }) => {
                   overlayed
                   cardStyles={{
                     height:
-                      expanded && active === 11 ? ['296px', '296px'] : '415px',
-                    maxHeight:
-                      expanded && active === 11 ? ['50vh', '50vh'] : '415px'
+                      expanded && active === 11 ? ['296px', '296px'] : 'auto',
+                    minHeight:
+                      expanded && active === 11 ? ['unset', 'unset'] : '415px'
                   }}
                   overlay={{
                     colors: [
@@ -1492,7 +1537,10 @@ const Index = ({ data }) => {
                       height: '100%',
                       position: 'relative',
                       zIndex: 2,
-                      justifyContent: expanded ? 'flex-end' : 'space-between',
+                      justifyContent:
+                        expanded && active === 11
+                          ? 'flex-end'
+                          : 'space-between',
                       backgroundImage:
                         expanded && active === 11
                           ? 'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
@@ -1507,16 +1555,19 @@ const Index = ({ data }) => {
                           align: 'top',
                           space: '2',
                           width: '120%',
-                          color: expanded ? '#ffffff' : '#000000'
+                          color:
+                            expanded && active === 11 ? '#ffffff' : '#000000'
                         },
                         sx: {
                           mb: 2,
-                          color: expanded ? '#ffffff' : '#000000',
+                          color:
+                            expanded && active === 11 ? '#ffffff' : '#000000',
                           fontFamily: 'Poppins',
                           fontStyle: 'normal',
                           fontWeight: '600',
-                          fontSize: expanded ? '28px' : '28px',
-                          lineHeight: expanded ? '38px' : '42px',
+                          fontSize: expanded && active === 11 ? '28px' : '28px',
+                          lineHeight:
+                            expanded && active === 11 ? '38px' : '42px',
                           letterSpacing: '-0.02em',
                           zIndex: '99'
                         }
@@ -1542,7 +1593,7 @@ const Index = ({ data }) => {
                       }}
                     />
 
-                    {!expanded && active !== 11 && (
+                    {(!expanded || active !== 11) && (
                       <Button
                         onClick={() => {
                           setActive(11);
@@ -1570,7 +1621,7 @@ const Index = ({ data }) => {
                       bg: '#242951',
                       position: 'relative',
                       zIndex: 2,
-                      overflow: 'auto',
+                      overflow: 'scroll',
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -1671,6 +1722,7 @@ const Index = ({ data }) => {
                 sx={{
                   pt: 0,
                   pb: '24px',
+                  whiteSpace: 'nowrap',
                   '&:hover': {
                     color: 'primaryBlue'
                   },
@@ -1703,7 +1755,7 @@ const Index = ({ data }) => {
                 heading={
                   isMobile
                     ? 'Customers Feedback'
-                    : 'What 100,000+ Folks Say About Us'
+                    : 'What 100,000+ People Say About Koons'
                 }
                 headingProps={{
                   withLine: true,
@@ -1754,6 +1806,7 @@ const Index = ({ data }) => {
                   p: 0,
                   height: 'max-content',
                   alignSelf: 'top',
+                  whiteSpace: 'nowrap',
                   mt: [6, 0],
                   borderRadius: 0,
                   '&:hover': {

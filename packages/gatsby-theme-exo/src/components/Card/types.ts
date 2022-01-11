@@ -30,6 +30,7 @@ export type ExpandableCardProps = CardProps & {
   expandTo?: ExpandToType;
   parentRef?: React.MutableRefObject<HTMLDivElement>;
   parentStyles?: ThemeUIStyleObject;
+  expandedStyles?: ThemeUIStyleObject;
 };
 
 export type ExpandToType = {

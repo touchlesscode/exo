@@ -24,10 +24,11 @@ const ExpandableCard: React.ForwardRefRenderFunction<
     expanded,
     onClick,
     onClose,
-    duration = 250,
+    duration = 120,
     CloseIcon,
     expandTo,
     parentStyles,
+    expandedStyles,
     ...props
   },
   ref
@@ -73,27 +74,31 @@ const ExpandableCard: React.ForwardRefRenderFunction<
       <Box
         ref={expandingRef}
         sx={{
-          width: '100%',
-          height: '100%',
-          cursor: expanded ? 'auto' : 'pointer',
-          animation: expanded
-            ? `${expandAnimation(
-                theme,
-                expandTo,
-                initialRect
-              )} ${duration}ms forwards` // add animation to expanding
-            : willCollapse
-            ? `${collapseAnimation(
-                theme,
-                initialRect,
-                endRect
-              )} ${duration}ms forwards` // add animation to collapsing
-            : 'none', // when in initial state.
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          boxShadow: '0px 8px 24px 0px rgb(84 84 84 / 26%)',
-          borderRadius: '16px'
+          ...{
+            width: '100%',
+            height: '100%',
+            cursor: expanded ? 'auto' : 'pointer',
+            animation: expanded
+              ? `${expandAnimation(
+                  theme,
+                  expandTo,
+                  initialRect
+                )} ${duration}ms forwards` // add animation to expanding
+              : willCollapse
+              ? `${collapseAnimation(
+                  theme,
+                  initialRect,
+                  endRect
+                )} ${duration}ms forwards` // add animation to collapsing
+              : 'none', // when in initial state.
+            willChange: 'top left right width transform',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            boxShadow: '0px 8px 24px 0px rgb(84 84 84 / 26%)',
+            borderRadius: '16px'
+          },
+          ...expandedStyles
         }}
       >
         {expanded && (
@@ -116,12 +121,12 @@ const ExpandableCard: React.ForwardRefRenderFunction<
                 : expanded && !willCollapse
                 ? 'fill-available' // set to max-content when the card is expanded.
                 : !expanded && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
-            maxWidth: ['100%', `${expanded ? '572px' : '100%'}`],
-            maxHeight: ['100%', `${expanded ? '718px' : '100%'}`],
+            maxWidth: ['100%', '100%', `${expanded ? '572px' : '100%'}`],
+            maxHeight: ['100%', '100%', `${expanded ? '718px' : '100%'}`],
             m: 'auto',
             position: 'relative',
             zIndex: '999',
-            borderRadius: expanded ? [0, '16px'] : '16px',
+            borderRadius: expanded ? [0, 0, '16px'] : '16px',
             overflow: 'hidden'
           }}
         >
