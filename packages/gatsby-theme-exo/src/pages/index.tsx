@@ -38,7 +38,7 @@ const brandsNames = [
   'Lexus',
   'Toyota',
   'Ford',
-  'Chevy',
+  'Chevrolet',
   'Jeep',
   'Hyundai'
 ];
@@ -368,88 +368,83 @@ const Index = ({ data }) => {
                 <Card>
                   <Flex
                     sx={{
-                      flexDirection: 'column'
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      bg: 'white',
+                      borderRadius: '16px',
+                      boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+                      width: '100%',
+                      maxWidth: ['366px', '366px', '471px'],
+                      height: '100%',
+                      minHeight: ['216px', '216px', '225px'],
+                      p: 6
                     }}
                   >
                     <Box
                       sx={{
-                        position: 'unset',
-                        bg: 'white',
-                        borderRadius: '16px',
-                        boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-                        width: '100%',
-                        maxWidth: ['366px', '366px', '471px'],
-                        height: '100%',
-                        minHeight: ['216px', '216px', '225px'],
-                        p: 6
+                        height: '65px',
+                        pl: ['0', '0'],
+                        pointerEvents: 'none'
                       }}
                     >
-                      <Box
-                        sx={{
-                          height: '65px',
-                          pl: ['0', '0'],
-                          pointerEvents: 'none'
-                        }}
-                      >
-                        <Flex>
-                          {sortedBrands.map(
-                            ({
-                              image,
-                              id
-                            }: {
-                              image: IGatsbyImageData;
-                              id: string;
-                            }) => (
-                              <Box
-                                key={id}
+                      <Flex>
+                        {sortedBrands.map(
+                          ({
+                            image,
+                            id
+                          }: {
+                            image: IGatsbyImageData;
+                            id: string;
+                          }) => (
+                            <Box
+                              key={id}
+                              sx={{
+                                maxHeight: '53px',
+                                height: '100%',
+                                width: 'auto',
+                                m: 'auto',
+                                minWidth: ['27%', '27%', '23%'],
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                              }}
+                            >
+                              <GatsbyImage
+                                image={image}
+                                alt="test"
+                                objectFit="contain"
                                 sx={{
-                                  maxHeight: '53px',
-                                  height: '100%',
-                                  width: 'auto',
-                                  m: 'auto',
-                                  minWidth: ['27%', '27%', '23%'],
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  justifyContent: 'center',
-                                  alignItems: 'center'
+                                  height: 'auto',
+                                  maxHeight: '100%',
+                                  width: '100%',
+                                  maxWidth: '73px'
                                 }}
-                              >
-                                <GatsbyImage
-                                  image={image}
-                                  alt="test"
-                                  objectFit="contain"
-                                  sx={{
-                                    height: 'auto',
-                                    maxHeight: '100%',
-                                    width: '100%',
-                                    maxWidth: '73px'
-                                  }}
-                                />
-                              </Box>
-                            )
-                          )}
-                        </Flex>
-                      </Box>
-                      <TextBlock
-                        {...{
-                          heading: 'Shop by brand',
-                          text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
-                          headingProps: {
-                            as: 'h4',
-                            sx: {
-                              fontFamily: 'Poppins',
-                              fontStyle: 'normal',
-                              fontWeight: 'bold',
-                              fontSize: '20px',
-                              lineHeight: '30px',
-                              letterSpacing: '-0.02em',
-                              color: '#151F2A',
-                              mb: 2
-                            }
-                          }
-                        }}
-                      />
+                              />
+                            </Box>
+                          )
+                        )}
+                      </Flex>
                     </Box>
+                    <TextBlock
+                      {...{
+                        heading: 'Shop by brand',
+                        text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
+                        headingProps: {
+                          as: 'h4',
+                          sx: {
+                            fontFamily: 'Poppins',
+                            fontStyle: 'normal',
+                            fontWeight: 'bold',
+                            fontSize: '20px',
+                            lineHeight: '30px',
+                            letterSpacing: '-0.02em',
+                            color: '#151F2A',
+                            mb: 2
+                          }
+                        }
+                      }}
+                    />
                   </Flex>
                 </Card>
               )}
@@ -615,91 +610,87 @@ const Index = ({ data }) => {
                 <Card>
                   <Flex
                     sx={{
-                      flexDirection: 'column'
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      bg: ['#FCF7EA', 'white'],
+                      borderRadius: '16px',
+                      boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+                      width: '100%',
+
+                      maxWidth: ['366px', '366px', '471px'],
+                      height: '100%',
+                      minHeight: ['216px', '216px', '225px'],
+                      p: 6,
+                      pt: 0
                     }}
                   >
                     <Box
                       sx={{
-                        position: 'unset',
-                        bg: ['#FCF7EA', 'white'],
-                        borderRadius: '16px',
-                        boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-                        width: '100%',
-
-                        maxWidth: ['366px', '366px', '471px'],
-                        height: '100%',
-                        minHeight: ['216px', '216px', '225px'],
-                        p: 6
+                        height: '95px',
+                        display: 'flex',
+                        width: 'auto',
+                        m: 'auto'
                       }}
                     >
-                      <Box
-                        sx={{
-                          height: '95px',
-                          display: 'flex',
-                          width: 'auto',
-                          m: 'auto'
-                        }}
-                      >
-                        <Flex>
-                          {bodyTypeImages.map(
-                            ({
-                              image,
-                              id
-                            }: {
-                              image: IGatsbyImageData;
-                              id: string;
-                            }) => (
-                              <Box
+                      <Flex>
+                        {bodyTypeImages.map(
+                          ({
+                            image,
+                            id
+                          }: {
+                            image: IGatsbyImageData;
+                            id: string;
+                          }) => (
+                            <Box
+                              key={id}
+                              sx={{
+                                maxHeight: '95px',
+                                height: '100%',
+                                width: 'auto',
+                                m: 'auto',
+                                minWidth: ['35%', '35%', '30.5%'],
+                                display: 'flex',
+                                flexDirection: 'column',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                              }}
+                            >
+                              <GatsbyImage
                                 key={id}
+                                image={image}
+                                alt="test"
+                                objectFit="contain"
                                 sx={{
-                                  maxHeight: '95px',
-                                  height: '100%',
                                   width: 'auto',
-                                  m: 'auto',
-                                  minWidth: ['35%', '35%', '30.5%'],
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  justifyContent: 'center',
-                                  alignItems: 'center'
+                                  height: 'auto',
+                                  maxWidth: '100%',
+                                  maxHeight: '100%'
                                 }}
-                              >
-                                <GatsbyImage
-                                  key={id}
-                                  image={image}
-                                  alt="test"
-                                  objectFit="contain"
-                                  sx={{
-                                    width: 'auto',
-                                    height: 'auto',
-                                    maxWidth: '100%',
-                                    maxHeight: '100%'
-                                  }}
-                                />
-                              </Box>
-                            )
-                          )}
-                        </Flex>
-                      </Box>
-                      <TextBlock
-                        {...{
-                          heading: 'Shop by body type',
-                          text: 'Some descriptive text about choosing a body type to fit your needs.',
-                          headingProps: {
-                            as: 'h4',
-                            sx: {
-                              fontFamily: 'Poppins',
-                              fontStyle: 'normal',
-                              fontWeight: 'bold',
-                              fontSize: '20px',
-                              lineHeight: '30px',
-                              letterSpacing: '-0.02em',
-                              color: '#151F2A',
-                              mb: 0
-                            }
-                          }
-                        }}
-                      />
+                              />
+                            </Box>
+                          )
+                        )}
+                      </Flex>
                     </Box>
+                    <TextBlock
+                      {...{
+                        heading: 'Shop by body type',
+                        text: 'Some descriptive text about choosing a body type to fit your needs.',
+                        headingProps: {
+                          as: 'h4',
+                          sx: {
+                            fontFamily: 'Poppins',
+                            fontStyle: 'normal',
+                            fontWeight: 'bold',
+                            fontSize: '20px',
+                            lineHeight: '30px',
+                            letterSpacing: '-0.02em',
+                            color: '#151F2A',
+                            mb: 0
+                          }
+                        }
+                      }}
+                    />
                   </Flex>
                 </Card>
               )}
@@ -1745,7 +1736,7 @@ export const indexPageQuery = graphql`
         tags: { regex: "/vehicle/" }
         logo: { svg: { _type: { eq: "image" } } }
         name: {
-          in: ["Kia", "Lexus", "Toyota", "Ford", "Chevy", "Jeep", "Hyundai"]
+          in: ["Kia", "Lexus", "Toyota", "Ford", "Chevrolet", "Jeep", "Hyundai"]
         }
       }
     ) {
