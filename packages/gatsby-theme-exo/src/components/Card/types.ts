@@ -35,6 +35,7 @@ export type ExpandableCardProps = CardProps & {
 
 export type ExpandToType = {
   width?: string;
+  height?: string;
   left?: string;
   top?: string;
   right?: string;

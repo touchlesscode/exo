@@ -46,7 +46,7 @@ const CardWithOptions: React.FC<Props & CardProps> = ({
           width: '0',
           height: '100%',
           bg: '#18152A',
-          zIndex: '9999999'
+          zIndex: '3'
         },
         ...cardStyles
       }}

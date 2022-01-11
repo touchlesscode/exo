@@ -258,7 +258,8 @@ const Index = ({ data }) => {
                 fontWeight: 'bold',
                 fontSize: '40px',
                 lineHeight: '48px',
-                letterSpacing: ' -0.02em'
+                letterSpacing: ' -0.02em',
+                zIndex: '3'
               }
             }}
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
@@ -376,7 +377,12 @@ const Index = ({ data }) => {
               marginRight: ['auto', 'auto', 'auto', 'auto'],
               marginLeft: ['auto', 'auto', 'auto', '0'],
               marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px']
+              maxWidth: ['100%', '100%', '366px', '471px'],
+              cursor: expanded ? 'auto' : 'pointer'
+            }}
+            expandTo={{
+              width: isMobile ? '100%' : '572px',
+              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
             }}
           >
             <Box
@@ -463,7 +469,8 @@ const Index = ({ data }) => {
                             lineHeight: '30px',
                             letterSpacing: '-0.02em',
                             color: '#151F2A',
-                            mb: 2
+                            mb: 2,
+                            zIndex: '3'
                           }
                         }
                       }}
@@ -495,7 +502,7 @@ const Index = ({ data }) => {
                         height: '100%',
                         width: '100%',
                         pointerEvents: 'none',
-                        zIndex: '99',
+                        zIndex: '1',
                         backgroundImage:
                           'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
                       }}
@@ -520,7 +527,7 @@ const Index = ({ data }) => {
                           fontSize: '28px',
                           lineHeight: '38px',
                           letterSpacing: '-0.02em',
-                          zIndex: '999'
+                          zIndex: '3'
                         }
                       }}
                     />
@@ -545,6 +552,7 @@ const Index = ({ data }) => {
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'scroll',
+                      flex: 1,
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -618,7 +626,12 @@ const Index = ({ data }) => {
               marginRight: ['auto', 'auto', 'auto', '0'],
               marginLeft: ['auto', 'auto', 'auto', 'auto'],
               marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px']
+              maxWidth: ['100%', '100%', '366px', '471px'],
+              cursor: expanded ? 'auto' : 'pointer'
+            }}
+            expandTo={{
+              width: isMobile ? '100%' : '572px',
+              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
             }}
           >
             <Box
@@ -709,7 +722,8 @@ const Index = ({ data }) => {
                             lineHeight: '30px',
                             letterSpacing: '-0.02em',
                             color: '#151F2A',
-                            mb: 0
+                            mb: 0,
+                            zIndex: '3'
                           }
                         }
                       }}
@@ -733,21 +747,20 @@ const Index = ({ data }) => {
                       maxHeight: ['50vh', '50vh', '296px']
                     }}
                   >
-                    {expanded && active === 2 ? (
-                      <Box
-                        sx={{
-                          position: 'absolute',
-                          top: '0',
-                          left: '0',
-                          height: '100%',
-                          width: '100%',
-                          pointerEvents: 'none',
-                          zIndex: '99',
-                          backgroundImage:
-                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
-                        }}
-                      ></Box>
-                    ) : null}
+                    <Box
+                      sx={{
+                        position: 'absolute',
+                        top: '0',
+                        left: '0',
+                        height: '100%',
+                        width: '100%',
+                        pointerEvents: 'none',
+                        zIndex: '1',
+                        backgroundImage:
+                          'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                      }}
+                    ></Box>
+
                     <TextBlock
                       heading={'Shop by body type'}
                       headingProps={{
@@ -767,7 +780,7 @@ const Index = ({ data }) => {
                           fontSize: '28px',
                           lineHeight: '38px',
                           letterSpacing: '-0.02em',
-                          zIndex: '999'
+                          zIndex: '3'
                         }
                       }}
                     />
@@ -792,6 +805,7 @@ const Index = ({ data }) => {
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'scroll',
+                      flex: 1,
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -874,6 +888,13 @@ const Index = ({ data }) => {
             onClose={() => {
               setActive(0);
               setexpanded(false);
+            }}
+            parentStyles={{
+              cursor: expanded ? 'auto' : 'pointer'
+            }}
+            expandTo={{
+              width: isMobile ? '100%' : '572px',
+              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
             }}
           >
             <Box
@@ -986,7 +1007,8 @@ const Index = ({ data }) => {
                       sx={{
                         color: 'white',
                         pt: expanded && active === 10 ? 6 : [8, 0],
-                        pb: 8
+                        pb: 8,
+                        zIndex: '3'
                       }}
                     />
                     {(!expanded || active !== 10) && (
@@ -1050,7 +1072,8 @@ const Index = ({ data }) => {
                       ],
                       zIndex: '0',
                       top: 0,
-                      transition: 'all 5000ms',
+                      transition: 'all 1000ms',
+                      willChange: 'height width opacity',
                       maxWidth: [
                         '100%',
                         '100%',
@@ -1070,6 +1093,7 @@ const Index = ({ data }) => {
                     position: 'relative',
                     zIndex: 2,
                     overflow: 'scroll',
+                    flex: 1,
                     flexGrow: 1,
                     '&::-webkit-scrollbar': {
                       width: '0',
@@ -1094,9 +1118,9 @@ const Index = ({ data }) => {
                       {selectedpopularList.map(
                         ({
                           id,
-                          name,
-                          image
-                        }: {
+                          name
+                        }: // image
+                        {
                           id: number;
                           name: string;
                           image: IGatsbyImageData;
@@ -1150,7 +1174,8 @@ const Index = ({ data }) => {
             sx={{
               mb: 20,
               display: ['none', 'block'],
-              pl: ['1.5rem', '1.5rem', '0']
+              pl: ['1.5rem', '1.5rem', '0'],
+              zIndex: '3'
             }}
           />
           <Box
@@ -1221,6 +1246,13 @@ const Index = ({ data }) => {
                       setActive(0);
                       setexpanded(false);
                     }}
+                    parentStyles={{
+                      cursor: expanded ? 'auto' : 'pointer'
+                    }}
+                    expandTo={{
+                      width: isMobile ? '100%' : '572px',
+                      height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+                    }}
                   >
                     <Box
                       style={{
@@ -1253,7 +1285,7 @@ const Index = ({ data }) => {
                         overlay={
                           !expanded
                             ? {
-                                zIndex: 99,
+                                zIndex: 10,
                                 colors: [
                                   {
                                     direction: '38.11deg',
@@ -1318,7 +1350,7 @@ const Index = ({ data }) => {
                                     ? '33px'
                                     : '25px',
                                 letterSpacing: '-0.02em',
-                                zIndex: '99'
+                                zIndex: '3'
                               }
                             }}
                           />
@@ -1345,6 +1377,7 @@ const Index = ({ data }) => {
                             position: 'relative',
                             zIndex: 2,
                             overflow: 'scroll',
+                            flex: 1,
                             flexGrow: 1,
                             '&::-webkit-scrollbar': {
                               width: '0',
@@ -1426,6 +1459,10 @@ const Index = ({ data }) => {
               expandedStyles={{
                 cursor: 'auto'
               }}
+              expandTo={{
+                width: isMobile ? '100%' : '572px',
+                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+              }}
             >
               <Box
                 style={{
@@ -1463,7 +1500,7 @@ const Index = ({ data }) => {
                       pb: 8,
                       height: '100%',
                       position: 'relative',
-                      zIndex: 2,
+                      zIndex: 1,
                       justifyContent:
                         expanded && active === 11
                           ? 'flex-end'
@@ -1496,7 +1533,7 @@ const Index = ({ data }) => {
                           lineHeight:
                             expanded && active === 11 ? '38px' : '42px',
                           letterSpacing: '-0.02em',
-                          zIndex: '99'
+                          zIndex: '3'
                         }
                       }}
                       text={
@@ -1549,6 +1586,7 @@ const Index = ({ data }) => {
                       position: 'relative',
                       zIndex: 2,
                       overflow: 'scroll',
+                      flex: 1,
                       flexGrow: 1,
                       '&::-webkit-scrollbar': {
                         width: '0',
@@ -1637,7 +1675,7 @@ const Index = ({ data }) => {
                 sx={{
                   p: 6,
                   pt: 6,
-                  zIndex: '1'
+                  zIndex: '3'
                 }}
               />
 
@@ -1700,7 +1738,8 @@ const Index = ({ data }) => {
                 sx={{
                   gridColumn: [null, '1 / span 9'],
                   gridRow: 1,
-                  px: [0, 2, 0]
+                  px: [0, 2, 0],
+                  zIndex: '3'
                 }}
               />
               {Array.from({ length: isMobile || isTablet ? 2 : 3 }).map(

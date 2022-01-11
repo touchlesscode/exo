@@ -28,16 +28,18 @@ const Overlay: React.FC<OverlayProps> = ({
         } ${color.radial?.join(', ')})`
   );
 
-  return visible ? (
+  return (
     <Box
       {...props}
       aria-hidden="true"
       sx={{
+        opacity: visible ? '1' : '0',
+        pointerEvents: visible ? 'auto' : 'none',
         animation: animated
-          ? `${fadeIn} ${transitionDuration || '1000'}ms`
+          ? `${fadeIn} ${transitionDuration || '250'}ms`
           : 'none',
         transition: transitioned
-          ? `all ${transitionDuration || '1000'}ms`
+          ? `all ${transitionDuration || '250'}ms`
           : 'none',
         backgroundColor: !colors?.length && (color || 'unset'),
         backgroundImage: bgImage,
@@ -51,14 +53,14 @@ const Overlay: React.FC<OverlayProps> = ({
     >
       {children}
     </Box>
-  ) : null;
+  );
 };
 
 export default Overlay;
 
 Overlay.defaultProps = {
   visible: true,
-  zIndex: '99',
+  zIndex: '10',
   position: 'absolute',
   animated: false,
   width: '100%',

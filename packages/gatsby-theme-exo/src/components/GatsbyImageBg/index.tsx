@@ -38,7 +38,7 @@ const GatsbyImageBg: React.FC<GatsbyImageBgProps> = ({
       <Box
         sx={{
           position: 'relative',
-          zIndex: 0.1,
+          zIndex: 1,
           ...sx
         }}
       >

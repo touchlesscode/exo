@@ -30,7 +30,7 @@ const Divider: React.FC<DividerProps> = ({
           maxWidth: width,
           height,
           border: 'none',
-          zIndex: 99,
+          zIndex: 1,
           ...sx
         }}
       />

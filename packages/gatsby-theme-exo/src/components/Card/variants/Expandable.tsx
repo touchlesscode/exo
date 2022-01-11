@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Card from '@exoTheme/components/Card';
-import { Box, useThemeUI, Theme, get } from 'theme-ui';
+import { Box } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import useTimeout from '@exoTheme/hooks/useTimeout';
 import useLockedBody from '@exoTheme/hooks/useLockedBody';
@@ -13,6 +13,7 @@ import {
 import DefaultCloseIcon from '@exoTheme/images/icons/close.inline.svg';
 import Button from '@exoTheme/components/Button';
 import Overlay from '@exoTheme/components/Overlay';
+import useWindowSize from '@exoTheme/hooks/useWindowSize';
 
 const ExpandableCard: React.ForwardRefRenderFunction<
   HTMLDivElement,
@@ -24,7 +25,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
     expanded,
     onClick,
     onClose,
-    duration = 120,
+    duration = 150,
     CloseIcon,
     expandTo,
     parentStyles,
@@ -33,8 +34,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
   },
   ref
 ) => {
+  const isMobile = useWindowSize()?.type === 'sm';
   useWindowVh();
-  const { theme } = useThemeUI();
   const OverlayProps = props.overlayed
     ? { overlay: props.overlay, overlayed: props.overlayed }
     : {};
@@ -66,27 +67,39 @@ const ExpandableCard: React.ForwardRefRenderFunction<
     <Box
       ref={parentRef}
       sx={{
-        ...{ height: expanded ? initialRect?.height : '100%' },
+        ...{
+          height: expanded ? initialRect?.height : '100%'
+        },
         ...parentStyles
       }}
       onClick={!expanded ? handleOnClick : undefined}
     >
+      <Overlay
+        color="rgba(0,0,0,0.4)"
+        position="fixed"
+        onClick={handleOnClose}
+        sx={{
+          cursor: 'pointer',
+          backdropFilter: 'blur(64px)',
+          display: isMobile ? 'none' : 'bolck',
+          zIndex: '10'
+        }}
+        visible={expanded ? true : false}
+        animated={expanded ? true : false}
+      />
       <Box
         ref={expandingRef}
         sx={{
           ...{
             width: '100%',
             height: '100%',
-            cursor: expanded ? 'auto' : 'pointer',
             animation: expanded
               ? `${expandAnimation(
-                  theme,
                   expandTo,
                   initialRect
                 )} ${duration}ms forwards` // add animation to expanding
               : willCollapse
               ? `${collapseAnimation(
-                  theme,
                   initialRect,
                   endRect
                 )} ${duration}ms forwards` // add animation to collapsing
@@ -101,17 +114,6 @@ const ExpandableCard: React.ForwardRefRenderFunction<
           ...expandedStyles
         }}
       >
-        {expanded && (
-          <Overlay
-            color="rgba(0,0,0,0.4)"
-            position="fixed"
-            onClick={handleOnClose}
-            sx={{
-              cursor: 'pointer',
-              backdropFilter: 'blur(64px)'
-            }}
-          />
-        )}
         <Box
           sx={{
             width: '100%',
@@ -125,7 +127,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             maxHeight: ['100%', '100%', `${expanded ? '718px' : '100%'}`],
             m: 'auto',
             position: 'relative',
-            zIndex: '999',
+            zIndex: '1',
             borderRadius: expanded ? [0, 0, '16px'] : '16px',
             overflow: 'hidden'
           }}
@@ -159,7 +161,6 @@ const ExpandableCard: React.ForwardRefRenderFunction<
 export default React.forwardRef(ExpandableCard);
 
 const expandAnimation = (
-  theme: Theme,
   expandTo?: ExpandToType,
   rect?: BoundingClientRecType
 ) =>
@@ -168,33 +169,27 @@ const expandAnimation = (
       position: 'fixed',
       top: rect?.top || 0,
       left: rect?.left || 0,
-      width: rect?.width || '100vw',
-      right: rect?.right || 0,
+      width: rect?.width || '100%',
       height: rect?.height || '100vh',
-      zIndex:
-        get(theme, 'zIndices.infinity') ||
-        get(theme, 'zIndices.1000') ||
-        '100000000',
+      transform: expandTo?.transform || 'translate(0, 0)',
+      maxHeight: 'calc(var(--vh, 1vh) * 100)',
+      zIndex: '12',
       margin: '0 auto'
     },
     to: {
       position: 'fixed',
-      zIndex:
-        get(theme, 'zIndices.infinity') ||
-        get(theme, 'zIndices.1000') ||
-        '100000000',
+      zIndex: '12',
       bottom: 0,
-      height: 'calc(var(--vh, 1vh) * 100)',
-      top: expandTo?.top || 0,
-      left: expandTo?.left || 0,
-      right: expandTo?.right || 0,
-      width: expandTo?.width || '100vw',
-      transform: expandTo?.transform || 'none',
+      height: expandTo?.height || 'calc(var(--vh, 1vh) * 100)',
+      maxHeight: 'calc(var(--vh, 1vh) * 100)',
+      top: expandTo?.top || '50%',
+      left: expandTo?.left || '50%',
+      width: expandTo?.width || '100%',
+      transform: expandTo?.transform || 'translate(-50%, -50%)',
       margin: '0 auto'
     }
   });
 const collapseAnimation = (
-  theme: Theme,
   rect: BoundingClientRecType | undefined,
   endRect: BoundingClientRecType | undefined
 ) =>
@@ -205,10 +200,7 @@ const collapseAnimation = (
       left: endRect?.left,
       width: endRect?.width,
       height: 'calc(var(--vh, 1vh) * 100)',
-      zIndex:
-        get(theme, 'zIndices.infinity') ||
-        get(theme, 'zIndices.1000') ||
-        '100000000'
+      zIndex: '12'
     },
     to: {
       position: 'fixed',
@@ -216,9 +208,6 @@ const collapseAnimation = (
       left: rect?.left,
       width: rect?.width,
       height: rect?.height,
-      zIndex:
-        get(theme, 'zIndices.infinity') ||
-        get(theme, 'zIndices.1000') ||
-        '100000000'
+      zIndex: '12'
     }
   });
