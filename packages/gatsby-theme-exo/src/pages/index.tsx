@@ -351,7 +351,7 @@ const Index = ({ data }) => {
       >
         <Flex
           sx={{
-            px: ['1.5rem', '1.5rem', 0],
+            px: ['1.5rem', '1.5rem', '1.5rem', 0],
             width: '100%',
             display: 'flex',
             flexDirection: ['column', 'column', 'column', 'row']
@@ -862,7 +862,7 @@ const Index = ({ data }) => {
         <Box
           sx={{
             width: '100%',
-            px: ['1.5rem', '1.5rem', 0],
+            px: ['1.5rem', '1.5rem', '1.5rem', 0],
             height: ['400px', '400px', '200px'],
             position: 'relative',
             mb: '32px'
@@ -927,7 +927,10 @@ const Index = ({ data }) => {
                             linear: ['#242952', '#242952 30%', 'rgba(0,0,0,0)']
                           }
                         ],
-                        zIndex: 1
+                        zIndex: 1,
+                        sx: {
+                          pointerEvents: 'none'
+                        }
                       }
                     : isMobile && !expanded
                     ? {
@@ -984,7 +987,10 @@ const Index = ({ data }) => {
                       zIndex: 2,
                       width: '100%',
                       px: 6,
-                      py: [null, 8]
+                      py: [null, 8],
+                      maxWidth: ['100%', '100%', '330px'],
+                      pr: 0,
+                      pb: 0
                     }}
                   >
                     <TextBlock
@@ -1059,31 +1065,59 @@ const Index = ({ data }) => {
                       </Flex>
                     )}
                   </Box>
-                  <GatsbyImage
-                    image={twoPeople}
-                    objectFit="cover"
-                    alt="test"
+                  <Box
                     sx={{
-                      position:
-                        expanded && active === 10 ? 'absolute' : 'relative',
-                      height: [
-                        `${expanded && active === 10 ? '100%' : '70%'}`,
-                        'auto'
-                      ],
-                      zIndex: '0',
-                      top: 0,
-                      transition: 'all 1000ms',
-                      willChange: 'height width opacity',
-                      maxWidth: [
-                        '100%',
-                        '100%',
-                        `${expanded && active === 10 ? '100%' : '70%'}`
-                      ],
-                      marginLeft: ['0', '0', 'auto'],
-                      borderRadius: ['0', '0', '16px'],
-                      overflow: 'hidden'
+                      ...{
+                        position:
+                          expanded && active === 10 ? 'absolute' : 'relative',
+                        top: 0,
+                        left: 0,
+                        height: [
+                          `${expanded && active === 10 ? '100%' : '70%'}`,
+                          'auto'
+                        ],
+
+                        width: '100%',
+                        maxWidth: [
+                          '100%',
+                          '100%',
+                          `${expanded && active === 10 ? '100%' : '70%'}`
+                        ],
+                        marginLeft: ['0', '0', 'auto'],
+                        zIndex: 0,
+                        borderRadius: ['0', '0', '16px'],
+                        overflow: 'hidden'
+                      },
+                      ...(!expanded
+                        ? {
+                            '&:hover::after': {
+                              content: '""',
+                              position: 'absolute',
+                              top: 0,
+                              left: 0,
+                              backgroundImage:
+                                'linear-gradient(0deg, rgba(37, 42, 83, 0.75), rgba(37, 42, 83, 0.75))',
+                              width: '100%',
+                              height: '100%',
+                              display: 'block',
+                              zIndex: '3'
+                            }
+                          }
+                        : {})
                     }}
-                  />
+                  >
+                    <GatsbyImage
+                      image={twoPeople}
+                      objectFit="cover"
+                      alt="test"
+                      sx={{
+                        transition: 'all 1000ms',
+                        willChange: 'height width opacity',
+                        height: 'auto',
+                        width: '100%'
+                      }}
+                    />
+                  </Box>
                 </Flex>
               </Card>
               {expanded && active === 10 ? (
@@ -1146,7 +1180,7 @@ const Index = ({ data }) => {
         <Box
           sx={{
             width: '100%',
-            px: ['0', '0', '0'],
+            px: ['0', '0', '1.5rem', '0'],
             position: 'relative',
             mb: '32px'
           }}
@@ -1432,7 +1466,7 @@ const Index = ({ data }) => {
           sx={{
             flexDirection: ['column', 'row'],
             width: '100%',
-            px: ['1.5rem', '1.5rem', 0],
+            px: ['1.5rem', '1.5rem', '1.5rem', 0],
             mb: '32px'
           }}
         >
@@ -1704,7 +1738,7 @@ const Index = ({ data }) => {
         <Box
           sx={{
             height: 'max-content',
-            px: ['1.5rem', '1.5rem', 0]
+            px: ['1.5rem', '1.5rem', '1.5rem', 0]
           }}
         >
           <Card elevated radius="16px">
