@@ -26,13 +26,7 @@ type sourceType = {
     asset: IGatsbyImageData;
   };
 };
-const badges = [
-  'Electric Cars',
-  'Family Cars',
-  'Work Cars',
-  'City Cars',
-  'See All'
-];
+
 const brandsNames = [
   'Kia',
   'Lexus',
@@ -73,7 +67,13 @@ const Index = ({ data }) => {
   const isTablet = useWindowSize()?.type === 'md';
   const [expanded, setexpanded] = useState(false);
   const [active, setActive] = useState(0);
-
+  const [selectedpopularList, setSelectedPopularList] = useState(
+    [] as {
+      id: number;
+      name: string;
+      image: IGatsbyImageData;
+    }[]
+  );
   const {
     redCar,
     brands,
@@ -85,6 +85,7 @@ const Index = ({ data }) => {
     ServicesCar,
     tradeIn
   } = data;
+
   let optionsIcons = {} as {
     [x: string]: IGatsbyImageData;
   };
@@ -133,6 +134,28 @@ const Index = ({ data }) => {
       };
     })
     .filter((item: sourceType) => item !== undefined);
+  const popularCars = [
+    {
+      type: 'Electric Cars',
+      list: sortedBrands
+    },
+    {
+      type: 'Family Cars',
+      list: sortedBrands
+    },
+    {
+      type: 'Work Cars',
+      list: sortedBrands
+    },
+    {
+      type: 'City Cars',
+      list: sortedBrands
+    },
+    {
+      type: 'See All',
+      list: sortedBrands
+    }
+  ];
 
   const carouselData = [
     {
@@ -840,6 +863,13 @@ const Index = ({ data }) => {
             onClick={() => {
               setActive(10);
               setexpanded(true);
+              setSelectedPopularList(
+                popularCars.find((item) => item.type === 'See All')?.list as {
+                  id: number;
+                  name: string;
+                  image: IGatsbyImageData;
+                }[]
+              );
             }}
             onClose={() => {
               setActive(0);
@@ -970,23 +1000,39 @@ const Index = ({ data }) => {
                           maxWidth: '375px'
                         }}
                       >
-                        {badges.map((badge, idx) => (
-                          <Badge
+                        {popularCars.map((item, idx) => (
+                          <Button
                             key={idx}
-                            bg="rgba(255, 255, 255, 0.12)"
-                            color="white"
-                            variant="rounded"
                             sx={{
-                              fontFamily: 'Poppins',
-                              fontWeight: '500',
-                              fontSize: '16px',
-                              lineHeight: '23px',
-                              letterSpacing: '-0.02em',
-                              color: '#FFFFFF'
+                              p: 0
+                            }}
+                            onClick={(e) => {
+                              setActive(10);
+                              setexpanded(true);
+                              setSelectedPopularList(item.list);
+                              e.stopPropagation();
                             }}
                           >
-                            {badge}
-                          </Badge>
+                            <Badge
+                              bg="rgba(255, 255, 255, 0.12)"
+                              color="white"
+                              variant="rounded"
+                              sx={{
+                                fontFamily: 'Poppins',
+                                fontWeight: '500',
+                                fontSize: '16px',
+                                lineHeight: '23px',
+                                letterSpacing: '-0.02em',
+                                color: '#FFFFFF',
+                                '&:hover, &:focus': {
+                                  color: '#242A52',
+                                  backgroundColor: '#ffffff'
+                                }
+                              }}
+                            >
+                              {item.type}
+                            </Badge>
+                          </Button>
                         ))}
                       </Flex>
                     )}
@@ -1045,16 +1091,27 @@ const Index = ({ data }) => {
                     }}
                   >
                     <ListDivided>
-                      {[...badges, ...badges, ...badges].map((badge, idx) => (
-                        <ImageWithLabel
-                          key={idx}
-                          image={redCar}
-                          label={badge}
-                          alt="electric"
-                          imageVariant="rounded"
-                          labelStyle={{ color: 'white' }}
-                        />
-                      ))}
+                      {selectedpopularList.map(
+                        ({
+                          id,
+                          name,
+                          image
+                        }: {
+                          id: number;
+                          name: string;
+                          image: IGatsbyImageData;
+                        }) => (
+                          <ImageWithLabel
+                            key={id}
+                            // image={image}
+                            image={redCar}
+                            label={name}
+                            alt={name}
+                            imageVariant="rounded"
+                            labelStyle={{ color: 'white' }}
+                          />
+                        )
+                      )}
                     </ListDivided>
                   </Box>
                 </Box>
