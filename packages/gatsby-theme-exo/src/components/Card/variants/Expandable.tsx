@@ -203,7 +203,7 @@ const collapseAnimation = (
       zIndex: '12'
     },
     to: {
-      position: 'fixed',
+      position: 'relative',
       top: rect?.top,
       left: rect?.left,
       width: rect?.width,
