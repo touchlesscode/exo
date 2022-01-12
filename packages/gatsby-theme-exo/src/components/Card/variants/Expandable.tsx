@@ -96,7 +96,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             animation: expanded
               ? `${expandAnimation(
                   expandTo,
-                  initialRect
+                  initialRect,
+                  isMobile
                 )} ${duration}ms forwards` // add animation to expanding
               : willCollapse
               ? `${collapseAnimation(
@@ -117,14 +118,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
         <Box
           sx={{
             width: '100%',
-            height:
-              !expanded && !willCollapse
-                ? '100%' // set to 100% when the card is not expanded and not collapsing. / initial state.
-                : expanded && !willCollapse
-                ? 'fill-available' // set to max-content when the card is expanded.
-                : !expanded && willCollapse && initialRect?.height, // set to initial height when the card is collapsing.
-            maxWidth: ['100%', '100%', `${expanded ? '572px' : '100%'}`],
-            maxHeight: ['100%', '100%', `${expanded ? '718px' : '100%'}`],
+            height: '100%', // set to initial height when the card is collapsing.
             m: 'auto',
             position: 'relative',
             zIndex: '1',
@@ -162,7 +156,8 @@ export default React.forwardRef(ExpandableCard);
 
 const expandAnimation = (
   expandTo?: ExpandToType,
-  rect?: BoundingClientRecType
+  rect?: BoundingClientRecType,
+  isMobile?: boolean
 ) =>
   keyframes({
     from: {
@@ -172,7 +167,7 @@ const expandAnimation = (
       width: rect?.width || '100%',
       height: rect?.height || '100vh',
       transform: expandTo?.transform || 'translate(0, 0)',
-      maxHeight: 'calc(var(--vh, 1vh) * 100)',
+      maxHeight: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px',
       zIndex: '12',
       margin: '0 auto'
     },
@@ -181,7 +176,7 @@ const expandAnimation = (
       zIndex: '12',
       bottom: 0,
       height: expandTo?.height || 'calc(var(--vh, 1vh) * 100)',
-      maxHeight: 'calc(var(--vh, 1vh) * 100)',
+      maxHeight: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px',
       top: expandTo?.top || '50%',
       left: expandTo?.left || '50%',
       width: expandTo?.width || '100%',

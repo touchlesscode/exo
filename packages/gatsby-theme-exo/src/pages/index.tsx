@@ -387,8 +387,10 @@ const Index = ({ data }) => {
                 cursor: expanded ? 'auto' : 'pointer'
               }}
               expandTo={{
-                width: isMobile ? '100%' : '572px',
-                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+                width: isMobile ? '100%' : '414px',
+                height: isMobile
+                  ? 'calc(var(--vh, 1vh) * 100)'
+                  : 'calc(var(--vh, 1vh) * 100 - 80px)'
               }}
             >
               <Box
@@ -644,8 +646,10 @@ const Index = ({ data }) => {
                 cursor: expanded ? 'auto' : 'pointer'
               }}
               expandTo={{
-                width: isMobile ? '100%' : '572px',
-                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+                width: isMobile ? '100%' : '414px',
+                height: isMobile
+                  ? 'calc(var(--vh, 1vh) * 100)'
+                  : 'calc(var(--vh, 1vh) * 100 - 80px)'
               }}
             >
               <Box
@@ -908,8 +912,10 @@ const Index = ({ data }) => {
               cursor: expanded ? 'auto' : 'pointer'
             }}
             expandTo={{
-              width: isMobile ? '100%' : '572px',
-              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+              width: isMobile ? '100%' : '414px',
+              height: isMobile
+                ? 'calc(var(--vh, 1vh) * 100)'
+                : 'calc(var(--vh, 1vh) * 100 - 80px)'
             }}
           >
             <Box
@@ -1305,8 +1311,10 @@ const Index = ({ data }) => {
                       cursor: expanded ? 'auto' : 'pointer'
                     }}
                     expandTo={{
-                      width: isMobile ? '100%' : '572px',
-                      height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+                      width: isMobile ? '100%' : '414px',
+                      height: isMobile
+                        ? 'calc(var(--vh, 1vh) * 100)'
+                        : 'calc(var(--vh, 1vh) * 100 - 80px)'
                     }}
                   >
                     <Box
@@ -1535,8 +1543,10 @@ const Index = ({ data }) => {
                 cursor: 'auto'
               }}
               expandTo={{
-                width: isMobile ? '100%' : '572px',
-                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+                width: isMobile ? '100%' : '414px',
+                height: isMobile
+                  ? 'calc(var(--vh, 1vh) * 100)'
+                  : 'calc(var(--vh, 1vh) * 100 - 80px)'
               }}
             >
               <Box
