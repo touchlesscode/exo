@@ -1,0 +1,27 @@
+{
+    "name": "@textkit/brandon-font",
+    "version": "1.0.0",
+    "description": "TextKit Brandon Text Font.",
+    "main": "index.css",
+    "publishConfig": {
+        "access": "public"
+    },
+    "keywords": [
+        "textkit",
+        "brandon-font",
+        "Brandon Text"
+    ],
+    "author": "Statflo",
+    "license": "MIT",
+    "files": [
+        "README.md",
+        "files",
+        "index.css"
+    ],
+    "homepage": "",
+    "repository": {
+        "type": "git",
+        "url": "",
+        "directory": ""
+    }
+}

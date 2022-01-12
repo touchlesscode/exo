@@ -1,0 +1,57 @@
+{
+    "name": "widget-test",
+    "version": "0.1.0",
+    "private": true,
+    "author": "Kevin Gervais",
+    "license": "MIT",
+    "dependencies": {
+        "@headlessui/react": "^1.4.2",
+        "@types/lodash": "^4.14.177",
+        "@types/react": "^17.0.8",
+        "@types/react-dom": "^17.0.5",
+        "@types/styled-components": "^5.1.14",
+        "@types/uuid": "^8.3.3",
+        "cra-template-typescript": "1.1.2",
+        "iframe-resizer-react": "^1.1.0",
+        "lodash": "^4.17.21",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-scripts": "4.0.3",
+        "styled-components": "^5.3.1",
+        "styled-reset": "^4.3.4",
+        "typescript": "^4.2.4",
+        "uuid": "^8.3.2",
+        "web-vitals": "^1.1.2"
+    },
+    "devDependencies": {
+        "s3-deploy": "^1.4.0"
+    },
+    "scripts": {
+        "start": "PORT=3001 react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "ci:build": "npm run build",
+        "ci:test": "npm run test -- --watchAll=false",
+        "ci:deploy:development": "yarn run build && s3-deploy './build/**' --cwd './build/' --gzip --region ca-central-1 --bucket ui-test.widgets.test.statflo.com --cache 3600 --etag --deleteRemoved --distId E69N9VG8OXX6B --invalidate 'index.html /*'",
+        "ci:deploy:production": "yarn run build && s3-deploy './build/**' --cwd './build/' --gzip --region ca-central-1 --bucket ui-test.widgets.ca.prod.stflo.io --cache 3600 --etag --deleteRemoved --distId xxx --invalidate 'index.html /*'"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
