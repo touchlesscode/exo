@@ -4,7 +4,7 @@ import { useTheme } from 'styled-components';
 import { Container } from './index.styled';
 import ChevronUp from '../../icons/ChevronUp';
 import ChevronDown from '../../icons/ChevronDown';
-import Search from 'src/icons/Search';
+import Search from '@exo/icons/Search';
 import Options from './Options';
 import InputError from '../InputError';
 

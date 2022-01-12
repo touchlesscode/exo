@@ -1,23 +1,21 @@
 import React, { useCallback, useContext, useEffect, useState } from 'react';
-import { CancelButton, Divider, FlexBox, FlexRow, SpacerGap, SubmitButton } from '../../../styles/addalead.style';
-import Loading from '../../../../../components/Loading';
-import AddButton from '../../../components/AddButton';
-import { MainWrapper } from '../../../../components/Wrappers';
-import { UserContext } from '../../../../context/UserContext';
+import { CancelButton, Divider, FlexBox, FlexRow, SpacerGap, SubmitButton } from '@exo/styles/textkit.addalead.style';
+import Loader from '@exo/components/Loader';
+import AddButton from '@exo/components/AddButton';
+import { MainWrapper } from '@exo/components/Wrappers';
+import { UserContext } from '@exo/context/UserContext';
 import { ThemeProvider } from 'styled-components'
-import { useOnEvent,usePostEvent,  WidgetType, WidgetEvents } from '../../../../hooks/widgetApi';
+import { useOnEvent,usePostEvent, WidgetType, WidgetViewSize, WidgetEvents } from '@exo/hooks/widgetApi';
 import axios from 'axios';
 import { useFormik } from 'formik';
-import Dropdown, { Option } from '../../../../components/Dropdown';
-import ListItem from '../../../../components/ListItem';
-import TextInput from '../../../../components/TextInput';
-import Checkbox from '../../../../components/Checkbox';
-import { createOptions, getSelectedValue, validationAddress, validationPrimary } from '../../../utils';
-import { GlobalStyle, defaultTheme as theme } from '../../../../theme'
-import WidgetError from '../../../../components/WidgetError';
-import useWidgetReady from "../hooks/useWidgetReady";
-import { WidgetViewSize } from "../widgetApi";
-import WidgetEvents from "../widgetApi/events";
+import Dropdown, { Option } from '@exo/components/Dropdown';
+import ListItem from '@exo/components/ListItem';
+import TextInput from '@exo/components/TextInput';
+import Checkbox from '@exo/components/Checkbox';
+import { createOptions, getSelectedValue, validationAddress, validationPrimary } from '@exo/utils';
+import { GlobalStyle, defaultTheme as theme } from '@exo/theme'
+import WidgetError from '@exo/components/WidgetError';
+import useWidgetReady from "@exo/hooks/useWidgetReady";
 
 export interface TListItem {
   label: string;
@@ -49,7 +47,7 @@ const IndexPage = () => {
   const ready = useWidgetReady({});
   const { postEvent, event } = React.useContext(UserContext);
   const [init, setInit] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(true);
+  const [Loader, setLoader] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
   const [address, setAddress] = useState<any>(false);
   const [primary, setPrimary] = useState<any>(false);
@@ -593,7 +591,7 @@ const IndexPage = () => {
 
   const loadFormOptions = useCallback(async () => {
       if (1 == 1) {
-          setLoading(true);
+          setLoader(true);
           setError(false);
           setLeadtypes([{
               label: 'Business',
@@ -613,7 +611,7 @@ const IndexPage = () => {
           if (!resp.data) {
               setError(true);
           }*/
-          setLoading(false);
+          setLoader(false);
       }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
@@ -681,8 +679,8 @@ const IndexPage = () => {
     <>
     <GlobalStyle />
         <ThemeProvider theme={theme}>
-            <Loading 
-                loading={loading}
+            <Loader 
+                Loader={Loader}
                 error={error}
             >
             
@@ -939,7 +937,7 @@ const IndexPage = () => {
                             </>
                         )}
                 </MainWrapper>
-        </Loading>
+        </Loader>
         </ThemeProvider>
         </>
   )

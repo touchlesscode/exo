@@ -1,2 +1,2 @@
-import theme from '@exoTheme/theme/index';
+import theme from '@exo/theme/index';
 export default theme;

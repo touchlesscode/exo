@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Loader from './Loader';
-import WidgetError from './WidgetError';
+import Loader from '@exo/components/Loader';
+import WidgetError from '@exo/components/WidgetError';
 
 interface LoadingProps {
     error?: boolean;

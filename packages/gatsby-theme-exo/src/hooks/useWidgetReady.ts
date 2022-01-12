@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useState } from "react";
-import { UserContext } from "../context/UserContext";
+import { UserContext } from "@exo/context/UserContext";
 import { WidgetEvents, WidgetOptions } from "./widgetApi";
 
 export default function useWidgetReady(widgetOptions? : WidgetOptions) {
@@ -7,7 +7,7 @@ export default function useWidgetReady(widgetOptions? : WidgetOptions) {
     const [ready, setReady] = useState<boolean>(false);
 
     const sendReadyEvent = useCallback(() => {
-        postEvent(WidgetEvents.widgetReady(widgetOptions));
+        postEvent(WidgetEventswidgetReady(widgetOptions));
         setReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

@@ -1,14 +1,13 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
-import ListItem from '../../../../components/ListItem';
-import Loading from '../../../../components/Loading';
-import { UserContext } from '../../../../context/UserContext';
-import { MainWrapper } from '../../../../components/Wrappers';
-import { WidgetType } from '../../../../hooks/widgetApi';
-import Clipboard from '../../../../icons/Clipboard';
-import useWidgetReady from '../../../../hooks/useWidgetReady';
-import useTextKitContext from '../../../../hooks/useTextKitContext';
+import Loader from '@exo/components/Loader';
+import { UserContext } from '@exo/context/UserContext';
+import { MainWrapper } from '@exo/components/Wrappers';
+import { WidgetType } from '@exo/hooks/widgetApi';
+import Clipboard from '@exo/icons/Clipboard';
+import useWidgetReady from '@exo/hooks/useWidgetReady';
+import useTextKitContext from '@exo/hooks/useTextKitContext';
 
 const IconHolder = styled.div`
     display: inline-block;
@@ -31,7 +30,7 @@ const Contact = () => {
         footer: "Show more"
     });
     const { expanded } = useContext(UserContext);
-    const { error, data, loading, reloadContact } = useTextKitContext();
+    const { error, data, Loader, reloadContact } = useTextKitContext();
     
     const copyAccountId = () => {
         if (data?.account_id) {
@@ -40,7 +39,7 @@ const Contact = () => {
     }
 
     return (
-        <Loading loading={!ready || loading || data === undefined} error={error} onRefresh={reloadContact}>
+        <Loader Loader={!ready || Loader || data === undefined} error={error} onRefresh={reloadContact}>
             <MainWrapper>
                 <ListItem 
                     title='BAN ID' 
@@ -74,7 +73,7 @@ const Contact = () => {
                     </>
                 )}
             </MainWrapper>
-        </Loading>
+        </Loader>
     )
 }
 

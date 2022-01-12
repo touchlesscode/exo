@@ -1,6 +1,6 @@
 import React from 'react';
-import ListItem from '../../components/ListItem';
-import { MainWrapper } from '../../components/Wrappers';
+import ListItem from '@exo/components/ListItem';
+import { MainWrapper } from '@exo/components/Wrappers';
 
 const Skeleton = () => {
     return (
