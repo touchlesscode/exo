@@ -15,6 +15,7 @@ import useWidgetReady from '@exo/hooks/useWidgetReady';
 import useTextKitContext from '@exo/hooks/useTextKitContext';
 
 const Index = () => {
+     
      const ready = useWidgetReady({
         type: WidgetType.Default,
         label: "",
@@ -23,11 +24,11 @@ const Index = () => {
      });
 
      const { postEvent, event } = useTextKitContext(UserContext);
+     const { error, data, loading, reloadContact } = useTextKitContext();
      const [init, setInit] = useState<boolean>(false);
      const [state, setState] = useState<TState>('compact');
      const { expanded } = useContext(UserContext);
-     const { error, data, loading, reloadContact } = useTextKitContext();
-
+     
      useEffect(() => {
         if (!init && ready) {
             setInit(true);
