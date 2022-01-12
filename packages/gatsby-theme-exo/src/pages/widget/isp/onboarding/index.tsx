@@ -14,7 +14,7 @@ import { GlobalStyle, defaultTheme as theme } from '@exo/theme'
 import useWidgetReady from '@exo/hooks/useWidgetReady';
 import useTextKitContext from '@exo/hooks/useTextKitContext';
 
-const Index = () => {
+const OnBoardingPage = () => {
      
      const ready = useWidgetReady({
         type: WidgetType.Default,
@@ -50,4 +50,4 @@ const Index = () => {
      return <div>Index Page</div>;
 };
 
-export default Index;
+export default OnBoardingPage;
