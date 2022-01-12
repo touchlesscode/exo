@@ -30,8 +30,8 @@ const Rating: React.FC<RatingProps> = ({
         return (
           <svg
             key={id}
-            width="16px"
-            height="16px"
+            width="14px"
+            height="14px"
             focusable="false"
             aria-hidden="true"
             strokeWidth="1px"

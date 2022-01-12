@@ -1,6 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import { graphql, navigate } from 'gatsby';
-import { Box, Grid, Theme } from 'theme-ui';
+import { Box, Theme } from 'theme-ui';
 import Badge from '@exoTheme/components/Badge';
 import Button from '@exoTheme/components/Button';
 import Card from '@exoTheme/components/Card';
@@ -67,6 +67,13 @@ const Index = ({ data }) => {
   const isTablet = useWindowSize()?.type === 'md';
   const [expanded, setexpanded] = useState(false);
   const [active, setActive] = useState(0);
+  const [reviewsToShow, setReviewsToShow] = useState(
+    isMobile || isTablet ? 2 : 3
+  );
+  const [showAllReviews, setshowAllReviews] = useState(false);
+  useEffect(() => {
+    isMobile || isTablet ? setReviewsToShow(2) : setReviewsToShow(3);
+  }, [isMobile, isTablet]);
   const [selectedpopularList, setSelectedPopularList] = useState(
     [] as {
       id: number;
@@ -156,7 +163,43 @@ const Index = ({ data }) => {
       list: sortedBrands
     }
   ];
-
+  const reviews = [
+    {
+      image: twoPeople,
+      name: 'Jhon Jhonson',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      rating: 5
+    },
+    {
+      image: twoPeople,
+      name: 'Jhon Jhonson',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      rating: 5
+    },
+    {
+      image: twoPeople,
+      name: 'Jhon Jhonson',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      rating: 5
+    },
+    {
+      image: twoPeople,
+      name: 'Jhon Jhonson',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      rating: 5
+    },
+    {
+      image: twoPeople,
+      name: 'Jhon Jhonson',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      rating: 5
+    }
+  ];
   const carouselData = [
     {
       position: 'left',
@@ -1767,6 +1810,12 @@ const Index = ({ data }) => {
                 Icon={SlimArrow}
                 space="2"
                 sx={{
+                  fontFamily: 'Poppins',
+                  fontStyle: 'normal',
+                  fontWeight: '600',
+                  fontSize: '18px',
+                  lineHeight: '27px',
+                  color: '#3B6097',
                   pt: 0,
                   pb: '24px',
                   whiteSpace: 'nowrap',
@@ -1786,88 +1835,141 @@ const Index = ({ data }) => {
         <Box
           sx={{
             height: 'max-content',
-            px: ['1.5rem', '1.5rem', '1.5rem', 0]
+            px: ['1.5rem', '1.5rem', '1.5rem', 0],
+            width: '100%'
           }}
         >
           <Card elevated radius="16px">
-            <Grid
-              columns={['1fr', 'repeat(12, 1fr)']}
+            <Box
               sx={{
-                px: [3, 6],
-                py: 8,
-                gap: ['2', '40px 8px']
+                px: ['16px', '16px', '24px'],
+                py: '24px',
+                bg: ['#ffffff', '#ffffff', '#F8F7F6']
               }}
             >
-              <TextBlock
-                heading={
-                  isMobile
-                    ? 'Customers Feedback'
-                    : 'What 100,000+ People Say About Koons'
-                }
-                headingProps={{
-                  withLine: true,
-                  line: {
-                    width: ['100%', '50%']
-                  },
-                  sx: {
-                    width: ['50%', '100%'],
-                    fontWeight: 'semiBold',
-                    fontSize: '32',
-                    mb: 2
+              <Flex>
+                <TextBlock
+                  heading={
+                    isMobile
+                      ? 'Customers Feedback'
+                      : 'What 100,000+ People Say About Koons'
                   }
-                }}
-                text="Review all the numbers and finalize everything without needing to visit us."
-                sx={{
-                  gridColumn: [null, '1 / span 9'],
-                  gridRow: 1,
-                  px: [0, 2, 0],
-                  zIndex: '3'
-                }}
-              />
-              {Array.from({ length: isMobile || isTablet ? 2 : 3 }).map(
-                (_, idx) => (
-                  <Review
-                    key={idx}
-                    image={twoPeople}
-                    name="Jhon Jhonson"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  headingProps={{
+                    withLine: true,
+                    line: {
+                      width: '277px',
+                      space: '1'
+                    },
+                    sx: {
+                      width: ['175px', '175px', 'auto'],
+                      fontFamily: 'Poppins',
+                      fontStyle: 'normal',
+                      fontWeight: '600',
+                      fontSize: '32px',
+                      lineHeight: '38px',
+                      letterSpacing: '-0.02em',
+                      color: '#151F2A',
+                      mb: '8px'
+                    }
+                  }}
+                  text="Review all the numbers and finalize everything without needing to visit us."
+                  sx={{
+                    fontFamily: 'Poppins',
+                    fontStyle: 'normal',
+                    fontWeight: '500',
+                    fontSize: '16px',
+                    lineHeight: '23px',
+                    letterSpacing: '-0.01em',
+                    color: 'rgba(21, 31, 42, 0.9)',
+                    mb: '16px',
+                    zIndex: '3'
+                  }}
+                />
+                {!isMobile && (
+                  <Button
+                    onClick={() => setshowAllReviews(!showAllReviews)}
+                    color="primaryNavy"
+                    Icon={SlimArrow}
+                    space="2"
                     sx={{
-                      gridColumn: [null, 'span 6', 'span 6', 'span 4'],
-                      gridRow: [null, '2'],
-                      bg: ['#F8F7F6', 'transparent'],
-                      py: [4, 0],
-                      px: [2, 4, 0],
-                      borderRadius: 6
+                      fontFamily: 'Poppins',
+                      fontStyle: 'normal',
+                      fontWeight: '600',
+                      fontSize: '18px',
+                      lineHeight: '27px',
+                      color: '#3B6097',
+                      ml: 'auto',
+                      p: '0 0 0 10px',
+                      height: 'max-content',
+                      whiteSpace: 'nowrap',
+                      '&:hover': {
+                        color: 'primaryBlue'
+                      },
+                      '&:focus': {
+                        color: 'primarySkyBlue'
+                      }
                     }}
-                  />
-                )
-              )}
-              <Button
-                onClick={() => navigate('/')}
-                color="primaryNavy"
-                Icon={SlimArrow}
-                space="2"
+                  >
+                    {showAllReviews ? 'Read less reviews' : 'Read more reviews'}
+                  </Button>
+                )}
+              </Flex>
+
+              <Flex
+                gap="1"
                 sx={{
-                  gridColumn: [null, '10 / span 3'],
-                  gridRow: [null, 1],
-                  justifySelf: [null, 'end'],
-                  p: 0,
-                  height: 'max-content',
-                  alignSelf: 'top',
-                  whiteSpace: 'nowrap',
-                  mt: [6, 0],
-                  borderRadius: 0,
-                  '&:hover': {
-                    color: 'primaryBlue'
-                  },
-                  '&:focus': {
-                    color: 'primarySkyBlue'
-                  }
+                  flexDirection: ['column', 'column', 'row'],
+                  justifyContent: 'flex-start',
+                  flexWrap: showAllReviews ? 'wrap' : 'nowrap'
                 }}
               >
-                Read more reviews
-              </Button>
-            </Grid>
+                {reviews.map((review, index) =>
+                  reviewsToShow >= index + 1 || showAllReviews ? (
+                    <Review
+                      key={index}
+                      image={review.image}
+                      name={review.name}
+                      description={review.description}
+                      rated={review.rating}
+                      sx={{
+                        bg: ['#F8F7F6', 'transparent'],
+                        py: [4, 0],
+                        px: [2, 4, 0],
+                        borderRadius: 6
+                      }}
+                    />
+                  ) : null
+                )}
+              </Flex>
+              {isMobile && (
+                <Button
+                  onClick={() => setshowAllReviews(!showAllReviews)}
+                  color="primaryNavy"
+                  Icon={SlimArrow}
+                  space="2"
+                  sx={{
+                    fontFamily: 'Poppins',
+                    fontStyle: 'normal',
+                    fontWeight: '600',
+                    fontSize: '18px',
+                    lineHeight: '27px',
+                    color: '#3B6097',
+                    p: '0',
+                    pt: '16px',
+                    height: 'max-content',
+                    whiteSpace: 'nowrap',
+                    '&:hover': {
+                      color: 'primaryBlue'
+                    },
+                    '&:focus': {
+                      color: 'primarySkyBlue'
+                    }
+                  }}
+                >
+                  {showAllReviews ? 'Read less reviews' : 'Read more reviews'}
+                </Button>
+              )}
+            </Box>
           </Card>
         </Box>
       </Box>

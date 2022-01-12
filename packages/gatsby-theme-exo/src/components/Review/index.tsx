@@ -1,13 +1,13 @@
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 import * as React from 'react';
-import { Box, Grid, BoxProps } from 'theme-ui';
+import { FlexProps } from 'theme-ui';
 import Flex from '@exoTheme/components/Flex';
 import GatsbyImage from '@exoTheme/components/GatsbyImage';
 import Rating from '@exoTheme/components/Rating';
 import { RatingProps } from '@exoTheme/components/Rating/types';
 import Typography from '@exoTheme/components/Typography';
 
-interface RecviewProps extends BoxProps {
+interface RecviewProps extends FlexProps {
   image: IGatsbyImageData;
   name: string;
   description: string;
@@ -24,43 +24,60 @@ const Recview: React.FC<RecviewProps> = ({
   ...rest
 }) => {
   return (
-    <Box {...rest}>
-      <Grid
-        columns="2rem 1fr"
-        sx={{
-          alignItems: 'center'
-        }}
-      >
+    <Flex
+      {...rest}
+      sx={{
+        flexDirection: 'column',
+        bg: '#F8F7F6',
+        borderRadius: '6px',
+        px: ['24px', '24px', '0'],
+        py: ['16px', '16px', '0'],
+        mb: '9px'
+      }}
+    >
+      <Flex gap="2" align="center" sx={{ width: '100%' }}>
         <GatsbyImage
           image={image}
           alt={name}
           sx={{
-            width: 8,
-            height: 8,
-            borderRadius: 100
+            width: '32px',
+            height: '32px',
+            borderRadius: '50%'
           }}
         />
-        <Flex gap="3" align="center" sx={{ width: '100%' }}>
-          <Typography as="h5">{name}</Typography>
-          <Rating rated={rated} {...rating} />
-        </Flex>
         <Typography
+          as="h5"
           sx={{
-            fontWeight: 'normal',
-            gridColumn: '2',
             fontFamily: 'Poppins',
-            fontSize: '15px',
-            lineHeight: '20px',
-            letterSpacing: '-0.01em',
-            color: '#656565',
-            width: '100%',
-            maxWidth: '260px'
+            fontStyle: 'normal',
+            fontWeight: '600',
+            fontSize: '16px',
+            lineHeight: '24px',
+            letterSpacing: '-0.02em',
+            color: '#151F2A'
           }}
         >
-          {description}
+          {name}
         </Typography>
-      </Grid>
-    </Box>
+        <Rating rated={rated} {...rating} />
+      </Flex>
+      <Typography
+        sx={{
+          fontFamily: 'Poppins',
+          fontStyle: 'normal',
+          fontWeight: 'normal',
+          fontSize: '15px',
+          lineHeight: '20px',
+          letterSpacing: '-0.01em',
+          color: '#656565',
+          width: '100%',
+          maxWidth: '260px',
+          ml: '43px'
+        }}
+      >
+        {description}
+      </Typography>
+    </Flex>
   );
 };
 
