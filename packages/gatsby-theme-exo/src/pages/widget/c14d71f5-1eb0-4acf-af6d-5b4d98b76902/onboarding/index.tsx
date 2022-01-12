@@ -1,16 +1,6 @@
-import React, { useContext, useEffect, useState, useReducer } from 'react';
-import Loading from '@exo/components/Loading';
-import AddButton from '@exo/components/AddButton';
+import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '@exo/context/UserContext';
-import { MainWrapper } from '@exo/components/Wrappers';
-import { ThemeProvider } from 'styled-components'
-import { WidgetType, WidgetViewSize, WidgetEvents } from '@exo/hooks/widgetApi';
-import axios from 'axios';
-import { useFormik } from 'formik';
-import Dropdown, { Option } from '@exo/components/Dropdown';
-import TextInput from '@exo/components/TextInput';
-import { createOptions, validationAddress, validationPrimary } from '@exo/utils';
-import { GlobalStyle, defaultTheme as theme } from '@exo/theme'
+import { WidgetType } from '@exo/hooks/widgetApi';
 import useWidgetReady from '@exo/hooks/useWidgetReady';
 import useTextKitContext from '@exo/hooks/useTextKitContext';
 
