@@ -1920,7 +1920,7 @@ const Index = ({ data }) => {
                 sx={{
                   flexDirection: ['column', 'column', 'row'],
                   justifyContent: 'flex-start',
-                  flexWrap: showAllReviews ? 'wrap' : 'nowrap'
+                  flexWrap: 'wrap'
                 }}
               >
                 {reviews.map((review, index) =>
