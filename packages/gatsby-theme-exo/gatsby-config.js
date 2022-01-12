@@ -31,7 +31,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
-    'gatsby-source-sanity-transform-images',
+    //'gatsby-source-sanity-transform-images',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -45,12 +45,6 @@ module.exports = {
         path: './src/images/'
       },
       __key: 'images'
-    },
-    {
-      resolve: 'gatsby-plugin-html-attributes',
-      options: {
-        lang: 'en'
-      }
     },
     {
       resolve: 'gatsby-omni-font-loader',
