@@ -29,7 +29,7 @@ const OnBoardingPage = () => {
      const [state, setState] = useState<TState>('compact');
      const { expanded } = useContext(UserContext);
      
-     useEffect(() => {
+    useEffect(() => {
         if (!init && ready) {
             setInit(true);
         }
@@ -47,7 +47,7 @@ const OnBoardingPage = () => {
     }, [expanded, state]);
 
         
-     return <div>Index Page</div>;
+    return <div>Index Page</div>;
 };
 
 export default OnBoardingPage;
