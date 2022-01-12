@@ -1,10 +1,9 @@
 import React, { createContext } from "react";
-import { WidgetPullEventType, WidgetPushEventType } from "src/hooks/widgetApi";
+import { WidgetPullEventType, WidgetPushEventType } from "../widgetApi/events";
 
 export interface TUserContext {
     token: string | null;
     dealerId: string | null;
-    entityId: string | null;
     carrierId: string | null;
     userId: string | null;
     expanded: boolean;

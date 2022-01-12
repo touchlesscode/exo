@@ -1,19 +1,41 @@
 import React, { useContext, useEffect, useState } from 'react';
 import WidgetEvents from "@exo/utils/widgetApi/events";
-import { UserContext } from "@exo/context/UserContext";
 import useWidgetReady from "@exo/hooks/useWidgetReady";
 import { WidgetViewSize } from "@exo/utils/widgetApi";
-import { MainWrapper } from "@exo/components/Wrappers";
+import ListItem from "@exo/components/ListItem';
+import Loading from "@exo/components/Loading';
+import { UserContext } from "@exo/context/UserContext';
+import { MainWrapper } from "@exo/components/Wrappers';
+import Clipboard from "@exo/icons/Clipboard';
+import useTextKitContext from "@exo/hooks/useTextKitContext';
+import { useTranslation } from "react-i18next";
+
+const IconHolder = styled.div`
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    color: ${p => p.theme.colors.primary.default};
+    cursor: pointer;
+    margin-left: 8px;
+    
+    &:active, &:focus {
+        opacity: 0.75;
+    }
+`
 
 const OnBoardingPage = () => {
-     
-    const ready = useWidgetReady({});
+    const { t } = useTranslation(); 
+    const ready = useWidgetReady({
+        header: t("Overview"),
+        footer: t("Show more")
+    });
     const { postEvent, event } = useContext(UserContext);
     const [context, setContext] = useState<any>();
     const [eventEmitted, setEventEmitted] = useState<any>();
     const [open, setOpen] = useState<boolean>(false);
+    
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (ready) {
             postEvent(WidgetEvents.setHeader('My Header'));
             postEvent(WidgetEvents.setFooter('My Footer'));
@@ -21,7 +43,7 @@ const OnBoardingPage = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [ready]);
 
-    useEffect(() => {
+    React.useEffect(() => {
         if (event) {
             switch(event.type) {
                 case WidgetEvents.ReceivableEvents.contextChanged:

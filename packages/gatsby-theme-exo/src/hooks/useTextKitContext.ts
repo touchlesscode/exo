@@ -2,7 +2,7 @@ import { useCallback, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
 import { UserContext } from '@exo/context/UserContext';
-import { WidgetEvents } from './widgetApi';
+import WidgetEvents from '@exo/widgetApi/events';
 
 export interface TApiResponse {
     client_name: string;
@@ -67,7 +67,7 @@ export default function useTextKitContext(): TTextKitContext {
                 /**
                  * value: { external: { externalId: "", metadata: {}}, conversationId: "", campaignId: ""}
                  */
-                case WidgetEvents.WidgetPullEvents.updateContext:
+                case WidgetEvents.ReceivableEvents.contextChanged:
                     if (event.value.external) {
                         setSavedEvent(event.value);
                         setLoading(true);
