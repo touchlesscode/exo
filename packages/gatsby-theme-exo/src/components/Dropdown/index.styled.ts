@@ -6,10 +6,8 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
     width: 100%;
     box-sizing: border-box;
     text-align: left;
-
     .widget--dropdown {
         text-align: left;
-
         &--display {
             display: flex;
             align-items: center;
@@ -23,13 +21,11 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             border-color: ${p => p.theme.colors.backgrounds.spacer};
             padding: 0 16px;
             cursor: pointer;
-
             &:focus, &:active, &:focus-visible, &_open {
                 border-color: ${p => p.theme.colors.primary.default};
                 outline: none;
             }
         }
-
         &--display_custom {
             display: inline-block;
             text-align: left;
@@ -39,13 +35,11 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             border-color: transparent;
             cursor: pointer;
             padding: 0;
-
             &:focus, &:active, &:focus-visible {
                 border-color: transparent;
                 ouline: none;
             }
         }
-
         &--label {
             display: block;
             font-size: ${p => p.theme.fontSize.small};
@@ -59,7 +53,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             white-space: nowrap;
             user-select: none;
         }
-
         &--selected {
             display: block;
             flex: 1;
@@ -75,11 +68,9 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             width: 100%;
             user-select: none;
         }
-
         &--placeholder {
             color: ${p => p.theme.colors.text.l2};
         }
-
         &--menu {
             position: absolute;
             display: flex;
@@ -99,7 +90,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             z-index: 10;
             bottom: ${p => p.openTop ? (p.topMargin) ? `${p.topMargin}px` : '40px' : 'auto'};
         }
-
         &--search {
             display: flex;
             align-items: center;
@@ -113,7 +103,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             border-bottom-style: solid;
             border-bottom-color: ${p => p.theme.colors.backgrounds.spacer};
             box-sizing: border-box;
-
             &_input {
                 display: inline-block;
                 border-color: transparent;
@@ -124,20 +113,16 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
                 width: 100%;
                 outline: none;
                 box-sizing: border-box;
-
                 &::placeholder {
                     color: ${p => p.theme.colors.text.l3};
                 }
             }
-
         }
-
         &--options {
             flex: 1;
             width: 100%;
             overflow-x: hidden;
             overflow-y: auto;
-
             > div {
                 display: block;
                 font-size: ${p => p.theme.fontSize.small};
@@ -148,7 +133,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
                 overflow: hidden;
             }
         }
-
         &--group-wrapper {
             display: block;
             width: 100%;
@@ -156,7 +140,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             border-bottom-style: solid;
             border-bottom-color: ${p => p.theme.colors.backgrounds.spacer};
         }
-
         &--group_title {
             display: block;
             font-size: ${p => p.theme.fontSize.xsmall};
@@ -169,7 +152,6 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             text-overflow: ellipsis;
             white-space: nowrap;
         }
-
         &--option {
             display: block;
             font-size: ${p => p.theme.fontSize.small};
@@ -181,12 +163,10 @@ export const Container = styled.div<{ openTop?: boolean, topMargin?: number }>`
             text-overflow: ellipsis;
             white-space: nowrap;
             cursor: pointer;
-
             &:hover, &_active {
                 color: ${p => p.theme.colors.text.default};
                 background-color: ${p => p.theme.colors.backgrounds.hover};
             }
-
             &_selected {
                 color: ${p => p.theme.colors.backgrounds.white};
                 background-color: ${p => p.theme.colors.primary.default};

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Value, Wrapper, Title, DaysLeft } from './index.styled';
+import { useTranslation } from "react-i18next";
+import '../../locales/i18n';
 
 interface SetHtmlProps {
     title?: string;
@@ -10,7 +12,8 @@ interface SetHtmlProps {
 };
 
 const SetHtml = ({ showDivider = false, value, title, daysLeft, dateRetired }: SetHtmlProps) => {
-
+    const { t } = useTranslation();
+    
     const renderDaysLine = () =>{
         if (daysLeft && dateRetired) {
             const date = new Date(dateRetired + 'T00:00:00');
@@ -18,7 +21,7 @@ const SetHtml = ({ showDivider = false, value, title, daysLeft, dateRetired }: S
             const parsedDate = `${month} ${date.getDate()}, ${date.getFullYear()}`;
             return `Expiry Date: ${parsedDate} (in ${daysLeft} ${daysLeft >= 1 ? 'days' : 'day'}).`
         }
-        return 'Expiry Date Unavalable' 
+        return t('Expiry Date Unavalable') 
     };
 
     return (

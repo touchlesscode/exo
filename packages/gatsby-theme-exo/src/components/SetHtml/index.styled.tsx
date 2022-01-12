@@ -48,37 +48,30 @@ export const Value = styled.div`
     width: 100%;
     text-align: left;
     box-sizing: border-box;
-
     ul {
         list-style: disc;
         margin-left: 24px;
         margin-top: 8px;
         margin-bottom: 16px;
-
         > li:not(:first-child) {
             margin-top: 8px;
         }
     }
-
     p {
         margin-bottom: 16px;
     }
-
     strong, b {
         font-weight: ${p => p.theme.fontWeight.bold};
     }
-
     ol {
         list-style: number;
         margin-left: 24px;
         margin-top: 8px;
         margin-bottom: 16px;
-
         > li:not(:first-child) {
             margin-top: 8px;
         }
     }
-
     a {
         color: ${p => p.theme.colors.primary.default};
     }

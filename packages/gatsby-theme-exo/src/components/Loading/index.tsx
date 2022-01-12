@@ -1,54 +1,36 @@
 import React from 'react';
-import styled from 'styled-components';
-import Loader from '@exo/components/Loader';
-import WidgetError from '@exo/components/WidgetError';
 
-interface LoadingProps {
-    error?: boolean;
-    loading: boolean;
-    showSkeleton?: boolean;
-    skeleton?: React.ReactNode;
-    children: JSX.Element;
-    onRefresh?: () => void;
-}
+import Spinner from 'react-loader-spinner';
+import { useTheme } from 'styled-components';
+import { useTranslation } from "react-i18next";
+import '../locales/i18n';
 
-const Container = styled.div`
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-`
-
-const Loading = ({ error = false, loading, showSkeleton = false, skeleton, children, onRefresh }: LoadingProps) => {
-    if (error) {
-        return (
-            <Container>
-                <WidgetError
-                    message="There is a problem loading this content"
-                    onRefresh={onRefresh}
-                />
-            </Container>
-        )
-    }
-
-    if (!loading && showSkeleton && skeleton) {
-        return (
-            <Container>
-                {skeleton}
-            </Container>
-        );
-    }
-
-    if (loading) {
-        return (
-            <Container>
-                <Loader />
-            </Container>
-        );
-    }
+const Loader = () => {
+    const { t } = useTranslation();
+    const theme = useTheme();
 
     return (
-        <Container>{children}</Container>
+        <div style={{
+            display: 'flex',
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            minHeight: 256,
+        }}>
+            <Spinner
+                type="Rings"
+                color={theme.colors.primary.default}
+                height={75}
+                width={75}
+            />
+            <p style={{
+                fontSize: theme.fontSize.small,
+                fontWeight: theme.fontWeight.medium,
+                color: theme.colors.text.l2,
+            }}>{t('Loading')}</p>
+        </div>
     );
-}
+};
 
-export default Loading;
+export default Loader;

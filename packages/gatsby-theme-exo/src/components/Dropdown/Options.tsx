@@ -53,3 +53,4 @@ const Options = ({ data }: OptionsProp) => {
 }
 
 export default Options;
+© 2022

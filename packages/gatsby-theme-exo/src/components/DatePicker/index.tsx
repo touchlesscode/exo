@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import SvgLibrary from "src/svgs/SvgLibrary";
+import SvgLibrary from "../../images/svgs/SvgLibrary";
 import Label from '../Label';
 import { Wrapper } from "./index.styled";
 
