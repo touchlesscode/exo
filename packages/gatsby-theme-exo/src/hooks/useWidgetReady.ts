@@ -1,5 +1,5 @@
 import { useCallback, useContext, useEffect, useState } from "react";
-import { UserContext } from "src/context/UserContext";
+import { UserContext } from "../context/UserContext";
 import { WidgetEvents, WidgetOptions } from "./widgetApi";
 
 export default function useWidgetReady(widgetOptions? : WidgetOptions) {

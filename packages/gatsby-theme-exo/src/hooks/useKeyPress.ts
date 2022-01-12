@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useEventListener from '@exoTheme/hooks/useEventListener';
+import useEventListener from '@exo/hooks/useEventListener';
 
 const useKeyPress = <T extends HTMLElement>(
   targetKeys: [string, string],

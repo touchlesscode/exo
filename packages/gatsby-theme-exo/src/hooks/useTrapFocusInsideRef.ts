@@ -1,4 +1,4 @@
-import useEventListener from '@exoTheme/hooks/useEventListener';
+import useEventListener from '@exo/hooks/useEventListener';
 import * as React from 'react';
 
 const useTrapFocusInsideRef = <T extends HTMLElement>(

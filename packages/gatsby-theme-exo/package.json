@@ -71,6 +71,7 @@
     "gatsby-source-sanity": "^7.3.2",
     "gatsby-source-sanity-transform-images": "^0.0.7",
     "gatsby-transformer-sharp": "^4.1.0",
+    "ics": "^2.35.0",
     "iframe-resizer": "^4.3.2",
     "iframe-resizer-react": "^1.1.0",
     "jimp": "^0.16.1",

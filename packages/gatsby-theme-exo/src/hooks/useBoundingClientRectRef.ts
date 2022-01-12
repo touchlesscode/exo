@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import useEventListener from './useEventListener';
-import { BoundingClientRecType } from '@exoTheme/types/index';
+import { BoundingClientRecType } from '@exo/types/index';
 
 export const initialBoundingClientRect: BoundingClientRecType = {
   bottom: 0,
