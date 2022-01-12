@@ -3,7 +3,7 @@ import WidgetEvents from "@exo/utils/widgetApi/events";
 import { UserContext } from "@exo/context/UserContext";
 import useWidgetReady from "@exo/hooks/useWidgetReady";
 import { WidgetViewSize } from "@exo/utils/widgetApi";
-import { TestWrapper } from "@exo/components/TestComponents";
+import { MainWrapper } from "@exo/components/Wrappers";
 
 const OnBoardingPage = () => {
      
@@ -39,7 +39,7 @@ const OnBoardingPage = () => {
 
         
     return (
-        <TestWrapper>
+        <MainWrapper>
         <h1>Welcome to the TestStandard Widget</h1>
         <div className="item">
             <h2>Context</h2>
@@ -68,7 +68,7 @@ const OnBoardingPage = () => {
                 <p>end</p>
             </div>
         }
-    </TestWrapper>
+    </MainWrapper>
     );
 };
 
