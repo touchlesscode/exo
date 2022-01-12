@@ -25,7 +25,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
     expanded,
     onClick,
     onClose,
-    duration = 150,
+    duration = 250,
     CloseIcon,
     expandTo,
     parentStyles,
@@ -80,7 +80,7 @@ const ExpandableCard: React.ForwardRefRenderFunction<
         onClick={handleOnClose}
         sx={{
           cursor: 'pointer',
-          backdropFilter: 'blur(64px)',
+          backdropFilter: 'blur(5px)',
           display: isMobile ? 'none' : 'bolck',
           zIndex: '10'
         }}
@@ -203,7 +203,7 @@ const collapseAnimation = (
       zIndex: '12'
     },
     to: {
-      position: 'relative',
+      position: 'fixed',
       top: rect?.top,
       left: rect?.left,
       width: rect?.width,

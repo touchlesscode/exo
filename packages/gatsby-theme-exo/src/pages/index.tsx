@@ -357,507 +357,522 @@ const Index = ({ data }) => {
             flexDirection: ['column', 'column', 'column', 'row']
           }}
         >
-          <ExpandableCard
-            parentRef={brandParentRef}
-            ref={brandRef}
-            elevated
-            radius="16px"
-            expanded={expanded && active === 1}
-            onClick={() => {
-              setActive(1);
-              setexpanded(true);
-            }}
-            onClose={() => {
-              setActive(0);
-              setexpanded(false);
-            }}
-            bg="white"
-            parentStyles={{
+          <Box
+            sx={{
+              position: 'relative',
               minHeight: ['216px', '216px', '216px', '225px'],
+              marginBottom: ['32px', '32px', '32px', '32px'],
+              maxWidth: ['100%', '100%', '366px', '471px'],
               marginRight: ['auto', 'auto', 'auto', 'auto'],
               marginLeft: ['auto', 'auto', 'auto', '0'],
-              marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px'],
-              cursor: expanded ? 'auto' : 'pointer'
-            }}
-            expandTo={{
-              width: isMobile ? '100%' : '572px',
-              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+              borderRadius: '16px'
             }}
           >
-            <Box
-              sx={{
-                pt: 0,
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column'
+            <ExpandableCard
+              parentRef={brandParentRef}
+              ref={brandRef}
+              elevated
+              radius="16px"
+              expanded={expanded && active === 1}
+              onClick={() => {
+                setActive(1);
+                setexpanded(true);
+              }}
+              onClose={() => {
+                setActive(0);
+                setexpanded(false);
+              }}
+              bg="white"
+              parentStyles={{
+                cursor: expanded ? 'auto' : 'pointer'
+              }}
+              expandTo={{
+                width: isMobile ? '100%' : '572px',
+                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
               }}
             >
-              {(!expanded || active !== 1) && (
-                <Card>
-                  <Flex
-                    sx={{
-                      flexDirection: 'column',
-                      justifyContent: 'space-between',
-                      bg: 'white',
-                      borderRadius: '16px',
-                      boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-                      width: '100%',
-                      maxWidth: ['366px', '366px', '471px'],
-                      height: '100%',
-                      minHeight: ['216px', '216px', '225px'],
-                      p: 6
-                    }}
-                  >
-                    <Box
+              <Box
+                sx={{
+                  pt: 0,
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+              >
+                {(!expanded || active !== 1) && (
+                  <Card>
+                    <Flex
                       sx={{
-                        height: '65px',
-                        pl: ['0', '0'],
-                        pointerEvents: 'none'
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        bg: 'white',
+                        borderRadius: '16px',
+                        boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
+                        width: '100%',
+                        maxWidth: ['366px', '366px', '471px'],
+                        height: '100%',
+                        minHeight: ['216px', '216px', '225px'],
+                        p: 6
                       }}
                     >
-                      <Flex>
-                        {sortedBrands.map(
-                          ({
-                            image,
-                            id
-                          }: {
-                            image: IGatsbyImageData;
-                            id: string;
-                          }) => (
-                            <Box
-                              key={id}
-                              sx={{
-                                maxHeight: '53px',
-                                height: '100%',
-                                width: 'auto',
-                                m: 'auto',
-                                minWidth: ['27%', '27%', '23%'],
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center',
-                                alignItems: 'center'
-                              }}
-                            >
-                              <GatsbyImage
-                                image={image}
-                                alt="test"
-                                objectFit="contain"
+                      <Box
+                        sx={{
+                          height: '65px',
+                          pl: ['0', '0'],
+                          pointerEvents: 'none'
+                        }}
+                      >
+                        <Flex>
+                          {sortedBrands.map(
+                            ({
+                              image,
+                              id
+                            }: {
+                              image: IGatsbyImageData;
+                              id: string;
+                            }) => (
+                              <Box
+                                key={id}
                                 sx={{
-                                  height: 'auto',
-                                  maxHeight: '100%',
-                                  width: '100%',
-                                  maxWidth: '73px'
+                                  maxHeight: '53px',
+                                  height: '100%',
+                                  width: 'auto',
+                                  m: 'auto',
+                                  minWidth: ['27%', '27%', '23%'],
+                                  display: 'flex',
+                                  flexDirection: 'column',
+                                  justifyContent: 'center',
+                                  alignItems: 'center'
                                 }}
-                              />
-                            </Box>
-                          )
-                        )}
-                      </Flex>
-                    </Box>
-                    <TextBlock
-                      {...{
-                        heading: 'Shop by brand',
-                        text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
-                        headingProps: {
-                          as: 'h4',
-                          sx: {
-                            fontFamily: 'Poppins',
-                            fontStyle: 'normal',
-                            fontWeight: 'bold',
-                            fontSize: '20px',
-                            lineHeight: '30px',
-                            letterSpacing: '-0.02em',
-                            color: '#151F2A',
-                            mb: 2,
-                            zIndex: '3'
+                              >
+                                <GatsbyImage
+                                  image={image}
+                                  alt="test"
+                                  objectFit="contain"
+                                  sx={{
+                                    height: 'auto',
+                                    maxHeight: '100%',
+                                    width: '100%',
+                                    maxWidth: '73px'
+                                  }}
+                                />
+                              </Box>
+                            )
+                          )}
+                        </Flex>
+                      </Box>
+                      <TextBlock
+                        {...{
+                          heading: 'Shop by brand',
+                          text: 'Some descriptive text about choosing any of your favorite brands that folks in Virginia love.',
+                          headingProps: {
+                            as: 'h4',
+                            sx: {
+                              fontFamily: 'Poppins',
+                              fontStyle: 'normal',
+                              fontWeight: 'bold',
+                              fontSize: '20px',
+                              lineHeight: '30px',
+                              letterSpacing: '-0.02em',
+                              color: '#151F2A',
+                              mb: 2,
+                              zIndex: '3'
+                            }
                           }
-                        }
-                      }}
-                    />
-                  </Flex>
-                </Card>
-              )}
-              {expanded && active === 1 ? (
-                <>
-                  <Flex
-                    direction="column"
-                    justify="flex-end"
-                    sx={{
-                      px: 6,
-                      pt: expanded && active === 1 ? 6 : [8, 6],
-                      pb: 8,
-                      position: 'relative',
-                      zIndex: 2,
-                      height: ['296px', '296px', '296px'],
-                      minHeight: ['unset', 'unset', '296px'],
-                      maxHeight: ['50vh', '50vh', '296px']
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        position: 'absolute',
-                        top: '0',
-                        left: '0',
-                        height: '100%',
-                        width: '100%',
-                        pointerEvents: 'none',
-                        zIndex: '1',
-                        backgroundImage:
-                          'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
-                      }}
-                    ></Box>
-
-                    <TextBlock
-                      heading={'Shop by brand'}
-                      headingProps={{
-                        withLine: true,
-                        line: {
-                          align: 'top',
-                          space: '2',
-                          width: '120%',
-                          color: '#ffffff'
-                        },
-                        sx: {
-                          mb: 2,
-                          color: '#ffffff',
-                          fontFamily: 'Poppins',
-                          fontStyle: 'normal',
-                          fontWeight: '600',
-                          fontSize: '28px',
-                          lineHeight: '38px',
-                          letterSpacing: '-0.02em',
-                          zIndex: '3'
-                        }
-                      }}
-                    />
-                    <GatsbyImage
-                      image={twoPeople}
-                      alt="Shop by brand"
-                      objectFit="cover"
-                      sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%,-50%)',
-                        height: '100%',
-                        width: '100%',
-                        zIndex: 0
-                      }}
-                    />
-                  </Flex>
-                  <Box
-                    sx={{
-                      bg: '#ffffff',
-                      position: 'relative',
-                      zIndex: 2,
-                      overflow: 'scroll',
-                      flex: 1,
-                      flexGrow: 1,
-                      '&::-webkit-scrollbar': {
-                        width: '0',
-                        backgroundColor: 'transparent'
-                      },
-                      '&::-webkit-scrollbar-thumb': {
-                        backgroundColor: 'transparent',
-                        outline: 'unset'
-                      }
-                    }}
-                  >
-                    <Box
+                        }}
+                      />
+                    </Flex>
+                  </Card>
+                )}
+                {expanded && active === 1 ? (
+                  <>
+                    <Flex
+                      direction="column"
+                      justify="flex-end"
                       sx={{
                         px: 6,
-                        py: 8,
-                        background: '#ffffff',
-                        opacity: 0,
-                        animation: `${slideUp} 200ms 200ms forwards`
+                        pt: expanded && active === 1 ? 6 : [8, 6],
+                        pb: 8,
+                        position: 'relative',
+                        zIndex: 2,
+                        height: ['296px', '296px', '296px'],
+                        minHeight: ['unset', 'unset', '296px'],
+                        maxHeight: ['50vh', '50vh', '296px']
                       }}
                     >
-                      <ListDivided>
-                        {sortedBrands.map(
-                          ({
-                            image,
-                            name,
-                            id
-                          }: {
-                            image: IGatsbyImageData;
-                            name: string;
-                            id: string;
-                          }) => (
-                            <ImageWithLabel
-                              key={id}
-                              image={image}
-                              label={name}
-                              alt="brandsImages"
-                              imageVariant="rounded"
-                              imageStyles={{
-                                height: 'auto',
-                                maxHeight: '100%',
-                                my: 'auto'
-                              }}
-                            />
-                          )
-                        )}
-                      </ListDivided>
-                    </Box>
-                  </Box>
-                </>
-              ) : null}
-            </Box>
-          </ExpandableCard>
+                      <Box
+                        sx={{
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          height: '100%',
+                          width: '100%',
+                          pointerEvents: 'none',
+                          zIndex: '1',
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                        }}
+                      ></Box>
 
-          <ExpandableCard
-            parentRef={bodyPrentRef}
-            ref={bodyRef}
-            elevated
-            radius="16px"
-            expanded={expanded && active === 2}
-            onClick={() => {
-              setActive(2);
-              setexpanded(true);
-            }}
-            onClose={() => {
-              setActive(0);
-              setexpanded(false);
-            }}
-            bg="white"
-            parentStyles={{
-              minHeight: ['216px', '216px', '216px', '225px'],
-              marginRight: ['auto', 'auto', 'auto', '0'],
-              marginLeft: ['auto', 'auto', 'auto', 'auto'],
-              marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px'],
-              cursor: expanded ? 'auto' : 'pointer'
-            }}
-            expandTo={{
-              width: isMobile ? '100%' : '572px',
-              height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
-            }}
-          >
-            <Box
-              sx={{
-                pt: 0,
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column'
-              }}
-            >
-              {(!expanded || active !== 2) && (
-                <Card>
-                  <Flex
-                    sx={{
-                      flexDirection: 'column',
-                      justifyContent: 'space-between',
-                      bg: ['#FCF7EA', 'white'],
-                      borderRadius: '16px',
-                      boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
-                      width: '100%',
-
-                      maxWidth: ['366px', '366px', '471px'],
-                      height: '100%',
-                      minHeight: ['216px', '216px', '225px'],
-                      p: 6,
-                      pt: 0
-                    }}
-                  >
+                      <TextBlock
+                        heading={'Shop by brand'}
+                        headingProps={{
+                          withLine: true,
+                          line: {
+                            align: 'top',
+                            space: '2',
+                            width: '120%',
+                            color: '#ffffff'
+                          },
+                          sx: {
+                            mb: 2,
+                            color: '#ffffff',
+                            fontFamily: 'Poppins',
+                            fontStyle: 'normal',
+                            fontWeight: '600',
+                            fontSize: '28px',
+                            lineHeight: '38px',
+                            letterSpacing: '-0.02em',
+                            zIndex: '3'
+                          }
+                        }}
+                      />
+                      <GatsbyImage
+                        image={twoPeople}
+                        alt="Shop by brand"
+                        objectFit="cover"
+                        sx={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%,-50%)',
+                          height: '100%',
+                          width: '100%',
+                          zIndex: 0
+                        }}
+                      />
+                    </Flex>
                     <Box
                       sx={{
-                        height: '95px',
-                        display: 'flex',
-                        width: 'auto',
-                        m: 'auto'
+                        bg: '#ffffff',
+                        position: 'relative',
+                        zIndex: 2,
+                        overflow: 'scroll',
+                        flex: 1,
+                        flexGrow: 1,
+                        '&::-webkit-scrollbar': {
+                          width: '0',
+                          backgroundColor: 'transparent'
+                        },
+                        '&::-webkit-scrollbar-thumb': {
+                          backgroundColor: 'transparent',
+                          outline: 'unset'
+                        }
                       }}
                     >
-                      <Flex>
-                        {bodyTypeImages.map(
-                          ({
-                            image,
-                            id
-                          }: {
-                            image: IGatsbyImageData;
-                            id: string;
-                          }) => (
-                            <Box
-                              key={id}
-                              sx={{
-                                maxHeight: '95px',
-                                height: '100%',
-                                width: 'auto',
-                                m: 'auto',
-                                minWidth: ['35%', '35%', '30.5%'],
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center',
-                                alignItems: 'center'
-                              }}
-                            >
-                              <GatsbyImage
+                      <Box
+                        sx={{
+                          px: 6,
+                          py: 8,
+                          background: '#ffffff',
+                          opacity: 0,
+                          animation: `${slideUp} 200ms 200ms forwards`
+                        }}
+                      >
+                        <ListDivided>
+                          {sortedBrands.map(
+                            ({
+                              image,
+                              name,
+                              id
+                            }: {
+                              image: IGatsbyImageData;
+                              name: string;
+                              id: string;
+                            }) => (
+                              <ImageWithLabel
                                 key={id}
                                 image={image}
-                                alt="test"
-                                objectFit="contain"
-                                sx={{
-                                  width: 'auto',
+                                label={name}
+                                alt="brandsImages"
+                                imageVariant="rounded"
+                                imageStyles={{
                                   height: 'auto',
-                                  maxWidth: '100%',
-                                  maxHeight: '100%'
+                                  maxHeight: '100%',
+                                  my: 'auto'
                                 }}
                               />
-                            </Box>
-                          )
-                        )}
-                      </Flex>
+                            )
+                          )}
+                        </ListDivided>
+                      </Box>
                     </Box>
-                    <TextBlock
-                      {...{
-                        heading: 'Shop by body type',
-                        text: 'Some descriptive text about choosing a body type to fit your needs.',
-                        headingProps: {
-                          as: 'h4',
-                          sx: {
-                            fontFamily: 'Poppins',
-                            fontStyle: 'normal',
-                            fontWeight: 'bold',
-                            fontSize: '20px',
-                            lineHeight: '30px',
-                            letterSpacing: '-0.02em',
-                            color: '#151F2A',
-                            mb: 0,
-                            zIndex: '3'
-                          }
-                        }
-                      }}
-                    />
-                  </Flex>
-                </Card>
-              )}
-              {expanded && active === 2 ? (
-                <>
-                  <Flex
-                    direction="column"
-                    justify="flex-end"
-                    sx={{
-                      px: 6,
-                      pt: expanded && active === 2 ? 6 : [8, 6],
-                      pb: 8,
-                      position: 'relative',
-                      zIndex: 2,
-                      height: ['296px', '296px', '296px'],
-                      minHeight: ['unset', 'unset', '296px'],
-                      maxHeight: ['50vh', '50vh', '296px']
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        position: 'absolute',
-                        top: '0',
-                        left: '0',
-                        height: '100%',
-                        width: '100%',
-                        pointerEvents: 'none',
-                        zIndex: '1',
-                        backgroundImage:
-                          'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
-                      }}
-                    ></Box>
+                  </>
+                ) : null}
+              </Box>
+            </ExpandableCard>
+          </Box>
 
-                    <TextBlock
-                      heading={'Shop by body type'}
-                      headingProps={{
-                        withLine: true,
-                        line: {
-                          align: 'top',
-                          space: '2',
-                          width: '120%',
-                          color: '#ffffff'
-                        },
-                        sx: {
-                          mb: 2,
-                          color: '#ffffff',
-                          fontFamily: 'Poppins',
-                          fontStyle: 'normal',
-                          fontWeight: '600',
-                          fontSize: '28px',
-                          lineHeight: '38px',
-                          letterSpacing: '-0.02em',
-                          zIndex: '3'
-                        }
-                      }}
-                    />
-                    <GatsbyImage
-                      image={twoPeople}
-                      alt="Shop by brand"
-                      objectFit="cover"
+          <Box
+            sx={{
+              position: 'relative',
+              minHeight: ['216px', '216px', '216px', '225px'],
+              marginBottom: ['32px', '32px', '32px', '32px'],
+              maxWidth: ['100%', '100%', '366px', '471px'],
+              marginRight: ['auto', 'auto', 'auto', '0'],
+              marginLeft: ['auto', 'auto', 'auto', 'auto'],
+              borderRadius: '16px'
+            }}
+          >
+            <ExpandableCard
+              parentRef={bodyPrentRef}
+              ref={bodyRef}
+              elevated
+              radius="16px"
+              expanded={expanded && active === 2}
+              onClick={() => {
+                setActive(2);
+                setexpanded(true);
+              }}
+              onClose={() => {
+                setActive(0);
+                setexpanded(false);
+              }}
+              bg="white"
+              parentStyles={{
+                position: 'relative',
+                cursor: expanded ? 'auto' : 'pointer'
+              }}
+              expandTo={{
+                width: isMobile ? '100%' : '572px',
+                height: isMobile ? 'calc(var(--vh, 1vh) * 100)' : '718px'
+              }}
+            >
+              <Box
+                sx={{
+                  pt: 0,
+                  height: '100%',
+                  display: 'flex',
+                  flexDirection: 'column'
+                }}
+              >
+                {(!expanded || active !== 2) && (
+                  <Card>
+                    <Flex
                       sx={{
-                        position: 'absolute',
-                        top: '50%',
-                        left: '50%',
-                        transform: 'translate(-50%,-50%)',
-                        height: '100%',
+                        flexDirection: 'column',
+                        justifyContent: 'space-between',
+                        bg: ['#FCF7EA', 'white'],
+                        borderRadius: '16px',
+                        boxShadow: '0px 8px 24px rgba(84, 84, 84, 0.26)',
                         width: '100%',
-                        zIndex: 0
-                      }}
-                    />
-                  </Flex>
-                  <Box
-                    sx={{
-                      bg: '#ffffff',
-                      position: 'relative',
-                      zIndex: 2,
-                      overflow: 'scroll',
-                      flex: 1,
-                      flexGrow: 1,
-                      '&::-webkit-scrollbar': {
-                        width: '0',
-                        backgroundColor: 'transparent'
-                      },
-                      '&::-webkit-scrollbar-thumb': {
-                        backgroundColor: 'transparent',
-                        outline: 'unset'
-                      }
-                    }}
-                  >
-                    <Box
-                      sx={{
-                        px: 6,
-                        py: 8,
-                        background: '#ffffff',
-                        opacity: 0,
-                        animation: `${slideUp} 200ms 200ms forwards`
+
+                        maxWidth: ['366px', '366px', '471px'],
+                        height: '100%',
+                        minHeight: ['216px', '216px', '225px'],
+                        p: 6,
+                        pt: 0
                       }}
                     >
-                      <ListDivided>
-                        {bodyTypeImages.map(
-                          ({
-                            image,
-                            name,
-                            id
-                          }: {
-                            image: IGatsbyImageData;
-                            name: string;
-                            id: string;
-                          }) => (
-                            <ImageWithLabel
-                              key={id}
-                              image={image}
-                              label={name}
-                              alt="brandsImages"
-                              imageVariant="rounded"
-                              imageStyles={{
-                                height: 'auto',
-                                maxHeight: '100%',
-                                my: 'auto'
-                              }}
-                            />
-                          )
-                        )}
-                      </ListDivided>
+                      <Box
+                        sx={{
+                          height: '95px',
+                          display: 'flex',
+                          width: 'auto',
+                          m: 'auto'
+                        }}
+                      >
+                        <Flex>
+                          {bodyTypeImages.map(
+                            ({
+                              image,
+                              id
+                            }: {
+                              image: IGatsbyImageData;
+                              id: string;
+                            }) => (
+                              <Box
+                                key={id}
+                                sx={{
+                                  maxHeight: '95px',
+                                  height: '100%',
+                                  width: 'auto',
+                                  m: 'auto',
+                                  minWidth: ['35%', '35%', '30.5%'],
+                                  display: 'flex',
+                                  flexDirection: 'column',
+                                  justifyContent: 'center',
+                                  alignItems: 'center'
+                                }}
+                              >
+                                <GatsbyImage
+                                  key={id}
+                                  image={image}
+                                  alt="test"
+                                  objectFit="contain"
+                                  sx={{
+                                    width: 'auto',
+                                    height: 'auto',
+                                    maxWidth: '100%',
+                                    maxHeight: '100%'
+                                  }}
+                                />
+                              </Box>
+                            )
+                          )}
+                        </Flex>
+                      </Box>
+                      <TextBlock
+                        {...{
+                          heading: 'Shop by body type',
+                          text: 'Some descriptive text about choosing a body type to fit your needs.',
+                          headingProps: {
+                            as: 'h4',
+                            sx: {
+                              fontFamily: 'Poppins',
+                              fontStyle: 'normal',
+                              fontWeight: 'bold',
+                              fontSize: '20px',
+                              lineHeight: '30px',
+                              letterSpacing: '-0.02em',
+                              color: '#151F2A',
+                              mb: 0,
+                              zIndex: '3'
+                            }
+                          }
+                        }}
+                      />
+                    </Flex>
+                  </Card>
+                )}
+                {expanded && active === 2 ? (
+                  <>
+                    <Flex
+                      direction="column"
+                      justify="flex-end"
+                      sx={{
+                        px: 6,
+                        pt: expanded && active === 2 ? 6 : [8, 6],
+                        pb: 8,
+                        position: 'relative',
+                        zIndex: 2,
+                        height: ['296px', '296px', '296px'],
+                        minHeight: ['unset', 'unset', '296px'],
+                        maxHeight: ['50vh', '50vh', '296px']
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          position: 'absolute',
+                          top: '0',
+                          left: '0',
+                          height: '100%',
+                          width: '100%',
+                          pointerEvents: 'none',
+                          zIndex: '1',
+                          backgroundImage:
+                            'linear-gradient(0.17deg, #242952 0.14%, rgba(29, 33, 67, 0.92) 2.34%, rgba(36, 41, 82, 0) 36.94%)'
+                        }}
+                      ></Box>
+
+                      <TextBlock
+                        heading={'Shop by body type'}
+                        headingProps={{
+                          withLine: true,
+                          line: {
+                            align: 'top',
+                            space: '2',
+                            width: '120%',
+                            color: '#ffffff'
+                          },
+                          sx: {
+                            mb: 2,
+                            color: '#ffffff',
+                            fontFamily: 'Poppins',
+                            fontStyle: 'normal',
+                            fontWeight: '600',
+                            fontSize: '28px',
+                            lineHeight: '38px',
+                            letterSpacing: '-0.02em',
+                            zIndex: '3'
+                          }
+                        }}
+                      />
+                      <GatsbyImage
+                        image={twoPeople}
+                        alt="Shop by brand"
+                        objectFit="cover"
+                        sx={{
+                          position: 'absolute',
+                          top: '50%',
+                          left: '50%',
+                          transform: 'translate(-50%,-50%)',
+                          height: '100%',
+                          width: '100%',
+                          zIndex: 0
+                        }}
+                      />
+                    </Flex>
+                    <Box
+                      sx={{
+                        bg: '#ffffff',
+                        position: 'relative',
+                        zIndex: 2,
+                        overflow: 'scroll',
+                        flex: 1,
+                        flexGrow: 1,
+                        '&::-webkit-scrollbar': {
+                          width: '0',
+                          backgroundColor: 'transparent'
+                        },
+                        '&::-webkit-scrollbar-thumb': {
+                          backgroundColor: 'transparent',
+                          outline: 'unset'
+                        }
+                      }}
+                    >
+                      <Box
+                        sx={{
+                          px: 6,
+                          py: 8,
+                          background: '#ffffff',
+                          opacity: 0,
+                          animation: `${slideUp} 200ms 200ms forwards`
+                        }}
+                      >
+                        <ListDivided>
+                          {bodyTypeImages.map(
+                            ({
+                              image,
+                              name,
+                              id
+                            }: {
+                              image: IGatsbyImageData;
+                              name: string;
+                              id: string;
+                            }) => (
+                              <ImageWithLabel
+                                key={id}
+                                image={image}
+                                label={name}
+                                alt="brandsImages"
+                                imageVariant="rounded"
+                                imageStyles={{
+                                  height: 'auto',
+                                  maxHeight: '100%',
+                                  my: 'auto'
+                                }}
+                              />
+                            )
+                          )}
+                        </ListDivided>
+                      </Box>
                     </Box>
-                  </Box>
-                </>
-              ) : null}
-            </Box>
-          </ExpandableCard>
+                  </>
+                ) : null}
+              </Box>
+            </ExpandableCard>
+          </Box>
         </Flex>
         <Box
           sx={{
