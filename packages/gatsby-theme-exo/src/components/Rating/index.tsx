@@ -41,7 +41,13 @@ const Rating: React.FC<RatingProps> = ({
           >
             <linearGradient id={id}>
               <stop
-                offset={idx < fullyFilled ? '100%' : `${rest}%`}
+                offset={
+                  idx < fullyFilled
+                    ? '100%'
+                    : fullyFilled < rated && rated > idx
+                    ? `${rest}%`
+                    : '0%'
+                }
                 stopColor={fillColor}
               />
               <stop stopColor="white" />
