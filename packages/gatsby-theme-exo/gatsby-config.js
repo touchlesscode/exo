@@ -76,6 +76,5 @@ module.exports = {
     'gatsby-plugin-perf-budgets',
     'gatsby-plugin-webpack-bundle-analyser-v2',
     'gatsby-plugin-zopfli',
-    'gatsby-plugin-offline'
   ]
 };
