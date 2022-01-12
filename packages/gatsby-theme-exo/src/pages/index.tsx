@@ -346,25 +346,24 @@ const Index = ({ data }) => {
           width: '100%',
           maxWidth: ['100%', '971px'],
           mx: 'auto',
-          mt: [null, '-100px']
+          mt: ['0', '-100px']
         }}
       >
         <Flex
+          gap="8"
           sx={{
             px: ['1.5rem', '1.5rem', '1.5rem', 0],
             width: '100%',
-            display: 'flex',
-            flexDirection: ['column', 'column', 'column', 'row']
+            flexDirection: ['column', 'column', 'row'],
+            mb: '32px'
           }}
         >
           <Box
             sx={{
-              position: 'relative',
-              minHeight: ['216px', '216px', '216px', '225px'],
-              marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px'],
-              marginRight: ['auto', 'auto', 'auto', 'auto'],
-              marginLeft: ['auto', 'auto', 'auto', '0'],
+              width: '100%',
+              maxWidth: ['366px', '366px', '471px'],
+              margin: ['0 auto', '0 auto', '0 auto 0 0'],
+              minHeight: '225px',
               borderRadius: '16px'
             }}
           >
@@ -617,12 +616,10 @@ const Index = ({ data }) => {
 
           <Box
             sx={{
-              position: 'relative',
-              minHeight: ['216px', '216px', '216px', '225px'],
-              marginBottom: ['32px', '32px', '32px', '32px'],
-              maxWidth: ['100%', '100%', '366px', '471px'],
-              marginRight: ['auto', 'auto', 'auto', '0'],
-              marginLeft: ['auto', 'auto', 'auto', 'auto'],
+              width: '100%',
+              maxWidth: ['366px', '366px', '471px'],
+              margin: ['0 auto', '0 auto', '0 0 0 auto'],
+              minHeight: '225px',
               borderRadius: '16px'
             }}
           >
@@ -1322,7 +1319,7 @@ const Index = ({ data }) => {
                         display: 'flex',
                         flexDirection: 'column',
                         height: '100%',
-                        justifyContent: 'start'
+                        justifyContent: 'flex-start'
                       }}
                     >
                       <Card
@@ -1513,7 +1510,7 @@ const Index = ({ data }) => {
         <Flex
           gap="8"
           sx={{
-            flexDirection: ['column', 'row'],
+            flexDirection: ['column', 'column', 'row'],
             width: '100%',
             px: ['1.5rem', '1.5rem', '1.5rem', 0],
             mb: '32px'
@@ -1523,7 +1520,7 @@ const Index = ({ data }) => {
             sx={{
               width: '100%',
               minHeight: '400px',
-              height: ['400px', 'auto']
+              height: ['400px', '400px', 'auto']
             }}
           >
             <ExpandableCard
@@ -1554,7 +1551,7 @@ const Index = ({ data }) => {
                   display: 'flex',
                   flexDirection: 'column',
                   height: '100%',
-                  justifyContent: 'start'
+                  justifyContent: 'flex-start'
                 }}
               >
                 <Card
