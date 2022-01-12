@@ -17,14 +17,14 @@ const Loader = () => {
         }}>
             <Spinner
                 type="Rings"
-                color={theme.colors.primary.default}
+                color={theme?.colors?.primary?.default}
                 height={75}
                 width={75}
             />
             <p style={{
-                fontSize: theme.fontSize.small,
-                fontWeight: theme.fontWeight.medium,
-                color: theme.colors.text.l2,
+                fontSize: theme?.fontSize.small,
+                fontWeight: theme?.fontWeight.medium,
+                color: theme?.colors?.text.l2,
             }}>Loading</p>
         </div>
     );

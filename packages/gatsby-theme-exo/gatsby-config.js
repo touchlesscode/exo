@@ -30,7 +30,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     'gatsby-plugin-image',
-    'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-source-sanity-transform-images',
     {
