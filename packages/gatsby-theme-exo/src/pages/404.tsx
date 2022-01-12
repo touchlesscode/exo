@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const NotFound = () => {
-  return <p>Route Not Found.</p>;
+  return <div>Route Not Found.</div>;
 };
 
 export default NotFound;
