@@ -7,7 +7,7 @@ export default function useWidgetReady(widgetOptions? : WidgetOptions) {
     const [ready, setReady] = useState<boolean>(false);
 
     const sendReadyEvent = useCallback(() => {
-        postEvent(WidgetEventswidgetReady(widgetOptions));
+        postEvent(WidgetEvents.widgetReady(widgetOptions));
         setReady(true);
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);

@@ -1,7 +1,7 @@
 import { useCallback, useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 
-import { UserContext } from '../context/UserContext';
+import { UserContext } from '@exo/context/UserContext';
 import { WidgetEvents } from './widgetApi';
 
 export interface TApiResponse {

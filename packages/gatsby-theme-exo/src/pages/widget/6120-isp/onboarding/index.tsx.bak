@@ -1,21 +1,21 @@
-import React, { useCallback, useContext, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { CancelButton, Divider, FlexBox, FlexRow, SpacerGap, SubmitButton } from '@exo/styles/textkit.addalead.style';
-import Loader from '@exo/components/Loader';
+import Loading from '@exo/components/Loading';
 import AddButton from '@exo/components/AddButton';
-import { MainWrapper } from '@exo/components/Wrappers';
 import { UserContext } from '@exo/context/UserContext';
+import { MainWrapper } from '@exo/components/Wrappers';
+import { WidgetType } from '@exo/hooks/widgetApi';
 import { ThemeProvider } from 'styled-components'
-import { useOnEvent,usePostEvent, WidgetType, WidgetViewSize, WidgetEvents } from '@exo/hooks/widgetApi';
+import { WidgetViewSize, WidgetEvents } from '@exo/hooks/widgetApi';
 import axios from 'axios';
 import { useFormik } from 'formik';
 import Dropdown, { Option } from '@exo/components/Dropdown';
-import ListItem from '@exo/components/ListItem';
 import TextInput from '@exo/components/TextInput';
-import Checkbox from '@exo/components/Checkbox';
-import { createOptions, getSelectedValue, validationAddress, validationPrimary } from '@exo/utils';
+import ListItem from '@exo/components/ListItem';
+import { createOptions, validationAddress, validationPrimary } from '@exo/utils';
 import { GlobalStyle, defaultTheme as theme } from '@exo/theme'
-import WidgetError from '@exo/components/WidgetError';
-import useWidgetReady from "@exo/hooks/useWidgetReady";
+import useWidgetReady from '@exo/hooks/useWidgetReady';
+import useTextKitContext from '@exo/hooks/useTextKitContext';
 
 export interface TListItem {
   label: string;
@@ -42,12 +42,18 @@ interface TExistingContact {
   primary_contact: string;
 }
 
-const IndexPage = () => {
+const OnboardingPage = () => {
 
-  const ready = useWidgetReady({});
-  const { postEvent, event } = React.useContext(UserContext);
+  const ready = useWidgetReady({
+     type: WidgetType.Default,
+     label: "",
+     header: "Details",
+     footer: ""
+  });
+
+  const { postEvent, event } = useTextKitContext(UserContext);
   const [init, setInit] = useState<boolean>(false);
-  const [Loader, setLoader] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
   const [address, setAddress] = useState<any>(false);
   const [primary, setPrimary] = useState<any>(false);
@@ -591,7 +597,7 @@ const IndexPage = () => {
 
   const loadFormOptions = useCallback(async () => {
       if (1 == 1) {
-          setLoader(true);
+          setLoading(true);
           setError(false);
           setLeadtypes([{
               label: 'Business',
@@ -611,7 +617,7 @@ const IndexPage = () => {
           if (!resp.data) {
               setError(true);
           }*/
-          setLoader(false);
+          setLoading(false);
       }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [token]);
@@ -679,8 +685,8 @@ const IndexPage = () => {
     <>
     <GlobalStyle />
         <ThemeProvider theme={theme}>
-            <Loader 
-                Loader={Loader}
+            <Loading 
+                loading={loading}
                 error={error}
             >
             
@@ -937,11 +943,11 @@ const IndexPage = () => {
                             </>
                         )}
                 </MainWrapper>
-        </Loader>
+        </Loading>
         </ThemeProvider>
         </>
   )
 }
 
-export default IndexPage
+export default OnboardingPage
 

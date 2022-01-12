@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import styled from 'styled-components';
 import copy from 'copy-to-clipboard';
 import Loader from '@exo/components/Loader';
+import ListItem from '@exo/components/ListItem';
 import { UserContext } from '@exo/context/UserContext';
 import { MainWrapper } from '@exo/components/Wrappers';
 import { WidgetType } from '@exo/hooks/widgetApi';
@@ -22,7 +23,7 @@ const IconHolder = styled.div`
     }
 `
 
-const Contact = () => {
+const ContactPage = () => {
     const ready = useWidgetReady({
         type: WidgetType.Default,
         label: "",
@@ -77,4 +78,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default ContactPage
