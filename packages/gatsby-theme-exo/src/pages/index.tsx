@@ -1741,20 +1741,7 @@ const Index = ({ data }) => {
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
-                    >
-                      {/* <ListDivided>
-                        {[...badges, ...badges, ...badges].map((badge, idx) => (
-                          <ImageWithLabel
-                            key={idx}
-                            image={redCar}
-                            label={badge}
-                            alt="electric"
-                            labelStyle={{ color: 'white' }}
-                            imageVariant="rounded"
-                          />
-                        ))}
-                      </ListDivided> */}
-                    </Box>
+                    ></Box>
                   </Box>
                 ) : null}
               </Box>
