@@ -2,6 +2,7 @@ import { ButtonProps as BtnProps, ThemeUIStyleObject } from 'theme-ui';
 
 interface ButtonCommonProps extends BtnProps {
   sx?: ThemeUIStyleObject;
+  iconStyle?: ThemeUIStyleObject;
 }
 
 type ButtonDependentProps =
@@ -20,7 +21,6 @@ type ButtonDependentProps =
       iconWidth?: string;
       iconHeight?: string;
       space?: string;
-      iconStyle?: ThemeUIStyleObject;
     };
 
 type ButtonProps = ButtonCommonProps & ButtonDependentProps;

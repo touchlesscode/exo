@@ -324,6 +324,9 @@ const Index = ({ data }) => {
             }}
           >
             <Button
+              onClick={() => navigate('/')}
+              role="button"
+              aria-label="Browse Cars"
               bg="primaryNavy"
               sx={{
                 fontFamily: 'Poppins',
@@ -347,6 +350,9 @@ const Index = ({ data }) => {
               Browse Cars
             </Button>
             <Button
+              onClick={() => navigate('/')}
+              role="button"
+              aria-label="Sell My Car"
               color="primaryNavy"
               sx={{
                 fontFamily: 'Poppins',
@@ -1097,6 +1103,8 @@ const Index = ({ data }) => {
                       >
                         {popularCars.map((item, idx) => (
                           <Button
+                            role="button"
+                            aria-label={item.type}
                             key={idx}
                             sx={{
                               p: 0
@@ -1684,6 +1692,8 @@ const Index = ({ data }) => {
 
                     {(!expanded || active !== 11) && (
                       <Button
+                        role="button"
+                        aria-label="Book appointment card flow"
                         onClick={() => {
                           setActive(11);
                           setexpanded(true);
@@ -1767,7 +1777,7 @@ const Index = ({ data }) => {
                 borderTopLeftRadius: '16px'
               }}
               cardStyles={{
-                height: '415px',
+                height: 'auto',
                 minHeight: '415px'
               }}
               overlayed
@@ -1806,6 +1816,8 @@ const Index = ({ data }) => {
 
               <Button
                 onClick={() => navigate('/')}
+                role="button"
+                aria-label="Trade-In Your Car"
                 color="primaryNavy"
                 Icon={SlimArrow}
                 space="2"
@@ -1888,6 +1900,8 @@ const Index = ({ data }) => {
                 {!isMobile && (
                   <Button
                     onClick={() => setshowAllReviews(!showAllReviews)}
+                    role="button"
+                    aria-label="Read more reviews"
                     color="primaryNavy"
                     Icon={SlimArrow}
                     space="2"

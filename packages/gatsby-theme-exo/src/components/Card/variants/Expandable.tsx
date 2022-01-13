@@ -130,6 +130,8 @@ const ExpandableCard: React.ForwardRefRenderFunction<
             {children}
             {expanded ? ( // render close button when expanded
               <Button
+                role="button"
+                aria-label="Close"
                 Icon={CloseIcon || DefaultCloseIcon}
                 onClick={handleOnClose}
                 sx={{
