@@ -54,7 +54,8 @@ const Recview: React.FC<RecviewProps> = ({
             fontSize: '16px',
             lineHeight: '24px',
             letterSpacing: '-0.02em',
-            color: '#151F2A'
+            color: '#151F2A',
+            whiteSpace: 'nowrap'
           }}
         >
           {name}
@@ -70,7 +71,6 @@ const Recview: React.FC<RecviewProps> = ({
           lineHeight: '20px',
           letterSpacing: '-0.01em',
           color: '#656565',
-          width: '100%',
           maxWidth: '260px',
           ml: '43px'
         }}
