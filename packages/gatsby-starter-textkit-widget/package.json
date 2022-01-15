@@ -1,7 +1,8 @@
 {
-  "name": "textkit-widget",
+  "name": "gatsby-starter-textkit-widget",
   "description": "Widget Sample",
   "version": "0.1.0",
+  "private": false,
   "author": "Kevin Gervais",
   "dependencies": {
     "@headlessui/react": "^1.4.1",

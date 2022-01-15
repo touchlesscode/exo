@@ -1,30 +1,19 @@
-# Portfolio theme for Gatsby
-
-### Gatsby starter theme integrated with [Contentful](https://www.contentful.com)
+# Gatsby Textkit Widget Sample
 
 ## Demo
 
 Live demo is available at:
-https://gatsby-contentful-portfolio.netlify.com/
-
-## Screenshot
-
-![The home page](screenshot.png?raw=true)
+https://textkitwidget.gatsbyjs.io/
 
 ## Who is this for?
 
-- Graphic designers
-- Photographers
-- Illustrators
-- Other creatives
+- TextKit Integrators
+- Solution Engineers
+- Agencies 
 
 ## Features
 
-- Integration with [Contentful](https://www.contentful.com) - automated content model & demo setup
-- Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
-- Uses utility-first [TailwindCSS](https://tailwindcss.com/) framework
-- Integration with [Mailchimp](https://mailchimp.com/) - newsletter form
-- Responsive design (desktop / mobile)
+- Secure communication with TextKit context
 
 ## Getting started
 
@@ -32,12 +21,13 @@ Install [Node package manager (NPM)](https://nodejs.org/) (if you haven't alread
 
 ## Requirements
 
-To use this project you have to have a Contentful account. If you don't have one yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
+To use Contenful with this project you have to have a Contentful account. If you don't have one yet you can register at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
 
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:wkocjan/gatsby-contentful-portfolio.git
+$ git clone git@github.com:touchlesscode/exo.git
+$ cd packages/gatsby-starter-textkit-widget
 $ npm install
 ```
 
@@ -46,12 +36,6 @@ $ npm install
 This project comes with a Contentful setup command `npm run setup`.
 
 This command will ask you for a space ID, and access tokens for the Contentful Management and Delivery API and then import the needed content model into the space you define and write a config file (`.env`).
-
-### Set up Mailchimp
-
-If you want to use built-in integration with Mailchimp, please provide your unique endpoind URL in the `.env` file (`MAILCHIMP_ENDPOINT` variable).
-
-Follow [this instruction](https://www.gatsbyjs.org/packages/gatsby-plugin-mailchimp/?=mailchimp#mailchimp-endpoint) to get the endpoint value.
 
 ## Crucial Commands
 
