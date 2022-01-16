@@ -1,7 +1,7 @@
 {
   "name": "gatsby-starter-textkit-widget",
   "description": "TextKit Widget Sample",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "author": "Kevin Gervais",
   "dependencies": {

@@ -15,6 +15,14 @@ https://textkitwidget.gatsbyjs.io/
 
 - Secure communication with TextKit context
 
+
+## Demo
+
+Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+
+[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/touchlesscode/gatsby-starter-textkit-widget)
+
+
 ## Getting started
 
 Install [Node package manager (NPM)](https://nodejs.org/) (if you haven't already).
