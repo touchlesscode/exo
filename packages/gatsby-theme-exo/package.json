@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-exo",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": false,
   "author": "Kevin Gervais",
   "license": "MIT",
@@ -109,7 +109,7 @@
     "s3-deploy": "^1.4.0"
   },
   "peerDependencies": {
-    "gatsby": "^4.1.0-next",
+    "gatsby": "^4.5.2",
     "postcss": "^8.0.5"
   },
   "engines": {
