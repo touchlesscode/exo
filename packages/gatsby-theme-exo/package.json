@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-exo",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "private": false,
   "author": "Kevin Gervais",
   "license": "MIT",
@@ -53,7 +53,6 @@
     "form-data": "^4.0.0",
     "formik": "^2.2.9",
     "framer-motion": "^5.5.7",
-    "gatsby": "4.5.0",
     "gatsby-omni-font-loader": "^1.3.3",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-image": "^2.1.1",
@@ -73,15 +72,12 @@
     "gatsby-source-sanity-transform-images": "^0.0.7",
     "gatsby-transformer-sharp": "^4.1.0",
     "ics": "^2.35.0",
-    "iframe-resizer": "^4.3.2",
     "iframe-resizer-react": "^1.1.0",
     "jimp": "^0.16.1",
     "keen-slider": "^6.6.2",
     "moment": "^2.29.1",
     "prop-types": "^15.8.1",
-    "react": "^17.0.1",
     "react-custom-scrollbars": "^4.2.1",
-    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
     "react-loader-spinner": "^5.0.6",
     "react-redux": "^7.2.5",
@@ -109,8 +105,9 @@
     "s3-deploy": "^1.4.0"
   },
   "peerDependencies": {
-    "gatsby": "^4.5.2",
-    "postcss": "^8.0.5"
+    "gatsby": "^4.5.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
   "engines": {
     "node": ">=14.15.0"
