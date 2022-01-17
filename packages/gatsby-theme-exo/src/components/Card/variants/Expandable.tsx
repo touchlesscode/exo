@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useEffect } from 'react';
 import Card from '@exoTheme/components/Card';
 import { Box } from 'theme-ui';
 import { keyframes } from '@emotion/react';
@@ -62,7 +62,45 @@ const ExpandableCard: React.ForwardRefRenderFunction<
   };
 
   useTimeout(() => setWillCollapse(false), willCollapse ? duration : 0); // update will collapse after the duration ends.
-
+  useEffect(() => {
+    const close = (e: KeyboardEvent) => {
+      if (expanded && e.key == 'Escape') handleOnClose();
+      if (expanded && e.keyCode === 9 && parentRef && parentRef.current) {
+        const modalFocusableElements = (
+          Array.from(
+            parentRef.current.querySelectorAll(
+              'a[href], button, input, textarea, select, details, [tabindex]:not([tabindex="-1"])'
+            )
+          ) as Array<HTMLElement>
+        ).filter(
+          (el) =>
+            !el.hasAttribute('disabled') && !el.getAttribute('aria-hidden')
+        );
+        const first = modalFocusableElements[0];
+        const last = modalFocusableElements[modalFocusableElements.length - 1];
+        const shift = e.shiftKey;
+        // if the document focused element not inside the modal so focus on first element in modal
+        if (
+          modalFocusableElements.indexOf(
+            document.activeElement as HTMLElement
+          ) === -1
+        ) {
+          first.focus();
+          e.preventDefault();
+        } else if (shift && e.target === first) {
+          // shift-tab pressed on first input in dialog
+          last.focus();
+          e.preventDefault();
+        } else if (!shift && e.target === last) {
+          // tab pressed on last input in dialog
+          first.focus();
+          e.preventDefault();
+        }
+      }
+    };
+    window.addEventListener('keydown', close);
+    return () => window.removeEventListener('keydown', close);
+  });
   return (
     <Box
       ref={parentRef}
@@ -140,10 +178,35 @@ const ExpandableCard: React.ForwardRefRenderFunction<
                   top: 6,
                   zIndex: 3,
                   p: 1,
-                  width: 6,
-                  height: 6,
+                  width: '26px',
+                  height: '26px',
                   borderRadius: '100px',
-                  bg: 'white'
+                  bg: 'white',
+                  padding: '0',
+                  cursor: 'pointer',
+                  outline: 'none',
+                  border: 'unset',
+                  boxShadow: 'unset',
+                  transition: 'all .3s ease-in-out',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  '&:hover': {
+                    outline: 'none',
+                    border: 'unset',
+                    boxShadow: 'unset !important'
+                  },
+                  '&:focus': {
+                    outline: 'none',
+                    borderRadius: '50%',
+                    padding: '3px',
+                    margin: '0',
+                    width: '26px',
+                    height: '26px',
+                    border: 'unset',
+                    boxShadow:
+                      '0 0 0 1px #151f2a, 0 0 0 3px #ffffff, 0 0 0 5px #eca400 !important'
+                  }
                 }}
               />
             ) : null}
