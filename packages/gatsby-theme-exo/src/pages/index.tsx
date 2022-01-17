@@ -36,14 +36,6 @@ const brandsNames = [
   'Jeep',
   'Hyundai'
 ];
-// const benifits = [
-//   'Voted best places to work(11 years in a row)',
-//   '20 + languages spoken',
-//   'Average employee tenure 10 + years',
-//   '4.8 - star rating across 100, 000 + reviews'
-// ];
-// @ts-ignore
-
 const Index = ({ data }) => {
   const [
     brandParentRef,
@@ -82,15 +74,14 @@ const Index = ({ data }) => {
     }[]
   );
   const {
-    redCar,
     brands,
     body,
     options,
-    homePageBg,
-    homePageBgSm,
-    twoPeople,
-    ServicesCar,
-    tradeIn
+    hero,
+    heroSm,
+    carouselImages,
+    cardsImages,
+    reviewImage
   } = data;
 
   let optionsIcons = {} as {
@@ -141,6 +132,32 @@ const Index = ({ data }) => {
       };
     })
     .filter((item: sourceType) => item !== undefined);
+
+  const sliderImages = carouselImages.nodes.map(
+    ({ id, name, image: { asset } }) => {
+      return {
+        id: id,
+        name: name,
+        image: asset
+      };
+    }
+  );
+  const cardsObj = {} as {
+    [x: string]: {
+      id: number;
+      name: string;
+      image: { asset: IGatsbyImageData };
+    };
+  };
+  cardsImages.nodes.map(({ id, name, image: { asset } }) => {
+    cardsObj[name] = {
+      id: id,
+      name: name,
+      image: asset
+    };
+    return;
+  });
+
   const popularCars = [
     {
       type: 'Electric Cars',
@@ -165,35 +182,35 @@ const Index = ({ data }) => {
   ];
   const reviews = [
     {
-      image: twoPeople,
+      image: reviewImage?.image?.asset,
       name: 'Jhon Jhonson',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       rating: 5
     },
     {
-      image: twoPeople,
+      image: reviewImage?.image?.asset,
       name: 'Jhon Jhonson',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       rating: 5
     },
     {
-      image: twoPeople,
+      image: reviewImage?.image?.asset,
       name: 'Jhon Jhonson',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       rating: 5
     },
     {
-      image: twoPeople,
+      image: reviewImage?.image?.asset,
       name: 'Jhon Jhonson',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
       rating: 5
     },
     {
-      image: twoPeople,
+      image: reviewImage?.image?.asset,
       name: 'Jhon Jhonson',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
@@ -206,7 +223,7 @@ const Index = ({ data }) => {
       parentRef: carouselParentRef0,
       ref: carouselRef0,
       title: 'Shop Your Way',
-      image: twoPeople,
+      image: sliderImages[0].image,
       actionText: 'Shop Now',
       list: [
         { title: 'Request a callback', icon: optionsIcons['callback'] },
@@ -224,7 +241,7 @@ const Index = ({ data }) => {
       parentRef: carouselParentRef1,
       ref: carouselRef1,
       title: 'Peace of Mind',
-      image: twoPeople,
+      image: sliderImages[1].image,
       actionText: 'Read More',
       list: [
         { title: 'Exchange policy', icon: optionsIcons['exchange'] },
@@ -247,7 +264,7 @@ const Index = ({ data }) => {
       parentRef: carouselParentRef2,
       ref: carouselRef2,
       title: 'Our People',
-      image: twoPeople,
+      image: sliderImages[2].image,
       actionText: 'Meet Our Team',
       list: [
         {
@@ -270,7 +287,7 @@ const Index = ({ data }) => {
   return (
     <>
       <GatsbyImageBg
-        image={isMobile ? homePageBgSm : homePageBg}
+        image={isMobile ? heroSm?.image?.asset : hero?.image?.asset}
         alt="heey"
         height="100vh"
         objectPosition="bottom"
@@ -588,7 +605,7 @@ const Index = ({ data }) => {
                         }}
                       />
                       <GatsbyImage
-                        image={twoPeople}
+                        image={cardsObj.popular?.image}
                         alt="Shop by brand"
                         objectFit="cover"
                         sx={{
@@ -849,7 +866,7 @@ const Index = ({ data }) => {
                         }}
                       />
                       <GatsbyImage
-                        image={twoPeople}
+                        image={cardsObj.popular?.image}
                         alt="Shop by brand"
                         objectFit="cover"
                         sx={{
@@ -1182,13 +1199,17 @@ const Index = ({ data }) => {
                     }}
                   >
                     <GatsbyImage
-                      image={twoPeople}
+                      image={
+                        isMobile
+                          ? cardsObj.popular_sm?.image
+                          : cardsObj.popular?.image
+                      }
                       objectFit="cover"
                       alt="test"
                       sx={{
                         transition: 'all 1000ms',
                         willChange: 'height width opacity',
-                        height: 'auto',
+                        height: '100%',
                         width: '100%'
                       }}
                     />
@@ -1237,11 +1258,16 @@ const Index = ({ data }) => {
                           <ImageWithLabel
                             key={id}
                             // image={image}
-                            image={redCar}
+                            image={cardsObj.services?.image}
                             label={name}
                             alt={name}
                             imageVariant="rounded"
                             labelStyle={{ color: 'white' }}
+                            imageStyles={{
+                              height: 'auto',
+                              maxHeight: '100%',
+                              my: 'auto'
+                            }}
                           />
                         )
                       )}
@@ -1676,7 +1702,7 @@ const Index = ({ data }) => {
                       }
                     />
                     <GatsbyImage
-                      image={ServicesCar}
+                      image={cardsObj.services?.image}
                       alt="test"
                       objectFit="contain"
                       sx={{
@@ -1741,20 +1767,7 @@ const Index = ({ data }) => {
                         opacity: 0,
                         animation: `${slideUp} 200ms 200ms forwards`
                       }}
-                    >
-                      {/* <ListDivided>
-                        {[...badges, ...badges, ...badges].map((badge, idx) => (
-                          <ImageWithLabel
-                            key={idx}
-                            image={redCar}
-                            label={badge}
-                            alt="electric"
-                            labelStyle={{ color: 'white' }}
-                            imageVariant="rounded"
-                          />
-                        ))}
-                      </ListDivided> */}
-                    </Box>
+                    ></Box>
                   </Box>
                 ) : null}
               </Box>
@@ -1769,7 +1782,7 @@ const Index = ({ data }) => {
             <CardWithImage
               elevated
               radius="16px"
-              image={tradeIn}
+              image={cardsObj.trade?.image}
               alt="hety"
               imageSx={{
                 maxHeight: '198px',
@@ -1995,36 +2008,6 @@ export default Index;
 
 export const indexPageQuery = graphql`
   {
-    redCar: file(name: { eq: "red-car" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    homePageBg: file(name: { eq: "home-hero-bg-toyota" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    homePageBgSm: file(name: { eq: "home-hero-bg-sm" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    twoPeople: file(name: { eq: "two-people" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    ServicesCar: file(name: { eq: "services-cars" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
-    tradeIn: file(name: { eq: "trade-in" }) {
-      childImageSharp {
-        gatsbyImageData(quality: 70, placeholder: BLURRED)
-      }
-    }
     brands: allSanityBrand(
       filter: {
         tags: { regex: "/vehicle/" }
@@ -2095,6 +2078,80 @@ export const indexPageQuery = graphql`
               layout: CONSTRAINED
               height: 48
               formats: [WEBP, AVIF]
+            )
+          }
+        }
+      }
+    }
+    hero: sanityIcon(name: { eq: "home_hero" }) {
+      name
+      image {
+        asset {
+          gatsbyImageData(
+            placeholder: BLURRED
+            layout: FULL_WIDTH
+            formats: [WEBP, AVIF]
+          )
+        }
+      }
+    }
+    heroSm: sanityIcon(name: { eq: "home_hero_sm" }) {
+      name
+      image {
+        asset {
+          gatsbyImageData(
+            placeholder: BLURRED
+            layout: FULL_WIDTH
+            formats: [WEBP, AVIF]
+          )
+        }
+      }
+    }
+    reviewImage: sanityIcon(name: { eq: "review" }) {
+      name
+      image {
+        asset {
+          gatsbyImageData(
+            placeholder: BLURRED
+            layout: FIXED
+            formats: [WEBP, AVIF]
+            height: 32
+            width: 32
+          )
+        }
+      }
+    }
+    carouselImages: allSanityIcon(
+      filter: { name: { in: ["carousel1", "carousel2", "carousel3"] } }
+    ) {
+      nodes {
+        id
+        name
+        image {
+          asset {
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: CONSTRAINED
+              formats: [WEBP, AVIF]
+              height: 225
+            )
+          }
+        }
+      }
+    }
+    cardsImages: allSanityIcon(
+      filter: { name: { in: ["services", "trade", "popular_sm", "popular"] } }
+    ) {
+      nodes {
+        id
+        name
+        image {
+          asset {
+            gatsbyImageData(
+              placeholder: BLURRED
+              layout: CONSTRAINED
+              formats: [WEBP, AVIF]
+              height: 224
             )
           }
         }
