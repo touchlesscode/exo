@@ -12,10 +12,16 @@ EXO is the scaffolding required to make a more accessible world. It's comprised 
 
 ## :zap: Roadmap
 
+EXO is a collaboration of folks who care about making the world usable for people with autism. It turns out when we do that, the business metrics improve too. We're excited to have Gatsby, Rudderstack, Sanity and others involved in us building a true enterprise-grade, scalable and open-source framework we continually will improve. 
+
 ### Now:
+
+Next major addition to this repo: plan for Feb 10. 
 
 - <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
 - EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
+   - more to merge in from recent projects for large companies that will likely be useful to most. 
+- Making our documentation public in here for Touchless Identity and EXO APIs. 
 
 ### Next:
 
