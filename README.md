@@ -16,7 +16,7 @@ EXO is a collaboration of folks who care about making the world usable for peopl
 
 ### Now:
 
-Next major addition to this repo: plan for Feb 10. 
+Beta release set for March 2. 
 
 - <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
 - EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
