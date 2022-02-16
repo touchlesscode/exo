@@ -1,31 +1,55 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx } from 'theme-ui';
-import * as React from 'react';
+import { jsx } from "theme-ui";
+import React, { FC } from "react";
+import { ThemeUIStyleObject } from "theme-ui";
 import {
   getImage,
-  GatsbyImage as NativeGatsbyImage
-} from 'gatsby-plugin-image';
+  GatsbyImage as NativeGatsbyImage,
+} from "gatsby-plugin-image";
+import GatsbyImageProps from "./types";
+interface ExtraProps {
+  loading?: "eager" | "lazy";
+  sx?: ThemeUIStyleObject;
+}
+interface NativeGatsbyImageProps extends GatsbyImageProps, ExtraProps {}
 
-// Types
-import GatsbyImagePropsType from '@exoTheme/components/legacy/GatsbyImage/types';
-
-const GatsbyImage: React.FC<GatsbyImagePropsType> = ({
-  sx,
+const GatsbyImage: FC<NativeGatsbyImageProps> = ({
+  as,
+  alt,
+  className,
+  imgClassName,
   image,
-  variant,
+  imgStyle,
+  backgroundColor,
+  objectFit,
+  objectPosition,
+  onLoad,
+  onError,
+  loading = "lazy",
+  sx,
   ...props
 }) => {
   const imageData = image ? getImage(image) : null;
   return imageData ? (
     <NativeGatsbyImage
-      {...props}
-      sx={{
-        width: '100%',
-        height: '100%',
-        variant: `images.${variant}`,
-        ...sx
-      }}
+      as={as}
       image={imageData}
+      className={className}
+      imgClassName={imgClassName}
+      imgStyle={imgStyle}
+      backgroundColor={backgroundColor}
+      objectFit={objectFit}
+      objectPosition={objectPosition}
+      onLoad={onLoad}
+      onError={onError}
+      alt={alt}
+      loading={loading}
+      style={sx as React.CSSProperties}
+      onContextMenu={() => {
+        return false;
+      }}
+      {...props}
     />
   ) : null;
 };

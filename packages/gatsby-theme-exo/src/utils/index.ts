@@ -1,5 +1,5 @@
 import * as Yup from 'yup';
-import { Option } from '../../components/Dropdown';
+import { Option } from '../components/Dropdown';
 import { TListItem } from ".";
 
 export const createOptions = (list: TListItem[]): Option[] => {

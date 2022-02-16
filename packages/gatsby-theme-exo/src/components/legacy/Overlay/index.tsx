@@ -1,44 +1,71 @@
-import * as React from 'react';
-import { Box } from 'theme-ui';
-import OverlayProps from '@exoTheme/components/legacy/Overlay/types';
-import { keyframes } from '@emotion/react';
-
-const fadeIn = keyframes({ from: { opacity: 0 }, to: { opacity: 1 } });
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import * as React from "react";
+import { Box } from "theme-ui";
+import OverlayProps, { ColorsProps } from "./types";
+import { fadeIn } from "@theme/animations";
 
 const Overlay: React.FC<OverlayProps> = ({
+  children,
   visible,
   zIndex,
+  width,
+  height,
   position,
-  image,
+  colors,
   color,
   transitionDuration,
   animated,
+  transitioned,
+  sx,
   ...props
 }) => {
-  return visible ? (
+  const bgImage = colors?.map((color: ColorsProps) =>
+    color.linear
+      ? `linear-gradient(${
+          color.direction ? `${color.direction},` : ""
+        } ${color.linear?.join(", ")})`
+      : `radial-gradient(${
+          color.direction ? `${color.direction},` : ""
+        } ${color.radial?.join(", ")})`
+  );
+
+  return (
     <Box
       {...props}
       aria-hidden="true"
       sx={{
+        opacity: visible ? "1" : "0",
+        pointerEvents: visible ? "auto" : "none",
         animation: animated
-          ? `${fadeIn} ${transitionDuration || '1000'}ms`
-          : 'none',
-        transition: animated ? `all ${transitionDuration || '1000'}ms` : 'none',
-        backgroundColor: !image && (color || 'grey'),
-        backgroundImage: image,
+          ? `${fadeIn} ${transitionDuration || "250"}ms`
+          : "none",
+        transition: transitioned
+          ? `all ${transitionDuration || "250"}ms`
+          : "none",
+        backgroundColor: !colors?.length && (color || "unset"),
+        backgroundImage: bgImage,
         position: position,
         inset: 0,
-        zIndex: zIndex
+        zIndex: zIndex,
+        width,
+        maxHeight: height,
+        ...sx,
       }}
-    />
-  ) : null;
+    >
+      {children}
+    </Box>
+  );
 };
 
 export default Overlay;
 
 Overlay.defaultProps = {
   visible: true,
-  zIndex: 'infinity',
-  position: 'absolute',
-  animated: false
+  zIndex: "10",
+  position: "absolute",
+  animated: false,
+  width: "100%",
+  height: "100%",
 };

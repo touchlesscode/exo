@@ -1,7 +1,8 @@
-import { ButtonProps as BtnProps, ThemeUIStyleObject } from 'theme-ui';
+import { ButtonProps as BtnProps, ThemeUIStyleObject } from "theme-ui";
 
 interface ButtonCommonProps extends BtnProps {
   sx?: ThemeUIStyleObject;
+  iconStyle?: ThemeUIStyleObject;
 }
 
 type ButtonDependentProps =
@@ -15,8 +16,8 @@ type ButtonDependentProps =
     }
   | {
       Icon: React.FunctionComponent<React.SVGAttributes<SVGElement>>;
-      iconYPosition?: 'start' | 'center' | 'end';
-      iconXPosition?: 'left' | 'right';
+      iconYPosition?: "start" | "center" | "end";
+      iconXPosition?: "left" | "right";
       iconWidth?: string;
       iconHeight?: string;
       space?: string;

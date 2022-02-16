@@ -1,6 +1,8 @@
-import * as React from 'react';
-import { Flex } from 'theme-ui';
-import Divider from '../Divider';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx, Flex, ThemeUIStyleObject } from "theme-ui";
+import * as React from "react";
+import Divider from "@components/Divider";
 
 interface ListDividedProps {
   space?: string;
@@ -8,11 +10,11 @@ interface ListDividedProps {
 
 const ListDivided: React.FC<ListDividedProps> = ({ children, space }) => {
   return (
-    <>
+    <React.Fragment>
       {React.Children.map(children, (child, index) => (
         <Flex
           sx={{
-            flexDirection: 'column'
+            flexDirection: "column",
           }}
         >
           {child}
@@ -20,15 +22,15 @@ const ListDivided: React.FC<ListDividedProps> = ({ children, space }) => {
             <Divider
               width="100%"
               height="1px"
-              color="rgba(228, 228, 228, 1)"
+              color="#E4E5EA"
               sx={{
-                my: space || 3
+                my: space || 3,
               }}
             />
           )}
         </Flex>
       ))}
-    </>
+    </React.Fragment>
   );
 };
 

@@ -1,7 +1,9 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Button as Btn } from 'theme-ui';
-import * as React from 'react';
-import ButtonProps from '@exoTheme/components/legacy/Button/types';
+import { jsx } from "theme-ui";
+import { Button as Btn } from "theme-ui";
+import * as React from "react";
+import ButtonProps from "@components/Button/types";
 
 const Button: React.FC<ButtonProps> = ({
   children,
@@ -11,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   iconHeight,
   iconYPosition,
   iconXPosition,
+  iconStyle,
   sx,
   ...props
 }) => {
@@ -18,23 +21,26 @@ const Button: React.FC<ButtonProps> = ({
     <Btn
       {...props}
       sx={{
-        width: Icon && 'max-content',
-        display: Icon ? 'flex' : 'inline-block',
-        gap: space || '0',
-        alignItems: 'center',
-        flexDirection: iconXPosition === 'left' ? 'row-reverse' : 'row',
-        ...sx
+        width: Icon && "max-content",
+        display: Icon ? "flex" : "inline-block",
+        gap: space || "0",
+        alignItems: "center",
+        flexDirection: iconXPosition === "left" ? "row-reverse" : "row",
+        ...sx,
       }}
     >
       {children}
       {Icon ? (
         <Icon
           sx={{
-            my: 0,
-            width: iconWidth || '24px',
-            height: iconHeight || 'auto',
-            border: 'none',
-            alignSelf: iconYPosition
+            ...{
+              my: 0,
+              width: iconWidth || "24px",
+              height: iconHeight || "auto",
+              border: "none",
+              alignSelf: iconYPosition,
+            },
+            ...iconStyle,
           }}
         />
       ) : null}

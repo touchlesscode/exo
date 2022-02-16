@@ -1,6 +1,9 @@
-import * as React from 'react';
-import { Divider as ThemeDivider, Flex } from 'theme-ui';
-import DividerProps from '@exoTheme/components/legacy/Divider/types';
+/** @jsxRuntime classic */
+/** @jsx jsx */
+import { jsx } from "theme-ui";
+import * as React from "react";
+import { Divider as ThemeDivider, Flex } from "theme-ui";
+import DividerProps from "./types";
 
 const Divider: React.FC<DividerProps> = ({
   visible = true,
@@ -15,7 +18,7 @@ const Divider: React.FC<DividerProps> = ({
   return visible ? (
     <Flex
       sx={{
-        justifyContent: justify === 'right' ? 'end' : 'start'
+        justifyContent: justify === "right" ? "end" : "start",
       }}
     >
       <ThemeDivider
@@ -29,8 +32,9 @@ const Divider: React.FC<DividerProps> = ({
           width,
           maxWidth: width,
           height,
-          border: 'none',
-          ...sx
+          border: "none",
+          zIndex: 1,
+          ...sx,
         }}
       />
     </Flex>
@@ -39,9 +43,9 @@ const Divider: React.FC<DividerProps> = ({
 
 export default Divider;
 Divider.defaultProps = {
-  justify: 'left',
-  width: '70%',
-  height: '4px',
-  space: '6px',
-  color: 'currentColor'
+  justify: "left",
+  width: "70%",
+  height: "4px",
+  space: "6px",
+  color: "currentColor",
 };

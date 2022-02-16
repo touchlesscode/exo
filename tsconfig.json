@@ -29,6 +29,6 @@
       "@exoTheme/legacy/*": ["packages/gatsby-theme-exo/src/legacy/*"]
     }
   },
-  "include": ["packages", "types"],
+  "include": ["packages", "types", "packages/gatsby-theme-exo/src/pages/widget/6120-isp/onboarding/.index.tsx"],
   "exclude": ["node_modules", "public", ".cache"]
 }

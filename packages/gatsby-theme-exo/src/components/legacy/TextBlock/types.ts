@@ -1,11 +1,17 @@
-import { ThemeUIStyleObject } from 'theme-ui';
-import TypographyProps from '@exoTheme/components/legacy/Typography/types';
+import { ThemeUIStyleObject, HeadingProps } from "theme-ui";
+import { TypographyLineProps } from "@components/Heading/variants/TypographyWithLine";
+
+type TextBlockTypography = HeadingProps & {
+  withLine?: boolean;
+  line?: TypographyLineProps;
+  lineStyle?: ThemeUIStyleObject;
+};
 
 interface TextBlockProps {
   heading?: string;
   text?: string;
-  headingProps: TypographyProps;
-  textProps?: TypographyProps;
+  headingProps?: TextBlockTypography;
+  textProps?: TextBlockTypography;
   sx?: ThemeUIStyleObject;
 }
 
