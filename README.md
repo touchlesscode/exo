@@ -18,8 +18,9 @@ EXO is a collaboration of folks who care about making the world usable for peopl
 
 Beta release set for March 2. 
 
-- <a href="https://github.com/touchlesscode/schema">Touchless Schema</a> for: Person, Accomodation
-- EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
+- <a href="https://github.com/touchlesscode/exo/schema">Touchless Schema</a> for: Person, Accomodation
+- EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/exo/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
+   - Pre-alpha, with production-readiness planned for June 2022. 
    - more to merge in from recent projects for large companies that will likely be useful to most. 
 - Making our documentation public in here for Touchless Identity and EXO APIs. 
 
