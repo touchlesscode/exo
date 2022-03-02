@@ -25,19 +25,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-load-script",
       options: {
-        src: "https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/3.6.0/iframeResizer.contentWindow.min.js",
+        src: "https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.contentWindow.min.js",
       },
     },
     `gatsby-transformer-sharp`,
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
     'gatsby-source-sanity-transform-images',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        icon: 'src/images/icons/icon.png'
-      }
-    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -50,19 +44,6 @@ module.exports = {
       resolve: 'gatsby-plugin-html-attributes',
       options: {
         lang: 'en'
-      }
-    },
-    {
-      resolve: 'gatsby-omni-font-loader',
-      options: {
-        enableListener: true,
-        interval: 400,
-        custom: [
-          {
-            name: ['Poppins'],
-            file: '/fonts/fonts.min.css'
-          }
-        ]
       }
     },
     {
