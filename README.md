@@ -25,6 +25,7 @@ Beta release signups are accepted as of March 2. Register interest at <a href="h
 
 ### Next:
 - RFC on the Touchless Schema spec for Person, Accomodation
+- EXO for Remix
 - EXO for NextJS
 - EXO for Svelte
 - Schema for Entity, Relationship, Location, Identity
