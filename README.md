@@ -1,4 +1,3 @@
-<p align="center"><a href="https://github.com/nastyox/Rando.js#nastyox"><img src="http://randojs.com/images/shapeShifterGrayAlphaBackground.gif" alt="Gray shape shifter" height="60"/></a></p>
 <h1 align="center">EXO</h1>
 <p align="center">A blueprint for a more open, accessible, future-proof world.</p>
 
@@ -16,16 +15,17 @@ EXO is a collaboration of folks who care about making the world usable for peopl
 
 ### Now:
 
-Beta release set for March 2. 
+Beta release signups are accepted as of March 2. Register interest at <a href="https://exo.new/?utm_source=github">exo.new</a>
 
-- <a href="https://github.com/touchlesscode/exo/tree/main/schema">Touchless Schema</a> for: Person, Accomodation
-- EXO for GatsbyJS, found in <a href="https://github.com/touchlesscode/exo/tree/main/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
-   - Pre-alpha, with production-readiness planned for June 2022. 
-   - more to merge in from recent projects for large companies that will likely be useful to most. 
+- EXO for GatsbyJS, which will be maintained in <a href="https://github.com/touchlesscode/exo/tree/main/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
+   - Pre-alpha, with full production-readiness planned for June 2022. 
+   - We'll be merging in code from recent projects for large companies that will likely be useful to most. All Touchless projects are to contibute back to this repo. 
+
 - Making our documentation public in here for Touchless Identity and EXO APIs. 
 
 ### Next:
-
+- RFC on the Touchless Schema spec for Person, Accomodation
+- EXO for Remix
 - EXO for NextJS
 - EXO for Svelte
-- Schema for Organization, Relationship, Address
+- Schema for Entity, Relationship, Location, Identity
