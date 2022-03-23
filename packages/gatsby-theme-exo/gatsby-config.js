@@ -54,6 +54,18 @@ module.exports = {
         }
       }
     },
+    {
+      resolve: `gatsby-plugin-rudderstack`,
+      options: {
+        prodKey: process.env.RUDDERSTACK_PROD_KEY,
+        trackPage: true,
+        trackPageDelay: 50,
+        delayLoad: false,
+        delayLoadTime: 1000,
+        manualLoad: false,
+        loadType: 'defer'
+      }
+    },
     'gatsby-plugin-perf-budgets',
     'gatsby-plugin-webpack-bundle-analyser-v2',
     'gatsby-plugin-zopfli',

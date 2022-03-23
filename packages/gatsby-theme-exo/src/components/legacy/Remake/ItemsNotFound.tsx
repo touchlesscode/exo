@@ -328,7 +328,7 @@ const formData = [
     type: 'email'
   },
   {
-    label: 'Any else we should know?',
+    label: 'Anything else we should know?',
     id: 'message',
     type: 'textarea'
   },

@@ -1,6 +1,6 @@
 {
   "name": "gatsby-theme-exo",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "author": "Kevin Gervais",
   "license": "MIT",
@@ -41,6 +41,7 @@
     "@emotion/styled": "^11.6.0",
     "@headlessui/react": "^1.4.2",
     "@loadable/component": "^5.15.2",
+    "@statflo/textkit-widget-sdk-react": "^1.2.0",
     "@types/loadable__component": "^5.13.4",
     "@types/react-instantsearch-dom": "^6.12.0",
     "autoprefixer": "^10.4.2",
