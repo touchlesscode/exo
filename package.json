@@ -5,8 +5,8 @@
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cross-env CYPRESS_baseUrl=http://localhost:9000 cypress run",
-    "format": "prettier \"**/*.{ts,js,tsx,jsx,md,mdx,json,yaml}\" --write",
-    "lint": "eslint . --ignore-path .gitignore --ignore-path .prettierignore --ext .ts,.tsx,.js -f mo",
+    "format": "prettier \"**/*.{ts,js,tsx,jsx,md,mdx,json,yaml}\" --ignore-path .gitignore --write",
+    "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js -f mo",
     "lint:fix": "yarn lint --fix",
     "test": "jest",
     "test:watch": "yarn jest --watch",
