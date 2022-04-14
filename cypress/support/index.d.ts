@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 
 declare namespace Cypress {
-  interface Chainable<Subject> {
+  interface Chainable {
     /**
      * Assert the current URL
      * @param route
      * @example cy.assertRoute('/page-2')
      */
-    assertRoute(route: string): Chainable<any>
+    assertRoute(route: string): Chainable<unknown>
   }
 }
