@@ -6,3 +6,5 @@
 !.yarn/versions
 # !.yarn/cache
 .pnp.*
+
+coverage
