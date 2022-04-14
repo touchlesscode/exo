@@ -8,12 +8,26 @@
     "format": "prettier \"**/*.{ts,js,tsx,jsx,md,mdx,json,yaml}\" --ignore-path .gitignore --write",
     "lint": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js -f mo",
     "lint:fix": "yarn lint --fix",
+    "prepare": "husky install",
     "test": "jest",
     "test:watch": "yarn jest --watch",
     "tsc": "tsc",
     "type-check": "tsc --noEmit"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "yarn type-check"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "yarn lint:fix --max-warnings=0"
+    ],
+    "*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}": [
+      "yarn format"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^16.2.3",
+    "@commitlint/config-conventional": "^16.2.1",
     "@testing-library/cypress": "^8.0.2",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
@@ -43,7 +57,9 @@
     "eslint-plugin-sonarjs": "^0.13.0",
     "eslint-plugin-testing-library": "^5.3.1",
     "eslint-plugin-unicorn": "^42.0.0",
+    "husky": "^7.0.4",
     "jest": "^27.5.1",
+    "lint-staged": "^12.3.7",
     "prettier": "^2.6.2",
     "start-server-and-test": "^1.14.0",
     "ts-jest": "^27.1.4",
