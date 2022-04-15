@@ -63,6 +63,12 @@
     "testing-library/no-await-sync-query": "error",
     "testing-library/no-debugging-utils": "warn",
     "testing-library/no-dom-import": "off",
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -74,7 +80,13 @@
       {
         "cases": {
           "camelCase": true
-        }
+        },
+        "ignore": [
+          "gatsby-config.[jt]s",
+          "gatsby-node.[jt]s",
+          "gatsby-browser.[jt]s",
+          "gatsby-ssr.[jt]s"
+        ]
       }
     ],
     "max-len": [
