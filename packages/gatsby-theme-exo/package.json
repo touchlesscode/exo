@@ -1,0 +1,22 @@
+{
+  "name": "gatsby-theme-exo",
+  "packageManager": "yarn@3.2.0",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.11.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "peerDependencies": {
+    "gatsby": "^4.11.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
