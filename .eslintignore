@@ -9,3 +9,6 @@
 .pnp.*
 
 coverage
+.cache
+**/.cache
+public
