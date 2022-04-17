@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
+    "start": "yarn workspace @touchless/react run build && gatsby develop",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@touchless/react": "workspace:^",
     "gatsby": "^4.11.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
