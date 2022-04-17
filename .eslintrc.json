@@ -63,6 +63,10 @@
     "testing-library/no-await-sync-query": "error",
     "testing-library/no-debugging-utils": "warn",
     "testing-library/no-dom-import": "off",
+    "unicorn/prefer-module": "off",
+    "react/require-default-props": "off",
+    "import/extensions": "off",
+    "react/button-has-type": "off",
     "react/jsx-filename-extension": [
       "error",
       {
@@ -75,17 +79,31 @@
         "devDependencies": true
       }
     ],
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "checkFilenames": false
+      }
+    ],
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
     "unicorn/filename-case": [
       "error",
       {
         "cases": {
-          "camelCase": true
+          "camelCase": true,
+          "pascalCase": true
         },
         "ignore": [
           "gatsby-config.[jt]s",
           "gatsby-node.[jt]s",
           "gatsby-browser.[jt]s",
-          "gatsby-ssr.[jt]s"
+          "gatsby-ssr.[jt]s",
+          "vite-env.d.ts"
         ]
       }
     ],
