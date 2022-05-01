@@ -1,2 +1,0 @@
-const path = require(`path`)
-
