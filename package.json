@@ -1,0 +1,23 @@
+{
+  "name": "touchless",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "start": "nx serve",
+    "build": "nx build",
+    "test": "nx test"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "@nrwl/cli": "13.10.3",
+    "@nrwl/eslint-plugin-nx": "^14.0.5",
+    "@nrwl/js": "13.10.3",
+    "@nrwl/linter": "^14.0.5",
+    "@nrwl/workspace": "13.10.3",
+    "@types/node": "16.11.7",
+    "nx": "13.10.3",
+    "prettier": "^2.5.1",
+    "typescript": "~4.6.2"
+  }
+}

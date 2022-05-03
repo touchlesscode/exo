@@ -1,0 +1,31 @@
+{
+  "extends": "@nrwl/workspace/presets/core.json",
+  "npmScope": "touchless",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/workspace"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ]
+      }
+    }
+  },
+  "generators": {
+    "application": {
+      "linter": "eslint"
+    },
+    "library": {
+      "linter": "eslint"
+    }
+  }
+}
