@@ -1,94 +1,33 @@
+<h1 align="center">EXO</h1>
+<p align="center">A blueprint for a more open, accessible, future-proof world.</p>
 
+## :hear_no_evil: What's this about?
 
-# Touchless
+EXO is the scaffolding required to make a more accessible world. It's comprised of a few key pieces:
 
-This project was generated using [Nx](https://nx.dev).
+1. A universal data schema
+2. A lightweight smart loader to enable those with autism to use the web without frustration
+3. A bottomless ReactJS web shell which connects to headless systems and APIs
 
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+## :zap: Roadmap
 
-🔎 **Smart, Fast and Extensible Build System**
+EXO is a collaboration of folks who care about making the world usable for people with autism. It turns out when we do that, the business metrics improve too. We're excited to have Gatsby, Rudderstack, Sanity and others involved in us building a true enterprise-grade, scalable and open-source framework we continually will improve.
 
-## Adding capabilities to your workspace
+### Now:
 
-Nx supports many plugins which add capabilities for developing different types of applications and different tools.
+Beta release signups are accepted as of March 2. Register interest at <a href="https://exo.new/?utm_source=github">exo.new</a>
 
-These capabilities include generating applications, libraries, etc as well as the devtools to test, and build projects as well.
+- EXO for GatsbyJS, which will be maintained in <a href="https://github.com/touchlesscode/exo/tree/main/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
 
-Below are our core plugins:
+  - Pre-alpha, with full production-readiness planned for June 2022.
+  - We'll be merging in code from recent projects for large companies that will likely be useful to most. All Touchless projects are to contibute back to this repo.
 
-- [React](https://reactjs.org)
-  - `npm install --save-dev @nrwl/react`
-- Web (no framework frontends)
-  - `npm install --save-dev @nrwl/web`
-- [Angular](https://angular.io)
-  - `npm install --save-dev @nrwl/angular`
-- [Nest](https://nestjs.com)
-  - `npm install --save-dev @nrwl/nest`
-- [Express](https://expressjs.com)
-  - `npm install --save-dev @nrwl/express`
-- [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+- Making our documentation public in here for Touchless Identity and EXO APIs.
 
-There are also many [community plugins](https://nx.dev/community) you could add.
+### Next:
 
-## Generate an application
-
-Run `nx g @nrwl/react:app my-app` to generate an application.
-
-> You can use any of the plugins above to generate applications as well.
-
-When using Nx, you can create multiple applications and libraries in the same workspace.
-
-## Generate a library
-
-Run `nx g @nrwl/react:lib my-lib` to generate a library.
-
-> You can also use any of the plugins above to generate libraries as well.
-
-Libraries are shareable across libraries and applications. They can be imported from `@touchless/mylib`.
-
-## Development server
-
-Run `nx serve my-app` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `nx g @nrwl/react:component my-component --project=my-app` to generate a new component.
-
-## Build
-
-Run `nx build my-app` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `nx test my-app` to execute the unit tests via [Jest](https://jestjs.io).
-
-Run `nx affected:test` to execute the unit tests affected by a change.
-
-## Running end-to-end tests
-
-Run `nx e2e my-app` to execute the end-to-end tests via [Cypress](https://www.cypress.io).
-
-Run `nx affected:e2e` to execute the end-to-end tests affected by a change.
-
-## Understand your workspace
-
-Run `nx graph` to see a diagram of the dependencies of your projects.
-
-## Further help
-
-Visit the [Nx Documentation](https://nx.dev) to learn more.
-
-
-
-## ☁ Nx Cloud
-
-### Distributed Computation Caching & Distributed Task Execution
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-cloud-card.png"></p>
-
-Nx Cloud pairs with Nx in order to enable you to build and test code more rapidly, by up to 10 times. Even teams that are new to Nx can connect to Nx Cloud and start saving time instantly.
-
-Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
-
-Visit [Nx Cloud](https://nx.app/) to learn more.
+- RFC on the Touchless Schema spec for Person, Accomodation
+- EXO for Remix
+- EXO for NextJS
+- EXO for Svelte
+- Schema for Entity, Relationship, Location, Identity
