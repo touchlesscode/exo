@@ -28,6 +28,7 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:security/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
     'plugin:prettier/recommended',
   ],
   ignorePatterns: ['*rc.js', 'gatsby-*.js'],
