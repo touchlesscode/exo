@@ -15,7 +15,7 @@ EXO is a collaboration of folks who care about making the world usable for peopl
 
 ### Now:
 
-Beta release signups are accepted as of March 2. Register interest at <a href="https://exo.new/?utm_source=github">exo.new</a>
+Beta release signups are accepted as of March 2. Register interest at new@touchless.inc.
 
 - EXO for GatsbyJS, which will be maintained in <a href="https://github.com/touchlesscode/exo/tree/main/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
    - Pre-alpha, with full production-readiness planned for June 2022. 
