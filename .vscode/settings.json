@@ -4,5 +4,11 @@
     "editor.formatOnPaste": true,
     "[typescriptreact]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
