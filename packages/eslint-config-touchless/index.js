@@ -13,7 +13,7 @@ module.exports = {
     node: true,
     es6: true,
   },
-  plugins: ['@typescript-eslint', 'simple-import-sort'],
+  plugins: ['@typescript-eslint', 'simple-import-sort', 'only-error'],
   settings: {
     react: {
       version: 'detect',
@@ -31,5 +31,8 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:prettier/recommended',
   ],
-  ignorePatterns: ['*rc.js', 'gatsby-*.js'],
+  rules: {
+    'no-console': 'error',
+  },
+  ignorePatterns: ['*rc.js', 'gatsby-*.js', 'vite-env.d.ts', 'dist/**'],
 }
