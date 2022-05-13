@@ -1,0 +1,20 @@
+{
+  "extends": "@touchless/tsconfig/react-library.json",
+  "include": [
+    "."
+  ],
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@sb/*": [
+        ".storybook/*"
+      ]
+    }
+  }
+}
