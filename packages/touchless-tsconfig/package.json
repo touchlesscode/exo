@@ -9,6 +9,9 @@
     "nextjs.json",
     "react-library.json"
   ],
+  "scripts": {
+    "clean": "rm -rf .turbo && rm -rf node_modules"
+  },
   "publishConfig": {
     "access": "public"
   },
