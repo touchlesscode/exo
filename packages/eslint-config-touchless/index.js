@@ -22,6 +22,7 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
     'plugin:sonarjs/recommended',
@@ -29,7 +30,7 @@ module.exports = {
     'plugin:security/recommended',
     'plugin:react-hooks/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   rules: {
     'no-console': 'error',
