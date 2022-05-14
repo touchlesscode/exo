@@ -1,0 +1,20 @@
+{
+  "name": "exo-theme-starter",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean && rm -rf .turbo && rm -rf node_modules",
+    "dev": "gatsby develop",
+    "lint": "TIMING=1 eslint . --ext .js,.ts,.tsx,.jsx --fix"
+  },
+  "dependencies": {
+    "gatsby": "^4.14.0",
+    "gatsby-theme-exo": "*",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "@touchless/ui-react-stitches": "*"
+  }
+}
