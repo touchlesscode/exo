@@ -15,9 +15,25 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\" --ignore-path .gitignore",
     "lint:all": "TIMING=1 eslint . --ext ts --ext tsx --ext js --ext jsx -f mo --ignore-path .gitignore"
   },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tsc-files --noEmit"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}": [
+      "yarn format"
+    ]
+  },
   "devDependencies": {
+    "@commitlint/cli": "^16.3.0",
+    "@commitlint/config-conventional": "^16.2.4",
     "eslint-config-touchless": "*",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.5.1",
+    "tsc-files": "^1.1.3",
     "turbo": "latest"
   },
   "packageManager": "yarn@1.23.0"
