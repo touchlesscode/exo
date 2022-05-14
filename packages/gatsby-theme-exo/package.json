@@ -1,0 +1,14 @@
+{
+  "name": "gatsby-theme-exo",
+  "version": "0.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "gatsby clean && rm -rf .turbo && rm -rf node_modules",
+    "lint": "TIMING=1 eslint . --ext .js,.ts,.tsx,.jsx --fix"
+  },
+  "peerDependencies": {
+    "@touchless/ui-react-stitches": "*",
+    "gatsby": "^4.14.0"
+  }
+}
