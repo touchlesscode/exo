@@ -1,8 +1,25 @@
 {
   "name": "gatsby-theme-exo",
-  "version": "0.0.0",
-  "main": "index.js",
+  "version": "0.2.2",
+  "private": false,
+  "author": "Kevin Gervais",
   "license": "MIT",
+  "description": "The GatsbyJS shell for building agile, accessible, data-first applications.",
+  "keywords": [
+    "headless",
+    "jamstack",
+    "framework",
+    "components",
+    "gatsby"
+  ],
+  "bugs": {
+    "url": "https://github.com/touchlesscode/exo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touchlesscode/exo.git",
+    "directory": "packages/gatsby-theme-exo"
+  },
   "scripts": {
     "clean": "gatsby clean && rm -rf .turbo && rm -rf node_modules",
     "lint": "TIMING=1 eslint . --ext .js,.ts,.tsx,.jsx --fix"

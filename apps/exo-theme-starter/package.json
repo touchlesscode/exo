@@ -11,10 +11,10 @@
     "lint": "TIMING=1 eslint . --ext .js,.ts,.tsx,.jsx --fix"
   },
   "dependencies": {
+    "@touchless/ui-react-stitches": "^0.0.2",
     "gatsby": "^4.14.0",
-    "gatsby-theme-exo": "*",
+    "gatsby-theme-exo": "^0.2.2",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "@touchless/ui-react-stitches": "*"
+    "react-dom": "^18.1.0"
   }
 }
