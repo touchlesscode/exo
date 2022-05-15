@@ -19,7 +19,7 @@ Beta release signups are accepted as of March 2. Register interest at new@touchl
 
 - EXO for GatsbyJS, which will be maintained in <a href="https://github.com/touchlesscode/exo/tree/main/packages/gatsby-theme-exo">/packages/gatsby-theme-exo</a>
 
-  - Pre-alpha, with full production-readiness planned for July 2022.
+  - Pre-alpha, with full production-readiness planned for Fall 2022.
   - We'll be merging in code from recent projects for large companies that will likely be useful to most. All Touchless projects are to contibute back to this repo.
 
 - Making our documentation public in here for Touchless Identity and EXO APIs.
