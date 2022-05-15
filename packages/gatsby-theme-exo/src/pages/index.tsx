@@ -7,11 +7,11 @@ interface IIndexProperties {
 const Index = ({ source = 'exo theme' }: IIndexProperties): JSX.Element => {
   return (
     <div style={{ display: 'grid', gap: 20, justifyItems: 'start' }}>
-      <Button size="sm">{source} Primary button</Button>
-      <Button>{source} Primary button</Button>
-      <Button size="lg">{source} Primary button</Button>
+      <Button size="sm">{source} - A small primary button</Button>
+      <Button>{source} - A primary button</Button>
+      <Button size="lg">{source} - A large primary button</Button>
       <Button variant="ghost" isBlock={true}>
-        {source} Primary block Button
+        {source} - A ghost variant primary Button
       </Button>
     </div>
   )
