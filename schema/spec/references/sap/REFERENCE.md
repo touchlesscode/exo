@@ -1,1 +1,0 @@
-https://help.sap.com/viewer/8b8d6fffe113457094a17701f63e3d6a/GIGYA/en-US/414efcc570b21014bbc5a10ce4041860.html

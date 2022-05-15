@@ -1,48 +1,40 @@
 {
   "name": "@touchless/exo",
-  "version": "0.1.2",
-  "private": false,
-  "author": "Kevin Gervais",
-  "description": "The shell for building agile, accessible, data-first applications.",
-  "keywords": [
-    "headless",
-    "jamstack",
-    "framework",
-    "components"
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*",
+    "ui/**/*"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "type:check": "tsc --noEmit",
-    "lint:check": "eslint . --ext ts --ext tsx --ext js --ext jsx",
-    "prettier:check": "prettier --config .prettierrc --check '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
-    "lint:fix": "yarn lint:check --fix",
-    "prettier:fix": "prettier --config .prettierrc --write '**/*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}'",
-    "type:staged": "tsc-files --noEmit",
-    "lint:staged": "eslint",
-    "prettier:staged": "prettier --config .prettierrc --write"
+    "build": "turbo run build",
+    "dev": "turbo run dev --no-cache --parallel --continue",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\" --ignore-path .gitignore",
+    "lint:all": "TIMING=1 eslint . --ext ts --ext tsx --ext js --ext jsx -f mo --ignore-path .gitignore"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/touchlesscode/exo.git"
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "tsc-files --noEmit"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix --max-warnings=0"
+    ],
+    "*.{js,jsx,ts,tsx,md,css,scss,yaml,yml,json}": [
+      "yarn format"
+    ]
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/touchlesscode/exo/issues"
-  },
-  "homepage": "https://github.com/touchlesscode/exo#readme",
-  "main": "index.js",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/parser": "^5.7.0",
-    "eslint": "^8.4.1",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-unused-imports": "^2.0.0",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.1.2",
+    "@commitlint/cli": "^16.3.0",
+    "@commitlint/config-conventional": "^16.2.4",
+    "eslint-config-touchless": "*",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
     "prettier": "^2.5.1",
     "tsc-files": "^1.1.3",
-    "typescript": "^4.5.4"
-  }
+    "turbo": "latest"
+  },
+  "packageManager": "yarn@1.23.0"
 }
