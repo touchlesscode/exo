@@ -1,6 +1,6 @@
 {
   "name": "@touchless/exo",
-  "private": true,
+  "private": false,
   "workspaces": [
     "packages/*",
     "apps/*",

@@ -1,6 +1,22 @@
 {
   "name": "@touchless/ui-react-stitches",
-  "version": "0.0.0",
+  "private": false,
+  "description": "React stitches components for EXO",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "stitches",
+    "exo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/touchlesscode/exo.git",
+    "directory": "tree/refactor-turborepo/ui/react/stitches"
+  },
+  "author": {
+    "name": "Kevin Gervais"
+  },
+  "version": "0.0.2",
   "files": [
     "dist/**"
   ],

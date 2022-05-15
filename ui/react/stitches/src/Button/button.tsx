@@ -40,6 +40,9 @@ const BaseButton = styled('button', {
       },
     },
     radius: {
+      none: {
+        borderRadius: '0em',
+      },
       sm: {
         borderRadius: '0.25em',
       },
