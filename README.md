@@ -31,3 +31,15 @@ Beta release signups are accepted as of March 2. Register interest at new@touchl
 - EXO for NextJS
 - EXO for Svelte
 - Schema for Entity, Relationship, Location, Identity
+
+
+### To Deploy:
+
+```
+nvm use 16
+yarn install
+yarn build
+yarn dev
+```
+
+
